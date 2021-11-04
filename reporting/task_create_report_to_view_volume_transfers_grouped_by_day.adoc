@@ -1,0 +1,34 @@
+---
+permalink: reporting/task_create_report_to_view_volume_transfers_grouped_by_day.html 
+sidebar: sidebar 
+keywords: create, report, view, volume, transfers, day 
+summary: 您可以创建报告以查看按日期分组的卷传输。 
+---
+= 创建报告以查看按日期分组的卷传输
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建报告以查看按日期分组的卷传输。
+
+* 您需要的内容 *
+
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+按照以下步骤为按天分组的卷传输创建自定义视图，然后计划为此视图生成报告。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 卷 * 。
+. 在视图菜单中，选择 * 关系 * > * 过去 1 个月的传输速率 * 。
+. 单击 " `Day` " 列顶部，按天对卷传输进行排序。
+. 使用反映视图显示内容的特定名称保存此视图，例如 "`Volume transfers by Day` " 。
+. 单击清单页面上的 * 已计划报告 * 按钮。
+. 输入报告计划的名称并填写其他报告字段，然后单击复选标记（image:../media/blue_check.gif[""]）。
++
+报告将立即作为测试发送。之后，报告将生成，并以指定频率通过电子邮件发送给列出的收件人。
+
+
+
+根据报告中显示的结果，您可以按天调查卷传输。

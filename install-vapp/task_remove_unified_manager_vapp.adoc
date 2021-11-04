@@ -1,0 +1,28 @@
+---
+permalink: install-vapp/task_remove_unified_manager_vapp.html 
+sidebar: sidebar 
+keywords: remove unified manager 
+summary: 您可以通过删除安装了 Unified Manager 软件的虚拟机（ VM ）来卸载 Unified Manager 。 
+---
+= 正在删除 Unified Manager
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过删除安装了 Unified Manager 软件的虚拟机（ VM ）来卸载 Unified Manager 。
+
+* 您需要的内容 *
+
+* 您应具有用于访问 VMware vCenter Server 和 vSphere Web Client 的凭据。
+* 应关闭 Unified Manager 服务器与 Workflow Automation 服务器的任何活动连接。
+* 在删除虚拟机（ VM ）之前，应从 Unified Manager 服务器中删除所有集群（数据源）。
+
+
+.步骤
+. 使用 Unified Manager 维护控制台验证 Unified Manager 服务器与外部数据提供程序的连接是否处于活动状态。
+. 在 vSphere Client 中，单击 * 主页 * > * 清单 * > * 虚拟机和模板 * 。
+. 选择要删除的虚拟机，然后单击 * 摘要 * 选项卡。
+. 如果虚拟机正在运行，请单击 * 电源 * > * 关闭来宾 * 。
+. 右键单击要删除的虚拟机，然后单击 * 从磁盘中删除 * 。
+

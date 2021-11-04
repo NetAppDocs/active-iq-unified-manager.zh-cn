@@ -1,0 +1,58 @@
+---
+permalink: storage-mgmt/concept_monitor_vmware_virtual_infrastructure.html 
+sidebar: sidebar 
+keywords: monitor, vmware, virtual, infrastructure, not, supported 
+summary: 通过 Active IQ Unified Manager ，您可以查看虚拟基础架构中的虚拟机（ VM ），并监控虚拟环境中的存储和性能问题并对其进行故障排除。您可以使用此功能确定存储环境中的任何延迟问题，或者 vCenter Server 上报告的性能事件。 
+---
+= 监控 VMware 虚拟基础架构
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 Active IQ Unified Manager ，您可以查看虚拟基础架构中的虚拟机（ VM ），并监控虚拟环境中的存储和性能问题并对其进行故障排除。您可以使用此功能确定存储环境中的任何延迟问题，或者 vCenter Server 上报告的性能事件。
+
+ONTAP 上的典型虚拟基础架构部署包含多个组件，这些组件分布在计算层，网络层和存储层上。VM 应用程序中的任何性能滞后都可能是由于各个层的各个组件同时面临的延迟造成的。此功能对于需要分析虚拟环境中的性能问题描述并了解问题描述发生在哪个组件中的存储和 vCenter Server 管理员以及 IT 通才有用。
+
+现在，您可以从 VMware 部分的 vCenter 菜单访问 vCenter Server 。列出的每个虚拟机的预览视图在拓扑视图中都有一个 * vCenter Server* 链接，用于在新浏览器中启动 vCenter Server 。您也可以使用 * 扩展拓扑 * 按钮启动 vCenter Server ，然后单击 * 在 vCenter 中查看 * 按钮以查看 vCenter Server 中的数据存储库。
+
+Unified Manager 以拓扑视图形式呈现虚拟环境的底层子系统，用于确定计算节点，网络或存储是否发生延迟问题描述。此视图还会突出显示导致执行补救步骤和解决底层问题描述时出现性能滞后的特定对象。
+
+部署在 ONTAP 存储上的虚拟基础架构包括以下对象：
+
+* vCenter Server ：用于管理虚拟环境中的 VMware VM ， ESXi 主机和所有相关组件的集中式控制平台。有关 vCenter Server 的详细信息，请参见 VMware 文档。
+* Host ：运行 ESXi ， VMware 的虚拟化软件并托管 VM 的物理或虚拟系统。
+* 数据存储库：数据存储库是连接到 ESXi 主机的虚拟存储对象。数据存储库是 ONTAP 的可管理存储实体，例如 LUN 或卷，用作日志文件，脚本，配置文件和虚拟磁盘等 VM 文件的存储库。它们通过 SAN 或 IP 网络连接连接到环境中的主机。Unified Manager 不支持或不会显示映射到 vCenter Server 的 ONTAP 外部数据存储库。
+* VM ： VMware 虚拟机。
+* 虚拟磁盘：属于扩展名为 VMDK 的 VM 的数据存储库上的虚拟磁盘。虚拟磁盘中的数据存储在相应的 VMDK 上。
+* vmdk ：数据存储库上为虚拟磁盘提供存储空间的虚拟机磁盘。每个虚拟磁盘都有一个相应的 VMDK 。
+
+
+这些对象在 VM 拓扑视图中表示。
+
+* 基于 ONTAP 的 VMware 虚拟化 *
+
+image::../media/vm_deployment.gif[VM 部署]
+
+* 用户工作流 *
+
+下图显示了使用 VM 拓扑视图的典型用例：
+
+image::../media/vm_workflow.gif[VM 工作流]
+
+
+
+== 不支持的功能：
+
+* Unified Manager 不支持 ONTAP 外部映射到 vCenter Server 实例的数据存储库。也不支持在这些数据存储库上具有虚拟磁盘的任何 VM 。
+* 不支持跨多个 LUN 的数据存储库。
+* 不支持使用网络地址转换（ Network Address Translation ， NAT ）映射数据 LIF （访问端点）的数据存储库。
+* 不支持将卷或 LUN 导出为多个 LIF 配置中具有相同 IP 地址的不同集群上的数据存储库，因为 UM 无法确定哪个数据存储库属于哪个集群。
++
+示例：假设集群 A 具有数据存储库 A数据存储库 A 通过 IP 地址为 x.x.x.x 的数据 LIF 导出，并在此数据存储库上创建 VM A 。同样，集群 B 也具有数据存储库 B数据存储库 B 通过 IP 地址为 x.x.x.x 的数据 LIF 导出，并在数据存储库 B 上创建 VM BUM 既无法将 VM A 拓扑的数据存储库 A 映射到相应的 ONTAP 卷 /LUN ，也无法映射 VM B
+
+* 仅支持将 NAS 和 SAN 卷（适用于 VMFS 的 iSCSI 和 FCP ）用作数据存储库，不支持虚拟卷（ VVol ）。
+* 仅支持 iSCSI 虚拟磁盘。不支持 NVMe 和 SATA 类型的虚拟磁盘。
+* 通过这些视图，您无法生成报告来分析各个组件的性能。
+* 对于 Unified Manager 上仅支持虚拟基础架构的 Storage Virtual Machine （ Storage VM ）灾难恢复（ DR ）设置，必须在 vCenter Server 中手动更改此配置，以便在切换和切回情形下指向活动 LUN 。如果没有手动干预，则无法访问其数据存储库。
+

@@ -1,0 +1,50 @@
+---
+permalink: data-protection/task_configure_connection_between_workflow_automation_um.html 
+sidebar: sidebar 
+keywords: configure, connection, workflow, automation, unified manager 
+summary: 您可以在 OnCommand Workflow Automation （ WFA ）和 Unified Manager 之间配置安全连接。通过连接到 Workflow Automation ，您可以使用 SnapMirror 和 SnapVault 配置工作流等保护功能以及用于管理 SnapMirror 关系的命令。 
+---
+= 在 Workflow Automation 和 Unified Manager 之间配置连接
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 OnCommand Workflow Automation （ WFA ）和 Unified Manager 之间配置安全连接。通过连接到 Workflow Automation ，您可以使用 SnapMirror 和 SnapVault 配置工作流等保护功能以及用于管理 SnapMirror 关系的命令。
+
+* 您需要的内容 *
+
+* 安装的 Workflow Automation 版本必须为 5.1 或更高版本。
++
+[NOTE]
+====
+WFA 5.1 中提供了 "`WFA 软件包用于管理集群模式 Data ONTAP` " ，因此无需像以往那样从 NetApp 存储自动化存储中下载此软件包并将其单独安装到 WFA 服务器上。  https://automationstore.netapp.com/pack-list.shtml["用于管理 ONTAP 的 WFA 软件包"]
+
+====
+* 您必须具有在 Unified Manager 中创建的数据库用户的名称，以支持 WFA 和 Unified Manager 连接。
++
+必须已为此数据库用户分配集成架构用户角色。
+
+* 您必须在 Workflow Automation 中获得管理员角色或架构师角色。
+* 您必须具有 Workflow Automation 设置的主机地址，端口号 443 ，用户名和密码。
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+.步骤
+. 在左侧导航窗格中，单击 * 常规 * > * 工作流自动化 * 。
+. 在 * 工作流自动化页面 * 的 * 数据库用户 * 区域中，选择名称，然后输入为支持 Unified Manager 和 Workflow Automation 连接而创建的数据库用户的密码。
+. 在页面的 * 工作流自动化凭据 * 区域中，输入主机名或 IP 地址（ IPv4 或 IPv6 ）以及 Workflow Automation 设置的用户名和密码。
++
+您必须使用 Unified Manager 服务器端口（端口 443 ）。
+
+. 单击 * 保存 * 。
+. 如果使用自签名证书，请单击 * 是 * 以授权此安全证书。
++
+此时将显示 Workflow Automation 页面。
+
+. 单击 * 是 * 重新加载 Web UI ，然后添加 Workflow Automation 功能。
+
+
+* 相关信息 *
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61550["NetApp 文档： OnCommand Workflow Automation （当前版本）"]

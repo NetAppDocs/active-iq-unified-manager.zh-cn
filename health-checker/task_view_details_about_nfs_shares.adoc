@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task_view_details_about_nfs_shares.html 
+sidebar: sidebar 
+keywords: view, details, nfs shares 
+summary: 您可以查看有关所有 NFS 共享的详细信息，例如其状态，与卷（ FlexGroup 卷或 FlexVol 卷）关联的路径，客户端对 NFS 共享的访问级别以及为导出的卷定义的导出策略。使用运行状况：所有 NFS 共享视图查看所有受监控集群上的所有 NFS 共享，并使用 Storage VM/ 运行状况详细信息页面查看特定 Storage Virtual Machine （ SVM ）上的所有 NFS 共享。 
+---
+= 查看有关 NFS 共享的详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看有关所有 NFS 共享的详细信息，例如其状态，与卷（ FlexGroup 卷或 FlexVol 卷）关联的路径，客户端对 NFS 共享的访问级别以及为导出的卷定义的导出策略。使用运行状况：所有 NFS 共享视图查看所有受监控集群上的所有 NFS 共享，并使用 Storage VM/ 运行状况详细信息页面查看特定 Storage Virtual Machine （ SVM ）上的所有 NFS 共享。
+
+* 您需要的内容 *
+
+* 必须在集群上启用 NFS 许可证。
+* 必须配置为 NFS 共享提供服务的网络接口。
+* 您必须具有操作员，应用程序管理员或存储管理员角色。
+
+
+.步骤
+. 在左侧导航窗格中，根据您要查看所有 NFS 共享还是仅查看特定 SVM 的 NFS 共享，执行以下步骤。
++
+[cols="2*"]
+|===
+| 至 ... | 请按照以下步骤操作 ... 
+
+
+ a| 
+查看所有 NFS 共享
+ a| 
+单击 * 存储 * > * NFS 共享 *
+
+
+
+ a| 
+查看单个 SVM 的 NFS 共享
+ a| 
+.. 单击 * 存储 * > * 存储 VM*
+.. 单击要查看其 NFS 共享详细信息的 SVM 。
+.. 在 Storage VM/ 运行状况详细信息页面中，单击 * NFS 共享 * 选项卡。
+
+
+|===
+

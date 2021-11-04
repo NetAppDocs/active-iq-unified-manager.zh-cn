@@ -1,0 +1,184 @@
+---
+permalink: api-automation/concept_ontap_troubleshooting_workflow.html 
+sidebar: sidebar 
+keywords: troubleshoot, ontap, volumes, gateway, api 
+summary: 网关 API 充当一个网关，可调用 ONTAP API 来查询有关 ONTAP 存储对象的信息，并采取补救措施来解决报告的问题。 
+---
+= 使用网关 API 对 ONTAP 卷进行故障排除
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+网关 API 充当一个网关，可调用 ONTAP API 来查询有关 ONTAP 存储对象的信息，并采取补救措施来解决报告的问题。
+
+此工作流将采用一个示例用例，其中，当 ONTAP 卷接近其容量时，会引发事件。此工作流还演示了如何通过调用 Active IQ Unified Manager 和 ONTAP REST API 的组合来解决此问题描述。
+
+[NOTE]
+====
+在运行工作流步骤之前，请确保满足以下条件：
+
+* 您了解网关 API 及其使用方式。有关信息，请参见 "`网关 API` " 一节。
++
+link:concept_gateway_apis.html["通过代理访问访问 ONTAP API"]
+
+* 您了解 ONTAP REST API 的使用情况。有关使用 ONTAP REST API 的信息，请参见 _API ONTAP REST API 开发人员指南 _ 。
++
+https://docs.netapp.com/us-en/ontap-automation/index.html["ONTAP REST API 开发人员指南"]
+
+* 您是应用程序管理员。
+* ONTAP 9.5 或更高版本支持要运行 REST API 操作的集群，并通过 HTTPS 将此集群添加到 Unified Manager 中。
+
+
+====
+下图说明了问题描述卷容量使用 ONTAP 故障排除工作流中的每个步骤。
+
+image::../media/api_gateway_ontap_workflow.gif[API 网关 ONTAP 工作流]
+
+此工作流涵盖了 Unified Manager 和 ONTAP REST API 的调用点。
+
+. 记下通知卷容量利用率的事件中的卷名称。
+. 通过使用 volume name 作为 name 参数中的值，运行以下 Unified Manager API 来查询卷。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+数据中心
+ a| 
+获取
+ a| 
+` 数据中心 / 存储 / 卷`
+
+|===
+. 从输出中检索集群 UUID 和卷 UUID 。
+. 在 Unified Manager Web UI 上，导航到 * 常规 * > * 功能设置 * > * API 网关 * 以验证是否已启用 API 网关功能。除非启用此选项，否则网关类别下的 API 不可供调用。如果此功能已禁用，请启用它。
+. 使用集群 UUID 通过 ONTAP 网关运行 API /API `s存储 / 卷 / ｛ uuid ｝` 。当将卷 UUID 作为 API 参数传递时，查询将返回卷详细信息。
++
+要通过 API 网关运行 ONTAP API ， Unified Manager 凭据会在内部传递以进行身份验证，您无需为单个集群访问运行额外的身份验证步骤。
+
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+Unified Manager ：网关
+
+ONTAP 存储
+ a| 
+获取
+ a| 
+网关 API ： ` /gateway// ｛ uuid ｝ /\ ｛ path ｝`
+
+ONTAP API ： ` /storage/volumes/\ ｛ uuid ｝`
+
+|===
++
+[NOTE]
+====
+在 /gates/\ ｛ uuid ｝ /\ ｛ path ｝ 中，必须将 \｛ uuid ｝ 的值替换为要执行 REST 操作的集群 UUID 。必须将 \｛ path ｝ 替换为 ONTAP REST URL /storage/volumes/\ ｛ uuid ｝ 。
+
+====
++
+附加的 URL 为： ` /gates/\ ｛ cluster_uuid ｝ /storage/volumes/\ ｛ volume_uuid ｝`
+
++
+运行 GET 操作时，生成的 URL 为： `GETTps ： //<hostname\>/apI/gateways/<cluster_UUUID\>/storage/volumes/\ ｛ volume_uuid\ ｝`
+
++
+* 示例 cURL 命令 *
+
++
+[listing]
+----
+curl -X GET "https://<hostname>/api/gateways/1cd8a442-86d1-11e0-ae1c-9876567890123/storage/volumes/028baa66-41bd-11e9-81d5-00a0986138f7"
+-H "accept: application/hal+json" -H "Authorization: Basic <Base64EncodedCredentials>"
+----
+. 从输出中，确定要采取的大小，使用情况和补救措施。在此工作流中，所采取的补救措施是调整卷大小。
+. 使用集群 UUID 并通过 API 网关运行以下 ONTAP API 以调整卷大小。有关网关和 ONTAP API 的输入参数的信息，请参见第 5 步。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+Unified Manager ：网关
+
+ONTAP 存储
+ a| 
+patch
+ a| 
+网关 API ： ` /gateway// ｛ uuid ｝ /\ ｛ path ｝`
+
+ONTAP API ： ` /storage/volumes/\ ｛ uuid ｝`
+
+|===
++
+[NOTE]
+====
+除了集群 UUID 和卷 UUID 之外，您还必须为 size 参数输入值，以便调整卷大小。确保输入值 _in bytes_ 。例如，如果要将卷大小从 100 GB 增加到 120 GB ，请在查询末尾输入参数大小值： ` -d ｛ \"size" ： 128849018880 ｝ "`
+
+====
++
+* 示例 cURL 命令 *
+
++
+[listing]
+----
+curl -X PATCH "https://<hostname>/api/gateways/1cd8a442-86d1-11e0-ae1c-9876567890123/storage/volumes/028baa66-41bd-11e9-81d5-00a0986138f7" -H
+    "accept: application/hal+json" -H "Authorization: Basic <Base64EncodedCredentials>" -d
+    {\"size\": 128849018880}"
+----
++
+JSON 输出将返回作业 UUID 。
+
+. 使用作业 UUID 验证作业是否成功运行。使用集群 UUID 和作业 UUID 通过 API 网关运行以下 ONTAP API 。有关网关和 ONTAP API 的输入参数的信息，请参见第 5 步。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+Unified Manager ：网关
+
+ONTAP 集群
+ a| 
+获取
+ a| 
+网关 API ： ` /gateway// ｛ uuid ｝ /\ ｛ path ｝`
+
+ONTAP API ： ` /cluster/Jobs/\ ｛ uuid ｝`
+
+|===
++
+返回的 HTTP 代码与 ONTAP REST API HTTP 状态代码相同。
+
+. 运行以下 ONTAP API 以查询已调整大小的卷的详细信息。有关网关和 ONTAP API 的输入参数的信息，请参见第 5 步。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+Unified Manager ：网关
+
+ONTAP 存储
+ a| 
+获取
+ a| 
+网关 API ： ` /gateway// ｛ uuid ｝ /\ ｛ path ｝`
+
+ONTAP API ： ` /storage/volumes/\ ｛ uuid ｝`
+
+|===
++
+输出显示的卷大小增加了 120 GB 。
+
+

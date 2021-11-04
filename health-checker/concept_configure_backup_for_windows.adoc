@@ -1,0 +1,21 @@
+---
+permalink: health-checker/concept_configure_backup_for_windows.html 
+sidebar: sidebar 
+keywords: backup, restore, windows, netapp, snapshot, configure, backup 
+summary: Active IQ Unified Manager 支持使用 iSCSI 协议通过 LUN 在 Windows 操作系统上使用 NetApp Snapshot 进行备份和还原。 
+---
+= 在 Windows 上配置备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager 支持使用 iSCSI 协议通过 LUN 在 Windows 操作系统上使用 NetApp Snapshot 进行备份和还原。
+
+可以在所有 UM 服务运行时进行基于 Snapshot 的备份。由于备份会在整个数据库上设置全局读取锁定，从而阻止任何并发写入，因此会在 Snapshot 中捕获数据库的一致状态。要使 Windows 操作系统上安装的 Unified Manager 系统使用 NetApp Snapshot 执行备份和还原，您应首先使用维护控制台将 Unified Manager 备份配置为 Snapshot 。
+
+在为 Active IQ Unified Manager 备份配置 Snapshot 安装之前，您需要执行以下配置任务。
+
+* 配置 ONTAP 集群
+* 配置 Windows 主机
+

@@ -1,0 +1,21 @@
+---
+permalink: config/concept_api_gateway.html 
+sidebar: sidebar 
+keywords: api gateway 
+summary: 通过 API 网关功能，可以将 Active IQ Unified Manager 作为一个控制平面来管理多个 ONTAP 集群，而无需单独登录到这些集群。 
+---
+= 启用 API 网关
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 API 网关功能，可以将 Active IQ Unified Manager 作为一个控制平面来管理多个 ONTAP 集群，而无需单独登录到这些集群。
+
+您可以从首次登录到 Unified Manager 时显示的配置页面启用此功能。或者，您也可以通过 * 常规 * > * 功能设置 * > * API 网关 * 启用或禁用此功能。
+
+Unified Manager REST API 与 ONTAP REST API 不同，并非所有 ONTAP REST API 功能都可通过 Unified Manager REST API 来使用。但是，如果您在访问 ONTAP API 以管理未公开给 Unified Manager 的特定功能方面有特定业务要求，则可以启用 API 网关功能并执行 ONTAP API 。网关充当一个代理，通过保持标头和正文请求的格式与 ONTAP API 中的格式相同来对 API 请求进行通道化。您可以使用 Unified Manager 凭据并执行特定 API 来访问和管理 ONTAP 集群，而无需传递各个集群凭据。Unified Manager 可作为一个管理点在 Unified Manager 实例管理的 ONTAP 集群中运行 API 。API 返回的响应与直接从 ONTAP 执行的相应 ONTAP REST API 返回的响应相同。
+
+启用此功能后，您可以从 * 菜单栏 * > * 帮助按钮 * > * API 文档 * > * 网关 * 类别执行 Unified Manager REST API 。或者，您也可以输入主机名或 IP 地址以及 URL 以访问 REST API 页面，格式为 `https://<hostname>/docs/api/`
+
+有关 API 的详细信息，请参见 _API Active IQ Unified Manager 开发人员指南 _ 。

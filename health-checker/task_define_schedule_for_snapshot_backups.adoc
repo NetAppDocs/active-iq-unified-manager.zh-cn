@@ -1,0 +1,53 @@
+---
+permalink: health-checker/task_define_schedule_for_snapshot_backups.html 
+sidebar: sidebar 
+keywords: define, backup, schedule, linux, windows 
+summary: 您可以使用 Unified Manager UI 配置创建 Unified Manager Snapshot 备份的计划。 
+---
+= 为 Linux 和 Windows 定义备份计划
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Unified Manager UI 配置创建 Unified Manager Snapshot 备份的计划。
+
+* 您需要的内容 *
+
+* 您必须具有操作员，应用程序管理员或存储管理员角色。
+* 您必须已从维护控制台配置 NetApp Snapshot 备份设置，以确定要创建快照的目标。
+
+
+Snapshot 备份只需几分钟即可创建完毕， Unified Manager 数据库仅锁定几秒钟。
+
+[NOTE]
+====
+在添加新集群的最初 15 天内进行的备份可能不够准确，无法获取历史性能数据。
+
+====
+.步骤
+. 在左侧导航窗格中，单击 * 常规 * > * 数据库备份 * 。
+. 在 * 数据库备份 * 页面中，单击 * 备份设置 * 。
+. 在 * 保留数量 * 字段中输入要保留的最大 Snapshot 副本数。
++
+保留数量的默认值为 10 。最大 Snapshot 副本数取决于集群上的 ONTAP 软件版本。您可以将此字段留空以实施最大值，而不管 ONTAP 版本如何。
+
+. 选择 * 计划每日 * 或 * 计划每周 * 按钮，然后指定计划详细信息。
+. 单击 * 应用 * 。
+
+
+Snapshot 备份文件会根据计划创建。您可以在数据库备份页面中查看可用的备份文件。
+
+由于此卷和快照的重要性，您可能需要为此卷创建一个或两个警报，以便在以下任一情况下收到通知：
+
+* 卷空间已满 90% 。使用事件 * 卷空间已满 * 设置警报。
++
+您可以使用 ONTAP 系统管理器或 ONTAP 命令行界面向卷添加容量，以使 Unified Manager 数据库不会用尽空间。
+
+* 快照数量接近上限。使用事件 * Snapshot 副本太多 * 设置警报。
++
+您可以使用 ONTAP 系统管理器或 ONTAP 命令行界面删除较早的快照，以便始终有空间进行新的快照备份。
+
+
+
+您可以在警报设置页面中配置警报。

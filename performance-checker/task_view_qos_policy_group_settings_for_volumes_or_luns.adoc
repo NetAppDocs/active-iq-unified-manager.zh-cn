@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/task_view_qos_policy_group_settings_for_volumes_or_luns.html 
+sidebar: sidebar 
+keywords: view, qos, policy, group, settings, applied, specific, volumes, luns 
+summary: 您可以查看已应用于卷和 LUN 的 QoS 策略组，也可以链接到性能 /QoS 策略组视图以显示每个 QoS 策略的详细配置设置。 
+---
+= 查看应用于特定卷或 LUN 的 QoS 策略组设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看已应用于卷和 LUN 的 QoS 策略组，也可以链接到性能 /QoS 策略组视图以显示每个 QoS 策略的详细配置设置。
+
+下面显示了查看应用于卷的 QoS 策略的步骤。查看 LUN 的此信息的步骤与此类似。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 卷 * 。
++
+默认情况下，将显示运行状况：所有卷视图。
+
+. 在视图菜单中，选择 * 性能： QoS 策略组中的卷 * 。
+. 找到要查看的卷并向右滚动，直到看到 * QoS 策略组 * 列。
+. 单击 QoS 策略组名称。
++
+根据是传统 QoS 策略，自适应 QoS 策略还是使用 Unified Manager 性能服务级别创建的 QoS 策略，系统将显示相应的服务质量页面。
+
+. 查看 QoS 策略组的详细配置设置。
+. 单击 Expand 按钮（image:../media/chevron_down.gif[""]）以查看有关该策略组的更多详细信息。
+

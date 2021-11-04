@@ -1,0 +1,30 @@
+---
+permalink: install-vapp/task_restart_unified_manager_virtual_machine.html 
+sidebar: sidebar 
+keywords: restart, unified manager, virtual, machine 
+summary: 您可以从维护控制台重新启动 Unified Manager 虚拟机（ VM ）。在生成新的安全证书之后，或者如果虚拟机出现问题，您应重新启动虚拟机。 
+---
+= 重新启动 Unified Manager 虚拟机
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从维护控制台重新启动 Unified Manager 虚拟机（ VM ）。在生成新的安全证书之后，或者如果虚拟机出现问题，您应重新启动虚拟机。
+
+* 您需要的内容 *
+
+* 应打开虚拟设备的电源。
+* 您应以维护用户身份登录到 Unified Manager 维护控制台。
+
+
+您也可以使用 VMware * 重新启动来宾 * 选项从 vSphere 重新启动虚拟机。
+
+.步骤
+. 在维护控制台中，选择 * 系统配置 * > * 重新启动虚拟机 * 。
+. 从浏览器启动 Unified Manager Web UI 并登录。
+
+
+* 相关信息 *
+
+https://www.vmware.com/support/developer/PowerCLI/PowerCLI41/html/Restart-VMGuest.html["VMware vSphere PowerCLI Cmdlet 参考： Restart-VMGuest"]

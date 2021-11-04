@@ -1,0 +1,29 @@
+---
+permalink: health-checker/task_configure_windows_host_machine.html 
+sidebar: sidebar 
+keywords: netapp, snapshot, backup, windows, configure, windows host machine 
+summary: '您需要配置安装了 Active IQ Unified Manager 的 Windows 主机，以便为 NetApp Snapshot 备份做好准备。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "iscsi" ，然后单击 iSCSI 启动程序。' 
+---
+= 配置 Windows 主机
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您需要配置安装了 Active IQ Unified Manager 的 Windows 主机，以便为 NetApp Snapshot 备份做好准备。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "`iSCSI` " ，然后单击 * iSCSI 启动程序 * 。
+
+* 您需要的内容 *
+
+您应清理主机上先前的任何配置。
+
+如果您尝试在全新安装的 Windows 上启动 iSCSI 启动程序，系统将提示您进行确认，确认后，将显示 iSCSI 属性对话框。如果是现有的 Windows 安装，则会显示 iSCSI 属性对话框，其中的目标为非活动或正在尝试连接。因此，您需要确保删除 Windows 主机上先前的所有配置。
+
+.步骤
+. 清理主机上先前的所有配置。
+. 发现目标门户。
+. 连接到目标门户。
+. 使用多路径连接到目标门户。
+. 发现这两个 LIF 。
+. 发现在 Windows 计算机中配置为设备的 LUN 。
+. 在 Windows 中将发现的 LUN 配置为新的卷驱动器。
+

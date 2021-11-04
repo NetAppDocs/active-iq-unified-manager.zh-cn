@@ -1,0 +1,26 @@
+---
+permalink: health-checker/task_add_groups.html 
+sidebar: sidebar 
+keywords: add, groups 
+summary: 您可以创建组来组合集群，卷和 Storage Virtual Machine （ SVM ），以便于管理。 
+---
+= 添加组
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建组来组合集群，卷和 Storage Virtual Machine （ SVM ），以便于管理。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+您可以定义组规则，以便在组中添加或删除成员以及修改组的组操作。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储管理 * > * 组 * 。
+. 在 * 组 * 选项卡中，单击 * 添加 * 。
+. 在 * 添加组 * 对话框中，输入组的名称和问题描述。
+. 单击 * 添加 * 。
+

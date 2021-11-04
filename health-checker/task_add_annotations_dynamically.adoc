@@ -1,0 +1,25 @@
+---
+permalink: health-checker/task_add_annotations_dynamically.html 
+sidebar: sidebar 
+keywords: add, annotations, dynamically 
+summary: 创建自定义标注时， Unified Manager 会使用规则将集群， Storage Virtual Machine （ SVM ）和卷与标注动态关联起来。这些规则会自动将标注分配给存储对象。 
+---
+= 动态添加标注
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+创建自定义标注时， Unified Manager 会使用规则将集群， Storage Virtual Machine （ SVM ）和卷与标注动态关联起来。这些规则会自动将标注分配给存储对象。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储管理 * > * 标注 * 。
+. 在 * 标注 * 页面中，单击 * 添加标注 * 。
+. 在 * 添加标注 * 对话框中，键入标注的名称和问题描述。
+. 可选：在 * 标注值 * 部分中，单击 * 添加 * 向标注添加值。
+. 单击 * 保存 * 。
+

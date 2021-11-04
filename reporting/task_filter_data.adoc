@@ -1,0 +1,21 @@
+---
+permalink: reporting/task_filter_data.html 
+sidebar: sidebar 
+keywords: filtering, data 
+summary: 筛选数据以确保结果符合您的报告要求。通过筛选，您可以仅显示感兴趣的数据。 
+---
+= 筛选数据
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+筛选数据以确保结果符合您的报告要求。通过筛选，您可以仅显示感兴趣的数据。
+
+.步骤
+. 单击筛选器图标以添加筛选器以突出显示要查看的结果，然后单击 * 应用筛选器 * 。
++
+image::../media/filter_cold_data_2.png[筛选冷数据 2.]
+
+. 为未保存的视图命名以保存所做的更改。
+

@@ -1,0 +1,33 @@
+---
+permalink: health-checker/task_view_health_and_capacity_status_of_all_san_array_clusters.html 
+sidebar: sidebar 
+keywords: view, all san array, health and capacity, clusters 
+summary: 您可以使用集群清单页面显示全 SAN 阵列集群的运行状况和容量状态。 
+---
+= 查看所有 SAN 阵列集群的运行状况和容量状态
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用集群清单页面显示全 SAN 阵列集群的运行状况和容量状态。
+
+* 您需要的内容 *
+
+您必须具有操作员，应用程序管理员或存储管理员角色。
+
+您可以在运行状况：所有集群视图和容量：所有集群视图中查看所有 SAN 阵列集群的概述信息。此外，您还可以在集群 / 运行状况详细信息页面中查看详细信息。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 集群 * 。
+. 请确保 "`personality` " 列显示在 * 运行状况：所有集群 * 视图中，或者使用 * 显示 / 隐藏 * 控件添加此列。
++
+此列会为您的全 SAN 阵列集群显示 "`全 SAN 阵列` " 。
+
+. 查看相关信息。
+. 要查看这些集群中的存储容量信息，请选择容量：所有集群视图。
+. 要查看有关这些集群中运行状况和存储容量的详细信息，请单击全 SAN 阵列集群的名称。
++
+在集群 / 运行状况详细信息页面的运行状况，容量和节点选项卡中查看详细信息
+
+

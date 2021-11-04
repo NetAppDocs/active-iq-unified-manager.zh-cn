@@ -1,0 +1,50 @@
+---
+permalink: config/concept_security_dashboard.html 
+sidebar: sidebar 
+keywords: security compliance settings, security feature settings, ONTAP hardening guide, AutoSupport settings, authentication settings 
+summary: 您可以在 Unified Manager 上启用或禁用合规性监控的安全参数。 
+---
+= 为合规性启用和禁用安全设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过使用功能设置页面的 * 安全信息板 * 面板上的 * 自定义 * 按钮，您可以在 Unified Manager 上启用或禁用合规性监控的安全参数。
+
+此页面中启用或禁用的设置将控制 Unified Manager 上集群和 Storage VM 的整体合规状态。根据所做的选择，相应的列将显示在集群清单页面的 * 安全性：所有集群 * 视图和 Storage VM 清单页面的 * 安全性：所有 Storage VM* 视图中。
+
+[NOTE]
+====
+只有具有管理员角色的用户才能编辑这些设置。
+
+====
+系统会根据中定义的建议评估 ONTAP 集群， Storage VM 和卷的安全标准 link:https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf["《 NetApp ONTAP 9 安全强化指南》"]。信息板上的 " 安全 " 面板和 " 安全 " 页面将显示集群， Storage VM 和卷的默认安全合规状态。此外，还会为存在安全违规的集群和 Storage VM 生成安全事件并启用管理操作。
+
+
+
+== 自定义安全设置
+
+要根据您的 ONTAP 环境自定义合规性监控设置，请执行以下步骤：
+
+.步骤
+. 单击 * 常规 > 功能设置 > 安全信息板 > 自定义 * 。此时将显示 * 自定义安全信息板设置 * 弹出窗口。
++
+[NOTE]
+====
+启用或禁用的安全合规性参数可能会直接影响集群和 Storage VM 屏幕上的默认安全视图，报告和计划报告。如果您在修改安全参数之前已从这些屏幕上传了 Excel 报告，则下载的 Excel 报告可能会出现故障。
+
+====
+. 要启用或禁用 ONTAP 集群的自定义设置，请在 * 集群 * 下选择所需的常规设置。有关用于自定义集群合规性的选项的信息，请参见 link:../health-checker/reference_cluster_compliance_categories.html["集群合规性类别"]
+. 要启用或禁用 Storage VM 的自定义设置，请在 * Storage VM* 下选择所需的常规设置。有关用于自定义 Storage VM 合规性的选项的信息，请参见 link:../health-checker/reference_svm_compliance_categories.html["Storage VM 合规性类别"]。
+
+
+
+
+== 自定义 AutoSupport 和身份验证设置
+
+在 * HTTPS 设置 * 部分中，您可以指定是否使用 AutoSupport 传输从 ONTAP 发送 AutoSupport 消息。
+
+在 * 身份验证设置 * 部分中，您可以为默认 ONTAP 管理员用户启用 Unified Manager 警报。
+
+'''

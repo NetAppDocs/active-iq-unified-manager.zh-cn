@@ -1,0 +1,38 @@
+---
+permalink: performance-checker/task_edit_user_defined_performance_threshold_policies.html 
+sidebar: sidebar 
+keywords: edit, user-defined, performance, threshold, policies 
+summary: 您可以编辑现有性能阈值策略的阈值设置。如果您发现在某些阈值条件下收到的警报过多或过少，则此功能非常有用。 
+---
+= 编辑用户定义的性能阈值策略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以编辑现有性能阈值策略的阈值设置。如果您发现在某些阈值条件下收到的警报过多或过少，则此功能非常有用。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员角色。
+
+您不能更改现有阈值策略所监控的存储对象的策略名称或类型。
+
+.步骤
+. 在左侧导航窗格中，选择 * 事件阈值 * > * 性能 * 。
++
+此时将显示 "Performance Thresholds" 页面。
+
+. 选择要更改的阈值策略，然后单击 * 编辑 * 。
++
+此时将显示编辑性能阈值策略页面。
+
+. 对阈值策略进行更改，然后单击 * 保存 * 。
++
+此时将返回到性能阈值页面。
+
+
+
+保存这些更改后，将立即更新使用该策略的所有存储对象上的更改。
+
+根据您对策略所做的更改类型，您可能需要在 "Alert Setup" 页面中查看为使用该策略的对象配置的警报设置。

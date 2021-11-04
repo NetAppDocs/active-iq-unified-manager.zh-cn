@@ -1,0 +1,118 @@
+---
+permalink: config/concept_install_https_certificate_generated_using_external_tools.html 
+sidebar: sidebar 
+keywords: install, HTTPS, certificate, generated from external tools 
+summary: 您可以安装自签名或 CA 签名的证书，这些证书是使用 OpenSSL ， BoringSSL ， LtsEncrypt 等外部工具生成的。 
+---
+= 安装使用外部工具生成的 HTTPS 证书
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以安装自签名或 CA 签名的证书，这些证书是使用 OpenSSL ， BoringSSL ， LtsEncrypt 等外部工具生成的。
+
+您应将私钥与证书链一起加载，因为这些证书是外部生成的公共 - 私有密钥对。允许的密钥对算法为 "`RSA` " 和 "`EC` " 。"* 安装 HTTPS 证书 * " 选项位于 "General " 部分的 "HTTPS Certificates" 页面中。上传的文件应采用以下输入格式。
+
+. 属于 Active IQ UM 主机的服务器的专用密钥
+. 与私钥匹配的服务器证书
+. CA 的证书将反向添加到根证书，用于对上述证书进行签名
+
+
+
+
+== 用于加载具有 EC 密钥对的证书的格式
+
+允许的曲线为 "`prime256v1` " 和 " `secp384r1` " 。具有外部生成的 EC 对的证书示例：
+
+[listing]
+----
+ -----BEGIN EC PRIVATE KEY-----
+<EC private key of Server>
+-----END EC PRIVATE KEY-----
+----
+[listing]
+----
+ -----BEGIN CERTIFICATE-----
+ <Server certificate>
+ -----END CERTIFICATE-----
+ -----BEGIN CERTIFICATE-----
+ <Intermediate certificate #1 (if present)>
+ -----END CERTIFICATE-----
+ -----BEGIN CERTIFICATE-----
+ <Intermediate certificate #2 (if present)>
+ -----END CERTIFICATE-----
+ -----BEGIN CERTIFICATE-----
+ <Root signing certificate>
+ -----END CERTIFICATE-----
+----
+
+
+== 用于加载具有 RSA 密钥对的证书的格式
+
+属于主机证书的 RSA 密钥对允许的密钥大小为 2048 ， 3072 和 4096 。具有外部生成的 * RSA 密钥对 * 的证书：
+
+[listing]
+----
+-----BEGIN RSA PRIVATE KEY-----
+ <RSA private key of Server>
+ -----END RSA PRIVATE KEY-----
+ -----BEGIN CERTIFICATE-----
+ <Server certificate>
+ -----END CERTIFICATE-----
+ -----BEGIN CERTIFICATE-----
+ <Intermediate certificate #1 (if present)>
+ -----END CERTIFICATE-----
+ -----BEGIN CERTIFICATE-----
+ <Intermediate certificate #2 (if present)>
+ -----END CERTIFICATE-----
+ -----BEGIN CERTIFICATE-----
+ <Root signing certificate>
+ -----END CERTIFICATE-----
+----
+上传证书后，您应重新启动 Active IQ Unified Manager 实例，以使更改生效。
+
+
+
+== 上传外部生成的证书时检查
+
+系统会在上传使用外部工具生成的证书时执行检查。如果任何检查失败，则证书将被拒绝。此外，还会对产品中的 CSR 生成的证书以及使用外部工具生成的证书进行验证。
+
+* 输入中的私钥将根据输入中的主机证书进行验证。
+* 系统会根据主机的 FQDN 检查主机证书中的公用名（ Common Name ， CN ）。
+* 主机证书的公用名（ Common Name ， CN ）不应为空或空白，不应设置为 localhost 。
+* 有效开始日期不应是未来的，证书的有效到期日期不应是过去的。
+* 如果存在中间 CA 或 CA ，则证书的有效期开始日期不应是未来的，而有效期到期日期不应是过去的。
+
+
+[NOTE]
+====
+输入中的私钥不应加密。如果存在任何已加密的私钥，则系统会拒绝这些私钥。
+
+====
+示例 1
+
+[listing]
+----
+----BEGIN ENCRYPTED PRIVATE KEY-----
+<Encrypted private key>
+-----END ENCRYPTED PRIVATE KEY-----
+----
+示例 2.
+
+[listing]
+----
+-----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+<content here>
+-----END RSA PRIVATE KEY-----
+----
+示例 3
+
+[listing]
+----
+-----BEGIN EC PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+<content here>
+-----END EC PRIVATE KEY-----
+----

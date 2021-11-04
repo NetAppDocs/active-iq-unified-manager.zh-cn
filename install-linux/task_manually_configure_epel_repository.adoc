@@ -1,0 +1,34 @@
+---
+permalink: install-linux/task_manually_configure_epel_repository.html 
+sidebar: sidebar 
+keywords: manually, configure, epel repository 
+summary: 如果要安装 Unified Manager 的系统无法访问适用于 Enterprise Linux 的额外软件包（ EEL ）存储库，则必须手动下载并配置存储库才能成功安装。 
+---
+= 手动配置 EPEL 存储库
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果要安装 Unified Manager 的系统无法访问适用于 Enterprise Linux 的额外软件包（ EEL ）存储库，则必须手动下载并配置存储库才能成功安装。
+
+通过 EPEL 存储库，您可以访问必须安装在系统上的所需第三方实用程序。无论您是在 Red Hat 还是 CentOS 系统上安装 Unified Manager ，都可以使用 EPEL 存储库。
+
+.步骤
+. 下载适用于您的安装的 EPEL 存储库。对于 Red Hat Enterprise Linux 7 ，请从以下位置下载：
++
+` +wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm+`[]
+
++
+对于版本 8 ，请从以下位置下载：
+
++
+` +wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm+`[]
+
+. 配置 EPEL 存储库：
++
+`yum install epel-release-lates-<version>.noarch.rpm`
+
+
+
+对于 Red Hat Enterprise Linux 8 系统，如果您的内部存储库包含模块化 RPM 软件包，例如， ` _javapackages-filesystems-<version>.module.rpm_` ，请确保模块化软件包的元数据也可在同一存储库中使用。

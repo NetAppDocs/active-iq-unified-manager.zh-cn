@@ -1,0 +1,87 @@
+---
+permalink: health-checker/task_generate_and_upload_support_bundle.html 
+sidebar: sidebar 
+keywords: generate, upload, support bundle 
+summary: 您可以生成包含诊断信息的支持包，以便将其发送给技术支持以获取故障排除帮助。从 Unified Manager 9.8 开始，如果 Unified Manager 服务器已连接到 Internet ，您还可以从维护控制台将支持包上传到 NetApp 。 
+---
+= 生成并上传支持包
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以生成包含诊断信息的支持包，以便将其发送给技术支持以获取故障排除帮助。从 Unified Manager 9.8 开始，如果 Unified Manager 服务器已连接到 Internet ，您还可以从维护控制台将支持包上传到 NetApp 。
+
+* 您需要的内容 *
+
+您必须以维护用户身份访问维护控制台。
+
+由于某些类型的支持数据可能会占用大量集群资源或需要很长时间才能完成，因此，在选择完整支持包时，您可以指定要包含或排除的数据类型以减小支持包大小。您还可以选择创建一个轻型支持包，该包只包含 30 天的日志和配置数据库记录，它不包括性能数据，采集录制文件和服务器堆转储。
+
+Unified Manager 仅存储最近生成的两个支持包。旧的支持包将从系统中删除。
+
+.步骤
+. 在维护控制台 * 主菜单 * 中，选择 * 支持 / 诊断 * 。
+. 根据您希望在支持包中具有的详细信息级别，选择 * 生成轻型支持包 * 或 * 生成支持包 * 。
+. 如果选择完整的支持包，请选择或取消选择要在支持包中包含或排除的以下数据类型：
++
+** * 数据库转储 *
++
+MySQL Server 数据库的转储。
+
+** * 堆转储 *
++
+主要 Unified Manager 服务器进程状态的快照。默认情况下，此选项处于禁用状态，只有在客户支持请求时才应选择此选项。
+
+** * 采集记录 *
++
+记录 Unified Manager 与受监控集群之间的所有通信。
+
+
+
++
+[NOTE]
+====
+如果取消选择所有数据类型，则仍会使用其他 Unified Manager 数据生成支持包。
+
+====
+. 键入 `g` ，然后按 Enter 生成支持包。
++
+由于生成支持包是一项内存密集型操作，因此系统会提示您确认此时确实要生成支持包。
+
+. 键入 `y` ，然后按 Enter 生成支持包。
++
+如果此时不想生成支持包，请键入 `n` ，然后按 Enter 键。
+
+. 如果完整支持包中包含数据库转储文件，则系统会提示您指定希望包含性能统计信息的时间段。包括性能统计信息可能需要大量时间和空间，因此您也可以在不包含性能统计信息的情况下转储数据库：
++
+.. 以 YYMMDDD 格式输入开始日期。
++
+例如，对于 2021 年 1 月 1 日，输入 `20210101` 。如果不希望包括性能统计信息，请输入 `n` 。
+
+.. 输入要包括的统计信息天数，从上午 12 点开始指定的开始日期。
++
+您可以输入 1 到 10 之间的数字。
+
+
+
++
+如果要包括性能统计信息，则系统将显示收集性能统计信息的时间段。
+
+. 创建支持包后，系统会提示您是否要将其上传到 NetApp 。键入 `y` ，然后按 Enter 键。
++
+系统将提示您输入支持案例编号。
+
+. 如果您已有案例编号，请输入此编号并按 Enter 键。否则，只需按 Enter 即可。
++
+支持包将上传到 NetApp 。
+
+
+
+如果 Unified Manager 服务器未连接到 Internet ，或者由于任何其他原因无法上传支持包，则可以手动检索并发送。您可以使用 SFTP 客户端或 UNIX 或 Linux 命令行界面命令检索它。在 Windows 安装中，您可以使用远程桌面（ RDP ）检索支持包。
+
+生成的支持包位于 VMware 系统上的 /support 目录， Linux 系统上的 /opt/netapp/data/support/ 以及 Windows 系统上的 ProgramData\NetApp\OnCommandAppData\ocum\support 中。
+
+* 相关信息 *
+
+link:../config/reference_unified_manager_roles_and_capabilities.html["Unified Manager 用户角色和功能"]

@@ -1,0 +1,33 @@
+---
+permalink: health-checker/task_view_svm_list_and_details.html 
+sidebar: sidebar 
+keywords: view, storage vm list, details 
+summary: 在运行状况：所有 Storage VM 视图中，您可以监控 Storage Virtual Machine （ SVM ）的清单。您可以使用 Storage VM/ 运行状况详细信息页面查看有关受监控 SVM 的详细信息。 
+---
+= 查看 Storage VM 列表和详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在运行状况：所有 Storage VM 视图中，您可以监控 Storage Virtual Machine （ SVM ）的清单。您可以使用 Storage VM/ 运行状况详细信息页面查看有关受监控 SVM 的详细信息。
+
+* 您需要的内容 *
+
+您必须具有操作员，应用程序管理员或存储管理员角色。
+
+您可以查看 SVM 详细信息，例如 SVM 的容量，效率和配置。您还可以查看有关此 SVM 的相关设备和相关警报的信息。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 存储 VM* 。
+. 选择以下方法之一以查看 SVM 详细信息：
++
+** 要查看有关所有集群中所有 SVM 的运行状况信息，请在 " 视图 " 菜单中选择运行状况：所有 Storage VM 视图。
+** 要查看完整的详细信息，请单击 Storage VM 名称。
++
+您也可以单击最小详细信息对话框中的 * 查看详细信息 * 来查看完整的详细信息。
+
+
+
+. 单击最小详细信息对话框中的 * 查看相关 * ，查看与 SVM 相关的对象。
+

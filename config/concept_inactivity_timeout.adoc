@@ -1,0 +1,21 @@
+---
+permalink: config/concept_inactivity_timeout.html 
+sidebar: sidebar 
+keywords: inactivity timeout, feature settings 
+summary: 您可以为 Active IQ Unified Manager 指定非活动超时值。在指定时间处于非活动状态后，应用程序将自动注销。默认情况下，此选项处于启用状态。 
+---
+= 指定非活动超时
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以为 Active IQ Unified Manager 指定非活动超时值。在指定时间处于非活动状态后，应用程序将自动注销。默认情况下，此选项处于启用状态。
+
+您可以停用此功能或从 * 常规 * > * 功能设置 * > * 非活动超时 * 中修改时间。激活此功能后，您应在 * 注销时间 * 字段中指定非活动的时间限制（以分钟为单位），超过此时间限制后，系统将自动注销。默认值为 4320 分钟（ 72 小时）。
+
+[NOTE]
+====
+如果已启用安全断言标记语言（ SAML ）身份验证，则此选项不可用。
+
+====

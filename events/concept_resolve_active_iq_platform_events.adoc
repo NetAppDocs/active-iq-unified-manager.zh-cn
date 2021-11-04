@@ -1,0 +1,21 @@
+---
+permalink: events/concept_resolve_active_iq_platform_events.html 
+sidebar: sidebar 
+keywords: active iq, resolve, events 
+summary: Active IQ 平台意外事件和风险与其他 Unified Manager 事件类似，因为它们可以分配给其他用户进行解决，并且具有相同的可用状态。但是，在使用修复按钮解决这些类型的事件时，您可以在几小时内验证解决方法。 
+---
+= 解决 Active IQ 平台事件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ 平台意外事件和风险与其他 Unified Manager 事件类似，因为它们可以分配给其他用户进行解决，并且具有相同的可用状态。但是，使用 * 修复它 * 按钮解决这些类型的事件时，您可以在数小时内验证解决方法。
+
+下图显示了在解决从 Active IQ 平台生成的事件时必须执行的操作（绿色）以及 Unified Manager 执行的操作（黑色）。
+
+image::../media/aiq_and_um_event_resolution.png[AIQ 和 UM 事件解决方案]
+
+在执行手动解决方案时，您必须登录到 System Manager 或 ONTAP 命令行界面以修复问题描述。只有在集群在午夜生成新的 AutoSupport 消息后，您才能验证问题描述。
+
+使用 * 修复它 * 按钮执行半自动解决方案时，您可以在数小时内验证修复是否成功。

@@ -1,0 +1,85 @@
+---
+permalink: api-automation/concept_administration_apis.html 
+sidebar: sidebar 
+keywords: perform, administrative, tasks 
+summary: 您可以使用管理类别下的 API 修改备份设置，验证备份文件信息和集群证书，以及将 ONTAP 集群作为 Active IQ Unified Manager 数据源进行管理。 
+---
+= 执行管理任务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `administration` 类别下的 API 修改备份设置，验证备份文件信息和集群证书，以及将 ONTAP 集群作为 Active IQ Unified Manager 数据源进行管理。
+
+[NOTE]
+====
+要运行这些操作，您必须具有应用程序管理员角色。您也可以使用 Unified Manager Web UI 配置这些设置。
+
+====
+[cols="3*"]
+|===
+| HTTP 动词 | 路径 | Description 
+
+
+ a| 
+`获取`
+
+`修补程序`
+ a| 
+` /admin/backup-settings`
+
+` /admin/backup-settings`
+ a| 
+您可以使用 `get` 方法查看 Unified Manager 中默认配置的备份计划的设置。您可以验证以下内容：
+
+* 计划是启用还是禁用
+* 计划的备份频率（每日或每周）
+* 备份时间
+* 应在应用程序中保留的最大备份文件数
+
+
+备份时间位于服务器时区。
+
+默认情况下， Unified Manager 上提供了数据库备份设置，您无法创建备份计划。但是，您可以使用 `patch` 方法修改默认设置。
+
+
+
+ a| 
+`获取`
+ a| 
+` /admin/backup-file-info`
+ a| 
+每次修改 Unified Manager 的备份计划时都会生成备份转储文件。您可以使用此方法验证是否根据修改后的备份设置生成备份文件，以及文件上的信息是否与修改后的设置匹配。
+
+
+
+ a| 
+`获取`
+ a| 
+` /admin/datasource-certificate`
+ a| 
+您可以使用此方法查看信任存储中的数据源（集群）证书。在将 ONTAP 集群添加为 Unified Manager 数据源之前，需要验证证书。
+
+
+
+ a| 
+`获取`
+
+`发布`
+
+`修补程序`
+
+`d删除`
+ a| 
+` 管理 / 数据源 / 集群`
+
+` /admin/datasources/clusers/\ ｛ key ｝`
+ a| 
+您可以使用 `get` 方法检索 Unified Manager 管理的数据源（ ONTAP 集群）的详细信息。
+
+您还可以将新集群作为数据源添加到 Unified Manager 中。要添加集群，您必须知道其主机名，用户名和密码。
+
+要修改和删除由 Unified Manager 作为数据源管理的集群，请使用 ONTAP 集群密钥。
+
+|===

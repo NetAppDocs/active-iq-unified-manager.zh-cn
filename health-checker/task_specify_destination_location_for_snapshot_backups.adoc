@@ -1,0 +1,43 @@
+---
+permalink: health-checker/task_specify_destination_location_for_snapshot_backups.html 
+sidebar: sidebar 
+keywords: specify, destination location, snapshot backups 
+summary: 您可以在已在其中一个 ONTAP 集群中配置的卷上配置 Active IQ Unified Manager Snapshot 备份的目标位置。您可以从 Active IQ Unified Manager 维护控制台定义位置。 
+---
+= 指定 Snapshot 备份的目标位置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在已在其中一个 ONTAP 集群中配置的卷上配置 Active IQ Unified Manager Snapshot 备份的目标位置。您可以从 Active IQ Unified Manager 维护控制台定义位置。
+
+* 您必须具有安装 Active IQ Unified Manager 的 Linux 主机的 root 用户凭据。
+* 您必须拥有有权登录到 Unified Manager 服务器维护控制台的用户 ID 和密码。
+* 您必须具有集群管理 IP 地址， Storage VM 的名称，卷的名称以及存储系统用户名和密码。
+* 您必须已将卷挂载到 Active IQ Unified Manager 主机，并且必须具有挂载路径。
+
+
+.步骤
+. 使用安全 Shell 连接到 Active IQ Unified Manager 系统的 IP 地址或 FQDN 。
+. 使用维护用户（ umadmin ）名称和密码登录到系统。
+. 输入命令 `mainstion_console` 并按 Enter 键。
+. 在维护控制台 * 主菜单 * 中，输入 * 备份还原 * 选项的编号。
+. 输入 * 配置 NetApp Snapshot 备份 * 的编号。
+. 输入数字以配置 NFS 。
+. 查看需要提供的信息，然后为 * 输入备份配置详细信息 * 输入数字。
+. 要确定要写入 Snapshot 的卷，请输入集群管理界面的 IP 地址， Storage VM 的名称，卷的名称， LUN 名称，存储系统用户名和密码以及挂载路径。
+. 验证此信息并输入 `y` 。
++
+系统将执行以下任务：
+
++
+** 建立与集群的连接
+** 停止所有服务
+** 在卷中创建一个新目录并复制 Active IQ Unified Manager 数据库配置文件
+** 从 Active IQ Unified Manager 中删除文件并创建指向新数据库目录的符号链接
+** 重新启动所有服务
+
+
+. 如果尚未创建 Snapshot 备份计划，请退出维护控制台并启动 Active IQ Unified Manager 界面以创建此计划。
+

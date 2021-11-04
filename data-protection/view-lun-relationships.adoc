@@ -1,0 +1,37 @@
+---
+permalink: data-protection/view-lun-relationships.html 
+sidebar: sidebar 
+keywords: LUN, SM-BC, SnapMirror Business Continuity, Consistency Group, CG 
+summary: 受 SM-BC 保护的 LUN 的统一视图。 
+---
+= 监控一致性组关系中的 LUN
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的 ONTAP 环境支持 SnapMirror 业务连续性（ SM-BC ）来保护具有 LUN 的应用程序，则可以在 Active IQ Unified Manager 上查看和监控这些 LUN 。
+
+SM-BC 可确保在 SAN 环境中进行故障转移期间实现零恢复时间目标（ RTO ）。在支持 SM-BC 的典型部署中，卷上的 LUN 受一致性组关系的保护。
+
+这些主 LUN 和二级 LUN 是复合 LUN ，或者具有相同 UUID 和序列号的副本 LUN 对。I/O 操作（读取和写入）会在这些复合 LUN 上的源站点和目标站点之间进行多路传输，以确保透明性。
+
+要查看复合 LUN ，应在 Unified Manager 上添加和发现包含属于一致性组关系的 LUN 的主集群和二级集群。仅支持 iSCSI 和 FCP LUN 。
+
+有关 SM-BC 的信息，请参见 link:https://docs.netapp.com/us-en/ontap/smbc/smbc_intro_overview.html["SnapMirror 业务连续性解决方案的文档"]。
+
+要查看环境中的复合 LUN ，请执行以下步骤：
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * LUN * 。
+. 从视图菜单中，选择 * 关系 * > * 所有 LUN* 。
++
+此时将显示 Relationship ： All LUNs 视图。
+
+
+
+您可以查看 LUN 详细信息，例如 LUN 名称，卷，托管 LUN 的 Storage VM ，集群，一致性组和配对 LUN 。您可以单击其中每个组件以深入查看详细视图。单击一致性组将转到 " 关系 " 页面。
+
+单击配对 LUN 可以在托管配对 LUN 的 Storage VM 的 Storage VM 详细信息页面的 SAN 选项卡上查看其配置详细信息。此时将显示启动程序和启动程序组等信息以及配对 LUN 的其他方面。
+
+您可以执行标准网格级功能，对环境中受保护的 LUN 进行排序，筛选，生成和上传报告。

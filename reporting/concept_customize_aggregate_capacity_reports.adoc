@@ -1,0 +1,15 @@
+---
+permalink: reporting/concept_customize_aggregate_capacity_reports.html 
+sidebar: sidebar 
+keywords: customize, aggregate, capacity, reports 
+summary: 这些示例自定义报告用于帮助您确定与聚合存储容量相关的潜在问题并做出响应。 
+---
+= 自定义聚合容量报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+这些示例自定义报告用于帮助您确定与聚合存储容量相关的潜在问题并做出响应。
+
+本节中的报告只是一些示例，可帮助您了解如何创建有关聚合容量的报告以帮助您监控存储系统资源。

@@ -1,0 +1,48 @@
+---
+permalink: health-checker/task_specify_destination_location_for_windows_snapshot_backups.html 
+sidebar: sidebar 
+keywords: specify, destination location, windows, snapshot, backups 
+summary: 您应在已在其中一个 ONTAP 集群中配置的卷上配置 Active IQ Unified Manager Snapshot 备份的目标位置，并使用维护控制台定义该位置。 
+---
+= 指定 Windows Snapshot 备份的目标位置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您应在已在其中一个 ONTAP 集群中配置的卷上配置 Active IQ Unified Manager Snapshot 备份的目标位置，并使用维护控制台定义该位置。
+
+* 您必须具有安装 Active IQ Unified Manager 的 Windows 主机的管理员权限。
+* 您必须拥有有权登录到 Unified Manager 服务器维护控制台的用户 ID 和密码。
+* 您必须具有集群管理 IP 地址， Storage VM 的名称，卷的名称， LUN 名称以及存储系统用户名和密码。
+* 您必须已将卷作为网络驱动器挂载到 Active IQ Unified Manager 主机，并且必须具有挂载驱动器。
+
+
+.步骤
+. 使用 Power Shell 连接到 Active IQ Unified Manager 系统的 IP 地址或完全限定域名。
+. 使用维护用户（ umadmin ）名称和密码登录到系统。
+. 输入命令 `mainstion_console` 并按 Enter 键。
+. 在维护控制台 * 主菜单 * 中，输入 * 备份还原 * 选项的编号。
+. 输入 * 配置 NetApp Snapshot 备份 * 的编号。
+. 输入数字以配置 iSCSI 。
+. 查看需要提供的信息，然后为 * 输入备份配置详细信息 * 输入数字。
+. 要确定要写入 Snapshot 的卷，请输入集群管理界面的 IP 地址， Storage VM 的名称，卷的名称， LUN 名称，存储系统用户名和密码以及挂载驱动器。
+. 验证此信息并输入 `y` 。
++
+系统将执行以下任务：
+
++
+** 已验证 Storage VM
+** 已验证卷
+** 已验证挂载驱动器和状态
+** LUN 存在和状态
+** 网络驱动器存在
+** 验证已挂载卷上是否存在建议空间（ mysql 数据目录的两倍以上）
+** 与卷中的专用 LUN 对应的 LUN 路径
+** igroup 名称
+** 挂载网络驱动器的卷的 GUID
+** 用于与 ONTAP 通信的 iSCSI 启动程序
+
+
+. 如果尚未创建 Snapshot 备份计划，请退出维护控制台并启动 Active IQ Unified Manager 界面以创建此计划。
+

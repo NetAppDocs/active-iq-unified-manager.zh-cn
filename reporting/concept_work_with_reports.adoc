@@ -1,0 +1,13 @@
+---
+permalink: reporting/concept_work_with_reports.html 
+sidebar: sidebar 
+keywords: work, reports 
+summary: 了解如何在可共享的计划报告中查找和自定义清单页面视图。 
+---
+= 使用报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解如何在可共享的计划报告中查找和自定义清单页面视图。

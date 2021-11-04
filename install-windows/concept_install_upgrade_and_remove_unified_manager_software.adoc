@@ -1,0 +1,13 @@
+---
+permalink: install-windows/concept_install_upgrade_and_remove_unified_manager_software.html 
+sidebar: sidebar 
+keywords: install, upgrade, remove, unified manager, software 
+summary: 您可以安装 Unified Manager 软件，升级到更高版本的软件或删除 Unified Manager 应用程序。 
+---
+= 安装，升级和删除 Unified Manager 软件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以安装 Unified Manager 软件，升级到更高版本的软件或删除 Unified Manager 应用程序。

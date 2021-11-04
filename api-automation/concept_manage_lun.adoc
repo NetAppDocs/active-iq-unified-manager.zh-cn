@@ -1,0 +1,110 @@
+---
+permalink: api-automation/concept_manage_lun.html 
+sidebar: sidebar 
+keywords: manage, lun 
+summary: 您可以使用 /storage-provider/lun API 查看，添加，修改和删除数据中心环境中的 LUN 。 
+---
+= 管理 LUN
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 ` /storage-provider/lun` API 查看，添加，修改和删除数据中心环境中的 LUN 。
+
+在配置 LUN 之前，请确保已创建 SVM 并使用支持的协议进行配置。如果要在配置期间分配性能服务级别（ PSL ）或存储效率策略（ Storage Efficiency Policy ， SEP ），则应在创建 LUN 之前创建 PSL 或 SEP 。
+
+
+
+== 查看 LUN
+
+您可以使用以下方法查看 Unified Manager 环境中的 LUN 。将 ONTAP 集群添加为 Active IQ Unified Manager 上的数据源后，这些集群的存储工作负载将自动添加到 Unified Manager 实例中。此 API 会自动检索手动添加到 Unified Manager 实例中的所有 LUN 。您可以通过使用 LUN 密钥运行此 API 来查看特定 LUN 的详细信息。
+
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` 存储提供程序 /LUN`
+
+` /storage-provider/LUNs/\ ｛ key ｝`
+
+|===
+
+
+== 添加 LUN
+
+您可以使用以下方法向 SVM 添加 LUN 。
+
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+发布
+ a| 
+` 存储提供程序 /LUN`
+
+|===
+[NOTE]
+====
+在 curl 请求中，如果您在输入中为可选参数 volume_name_tag 提供了一个值，则在创建 LUN 期间为卷命名时将使用该值。使用此标记可以轻松搜索卷。如果在请求中提供了卷密钥，则会跳过标记。
+
+====
+
+
+== 删除 LUN
+
+您可以使用以下方法删除特定 LUN 。要删除特定 LUN ，您需要提供 LUN 密钥。
+
+[NOTE]
+====
+如果您在 ONTAP 中创建了一个卷，然后通过 Unified Manager 在该卷上配置了 LUN ，则在使用此 API 删除所有 LUN 时，该卷也会从 ONTAP 集群中删除。
+
+====
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+删除
+ a| 
+` /storage-provider/LUNs/\ ｛ key ｝`
+
+|===
+
+
+== 修改 LUNs
+
+您可以使用以下方法修改 LUN 并更新其属性。要修改特定 LUN ，您需要提供 LUN 密钥。您还需要输入要更新的 LUN 属性及其值。要使用此 API 更新 LUN 阵列，您应查看 "`APIs for Using the API` " 中的建议。
+
+[NOTE]
+====
+一次调用此 API 时只能更新一个属性。对于多个更新，您需要多次运行此 API 。
+
+====
+|===
+
+
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+patch
+ a| 
+` /storage-provider/LUNs/\ ｛ key ｝`
+
+|===

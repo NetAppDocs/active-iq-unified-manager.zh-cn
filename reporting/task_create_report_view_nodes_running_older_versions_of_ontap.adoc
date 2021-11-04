@@ -1,0 +1,36 @@
+---
+permalink: reporting/task_create_report_view_nodes_running_older_versions_of_ontap.html 
+sidebar: sidebar 
+keywords: create, report, view, nodes, running, older versions, ONTAP 
+summary: 您可以创建一个报告来显示所有集群节点上安装的 ONTAP 软件版本，以便查看应升级哪些节点。 
+---
+= 创建报告以查看运行旧版 ONTAP 的节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建一个报告来显示所有集群节点上安装的 ONTAP 软件版本，以便查看应升级哪些节点。
+
+* 您需要的内容 *
+
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+按照以下步骤创建一个自定义视图，以显示运行旧版本 ONTAP 的节点，然后计划为此视图生成报告。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 节点 * 。
+. 选择 * 显示 / 隐藏 * 可删除报告中不需要的任何列。
+. 将 "`OS Version` " 列拖动到 "`Node` " 列附近。
+. 单击 "`操作系统版本` " 列顶部，按最旧版本的 ONTAP 对结果进行排序。
+. 使用反映视图显示内容的特定名称保存此视图，例如 "`Nodes by ONTAP version` " 。
+. 单击清单页面上的 * 已计划报告 * 按钮。
+. 单击 * 添加计划 * 向报告计划页面添加新行，以便为新报告定义计划特征。
+. 输入报告计划的名称并填写其他报告字段，然后单击复选标记（image:../media/blue_check.gif[""]）。
++
+报告将立即作为测试发送。之后，报告将生成，并以指定频率通过电子邮件发送给列出的收件人。
+
+
+
+根据报告中显示的结果，您可能需要升级运行旧版 ONTAP 的节点。

@@ -1,0 +1,51 @@
+---
+permalink: reporting/task_search_for_scheduled_report.html 
+sidebar: sidebar 
+keywords: search, schedule, report 
+summary: 您可以按名称，视图名称，对象类型或收件人搜索计划的报告。 
+---
+= 正在搜索已计划的报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以按名称，视图名称，对象类型或收件人搜索计划的报告。
+
+. 在左侧导航窗格中，单击 * 存储管理 * > * 报告计划 * 。
+. 使用 * 搜索计划报告 * 文本字段。
++
+[cols="2*"]
+|===
+| 查找报告依据 ... | 试用 
+
+
+ a| 
+Schedule name
+ a| 
+键入报告计划名称的一部分。
+
+
+
+ a| 
+视图名称
+ a| 
+键入报告视图名称的一部分。默认视图和自定义视图显示在视图列表中。
+
+
+
+ a| 
+收件人
+ a| 
+键入电子邮件地址的一部分。
+
+
+
+ a| 
+文件类型
+ a| 
+键入 "PDF" ， "CSV" 或 "XLSX" 。
+
+|===
+. 您可以单击列标题，按该列按升序或降序对报告进行排序，例如计划名称或格式。
+

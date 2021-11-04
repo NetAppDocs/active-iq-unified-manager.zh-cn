@@ -1,0 +1,53 @@
+---
+permalink: api-automation/concept_security_apis.html 
+sidebar: sidebar 
+keywords: manage, user 
+summary: 您可以使用安全类别中的 API 控制用户对 Active IQ Unified Manager 中选定集群对象的访问。您可以添加本地用户或数据库用户。您还可以添加属于身份验证服务器的远程用户或组。根据分配给用户的角色的权限，用户可以在 Unified Manager 中管理存储对象或查看数据。 
+---
+= 管理用户
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `sSecurity` 类别中的 API 控制用户对 Active IQ Unified Manager 中选定集群对象的访问。您可以添加本地用户或数据库用户。您还可以添加属于身份验证服务器的远程用户或组。根据分配给用户的角色的权限，用户可以在 Unified Manager 中管理存储对象或查看数据。
+
+[NOTE]
+====
+要运行这些操作，您必须具有应用程序管理员角色。您也可以使用 Unified Manager Web UI 配置这些设置。
+
+====
+`sSecurity` 类别下的 API 使用 users 参数（即用户名），而不是 key 参数作为用户实体的唯一标识符。
+
+[cols="3*"]
+|===
+| HTTP 动词 | 路径 | Description 
+
+
+ a| 
+`获取`
+
+`发布`
+ a| 
+` 安全性 / 用户`
+
+` 安全性 / 用户`
+ a| 
+您可以使用这些方法获取用户详细信息或向 Unified Manager 添加新用户。
+
+您可以根据用户类型向用户添加特定角色。添加用户时，必须为本地用户，维护用户和数据库用户提供密码。
+
+
+
+ a| 
+`获取`
+
+`修补程序`
+
+`d删除`
+ a| 
+` 安全性 / 用户 /\ ｛ name ｝`
+ a| 
+使用 GET 方法可以检索用户的所有详细信息，例如名称，电子邮件地址，角色，授权类型。使用修补方法可以更新详细信息。使用删除方法可以删除此用户。
+
+|===

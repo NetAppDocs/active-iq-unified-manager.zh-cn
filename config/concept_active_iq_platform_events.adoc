@@ -1,0 +1,19 @@
+---
+permalink: config/concept_active_iq_platform_events.html 
+sidebar: sidebar 
+keywords: feature settings, active iq, portal, events 
+summary: 您可以指定是要启用还是禁用 Active IQ 门户事件。此设置允许 Active IQ 门户发现和显示有关系统配置，布线等的其他事件。默认情况下，此选项处于启用状态。 
+---
+= 启用 Active IQ 门户事件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以指定是要启用还是禁用 Active IQ 门户事件。此设置允许 Active IQ 门户发现和显示有关系统配置，布线等的其他事件。默认情况下，此选项处于启用状态。
+
+启用此功能后， Active IQ Unified Manager 将显示 Active IQ 门户发现的事件。这些事件是通过对从所有受监控存储系统生成的 AutoSupport 消息运行一组规则来创建的。这些事件与其他 Unified Manager 事件不同，它们可识别与系统配置，布线，最佳实践和可用性问题相关的意外事件或风险。
+
+您可以从 * 常规 * > * 功能设置 * > * Active IQ 门户事件 * 中选择激活或停用此功能。在无法访问外部网络的站点中，您必须从 * 存储管理 * > * 事件设置 * > * 上传规则 * 手动上传规则。
+
+默认情况下，此功能处于启用状态。禁用此功能将停止在 Unified Manager 上发现或显示 Active IQ 事件。如果禁用此功能，则 Unified Manager 可以在预定义的时间 00 ： 15 接收集群上该集群时区的 Active IQ 事件。

@@ -1,0 +1,43 @@
+---
+permalink: reporting/task_delete_scheduled_reports.html 
+sidebar: sidebar 
+keywords: delete, reports 
+summary: 计划报告后，您可以从报告计划页面中将其删除。 
+---
+= 删除已计划的报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+计划报告后，您可以从报告计划页面中将其删除。
+
+* 您需要的内容 *
+
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储管理 * > * 报告计划 * 。
++
+image::../media/scheduled_reports_2.gif[已计划报告 2.]
+
++
+[NOTE]
+====
+如果您拥有相应的权限，则可以删除系统中的任何报告及其计划。
+
+====
+. 单击更多图标 image:../media/more_icon.gif[""] 要删除的计划。
+. 单击 * 删除 * 。
+. 确认您的决定。
++
+已计划的报告将从列表中删除，并且将不再按设置的计划生成和分发。
+
++
+[NOTE]
+====
+如果从清单页面中删除自定义视图，则使用该视图的任何自定义 Excel 文件或计划报告也会被删除。
+
+====
+

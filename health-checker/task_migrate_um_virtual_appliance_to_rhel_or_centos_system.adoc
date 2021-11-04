@@ -1,0 +1,67 @@
+---
+permalink: health-checker/task_migrate_um_virtual_appliance_to_rhel_or_centos_system.html 
+sidebar: sidebar 
+keywords: unified manager, migrate, virtual, appliance, linux system 
+summary: 如果要更改运行 Unified Manager 的主机操作系统，您可以将 Unified Manager MySQL 数据库转储备份从虚拟设备还原到 Red Hat Enterprise Linux 或 CentOS Linux 系统。 
+---
+= 将 Unified Manager 虚拟设备迁移到 Linux 系统
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果要更改运行 Unified Manager 的主机操作系统，您可以将 Unified Manager MySQL 数据库转储备份从虚拟设备还原到 Red Hat Enterprise Linux 或 CentOS Linux 系统。
+
+* 您需要的内容 *
+
+* 在虚拟设备上：
++
+** 您必须具有操作员，应用程序管理员或存储管理员角色。
+** 您必须知道要执行还原操作的 Unified Manager 维护用户的名称。
+
+
+* 在 Linux 系统上：
++
+** 您必须已按照安装指南中的说明在 RHEL 或 CentOS 服务器上安装 Unified Manager 。
+** 此服务器上的 Unified Manager 版本必须与使用备份文件的虚拟设备上的版本相同。
+** 安装后，请勿启动 UI 或在 Linux 系统上配置任何集群，用户或身份验证设置。备份文件会在还原过程中填充此信息。
+** 您必须具有 Linux 主机的 root 用户凭据。
+
+
+
+
+以下步骤介绍如何在虚拟设备上创建备份文件，将备份文件复制到 Red Hat Enterprise Linux 或 CentOS 系统，然后将数据库备份还原到新系统。
+
+.步骤
+. 在虚拟设备上，单击 * 管理 * > * 数据库备份 * 。
+. 在 * 数据库备份 * 页面中，单击 * 备份设置 * 。
+. 将备份路径更改为 /jail/support 。
+. 在计划部分中，选择 * 计划每日 * ，并输入当前时间过几分钟的时间，以便很快创建备份。
+. 单击 * 应用 * 。
+. 等待几小时，以便生成备份。
++
+完整备份可能超过 1 GB ，并且可能需要三到四个小时才能完成。
+
+. 以 root 用户身份登录到安装了 Unified Manager 的 Linux 主机，并使用 SCP 从虚拟设备上的 /support 复制备份文件。`root@ <rhel_server> ： /# scp -r admin@ <vApp_server_ip_address> ： /support/* 。`
++
+`root@ocum_rhel-21 ： /# scp -r admin@10.10.10.10 ： /support/* 。`
+
++
+确保已复制 .7z 备份文件以及 /database-dump -repo 子目录中的所有 .7z 存储库文件。
+
+. 在命令提示符处，还原备份： `um backup restore -f /<backup_file_path>/<backup_file_name>`
++
+`um backup restore -f /um_9.7.N151113.1348_backup_unix_02-12-2019-04-16.7z`
+
+. 还原操作完成后，登录到 Unified Manager Web UI 。
+
+
+您应执行以下任务：
+
+* 生成新的 HTTPS 安全证书并重新启动 Unified Manager 服务器。
+* 将备份路径更改为 Linux 系统的默认设置（ /data/ocum-backup ），或者更改为您选择的新路径，因为 Linux 系统上没有 /jail/support 路径。
+* 如果正在使用 WFA ，请重新配置 Workflow Automation 连接的两端。
+* 如果使用的是 SAML ，请重新配置 SAML 身份验证设置。
+
+
+确认 Linux 系统上的所有内容均按预期运行后，您可以关闭并删除 Unified Manager 虚拟设备。

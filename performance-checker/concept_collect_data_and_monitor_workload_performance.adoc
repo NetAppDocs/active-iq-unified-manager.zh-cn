@@ -1,0 +1,23 @@
+---
+permalink: performance-checker/concept_collect_data_and_monitor_workload_performance.html 
+sidebar: sidebar 
+keywords: collect, data, monitor, workload, performance 
+summary: Unified Manager 每 5 分钟收集并分析一次工作负载活动，以确定性能事件，并每 15 分钟检测一次配置更改。它最多保留 30 天的 5 分钟历史性能和事件数据，并使用这些数据预测所有受监控工作负载的预期延迟范围。 
+---
+= 收集数据并监控工作负载性能
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 每 5 分钟收集并分析一次工作负载活动，以确定性能事件，并每 15 分钟检测一次配置更改。它最多保留 30 天的 5 分钟历史性能和事件数据，并使用这些数据预测所有受监控工作负载的预期延迟范围。
+
+Unified Manager 必须至少收集 3 天的工作负载活动，然后才能开始分析，并在 " 工作负载分析 " 页面和 " 事件详细信息 " 页面上显示 I/O 响应时间的延迟预测。在收集此活动时，延迟预测不会显示工作负载活动发生的所有更改。收集 3 天的活动后， Unified Manager 将每 24 小时在每天中午 12 ： 00 调整一次延迟预测，以反映工作负载活动的变化并建立更准确的动态性能阈值。
+
+在 Unified Manager 监控工作负载的前 4 天内，如果自上次数据收集以来已超过 24 小时，则延迟图表将不会显示该工作负载的延迟预测。上次收集之前检测到的事件仍然可用。
+
+[NOTE]
+====
+夏令时（ DST ）会更改系统时间，从而更改受监控工作负载的性能统计信息的延迟预测。Unified Manager 会立即开始更正延迟预测，大约需要 15 天才能完成。在此期间，您可以继续使用 Unified Manager ，但由于 Unified Manager 使用延迟预测来检测动态事件，因此某些事件可能不准确。更改时间之前检测到的事件不受影响。
+
+====

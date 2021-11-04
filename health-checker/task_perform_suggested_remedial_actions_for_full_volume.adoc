@@ -1,0 +1,44 @@
+---
+permalink: health-checker/task_perform_suggested_remedial_actions_for_full_volume.html 
+sidebar: sidebar 
+keywords: perform, suggested, remedial actions, volume 
+summary: '收到 "Volume Space Full （卷空间已满） " 错误事件后，您可以在 "Event Details" 页面上查看建议的补救措施，并决定执行建议的操作之一。' 
+---
+= 对已满的卷执行建议的补救措施
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+收到 "`Volume Space Full` " 错误事件后，您可以在 "Event Details" 页面上查看建议的补救措施，并决定执行建议的操作之一。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+具有任何角色的用户均可执行此工作流中使用 Unified Manager 的所有任务。
+
+在此示例中，您在 Unified ManagerEvent Management 清单页面上看到卷空间已满错误事件，并单击事件名称。
+
+对于已满的卷，您可能会执行以下补救措施：
+
+* 在卷上启用自动增长，重复数据删除或数据压缩
+* 调整卷大小或移动卷
+* 从卷中删除或移动数据
+
+
+虽然所有这些操作都必须从 ONTAP 系统管理器或 ONTAP 命令行界面执行，但您可以使用 Unified Manager 查找确定要执行的操作可能需要的信息。
+
+.步骤
+. 在 * 事件 * 详细信息页面中，单击源字段中的卷名称可查看有关受影响卷的详细信息。
+. 在 * 卷 / 运行状况 * 详细信息页面上，单击 * 配置 * ，发现卷上已启用重复数据删除和数据压缩。
++
+您决定调整卷大小。
+
+. 在 * 相关设备 * 窗格中，单击托管聚合的名称以查看该聚合是否可容纳更大的卷。
+. 在 * 聚合 / 运行状况 * 详细信息页面上，您会看到托管完整卷的聚合确实具有足够的未提交容量，因此您可以使用 ONTAP 系统管理器调整卷大小，从而为其提供更多容量。
+
+
+* 相关信息 *
+
+link:../events/reference_event_details_page.html["事件详细信息页面"]

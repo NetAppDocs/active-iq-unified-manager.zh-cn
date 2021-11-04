@@ -1,0 +1,13 @@
+---
+permalink: reporting/concept_customize_nfs_share_reports.html 
+sidebar: sidebar 
+keywords: customize, nfs, share, reports 
+summary: 您可以自定义 NFS 共享报告以分析有关存储系统上卷的 NFS 导出策略和规则的信息。例如，您可以自定义报告以显示挂载路径不可访问的卷以及具有默认导出策略的卷。 
+---
+= 自定义 NFS 共享报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义 NFS 共享报告以分析有关存储系统上卷的 NFS 导出策略和规则的信息。例如，您可以自定义报告以显示挂载路径不可访问的卷以及具有默认导出策略的卷。

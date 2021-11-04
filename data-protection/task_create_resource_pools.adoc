@@ -1,0 +1,24 @@
+---
+permalink: data-protection/task_create_resource_pools.html 
+sidebar: sidebar 
+keywords: creating, resource, pools 
+summary: 您可以使用创建资源池对话框对聚合进行分组，以便进行配置。 
+---
+= 正在创建资源池
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用创建资源池对话框对聚合进行分组，以便进行配置。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+资源池可以包含来自不同集群的聚合，但同一聚合不能属于不同的资源池。
+
+. 在左侧导航窗格中，单击 * 保护 * > * 资源池 * 。
+. 在 * 资源池页面 * 中，单击 * 创建 * 。
+. 按照 * 创建资源池 * 对话框中的说明提供名称和问题描述，并将聚合作为成员添加到要创建的资源池中。
+

@@ -1,0 +1,72 @@
+---
+permalink: health-checker/task_add_scripts.html 
+sidebar: sidebar 
+keywords: add, scripts 
+summary: 您可以在 Unified Manager 中添加脚本，并将这些脚本与警报关联。生成警报时，系统会自动执行这些脚本，您可以通过这些脚本获取有关生成事件的存储对象的信息。 
+---
+= 正在添加脚本
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Unified Manager 中添加脚本，并将这些脚本与警报关联。生成警报时，系统会自动执行这些脚本，您可以通过这些脚本获取有关生成事件的存储对象的信息。
+
+* 您需要的内容 *
+
+* 您必须已创建并保存要添加到 Unified Manager 服务器的脚本。
+* 脚本支持的文件格式为 Perl ， Shell ， PowerShell ， Python 和 ` .bat` 文件。
++
+[cols="2*"]
+|===
+| 安装 Unified Manager 的平台 | 支持的语言 
+
+
+ a| 
+VMware
+ a| 
+Perl 和 Shell 脚本
+
+
+
+ a| 
+Linux
+ a| 
+Perl ， Python 和 Shell 脚本
+
+
+
+ a| 
+Windows
+ a| 
+PowerShell ， Perl ， Python 和 .bat 脚本
+
+|===
++
+** 对于 Perl 脚本，必须在 Unified Manager 服务器上安装 Perl 。对于 VMware 安装，默认情况下会安装 Perl 5 ，并且脚本仅支持 Perl 5 支持的功能。如果 Perl 是在 Unified Manager 之后安装的，则必须重新启动 Unified Manager 服务器。
+** 对于 PowerShell 脚本，必须在 Windows 服务器上设置相应的 PowerShell 执行策略，以便可以执行这些脚本。
+
+
++
+[NOTE]
+====
+如果脚本创建日志文件以跟踪警报脚本进度，则必须确保日志文件不会在 Unified Manager 安装文件夹中的任何位置创建。
+
+====
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+您可以上传自定义脚本并收集有关警报的事件详细信息。
+
+[NOTE]
+====
+如果您在用户界面中看不到此功能，则是因为管理员已禁用此功能。如果需要，可以从 * 存储管理 * > * 功能设置 * 启用此功能。
+
+====
+.步骤
+. 在左侧导航窗格中，单击 * 存储管理 * > * 脚本 * 。
+. 在 * 脚本 * 页面中，单击 * 添加 * 。
+. 在 * 添加脚本 * 对话框中，单击 * 浏览 * 以选择脚本文件。
+. 输入所选脚本的问题描述。
+. 单击 * 添加 * 。
+

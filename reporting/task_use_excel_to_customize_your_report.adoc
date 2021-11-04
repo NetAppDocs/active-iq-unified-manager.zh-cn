@@ -1,0 +1,54 @@
+---
+permalink: reporting/task_use_excel_to_customize_your_report.html 
+sidebar: sidebar 
+keywords: excel, customize, report 
+summary: 保存此视图后，您可以使用 Excel 工作簿格式（ .xlsx ）下载此视图。打开 Excel 文件时，您可以使用高级 Excel 功能自定义报告。 
+---
+= 使用 Excel 自定义报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+保存此视图后，您可以使用 Excel 工作簿格式（ .xlsx ）下载此视图。打开 Excel 文件时，您可以使用高级 Excel 功能自定义报告。
+
+* 您需要的内容 *
+
+您只能上传扩展名为 .xlsx 的 Excel 工作簿文件。
+
+例如，您可以在报告中使用的一些高级 Excel 功能包括：
+
+* 多列排序
+* 筛选复杂
+* 数据透视表
+* 图表
+
+
+[NOTE]
+====
+* 下载的 Excel 文件将使用视图的默认文件名，而不是您保存的名称。
++
+** 格式为 ` <view area>-<day>-<month>-<yday>-<hour><minute>-<Second>.xlsx 。`
+** 例如，名为 `Volumes-not online` 的自定义已保存视图的文件名为 `health-volumes -05-May-2020 -19-18-00.xlsx` （如果在当天和时间保存）。
+
+
+* 您可以向 Excel 文件添加工作表，但不能更改现有工作表。
++
+** 请勿更改现有工作表，数据和信息。而是将数据复制到您创建的新页面。
+** 上述规则的一个例外情况是，您可以在 " `data` " 页面上创建公式。使用数据页面公式在新页面上创建图表。
+** 不要为新的工作表数据或信息命名。
+
+
+* 如果存在自定义 Excel 文件，则 * 报告 * > * 上传 Excel* 菜单项旁边会有一个复选标记。下载 Excel 文件时，系统将使用具有自定义设置的版本。image:../media/upload_excel.png[""]
+
+
+====
+.步骤
+. 打开要用作报告基础的默认视图，自定义视图或已保存视图。
+. 选择 * 报告 * > * 下载 Excel* 。
+. 保存文件。此文件将保存到下载文件夹中。
+. 在 Excel 中打开已保存的文件。请勿将文件移动到新位置，或者如果您在其他位置执行工作，请在上传文件之前使用原始文件名将文件保存回原始位置。
+. 使用复杂排序，分层筛选器，数据透视表或图表等 Excel 功能自定义文件。有关详细信息，请参见 Microsoft ® Excel 文档。
+. 选择 * 报告 * > * 上传 Excel* ，然后选择您修改的文件。最近下载的文件将从同一文件位置上传。
+. 使用 * 已计划报告 * 功能向您自己发送测试报告。
+

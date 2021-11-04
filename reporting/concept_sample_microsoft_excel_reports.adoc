@@ -1,0 +1,21 @@
+---
+permalink: reporting/concept_sample_microsoft_excel_reports.html 
+sidebar: sidebar 
+keywords: sample, microsoft, excel, reports 
+summary: 这些示例 Microsoft Excel 报告旨在介绍使用 Excel 高级功能提供的报告选项。 
+---
+= 示例 Microsoft Excel 报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+这些示例 Microsoft Excel 报告旨在介绍使用 Excel 高级功能提供的报告选项。
+
+Excel 的高级功能可以根据您的需求创建大量报告。有关如何使用 Excel 的完整信息，请参见产品文档。
+
+[NOTE]
+====
+您必须具有应用程序管理员或存储管理员角色才能管理报告。
+
+====

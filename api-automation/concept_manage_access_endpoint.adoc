@@ -1,0 +1,97 @@
+---
+permalink: api-automation/concept_manage_access_endpoint.html 
+sidebar: sidebar 
+keywords: manage, endpoints, access 
+summary: 您需要创建访问端点或逻辑接口（ LIF ），这是配置 Storage Virtual Machine （ SVM ）， LUN 和文件共享所需的。您可以查看，创建，修改和删除 Active IQ Unified Manager 环境中 SVM ， LUN 或文件共享的访问端点。 
+---
+= 管理访问端点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您需要创建访问端点或逻辑接口（ LIF ），这是配置 Storage Virtual Machine （ SVM ）， LUN 和文件共享所需的。您可以查看，创建，修改和删除 Active IQ Unified Manager 环境中 SVM ， LUN 或文件共享的访问端点。
+
+
+
+== 查看访问端点
+
+您可以使用以下方法查看 Unified Manager 环境中的访问端点列表。要查询特定 SVM ， LUN 或文件共享的访问端点列表，您需要输入 SVM ， LUN 或文件共享的唯一标识符。您还可以输入唯一的访问端点密钥来检索特定访问端点的详细信息。
+
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` 存储提供商 / 访问端点`
+
+` 存储提供程序 /access-Endpoints/\ ｛ key ｝`
+
+|===
+
+
+== 添加访问端点
+
+您可以创建自定义访问端点并为其分配所需属性。您必须输入要创建的访问端点的详细信息作为输入参数。您可以使用此 API ， System Manager 或 ONTAP 命令行界面在每个节点上创建访问端点。支持使用 IPv4 和 IPv6 地址创建访问端点。
+
+[NOTE]
+====
+要成功配置 LUN 和文件共享，您必须为 SVM 配置每个节点的访问端点数量最少。您应为 SVM 配置每个节点至少两个访问端点，一个支持 CIFS 和 / 或 NFS 协议，另一个支持 iSCSI 或 FCP 协议。
+
+====
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+发布
+ a| 
+` 存储提供商 / 访问端点`
+
+|===
+
+
+== 删除访问端点
+
+您可以使用以下方法删除特定访问端点。要删除特定访问端点，您需要提供访问端点密钥作为输入参数。
+
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+删除
+ a| 
+` 存储提供程序 /access-Endpoints/\ ｛ key ｝`
+
+|===
+
+
+== 修改访问端点
+
+您可以使用以下方法修改访问端点并更新其属性。要修改特定的访问端点，您需要提供访问端点密钥。您还需要输入要更新的属性及其值。
+
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+patch
+ a| 
+` 存储提供程序 /access-Endpoints/\ ｛ key ｝`
+
+|===

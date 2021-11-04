@@ -1,0 +1,31 @@
+---
+permalink: data-protection/concept_understand_svm_associations.html 
+sidebar: sidebar 
+keywords: understand storage vm peers 
+summary: Storage VM 对等方是指从源 Storage VM 到目标 Storage VM 的映射，供合作伙伴应用程序用于资源选择和二级卷配置。 
+---
+= 了解 Storage VM 对等方
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Storage VM 对等方是指从源 Storage VM 到目标 Storage VM 的映射，供合作伙伴应用程序用于资源选择和二级卷配置。
+
+无论目标 Storage VM 是二级目标还是三级目标，都始终会在源 Storage VM 和目标 Storage VM 之间创建对等方。您不能使用二级目标 Storage VM 作为源来创建与三级目标 Storage VM 的对等关系。
+
+您可以通过以下三种方式为 Storage VM 建立对等关系：
+
+* 为任何 Storage VM 建立对等关系
++
+您可以在任何主源 Storage VM 和一个或多个目标 Storage VM 之间创建对等关系。这意味着，当前需要保护的所有现有 Storage VM 以及未来创建的任何 Storage VM 都会与指定的目标 Storage VM 建立对等关系。例如，您可能希望将来自不同位置的多个不同源的应用程序备份到一个位置的一个或多个目标 Storage VM 。
+
+* 为特定 Storage VM 建立对等关系
++
+您可以在特定源 Storage VM 和一个或多个特定目标 Storage VM 之间创建对等关系。例如，如果要为数据必须彼此分离的多个客户端提供存储服务，则可以选择此选项将特定源 Storage VM 与仅分配给该客户端的特定目标 Storage VM 关联起来。
+
+* 与外部 Storage VM 建立对等关系
++
+您可以在源 Storage VM 和目标 Storage VM 的外部灵活卷之间创建对等关系。
+
+

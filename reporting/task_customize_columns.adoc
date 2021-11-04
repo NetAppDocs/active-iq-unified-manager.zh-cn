@@ -1,0 +1,22 @@
+---
+permalink: reporting/task_customize_columns.html 
+sidebar: sidebar 
+keywords: customize, columns 
+summary: '使用 " 显示 / 隐藏 " 选择要在报告中使用的列。拖动清单页面上的列以重新排列它们。' 
+---
+= 自定义列
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 * 显示 / 隐藏 * 选择要在报告中使用的列。拖动清单页面上的列以重新排列它们。
+
+.步骤
+. 单击 * 显示 / 隐藏 * 以添加或删除列。
++
+image::../media/show_hide_3.png[显示隐藏 3.]
+
+. 在清单页面上，拖动列以按照报告中所需的顺序对其进行重新排列。
+. 为未保存的视图命名以保存所做的更改。
+

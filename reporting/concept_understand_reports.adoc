@@ -1,0 +1,24 @@
+---
+permalink: reporting/concept_understand_reports.html 
+sidebar: sidebar 
+keywords: understanding, reports 
+summary: 报告可显示有关存储，网络，服务质量和保护关系的详细信息，帮助您在潜在问题发生之前发现并解决这些问题。 
+---
+= 了解报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+报告可显示有关存储，网络，服务质量和保护关系的详细信息，帮助您在潜在问题发生之前发现并解决这些问题。
+
+自定义视图时，您可以使用唯一名称保存此视图，以供将来使用。您可以根据该视图计划定期运行报告，并与其他人共享该报告。您也可以在 Excel 中下载视图以使用高级 Excel 功能对其进行自定义，然后将该文件上传到 Unified Manager 。如果您使用该视图计划报告，则它将使用您上传的 Excel 文件创建可共享的强大报告。
+
+您可以从报告计划页面管理已计划的所有报告。
+
+[NOTE]
+====
+您必须具有应用程序管理员或存储管理员角色才能管理报告。
+
+====
+您可以下载逗号分隔值（ CSV ）， Excel 或 PDF 文件格式的报告。

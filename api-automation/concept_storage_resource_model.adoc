@@ -1,0 +1,30 @@
+---
+permalink: api-automation/concept_storage_resource_model.html 
+sidebar: sidebar 
+keywords: storage, resource, ONTAP 
+summary: ONTAP 中的存储资源可广泛分为物理存储资源和逻辑存储资源。要使用 Active IQ Unified Manager 中提供的 API 有效管理 ONTAP 系统，您必须了解存储资源模型以及各种存储资源之间的关系。 
+---
+= ONTAP 中的存储资源
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 中的存储资源可广泛分类为 _physical storage resources_ 和 _logical storage resources 。要使用 Active IQ Unified Manager 中提供的 API 有效管理 ONTAP 系统，您必须了解存储资源模型以及各种存储资源之间的关系。
+
+* * 物理存储资源 *
++
+指 ONTAP 提供的物理存储对象。物理存储资源包括磁盘，集群，存储控制器，节点和聚合。
+
+* * 逻辑存储资源 *
++
+指 ONTAP 提供的与物理资源无关的存储资源。这些资源与 Storage Virtual Machine （ SVM ，以前称为 Vserver ）关联，并且它们独立于任何特定物理存储资源（例如磁盘，阵列 LUN 或聚合）而存在。
+
++
+逻辑存储资源包括所有类型的卷和 qtree ，以及可用于这些资源的功能和配置，例如 Snapshot 副本，重复数据删除，数据压缩和配额。
+
+
+
+下图显示了双节点集群中的存储资源：
+
+image::../media/storage_resource_model.gif[存储资源模型]

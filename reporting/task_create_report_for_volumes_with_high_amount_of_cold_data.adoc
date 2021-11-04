@@ -1,0 +1,45 @@
+---
+permalink: reporting/task_create_report_for_volumes_with_high_amount_of_cold_data.html 
+sidebar: sidebar 
+keywords: display, volumes, cold, data, non-fabricpool, aggregate, identify 
+summary: 您可以创建一个报告来显示非 FabricPool 聚合上具有大量冷数据的卷。这有助于您确定应移至 FabricPool 聚合的卷。 
+---
+= 创建报告以查看未启用 FabricPool 的聚合上具有大量冷数据的卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建一个报告来显示非 FabricPool 聚合上具有大量冷数据的卷。这有助于您确定应移至 FabricPool 聚合的卷。
+
+* 您需要的内容 *
+
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+按照以下步骤为未启用 FabricPool 的聚合上具有大量冷数据的卷创建自定义视图，然后计划为此视图生成报告。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 卷 * 。
+. 在视图菜单中，选择 * 性能 * > * 所有卷 * 。
+. 选择 * 显示 / 隐藏 * 以确保视图中显示 `Disk Type` 列。
++
+添加或删除其他列以创建对您的报告重要的视图。
+
+. 将 " `D`冷数据` " 列附近的 " 磁盘类型` " 列拖动。
+. 单击筛选器图标，添加以下筛选器，然后单击 * 应用筛选器 * ：
++
+** 冷数据大于 100 GB
+** 磁盘类型包含 SSD
+
+
+. 单击 " `D磁盘类型` " 列的顶部，按磁盘类型对卷进行排序，使磁盘类型 SSD （ FabricPool ）位于底部。
+. 使用反映视图显示内容的特定名称保存此视图，例如 "`cold data vols not FabricPool` " 。
+. 单击清单页面上的 * 已计划报告 * 按钮。
+. 输入报告计划的名称并填写其他报告字段，然后单击复选标记（image:../media/blue_check.gif[""]）。
++
+报告将立即作为测试发送。之后，报告将生成，并以指定频率通过电子邮件发送给列出的收件人。
+
+
+
+根据报告中显示的结果，您可以找到适合移动到 FabricPool 聚合的卷。

@@ -1,0 +1,58 @@
+---
+permalink: api-automation/concept_rest_services_offered_in_unified_manager_apis.html 
+sidebar: sidebar 
+keywords: rest, services, offer, active iq, unified, manager 
+summary: 在开始使用 Active IQ Unified Manager API 之前，您应了解所提供的 REST 服务和操作。 
+---
+= Active IQ Unified Manager 提供的 REST 服务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在开始使用 Active IQ Unified Manager API 之前，您应了解所提供的 REST 服务和操作。
+
+用于配置 API 服务器的配置和管理 API 支持读取（ GET ）或写入（ POST ，修补，删除）操作。以下是 API 支持的获取，修补， POST 和删除操作的一些示例：
+
+* GET 示例： `GET /datacenter/cluster/clusters` 检索数据中心中的集群详细信息。`GET` 操作返回的最大记录数为 1000 。
++
+[NOTE]
+====
+通过 API ，您可以按支持的属性对记录进行筛选，排序和排序。
+
+====
+* POST 示例： `POST /datacenter/SVM/SVM` 创建自定义 Storage Virtual Machine （ SVM ）。
+* 修补程序示例： `patch /datacenter/SVM/SVM/ ｛ key ｝` 使用唯一密钥修改 SVM 的属性。
+* 删除示例： `delete /storage-provider/access-enders/ ｛ key ｝` 使用唯一密钥从 LUN ， SVM 或文件共享中删除访问端点。
+
+
+可以使用 API 执行的 REST 操作取决于操作员，存储管理员或应用程序管理员用户的角色。
+
+[cols="2*"]
+|===
+| 用户角色 | 支持的 REST 方法 
+
+
+ a| 
+运算符
+ a| 
+对数据的只读访问。具有此角色的用户可以运行所有 GET 请求。
+
+
+
+ a| 
+存储管理员
+ a| 
+对所有数据的读取访问。具有此角色的用户可以运行所有 GET 请求。
+
+此外，他们还具有写入访问权限（用于运行修补程序，发布和删除请求）来执行特定活动，例如管理，存储服务对象和存储管理选项。
+
+
+
+ a| 
+应用程序管理员
+ a| 
+对所有数据的读写访问。具有此角色的用户可以对所有功能运行 GET ， PATCH ， POST 和 DELETE 请求。
+
+|===
+有关所有 REST 操作的详细信息，请参见 _Online API 文档 _ 。

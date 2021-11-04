@@ -1,0 +1,47 @@
+---
+permalink: config/task_perform_initial_setup_of_unified_manager_web_ui.html 
+sidebar: sidebar 
+keywords: perform, initial, setup, unified manager web ui 
+summary: 要使用 Unified Manager ，必须先配置初始设置选项，包括 NTP 服务器，维护用户电子邮件地址， SMTP 服务器主机以及添加 ONTAP 集群。 
+---
+= 执行 Unified Manager Web UI 的初始设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要使用 Unified Manager ，必须先配置初始设置选项，包括 NTP 服务器，维护用户电子邮件地址， SMTP 服务器主机以及添加 ONTAP 集群。
+
+* 您需要的内容 *
+
+您必须已执行以下操作：
+
+* 已使用安装后提供的 URL 启动 Unified Manager Web UI
+* 使用安装期间创建的维护用户名和密码（适用于 Linux 安装的 umadmin 用户）登录
+
+
+只有在首次访问 Web UI 时，才会显示 Active IQ Unified Manager 的 " 设置开始 " 页面。以下页面来自 VMware 上的安装。
+
+image::../media/first_experience_wizard.png[首次体验向导]
+
+如果稍后要更改其中任何一个选项，您可以从 Unified Manager 左侧导航窗格中的常规选项中进行选择。请注意， NTP 设置仅适用于 VMware 安装，稍后可以使用 Unified Manager 维护控制台进行更改。
+
+.步骤
+. 在 Active IQ Unified Manager 初始设置页面中，输入维护用户电子邮件地址， SMTP 服务器主机名和任何其他 SMTP 选项以及 NTP 服务器（仅限 VMware 安装）。然后单击 * 继续 * 。
+. 在 AutoSupport 页面中，单击 * 同意并继续 * 以启用从 Unified Manager 向 NetAppActive IQ 发送 AutoSupport 消息的功能。
++
+如果您需要指定一个代理来提供 Internet 访问以发送 AutoSupport 内容，或者要禁用 AutoSupport ，请使用 Web UI 中的 * 常规 * > * AutoSupport * 选项。
+
+. 在 Red Hat 和 CentOS 系统上，您可以将 umadmin 用户密码从默认的 "`admin` " 字符串更改为个性化字符串。
+. 在设置 API 网关页面中，选择是否要使用 API 网关功能，以便 Unified Manager 能够管理计划使用 ONTAP REST API 监控的 ONTAP 集群。然后单击 * 继续 * 。
++
+您可以稍后在 Web UI 中通过 * 常规 * > * 功能设置 * > * API 网关 * 启用或禁用此设置。有关 API 的详细信息，请参见 link:../api-automation/concept_get_started_with_um_apis.html["《 Active IQ Unified Manager API 开发人员指南》"]。
+
+. 添加希望 Unified Manager 管理的集群，然后单击 * 下一步 * 。对于您计划管理的每个集群，您必须具有主机名或集群管理 IP 地址（ IPv4 或 IPv6 ）以及用户名和密码凭据 - 用户必须具有 "`admin` " 角色。
++
+此步骤为可选步骤。稍后可以从 * 存储管理 * > * 集群设置 * 在 Web UI 中添加集群。
+
+. 在摘要页面中，验证所有设置是否正确，然后单击 * 完成 * 。
+
+
+此时将关闭 Getting Started 页面，并显示 Unified Manager Dashboard 页面。

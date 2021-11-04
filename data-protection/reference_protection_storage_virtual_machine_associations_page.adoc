@@ -1,0 +1,57 @@
+---
+permalink: data-protection/reference_protection_storage_virtual_machine_associations_page.html 
+sidebar: sidebar 
+keywords: svm, peers, page 
+summary: 通过 SVM 对等方页面，您可以查看源和目标 Storage VM 之间的现有 Storage VM 对等方，并创建新的 Storage VM 以供合作伙伴应用程序使用以创建 SnapMirror 和 SnapVault 关系。 
+---
+= SVM 对等方页面
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 SVM 对等方页面，您可以查看源和目标 Storage VM 之间的现有 Storage VM 对等方，并创建新的 Storage VM 以供合作伙伴应用程序使用以创建 SnapMirror 和 SnapVault 关系。
+
+
+
+== 命令按钮
+
+命令按钮可用于执行以下任务：
+
+* * 创建 * 。
++
+打开创建 Storage Virtual Machine 对等方页面。
+
+* * 删除 *
++
+用于删除选定的 Storage VM 对等方。
+
+
+
+
+
+== Storage VM 对等方列表
+
+SVM 对等方列表将在表中显示已创建的源和目标 Storage VM 关联以及每个关联所允许的保护关系类型。
+
+* * 源 Storage Virtual Machine*
++
+显示源 SVM 的名称。
+
+* * 源集群 *
++
+显示源集群的名称。
+
+* * 目标 Storage Virtual Machine*
++
+显示目标 SVM 的名称。
+
+* * 目标集群 *
++
+显示目标集群的名称。
+
+* * 类型 *
++
+显示保护关系的类型。关系类型为 SnapMirror 或 SnapVault 。
+
+

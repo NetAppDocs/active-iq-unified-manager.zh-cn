@@ -1,0 +1,40 @@
+---
+permalink: api-automation/concept_events_workflows.html 
+sidebar: sidebar 
+keywords: determine, issues, storage, objects, events 
+summary: 当数据中心中的存储对象超过阈值时，您将收到有关该事件的通知。使用此通知，您可以分析问题描述并使用事件 API 采取更正操作。 
+---
+= 使用事件确定存储对象中的问题
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当数据中心中的存储对象超过阈值时，您将收到有关该事件的通知。使用此通知，您可以使用 `Events` API 分析问题描述并采取更正操作。
+
+此工作流将卷示例作为资源对象。您可以使用 `Events` API 检索与卷相关的事件列表，分析该卷的严重问题，然后采取更正措施来更正问题描述。
+
+image::../media/handling_event_related_issues_of_a_storage_object_flowchart.gif[处理存储对象的事件相关问题流程图]
+
+在采取补救措施之前，请按照以下步骤确定卷中的问题。
+
+.步骤
+. 分析数据中心中卷的严重 Active IQ Unified Manager 事件通知。
+. 在 /management-server/events API 中使用以下参数查询卷的所有事件： ` "* resource_type" ： "volume*"` ` "* severity" ： "critical*"`
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+管理服务器
+ a| 
+获取
+ a| 
+/management-server/events
+
+|===
+. 查看输出并分析特定卷中的问题。
+. 使用 Unified Manager REST API 或 Web UI 执行必要的操作以解决这些问题。
+

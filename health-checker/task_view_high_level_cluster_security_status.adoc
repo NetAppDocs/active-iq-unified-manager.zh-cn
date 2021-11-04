@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task_view_high_level_cluster_security_status.html 
+sidebar: sidebar 
+keywords: view, cluster security status, svm security status, high-level 
+summary: 'Unified Manager 信息板上的 " 安全 " 面板根据您的当前视图显示所有集群或单个集群的高级安全状态。' 
+---
+= 查看集群安全状态概况
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 信息板上的 " 安全性 " 面板根据当前视图显示所有集群或单个集群的高级别安全状态。
+
+.步骤
+. 在左侧导航窗格中，单击 * 信息板 * 。
+. 根据您要查看所有受监控集群或单个集群的安全状态，选择 * 所有集群 * 或从下拉菜单中选择一个集群。
+. 查看 * 安全性 * 面板以查看整体状态。
++
+此面板将显示：
+
++
+** 列出过去 24 小时内收到的安全事件
+** 从每个事件到 " 事件 " 详细信息页面的链接
+** 一个链接，用于在事件管理清单页面中查看所有活动安全事件
+** 集群安全状态（合规或不合规的集群数量）
+** SVM 安全状态（合规或不合规的 SVM 数量）
+** 卷加密状态（已加密或未加密的卷数）
+
+
+. 单击面板顶部的右箭头可在 * 安全性 * 页面中查看安全详细信息。
+

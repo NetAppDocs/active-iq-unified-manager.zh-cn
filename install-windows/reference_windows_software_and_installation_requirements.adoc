@@ -1,0 +1,98 @@
+---
+permalink: install-windows/reference_windows_software_and_installation_requirements.html 
+sidebar: sidebar 
+keywords: windows, software, installation, requirements, system 
+summary: 要在 Windows 上成功安装 Unified Manager ，您应确保安装 Unified Manager 的系统满足软件要求。 
+---
+= Windows 软件和安装要求
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+要在 Windows 上成功安装 Unified Manager ，您应确保安装 Unified Manager 的系统满足软件要求。
+
+
+
+== 操作系统软件
+
+您可以在以下 Windows 版本上安装 Unified Manager ： * Microsoft Windows Server 2016 Standard 和 Datacenter Edition * Microsoft Windows Server 2019 Standard 和 Datacenter Edition
+
+Unified Manager 在 64 位 Windows 操作系统上支持以下语言：
+
+* 英语
+* Japanese:
+* 简体中文
+
+
+有关受支持的 Windows 版本的最新完整列表，请参见互操作性表。
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。
+
+
+
+== 第三方软件
+
+以下第三方软件包与 Unified Manager 捆绑在一起。如果系统上未安装这些第三方软件包，则 Unified Manager 会在安装过程中安装这些软件包。
+
+* Microsoft Visual C&#43 ； &#43 ； 2015 年可重新分发软件包 14.26.28720.3 版
+* Microsoft Visual C&#43 ； &#43 ；适用于 Visual Studio 2013 的可重新分发软件包 12.0.40660.0 版
+* MySQL 社区版 8.0.21
++
+[NOTE]
+====
+由于问题描述具有互操作性， Unified Manager 的安装程序仅支持 MySQL 社区版 8.0.21 。您 * 不能 * 将 MySQL 升级到 8.0.21 以上的版本。
+
+====
+* Python 3.9.x
+* OpenJDK 11.0.12 版
+* p7zip 版本 18.05 或更高版本
+
+
+[NOTE]
+====
+从 Unified Manager 9.5 开始， Unified Manager 安装包中提供了 OpenJDK ，并会自动安装该软件包。从 Unified Manager 9.5 开始，不支持 Oracle Java 。
+
+====
+如果已预安装 MySQL ，则应确保：
+
+* 它正在使用默认端口。
+* 未安装示例数据库。
+* 服务名称为 " `MYSQL8` " 。
+
+
+Unified Manager 部署在 WildFly Web 服务器上。WildFly 19.0.0 与 Unified Manager 捆绑并进行配置。
+
+[NOTE]
+====
+在升级任何第三方软件之前，您应关闭正在运行的 Unified Manager 实例。第三方软件安装完成后，您可以重新启动 Unified Manager 。
+
+====
+
+
+== 安装要求
+
+* 应安装 Microsoft .NET 4.5.2 或更高版本。
+* 应为 `temp` 目录配置 2 GB 的磁盘空间以提取安装文件。要验证是否已创建目录，请在命令行界面上运行以下命令： `echo %temp%`
+* 您应在 Windows 驱动器中预留 2 GB 磁盘空间，用于缓存 Unified Manager MSI 文件。
+* 要安装 Unified Manager 的 Microsoft Windows Server 应配置一个完全限定域名（ FQDN ），以便可以成功执行 `ping` 对主机名和 FQDN 的响应。
+* 您应禁用 Microsoft IIS 全球 Web 发布服务，并确保端口 80 和 443 可用。
+* 您应确保在安装期间已禁用 "`Windows Installer RDS 兼容性` " 的远程桌面会话主机设置。
+* UDP 端口 514 应为空闲端口，不应由任何其他服务使用。
+
+
+[NOTE]
+====
+Unified Manager 安装程序会在 Windows Defender 中配置以下排除项：
+
+* Unified Manager 数据目录
+* Unified Manager 安装目录
+* MySQL 数据目录
+
+
+如果您的服务器安装了其他防病毒扫描程序，则应手动配置这些排除项。
+
+====

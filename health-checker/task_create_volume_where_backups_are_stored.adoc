@@ -1,0 +1,51 @@
+---
+permalink: health-checker/task_create_volume_where_backups_are_stored.html 
+sidebar: sidebar 
+keywords: configure, snapshot, backup location 
+summary: 您可以使用 ONTAP 系统管理器或 ONTAP 命令行界面配置将 Snapshot 备份存储在其中一个 ONTAP 集群上的卷。 
+---
+= 配置 Snapshot 备份位置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 ONTAP 系统管理器或 ONTAP 命令行界面配置将 Snapshot 备份存储在其中一个 ONTAP 集群上的卷。
+
+* 您需要的内容 *
+
+集群， Storage VM 和卷必须满足以下要求：
+
+* 集群要求：
++
+** 必须安装 ONTAP 9.3 或更高版本
+** 它应在地理位置上靠近 Unified Manager 服务器
+** 它可以由 Unified Manager 监控，但不是必需的
+
+
+* Storage VM 要求：
++
+** 必须将名称开关和名称映射设置为使用 "`files` "
+** 为与客户端用户相对应而创建的本地用户
+** 确保已选择所有读 / 写访问权限
+** 确保在导出策略中将超级用户访问设置为 "`any` "
+** 适用于 Linux 的 NetApp Snapshot 的 NFS
+** 必须在客户端和 Storage VM 上指定的 NFS 服务器和 NFSv4 ID 域上启用 NFSv4
+** 卷大小应至少是 Unified Manager/opt/netapp/ 数据目录大小的两倍
++
+使用命令 du -sh /opt/netapp/data/ 检查当前大小。
+
+
+
+* 卷要求：
++
+** 此卷应至少是 Unified Manager /opt/netapp/data 目录大小的两倍
+** 安全模式必须设置为 UNIX
+** 必须禁用本地快照策略
+** 应启用卷自动调整大小
+** 应将性能服务级别设置为 IOPS 高且延迟低的策略，例如 "`Extreme` "
+
+
+
+
+有关创建 NFS 卷的详细步骤，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_configure_NFSv4_in_Cluster-Mode["如何在 ONTAP 9 中配置 NFSv4"] 和。

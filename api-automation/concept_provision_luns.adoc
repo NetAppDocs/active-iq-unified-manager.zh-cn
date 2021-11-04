@@ -1,0 +1,297 @@
+---
+permalink: api-automation/concept_provision_luns.html 
+sidebar: sidebar 
+keywords: provision, luns 
+summary: 您可以使用 Active IQ Unified Manager 中提供的配置 API 在 Storage Virtual Machine （ SVM ）上配置 LUN 。此配置工作流详细介绍了在创建 LUN 之前检索 SVM 密钥，性能服务级别和存储效率策略的步骤。 
+---
+= 配置 LUN
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Active IQ Unified Manager 中提供的配置 API 在 Storage Virtual Machine （ SVM ）上配置 LUN 。此配置工作流详细介绍了在创建 LUN 之前检索 SVM 密钥，性能服务级别和存储效率策略的步骤。
+
+下图说明了 LUN 配置工作流中的步骤。
+
+image::../media/create_luns.gif[创建 LUNs]
+
+[NOTE]
+====
+此工作流假定已将 ONTAP 集群添加到 Unified Manager 中，并且已获取集群密钥。此工作流还假定已在集群上创建 SVM 。
+
+====
+. 获取要创建 LUN 的 SVM 的 SVM 密钥，如 _Verifying SVM on clusters 工作流主题中所述。
+. 运行以下 API 并从响应中检索此密钥，以获取性能服务级别的密钥。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` 存储提供商 /performation-service-levels`
+
+|===
++
+[NOTE]
+====
+您可以通过将 `ssystem_defined` 输入参数设置为 `true` 来检索系统定义的性能服务级别的详细信息。从输出中，获取要应用于 LUN 的性能服务级别的密钥。
+
+====
+. 或者，也可以通过运行以下 API 并从响应中检索要应用于 LUN 的存储效率策略的存储效率策略密钥。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` 存储提供程序 / 存储效率策略`
+
+|===
+. 确定是否已创建启动程序组（ igroup ）以授予对要创建的 LUN 目标的访问权限。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+数据中心
+ a| 
+获取
+ a| 
+` 数据中心 / 协议 /san/igroup` ` /datacenter/protocols/san/igroups/\ ｛ key ｝`
+
+|===
++
+您必须输入参数值，以指示 igroup 有权访问的 SVM 。此外，如果要查询特定的 igroup ，请输入 igroup 名称（密钥）作为输入参数。
+
+. 在输出中，如果您可以找到要授予访问权限的 igroup ，请获取密钥。否则，请创建 igroup 。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+数据中心
+ a| 
+发布
+ a| 
+` 数据中心 / 协议 /SAN/igroup`
+
+|===
++
+必须输入要创建的 igroup 的详细信息作为输入参数。这是一个同步调用，您可以在输出中验证 igroup 的创建情况。如果出现错误，则会显示一条消息，供您进行故障排除并重新运行 API 。
+
+. 创建 LUN 。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+发布
+ a| 
+` 存储提供程序 /LUN`
+
+|===
++
+要创建 LUN ，请确保已将检索到的值添加为必需的输入参数。
+
++
+[NOTE]
+====
+存储效率策略是用于创建 LUN 的可选参数。
+
+====
++
+* 示例 curc*
+
++
+您必须输入要创建的 LUN 的所有详细信息作为输入参数。
+
++
+Wombat ：提取 1
+
++
+JSON 输出将显示一个作业对象密钥，您可以使用该关键字验证您创建的 LUN 。
+
+. 使用查询作业时返回的作业对象密钥验证 LUN 创建：
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+管理服务器
+ a| 
+获取
+ a| 
+` /management-server/jobs/\ ｛ key ｝`
+
+|===
++
+响应结束时，您会看到创建的 LUN 的密钥。
+
++
+Wombat ：提取第 2 个
+
+. 通过使用返回的密钥运行以下 API 来验证 LUN 的创建：
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` /storage-provider/LUNs/\ ｛ key ｝`
+
+|===
++
+* JSON 输出示例 *
+
++
+您可以看到， ` /storage-provider/lun` 的 POST 方法会在内部调用每个功能所需的所有 API 并创建对象。例如，它会调用 ` /storage-provider/performance-service-levels/` API 来为 LUN 分配性能服务级别。
+
++
+Wombat ：提取第 3 项
+
+
+
+
+
+== LUN 创建或映射失败的故障排除步骤
+
+完成此工作流后，您可能仍会看到 LUN 创建失败。即使已成功创建 LUN ，与 igroup 的 LUN 映射也可能会因创建 LUN 的节点上没有 SAN LIF 或访问端点而失败。如果发生故障，您可以看到以下消息：
+
+[listing]
+----
+The nodes <node_name> and <partner_node_name> have no LIFs configured with the iSCSI or FCP protocol for Vserver <server_name>. Use the access-endpoints API to create a LIF for the LUN.
+----
+按照以下故障排除步骤解决此故障。
+
+. 在尝试创建 LUN 的 SVM 上创建一个支持 iSCSI/FCP 协议的访问端点。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+发布
+ a| 
+` 存储提供商 / 访问端点`
+
+|===
++
+* 示例 curc*
+
++
+您必须输入要创建的访问端点的详细信息作为输入参数。
+
++
+[NOTE]
+====
+确保已在输入参数中添加地址以指示 LUN 的主节点，并添加 ha_address 以指示主节点的配对节点。运行此操作时，它会在主节点和配对节点上创建访问端点。
+
+====
++
+Wombat ：提取第 4 个
+
+. 使用 JSON 输出中返回的作业对象密钥查询作业，以验证它是否已成功运行以在 SVM 上添加访问端点，以及是否已在 SVM 上启用 iSCSI/FCP 服务。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+管理服务器
+ a| 
+获取
+ a| 
+` /management-server/jobs/\ ｛ key ｝`
+
+|===
++
+* JSON 输出示例 *
+
++
+在输出末尾，您可以看到创建的访问端点的密钥。在以下输出中， "name" ： "accessEndpointKey" 值表示在 LUN 的主节点上创建的访问端点，其密钥为 9c964258-14ef-11ea-952-00a098e32c28 。"name" ： "accessEndpointHAKey" 值表示在主节点的配对节点上创建的访问端点，其密钥为 9d347006-14ef-11ea-8760-00a098e3215f 。
+
++
+Wombat ：提取第 5 个
+
+. 修改 LUN 以更新 igroup 映射。有关工作流修改的详细信息，请参见 " `M修改存储工作负载` " 。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+patch
+ a| 
+` /storage-provider/LUN/\ ｛ key ｝`
+
+|===
++
+在输入中，指定要用于更新 LUN 映射的 igroup 密钥以及 LUN 密钥。
+
++
+* 示例 curc*
+
++
+Wombat ：摘录 6
+
++
+JSON 输出将显示一个作业对象密钥，您可以使用该对象密钥验证映射是否成功。
+
+. 使用 LUN 密钥查询以验证 LUN 映射。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` /storage-provider/LUNs/\ ｛ key ｝`
+
+|===
++
+* JSON 输出示例 *
+
++
+在输出中，您可以看到 LUN 已成功映射到最初配置它的 igroup （密钥 d19ec2fa-fec7-11e8-b23d-00a098e32c28 ）。
+
++
+Wombat ：提取 7
+
+

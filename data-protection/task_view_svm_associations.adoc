@@ -1,0 +1,24 @@
+---
+permalink: data-protection/task_view_svm_associations.html 
+sidebar: sidebar 
+keywords: view, storage, vm peers 
+summary: 您可以使用 Storage VM 对等方页面查看现有 Storage VM 对等方及其属性，并确定是否需要其他 Storage VM 。 
+---
+= 查看 Storage VM 对等方
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Storage VM 对等方页面查看现有 Storage VM 对等方及其属性，并确定是否需要其他 Storage VM 。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+.步骤
+. 在左侧导航窗格中，单击 * 保护 * > * Storage VM 对等方 * 。
++
+此时将显示 Storage VM 对等方及其属性的列表。
+
+

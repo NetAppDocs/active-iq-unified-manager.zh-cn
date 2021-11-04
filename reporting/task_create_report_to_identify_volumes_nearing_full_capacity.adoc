@@ -1,0 +1,42 @@
+---
+permalink: reporting/task_create_report_to_identify_volumes_nearing_full_capacity.html 
+sidebar: sidebar 
+keywords: create, report, identify, volumes, full capacity, snapshot, autodelete, turned off 
+summary: 您可以创建一个报告，其中包含在禁用 Snapshot 自动删除功能的情况下即将达到全满容量的卷列表。这些结果有助于确定可能要配置 Snapshot 自动删除的卷。 
+---
+= 创建报告以确定已关闭 Snapshot 自动删除的容量接近全满的卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建一个报告，其中包含在禁用 Snapshot 自动删除功能的情况下即将达到全满容量的卷列表。这些结果有助于确定可能要配置 Snapshot 自动删除的卷。
+
+* 您需要的内容 *
+
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+按照以下步骤创建一个自定义视图，以正确顺序显示所需列，然后计划为此视图生成报告。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 卷 * 。
+. 在视图菜单中，选择 * 容量 * > * 所有卷 * 。
+. 选择 * 显示 / 隐藏 * 可删除报告中不需要的任何列。
+. 将 `Snapshot Autodelete` 和 `Days to full` 列拖放到 "`Available Data Capacity` " 列附近。
+. 单击筛选器图标，添加以下两个筛选器，然后单击 * 应用筛选器 * ：
++
+** 从天数到全满的天数少于 30 天
+** 已禁用 Snapshot 自动删除
+
+
+. 单击 * 达到全满天数 * 列的顶部，以使剩余天数最少的卷显示在列表顶部。
+. 使用反映视图显示内容的特定名称保存此视图，例如 "`Vols Near Capacity` " 。
+. 单击清单页面上的 * 已计划报告 * 按钮。
+. 输入报告计划的名称并填写其他报告字段，然后单击复选标记（image:../media/blue_check.gif[""]）。
++
+报告将立即作为测试发送。之后，报告将生成，并以指定频率通过电子邮件发送给列出的收件人。
+
+
+
+根据报告中显示的结果，您可能希望在卷上启用 Snapshot 自动删除，或者找到增加可用空间的方法。

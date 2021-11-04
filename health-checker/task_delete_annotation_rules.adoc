@@ -1,0 +1,25 @@
+---
+permalink: health-checker/task_delete_annotation_rules.html 
+sidebar: sidebar 
+keywords: delete, annotation rules 
+summary: 当不再需要标注规则时，您可以从 Active IQ Unified Manager 中删除这些规则。 
+---
+= 正在删除标注规则
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当不再需要标注规则时，您可以从 Active IQ Unified Manager 中删除这些规则。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+删除标注规则时，该标注将解除关联并从存储对象中删除。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储管理 * > * 标注 * 。
+. 在 * 标注规则 * 选项卡中，选择要删除的标注规则，然后单击 * 删除 * 。
+. 在 * 警告 * 对话框中，单击 * 是 * 确认删除。
+

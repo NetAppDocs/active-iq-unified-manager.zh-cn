@@ -1,0 +1,345 @@
+---
+permalink: api-automation/concept_modify_workloads_workflow.html 
+sidebar: sidebar 
+keywords: modify, storage, workloads 
+summary: 修改存储工作负载包括使用缺少的参数更新 LUN 或文件共享，或者更改现有参数。 
+---
+= 修改存储工作负载
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+修改存储工作负载包括使用缺少的参数更新 LUN 或文件共享，或者更改现有参数。
+
+此工作流以更新 LUN 和文件共享的性能服务级别为例。
+
+[NOTE]
+====
+此工作流假定已为 LUN 或文件共享配置性能服务级别。
+
+====
+
+
+== 修改文件共享
+
+修改文件共享时，您可以更新以下参数：
+
+* 容量或大小。
+* 联机或脱机设置。
+* 存储效率策略。
+* 性能服务级别
+* 访问控制列表（ ACL ）设置。
+* 导出策略设置。您还可以删除导出策略参数并还原文件共享上的默认（空）导出策略规则。
+
+
+[NOTE]
+====
+在单个 API 运行期间，您只能更新一个参数。
+
+====
+此操作步骤介绍了如何向文件共享添加性能服务级别。您可以使用同一个操作步骤更新任何其他文件共享属性。
+
+. 获取要更新的文件共享的 CIFS 共享或 NFS 文件共享密钥。此 API 将查询数据中心上的所有文件共享。如果您已经知道文件共享密钥，请跳过此步骤。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` 存储提供程序 / 文件共享`
+
+|===
+. 通过使用您获取的文件共享密钥运行以下 API 来查看文件共享的详细信息。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` /storage-provider/file-shares/\ ｛ key ｝`
+
+|===
++
+在输出中查看文件共享的详细信息。
+
++
+[listing]
+----
+"assigned_performance_service_level": {
+        "key": null,
+        "name": "Unassigned",
+        "peak_iops": null,
+        "expected_iops": null,
+        "_links": {}
+      },
+----
+. 获取要为此文件共享分配的性能服务级别的密钥。当前未分配任何策略。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+性能服务级别
+ a| 
+获取
+ a| 
+` 存储提供商 /performation-service-levels`
+
+|===
++
+[NOTE]
+====
+您可以通过将 `ssystem_defined` 输入参数设置为 `true` 来检索系统定义的性能服务级别的详细信息。从输出中，获取要应用于文件共享的性能服务级别的密钥。
+
+====
+. 对文件共享应用性能服务级别。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+patch
+ a| 
+` /storage-provider/file-shares/\ ｛ key ｝`
+
+|===
++
+在输入中，您只能指定要更新的参数以及文件共享密钥。在这种情况下，它是性能服务级别的关键。
+
++
+* 示例 curc*
+
++
+[listing]
+----
+curl -X POST "https://<hostname>/api/storage-provider/file-shares"`-H "accept: application/json" -H "Authorization: Basic <Base64EncodedCredentials>" -d
+"{
+\"performance_service_level\": { \"key\": \"1251e51b-069f-11ea-980d-fa163e82bbf2\" },
+}"
+----
++
+JSON 输出将显示一个作业对象，您可以使用该对象验证是否已成功创建主节点和配对节点上的访问端点。
+
+. 使用输出中显示的作业对象密钥验证是否已将性能服务级别添加到文件共享中。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+管理服务器
+ a| 
+获取
+ a| 
+` /management-server/jobs/\ ｛ key ｝`
+
+|===
++
+如果按作业对象的 ID 进行查询，则会看到文件共享是否已成功更新。如果发生故障，请对故障进行故障排除，然后再次运行 API 。成功创建后，查询文件共享以查看修改后的对象：
+
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` /storage-provider/file-shares/\ ｛ key ｝`
+
+|===
++
+在输出中查看文件共享的详细信息。
+
++
+[listing]
+----
+"assigned_performance_service_level": {
+        "key": "1251e51b-069f-11ea-980d-fa163e82bbf2",
+        "name": "Value",
+        "peak_iops": 75,
+        "expected_iops": 75,
+        "_links": {
+            "self": {
+                "href": "/api/storage-provider/performance-service-levels/1251e51b-069f-11ea-980d-fa163e82bbf2"
+            }
+        }
+----
+
+
+
+
+== 正在更新 LUN
+
+更新 LUN 时，您可以修改以下参数：
+
+* 容量或大小
+* 联机或脱机设置
+* 存储效率策略
+* 性能服务级别
+* LUN 映射
+
+
+[NOTE]
+====
+在单个 API 运行期间，您只能更新一个参数。
+
+====
+此操作步骤介绍了如何向 LUN 添加性能服务级别。您可以使用同一个操作步骤更新任何其他 LUN 属性。
+
+. 获取要更新的 LUN 的 LUN 密钥。此 API 将返回数据中心中所有 LUN 的详细信息。如果您已经知道 LUN 密钥，请跳过此步骤。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` 存储提供程序 /LUN`
+
+|===
+. 通过使用您获取的 LUN 密钥运行以下 API 来查看 LUN 的详细信息。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` /storage-provider/LUNs/\ ｛ key ｝`
+
+|===
++
+在输出中查看 LUN 的详细信息。您可以看到没有为此 LUN 分配任何性能服务级别。
+
++
+* JSON 输出示例 *
+
++
+[listing]
+----
+
+  "assigned_performance_service_level": {
+        "key": null,
+        "name": "Unassigned",
+        "peak_iops": null,
+        "expected_iops": null,
+        "_links": {}
+      },
+----
+. 获取要分配给 LUN 的性能服务级别的密钥。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+性能服务级别
+ a| 
+获取
+ a| 
+` 存储提供商 /performation-service-levels`
+
+|===
++
+[NOTE]
+====
+您可以通过将 `ssystem_defined` 输入参数设置为 `true` 来检索系统定义的性能服务级别的详细信息。从输出中，获取要应用于 LUN 的性能服务级别的密钥。
+
+====
+. 对 LUN 应用性能服务级别。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+patch
+ a| 
+` /storage-provider/LUN/\ ｛ key ｝`
+
+|===
++
+在输入中，只能指定要更新的参数以及 LUN 密钥。在这种情况下，它是性能服务级别的关键。
+
++
+* 示例 curc*
+
++
+[listing]
+----
+curl -X PATCH "https://<hostname>/api/storage-provider/luns/7d5a59b3-953a-11e8-8857-00a098dcc959" -H "accept: application/json" -H "Content-Type: application/json" H "Authorization: Basic <Base64EncodedCredentials>" -d
+"{ \"performance_service_level\": { \"key\": \"1251e51b-069f-11ea-980d-fa163e82bbf2\" }"
+----
++
+JSON 输出将显示一个作业对象密钥，您可以使用该对象密钥来验证已更新的 LUN 。
+
+. 通过使用您获取的 LUN 密钥运行以下 API 来查看 LUN 的详细信息。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` /storage-provider/LUNs/\ ｛ key ｝`
+
+|===
++
+在输出中查看 LUN 的详细信息。您可以看到已为此 LUN 分配性能服务级别。
+
++
+* JSON 输出示例 *
+
++
+[listing]
+----
+
+     "assigned_performance_service_level": {
+        "key": "1251e51b-069f-11ea-980d-fa163e82bbf2",
+        "name": "Value",
+        "peak_iops": 75,
+        "expected_iops": 75,
+        "_links": {
+            "self": {
+                "href": "/api/storage-provider/performance-service-levels/1251e51b-069f-11ea-980d-fa163e82bbf2"
+            }
+----
+

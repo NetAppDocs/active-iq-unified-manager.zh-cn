@@ -1,0 +1,55 @@
+---
+permalink: install-windows/task_unattended_installation_of_unified_manager.html 
+sidebar: sidebar 
+keywords: perform, unattended, installation, unified manager 
+summary: 您可以使用命令行界面安装 Unified Manager ，而无需用户干预。您可以通过将参数以键值对的形式传递来完成无人值守安装。 
+---
+= 执行 Unified Manager 的无人参与安装
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用命令行界面安装 Unified Manager ，而无需用户干预。您可以通过将参数以键值对的形式传递来完成无人值守安装。
+
+.步骤
+. 使用默认本地管理员帐户登录到 Windows 命令行界面。
+. 导航到要安装 Unified Manager 的位置，然后选择以下选项之一：
++
+[cols="4a,4a"]
+|===
+| 选项 | 说明 
+
+
+ a| 
+如果已预安装第三方软件包
+ a| 
+`ActiveIQUnifiedManager-x.y.exe /V"mysql_password=mysql_password INSTALLDIR=\" 安装目录 \" mysql_data_DIR=\"MySQL 数据目录 \" maintenance_password=maintenance_password maintenance_username=maintenance_username /qn /l* v CompletePathForLogFile"`
+
+* 示例： *
+
+`ActiveIQUnifiedManager.exe /s /v"mysql_password=netapp21 ！INSTALLDIR="C ： \Program Files\NetApp" MySql_data_DIR="C ： \ProgramData\MySQLServer\" maintenance_password=***** maintenance_username=admin /qn /l* v C ： \install.log`
+
+
+
+ a| 
+如果未安装第三方软件包
+ a| 
+`ActiveIQUnifiedManager-x.y.exe /V"mysql_password=mysql_password INSTALLDIR=\" 安装目录 \" mysql_data_DIR=\"MySQL 数据目录 \" maintenance_password=maintenance_password maintenance_username=maintenance_username /qr /l* v CompletePathForLogFile"`
+
+* 示例： *
+
+`ActiveIQUnifiedManager.exe /s /v"mysql_password=netapp21 ！INSTALLDIR="C ： \Program Files\NetApp" MySql_data_DIR="C ： \ProgramData\MySQLServer\" maintenance_password=***** maintenance_username=admin /QR /l* v C ： \install.log`
+
+|===
++
+` /QR` 选项可通过精简的用户界面启用静默模式。此时将显示一个基本用户界面，其中显示了安装进度。系统不会提示您输入。如果未预安装 JRE ， MySQL 和 7zip 等第三方软件包，则应使用 ` /QR` 选项。如果在未安装第三方软件包的服务器上使用 ` /qn` 选项，则安装将失败。
+
++
+` /qn` 选项可在无用户界面的情况下启用静默模式。安装期间不会显示任何用户界面或详细信息。如果未安装第三方软件包，则不应使用 ` /qn` 选项。
+
+. 使用以下 URL 登录到 Unified Manager Web 用户界面：
++
+` https://IP 地址`
+
+

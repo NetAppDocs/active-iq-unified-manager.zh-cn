@@ -1,0 +1,158 @@
+---
+permalink: install-linux/task_install_unified_manager_linux.html 
+sidebar: sidebar 
+keywords: install, unified manager 
+summary: 您可以在物理或虚拟 Red Hat Enterprise Linux 或 CentOS 平台上安装 Unified Manager 。 
+---
+= 安装 Unified Manager
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在物理或虚拟 Red Hat Enterprise Linux 或 CentOS 平台上安装 Unified Manager 。
+
+* 您需要的内容 *
+
+* 要安装 Unified Manager 的系统必须满足系统和软件要求。
++
+link:concept_virtual_infrastructure_or_hardware_system_requirements.html["硬件系统要求"]
+
++
+link:reference_red_hat_and_centos_software_and_installation_requirements.html["Red Hat 和 CentOS 软件和安装要求"]
+
+* 您必须已将 Unified Manager ` .zip` 文件从 NetApp 支持站点下载到目标系统。
+* 您必须具有受支持的 Web 浏览器。
+* 您的终端模拟软件必须已启用 scrollback 。
+
+
+Red Hat Enterprise Linux 或 CentOS 系统可能已安装所需支持软件的所有必需版本（ Java ， MySQL ，其他实用程序），仅安装了部分必需软件，或者可能是新安装的系统，但未安装任何所需软件。
+
+.步骤
+. 登录到要安装 Unified Manager 的服务器。
+. 输入相应的命令，以评估哪些软件可能需要在目标系统上安装或升级才能支持安装：
++
+[cols="2*"]
+|===
+| 所需软件和最低版本 | 用于验证软件和版本的命令 
+
+
+ a| 
+OpenJDK 11.0.12 版
+ a| 
+`java -version`
+
+
+
+ a| 
+MySQL 8.0.25 社区版
+ a| 
+`rpm -qa` grep -i mysql
+
+
+
+ a| 
+p7zip 16.02
+ a| 
+`rpm -qa` grep p7zip
+
+|===
+. 如果安装的 MySQL 版本早于 MySQL 8.0.25 社区版，请输入以下命令将其卸载：
++
+`rpm -e <mysql_package_name>`
+
++
+如果您收到依赖关系错误，则必须添加 ` -nodeps` 选项以卸载此组件。
+
+. 导航到下载安装 ` .zip` 文件的目录，然后展开 Unified Manager 捆绑包：
++
+`解压缩 ActiveIQUnifiedManager-_<version>_.zip`
+
++
+Unified Manager 所需的 ` .rpm` 模块将解压缩到目标目录。
+
+. 验证目录中是否存在以下模块：
++
+`ls * 。 rpm`
+
++
+`netapp-um<version>.x86_64 ： rpm`
+
+. 运行安装前脚本，以确保不存在可能与 Unified Manager 安装冲突的系统配置设置或任何已安装软件：
++
+`sUdo ./pre_install_check.sh`
+
++
+预安装脚本会检查系统是否具有有效的 Red Hat 订阅，以及是否有权访问所需的软件存储库。如果此脚本发现任何问题，则必须在安装 Unified Manager 之前修复这些问题。
+
++
+对于 Red Hat Enterprise Linux 8 系统，如果您的内部存储库包含 AppStream 存储库提供的 JDK 11 - OpenJDK ， p7zip 和其他软件包，则必须禁用 AppStream 存储库并安装 MySQL 社区服务器。运行以下命令：
+
++
+[listing]
+----
+# sudo yum --disablerepo=rhel-8-for-x86_64-appstream-rpms install  mysql-community-server
+----
+. * 可选： * 只有在系统未连接到 Internet 且必须手动下载安装所需的软件包时，才能执行步骤 7 。如果您的系统可以访问 Internet ，并且所有所需软件包均可用，请转至步骤 8 。对于未连接到 Internet 或未使用 Red Hat Enterprise Linux 存储库的系统，请执行以下步骤以确定是否缺少任何所需的软件包，然后下载这些软件包：
++
+.. 在要安装 Unified Manager 的系统上，查看可用和不可用软件包的列表：
++
+ `yum install netapp-um<version>.x86_64.rpm --assumeno`
++
+"`Installing ：` " 部分中的项是当前目录中提供的软件包， "`Installing for 相关项：` " 部分中的项是系统中缺少的软件包。
+
+.. 在可访问 Internet 的系统上，下载缺少的软件包：
++
+`yum install <package_name> -downloadonly -downloaddir=.`
+
++
+[NOTE]
+====
+由于在 Red Hat Enterprise Linux 系统上并非始终启用插件 "`yum 插件下载` " ，因此您可能需要启用功能才能在不安装软件包的情况下下载软件包： `yum install yum -plugin-downloadonly`
+
+====
+.. 将缺少的软件包从已连接 Internet 的系统复制到您的安装系统。
+
+
+. 以 root 用户身份或使用 `sudo` 运行以下命令以安装软件：
++
+`yum install netapp-um<version>.x86_64 ： rpm`
+
++
+此命令将安装 .rpm 软件包，所有其他必要的支持软件以及 Unified Manager 软件。
+
++
+[NOTE]
+====
+请勿尝试使用其他命令（例如 `rpm -ivh` ）进行安装。要在 Red Hat Enterprise Linux 或 CentOS 系统上成功安装 Unified Manager ，需要按特定顺序将所有 Unified Manager 文件和相关文件安装到特定的目录结构中，此结构由 `yum install netapp-um<version>.x86_64` 命令自动强制实施。
+
+====
+. 忽略安装消息后立即显示的电子邮件通知。
++
+此电子邮件会通知 root 用户初始 cron 作业失败，此操作不会对安装产生负面影响。
+
+. 安装消息完成后，滚动回这些消息，直到您看到消息，其中系统显示 Unified Manager Web UI 的 IP 地址或 URL ，维护用户名（ umadmin ）和默认密码。
++
+此消息类似于以下内容：
+
++
+[listing]
+----
+Active IQ Unified Manager installed successfully.
+Use a web browser and one of the following URL(s) to configure and access the Unified Manager GUI.
+https://default_ip_address/    (if using IPv4)
+https://[default_ip_address]/  (if using IPv6)
+https://fully_qualified_domain_name/
+
+Log in to Unified Manager in a web browser by using following details:
+  username: umadmin
+  password: admin
+----
+. 记录 IP 地址或 URL ，分配的用户名（ umadmin ）和当前密码。
+. 如果在安装 Unified Manager 之前使用自定义主目录创建了一个 umadmin 用户帐户，则必须指定 umadmin 用户登录 Shell ：
++
+`usermod -s /bin/maintenance-user-shell.sh umadmin`
+
+
+
+访问 Web UI 以更改 umadmin 用户的默认密码，并执行 Unified Manager 的初始设置，如中所述 link:../config/concept_configure_unified_manager.html["《 Active IQ Unified Manager 系统配置指南》"]。

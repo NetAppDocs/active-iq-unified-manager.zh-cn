@@ -1,0 +1,15 @@
+---
+permalink: install-windows/concept_overview_of_installation_process_on_windows.html 
+sidebar: sidebar 
+keywords: overview, installation, process 
+summary: 安装工作流介绍了在使用 Unified Manager 之前必须执行的任务。 
+---
+= 安装过程概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装工作流介绍了在使用 Unified Manager 之前必须执行的任务。
+
+image::../media/install_flow_on_windows.gif[在 Windows 上安装流程]

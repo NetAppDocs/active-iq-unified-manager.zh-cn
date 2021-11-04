@@ -1,0 +1,35 @@
+---
+permalink: storage-mgmt/task_edit_clusters.html 
+sidebar: sidebar 
+keywords: edit, clusters 
+summary: 您可以使用编辑集群对话框修改现有集群的设置，例如主机名或 IP 地址，用户名，密码和端口。 
+---
+= 编辑集群
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用编辑集群对话框修改现有集群的设置，例如主机名或 IP 地址，用户名，密码和端口。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员角色或存储管理员角色。
+
+[NOTE]
+====
+从 Unified Manager 9.7 开始，只能使用 HTTPS 添加集群。
+
+====
+.步骤
+. 在左侧导航窗格中，单击 * 存储管理 * > * 集群设置 * 。
+. 在 * 集群设置 * 页面上，选择要编辑的集群，然后单击 * 编辑 * 。
+. 在 * 编辑集群 * 对话框中，根据需要修改值。
+. 单击 * 提交 * 。
+
+
+* 相关信息 *
+
+link:../config/task_add_users.html["添加用户"]
+
+link:../health-checker/task_view_cluster_list_and_details.html["查看集群列表和详细信息"]

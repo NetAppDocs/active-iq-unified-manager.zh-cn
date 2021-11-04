@@ -1,0 +1,71 @@
+---
+permalink: api-automation/concept_job_api.html 
+sidebar: sidebar 
+keywords: jobs, view 
+summary: 您可以使用 management-server 类别下的 Jobs API 查看异步操作的执行详细信息。 
+---
+= 查看作业和系统详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `management-server` 类别下的 `Jobs` API 查看异步操作的执行详细信息。使用 `management-server` 类别下的 `ssystem` API ，您可以查看 Active IQ Unified Manager 环境中的实例详细信息。
+
+
+
+== 查看作业
+
+在 Active IQ Unified Manager 中，添加和修改资源等操作是通过同步和异步 API 调用来执行的。为异步执行计划的调用可通过为此调用创建的作业对象进行跟踪。每个作业对象都有一个唯一的标识密钥。每个作业对象都会返回作业对象 URI ，以便您访问和跟踪作业进度。您可以使用此 API 检索每次执行的详细信息。
+
+通过使用此 API ，您可以查询数据中心的所有作业对象，包括历史数据。默认情况下，查询所有作业将返回通过 Web UI 和 API 界面触发的最后 20 个作业的详细信息。使用内置筛选器查看特定作业。您还可以使用作业键查询特定作业的详细信息，并对资源运行下一组操作。
+
+[cols="4*"]
+|===
+| 类别 | HTTP 动词 | 路径 | Description 
+
+
+ a| 
+管理服务器
+ a| 
+获取
+ a| 
+` 管理服务器 / 作业`
+ a| 
+返回所有作业的作业详细信息。如果没有任何排序顺序，则返回上一个提交的作业对象。
+
+
+
+ a| 
+管理服务器
+ a| 
+获取
+ a| 
+` /management-server/jobs/\ ｛ key ｝`
+
+输入作业对象的作业密钥以查看该作业的特定详细信息。
+ a| 
+返回特定作业对象的详细信息。
+
+|===
+
+
+== 查看系统详细信息
+
+通过使用 ` /management-server/system` API ，您可以查询 Unified Manager 环境的实例特定详细信息。API 将返回有关产品和服务的信息，例如系统上安装的 Unified Manager 版本， UUID ，供应商名称，主机操作系统以及名称， 问题描述以及 Unified Manager 实例上运行的服务的状态。
+
+[cols="4*"]
+|===
+| 类别 | HTTP 动词 | 路径 | Description 
+
+
+ a| 
+管理服务器
+ a| 
+获取
+ a| 
+` 管理服务器 / 系统`
+ a| 
+运行此 API 不需要输入参数。默认情况下，将返回当前 Unified Manager 实例的系统详细信息。
+
+|===

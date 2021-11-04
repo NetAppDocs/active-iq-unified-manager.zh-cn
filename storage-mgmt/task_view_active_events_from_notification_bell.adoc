@@ -1,0 +1,22 @@
+---
+permalink: storage-mgmt/task_view_active_events_from_notification_bell.html 
+sidebar: sidebar 
+keywords: view, active, events, notification, bell 
+summary: 通过菜单栏中的通知铃，您可以快速查看 Unified Manager 正在跟踪的最重要活动事件。 
+---
+= 通过通知铃查看活动事件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通知铃（image:../media/notification_bell.png[""]），您可以快速查看 Unified Manager 正在跟踪的最重要活动事件。
+
+通过活动事件列表，可以查看所有集群上的严重，错误，警告和升级事件总数。此列表包含过去 7 天的事件，不包括信息事件。您可以单击某个链接以显示您最感兴趣的事件列表。
+
+请注意，如果无法访问集群， Unified Manager 将在此页面中显示此信息。您可以单击 * 详细信息 * 按钮查看有关无法访问的集群的详细信息。此操作将打开事件详细信息页面。此页面还会显示扩展监控问题，例如管理工作站上的空间或 RAM 不足。
+
+.步骤
+. 在菜单栏中，单击 image:../media/notification_bell.png[""]。
+. 要查看任何活动事件的详细信息，请单击事件文本链接，例如 "2 capacity" 或 "4 Performance" 。
+

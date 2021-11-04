@@ -1,0 +1,45 @@
+---
+permalink: storage-mgmt/concept_provision_and_manage_workloads.html 
+sidebar: sidebar 
+keywords: provision, manage, workloads 
+summary: Active IQ Unified Manager 的主动管理功能可提供性能服务级别，存储效率策略和存储提供程序 API ，用于配置，监控和管理数据中心中的存储工作负载。 
+---
+= 配置和管理工作负载
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager 的主动管理功能可提供性能服务级别，存储效率策略和存储提供程序 API ，用于配置，监控和管理数据中心中的存储工作负载。
+
+[NOTE]
+====
+Unified Manager 默认提供此功能。如果您不打算使用此功能，可以从 * 存储管理 * > * 功能设置 * 中将其禁用。
+
+====
+启用后，您可以在 Unified Manager 实例管理的 ONTAP 集群上配置工作负载。您还可以为工作负载分配性能服务级别和存储效率策略等策略，并根据这些策略管理存储环境。
+
+此功能支持以下功能：
+
+* 自动发现添加的集群上的存储工作负载，以便于评估和部署存储工作负载
+* 配置支持 NFS 和 CIFS 协议的 NAS 工作负载
+* 配置支持 iSCSI 和 FCP 协议的 SAN 工作负载
+* 支持在同一文件共享上使用 NFS 和 CIFS 协议
+* 管理性能服务级别和存储效率策略
+* 为存储工作负载分配性能服务级别和存储效率策略
+
+
+用户界面左窗格中的 * 配置 * ， * 存储 * > * 工作负载 * 和 * 策略 * 选项可用于修改各种配置。
+
+您可以使用以下选项执行以下功能：
+
+* 在 * 存储 * > * 工作负载 * 页面上查看存储工作负载
+* 从配置工作负载页面创建存储工作负载
+* 根据策略创建和管理性能服务级别
+* 根据策略创建和管理存储效率策略
+* 从工作负载页面为存储工作负载分配策略
+
+
+* 相关信息 *
+
+link:../config/concept_policy_based_storage_management.html["基于策略的存储管理"]

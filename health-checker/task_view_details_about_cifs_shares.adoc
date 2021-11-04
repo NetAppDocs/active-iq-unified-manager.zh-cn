@@ -1,0 +1,51 @@
+---
+permalink: health-checker/task_view_details_about_cifs_shares.html 
+sidebar: sidebar 
+keywords: smb, cifs, view, shares, details 
+summary: 您可以查看有关所有 SMB/CIFS 共享的详细信息，例如共享名称，接合路径，包含的对象，安全设置以及为共享定义的导出策略。使用运行状况：所有 SMB 共享视图查看所有受监控集群上的所有 SMB 共享，并使用 Storage VM/ 运行状况详细信息页面查看特定 Storage Virtual Machine （ SVM ）上的所有 SMB 共享。 
+---
+= 查看有关 SMB/CIFS 共享的详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看有关所有 SMB/CIFS 共享的详细信息，例如共享名称，接合路径，包含的对象，安全设置以及为共享定义的导出策略。使用运行状况：所有 SMB 共享视图查看所有受监控集群上的所有 SMB 共享，并使用 Storage VM/ 运行状况详细信息页面查看特定 Storage Virtual Machine （ SVM ）上的所有 SMB 共享。
+
+* 您需要的内容 *
+
+* 必须在集群上启用 CIFS 许可证。
+* 必须配置为 SMB/CIFS 共享提供服务的网络接口。
+* 您必须具有操作员，应用程序管理员或存储管理员角色。
+
+
+[NOTE]
+====
+不会显示文件夹中的共享。
+
+====
+.步骤
+. 在左侧导航窗格中，根据您要查看所有 SMB/CIFS 共享还是仅查看特定 SVM 的共享，执行以下步骤。
++
+[cols="2*"]
+|===
+| 至 ... | 请按照以下步骤操作 ... 
+
+
+ a| 
+查看所有 SMB/CIFS 共享
+ a| 
+单击 * 存储 * > * SMB 共享 *
+
+
+
+ a| 
+查看单个 SVM 的 SMB/CIFS 共享
+ a| 
+.. 单击 * 存储 * > * 存储 VM*
+.. 单击要查看其 SMB/CIFS 共享详细信息的 SVM 。
+.. 在 Storage VM/ 运行状况详细信息页面中，单击 * SMB 共享 * 选项卡。
+
+
+|===
+

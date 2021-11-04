@@ -1,0 +1,31 @@
+---
+permalink: reporting/concept_unified_manager_reporting.html 
+sidebar: sidebar 
+keywords: unified, manager, reporting 
+summary: Active IQ Unified Manager （以前称为 OnCommand Unified Manager ）可以查看，自定义，下载和计划 ONTAP 存储系统的报告。这些报告可以提供有关存储系统容量，运行状况，性能和保护关系的详细信息。 
+---
+= Unified Manager 报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager （以前称为 OnCommand Unified Manager ）可以查看，自定义，下载和计划 ONTAP 存储系统的报告。这些报告可以提供有关存储系统容量，运行状况，性能，安全性和保护关系的详细信息。
+
+Active IQ Unified Manager 9.6 中引入的新 Unified Manager 报告和计划功能取代了 Unified Manager 9.5 中停用的以前的报告引擎。
+
+报告可提供不同的网络视图，提供有关容量，运行状况，性能，安全性和保护数据的可操作智能。您可以通过显示，隐藏和重新排列列，筛选数据，对数据排序， 并搜索结果。您可以保存自定义视图以供重复使用，将其下载为报告，并将其计划为重复报告以通过电子邮件分发。
+
+您可以下载 Microsoft ® Excel 格式的视图并对其进行自定义。您可以使用高级 Excel 功能，例如复杂排序，分层筛选器，数据透视表和图表。对生成的 Excel 报告感到满意后，您可以上传 Excel 文件，以便在每次计划和共享报告时使用。
+
+除了从用户界面生成报告之外，您还可以使用以下其他方法从 Unified Manager 中提取运行状况，安全性和性能数据：
+
+* 使用开放式数据库连接（ ODBC ）和 ODBC 工具直接访问数据库以获取集群信息
+* 执行 Unified Manager REST API 以返回您要查看的信息
+
+
+从此版本的 Active IQ Unified Manager 中，报告进行了以下增强：
+
+* 系统会根据配置的计划为报告发送电子邮件。即使生成按需报告，您也会收到一封电子邮件。
+* 报告的文件名和报告的元数据包括生成报告的主机名。即使任何一个更改了文件名，您仍然可以确定由于此增强功能而生成报告的主机名。
+

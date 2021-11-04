@@ -1,0 +1,35 @@
+---
+permalink: reporting/task_edit_scheduled_reports.html 
+sidebar: sidebar 
+keywords: editing, schedule, reports 
+summary: 计划报告后，您可以在报告计划页面上对其进行编辑。 
+---
+= 编辑计划的报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+计划报告后，您可以在报告计划页面上对其进行编辑。
+
+* 您需要的内容 *
+
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储管理 * > * 报告计划 * 。
++
+image::../media/scheduled_reports_2.gif[已计划报告 2.]
+
++
+[NOTE]
+====
+如果您拥有相应的权限，则可以更改系统中的任何报告及其计划。
+
+====
+. 单击更多图标 image:../media/more_icon.gif[""] 要更改的计划。
+. 单击 * 编辑 * 。
+. 您可以更改报告计划的 * 计划名称 * ， * 收件人 * 列表， * 频率 * 和 * 格式 * 。
+. 完成后，单击复选标记以保存所做的更改。
+

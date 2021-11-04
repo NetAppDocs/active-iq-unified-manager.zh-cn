@@ -1,0 +1,23 @@
+---
+permalink: health-checker/task_view_how_user_authentication_is_being_managed_on_all_clusters.html 
+sidebar: sidebar 
+keywords: view, cluster authentication status, user authentication, manage, clusters 
+summary: '" 安全性 " 页面显示用于对每个集群上的用户进行身份验证的身份验证类型，以及使用每种类型访问集群的用户数量。这样，您就可以验证是否按照贵组织的定义安全地执行用户身份验证。' 
+---
+= 查看如何在所有集群上管理用户身份验证
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+" 安全性 " 页面显示用于对每个集群上的用户进行身份验证的身份验证类型，以及使用每种类型访问集群的用户数量。这样，您就可以验证是否按照贵组织的定义安全地执行用户身份验证。
+
+.步骤
+. 在左侧导航窗格中，单击 * 信息板 * 。
+. 从信息板顶部的下拉菜单中选择 * 所有集群 * 。
+. 单击 * 安全性 * 面板中的右箭头，此时将显示 * 安全性 * 页面。
+. 查看 * 集群身份验证 * 卡，查看使用每种身份验证类型访问系统的用户数。
+. 查看 * 集群安全性 * 卡，查看用于对每个集群上的用户进行身份验证的身份验证机制。
+
+
+如果某些用户使用不安全的方法或 NetApp 不建议的方法访问系统，您可以禁用此方法。

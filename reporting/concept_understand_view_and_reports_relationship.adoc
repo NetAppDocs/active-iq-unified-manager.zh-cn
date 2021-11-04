@@ -1,0 +1,28 @@
+---
+permalink: reporting/concept_understand_view_and_reports_relationship.html 
+sidebar: sidebar 
+keywords: understand, view, report, relationship 
+summary: 下载或计划时，视图和清单页面将成为报告。 
+---
+= 了解视图和报告关系
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+下载或计划时，视图和清单页面将成为报告。
+
+您可以自定义并保存视图和清单页面以供重复使用。您可以在 Unified Manager 中查看的几乎所有内容都可以作为报告进行保存，重复使用，自定义，计划和共享。
+
+在视图下拉列表中，带有删除图标的项是您或其他用户创建的现有自定义视图。不带图标的项是 Unified Manager 提供的默认视图。无法修改或删除默认视图。
+
+[NOTE]
+====
+* 如果从列表中删除自定义视图，则还会删除使用该视图的任何 Excel 文件或已计划报告。
+* 如果更改自定义视图，则使用该视图的报告将在下次根据报告计划生成报告并通过电子邮件发送时反映所做的更改。更改视图时，请确保所做的更改适用于用于报告的任何关联 Excel 自定义设置。如果需要，您可以通过以下方式更新 Excel 文件：下载该文件，进行所需更改，然后将其作为新的 Excel 视图自定义上传。
+
+
+====
+image::../media/view_drop_down_3.png[查看下拉列表 3.]
+
+只有具有应用程序管理员或存储管理员角色的用户才能看到删除图标，更改或删除视图，或者更改或删除已计划的报告。

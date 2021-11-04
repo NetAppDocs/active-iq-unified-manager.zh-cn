@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task_restore_mysql_database_backup_on_windows.html 
+sidebar: sidebar 
+keywords: restore, windows, mysql, database, backup 
+summary: 如果发生数据丢失或数据损坏，您可以使用还原功能将 Unified Manager 还原到先前的稳定状态，同时最大程度地减少丢失。您可以使用 Unified Manager 维护控制台将 Unified Manager MySQL 数据库还原到本地 Windows 系统或远程 Windows 系统。 
+---
+= 在 Windows 上还原 MySQL 数据库备份
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果发生数据丢失或数据损坏，您可以使用还原功能将 Unified Manager 还原到先前的稳定状态，同时最大程度地减少丢失。您可以使用 Unified Manager 维护控制台将 Unified Manager MySQL 数据库还原到本地 Windows 系统或远程 Windows 系统。
+
+* 您需要的内容 *
+
+* 您必须具有 Windows 管理员权限。
+* 您必须已将 Unified Manager 备份文件和数据库存储库目录的内容复制到要执行还原操作的系统。
++
+建议将备份文件复制到默认目录 ` \ProgramData\NetApp\OnCommandAppData\ocum\backup` 。数据库存储库文件必须复制到 ` \backup` 目录下的 ` \database_dump _repos` 子目录。
+
+* 备份文件的类型必须为 ` .7z` 。
+
+
+还原功能是针对平台和版本的。您只能在同一版本的 Unified Manager 上还原 Unified Manager MySQL 备份，并且 Windows 备份只能在 Windows 平台上还原。
+
+[TIP]
+====
+如果文件夹名称包含空格，则必须使用双引号将备份文件的绝对路径或相对路径包括在内。
+
+====
+.步骤
+. 如果要还原到新服务器，则在安装 Unified Manager 后，请勿启动用户界面，也不要在安装完成后配置任何集群，用户或身份验证设置。备份文件会在还原过程中填充此信息。
+. 使用管理员凭据登录到 Unified Manager 系统。
+. 以 Windows 管理员身份启动 PowerShell 。
+. 输入命令 `mainstion_console` 并按 Enter 键。
+. 在维护控制台 * 主菜单 * 中，输入 * 备份还原 * 选项的编号。
+. 输入 * 还原 MySQL Backup* 的编号。
+. 出现提示时，输入备份文件的绝对路径。
++
+[listing]
+----
+Bundle to restore from: \ProgramData\NetApp\OnCommandAppData\ocum\backup\UM_9.8.N151118.2300_backup_windows_02-20-2020-02-51.7z
+----
++
+还原操作完成后，您可以登录到 Unified Manager 。
+
+
+
+还原备份后，如果 OnCommand Workflow Automation 服务器不起作用，请执行以下步骤：
+
+. 在 Workflow Automation 服务器上，更改 Unified Manager 服务器的 IP 地址以指向最新的计算机。
+. 在 Unified Manager 服务器上，如果在步骤 1 中采集失败，请重置数据库密码。
+

@@ -1,0 +1,48 @@
+---
+permalink: health-checker/task_configure_backup_location_for_windows_snapshot_backup.html 
+sidebar: sidebar 
+keywords: configure, backup, location, windows 
+summary: 即使在 Windows 上安装了 Active IQ Unified Manager ，您也应配置要存储 Snapshot 备份的卷。 
+---
+= 配置 Windows 的备份位置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+即使在 Windows 上安装了 Active IQ Unified Manager ，您也应配置要存储 Snapshot 备份的卷。
+
+* 您需要的内容 *
+
+集群， Storage VM 和卷必须满足以下要求：
+
+* 集群要求：
++
+** 必须安装 ONTAP 9.3 或更高版本
+** 它应在地理位置上靠近 Unified Manager 服务器
+** 它由 Unified Manager 监控
+
+
+* Storage VM 要求：
++
+** ONTAP 集群上的 iSCSI 连接
+** 必须为配置的计算机启用 iSCSI 协议
+** 您应该有一个专用卷和 LUN 用于备份配置。选定卷只能包含一个 LUN ，而不能包含任何其他 LUN 。
+** LUN 的大小应至少是 9.9 Active IQ Unified Manager 中预期处理的数据大小的两倍。
++
+这样也会对卷设置相同的大小要求。
+
+** 确保已选择所有读 / 写访问权限
+** 确保在导出策略中将超级用户访问设置为 "`any` "
+
+
+* 卷和 LUN 要求：
++
+** 此卷应至少是 Unified Manager MySQL 数据目录大小的两倍。
+** 安全模式必须设置为 Windows
+** 必须禁用本地快照策略
+** 应启用卷自动调整大小
+** 应将性能服务级别设置为 IOPS 高且延迟低的策略，例如 "`Extreme` "
+
+
+

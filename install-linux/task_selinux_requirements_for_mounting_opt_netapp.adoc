@@ -1,0 +1,192 @@
+---
+permalink: install-linux/task_selinux_requirements_for_mounting_opt_netapp.html 
+sidebar: sidebar 
+keywords: unified manager, selinux requirements, mounting, nfs, cifs, share 
+summary: 如果您计划在 NAS 或 SAN 设备上挂载 /opt/netapp 或 /opt/netapp/data ，并且已启用 SELinux ，则需要了解以下注意事项。 
+---
+= NFS 和 CIFS 共享上的 SELinux 要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您计划在 NAS 或 SAN 设备上挂载 ` 或 opt/netapp` 或 ` /opt/netapp/data` ，并且已启用 SELinux ，则需要注意一些事项。
+
+如果您计划从根文件系统以外的任何位置挂载 ` 或 opt/netapp` 或 ` 选项 /netapp/data` ，并且您的环境已启用 SELinux ，则应为挂载的目录设置正确的上下文。对于您环境中的适用情形，请按照以下步骤设置并确认正确的 SELinux 上下文。
+
+
+
+== 挂载 /opt/netapp/data 时配置 SELinux 上下文
+
+如果您已在系统中挂载了 ` /opt/netapp/data` ，并且 SELinux 设置为 `Enforcing` ，请确保 ` /opt/netapp/data` 的 SELinux 上下文类型设置为 `mysqld_db_t` ，这是数据库文件位置的默认上下文元素。
+
+. 运行此命令以检查上下文：
++
+`ls -dz /opt/netapp/data`
+
++
+示例输出：
+
++
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:default_t:s0 /opt/netapp/data
+----
++
+
+NOTE: 在此输出中，上下文为 `default_t` 。您应将此上下文更改为 `mysqld_db_t` 。
+
+. 执行以下步骤可根据您的挂载方式 ` /opt/netapp/data` 设置上下文。
++
+.. 运行以下命令将上下文设置为 `mysqld_db_t` ：
+
+
+
+
+[listing]
+----
+semanage fcontext -a -t mysqld_db_t "/opt/netapp/data"
+restorecon -R -v /opt/netapp/data
+----
+. 如果已在 ` /etc/fstab` 中配置了 ` /opt/netapp/data` ，则应编辑 ` /etc/fstab` 文件。对于 ` /opt/netapp/data/` mount 选项，将 MySQL 标签添加为：
++
+`context=system_u ： object_r ： mysqld_db_t ： s0`
+
+. 卸载并重新挂载 ` /opt/netapp/data/` 以启用上下文。
+. 如果您使用的是直接 NFS 挂载，请运行以下命令将上下文设置为 `mysqld_db_t` ：
++
+`m挂载 <nfsshare> ： /<mountpoint>/opt/netapp/data -o context=system_u ： object_r ： mysqld_db_t ： s0` 。验证上下文是否设置正确：
+
+
+
+`ls -dz /opt/netapp/data/`
+
+示例输出：
+
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:mysqld_db_t:s0 /opt/netapp/data/
+----
+
+
+== 挂载 /opt/netapp 和 /opt/netapp/data/ 时配置 SELinux 环境也会单独挂载
+
+在这种情况下，首先应按照上一节所述为 ` /opt/netapp/data/` 设置上下文。为 ` /opt/netapp/data/` 设置正确的上下文后，请确保父目录 ` /opt/netapp` 未将 SELinux 上下文设置为 `file_t` 。
+
+.步骤
+. 运行此命令以检查上下文：
++
+`ls -dz /opt/netapp`
+
++
+示例输出：
+
++
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:file_t:s0 /opt/netapp
+----
++
+在此输出中，应更改上下文 `file_t` 。以下命令将上下文设置为 `usr_t` 。您可以根据安全要求将上下文设置为 `file_t` 以外的任何值。
+
+. 执行以下步骤可根据您的挂载方式 ` /opt/NetApp` 设置上下文。
++
+.. 运行以下命令以设置上下文：
+
+
+
+
+[listing]
+----
+semanage fcontext -a -t usr_t "/opt/netapp"
+restorecon -v /opt/netapp
+----
+. 如果已在 ` /etc/fstab` 中配置了 ` /opt/NetApp` ，则应编辑 ` /etc/fstab` 文件。对于 ` /opt/NetApp` mount 选项，将 MySQL 标签添加为：
++
+`context=system_u ： object_r ： usr_t ： s0`
+
+. 卸载，然后再次挂载 ` /opt/NetApp` 以启用上下文。
+. 如果您使用的是直接 NFS 挂载，请运行以下命令以设置上下文：
++
+`m挂载 <nfsshare> ： /<mountpoint>/opt/netapp -o context=system_u ： object_r ： usr_t ： s0`
+
++
+.. 验证上下文是否设置正确：
++
+`ls -dz /opt/netapp`
+
++
+示例输出
+
+
+
+
+
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:usr_t:s0 /opt/netapp
+----
+
+
+== 挂载 /opt/netapp 且 /opt/netapp/data/ 未单独挂载时配置 SELinux 环境
+
+如果您已在系统中挂载了 ` /opt/NetApp` ，并且 SELinux 设置为 `Enforcing` ，请确保 ` /opt/NetApp` 的 SELinux 上下文类型设置为 `mysqld_db_t` ，这是数据库文件位置的默认上下文元素。
+
+.步骤
+. 运行此命令以检查上下文：
++
+`ls -dz /opt/netapp`
+
++
+示例输出：
+
+
+
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:default_t:s0 /opt/netapp
+----
+
+NOTE: 在此输出中，上下文为 `default_t` 。您应将此上下文更改为 `mysqld_db_t` 。
+
+. 执行以下步骤可根据您的挂载方式 ` /opt/NetApp` 设置上下文。
++
+.. 运行以下命令将上下文设置为 `mysqld_db_t` ：
+
+
+
+
+[listing]
+----
+semanage fcontext -a -t mysqld_db_t "/opt/netapp"
+restorecon -R -v /opt/netapp
+----
+. 如果您已在 ` /etc/fstab` 中配置了 ` /opt/NetApp` ，请编辑 ` /etc/fstab` 文件。对于 ` /opt/netapp/` mount 选项，将 MySQL 标签添加为：
+
+
+[listing]
+----
+context=system_u:object_r:mysqld_db_t:s0
+----
+. 卸载，然后再次挂载 ` /opt/netapp/` 以启用上下文。
+. 如果您使用的是直接 NFS 挂载，请运行以下命令将上下文设置为 `mysqld_db_t` ：
+
+
+[listing]
+----
+mount <nfsshare>:/<mountpoint> /opt/netapp -o context=system_u:object_r:mysqld_db_t:s0
+----
+. 验证上下文是否设置正确：
++
+`ls -dz /opt/netapp/`
+
++
+示例输出：
+
+
+
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:mysqld_db_t:s0 /opt/netapp/
+----
+'''

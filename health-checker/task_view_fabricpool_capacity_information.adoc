@@ -1,0 +1,75 @@
+---
+permalink: health-checker/task_view_fabricpool_capacity_information.html 
+sidebar: sidebar 
+keywords: view, fabricPool, cloud tier, mirror tier, capacity, information 
+summary: 您可以在这些对象的容量和性能清单及详细信息页面上查看集群，聚合和卷的 FabricPool 容量信息。配置镜像层后，这些页面还会显示 FabricPool 镜像信息。 
+---
+= 查看 FabricPool 容量信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在这些对象的容量和性能清单及详细信息页面上查看集群，聚合和卷的 FabricPool 容量信息。配置镜像层后，这些页面还会显示 FabricPool 镜像信息。
+
+这些页面会显示以下信息：本地性能层和云层上的可用容量，两个层中的已用容量，附加到云层的聚合， 以及通过将某些信息移动到云层来实施 FabricPool 功能的卷。
+
+当云层镜像到另一个云提供程序（ " `m镜像层` " ）时，两个云层都会显示在聚合 / 运行状况详细信息页面中。
+
+.步骤
+. 执行以下操作之一：
++
+[cols="2*"]
+|===
+| 查看容量信息 | 执行此操作 ... 
+
+
+ a| 
+集群
+ a| 
+.. 在容量：所有集群视图中，单击一个集群。
+.. 在集群 / 运行状况详细信息页面上，单击 * 配置 * 选项卡。
++
+此时将显示此集群连接到的任何云层的名称。
+
+
+
+
+
+ a| 
+聚合
+ a| 
+.. 在容量：所有聚合视图中，单击类型字段指示 `SSD （ FabricPool ）` 或`HDD （ FabricPool ）` 的聚合。
+.. 在聚合 / 运行状况详细信息页面上，单击 * 容量 * 选项卡。
++
+此时将显示云层中的已用总容量。
+
+.. 单击 * 磁盘信息 * 选项卡。
++
+此时将显示云层的名称和已用容量。
+
+.. 单击 * 配置 * 选项卡。
++
+此时将显示云层的名称以及有关云层的其他详细信息。
+
+
+
+
+
+ a| 
+Volumes
+ a| 
+.. 在容量：所有卷视图中，单击 "`分层策略` " 字段中显示策略名称的卷。
+.. 在卷 / 运行状况详细信息页面上，单击 * 配置 * 选项卡。
++
+此时将显示分配给卷的 FabricPool 分层策略的名称。
+
+
+
+|===
+. 在 * 工作负载分析 * 页面中，您可以在 * 容量趋势 * 区域中选择 "`Cloud Tier View` " ，以查看上个月本地性能层和云层中使用的容量。
+
+
+有关 FabricPool 聚合的详细信息，请参见 _Data ONTAP 9 磁盘和聚合高级指南 _ 。
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["《 ONTAP 9 磁盘和聚合高级指南》"]

@@ -1,0 +1,32 @@
+---
+permalink: health-checker/concept_what_database_restore_is.html 
+sidebar: sidebar 
+keywords: unified manager, database, restore 
+summary: MySQL 数据库还原是指将现有 Unified Manager 备份文件还原到相同或不同 Unified Manager 服务器的过程。您可以从 Unified Manager 维护控制台执行还原操作。 
+---
+= 什么是数据库还原
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MySQL 数据库还原是指将现有 Unified Manager 备份文件还原到相同或不同 Unified Manager 服务器的过程。您可以从 Unified Manager 维护控制台执行还原操作。
+
+如果在同一（本地）系统上执行还原操作，并且备份文件全部存储在本地，则可以使用默认位置运行还原选项。如果要在其他 Unified Manager 系统（远程系统）上执行还原操作，则必须先将备份文件从二级存储复制到本地磁盘，然后再运行还原选项。
+
+在还原过程中，您将从 Unified Manager 中注销。还原过程完成后，您可以登录到系统。
+
+如果要将备份映像还原到新服务器，则在还原操作完成后，您需要生成新的 HTTPS 安全证书并重新启动 Unified Manager 服务器。在将备份映像还原到新服务器时，如果需要，您还需要重新配置 SAML 身份验证设置。
+
+[NOTE]
+====
+在 Unified Manager 升级到较新版本的软件后，不能使用旧的备份文件来还原映像。为了节省空间，升级 Unified Manager 时会自动删除除最新文件之外的所有旧备份文件。
+
+====
+* 相关信息 *
+
+link:../config/task_generate_an_https_security_certificate_ocf.html["生成 HTTPS 安全证书"]
+
+link:../config/task_enable_saml_authentication_um.html["启用 SAML 身份验证"]
+
+link:..//config/concept_authentication_with_active_directory_or_openldap.html["使用 Active Directory 或 OpenLDAP 进行身份验证"]

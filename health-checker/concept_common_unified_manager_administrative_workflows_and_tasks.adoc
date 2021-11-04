@@ -1,0 +1,49 @@
+---
+permalink: health-checker/concept_common_unified_manager_administrative_workflows_and_tasks.html 
+sidebar: sidebar 
+keywords: Common, unified, manager, health, workflows, tasks 
+summary: 与 Unified Manager 关联的一些常见管理工作流和任务包括：选择要监控的存储集群；诊断对数据可用性，容量和保护产生不利影响的情况；还原丢失的数据；配置和管理卷；根据需要捆绑诊断数据并将其发送给技术支持。 
+---
+= 常见 Unified Manager 运行状况工作流和任务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+与 Unified Manager 关联的一些常见管理工作流和任务包括：选择要监控的存储集群；诊断对数据可用性，容量和保护产生不利影响的情况；还原丢失的数据；配置和管理卷；根据需要捆绑诊断数据并将其发送给技术支持。
+
+通过 Unified Manager ，存储管理员可以查看信息板，评估受管存储集群的整体容量，可用性和保护运行状况，然后快速确定，找到，诊断和分配可能出现的任何特定问题以解决问题。
+
+与集群， Storage Virtual Machine （ SVM ），卷或 FlexGroup 卷相关的影响受管存储对象存储容量或数据可用性的最重要问题会显示在信息板页面上的系统运行状况图和事件中。确定严重问题后，此页面将提供相应的故障排除工作流支持链接。
+
+Unified Manager 还可以包含在包含相关易管理性工具（例如 OnCommand Workflow Automation （ WFA ））的工作流中，以支持直接配置存储资源。
+
+本文档介绍了与以下管理任务相关的常见工作流：
+
+* 诊断和管理可用性问题
++
+如果硬件故障或存储资源配置问题发生原因在信息板页面中显示数据可用性事件，存储管理员可以通过嵌入的链接查看有关受影响存储资源的连接信息，查看故障排除建议以及将问题描述解决方案分配给其他管理员。
+
+* 配置和监控性能意外事件
++
+管理员可以监控和管理所监控存储系统资源的性能。请参见 link:../performance-checker/concept_introduction_to_unified_manager_performance_monitoring.html["《 Active IQ Unified Manager 集群性能管理工作流指南》"] 有关详细信息 ...
+
+* 诊断和管理卷容量问题
++
+如果 " 信息板 " 页面中显示卷存储容量问题，则存储管理员可以通过嵌入的链接查看与受影响卷的存储容量相关的当前和历史趋势，查看故障排除建议并将问题描述解决方案分配给其他管理员。
+
+* 配置，监控和诊断保护关系问题
++
+创建和配置保护关系后，存储管理员可以查看与保护关系相关的潜在问题，保护关系的当前状态，有关受影响关系的当前和历史保护作业成功信息以及故障排除建议。请参见 link:../data-protection/concept_create_and_monitor_protection_relationships.html["《 Active IQ Unified Manager 保护指南》"] 有关详细信息 ...
+
+* 创建备份文件并从备份文件还原数据。
+* 将存储对象与标注关联
++
+通过将存储对象与标注关联，存储管理员可以筛选和查看与存储对象相关的事件，从而使存储管理员能够确定与事件相关的问题的优先级并解决这些问题。
+
+* 使用 REST API 通过查看 Unified Manager 捕获的运行状况，容量和性能信息来帮助管理集群。请参见 link:../api-automation/concept_get_started_with_um_apis.html["《 Active IQ Unified Manager API 开发人员指南》"] 有关详细信息 ...
+* 向技术支持发送支持包
++
+存储管理员可以使用维护控制台检索支持包并将其发送给技术支持。如果问题描述需要比 AutoSupport 消息更详细的诊断和故障排除信息，则必须将支持包发送给技术支持。
+
+

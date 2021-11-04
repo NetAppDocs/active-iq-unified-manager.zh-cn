@@ -1,0 +1,22 @@
+---
+permalink: api-automation/concept_rest_api_versioning_in_unified_manager_apis.html 
+sidebar: sidebar 
+keywords: api, version, active iq, unified, manager 
+summary: Active IQ Unified Manager 中的 REST API URI 用于指定版本号。例如， /v2/datacenter/SVM/SVM 。/v2/datacenter/SVM/SVM 中的版本号 v2 表示特定版本中使用的 API 版本。此版本号可通过发回客户端可以处理的响应来最大限度地减少 API 更改对客户端软件的影响。 
+---
+= Active IQ Unified Manager 中的 API 版本
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager 中的 REST API URI 用于指定版本号。例如， ` v2/datacenter/SVM/SVM 。` 版本号 `v2` in ` v2/datacenter/SVM/SVM` 表示特定版本中使用的 API 版本。此版本号可通过发回客户端可以处理的响应来最大限度地减少 API 更改对客户端软件的影响。
+
+此版本号的数字部分是相对于版本的增量部分。具有版本号的 URI 提供了一个一致的接口，可在未来版本中保持向后兼容性。您还会发现没有版本的相同 API ，例如， ` /datacenter/SVM/SVM ，` 表示没有版本的基础 API 。基础 API 始终是最新版本的 API 。
+
+[NOTE]
+====
+在 Swagger 界面的右上角，您可以选择要使用的 API 版本。默认情况下会选择最高版本。建议使用 Unified Manager 实例中可用的最高版本的特定 API （相对于增量整数）。
+
+====
+对于所有请求，您必须明确请求要使用的 API 版本。指定版本号后，此服务不会返回应用程序不能处理的响应元素。在 REST 请求中，您应包括 version 参数。早期版本的 API 在几个版本之后最终会弃用。在此版本中， API 的 `v1` 版本已弃用。

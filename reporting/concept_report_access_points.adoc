@@ -1,0 +1,24 @@
+---
+permalink: reporting/concept_report_access_points.html 
+sidebar: sidebar 
+keywords: access, points, generating, reports 
+summary: 您可以在 Unified Manager 中收集有关集群的信息，以便通过 UI ， MySQL 数据库查询和 REST API 创建报告。 
+---
+= 用于生成报告的访问点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Unified Manager 中收集有关集群的信息，以便通过 UI ， MySQL 数据库查询和 REST API 创建报告。
+
+本指南介绍了通过 UI 进行 Unified Manager 报告和计划的信息。
+
+您可以通过三种方式访问 Unified Manager 提供的报告功能：
+
+* 直接从 UI 中的清单页面提取数据。
+* 使用开放式数据库连接（ ODBC ）和 ODBC 工具访问所有可用对象。
+* 执行 Unified Manager REST API 以返回要查看的信息。
+
+
+本指南介绍了通过 UI 进行 Unified Manager 报告和计划的信息。

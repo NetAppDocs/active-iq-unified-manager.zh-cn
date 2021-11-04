@@ -1,0 +1,52 @@
+---
+permalink: install-windows/qsg-windows.html 
+sidebar: sidebar 
+keywords: quick start guide, QSG, Windows QSG, quick installation, Windows installer 
+summary: 基于 Linux 平台的 Unified Manager 快速入门指南。 
+---
+= Windows 安装快速入门说明
+
+
+
+
+== 系统要求
+
+* 操作系统： Microsoft Windows Server 2016 和 2019 64 位标准版和数据中心版。支持以下语言：
++
+** 英语
+** Japanese:
+** 简体中文
+
+
+* RAM ： 12 GB
+* CPU ：总计 9572 MHz
+* 可用磁盘空间： 100 GB 磁盘空间用于安装目录， 50 GB 磁盘空间用于 MySQL 数据目录
+
+
+有关详细的系统要求，请参见 link:../install-windows/concept_requirements_for_installing_unified_manager.html["Unified Manager 的安装要求"] 和 link:http://mysupport.netapp.com/matrix["互操作性表"]。
+
+
+
+== 安装 Active IQ Unified Manager
+
+
+
+=== 下载安装程序：
+
+. 下载 `ActiveIQUnifiedManager-<version>.exe` 安装包。
+. 将安装文件复制到目标系统上的目录。
+
+
+
+
+=== 安装 Unified Manager
+
+要安装 Unified Manager ，请确保已安装 Microsoft .NET 4.5.2 或更高版本。在安装过程中， Unified Manager 会根据需要安装其他第三方软件包。有关相关软件包的详细信息，请参见 link:../install-windows/reference_windows_software_and_installation_requirements.html["Windows 软件和安装要求"]。
+
+. 使用默认本地管理员帐户登录到 Windows 。
+. 在下载安装文件的目录中，右键单击并以管理员身份运行 Unified Manager 可执行文件（ .exe ）。
+. 出现提示时，输入用户名和密码以创建 Unified Manager 维护用户。
+. 在 Database Connection 向导中，输入 MySQL root 密码。
+. 按照其余提示完成安装。
+. 单击安装结束时的 * 完成 * ，此时将显示 Unified Manager Web UI 。
+

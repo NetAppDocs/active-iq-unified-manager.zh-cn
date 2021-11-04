@@ -1,0 +1,22 @@
+---
+permalink: health-checker/concept_what_does_not_compliant_mean.html 
+sidebar: sidebar 
+keywords: not compliant, compliant 
+summary: 如果不符合根据《适用于 ONTAP 9 的 NetApp 安全加固指南》中定义的建议评估的任何安全标准，则集群和 Storage Virtual Machine （ SVM ）将被视为不合规。此外，如果任何 SVM 被标记为不合规，则集群将被视为不合规。 
+---
+= 不合规的含义
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果不满足根据适用于 ONTAP 9_ 的 _NetApp 安全加固指南中定义的建议评估的任何安全标准，则会将集群和 Storage Virtual Machine （ SVM ）视为不合规。此外，如果任何 SVM 被标记为不合规，则集群将被视为不合规。
+
+安全卡中的状态图标对于其合规性具有以下含义：
+
+* image:../media/sev_normal_um60.png[""] - 此参数已按照建议进行配置。
+* image:../media/sev_warning_um60.png[""] - 未按建议配置参数。
+* image:../media/sev_information_um60.gif[""] —未在集群上启用此功能，或者未按建议配置此参数，但此参数不会影响对象的合规性。
+
+
+请注意，卷加密状态不会影响集群或 SVM 是否合规。

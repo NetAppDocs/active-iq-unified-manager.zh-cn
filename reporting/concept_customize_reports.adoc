@@ -1,0 +1,25 @@
+---
+permalink: reporting/concept_customize_reports.html 
+sidebar: sidebar 
+keywords: customize, reports 
+summary: 您可以通过多种方式自定义视图，以便创建一个报告，其中包含管理 ONTAP 集群所需的所有信息。 
+---
+= 自定义报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过多种方式自定义视图，以便创建一个报告，其中包含管理 ONTAP 集群所需的所有信息。
+
+从默认清单页面或自定义视图开始，然后通过添加或删除列，更改列顺序，筛选数据或按升序或降序对特定列进行排序来对其进行自定义。
+
+从 Unified Manager 9.8 开始，您还可以在 Excel 中下载视图，以使用高级功能对其进行自定义。完成后，上传自定义的 Excel 文件。如果您使用该视图计划报告，则它会使用自定义的 Excel 文件创建可共享的强大报告。
+
+有关使用 Excel 自定义报告的详细信息，请参见 _Sample Microsoft Excel Reports_。
+
+[NOTE]
+====
+您必须具有应用程序管理员或存储管理员角色才能管理报告。
+
+====

@@ -1,0 +1,77 @@
+---
+permalink: config/task_enable_and_disable_policy_based_storage_management.html 
+sidebar: sidebar 
+keywords: provisioning, performance service levels, storage management, enable, disable, policy-based 
+summary: 从 Unified Manager 9.7 开始，您可以在 ONTAP 集群上配置存储工作负载（卷和 LUN ），并根据分配的性能服务级别管理这些工作负载。此功能类似于在 ONTAP System Manager 中创建工作负载并附加 QoS 策略，但如果使用 Unified Manager 应用此功能，则可以在 Unified Manager 实例监控的所有集群之间配置和管理工作负载。 
+---
+= 启用和禁用基于策略的存储管理
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+从 Unified Manager 9.7 开始，您可以在 ONTAP 集群上配置存储工作负载（卷和 LUN ），并根据分配的性能服务级别管理这些工作负载。此功能类似于在 ONTAP System Manager 中创建工作负载并附加 QoS 策略，但如果使用 Unified Manager 应用此功能，则可以在 Unified Manager 实例监控的所有集群之间配置和管理工作负载。
+
+您必须具有应用程序管理员角色。
+
+默认情况下，此选项处于启用状态，但如果您不想使用 Unified Manager 配置和管理工作负载，则可以将其禁用。
+
+启用后，此选项将在用户界面中提供许多新项：
+
+[cols="2*"]
+|===
+| 新内容 | 位置 
+
+
+ a| 
+用于配置新工作负载的页面
+ a| 
+可从 * 常见任务 * > * 配置 * 获取
+
+
+
+ a| 
+用于创建性能服务级别策略的页面
+ a| 
+可从 * 设置 * > * 策略 * > * 性能服务级别 * 获取
+
+
+
+ a| 
+用于创建性能存储效率策略的页面
+ a| 
+可从 * 设置 * > * 策略 * > * 存储效率 * 获取
+
+
+
+ a| 
+用于描述当前工作负载性能和工作负载 IOPS 的面板
+ a| 
+可从信息板获取
+
+|===
+有关这些页面以及此功能的详细信息，请参见产品中的联机帮助。
+
+.步骤
+. 在左侧导航窗格中，单击 * 常规 * > * 功能设置 * 。
+. 在 * 功能设置 * 页面中，通过选择以下选项之一禁用或启用基于策略的存储管理：
++
+[cols="2*"]
+|===
+| 如果您要 ... | 然后执行此操作 ... 
+
+
+ a| 
+禁用基于策略的存储管理
+ a| 
+在 * 基于策略的存储管理 * 面板中，将滑块按钮移至左侧。
+
+
+
+ a| 
+启用基于策略的存储管理
+ a| 
+在 * 基于策略的存储管理 * 面板中，将滑块按钮移至右侧。
+
+|===
+

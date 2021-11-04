@@ -1,0 +1,44 @@
+---
+permalink: health-checker/task_view_detailed_security_status_for_clusters_and_svms.html 
+sidebar: sidebar 
+keywords: view, cluster security status, svm security status, volume encryption status 
+summary: '" 安全性 " 页面显示所有集群的高级别安全状态以及各个集群的详细安全状态。详细的集群状态包括集群合规性， SVM 合规性和卷加密合规性。' 
+---
+= 查看集群和 Storage VM 的详细安全状态
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+" 安全性 " 页面显示所有集群的高级别安全状态以及各个集群的详细安全状态。
+
+作为系统管理员，您可以使用 * 安全性 * 页面查看 ONTAP 集群和 Storage VM 在数据中心和站点级别的安全优势。
+
+您可以根据定义的参数收集和分析信息，以检测受监控集群和 Storage VM 上的可疑行为或任何未经授权的系统更改。
+
+详细的集群状态包括集群合规性， SVM 合规性和卷加密合规性。
+
+集群 / 安全详细信息页面通过检查全局 FIPS ， Telnet ，不安全 SSH 设置，登录横幅，网络时间协议等安全参数，提供集群安全合规性的默认视图。 AutoSupport HTTPS 传输和默认管理员。
+
+Storage VM/ 安全性详细信息页面可通过检查安全参数（例如 Storage VM ，集群，登录横幅，审核日志和不安全的 SSH 设置）来提供 Storage VM 安全合规性的默认视图。
+
+您也可以从集群和 Storage VM 详细信息页面生成，计划和下载安全合规性报告。
+
+在 * 安全信息板 * 中，单击 * 集群合规性 * 和 * 存储 VM 合规性 * 卡中的 * 查看报告 * 。
+
+.步骤
+. 在左侧导航窗格中，单击 * 信息板 * 。
+. 根据您要查看所有受监控集群或单个集群的安全状态，选择 * 所有集群 * 或从下拉菜单中选择一个集群。
+. 单击 * 安全性 * 面板中的右箭头。
++
+" 安全性 " 页面将显示以下信息：
+
++
+** 集群安全状态（合规或不合规的集群数量）
+** SVM 安全状态（合规或不合规的 SVM 数量）
+** 卷加密状态（已加密或未加密的卷数）
+** 每个集群上使用的集群身份验证方法
+
+
+. 请参见 http://www.netapp.com/us/media/tr-4569.pdf["《适用于 ONTAP 9 的 NetApp 安全加固指南》"] 有关如何使所有集群， SVM 和卷符合 NetApp 安全建议的说明。
+

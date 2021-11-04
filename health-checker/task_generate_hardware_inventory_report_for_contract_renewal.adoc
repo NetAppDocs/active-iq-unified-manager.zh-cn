@@ -1,0 +1,27 @@
+---
+permalink: health-checker/task_generate_hardware_inventory_report_for_contract_renewal.html 
+sidebar: sidebar 
+keywords: contract, renewal, cluster, inventory report, hardware, generate 
+summary: '您可以生成一个报告，其中包含完整的集群和节点信息列表，例如硬件型号和序列号，磁盘类型和数量，已安装许可证等。对于未连接到 NetAppActive IQ 平台的安全站点（ " 非公开 " 站点）中的合同续订，此报告非常有用。' 
+---
+= 生成硬件清单报告以续订合同
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以生成一个报告，其中包含完整的集群和节点信息列表，例如硬件型号和序列号，磁盘类型和数量，已安装许可证等。在未连接到 NetAppActive IQ 平台的安全站点（ `dark` Sites ）中，此报告对于合同续订很有用。
+
+* 您需要的内容 *
+
+您必须具有操作员，应用程序管理员或存储管理员角色。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 节点 * 。
+. 转到 * 运行状况：所有节点 * 视图或 * 性能：所有节点 * 视图。
+. 选择 * 报告 * > 3 > > "* 硬件清单报告 " 。
++
+硬件清单报告将以 .csv 文件的形式下载，其中包含截至当前日期的完整信息。
+
+. 将此信息提供给您的 NetApp 支持联系人以进行合同续订。
+

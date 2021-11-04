@@ -1,0 +1,36 @@
+---
+permalink: health-checker/reference_configure_ontap_cluster.html 
+sidebar: sidebar 
+keywords: netapp, snapshot, backup, windows, configure, ontap, cluster 
+summary: 在为 Windows 配置 Active IQ Unified Manager for Snapshot 备份和还原之前，您应该对 ONTAP 和 Windows 主机执行少量预配置。 
+---
+= 正在配置 ONTAP 集群
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在为 Windows 配置 Active IQ Unified Manager for Snapshot 备份和还原之前，您应该对 ONTAP 和 Windows 主机执行少量预配置。
+
+您可以使用命令提示符或 System Manager 用户界面配置 ONTAP 集群。配置 ONTAP 集群涉及到将数据 LIF 配置为可用作 iSCSI LIF 分配给 Storage VM 。下一步是使用 System Manager 用户界面配置启用了 iSCSI 的 Storage VM 。您需要为此 Storage VM 配置一个静态网络路由，以控制 LIF 如何将网络用于出站流量。
+
+[NOTE]
+====
+您应该有一个专用卷和一个 LUN 用于备份配置。选定卷应仅包含一个 LUN 。LUN 的大小应至少是 Active IQ Unified Manager 预期处理的数据大小的两倍。
+
+====
+您需要执行以下配置：
+
+.步骤
+. 配置启用了 iSCSI 的 Storage VM 或使用具有相同配置的现有 Storage VM 。
+. 为已配置的 Storage VM 配置网络路由。
+. 配置一个容量适当的卷以及一个 LUN ，确保该卷仅专用于此 LUN 。
++
+
+NOTE: 在 System Manager 上创建 LUN 的情况下，取消映射 LUN 可能会删除 igroup ，并且还原可能会失败。要避免这种情况，请确保在创建 LUN 时明确创建 LUN ，并且在取消映射 LUN 时不会将其删除。
+
+. 在 Storage VM 中配置启动程序组。
+. 配置端口集。
+. 将 igroup 与端口集集成。
+. 将 LUN 映射到 igroup 。
+

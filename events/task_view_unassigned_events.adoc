@@ -1,0 +1,25 @@
+---
+permalink: events/task_view_unassigned_events.html 
+sidebar: sidebar 
+keywords: view, unassigned, events 
+summary: 您可以查看未分配的事件，然后将每个事件分配给可以解决这些事件的用户。 
+---
+= 查看未分配的事件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看未分配的事件，然后将每个事件分配给可以解决这些事件的用户。
+
+* 您需要的内容 *
+
+您必须具有操作员，应用程序管理员或存储管理员角色。
+
+.步骤
+. 在左侧导航窗格中，单击 * 事件管理 * 。
++
+默认情况下， " 新建 " 和 " 已确认 " 事件将显示在 " 事件管理 " 清单页面上。
+
+. 从 * 筛选器 * 窗格的 * 已分配给 * 区域中选择 * 未分配 * 筛选器选项。
+

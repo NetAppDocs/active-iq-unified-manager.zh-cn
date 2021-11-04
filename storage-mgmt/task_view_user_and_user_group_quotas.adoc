@@ -1,0 +1,26 @@
+---
+permalink: storage-mgmt/task_view_user_and_user_group_quotas.html 
+sidebar: sidebar 
+keywords: view, user, user, group, quotas 
+summary: Storage VM/ 运行状况详细信息页面显示有关在 SVM 上配置的用户和用户组配额的信息。您可以查看用户或用户组的名称，对磁盘和文件设置的限制，已用磁盘和文件空间以及用于通知的电子邮件地址。 
+---
+= 查看用户和用户组配额
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Storage VM/ 运行状况详细信息页面显示有关在 SVM 上配置的用户和用户组配额的信息。您可以查看用户或用户组的名称，对磁盘和文件设置的限制，已用磁盘和文件空间以及用于通知的电子邮件地址。
+
+* 您需要的内容 *
+
+您必须具有操作员，应用程序管理员或存储管理员角色。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 存储 VM* 。
+. 在 * 运行状况：所有 Storage VM* 视图中，选择一个 Storage VM ，然后单击 * 用户和组配额 * 选项卡。
+
+
+* 相关信息 *
+
+link:../config/task_add_users.html["添加用户"]

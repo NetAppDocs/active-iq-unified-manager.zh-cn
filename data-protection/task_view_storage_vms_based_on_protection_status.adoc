@@ -1,0 +1,62 @@
+---
+permalink: data-protection/task_view_storage_vms_based_on_protection_status.html 
+sidebar: sidebar 
+keywords: storage vm, view protection status 
+summary: 您可以使用清单中的 Storage VM 页面查看 Active IQ Unified Manager 中的所有 Storage VM ，并根据其保护状态筛选这些 Storage VM 。 
+---
+= 根据保护状态查看 Storage VM
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用清单中的 Storage VM 页面查看 Active IQ Unified Manager 中的所有 Storage VM ，并根据其保护状态筛选这些 Storage VM 。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+此时， Storage VM 视图中会添加一个新列保护角色，用于提供有关 Storage VM 是否受保护的信息。
+
+[NOTE]
+====
+如果源集群未添加到 Active IQ Unified Manager 中，则网格中将不提供与该集群相关的所有信息。
+
+====
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 存储 VM* 。
+. 从 * 查看 * 菜单中，选择 * 运行状况 * > * 所有 Storage VM* 。
++
+此时将显示运行状况：所有 Storage VM 。
+
+. 单击 * 筛选器 * 可查看以下 Storage VM 之一。
++
+[cols="2*"]
+|===
+| 以查看 | 筛选器值 
+
+
+ a| 
+* 受保护的 Storage VM*
+ a| 
+* 保护角色 * 为 * 受保护 *
+
+
+
+ a| 
+* 未受保护的 Storage VM*
+ a| 
+* 保护角色 * 未受保护 *
+
+|===
++
+[NOTE]
+====
+您不能同时查看受保护和未受保护的 Storage VM 。您需要清除现有筛选器以重新应用新筛选器选项。
+
+====
+. 单击 * 应用筛选器 * 。
++
+未保存视图会根据您选择的筛选器显示受 Storage VM 灾难恢复保护或未受其保护的所有 Storage VM 。
+
+

@@ -1,0 +1,13 @@
+---
+permalink: health-checker/concept_understand_more_about_annotations.html 
+sidebar: sidebar 
+keywords: understand, annotations 
+summary: 了解有关标注的概念有助于您管理与环境中存储对象相关的事件。 
+---
+= 了解有关标注的更多信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解有关标注的概念有助于您管理与环境中存储对象相关的事件。

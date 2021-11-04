@@ -1,0 +1,159 @@
+---
+permalink: api-automation/task_modify_fileshare_to_include_cifs_and_nfs.html 
+sidebar: sidebar 
+keywords: modify, nfs, file, share, support, cifs 
+summary: 您可以修改 NFS 文件共享以支持 CIFS 协议。在创建文件共享期间，可以为同一文件共享同时指定访问控制列表（ ACL ）参数和导出策略规则。但是，如果要在创建 NFS 文件共享的同一个卷上启用 CIFS ，则可以更新该文件共享上的 ACL 参数以支持 CIFS 。 
+---
+= 修改 NFS 文件共享以支持 CIFS
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以修改 NFS 文件共享以支持 CIFS 协议。在创建文件共享期间，可以为同一文件共享同时指定访问控制列表（ ACL ）参数和导出策略规则。但是，如果要在创建 NFS 文件共享的同一个卷上启用 CIFS ，则可以更新该文件共享上的 ACL 参数以支持 CIFS 。
+
+* 您需要的内容 *
+
+. 创建的 NFS 文件共享必须仅包含导出策略详细信息。有关信息，请参见 _Manag管理 文件共享 _ 和 _Modifying storage workloads _ 。
+. 要运行此操作，您必须具有文件共享密钥。有关使用作业 ID 查看文件共享详细信息和检索文件共享密钥的信息，请参见 _Provisioning CIFS and NFS file shares_ 。
+
+
+这适用于您通过仅添加导出策略规则而不是 ACL 参数创建的 NFS 文件共享。您可以修改 NFS 文件共享以包含 ACL 参数。
+
+.步骤
+. 在 NFS 文件共享上，使用 ACL 详细信息执行 `patch` 操作以允许 CIFS 访问。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+patch
+ a| 
+` 存储提供程序 / 文件共享`
+
+|===
++
+* 示例 curc*
+
++
+根据您分配给用户组的访问权限（如以下示例所示），系统会创建一个 ACL 并将其分配给文件共享。
+
++
+[listing]
+----
+{
+  "access_control": {
+    "acl": [
+      {
+        "permission": "read",
+        "user_or_group": "everyone"
+      }
+    ],
+    "active_directory_mapping": {
+      "key": "3b648c1b-d965-03b7-20da-61b791a6263c"
+    }
+----
++
+* JSON 输出示例 *
+
++
+此操作将返回运行更新的作业的作业 ID 。
+
+. 通过查询同一文件共享的文件共享详细信息，验证是否已正确添加这些参数。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` /storage-provider/file-shares/\ ｛ key ｝`
+
+|===
++
+* JSON 输出示例 *
+
++
+[listing]
+----
+"access_control": {
+        "acl": [
+            {
+                "user_or_group": "everyone",
+                "permission": "read"
+            }
+        ],
+        "export_policy": {
+            "id": 1460288880641,
+            "key": "7d5a59b3-953a-11e8-8857-00a098dcc959:type=export_policy,uuid=1460288880641",
+            "name": "default",
+            "rules": [
+                {
+                    "anonymous_user": "65534",
+                    "clients": [
+                        {
+                            "match": "0.0.0.0/0"
+                        }
+                    ],
+                    "index": 1,
+                    "protocols": [
+                        "nfs3",
+                        "nfs4"
+                    ],
+                    "ro_rule": [
+                        "sys"
+                    ],
+                    "rw_rule": [
+                        "sys"
+                    ],
+                    "superuser": [
+                        "none"
+                    ]
+                },
+                {
+                    "anonymous_user": "65534",
+                    "clients": [
+                        {
+                            "match": "0.0.0.0/0"
+                        }
+                    ],
+                    "index": 2,
+                    "protocols": [
+                        "cifs"
+                    ],
+                    "ro_rule": [
+                        "ntlm"
+                    ],
+                    "rw_rule": [
+                        "ntlm"
+                    ],
+                    "superuser": [
+                        "none"
+                    ]
+                }
+            ],
+            "_links": {
+                "self": {
+                    "href": "/api/datacenter/protocols/nfs/export-policies/7d5a59b3-953a-11e8-8857-00a098dcc959:type=export_policy,uuid=1460288880641"
+                }
+            }
+        }
+    },
+    "_links": {
+        "self": {
+            "href": "/api/storage-provider/file-shares/7d5a59b3-953a-11e8-8857-00a098dcc959:type=volume,uuid=e581c23a-1037-11ea-ac5a-00a098dcc6b6"
+        }
+    }
+----
++
+您可以看到分配给同一文件共享的 ACL 以及导出策略。
+
+

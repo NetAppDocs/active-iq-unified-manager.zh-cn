@@ -1,0 +1,83 @@
+---
+permalink: storage-mgmt/task_view_and_add_vcenter_servers.html 
+sidebar: sidebar 
+keywords: view, add, vcenter, server 
+summary: 要查看虚拟机（ VM ）的性能并对其进行故障排除，必须在 Active IQ Unified Manager 实例上添加关联的 vCenter Server 。 
+---
+= 查看和添加 vCenter Server
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要查看虚拟机（ VM ）的性能并对其进行故障排除，必须在 Active IQ Unified Manager 实例上添加关联的 vCenter Server 。
+
+* 您需要的内容 *
+
+在添加或查看 vCenter Server 之前，请确保满足以下条件：
+
+* 您知道 vCenter Server 名称。
+* 您知道 vCenter Server 的 IP 地址并具有所需的凭据。凭据必须是 vCenter Server 管理员或对 vCenter Server 具有只读访问权限的 root 用户的凭据。
+* 要添加的 vCenter Server 运行 vSphere 6.5 或更高版本。
+* vCenter Server 中的数据收集设置会设置为统计信息级别 ` _Level 3_` ，以确保为所有受监控对象收集所需级别的指标。间隔持续时间应为 ` _5 分钟 _` ，保存期限应为 ` _1 天 _` 。
++
+有关详细信息， `D请参见 VMware 文档中 _vSphere 监控和性能指南 _ 的 " 数据收集级别` " 一节。
+
+* vCenter Server 中的延迟值以毫秒为单位进行配置，而不是以微秒为单位进行配置，以便成功计算延迟值。
+* 将数据存储库添加到 vCenter Server 时，您可以同时使用主机的 IP 地址或完全限定域名（ FQDN ）。如果要添加 FQDN ，请确保 Unified Manager 服务器可以解析域名。例如，对于 Linux 安装，请确保在 `` /etc/resolv.conf` 文件中添加域名。
+* vCenter Server 的当前时间与 vCenter Server 时区同步。
+* 可以访问 vCenter Server 以成功发现。
+* 将 vCenter Server 添加到 Unified Manager 时，您对 VMware SDK 具有读取访问权限。这是配置轮询所必需的。
+
+
+对于添加和发现的每个 vCenter Server ， Unified Manager 会收集配置数据，例如 vCenter Server 和 ESXi 服务器详细信息， ONTAP 映射，数据存储库详细信息以及托管的 VM 数量。它还会收集组件的性能指标。
+
+.步骤
+. 转至 * VMware * > * vCenter * ，然后检查您的 vCenter Server 是否位于列表中。
++
+[NOTE]
+====
+如果您的 vCenter Server 不可用，则必须添加 vCenter Server 。
+
+====
++
+.. 单击 * 添加 * 。
+.. 为 vCenter Server 添加正确的 IP 地址，并确保设备可访问。
+.. 添加对 vCenter Server 具有只读访问权限的管理员或 root 用户的用户名和密码。
+.. 如果您使用的端口不是默认 443 ，请添加自定义端口号。
+.. 单击 * 保存 * 。
++
+成功发现后，系统将显示一个服务器证书供您接受。
+
++
+接受证书后， vCenter Server 将添加到可用 vCenter Server 列表中。添加此设备不会收集关联 VM 的数据，并且此收集会按计划的时间间隔进行。
+
+
+
+. 如果您的 vCenter Server 位于 * vCenter * 页面上，请将鼠标悬停在 * 状态 * 字段上以查看其状态，以显示您的 vCenter Server 是否按预期运行，或者是否存在警告或错误。
++
+[NOTE]
+====
+通过添加 vCenter Server ，您可以查看以下状态。但是，在添加 vCenter Server 后，相应虚拟机的性能和延迟数据可能需要长达一小时才能准确反映出来。
+
+====
++
+** 绿色： " 正常 " ，表示已发现 vCenter Server ，并且已成功收集性能指标
+** 黄色： " 警告 " （例如，未将 vCenter Server 的统计信息级别设置为 3 或更高以获取每个对象的统计信息时）
+** 橙色： " 错误 " （表示任何内部错误，例如异常，配置数据收集失败或 vCenter Server 无法访问）您可以单击列显示图标（ * 显示 / 隐藏 * ）以查看 vCenter Server 状态的状态消息并对问题描述进行故障排除。
+
+
+. 如果无法访问 vCenter Server 或凭据已更改，请选择 * vCenter * > * 编辑 * 来编辑 vCenter Server 详细信息。
+. 在 * 编辑 VMware vCenter Server* 页面上进行必要的更改。
+. 单击 * 保存 * 。
+
+
+* 开始收集 vCenter Server 数据 *
+
+vCenter Server 会收集 20 秒的实时性能数据样本，并将其汇总为 5 分钟的样本。Unified Manager 的性能数据收集计划基于 vCenter Server 的默认设置。Unified Manager 会处理从 vCenter Server 获取的 5 分钟样本，并计算虚拟磁盘， VM 和主机的每小时 IOPS 和延迟平均值。对于数据存储库， Unified Manager 会根据从 ONTAP 获取的样本计算每小时 IOPS 和延迟的平均值。这些值可在小时的顶部使用。添加 vCenter Server 后，性能指标不会立即可用，只有在下一小时开始时才可用。性能数据轮询将在完成一个配置数据收集周期后开始。
+
+对于轮询 vCenter Server 配置数据， Unified Manager 遵循与收集集群配置数据相同的计划。有关 vCenter Server 配置和性能数据收集计划的信息，请参见 " 集群配置和性能数据收集活动 " 。
+
+* 相关信息 *
+
+link:../performance-checker/concept_cluster_configuration_and_performance_data_collection_activity.html["集群配置和性能数据收集活动"]

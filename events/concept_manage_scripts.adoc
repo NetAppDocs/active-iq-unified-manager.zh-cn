@@ -1,0 +1,19 @@
+---
+permalink: events/concept_manage_scripts.html 
+sidebar: sidebar 
+keywords: manage, scripts 
+summary: 您可以使用脚本在 Unified Manager 中自动修改或更新多个存储对象。此脚本与警报关联。当事件触发警报时，将执行脚本。您可以上传自定义脚本，并在生成警报时测试其执行情况。 
+---
+= 管理脚本
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用脚本在 Unified Manager 中自动修改或更新多个存储对象。此脚本与警报关联。当事件触发警报时，将执行脚本。您可以上传自定义脚本，并在生成警报时测试其执行情况。
+
+默认情况下，可以将脚本上传到 Unified Manager 并运行这些脚本。如果贵组织出于安全原因不希望允许使用此功能，则可以从 * 存储管理 * > * 功能设置 * 禁用此功能。
+
+* 相关信息 *
+
+link:../config/task_enable_and_disable_ability_to_upload_scripts.html["启用和禁用脚本上传功能"]

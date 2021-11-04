@@ -1,0 +1,31 @@
+---
+permalink: health-checker/task_view_encryption_status_of_all_volumes.html 
+sidebar: sidebar 
+keywords: view, encryption status, volumes 
+summary: 您可以查看所有卷的列表及其当前加密状态，以便确定卷上的数据是否受到充分保护，不会被未经授权的用户访问。 
+---
+= 查看所有卷的加密状态
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看所有卷的列表及其当前加密状态，以便确定卷上的数据是否受到充分保护，不会被未经授权的用户访问。
+
+* 您需要的内容 *
+
+您必须具有操作员，应用程序管理员或存储管理员角色。
+
+可应用于卷的加密类型包括：
+
+* 软件—使用 NetApp 卷加密（ NVE ）或 NetApp 聚合加密（ NAE ）软件加密解决方案进行保护的卷。
+* 硬件—使用 NetApp 存储加密（ NetApp Storage Encryption ， NSE ）硬件加密进行保护的卷。
+* 软件和硬件—受软件和硬件加密保护的卷。
+* 无—未加密的卷。
+
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 卷 * 。
+. 在视图菜单中，选择 * 运行状况 * > * 卷加密 *
+. 在 * 运行状况：卷加密 * 视图中，对 * 加密类型 * 字段进行排序，或者使用筛选器显示具有特定加密类型或未加密的卷（加密类型 "`None` " ）。
+

@@ -1,0 +1,25 @@
+---
+permalink: events/task_fix_issues_using_um_automatic_remediations.html 
+sidebar: sidebar 
+keywords: fix, issues, use, unified manager, automatic, remediations 
+summary: Unified Manager 可以对某些事件进行全面诊断，并使用修复按钮提供单一解决方案。如果可用，这些解决方案将显示在信息板，事件详细信息页面以及左侧导航菜单上的工作负载分析选项中。 
+---
+= 使用 Unified Manager 自动修复解决问题
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 可以对某些事件进行全面诊断，并使用 * 修复它 * 按钮提供单一解决方案。如果可用，这些解决方案将显示在信息板，事件详细信息页面以及左侧导航菜单上的工作负载分析选项中。
+
+大多数事件都有各种可能的解决方案，这些解决方案显示在事件详细信息页面中，因此您可以使用 ONTAP System Manager 或 ONTAP 命令行界面实施最佳解决方案。如果 Unified Manager 已确定修复问题描述需要一个解决方案，并且可以使用 ONTAP 命令行界面命令解决此问题，则可以执行 * 修复它 * 操作。
+
+.步骤
+. 要查看可通过 * 信息板 * 修复的事件，请单击 * 信息板 * 。
++
+image::../media/management_actions.png[管理操作]
+
+. 要解决 Unified Manager 可以修复的任何问题，请单击 * 修复它 * 按钮。要修复多个对象上的问题描述，请单击 * 全部修复 * 按钮。
+
+
+有关可通过自动修复修复修复的问题的信息，请参见 link:..//storage-mgmt/reference_what_ontap_issues_can_unified_manager_fix.html["Unified Manager 可以修复哪些问题"]

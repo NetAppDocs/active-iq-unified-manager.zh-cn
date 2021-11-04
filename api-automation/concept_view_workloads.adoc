@@ -1,0 +1,52 @@
+---
+permalink: api-automation/concept_view_workloads.html 
+sidebar: sidebar 
+keywords: view, storage, workloads 
+summary: 通过此处列出的 API ，您可以查看数据中心中所有 ONTAP 集群的存储工作负载的整合列表。此外，这些 API 还提供了一个摘要视图，其中显示了在 Active IQ Unified Manager 环境中配置的存储工作负载数量及其容量和性能（ IOPS ）统计信息。 
+---
+= 查看存储工作负载
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过此处列出的 API ，您可以查看数据中心中所有 ONTAP 集群的存储工作负载的整合列表。此外，这些 API 还提供了一个摘要视图，其中显示了在 Active IQ Unified Manager 环境中配置的存储工作负载数量及其容量和性能（ IOPS ）统计信息。
+
+
+
+== 查看存储工作负载
+
+您可以使用以下方法查看数据中心中所有集群中的所有存储工作负载。有关根据特定列筛选响应的信息，请参见 Unified Manager 实例中提供的 API 参考文档。
+
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` 存储提供商 / 工作负载`
+
+|===
+
+
+== 查看存储工作负载摘要
+
+您可以使用以下方法评估已用容量，可用容量，已用 IOPS ，可用 IOPS 以及每个性能服务级别管理的存储工作负载数量。显示的存储工作负载可以适用于任何 LUN ， NFS 文件共享或 CIFS 共享。API 提供了存储工作负载概述， Unified Manager 配置的存储工作负载概述，数据中心概述，以及数据中心中分配的性能服务级别的总空间，已用空间和可用空间以及 IOPS 的概述。响应此 API 收到的信息用于在 Unified Manager UI 中填充信息板。
+
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+存储提供程序
+ a| 
+获取
+ a| 
+` 存储提供程序 /workloads 摘要`
+
+|===

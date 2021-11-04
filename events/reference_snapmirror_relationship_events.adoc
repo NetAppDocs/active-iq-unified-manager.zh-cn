@@ -1,0 +1,138 @@
+---
+permalink: events/reference_snapmirror_relationship_events.html 
+sidebar: sidebar 
+keywords: snapmirror, relationship, events, impact area, protection 
+summary: SnapMirror 关系事件可为您提供有关异步和同步 SnapMirror 关系的状态信息，以便您可以监控潜在问题。系统会为 Storage VM 和卷生成异步 SnapMirror 关系事件，但仅为卷关系生成同步 SnapMirror 关系事件。不会为属于 Storage VM 灾难恢复关系的成分卷生成任何事件。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= SnapMirror 关系事件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror 关系事件可为您提供有关异步和同步 SnapMirror 关系的状态信息，以便您可以监控潜在问题。系统会为 Storage VM 和卷生成异步 SnapMirror 关系事件，但仅为卷关系生成同步 SnapMirror 关系事件。不会为属于 Storage VM 灾难恢复关系的成分卷生成任何事件。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：保护
+
+星号（ * ）表示已转换为 Unified Manager 事件的 EMS 事件。
+
+[NOTE]
+====
+对于受 Storage VM 灾难恢复保护的 Storage VM ，系统会生成 SnapMirror 关系事件，但对于任何成分卷对象关系，不会生成这些事件。
+
+====
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+镜像复制运行不正常（ ocumEvtSnapmirrorRelationshipUnhealthy ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+警告
+
+
+
+ a| 
+镜像复制已断开（ ocumEvtSnapmirrorRelationshipStateBrokenoff ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+
+
+ a| 
+镜像复制初始化失败（ ocumEvtSnapmirrorRelationshipInitializeFailed ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+
+
+ a| 
+镜像复制更新失败（ ocumEvtSnapmirrorRelationshipUpdateFailed ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+
+
+ a| 
+镜像复制滞后错误（ ocumEvtSnapMirrorRelationshipLagError ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+
+
+ a| 
+镜像复制滞后警告（ ocumEvtSnapMirrorRelationshipLagWarning ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+警告
+
+
+
+ a| 
+镜像复制重新同步失败（ ocumEvtSnapmirrorRelationshipResyncFailed ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+
+
+ a| 
+同步复制不同步 * （ syncSnapmirrorRelationshipOutofsync ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+警告
+
+
+
+ a| 
+同步复制已还原 * （ syncSnapmirrorRelationshipInSync ）
+ a| 
+事件
+ a| 
+SnapMirror 关系
+ a| 
+信息
+
+
+
+ a| 
+同步复制自动重新同步失败 * （ syncSnapmirrorRelationshipAutoSyncRetryFailed ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+|===

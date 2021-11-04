@@ -1,0 +1,25 @@
+---
+permalink: config/task_download_an_https_certificate_sign_request_ocf.html 
+sidebar: sidebar 
+keywords: download, https, certificate, signing, request 
+summary: 您可以下载当前 HTTPS 安全证书的证书签名请求，以便将文件提供给证书颁发机构进行签名。CA 签名证书有助于防止中间人攻击，并提供比自签名证书更好的安全保护。 
+---
+= 下载 HTTPS 证书签名请求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以下载当前 HTTPS 安全证书的证书签名请求，以便将文件提供给证书颁发机构进行签名。CA 签名证书有助于防止中间人攻击，并提供比自签名证书更好的安全保护。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员角色。
+
+.步骤
+. 在左侧导航窗格中，单击 * 常规 * > * HTTPS 证书 * 。
+. 单击 * 下载 HTTPS 证书签名请求 * 。
+. 保存 ` <hostname>.csr` 文件。
+
+
+您可以将文件提供给证书颁发机构进行签名，然后安装签名证书。

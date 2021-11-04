@@ -1,0 +1,25 @@
+---
+permalink: events/reference_what_suggested_actions_section_displays.html 
+sidebar: sidebar 
+keywords: suggest, actions, section, displays 
+summary: 事件详细信息页面的建议操作部分提供了事件的可能原因，并提供了一些操作建议，以便您可以尝试自行解决事件。建议的操作将根据已违反的事件类型或阈值类型进行自定义。 
+---
+= 建议的操作部分显示的内容
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事件详细信息页面的建议操作部分提供了事件的可能原因，并提供了一些操作建议，以便您可以尝试自行解决事件。建议的操作将根据已违反的事件类型或阈值类型进行自定义。
+
+只有某些类型的事件才会显示此区域。
+
+在某些情况下，页面上提供了 * 帮助 * 链接，这些链接会引用追加信息来执行许多建议的操作，包括执行特定操作的说明。某些操作可能涉及使用 Unified Manager ， ONTAP System Manager ， OnCommand Workflow Automation ， ONTAP 命令行界面命令或这些工具的组合。
+
+您应将此处建议的操作视为解决此事件的唯一指导。您为解决此事件而采取的操作应基于您的环境背景。
+
+如果要更详细地分析对象和事件，请单击 * 分析工作负载 * 按钮以显示 " 工作负载分析 " 页面。
+
+Unified Manager 可以对某些事件进行全面诊断并提供单一解决方案。如果可用，则这些解决方法会显示为 * 修复它 * 按钮。单击此按钮可让 Unified Manager 修复导致事件的问题描述。
+
+对于 Active IQ 平台事件，本节可能包含一个 NetApp 知识库文章（如果有）的链接，该文章介绍了问题描述和可能的解决方案。在无法访问外部网络的站点中，知识库文章的 PDF 将在本地打开； PDF 是您手动下载到 Unified Manager 实例的规则文件的一部分。

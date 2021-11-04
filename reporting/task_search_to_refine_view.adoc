@@ -1,0 +1,22 @@
+---
+permalink: reporting/task_search_to_refine_view.html 
+sidebar: sidebar 
+keywords: search, refine, view 
+summary: 获得所需视图后，您可以使用搜索字段进一步细化结果，以关注要包含在报告中的结果。 
+---
+= 使用搜索优化视图
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+获得所需视图后，您可以使用搜索字段进一步细化结果，以关注要包含在报告中的结果。
+
+.步骤
+. 打开要用作报告基础的自定义视图或默认视图。
+. 在 Search 字段中键入以细化视图中列出的数据。您可以在任何显示的列中输入部分数据。例如，如果要搜索名称中包含 "US_EAST " 的节点，则可以细化节点的完整列表。
++
+搜索结果将保存在自定义视图中，并在生成的计划报告中使用。
+
+. 为未保存的视图命名以保存所做的更改。
+

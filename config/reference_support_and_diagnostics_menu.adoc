@@ -1,0 +1,28 @@
+---
+permalink: config/reference_support_and_diagnostics_menu.html 
+sidebar: sidebar 
+keywords: support and diagnostics, menu 
+summary: '通过 " 支持和诊断 " 菜单，您可以生成一个支持包，您可以将该支持包发送给技术支持以获得故障排除帮助。' 
+---
+= 支持和诊断菜单
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 " 支持和诊断 " 菜单，您可以生成一个支持包，您可以将该支持包发送给技术支持以获得故障排除帮助。
+
+可以使用以下菜单选项：
+
+* * 生成轻型支持包 *
++
+用于生成一个轻型支持包，该支持包只包含 30 天的日志和配置数据库记录，它不包括性能数据，采集记录文件和服务器堆转储。
+
+* * 生成支持包 *
++
+用于在诊断用户的主目录中创建包含诊断信息的完整支持包（ 7-Zip 文件）。如果您的系统已连接到 Internet ，则还可以将支持包上传到 NetApp 。
+
++
+此文件包含 AutoSupport 消息生成的信息， Unified Manager 数据库的内容，有关 Unified Manager 服务器内部的详细数据以及通常不包含在 AutoSupport 消息或轻型支持包中的详细级别日志。
+
+

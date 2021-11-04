@@ -1,0 +1,13 @@
+---
+permalink: data-protection/reference_description_of_protection_relationships_window.html 
+sidebar: sidebar 
+keywords: description, protect, relationships, windows, dialog boxes 
+summary: 您可以查看和管理与保护相关的详细信息，例如资源池， SVM 关联和保护作业。您可以使用相应的运行状况阈值页面为聚合，卷和关系配置全局运行状况阈值。 
+---
+= 保护关系的问题描述窗口和对话框
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看和管理与保护相关的详细信息，例如资源池， SVM 关联和保护作业。您可以使用相应的运行状况阈值页面为聚合，卷和关系配置全局运行状况阈值。

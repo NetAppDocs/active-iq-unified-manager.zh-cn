@@ -1,0 +1,53 @@
+---
+permalink: install-vapp/qsg-vapp.html 
+sidebar: sidebar 
+keywords: quick start guide, QSG, VMWare QSG, vApp QSG, quick installation 
+summary: 基于 VMware vSphere 平台的 Unified Manager 快速入门指南。 
+---
+= VMware 安装快速入门说明
+
+
+
+
+== 系统要求
+
+* 操作系统： VMware ESXi 6.5 ， 6.7 和 7.0
+* RAM ： 12 GB
+* CPU ：总计 9572 MHz
+* 可用磁盘空间： 5 GB （精简配置）， 152 GB （厚配置）
+
+
+有关详细的系统要求，请参见 link:../install-vapp/concept_requirements_for_installing_unified_manager.html["Unified Manager 的安装要求"] 和 link:http://mysupport.netapp.com/matrix["互操作性表"]。
+
+
+
+== 安装 Active IQ Unified Manager
+
+
+
+=== 下载安装程序：
+
+. 下载 `ActiveIQUnifiedManager-<version>.ova` 安装包。
+. 将文件保存到 vSphere Client 可访问的本地目录或网络目录中。
+
+
+
+
+=== 安装 Unified Manager
+
+. 在 vSphere Client 中，单击 * 文件 > 部署 OVF 模板 * 。
+. 找到 OVA 文件并使用向导在 ESXi 服务器上部署虚拟设备。
+. 在网络配置页面的属性选项卡中，根据需要填充要执行的安装类型的字段：
++
+** 对于静态配置，请在所有字段中输入所需信息。不需要为 * 二级 DNS* 字段添加信息。
+** 对于使用 IPv4 的 DHCP ，请勿在任何字段中添加任何信息。
+** 对于使用 IPv6 的 DHCP ，请选中 " 启用自动 IPv6 寻址 " 复选框。请勿在任何其他字段中添加任何信息。
+
+
+. 启动虚拟机。
+. 单击控制台选项卡以查看初始启动过程。
+. 配置时区。
+. 输入 Unified Manager 维护用户名和密码。
+
+
+安装结束时，将显示连接到 Unified Manager Web UI 的信息。

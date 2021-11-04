@@ -1,0 +1,17 @@
+---
+permalink: api-automation/concept_get_started_with_um_apis.html 
+sidebar: sidebar 
+keywords: active iq, unified manager 
+summary: Active IQ Unified Manager 提供了一组 API ，用于通过 RESTful Web 服务界面管理受支持存储系统上的存储资源，以实现任何第三方集成。 
+---
+= Active IQ Unified Manager 入门
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager 提供了一组 API ，用于通过 RESTful Web 服务界面管理受支持存储系统上的存储资源，以实现任何第三方集成。
+
+Unified Manager API 开发人员指南 _ 为您提供了有关 API 和示例代码的信息。通过本指南中提供的信息，您可以为 NetApp 易管理性软件解决方案创建 RESTful 客户端，以管理 NetApp 系统。API 基于表述性状态传输（ Representational State Transfer ， REST ）架构模式。
+
+Unified Manager 可为 NetApp 环境中的存储管理提供 API 服务。所有四个 REST 操作创建，读取，更新和删除（也称为 CRUD ）均受支持。

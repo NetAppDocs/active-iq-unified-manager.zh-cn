@@ -1,0 +1,33 @@
+---
+permalink: health-checker/task_view_list_of_snapshot_copies.html 
+sidebar: sidebar 
+keywords: view, list, Snapshot copies 
+summary: 您可以查看选定卷的 Snapshot 副本列表。您可以使用 Snapshot 副本列表计算删除一个或多个 Snapshot 副本后可回收的磁盘空间量，并且可以根据需要删除这些 Snapshot 副本。 
+---
+= 查看 Snapshot 副本列表
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看选定卷的 Snapshot 副本列表。您可以使用 Snapshot 副本列表计算删除一个或多个 Snapshot 副本后可回收的磁盘空间量，并且可以根据需要删除这些 Snapshot 副本。
+
+* 您需要的内容 *
+
+* 您必须具有操作员，应用程序管理员或存储管理员角色。
+* 包含 Snapshot 副本的卷必须处于联机状态。
+
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 卷 * 。
+. 在 * 运行状况：所有卷 * 视图中，选择包含要查看的 Snapshot 副本的卷。
+. 在 * 卷 / 运行状况 * 详细信息页面中，单击 * 容量 * 选项卡。
+. 在 * 容量 * 选项卡的 * 详细信息 * 窗格的其他详细信息部分中，单击 * Snapshot 副本 * 旁边的链接。
++
+Snapshot 副本数量是一个显示 Snapshot 副本列表的链接。
+
+
+
+* 相关信息 *
+
+link:../health-checker/reference_health_volume_details_page.html["运行状况 / 卷页面"]

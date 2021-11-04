@@ -1,0 +1,73 @@
+---
+permalink: api-automation/concept_workflow_space_issue.html 
+sidebar: sidebar 
+keywords: determine, space, issue, aggregate 
+summary: 您可以使用 Active IQ Unified Manager 中的数据中心 API 监控卷中空间的可用性和利用率。您可以确定卷中的空间问题，并确定过度利用或未充分利用的存储资源。 
+---
+= 确定聚合中的空间问题
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Active IQ Unified Manager 中的数据中心 API 监控卷中空间的可用性和利用率。您可以确定卷中的空间问题，并确定过度利用或未充分利用的存储资源。
+
+用于聚合的数据中心 API 可检索有关可用空间和已用空间以及空间节省效率设置的相关信息。您还可以根据指定属性筛选检索到的信息。
+
+确定聚合中是否缺少空间的一种方法是，验证环境中是否存在启用了自动大小模式的卷。然后，您应确定哪些卷过度利用，并执行任何更正操作。
+
+以下流程图说明了在启用了自动调整大小模式的情况下检索卷信息的过程：
+
+image::../media/space_utilization.gif[空间利用率]
+
+此流假定集群已在 ONTAP 中创建并添加到 Unified Manager 中。
+
+. 获取集群密钥，除非您知道值：
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+数据中心
+ a| 
+获取
+ a| 
+` 数据中心 / 集群 / 集群`
+
+|===
+. 使用 cluster key 作为 filter 参数，查询该集群上的聚合。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+数据中心
+ a| 
+获取
+ a| 
+` 数据中心 / 存储 / 聚合`
+
+|===
+. 在响应中，分析聚合的空间使用情况并确定哪些聚合存在空间问题。对于具有空间问题描述的每个聚合，从同一 JSON 输出中获取聚合密钥。
+. 使用每个聚合密钥，将具有 autosize.mode 参数值的所有卷筛选为 `grow.`
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+数据中心
+ a| 
+获取
+ a| 
+` 数据中心 / 存储 / 卷`
+
+|===
+. 分析过度利用的卷。
+. 执行任何必要的更正操作，例如跨聚合移动卷，以解决卷中的空间问题。您可以从 ONTAP 或 Unified Manager Web UI 执行这些操作。
+

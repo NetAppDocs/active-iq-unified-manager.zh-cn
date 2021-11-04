@@ -1,0 +1,25 @@
+---
+permalink: health-checker/task_delete_group_rules.html 
+sidebar: sidebar 
+keywords: delete, group rules 
+summary: 当不再需要组规则时，您可以从 Active IQ Unified Manager 中删除组规则。 
+---
+= 正在删除组规则
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当不再需要组规则时，您可以从 Active IQ Unified Manager 中删除组规则。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+删除组规则后，关联的存储对象将从组中删除。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储管理 * > * 组 * 。
+. 在 * 组规则 * 选项卡中，选择要删除的组规则，然后单击 * 删除 * 。
+. 在 * 警告 * 对话框中，单击 * 是 * 确认删除。
+

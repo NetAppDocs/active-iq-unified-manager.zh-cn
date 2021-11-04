@@ -1,0 +1,139 @@
+---
+permalink: api-automation/concept_verify_svm_workflow.html 
+sidebar: sidebar 
+keywords: verify, svms, clusters 
+summary: 在配置文件共享或 LUN 之前，您必须验证集群上是否已创建 Storage Virtual Machine （ SVM ）。 
+---
+= 验证集群上的 SVM
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在配置文件共享或 LUN 之前，您必须验证集群上是否已创建 Storage Virtual Machine （ SVM ）。
+
+[NOTE]
+====
+此工作流假定已将 ONTAP 集群添加到 Unified Manager 中，并且已获取集群密钥。集群应具有配置 LUN 及其文件共享所需的许可证。
+
+====
+. 验证集群是否已创建 SVM 。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+数据中心
+ a| 
+获取
+ a| 
+` 数据中心 /SVM/SVM` ` /datacenter/SVM/SVM/\ ｛ key ｝`
+
+|===
++
+* 示例 curc*
+
++
+[listing]
+----
+curl -X GET "https://<hostname>/api/datacenter/svm/svms" -H "accept: application/json" -H "Authorization: Basic <Base64EncodedCredentials>"
+----
+. 如果未返回 SVM 密钥，请创建 SVM 。要创建 SVM ，您需要具有用于配置 SVM 的集群密钥。您还需要指定 SVM 名称。请按照以下步骤操作：
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+数据中心
+ a| 
+获取
+ a| 
+` 数据中心 / 集群 / 集群` ` 数据中心 / 集群 / 集群 // ｛ key ｝`
+
+|===
++
+获取集群密钥。
+
++
+* 示例 curc*
+
++
+[listing]
+----
+curl -X GET "https://<hostname>/api/datacenter/cluster/clusters" -H "accept: application/json" -H "Authorization: Basic <Base64EncodedCredentials>"
+----
+. 从输出中获取集群密钥，然后将其用作创建 SVM 的输入。
++
+[NOTE]
+====
+创建 SVM 时，请确保它支持在其中配置 LUN 和文件共享所需的所有协议，例如 CIFS ， NFS ， FCP ， 和 iSCSI 。如果 SVM 不支持所需的服务，则配置工作流可能会失败。建议同时在 SVM 上为相应类型的工作负载启用服务。
+
+====
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+数据中心
+ a| 
+发布
+ a| 
+` 数据中心 /SVM/SVM`
+
+|===
++
+* 示例 curc*
+
++
+输入 SVM 对象详细信息作为输入参数。
+
++
+[listing]
+----
+curl -X POST "https://<hostname>/api/datacenter/svm/svms" -H "accept: application/json" -H "Content-Type: application/json" -H "Authorization: Basic <Base64EncodedCredentials>" "{ \"aggregates\": [ { \"_links\": {}, \"key\": \"1cd8a442-86d1,type=objecttype,uuid=1cd8a442-86d1-11e0-ae1c-9876567890123\",
+\"name\": \"cluster2\", \"uuid\": \"02c9e252-41be-11e9-81d5-00a0986138f7\" } ],
+\"cifs\": { \"ad_domain\": { \"fqdn\": \"string\", \"password\": \"string\",
+\"user\": \"string\" }, \"enabled\": true, \"name\": \"CIFS1\" },
+\"cluster\": { \"key\": \"1cd8a442-86d1-11e0-ae1c-123478563412,type=object type,uuid=1cd8a442-86d1-11e0-ae1c-9876567890123\" },
+\"dns\": { \"domains\": [ \"example.com\", \"example2.example3.com\" ],
+\"servers\": [ \"10.224.65.20\", \"2001:db08:a0b:12f0::1\" ] },
+\"fcp\": { \"enabled\": true }, \"ip_interface\": [ { \"enabled\": true,
+\"ip\": { \"address\": \"10.10.10.7\", \"netmask\": \"24\" },
+\"location\": { \"home_node\": { \"name\": \"node1\" } }, \"name\":
+\"dataLif1\" } ], \"ipspace\": { \"name\": \"exchange\" },
+\"iscsi\": { \"enabled\": true }, \"language\": \"c.utf_8\",
+\"ldap\": { \"ad_domain\": \"string\", \"base_dn\": \"string\",
+\"bind_dn\": \"string\", \"enabled\": true, \"servers\": [ \"string\" ] },
+\"name\": \"svm1\", \"nfs\": { \"enabled\": true },
+\"nis\": { \"domain\": \"string\", \"enabled\": true,
+\"servers\": [ \"string\" ] }, \"nvme\": { \"enabled\": true },
+\"routes\": [ { \"destination\": { \"address\": \"10.10.10.7\",
+\"netmask\": \"24\" }, \"gateway\": \"string\" } ],
+\"snapshot_policy\": { \"name\": \"default\" },
+\"state\": \"running\", \"subtype\": \"default\"}"
+----
++
+JSON 输出将显示一个作业对象密钥，您可以使用该对象密钥验证您创建的 SVM 。
+
+. 使用用于查询的作业对象密钥验证 SVM 的创建。如果 SVM 创建成功，则响应中将返回 SVM 密钥。
++
+[cols="3*"]
+|===
+| 类别 | HTTP 动词 | 路径 
+
+
+ a| 
+管理服务器
+ a| 
+获取
+ a| 
+` /management-server/jobs/\ ｛ key ｝`
+
+|===
+

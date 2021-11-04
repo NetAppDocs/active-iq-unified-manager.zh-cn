@@ -1,0 +1,13 @@
+---
+permalink: reporting/concept_customize_volume_performance_reports.html 
+sidebar: sidebar 
+keywords: customize, volume, performance, reports 
+summary: 这些示例自定义报告用于帮助您识别和响应与卷性能相关的潜在问题。 
+---
+= 自定义卷性能报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+这些示例自定义报告用于帮助您识别和响应与卷性能相关的潜在问题。

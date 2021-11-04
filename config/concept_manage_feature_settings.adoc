@@ -1,0 +1,20 @@
+---
+permalink: config/concept_manage_feature_settings.html 
+sidebar: sidebar 
+keywords: uploading scripts, api gateway, slo or policy-based storage management, timeout, active iq platform events 
+summary: 通过功能设置页面，您可以在 Active IQ Unified Manager 中启用和禁用特定功能。其中包括根据策略创建和管理存储对象，启用 API 网关，上传用于管理警报的脚本，根据非活动时间超时 Web UI 会话以及禁用接收 Active IQ 平台事件。 
+---
+= 管理功能设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过功能设置页面，您可以在 Active IQ Unified Manager 中启用和禁用特定功能。其中包括根据策略创建和管理存储对象，启用 API 网关和登录横幅，上传用于管理警报的脚本，根据非活动时间超时 Web UI 会话以及禁用接收 Active IQ 平台事件。
+
+[NOTE]
+====
+" 功能设置 " 页面仅适用于具有应用程序管理员角色的用户。
+
+====
+有关脚本上传的信息，请参见 link:task_enable_and_disable_ability_to_upload_scripts.html["启用和禁用脚本上传"]。

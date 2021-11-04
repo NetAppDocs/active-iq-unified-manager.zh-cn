@@ -1,0 +1,17 @@
+---
+permalink: data-protection/concept_monitor_storage_vm_disaster_recovery_relationships.html 
+sidebar: sidebar 
+keywords: disaster recovery, monitor, storage vm protection, relationships 
+summary: Active IQ Unified Manager 支持监控 Storage VM 灾难恢复关系，此关系可在 Storage VM 级别的粒度级别提供灾难恢复。通过 Storage VM 灾难恢复，可以恢复 Storage VM 成分卷中的数据并恢复 Storage VM 配置。 
+---
+= 监控 Storage VM 灾难恢复保护关系
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager 支持监控 Storage VM 灾难恢复关系，此关系可在 Storage VM 级别的粒度级别提供灾难恢复。通过 Storage VM 灾难恢复，可以恢复 Storage VM 成分卷中的数据并恢复 Storage VM 配置。
+
+将从源 Storage VM 创建到目标 Storage VM 的 Storage VM DR 关系，以提供异步灾难恢复。您可以选择基于集群设置复制全部或部分 Storage VM 配置（不包括网络和协议配置）以及数据卷。
+
+配置 Storage VM 灾难恢复关系后，如果源 Storage VM 因硬件故障或环境灾难而变得不可用，则会启动目标 Storage VM ，以便在访问数据时最大限度地减少中断。同样，当源 Storage VM 变为可用时，它将与目标 Storage VM 重新同步，然后，源将重新启动以提供数据。您可以使用 snapmirror 命令配置和管理 Storage VM 灾难恢复关系。

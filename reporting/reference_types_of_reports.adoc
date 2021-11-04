@@ -1,0 +1,108 @@
+---
+permalink: reporting/reference_types_of_reports.html 
+sidebar: sidebar 
+keywords: types, reports 
+summary: 此表全面列出了可作为报告提供的视图和清单页面，您可以对这些视图和页面进行自定义，下载和计划。 
+---
+= 报告类型
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此表全面列出了可作为报告提供的视图和清单页面，您可以对这些视图和页面进行自定义，下载和计划。
+
+
+
+== Active IQ Unified Manager 报告
+
+[cols="2*"]
+|===
+| Type | 存储或网络对象 
+
+
+ a| 
+Capacity
+ a| 
+集群
+
+聚合
+
+Volumes
+
+qtree
+
+
+
+ a| 
+运行状况
+ a| 
+集群
+
+节点
+
+聚合
+
+Storage VM
+
+Volumes
+
+SMB/CIFS 共享
+
+NFS 共享
+
+
+
+ a| 
+性能
+ a| 
+集群
+
+节点
+
+聚合
+
+Storage VM
+
+Volumes
+
+LUN
+
+NVMe 命名空间
+
+网络接口（ LIF ）
+
+端口
+
+
+
+ a| 
+Quality of service
+ a| 
+传统 QoS 策略组
+
+自适应 QoS 策略组
+
+性能服务级别策略组
+
+
+
+ a| 
+卷保护关系（可从卷页面访问）
+ a| 
+所有关系
+
+过去 1 个月的传输状态
+
+过去 1 个月的传输速率
+
+
+
+ a| 
+安全性
+ a| 
+Storage VM
+
+集群
+
+|===

@@ -1,0 +1,29 @@
+---
+permalink: health-checker/task_delete_annotations.html 
+sidebar: sidebar 
+keywords: delete, annotations 
+summary: 您可以删除不再需要的自定义标注及其值。 
+---
+= 删除标注
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以删除不再需要的自定义标注及其值。
+
+* 您需要的内容 *
+
+* 您必须具有应用程序管理员或存储管理员角色。
+* 标注值不得用于其他标注或组规则。
+
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储管理 * > * 标注 * 。
+. 在 * 标注 * 选项卡中，选择要删除的标注。
++
+此时将显示选定标注的详细信息。
+
+. 单击 * 操作 * > * 删除 * 以删除选定标注及其值。
+. 在警告对话框中，单击 * 是 * 确认删除。
+

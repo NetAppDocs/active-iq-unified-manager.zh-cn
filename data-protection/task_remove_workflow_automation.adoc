@@ -1,0 +1,22 @@
+---
+permalink: data-protection/task_remove_workflow_automation.html 
+sidebar: sidebar 
+keywords: remove, oncommand, workflow, automation, setup, unified manager 
+summary: 如果您不再需要使用工作流自动化，可以从 Unified Manager 中删除 OnCommand Workflow Automation 设置。 
+---
+= 从 Unified Manager 中删除 OnCommand Workflow Automation 设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您不再需要使用工作流自动化，可以从 Unified Manager 中删除 OnCommand Workflow Automation 设置。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+.步骤
+. 在左侧导航窗格中，单击左侧设置菜单中的 * 常规 * > * 工作流自动化 * 。
+. 在 * 工作流自动化 * 页面中，单击 * 删除设置 * 。
+

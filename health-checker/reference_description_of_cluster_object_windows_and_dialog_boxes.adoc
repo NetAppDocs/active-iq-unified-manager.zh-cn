@@ -1,0 +1,21 @@
+---
+permalink: health-checker/reference_description_of_cluster_object_windows_and_dialog_boxes.html 
+sidebar: sidebar 
+keywords: description, cluster, object, windows, dialog boxes 
+summary: 您可以从相应的存储对象页面查看所有集群和集群对象。您还可以从相应的存储对象详细信息页面查看详细信息。现在，您可以从清单的以下存储和保护部分启动 System Manager 用户界面。 
+---
+= 集群对象窗口和对话框的问题描述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从相应的存储对象页面查看所有集群和集群对象。您还可以从相应的存储对象详细信息页面查看详细信息。现在，您可以从清单的以下存储和保护部分启动 System Manager 用户界面。
+
+* 集群清单，集群运行状况和集群性能页面
+* " 聚合清单 " ， " 聚合运行状况 " 和 " 聚合性能 " 页面
+* 卷清单，卷运行状况和卷性能页面
+* 节点清单和节点性能页面
+* StorageVM 清单， StorageVM 运行状况和 StorageVM 性能页面
+* 保护关系页面
+

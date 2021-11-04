@@ -1,0 +1,263 @@
+---
+permalink: storage-mgmt/reference_what_ontap_issues_can_unified_manager_fix.html 
+sidebar: sidebar 
+keywords: ontap issues, fix it action, automatic remediation feature, remediation events, fix-it messages, fix-it events 
+summary: '下表介绍了 ONTAP 可以通过单击 " 修复 " 或 " 全部修复 " 按钮直接从 Unified Manager 用户界面解决的 Unified Manager 问题。' 
+---
+= Unified Manager 可以修复哪些问题
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过使用 Active IQ Unified Manager 的自动修复功能，您可以选择通过 Unified Manager 有效地解决某些 ONTAP 问题或管理某些 ONTAP 功能，例如反勒索软件监控。
+
+下表介绍了这些 ONTAP 问题或功能，您可以通过 Unified Manager Web UI 上的 * 修复它 * 或 * 全部修复 * 按钮直接管理这些问题或功能。
+
+|===
+| 事件名称和问题描述 | 管理操作 | " 修复 " 操作 
+
+
+ a| 
+卷空间已满
+
+卷空间几乎用尽，并且已违反容量全满阈值。默认情况下，此阈值设置为卷大小的 90% 。
+ a| 
+启用卷自动增长
+ a| 
+Unified Manager 会确定没有为此卷配置卷自动增长，因此它会启用此功能，以便在需要时卷的容量会增加。
+
+
+
+ a| 
+索引节点已满
+
+此卷的索引节点已用尽，无法接受任何新文件。
+ a| 
+增加卷上的索引节点数
+ a| 
+将卷上的索引节点数增加 2% 。
+
+
+
+ a| 
+检测到存储层策略不匹配
+
+此卷包含大量非活动数据，并且当前分层策略设置为 "snapshot-only" 或 "none" 。
+ a| 
+启用自动云分层
+ a| 
+由于卷已驻留在 FabricPool 上，因此会将分层策略更改为 " 自动 " ，以便将非活动数据移至成本较低的云层。
+
+
+
+ a| 
+检测到存储层不匹配
+
+卷包含大量非活动数据，但不驻留在启用了云的存储层（ FabricPool ）上。
+ a| 
+更改卷的存储层
+ a| 
+将卷移动到支持云的存储层，并将分层策略设置为 " 自动 " 以将非活动数据移动到云层。
+
+
+
+ a| 
+已禁用审核日志
+
+未为此 Storage VM 启用审核日志
+ a| 
+为 Storage VM 启用审核日志记录
+ a| 
+在 Storage VM 上启用审核日志记录。
+
+请注意， Storage VM 必须已配置本地或远程审核日志位置。
+
+
+
+ a| 
+已禁用登录横幅
+
+应启用集群的登录横幅，以通过明确访问限制来提高安全性。
+ a| 
+设置集群的登录横幅
+ a| 
+将集群登录横幅设置为 "`Access restricted to authorized users` " 。
+
+
+
+ a| 
+已禁用登录横幅
+
+应启用 Storage VM 的登录横幅，以通过明确访问限制来提高安全性。
+ a| 
+设置 Storage VM 的登录横幅
+ a| 
+将 Storage VM 登录横幅设置为 "Access restricted to authorized users" 。
+
+
+
+ a| 
+SSH 正在使用不安全的密码
+
+后缀为 "-cbc" 的密码被视为不安全密码。
+ a| 
+从集群中删除不安全的密码
+ a| 
+从集群中删除不安全的密码，例如 aes192-cbc 和 aes128-cbc 。
+
+
+
+ a| 
+SSH 正在使用不安全的密码
+
+后缀为 "-cbc" 的密码被视为不安全密码。
+ a| 
+从 Storage VM 中删除不安全的密码
+ a| 
+从 Storage VM 中删除不安全的密码，例如 aes192-cbc 和 aes128-cbc 。
+
+
+
+ a| 
+已禁用 AutoSupport HTTPS 传输
+
+用于向技术支持发送 AutoSupport 消息的传输协议应加密。
+ a| 
+将 HTTPS 设置为 AutoSupport 消息的传输协议
+ a| 
+将 HTTPS 设置为集群上 AutoSupport 消息的传输协议。
+
+
+
+ a| 
+已违反集群负载不平衡阈值
+
+表示集群中节点之间的负载不平衡。如果节点之间的已用性能容量差异超过 30% ，则会生成此事件。
+ a| 
+平衡集群工作负载
+ a| 
+Unified Manager 可确定要从一个节点移至另一个节点以减少不平衡情况的最佳卷，然后移动该卷。
+
+
+
+ a| 
+已违反集群容量不平衡阈值
+
+表示集群中聚合之间的容量不平衡。如果聚合之间的已用容量差异超过 70% ，则会生成此事件。
+ a| 
+平衡集群容量
+ a| 
+Unified Manager 可确定要从一个聚合移动到另一个聚合以减少不平衡情况的最佳卷，然后移动该卷。
+
+
+
+ a| 
+已违反已用性能容量阈值
+
+表示如果不减少一个或多个高活动工作负载的利用率，则节点上的负载可能会过度利用。如果节点已用性能容量值超过 100% 且持续 12 小时以上，则会生成此事件。
+ a| 
+限制节点上的高负载
+ a| 
+Unified Manager 可识别 IOPS 最高的卷，并使用历史预期和峰值 IOPS 级别应用 QoS 策略以减少节点上的负载。
+
+
+
+ a| 
+已违反动态事件警告阈值
+
+表示由于某些工作负载的负载异常高，节点已在过载状态下运行。
+ a| 
+减少节点中的过载
+ a| 
+Unified Manager 可识别 IOPS 最高的卷，并使用历史预期和峰值 IOPS 级别应用 QoS 策略以减少节点上的负载。
+
+
+
+ a| 
+无法接管
+
+当前已禁用故障转移，因此，在中断或重新启动期间，对节点资源的访问将丢失，直到节点重新可用为止。
+ a| 
+启用节点故障转移
+ a| 
+Unified Manager 会发送相应的命令，以便在集群中的所有节点上启用故障转移。
+
+
+
+ a| 
+选项 Cf.takeover.on_panic 已配置为 off
+
+nodeshell 选项 "cf.takeover.on_panore" 设置为 * 关 * ，这可能会在已配置 HA 的系统上发生原因问题描述。
+ a| 
+启用崩溃时接管
+ a| 
+Unified Manager 会向集群发送相应的命令，将此设置更改为 * 开 * 。
+
+
+
+ a| 
+禁用 nodeshell 选项 snapmirror.enable
+
+旧的 nodeshell 选项 "snapmirror.enable" 设置为 * 开 * ，这可能会在升级到 ONTAP 9.3 或更高版本后在启动期间对问题描述进行发生原因。
+ a| 
+将 snapmirror.enable 选项设置为 off
+ a| 
+Unified Manager 会向集群发送相应的命令，将此设置更改为 * 关闭 * 。
+
+
+
+ a| 
+已启用 Telnet
+
+表示可能存在安全问题描述，因为 Telnet 不安全，并以未加密方式传递数据。
+ a| 
+禁用 Telnet
+ a| 
+Unified Manager 会向集群发送相应的命令以禁用 Telnet 。
+
+
+
+ a| 
+配置 Storage VM 反勒索软件学习
+
+定期检查具有反勒索软件监控许可证的集群。验证此 Storage VM 是否仅支持此类集群中的 NFS 或 SMB 卷。
+ a| 
+将 Storage VM 置于 `Learning` 模式的反勒索软件监控
+ a| 
+Unified Manager 可通过集群管理控制台将 Storage VM 的反勒索软件监控设置为 `正在学习` 状态。对在 Storage VM 上创建的所有新卷进行反勒索软件监控会自动移至学习模式。通过这种支持， ONTAP 可以了解卷上的活动模式，并检测潜在恶意攻击导致的异常情况。
+
+
+
+ a| 
+配置卷反勒索软件学习
+
+定期检查具有反勒索软件监控许可证的集群。验证卷是否仅支持此类集群中的 NFS 或 SMB 服务。
+ a| 
+将卷置于 `学习` 反勒索软件监控模式
+ a| 
+Unified Manager 可通过集群管理控制台将卷的反勒索软件监控设置为 `正在学习` 状态。通过这种支持， ONTAP 可以了解卷上的活动模式，并检测潜在恶意攻击导致的异常情况。
+
+
+
+ a| 
+启用卷反勒索软件
+
+定期检查具有反勒索软件监控许可证的集群。检测这些卷是否处于 `Learning` 模式的反勒索软件监控超过 45 天，并确定将其置于活动模式的可能性。
+ a| 
+将卷置于 `主动` 模式的反勒索软件监控
+ a| 
+Unified Manager 可通过集群管理控制台将卷上的反勒索软件监控设置为 `活动` 。通过这种支持， ONTAP 可以了解卷上的活动模式，检测潜在恶意攻击导致的异常，并为数据保护操作创建警报。
+
+
+
+ a| 
+禁用卷反勒索软件
+
+定期检查具有反勒索软件监控许可证的集群。在对卷进行主动反勒索软件监控期间检测重复通知（例如，在 30 天内返回多条有关潜在勒索软件攻击的警告）。
+ a| 
+对卷禁用反勒索软件监控
+ a| 
+Unified Manager 可通过集群管理控制台在卷上禁用反勒索软件监控。
+
+|===

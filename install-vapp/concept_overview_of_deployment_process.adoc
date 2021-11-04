@@ -1,0 +1,15 @@
+---
+permalink: install-vapp/concept_overview_of_deployment_process.html 
+sidebar: sidebar 
+keywords: overview, deployment, process 
+summary: 部署工作流介绍了在使用 Unified Manager 之前必须执行的任务。 
+---
+= 部署过程概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+部署工作流介绍了在使用 Unified Manager 之前必须执行的任务。
+
+image::../media/deployment_sequence_oc_6_0.gif[部署顺序 oc 6 0]

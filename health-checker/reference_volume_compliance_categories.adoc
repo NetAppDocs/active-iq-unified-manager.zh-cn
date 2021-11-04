@@ -1,0 +1,48 @@
+---
+permalink: health-checker/reference_volume_compliance_categories.html 
+sidebar: sidebar 
+keywords: volume, encryption, compliance, categories 
+summary: 下表介绍了 Unified Manager 评估的卷加密参数，这些参数用于确定卷上的数据是否受到充分保护，不会被未经授权的用户访问。 
+---
+= 卷合规性类别
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+下表介绍了 Unified Manager 评估的卷加密参数，这些参数用于确定卷上的数据是否受到充分保护，不会被未经授权的用户访问。
+
+请注意，卷加密参数不会影响集群或 Storage VM 是否合规。
+
+[cols="2*"]
+|===
+| 参数 | Description 
+
+
+ a| 
+软件加密
+ a| 
+显示使用 NetApp 卷加密（ NetApp Volume Encryption ， NVE ）或 NetApp 聚合加密（ NetApp Aggregate Encryption ， NAE ）软件加密解决方案保护的卷数。
+
+
+
+ a| 
+硬件已加密
+ a| 
+显示使用 NetApp 存储加密（ NetApp Storage Encryption ， NSE ）硬件加密进行保护的卷数。
+
+
+
+ a| 
+软件和硬件已加密
+ a| 
+显示受软件和硬件加密保护的卷数。
+
+
+
+ a| 
+未加密
+ a| 
+显示未加密的卷数。
+
+|===

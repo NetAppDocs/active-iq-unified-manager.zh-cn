@@ -1,0 +1,39 @@
+---
+permalink: health-checker/task_calculate_reclaimable_space_for_snapshot_copies.html 
+sidebar: sidebar 
+keywords: calculate, reclaimable space, snapshot copies 
+summary: 您可以计算删除一个或多个 Snapshot 副本后可回收的磁盘空间量。 
+---
+= 计算 Snapshot 副本的可回收空间
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以计算删除一个或多个 Snapshot 副本后可回收的磁盘空间量。
+
+* 您需要的内容 *
+
+* 您必须具有操作员，应用程序管理员或存储管理员角色。
+* 卷必须处于联机状态。
+* 此卷必须为 FlexVol 卷； FlexGroup 卷不支持此功能。
+
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 卷 * 。
+. 在 * 运行状况：所有卷 * 视图中，选择包含要查看的 Snapshot 副本的卷。
++
+此时将显示 Snapshot 副本列表。
+
+. 在 * 卷 / 运行状况 * 详细信息页面中，单击 * 容量 * 选项卡。
+. 在 * 容量 * 选项卡的 * 详细信息 * 窗格的其他详细信息部分中，单击 * Snapshot 副本 * 旁边的链接。
++
+Snapshot 副本数量是一个显示 Snapshot 副本列表的链接。
+
+. 在 * Snapshot 副本 * 视图中，选择要计算可回收空间的 Snapshot 副本。
+. 单击 * 计算 * 。
++
+此时将显示卷上的可回收空间（以百分比和 KB ， MB ， GB 等为单位）。
+
+. 要重新计算可回收空间，请选择所需的 Snapshot 副本，然后单击 * 重新计算 * 。
+

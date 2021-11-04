@@ -1,0 +1,15 @@
+---
+permalink: config/concept_login_banner.html 
+sidebar: sidebar 
+keywords: login banner, feature settings 
+summary: 通过此功能，您的组织可以显示任何信息，例如，允许谁访问系统以及登录和注销期间的使用条款和条件。 
+---
+= 正在添加登录横幅
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过添加登录横幅，您的组织可以显示任何信息，例如，允许谁访问系统以及登录和注销期间的使用条款和条件。
+
+任何用户，例如存储操作员或管理员，都可以在登录，注销和会话超时期间查看此登录横幅弹出窗口。

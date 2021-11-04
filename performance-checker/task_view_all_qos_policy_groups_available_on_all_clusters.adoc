@@ -1,0 +1,23 @@
+---
+permalink: performance-checker/task_view_all_qos_policy_groups_available_on_all_clusters.html 
+sidebar: sidebar 
+keywords: viewing, qos, policy, groups, available, clusters 
+summary: 您可以显示 Unified Manager 正在监控的集群上所有可用的 QoS 策略组的列表。其中包括传统 QoS 策略，自适应 QoS 策略以及由 Unified Manager 性能服务级别策略管理的 QoS 策略。 
+---
+= 查看所有集群上可用的所有 QoS 策略组
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以显示 Unified Manager 正在监控的集群上所有可用的 QoS 策略组的列表。其中包括传统 QoS 策略，自适应 QoS 策略以及由 Unified Manager 性能服务级别策略管理的 QoS 策略。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * QoS 策略组 * 。
++
+默认情况下，将显示 " 性能：传统 QoS 策略组 " 视图。
+
+. 查看每个可用传统 QoS 策略组的详细配置设置。
+. 单击 Expand 按钮（image:../media/chevron_down.gif[""]）以查看有关该策略组的更多详细信息。
+. 在 " 视图 " 菜单中，选择其他选项之一以查看所有自适应 QoS 策略组或使用 Unified Manager 性能服务级别创建的所有 QoS 策略组。
+

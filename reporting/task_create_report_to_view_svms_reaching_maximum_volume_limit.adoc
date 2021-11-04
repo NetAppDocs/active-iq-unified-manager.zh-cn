@@ -1,0 +1,36 @@
+---
+permalink: reporting/task_create_report_to_view_svms_reaching_maximum_volume_limit.html 
+sidebar: sidebar 
+keywords: create, report, view, storage VMs, volume, limit 
+summary: 您可以创建报告以查找达到卷上限的 SVM 。 
+---
+= 创建报告以查看达到卷上限的 Storage VM
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建报告以查找达到卷上限的 SVM 。
+
+* 您需要的内容 *
+
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+按照以下步骤创建一个自定义视图，以显示达到卷上限的 Storage VM ，然后计划为此视图生成报告。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 存储 VM* 。
+. 选择 * 显示 / 隐藏 * 可删除报告中不需要的任何列。
+. 将 "`Volume Count` " 和 `M" 最大允许卷` " 列拖动到 " `Storage VM` " 列附近。
+. `M" 允许的最大卷数` " 列顶部，按最大卷数对结果进行排序。
+. 使用反映视图显示内容的特定名称保存此视图，例如 `SVMs reaching max volumes` ，然后单击复选标记（image:../media/blue_check.gif[""]）。
+. 单击清单页面上的 * 已计划报告 * 按钮。
+. 单击 * 添加计划 * 向 * 报告计划 * 页面添加新行，以便为新报告定义计划特征。
+. 输入报告计划的名称并填写其他报告字段，然后单击复选标记（image:../media/blue_check.gif[""]）。
++
+报告将立即作为测试发送。之后，报告将生成，并以指定频率通过电子邮件发送给列出的收件人。
+
+
+
+根据报告中显示的结果，您可能需要平衡分配给 Storage VM 的卷，或者如果可能，使用 ONTAP 系统管理器更改允许的最大卷数。

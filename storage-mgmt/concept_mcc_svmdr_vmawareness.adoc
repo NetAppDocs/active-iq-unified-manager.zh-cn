@@ -1,0 +1,90 @@
+---
+permalink: storage-mgmt/concept_mcc_svmdr_vmawareness.html 
+sidebar: sidebar 
+keywords: view, virtual, infrastructure, disaster, recovery, setup, datastores, metrocluster configuration 
+summary: 您可以查看 MetroCluster 配置或 Storage Virtual Machine （ Storage VM ）灾难恢复（ SVM DR ）设置中托管的数据存储库的配置和性能指标。 
+---
+= 查看灾难恢复设置中的虚拟基础架构
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看 MetroCluster 配置或 Storage Virtual Machine （ Storage VM ）灾难恢复（ SVM DR ）设置中托管的数据存储库的配置和性能指标。
+
+在 Unified Manager 上，您可以查看 MetroCluster 配置中作为 vCenter Server 中的数据存储库连接的 NAS 卷或 LUN 。在标准环境中， MetroCluster 配置中托管的数据存储库以相同的拓扑视图表示。
+
+您还可以查看 Storage VM 灾难恢复配置中映射到 vCenter Server 中数据存储库的 NAS 卷或 LUN 。
+
+
+
+== 查看 MetroCluster 配置中的数据存储库
+
+在 MetroCluster 配置中查看数据存储库之前，请注意以下前提条件：
+
+* 如果发生切换和切回，则应完成 HA 对和 vCenter Server 的主和二级集群的发现。
+* HA 对和 vCenter Server 的主集群和二级集群必须由 Unified Manager 管理。
+* 必须在 ONTAP 和 vCenter Server 上完成所需的设置。有关信息，请参见 ONTAP 和 vCenter 文档。
++
+https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 文档中心"]
+
+
+
+请按照以下步骤查看数据存储库：
+
+. 在 "* VMware* > * 虚拟机 * " 页面上，单击托管数据存储库的虚拟机。单击 * 工作负载分析器 * 或数据存储库对象链接。在标准情况下，如果托管卷或 LUN 的主站点按预期运行，您可以查看主站点的 SVM 集群详细信息。
+. 发生灾难并连续切换到二级站点时，数据存储库链接会指向二级集群中卷或 LUN 的性能指标。这一点在下一个集群周期以及 Vserver 发现（采集）完成后反映出来。
+. 成功切回后，数据存储库链接将再次反映主集群中卷或 LUN 的性能指标。这在下一个集群周期和 SVM 发现完成后反映出来。
+
+
+
+
+== 查看 Storage VM 灾难恢复配置中的数据存储库
+
+在 Storage VM 灾难恢复配置中查看数据存储库之前，请注意以下前提条件：
+
+* 如果发生切换和切回，则应完成 HA 对和 vCenter Server 的主和二级集群的发现。
+* 源和目标集群以及 Storage VM 对等方均应由 Unified Manager 管理。
+* 必须在 ONTAP 和 vCenter Server 上完成所需的设置。
++
+** 对于 NAS （ NFS 和 VMFS ）数据存储库，在发生灾难时，这些步骤包括启动二级 Storage VM ，验证数据 LIF 和路由，在 vCenter Server 上建立丢失的连接以及启动 VM 。
++
+要切回主站点，应在主站点开始提供数据之前同步卷之间的数据。
+
+** 对于 SAN （适用于 VMFS 的 iSCSI 和 FC ）数据存储库， vCenter Server 会以 VMFS 格式格式格式化挂载的 LUN 。发生灾难时，步骤包括启动二级 Storage VM ，验证数据 LIF 和路由。如果 iSCSI 目标 IP 与主 LIF 不同，则需要手动添加它们。新的 LUN 应在主机存储适配器的 iSCSI 适配器下作为设备可用。此后，应创建具有新 LUN 的新 VMFS 数据存储库，并使用新名称注册旧 VM 。VM 必须已启动且正在运行。
++
+如果要进行恢复，则应同步卷之间的数据。应再次使用 LUN 创建新的 VMFS 数据存储库，并使用新名称注册旧 VM 。
+
++
+有关设置的信息，请参见 ONTAP 和 vCenter Server 文档。
+
++
+https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 文档中心"]
+
+
+
+
+
+请按照以下步骤查看数据存储库：
+
+. 在 "* VMware* > * 虚拟机 * " 页面上，单击托管数据存储库的虚拟机清单。单击数据存储库对象链接。在标准方案中，您可以查看主 Storage VM 中卷和 LUN 的性能数据。
+. 发生灾难并连续切换到二级 Storage VM 时，数据存储库链接会指向二级 Storage VM 中卷或 LUN 的性能指标。这一点在下一个集群周期以及 Vserver 发现（采集）完成后反映出来。
+. 成功切回后，数据存储库链接将再次反映主 Storage VM 中卷或 LUN 的性能指标。这在下一个集群周期和 SVM 发现完成后反映出来。
+
+
+
+
+== 不支持的情形
+
+* 对于 MetroCluster 配置，请注意以下限制：
++
+** 仅会占用处于 `normal` 和 `SWITCHOVER` 状态的集群。不支持其他状态，例如 `partial_switchover ， partial_switchback` 和 `not_reachable` 。
+** 除非启用了自动切换（ Automatic Switch over ， ASO ），否则，如果主集群发生故障，则无法发现二级集群，并且拓扑仍会指向主集群中的卷或 LUN 。
+
+
+* 对于 Storage VM 灾难恢复配置，请注意以下限制：
++
+** 不支持为 SAN 存储环境启用了 Site Recovery Manager （ SRM ）或 Storage Replication Adapter （ SRA ）的配置。
+
+
+

@@ -1,0 +1,220 @@
+---
+permalink: health-checker/reference_cluster_compliance_categories.html 
+sidebar: sidebar 
+keywords: cluster compliance, categories 
+summary: 下表介绍了 Unified Manager 评估的集群安全合规性参数， NetApp 建议以及该参数是否影响对集群是否合规性的整体判断。 
+---
+= 集群合规性类别
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+下表介绍了 Unified Manager 评估的集群安全合规性参数， NetApp 建议以及该参数是否影响对集群是否合规性的整体判断。
+
+集群上存在不合规的 SVM 将影响集群的合规性值。因此，在某些情况下，您可能需要先修复 SVM 的安全问题，然后才能将集群安全性视为合规。
+
+请注意，并非所有安装都显示以下列出的所有参数。例如，如果您没有对等集群，或者您在集群上禁用了 AutoSupport ，则您将不会在 UI 页面中看到集群对等或 AutoSupport HTTPS 传输项。
+
+[cols="4*"]
+|===
+| 参数 | Description | 建议 | 影响集群合规性 
+
+
+ a| 
+全局 FIPS
+ a| 
+指示是否已启用全局 FIPS （联邦信息处理标准） 140-2 合规模式。启用 FIPS 后， TLSv1 和 SSLv3 将被禁用，并且仅允许使用 TLSv1.1 和 TLSv1.2 。
+ a| 
+enabled
+ a| 
+是的。
+
+
+
+ a| 
+Telnet
+ a| 
+指示是启用还是禁用了对系统的 Telnet 访问。NetApp 建议使用安全 Shell （ SSH ）进行安全远程访问。
+ a| 
+已禁用
+ a| 
+是的。
+
+
+
+ a| 
+SSH 设置不安全
+ a| 
+指示 SSH 是否使用不安全的密码，例如以 * CBC 开头的密码。
+ a| 
+否
+ a| 
+是的。
+
+
+
+ a| 
+登录横幅
+ a| 
+指示是否为访问系统的用户启用了登录横幅。
+ a| 
+enabled
+ a| 
+是的。
+
+
+
+ a| 
+集群对等
+ a| 
+指示对等集群之间的通信是加密的还是未加密的。必须在源集群和目标集群上配置加密，才能将此参数视为合规。
+ a| 
+Encrypted
+ a| 
+是的。
+
+
+
+ a| 
+网络时间协议
+ a| 
+指示集群是否已配置一个或多个 NTP 服务器。为了获得冗余和最佳服务， NetApp 建议至少将三个 NTP 服务器与集群相关联。
+ a| 
+Configured
+ a| 
+是的。
+
+
+
+ a| 
+OCSP
+ a| 
+指示 ONTAP 中是否存在未配置 OCSP （联机证书状态协议）的应用程序，因此通信不会加密。此时将列出不合规的应用程序。
+ a| 
+enabled
+ a| 
+否
+
+
+
+ a| 
+远程审核日志记录
+ a| 
+指示日志转发（ Syslog ）是加密还是未加密。
+ a| 
+Encrypted
+ a| 
+是的。
+
+
+
+ a| 
+AutoSupport HTTPS 传输
+ a| 
+指示是否使用 HTTPS 作为向 NetApp 支持部门发送 AutoSupport 消息的默认传输协议。
+ a| 
+enabled
+ a| 
+是的。
+
+
+
+ a| 
+默认管理员用户
+ a| 
+指示是启用还是禁用默认管理员用户（内置）。NetApp 建议锁定（禁用）任何不需要的内置帐户。
+ a| 
+已禁用
+ a| 
+是的。
+
+
+
+ a| 
+SAML 用户
+ a| 
+指示是否已配置 SAML 。通过 SAML ，您可以将多因素身份验证（ Multi-Factor Authentication ， MFA ）配置为单点登录的登录方法。
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+Active Directory 用户
+ a| 
+指示是否已配置 Active Directory 。Active Directory 和 LDAP 是访问集群的用户的首选身份验证机制。
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+LDAP 用户
+ a| 
+指示是否已配置 LDAP 。对于通过本地用户管理集群的用户来说， Active Directory 和 LDAP 是首选身份验证机制。
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+证书用户
+ a| 
+指示是否已将证书用户配置为登录到集群。
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+本地用户
+ a| 
+指示是否已将本地用户配置为登录到集群。
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+远程 Shell
+ a| 
+指示是否已启用 RSH 。出于安全原因，应禁用 RSH 。首选使用安全 Shell （ SSH ）进行安全远程访问。
+ a| 
+已禁用
+ a| 
+是的。
+
+
+
+ a| 
+MD5 正在使用中
+ a| 
+指示 ONTAP 用户帐户是否使用不太安全的 MD5 哈希函数。最好将 MD5 哈希用户帐户迁移到更安全的加密哈希函数，例如 SHA-512 。
+ a| 
+否
+ a| 
+是的。
+
+
+
+ a| 
+证书颁发者类型
+ a| 
+指示使用的数字证书类型。
+ a| 
+CA 签名
+ a| 
+否
+
+|===

@@ -1,0 +1,51 @@
+---
+permalink: reporting/reference_reporting_limitations.html 
+sidebar: sidebar 
+keywords: reporting, limitations 
+summary: 新的 Active IQ Unified Manager 报告功能存在一些限制，您应注意这些限制。 
+---
+= 报告限制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新的 Active IQ Unified Manager 报告功能存在一些限制，您应注意这些限制。
+
+
+
+== 以前版本 Unified Manager 中的现有报告
+
+您只能编辑在 Unified Manager 9.5 及更早版本中创建和导入的现有报告（作为 .rptdesign 文件）的计划和收件人。如果您自定义了 Unified Manager 9.5 或更早版本提供的任何标准报告，则这些自定义报告不会导入到新的报告工具中。
+
+如果您需要编辑从 .rptdesign 文件导入的现有报告，请执行以下操作之一并删除导入的报告：
+
+* 创建新视图并从此视图计划报告（首选）
+* 将鼠标悬停在报告上，复制 SQL 并使用外部工具提取数据
+
+
+默认视图可以作为报告生成，而无需进行任何自定义。您可以使用新的 Reporting 解决方案重新创建任何自定义报告。
+
+
+
+== 计划和报告关系
+
+您可以为每个已保存报告创建多个不同的计划，其中包含任意组合的收件人。但是，不能对多个报告重复使用此计划。
+
+
+
+== 报告保护
+
+具有相应权限的任何用户都可以编辑或删除报告。无法阻止其他用户删除或更改已保存的视图或计划。
+
+
+
+== 事件报告
+
+尽管您可以自定义事件视图并以 CSV 格式下载生成的报告，但您不能计划生成和分发重复的事件报告。
+
+
+
+== 报告附件
+
+报告不能在电子邮件正文中发送。相反，报告只会作为 PDF ， Excel 或 CSV 附件发送。

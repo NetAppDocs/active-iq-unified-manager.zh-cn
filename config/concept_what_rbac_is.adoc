@@ -1,0 +1,13 @@
+---
+permalink: config/concept_what_rbac_is.html 
+sidebar: sidebar 
+keywords: rbac, active iq unified manager, server 
+summary: RBAC （基于角色的访问控制）可以控制谁有权访问 Active IQ Unified Manager 服务器中的各种功能和资源。 
+---
+= 什么是 RBAC
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RBAC （基于角色的访问控制）可以控制谁有权访问 Active IQ Unified Manager 服务器中的各种功能和资源。

@@ -1,0 +1,41 @@
+---
+permalink: reporting/task_create_report_to_view_stopped_svms.html 
+sidebar: sidebar 
+keywords: create, report, view, stopped, storage VMs 
+summary: 您可以创建报告以显示所有已停止 SVM 的列表。 
+---
+= 创建报告以查看已停止的 Storage VM
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建报告以显示所有已停止 SVM 的列表。
+
+* 您需要的内容 *
+
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+按照以下步骤创建显示已停止 Storage VM 的自定义视图，然后计划为此视图生成报告。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 存储 VM* 。
+. 在视图菜单中，选择 * 运行状况 * > * 所有 Storage VM* 。
+. 选择 * 显示 / 隐藏 * 可删除报告中不需要的任何列。
+. 将 `State` 列拖动到 `Storage VM` 列附近。
+. 单击筛选器图标，添加以下筛选器，然后单击 * 应用筛选器 * ：
++
+** 状态已停止
+
+
+. 使用反映视图显示内容的特定名称保存此视图，例如 `ST顶 上的 SVM` ，然后单击复选标记（image:../media/blue_check.gif[""]）。
+. 单击清单页面上的 * 已计划报告 * 按钮。
+. 单击 * 添加计划 * 向 * 报告计划 * 页面添加新行，以便为新报告定义计划特征。
+. 输入报告计划的名称并填写其他报告字段，然后单击复选标记（image:../media/blue_check.gif[""]）。
++
+报告将立即作为测试发送。之后，报告将生成，并以指定频率通过电子邮件发送给列出的收件人。
+
+
+
+根据报告中显示的结果，您可能需要调查 SVM 停止的原因，以确定是否应重新启动已停止的 SVM 。

@@ -1,0 +1,31 @@
+---
+permalink: api-automation/concept_um_apis_list_intro.html 
+sidebar: sidebar 
+keywords: unified, manager, rest, api 
+summary: 本节将根据类别列出适用于 Active IQ Unified Manager 的 REST API 。 
+---
+= Unified Manager REST API
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本节将根据类别列出适用于 Active IQ Unified Manager 的 REST API 。
+
+您可以从 Unified Manager 实例查看联机文档页面，其中包含每个 REST API 调用的详细信息。本文档不会重复联机文档的详细信息。本文档中列出或介绍的每个 API 调用仅包含在文档页面上查找此调用所需的信息。找到特定 API 调用后，您可以查看该调用的完整详细信息，包括输入参数，输出格式， HTTP 状态代码和请求处理类型。
+
+工作流中的每个 API 调用都包含以下信息，以帮助您在文档页面上查找此调用：
+
+* 类别
++
+API 调用会在文档页面上按功能相关的区域或类别进行组织。要查找特定 API 调用，请向下滚动到页面底部，然后单击相应的 API 类别。
+
+* HTTP 动词（调用）
++
+HTTP 动词用于标识对资源执行的操作。每个 API 调用都通过一个 HTTP 动词来执行。
+
+* 路径
++
+此路径可确定在执行调用时操作所使用的特定资源。路径字符串会附加到核心 URL 中，以形成用于标识资源的完整 URL 。
+
+

@@ -1,0 +1,46 @@
+---
+permalink: performance-checker/concept_set_up_graphite_to_receive_performance_data.html 
+sidebar: sidebar 
+keywords: setting, graphite, receive, performance, data, unified manager 
+summary: Graphite 是一款开放式软件工具，用于从计算机系统收集性能数据并绘制图形。必须正确配置 Graphite 服务器和软件，才能从 Unified Manager 接收统计数据。 
+---
+= 设置 Graphite 以从 Unified Manager 接收性能数据
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Graphite 是一款开放式软件工具，用于从计算机系统收集性能数据并绘制图形。必须正确配置 Graphite 服务器和软件，才能从 Unified Manager 接收统计数据。
+
+NetApp 不会测试或验证特定版本的 Graphite 或其他第三方工具。
+
+按照安装说明安装 Graphite 后，您需要进行以下更改以支持从 Unified Manager 进行统计数据传输：
+
+* 在 ` /opt/kaster/conf/Cone.conf` 文件中，可以在 Graphite 服务器上每分钟创建的最大文件数必须设置为 _200_ （` * MAX_creates_per_minute = 200*` ）。
++
+根据配置中的集群数量以及您选择发送的统计信息对象，最初可能需要创建数千个新文件。每分钟 200 个文件可能需要 15 分钟或更长时间才能创建所有度量文件。创建所有唯一指标文件后，此参数将不再相关。
+
+* 如果您在使用 IPv6 地址部署的服务器上运行 Graphite ，则必须将 /opt/cite/conf/Clone.conf` 文件中 line_controller_interface 的值从 "`0.0.0.0` " 更改为 "` ：` " （` * line_controller_interface = ： *` ）
+* 在 ` /opt/lutter/conf/storage-schemes.conf` 文件中，必须使用 `retentions` 参数将频率设置为 5 分钟，并将保留期限设置为与您的环境相关的天数。
++
+保留期限可以与您的环境所允许的期限相同，但对于至少一个保留设置，必须将频率值设置为 5 分钟。在以下示例中，使用 `pattern` 参数为 Unified Manager 定义了一个部分，这些值会将初始频率设置为 5 分钟，保留期限设置为 100 天： ` *[OPM]*`
+
++
+` * 模式 = ^netapp-performation\.*`
+
++
+` * 保留 = 5 米： 100d*`
+
++
+[NOTE]
+====
+如果默认供应商标记从 "`netapp-performance` " 更改为其他名称，则此更改也必须反映在 `pattern` 参数中。
+
+====
+
+
+[NOTE]
+====
+如果在 Unified Manager 服务器尝试发送性能数据时 Graphite 服务器不可用，则不会发送数据，并且收集的数据会出现空隙。
+
+====

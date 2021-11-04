@@ -1,0 +1,19 @@
+---
+permalink: health-checker/task_send_asup_to_technical_support.html 
+sidebar: sidebar 
+keywords: support bundle, web ui, maintenance console 
+summary: 如果您所拥有的问题描述需要比 AutoSupport 消息提供的诊断和故障排除更详细的信息，则应发送支持包。您可以使用 Unified Manager Web UI 和维护控制台向技术支持发送支持包。 
+---
+= 通过 Web UI 和维护控制台发送支持包
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您所拥有的问题描述需要比 AutoSupport 消息提供的诊断和故障排除更详细的信息，则应发送支持包。您可以使用 Unified Manager Web UI 和维护控制台向技术支持发送支持包。
+
+Unified Manager 一次最多可存储两个完整支持包和三个轻型支持包。
+
+* 相关信息 *
+
+link:../config/reference_unified_manager_roles_and_capabilities.html["Unified Manager 用户角色和功能"]

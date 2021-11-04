@@ -1,0 +1,39 @@
+---
+permalink: reporting/task_schedule_an_imported_report.html 
+sidebar: sidebar 
+keywords: schedule, imported, reports 
+summary: 您可以计划在早期版本的 Unified Manager 中创建和导入的现有报告。 
+---
+= 计划导入的 .rptdesign 报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以计划在早期版本的 Unified Manager 中创建和导入的现有报告。
+
+计划导入的报告需要满足以下要求：
+
+* 在早期版本的 Unified Manager 中导入了 BIRT 设计的 .rptdesign 文件报告
+* 适用于升级到 Unified Manager 9.6 GA 或更高版本
+
+
+升级到 Unified Manager 9.6 GA 或更高版本后，报告计划页面将列出导入的报告。您可以编辑这些报告的计划，以指定收件人电子邮件地址，频率和格式（ PDF 或 CSV ）。否则，无法在 Unified Manager UI 中编辑或查看这些报告。
+
+.步骤
+. 打开报告计划页面。如果已导入报告，则会显示一条消息。
++
+image::../media/message_non_scehduled_reports.png[消息非 scehduled 报告]
+
+. 单击 * 视图 * 名称可显示用于生成报告的 SQL 查询。
++
+image::../media/importedreport1.png[importedreport1.]
+
+. 单击更多图标 image:../media/more_icon.gif[""]，单击 * 编辑 * ，定义报告计划详细信息并保存报告。
++
+[NOTE]
+====
+您也可以从 " 更多 " 图标中删除任何不需要的报告 image:../media/more_icon.gif[""]。
+
+====
+

@@ -1,0 +1,32 @@
+---
+permalink: config/concept_policy_based_storage_management.html 
+sidebar: sidebar 
+keywords: slo, storage efficiency policy, storage workloads 
+summary: 通过基于策略的存储管理选项，可以根据服务级别目标（ Service Level Objective ， SLO ）进行存储管理。默认情况下，此选项处于启用状态。 
+---
+= 启用基于策略的存储管理
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 * 基于策略的存储管理 * 选项，可以根据服务级别目标（ Service Level Objective ， SLO ）进行存储管理。默认情况下，此选项处于启用状态。
+
+激活此功能后，您可以在添加到 Active IQ Unified Manager 实例的 ONTAP 集群上配置存储工作负载，并根据分配的性能服务级别和存储效率策略管理这些工作负载。
+
+您可以从 * 常规 * > * 功能设置 * > * 基于策略的存储管理 * 中选择激活或停用此功能。激活此功能后，可以使用以下页面进行操作和监控：
+
+* 配置（存储工作负载配置）
+* * 策略 * > * 性能服务级别 *
+* * 策略 * > * 存储效率 *
+* 集群设置页面上的 " 通过性能服务级别管理的工作负载 " 列
+* * 信息板 * 上的工作负载性能面板
+
+
+您可以使用这些屏幕创建性能服务级别和存储效率策略，以及配置存储工作负载。您还可以监控符合分配的性能服务级别的存储工作负载以及不符合的存储工作负载。您还可以通过工作负载性能和工作负载 IOPS 面板根据数据中心中配置的存储工作负载评估集群的总容量和性能，可用容量和性能以及已用容量和性能（ IOPS ）。
+
+激活此功能后，您可以通过 * 菜单栏 * > * 帮助按钮 * > * API Documentation* > * 存储提供程序 * 类别运行 Unified Manager REST API 来执行其中某些功能。或者，您也可以输入主机名或 IP 地址以及 URL 以访问 REST API 页面，格式为 +https://<hostname>/docs/api/+
+
+有关 API 的详细信息，请参见 _API Active IQ Unified Manager 开发人员指南 _ 。
+
+link:../api-automation/concept_get_started_with_um_apis.html["《 Active IQ Unified Manager API 开发人员指南》"]

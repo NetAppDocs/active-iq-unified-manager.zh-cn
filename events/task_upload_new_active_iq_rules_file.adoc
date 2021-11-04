@@ -1,0 +1,34 @@
+---
+permalink: events/task_upload_new_active_iq_rules_file.html 
+sidebar: sidebar 
+keywords: upload, new, active iq, rules, file 
+summary: Unified Manager 会自动检查新的 Active IQ 规则文件，并在存在较新规则时下载新文件。但是，在无法访问外部网络的站点中，您需要手动上传规则文件。 
+---
+= 上传新的 Active IQ 规则文件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 会自动检查新的 Active IQ 规则文件，并在存在较新规则时下载新文件。但是，在无法访问外部网络的站点中，您需要手动上传规则文件。
+
+* 您需要的内容 *
+
+* 必须启用 Active IQ 事件报告。
+* 您必须从 NetApp 支持站点下载规则文件。
+
+
+建议您大约每月下载一次新的规则文件，以确保存储系统受到保护并以最佳方式运行。规则文件位于： http://mysupport.netapp.com/NOW/public/unified_manager/bin/secure_rules.zip[]
+
+.步骤
+. 在可访问网络的计算机上，导航到 NetApp 支持站点并下载当前规则 ` .zip` 文件。
+. 将规则文件传输到可带入安全区域的某些介质，然后将其复制到安全区域的系统。
+. 在左侧导航窗格中，单击 * 存储管理 * > * 事件设置 * 。
+. 在 * 事件设置 * 页面中，单击 * 上传规则 * 按钮。
+. 在 * 上传规则 * 对话框中，导航到您下载的规则 ` .zip` 文件并选择该文件，然后单击 * 上传 * 。
++
+此过程可能需要几分钟时间。
+
+
+
+规则文件将在 Unified Manager 服务器上解压缩。在受管集群午夜后生成 AutoSupport 文件后， Unified Manager 将根据规则文件检查集群，并根据需要生成新的风险和意外事件。

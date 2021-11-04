@@ -1,0 +1,13 @@
+---
+permalink: config/concept_page_descriptions_for_certificate_management.html 
+sidebar: sidebar 
+keywords: page descriptions, certificate management 
+summary: 您可以使用 HTTPS 证书页面查看当前安全证书并生成新的 HTTPS 证书。 
+---
+= 证书管理的页面说明
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 HTTPS 证书页面查看当前安全证书并生成新的 HTTPS 证书。

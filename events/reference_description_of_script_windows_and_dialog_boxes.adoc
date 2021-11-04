@@ -1,0 +1,13 @@
+---
+permalink: events/reference_description_of_script_windows_and_dialog_boxes.html 
+sidebar: sidebar 
+keywords: description, script, windows, dialog boxes 
+summary: 通过脚本页面，您可以向 Unified Manager 添加脚本。 
+---
+= 脚本窗口和对话框的问题描述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过脚本页面，您可以向 Unified Manager 添加脚本。

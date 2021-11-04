@@ -1,0 +1,13 @@
+---
+permalink: reporting/concept_customize_cluster_storage_reports.html 
+sidebar: sidebar 
+keywords: customize, cluster, storage, reports 
+summary: 本节中的示例集群存储报告只是一些示例，可帮助您了解如何创建有关集群容量的报告以帮助您监控存储系统资源。 
+---
+= 自定义集群存储报告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本节中的示例集群存储报告只是一些示例，可帮助您了解如何创建有关集群容量的报告以帮助您监控存储系统资源。

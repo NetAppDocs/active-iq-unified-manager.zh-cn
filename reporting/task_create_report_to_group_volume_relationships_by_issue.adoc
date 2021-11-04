@@ -1,0 +1,36 @@
+---
+permalink: reporting/task_create_report_to_group_volume_relationships_by_issue.html 
+sidebar: sidebar 
+keywords: create, report, group, volume, relationships, issue 
+summary: 您可以创建一个报告，以便按问题描述对卷关系进行分组。 
+---
+= 创建报告以按问题描述对卷关系进行分组
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建一个报告，以便按问题描述对卷关系进行分组。
+
+* 您需要的内容 *
+
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+按照以下步骤创建一个自定义视图，以便按问题描述对卷关系进行分组，然后计划为此视图生成报告。
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 卷 * 。
+. 在视图菜单中，选择 * 关系 * > * 所有关系 * 。
+. 选择 * 显示 / 隐藏 * 可删除报告中不需要的任何列。
+. 将 "`unhealthy reason` " 列拖动到 " `State` " 列附近。
+. 单击 "`Unhealthy reason` " 列顶部，按问题描述对卷进行分组。
+. 使用反映视图显示内容的特定名称保存此视图，例如 "`Vol relationships by 问题描述` " 。
+. 单击清单页面上的 * 已计划报告 * 按钮。
+. 输入报告计划的名称并填写其他报告字段，然后单击复选标记（image:../media/blue_check.gif[""]）。
++
+报告将立即作为测试发送。之后，报告将生成，并以指定频率通过电子邮件发送给列出的收件人。
+
+
+
+根据报告中显示的结果，您可以调查每种类型的问题描述的源和影响。

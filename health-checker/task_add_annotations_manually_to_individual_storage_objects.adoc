@@ -1,0 +1,55 @@
+---
+permalink: health-checker/task_add_annotations_manually_to_individual_storage_objects.html 
+sidebar: sidebar 
+keywords: add, annotations, manually, individual, storage objects 
+summary: 您可以手动为选定卷，集群和 SVM 添加标注，而无需使用标注规则。您可以为一个或多个存储对象添加标注，并为标注指定所需的名称 - 值对组合。 
+---
+= 手动向单个存储对象添加标注
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以手动为选定卷，集群和 SVM 添加标注，而无需使用标注规则。您可以为一个或多个存储对象添加标注，并为标注指定所需的名称 - 值对组合。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+.步骤
+. 导航到要标注的存储对象：
++
+[cols="2*"]
+|===
+| 要添加标注的对象 | 执行此操作 ... 
+
+
+ a| 
+集群
+ a| 
+.. 单击 * 存储 * > * 集群 * 。
+.. 选择一个或多个集群。
+
+
+
+
+ a| 
+Volumes
+ a| 
+.. 单击 * 存储 * > * 卷 * 。
+.. 选择一个或多个卷。
+
+
+
+
+ a| 
+svms
+ a| 
+.. 单击 * 存储 * > * SVMs * 。
+.. 选择一个或多个 SVM 。
+
+
+|===
+. 单击 * 标注 * 并选择一个名称 - 值对。
+. 单击 * 应用 * 。
+

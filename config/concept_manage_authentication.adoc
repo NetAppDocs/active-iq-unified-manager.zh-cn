@@ -1,0 +1,15 @@
+---
+permalink: config/concept_manage_authentication.html 
+sidebar: sidebar 
+keywords: manage, authentication 
+summary: 您可以在 Unified Manager 服务器上使用 LDAP 或 Active Directory 启用身份验证，并将其配置为与服务器配合使用以对远程用户进行身份验证。 
+---
+= 管理身份验证
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Unified Manager 服务器上使用 LDAP 或 Active Directory 启用身份验证，并将其配置为与服务器配合使用以对远程用户进行身份验证。
+
+有关启用远程身份验证，设置身份验证服务以及添加身份验证服务器的信息，请参见前面有关 * 配置 Unified Manager 以发送警报通知 * 的章节。
