@@ -12,4 +12,4 @@ summary: 您可以通过一组配置步骤在 Unified Manager 上配置备份功
 [role="lead"]
 您可以通过一组配置步骤在 Unified Manager 上配置备份功能，这些配置步骤将通过维护控制台在主机系统和上执行。
 
-有关配置步骤的信息，请参见 `MActive IQ ® Unified Manager 《集群运行状况管理工作流指南》中的 " 管理备份和还原操作` " 。
+有关配置步骤的信息，请参见 link:..//health-checker/concept_manage_backup_and_restore_operations.html["管理备份和还原操作"]。

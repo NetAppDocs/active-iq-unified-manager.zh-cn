@@ -45,7 +45,7 @@ OpenJDK 11.0.12 版
 
 
  a| 
-MySQL 8.0.25 社区版
+MySQL 8.0.27 社区版
  a| 
 `rpm -qa` grep -i mysql
 
@@ -57,7 +57,7 @@ p7zip 16.02
 `rpm -qa` grep p7zip
 
 |===
-. 如果安装的 MySQL 版本早于 MySQL 8.0.25 社区版，请输入以下命令将其卸载：
+. 如果安装的 MySQL 版本早于 MySQL 8.0.27 社区版，请输入以下命令将其卸载：
 +
 `rpm -e <mysql_package_name>`
 

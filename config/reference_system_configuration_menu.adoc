@@ -57,6 +57,10 @@ summary: 通过 System Configuration 菜单，您可以通过提供各种选项�
 +
 更改 NTP 服务器设置，例如 IP 地址或完全限定域名（ FQDN ）。
 
+* * 更改 NTP 服务 *
++
+在 `NTP` 和 `systemd-timesyncd` 服务之间切换。
+
 * * 从 Unified Manager 备份还原 *
 +
 从先前备份的版本还原 Unified Manager 数据库和配置设置。

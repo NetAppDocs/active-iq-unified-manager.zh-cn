@@ -2,7 +2,7 @@
 permalink: reporting/task_create_report_to_view_aggregates_that_are_nearly_full.html 
 sidebar: sidebar 
 keywords: create, report, view, aggregates, full 
-summary: 您可以创建报告以突出显示已满 80% 或以上的聚合。 
+summary: '您可以创建报告以突出显示已满 80% 或以上的聚合。' 
 ---
 = 创建报告以查看已满 80% 或以上的聚合
 :icons: font

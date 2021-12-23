@@ -40,13 +40,7 @@ http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
 
 * Microsoft Visual C&#43 ； &#43 ； 2015 年可重新分发软件包 14.26.28720.3 版
 * Microsoft Visual C&#43 ； &#43 ；适用于 Visual Studio 2013 的可重新分发软件包 12.0.40660.0 版
-* MySQL 社区版 8.0.21
-+
-[NOTE]
-====
-由于问题描述具有互操作性， Unified Manager 的安装程序仅支持 MySQL 社区版 8.0.21 。您 * 不能 * 将 MySQL 升级到 8.0.21 以上的版本。
-
-====
+* MySQL 社区版 8.0.27
 * Python 3.9.x
 * OpenJDK 11.0.12 版
 * p7zip 版本 18.05 或更高版本
