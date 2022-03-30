@@ -317,8 +317,6 @@
   <block id="e8dc00bb5c4a79a30cb6961d8c719c68" category="section-title">正在设置 API 范围</block>
   <block id="876ee7ae93146d0a8658b4651eba9103" category="paragraph">所有 API 都在集群范围内设置了上下文。基于 Storage VM 运行的 API 也会以集群为范围，也就是说， API 操作会在受管集群中的特定 Storage VM 上执行。在运行 ` 网关 // ｛ uuid ｝ /\ ｛ path ｝` API 时，请确保为运行此操作的集群输入集群 UUID （ Unified Manager 数据源 UUID ）。要为该集群中的特定 Storage VM 设置上下文，请输入 Storage VM 密钥作为 X-Dot-SVM-UUID 参数，或者输入 Storage VM 名称作为 X-Dot-SVM-Name 参数。参数将作为筛选器添加到字符串标题中，此操作将在该集群中的该 Storage VM 的范围内运行。</block>
   <block id="716b5016376bbd3fcbebe6401884d589" category="paragraph">有关使用 ONTAP REST API 的详细信息，请参见《 ONTAP REST API 开发人员指南》。</block>
-  <block id="4fe9c7e4cf1cd9bd668b6209e4ed3347" category="inline-link">《 ONTAP REST API 开发人员指南》</block>
-  <block id="e879a1c9261ab053cb14386f3f251e03" category="paragraph"><block ref="e879a1c9261ab053cb14386f3f251e03" category="inline-link-rx"></block></block>
   <block id="b2dcfcd18752bfdc682ceeac8c6b5f92" category="summary">通过数据中心类别下的 REST API ，您可以管理数据中心中的存储对象，例如集群，节点，聚合， Storage VM ， 卷， LUN ，文件共享和命名空间。这些 API 可用于查询对象的配置，而其中一些 API 可用于执行添加，删除或修改这些对象的操作。</block>
   <block id="bd4ee34a212cad4c3967a916d3b5b99c" category="doc">管理数据中心中的存储对象</block>
   <block id="ffd3e25f888e7f06d78a9c4bfa1ef069" category="paragraph">通过 " `d"` 类别下的 REST API ，您可以管理数据中心中的存储对象，例如集群，节点，聚合， Storage VM ， 卷， LUN ，文件共享和命名空间。这些 API 可用于查询对象的配置，而其中一些 API 可用于执行添加，删除或修改这些对象的操作。</block>
@@ -3875,8 +3873,6 @@
   <block id="ae29cba1567ab4b1a3f0d7c52960df9d" category="paragraph">您可以通过 Unified Manager 发现和监控集群和 Storage Virtual Machine 上可用的一致性组（ CG ）的同步 SnapMirror 关系。AFF 集群或全 SAN 阵列（ ASA ）集群支持 SM-BC ，其中主集群和二级集群可以是 AFF 或 ASA 。SM-BC 使用 iSCSI 或 FCP LUN 保护应用程序。</block>
   <block id="74560fead831fee65bfebe70198203e9" category="paragraph">查看受 SM-BC 关系保护的卷和 LUN 时，您可以获得保护关系，卷清单中的一致性组，一致性组关系的保护拓扑，一致性组关系的历史数据以及长达一年的一致性组关系的历史数据。您也可以下载此报告。此外，您还可以查看一致性组关系的摘要，搜索一致性组关系的支持以及获取有关受一致性组保护的卷的信息。</block>
   <block id="4c7cb2eaa5d8a4da948d7b43d793ef6d" category="paragraph">在关系页面上，您还可以对受一致性组保护的源和目标存储对象及其关系进行排序，筛选和扩展保护。</block>
-  <block id="5358757de9216cc29d688612a3d72fe1" category="inline-link">ONTAP 9 文档</block>
-  <block id="5812ee9e7bac0b626570d5f3cd3f1709" category="paragraph">要了解有关 SnapMirror 同步业务连续性的更多信息，请参见<block ref="66ce9ff54cf74a6d2509b68a22ccf4bd" category="inline-link-rx"></block>。</block>
   <block id="7331ad8836c59b4b432445f8fc5c99e4" category="summary">您可以使用版本灵活的复制和备份选项功能创建 SnapMirror 关系。通过备份选项功能，您可以实施 SnapMirror 保护，并在目标位置保留多个版本的备份副本。</block>
   <block id="e36facec58d4fd1ab5145c36e21c2862" category="doc">使用版本灵活复制和备份选项创建 SnapMirror 关系</block>
   <block id="407fe421f08b59392c7c3b527a70fbe9" category="list-text">源和目标 SVM 必须都启用了 SnapMirror 许可证。</block>
@@ -4588,8 +4584,6 @@
   <block id="7beb94f6fbaef8cd847dcc4e98562c31" category="paragraph">SM-BC 可确保在 SAN 环境中进行故障转移期间实现零恢复时间目标（ RTO ）。在支持 SM-BC 的典型部署中，卷上的 LUN 受一致性组关系的保护。</block>
   <block id="9341b9e1536cc8f4c3652c7e91c736d7" category="paragraph">这些主 LUN 和二级 LUN 是复合 LUN ，或者具有相同 UUID 和序列号的副本 LUN 对。I/O 操作（读取和写入）会在这些复合 LUN 上的源站点和目标站点之间进行多路传输，以确保透明性。</block>
   <block id="f1c21bacefc03e4bd3d91418d06734d5" category="paragraph">要查看复合 LUN ，应在 Unified Manager 上添加和发现包含属于一致性组关系的 LUN 的主集群和二级集群。仅支持 iSCSI 和 FCP LUN 。</block>
-  <block id="4f7893cb4956621a7b2bd3a82e786b36" category="inline-link-macro">SnapMirror 业务连续性解决方案的文档</block>
-  <block id="902d8143eb613a0b94c6bc79a87044fe" category="paragraph">有关 SM-BC 的信息，请参见 <block ref="232a31772fdba492c0067413b2620581" category="inline-link-macro-rx"></block>。</block>
   <block id="ad5b7872fd9aa53772e0572d135d92ac" category="paragraph">要查看环境中的复合 LUN ，请执行以下步骤：</block>
   <block id="c06b3a2fbcb65d98410db9f3d028d975" category="list-text">在左侧导航窗格中，单击 * 存储 * &gt; * LUN * 。</block>
   <block id="6a58ee8a26309acf233c906850cda0c6" category="list-text">从视图菜单中，选择 * 关系 * &gt; * 所有 LUN* 。</block>
@@ -11509,4 +11503,13 @@
   <block id="eecf698dfc7cb9d2b5e24530d593153a" category="paragraph">` 数据中心 / 网络 /FC/interfaces/｛ key ｝ / 指标`</block>
   <block id="74202c4c8ab34d9532fd78765a96f893" category="paragraph">` 数据中心 / 网络 /fc/ 端口 / ｛ key ｝ / 指标`</block>
   <block id="c1a9193a29dc40ec352c6691d67ab578" category="sidebar">在 Windows 系统上安装 Unified Manager</block>
+  <block id="3890f9f0f1b24b11ec99c5302bb245a3" category="paragraph">有关详细信息，请参见<block ref="ae0acc7a1cf35a69eb7b42685c902841" category="inline-link-rx"></block></block>
+  <block id="10ca66f0a363b90a579ee48398d9ca6c" category="inline-link">ONTAP REST API 自动化</block>
+  <block id="64bce96c9eeebb3c2c4e4047917784d7" category="paragraph"><block ref="64bce96c9eeebb3c2c4e4047917784d7" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
+  <block id="777d37d26729d37bb63eecb74c435e85" category="inline-link">Active IQ Unified Manager 9.10 注意事项</block>
+  <block id="0c8699048289beedeedb54f53b9ba0e1" category="paragraph"><block ref="0c8699048289beedeedb54f53b9ba0e1" category="inline-link-rx"></block></block>
+  <block id="304235bddd1bfe240019774dacdbd71e" category="inline-link-macro">适用于 SM-BC 的 ONTAP 9 文档</block>
+  <block id="2eaa1a82c95cbdf0e4d38d70a85a96d7" category="paragraph">要了解有关 SnapMirror 同步业务连续性的更多信息，请参见 <block ref="c3c54812d1152ab82d144dc87f0ce5db" category="inline-link-macro-rx"></block>。</block>
+  <block id="e6426dd2e05e7210d50c422898f18af7" category="paragraph">有关 SM-BC 的信息，请参见 <block ref="c3c54812d1152ab82d144dc87f0ce5db" category="inline-link-macro-rx"></block>。</block>
 </blocks>

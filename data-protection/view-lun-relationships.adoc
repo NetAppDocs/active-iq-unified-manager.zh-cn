@@ -18,7 +18,7 @@ SM-BC 可确保在 SAN 环境中进行故障转移期间实现零恢复时间目
 
 要查看复合 LUN ，应在 Unified Manager 上添加和发现包含属于一致性组关系的 LUN 的主集群和二级集群。仅支持 iSCSI 和 FCP LUN 。
 
-有关 SM-BC 的信息，请参见 link:https://docs.netapp.com/us-en/ontap/smbc/smbc_intro_overview.html["SnapMirror 业务连续性解决方案的文档"]。
+有关 SM-BC 的信息，请参见 link:https://docs.netapp.com/us-en/ontap/smbc/index.html["适用于 SM-BC 的 ONTAP 9 文档"]。
 
 要查看环境中的复合 LUN ，请执行以下步骤：
 

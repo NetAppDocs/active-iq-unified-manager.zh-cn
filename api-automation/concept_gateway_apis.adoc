@@ -111,4 +111,4 @@ curl -X GET "https://<hostname>/api/gateways/e4f33f90-f75f-11e8-9ed9-00a098e3215
 ----
 有关使用 ONTAP REST API 的详细信息，请参见《 ONTAP REST API 开发人员指南》。
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-nxt-help-960/GUID-7B141B6B-CDCD-4E4A-95CD-C9E407702BF6.html["《 ONTAP REST API 开发人员指南》"]
+https://docs.netapp.com/us-en/ontap-automation/index.html["ONTAP REST API 自动化"]

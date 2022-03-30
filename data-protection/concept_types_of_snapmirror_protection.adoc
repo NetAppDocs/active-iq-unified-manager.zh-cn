@@ -81,4 +81,4 @@ ONTAP 9.8 及更高版本提供了 SnapMirror 业务连续性（ SM-BC ）功能
 
 在关系页面上，您还可以对受一致性组保护的源和目标存储对象及其关系进行排序，筛选和扩展保护。
 
-要了解有关 SnapMirror 同步业务连续性的更多信息，请参见 https://docs.netapp.com/us-en/ontap/smbc/smbc_intro_overview.html["ONTAP 9 文档"]。
+要了解有关 SnapMirror 同步业务连续性的更多信息，请参见 link:https://docs.netapp.com/us-en/ontap/smbc/index.html["适用于 SM-BC 的 ONTAP 9 文档"]。

@@ -49,6 +49,3 @@ http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
 
 
 NOTE: 在安装或升级 Unified Manager 时，所需的第三方软件和安全修补程序会自动安装或升级到 VMware vSphere 系统上。由于 Unified Manager 安装和升级过程控制着这些组件，因此不应尝试独立安装或升级任何第三方组件。
-
-|===
-|===
