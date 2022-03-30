@@ -5,6 +5,7 @@ keywords: select, performance, charts, display
 summary: '通过选择图表下拉列表，您可以选择要在 " 计数器图表 " 窗格中显示的性能计数器图表的类型。这样，您可以根据性能要求查看特定数据和计数器。' 
 ---
 = 选择要显示的性能图表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

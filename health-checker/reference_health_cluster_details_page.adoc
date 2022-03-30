@@ -5,6 +5,7 @@ keywords: cluster, health details page
 summary: 集群 / 运行状况详细信息页面提供了有关选定集群的详细信息，例如运行状况，容量和配置详细信息。您还可以查看有关集群的网络接口（ LIF ），节点，磁盘，相关设备和相关警报的信息。 
 ---
 = 集群 / 运行状况详细信息页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

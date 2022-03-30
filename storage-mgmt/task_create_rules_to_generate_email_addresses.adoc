@@ -5,6 +5,7 @@ keywords: create, rules, generate, email, addresses
 summary: 您可以创建规则，以便根据与集群， Storage Virtual Machine （ SVM ），卷， qtree ，用户或用户组关联的用户配额指定电子邮件地址。如果存在违反配额的情况，系统会向指定的电子邮件地址发送通知。 
 ---
 = 创建规则以生成电子邮件地址
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

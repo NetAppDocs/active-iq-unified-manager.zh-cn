@@ -5,6 +5,7 @@ keywords: configure, netapp, snapshot, backup, maintenance console
 summary: 您应从维护控制台将 Active IQ Unified Manager 备份配置为 NetApp Snapshot 备份。 
 ---
 = 从维护控制台配置 NetApp Snapshot 备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

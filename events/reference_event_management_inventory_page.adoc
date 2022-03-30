@@ -5,6 +5,7 @@ keywords: event, management, inventory, page, filter, components, xommand button
 summary: 通过事件管理清单页面，您可以查看当前事件及其属性的列表。您可以执行确认，解决和分配事件等任务。您还可以为特定事件添加警报。 
 ---
 = 事件管理清单页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

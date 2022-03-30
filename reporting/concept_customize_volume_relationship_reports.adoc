@@ -5,6 +5,7 @@ keywords: customize, volume, relationship, reports
 summary: 通过卷关系清单报告，您可以分析集群中的存储清单详细信息，了解卷所需的保护程度，并根据故障源，模式和计划筛选卷详细信息。 
 ---
 = 自定义卷关系报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

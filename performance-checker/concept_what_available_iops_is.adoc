@@ -5,6 +5,7 @@ keywords: available, iops, total iops, aggregate iops, volume iops
 summary: 可用 IOPS 计数器用于确定在资源达到限制之前可添加到节点或聚合的剩余 IOPS 数量。节点可以提供的总 IOPS 取决于节点的物理特征，例如 CPU 数量， CPU 速度和 RAM 量。聚合可提供的总 IOPS 取决于磁盘的物理属性，例如 SATA ， SAS 或 SSD 磁盘。 
 ---
 = 什么是可用 IOPS
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

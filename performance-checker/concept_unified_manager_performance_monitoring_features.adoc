@@ -5,6 +5,7 @@ keywords: unified manager, performance, monitoring, features
 summary: Unified Manager 可从运行 ONTAP 软件的系统收集和分析性能统计信息。它使用动态性能阈值和用户定义的性能阈值来监控多个集群组件上的各种性能计数器。 
 ---
 = Unified Manager 性能监控功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

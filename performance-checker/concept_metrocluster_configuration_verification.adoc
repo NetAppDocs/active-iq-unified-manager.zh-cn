@@ -5,6 +5,7 @@ keywords: metrocluster, configuration, verification
 summary: 您可以通过确保正确设置 MetroCluster 配置来防止 MetroCluster 配置中镜像工作负载出现性能问题。您还可以通过更改配置或升级软件或硬件组件来提高工作负载性能。 
 ---
 = MetroCluster 配置验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

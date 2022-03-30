@@ -5,6 +5,7 @@ keywords: initialize, update, dialog box
 summary: '通过 " 初始化 / 更新 " 对话框，您可以对新保护关系执行首次基线传输，或者如果关系已初始化，而您希望执行手动，计划外的增量更新，则可以更新此关系。' 
 ---
 = 初始化 / 更新对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

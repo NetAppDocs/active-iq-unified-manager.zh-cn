@@ -5,6 +5,7 @@ keywords: supported, unified manager, cli, commands
 summary: 作为存储管理员，您可以使用命令行界面命令对存储对象执行查询，例如，对集群，聚合，卷， qtree 和 LUN 。您可以使用命令行界面命令查询 Unified Manager 内部数据库和 ONTAP 数据库。您还可以在操作开始或结束时执行或触发警报时执行的脚本中使用 CLI 命令。 
 ---
 = 支持的 Unified Manager 命令行界面命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

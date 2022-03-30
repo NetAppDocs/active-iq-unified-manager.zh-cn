@@ -5,6 +5,7 @@ keywords: specify, custom, time range
 summary: '通过 " 性能资源管理器 " 页面，您可以指定性能数据的日期和时间范围。在细化集群对象数据时，指定自定义时间范围比使用预定义时间范围更灵活。' 
 ---
 = 指定自定义时间范围
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: add, values, annotations
 summary: 您可以向标注添加值，然后将存储对象与特定标注名称 - 值对关联起来。将值添加到标注有助于更有效地管理存储对象。 
 ---
 = 将值添加到标注
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

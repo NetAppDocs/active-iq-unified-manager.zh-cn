@@ -5,6 +5,7 @@ keywords: create, report, group, volume, relationships, issue
 summary: 您可以创建一个报告，以便按问题描述对卷关系进行分组。 
 ---
 = 创建报告以按问题描述对卷关系进行分组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

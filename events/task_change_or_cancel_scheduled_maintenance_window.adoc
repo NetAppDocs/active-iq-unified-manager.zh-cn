@@ -5,6 +5,7 @@ keywords: change, cancel, scheduled, maintenance, window
 summary: 如果您已将 Unified Manager 维护窗口配置为将来发生，则可以更改开始和结束时间或取消维护窗口。 
 ---
 = 更改或取消计划的维护窗口
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

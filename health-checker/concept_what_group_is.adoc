@@ -5,6 +5,7 @@ keywords: group
 summary: 组是异构存储对象（集群， SVM 或卷）的动态集合。您可以在 Unified Manager 中创建组，以便轻松管理一组存储对象。组中的成员可能会发生更改，具体取决于 Unified Manager 在某一时间点监控的存储对象。 
 ---
 = 什么是组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

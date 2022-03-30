@@ -5,6 +5,7 @@ keywords: unified manager, interfaces, used, manage, storage, system, performanc
 summary: Active IQ Unified Manager 提供了两个用户界面，用于监控数据存储性能问题并对其进行故障排除： Web 用户界面和维护控制台。 
 ---
 = 用于管理存储系统性能的 Unified Manager 界面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

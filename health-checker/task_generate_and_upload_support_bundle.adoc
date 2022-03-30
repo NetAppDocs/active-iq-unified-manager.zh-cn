@@ -5,6 +5,7 @@ keywords: generate, upload, support bundle
 summary: 您可以生成包含诊断信息的支持包，以便将其发送给技术支持以获取故障排除帮助。从 Unified Manager 9.8 开始，如果 Unified Manager 服务器已连接到 Internet ，您还可以从维护控制台将支持包上传到 NetApp 。 
 ---
 = 生成并上传支持包
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

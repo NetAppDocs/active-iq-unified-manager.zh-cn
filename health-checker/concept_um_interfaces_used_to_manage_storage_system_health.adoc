@@ -5,6 +5,7 @@ keywords: unified manager, interfaces, manage, storage system, health
 summary: 本指南包含有关 Active IQ Unified Manager 为解决数据存储容量，可用性和保护问题而提供的两个用户界面的信息。这两个 UI 是 Unified Manager Web UI 和维护控制台。 
 ---
 = 用于管理存储系统运行状况的 Unified Manager 接口
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

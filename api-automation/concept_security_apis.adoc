@@ -5,6 +5,7 @@ keywords: manage, user
 summary: 您可以使用安全类别中的 API 控制用户对 Active IQ Unified Manager 中选定集群对象的访问。您可以添加本地用户或数据库用户。您还可以添加属于身份验证服务器的远程用户或组。根据分配给用户的角色的权限，用户可以在 Unified Manager 中管理存储对象或查看数据。 
 ---
 = 管理用户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

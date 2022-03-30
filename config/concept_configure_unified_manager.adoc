@@ -5,6 +5,7 @@ keywords: configure, active iq unified manager
 summary: 安装 Active IQ Unified Manager （以前称为 OnCommand 统一管理器）后，您必须完成初始设置（也称为首次体验向导）才能访问 Web UI 。然后，您可以执行其他配置任务，例如添加集群，配置远程身份验证，添加用户和添加警报。 
 ---
 = 正在配置 Active IQ Unified Manager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

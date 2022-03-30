@@ -5,6 +5,7 @@ keywords: browse, directories, dialog box
 summary: '如果要将数据还原到集群和 SVM 上与原始源不同的目录，可以使用 " 浏览目录 " 对话框。默认情况下会选择原始源集群和卷。' 
 ---
 = 浏览目录对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: performance, event, severity, types
 summary: 每个性能事件都与一个严重性类型相关联，以帮助您确定需要立即采取更正操作的事件的优先级。 
 ---
 = 性能事件严重性类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

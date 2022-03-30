@@ -5,6 +5,7 @@ keywords: install, ca signed, returned, https, certificate
 summary: 您可以在证书颁发机构签名并返回安全证书后上传并安装该证书。您上传和安装的文件必须是现有自签名证书的签名版本。CA 签名证书有助于防止中间人攻击，并提供比自签名证书更好的安全保护。 
 ---
 = 安装 CA 签名并返回的 HTTPS 证书
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: customize, columns
 summary: '使用 " 显示 / 隐藏 " 选择要在报告中使用的列。拖动清单页面上的列以重新排列它们。' 
 ---
 = 自定义列
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

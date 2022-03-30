@@ -5,6 +5,7 @@ keywords: edit, user, group, quota, email, addresses
 summary: '您可以根据与集群， Storage Virtual Machine （ SVM ），卷， qtree ，用户或用户组关联的用户配额修改电子邮件地址。如果要覆盖由 " 生成用户和组配额电子邮件地址的规则 " 对话框中指定的规则生成的电子邮件地址，您可以修改此电子邮件地址。' 
 ---
 = 编辑用户和组配额电子邮件地址
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: confirm, latency, within, expected, range
 summary: 当集群组件处于争用状态时，使用该组件的卷工作负载可能会缩短响应时间（延迟）。您可以查看争用组件上每个受影响工作负载的延迟，以确认其实际延迟在预期范围内。您也可以单击卷名称以查看卷的历史数据。 
 ---
 = 确认延迟在预期范围内
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

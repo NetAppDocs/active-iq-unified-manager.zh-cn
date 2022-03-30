@@ -5,6 +5,7 @@ keywords: storage, resource, ONTAP
 summary: ONTAP 中的存储资源可广泛分为物理存储资源和逻辑存储资源。要使用 Active IQ Unified Manager 中提供的 API 有效管理 ONTAP 系统，您必须了解存储资源模型以及各种存储资源之间的关系。 
 ---
 = ONTAP 中的存储资源
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

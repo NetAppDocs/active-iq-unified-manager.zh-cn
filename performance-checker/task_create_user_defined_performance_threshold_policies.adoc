@@ -5,6 +5,7 @@ keywords: create, user-defined, performance, threshold, policies
 summary: 您可以为存储对象创建性能阈值策略，以便在性能计数器超过特定值时发送通知。事件通知可确定集群遇到性能问题描述。 
 ---
 = 创建用户定义的性能阈值策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

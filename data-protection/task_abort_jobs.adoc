@@ -5,6 +5,7 @@ keywords: abort, jobs
 summary: 如果作业完成时间过长，遇到过多错误或不再需要，您可以使用作业页面中止作业。只有当作业的状态和类型允许时，才能中止该作业。您可以中止任何正在运行的作业。 
 ---
 = 中止作业
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

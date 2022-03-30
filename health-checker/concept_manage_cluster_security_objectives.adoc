@@ -5,6 +5,7 @@ keywords: cluster, security, manage, objectives
 summary: Unified Manager 提供了一个信息板，用于根据《适用于 ONTAP 9 的 NetApp 安全加固指南》中定义的建议确定 ONTAP 集群， Storage Virtual Machine （ SVM ）和卷的安全程度。 
 ---
 = 管理集群安全目标
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

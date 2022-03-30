@@ -5,6 +5,7 @@ keywords: edit, protection, relationships, volume, relationships, page
 summary: 您可以编辑现有保护关系以更改最大传输速率，保护策略或保护计划。您可以编辑关系以减少用于传输的带宽，也可以由于数据经常更改而增加计划传输的频率。 
 ---
 = 从卷关系页面编辑保护关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

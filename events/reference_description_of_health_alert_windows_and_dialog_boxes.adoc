@@ -5,6 +5,7 @@ keywords: description, alert, windows, dialog boxes
 summary: '您应使用添加警报对话框配置警报以接收有关事件的通知。您还可以从 "Alert Setup" 页面查看警报列表。' 
 ---
 = 警报窗口和对话框的问题描述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

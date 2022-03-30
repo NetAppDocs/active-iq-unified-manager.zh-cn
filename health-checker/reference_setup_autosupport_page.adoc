@@ -5,6 +5,7 @@ keywords: autosupport, messages, support bundles, technical support
 summary: 通过 AutoSupport 页面，您可以向技术支持团队发送预定义的按需 AutoSupport 消息，以确保环境正常运行，并帮助您维护环境的完整性。默认情况下， AutoSupport 处于启用状态，不应将其禁用，这样您才能获得 NetAppActive IQ 的优势。 
 ---
 = 将 AutoSupport 消息和支持包发送给技术支持
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

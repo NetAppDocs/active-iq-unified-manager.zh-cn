@@ -5,6 +5,7 @@ keywords: event, state, definitions
 summary: '事件状态有助于确定是否需要采取适当的更正操作。事件可以是 " 新增 " ， " 已确认 " ， " 已解决 " 或 " 已废弃 " 。请注意，新事件和已确认事件均视为活动事件。' 
 ---
 = 事件状态定义
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: install, HTTPS, certificate, generated from external tools
 summary: 您可以安装自签名或 CA 签名的证书，这些证书是使用 OpenSSL ， BoringSSL ， LtsEncrypt 等外部工具生成的。 
 ---
 = 安装使用外部工具生成的 HTTPS 证书
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

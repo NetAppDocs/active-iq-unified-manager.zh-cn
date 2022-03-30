@@ -5,6 +5,7 @@ keywords: monitor, metrocluster, replication
 summary: 您可以在镜像数据的同时监控和诊断逻辑连接的整体运行状况。您可以确定中断聚合，节点和 Storage Virtual Machine 等集群组件镜像的问题或任何风险。 
 ---
 = 监控 MetroCluster 复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

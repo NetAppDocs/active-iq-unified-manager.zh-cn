@@ -5,6 +5,7 @@ keywords: perform, diagnostic actions, volume, offline, conditions
 summary: '导航到报告为脱机的卷的 "Volume/Health" 详细信息页面后，您可以搜索追加信息以帮助诊断卷脱机情况。' 
 ---
 = 针对卷脱机情况执行诊断操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

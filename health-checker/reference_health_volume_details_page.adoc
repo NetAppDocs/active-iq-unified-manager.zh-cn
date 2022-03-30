@@ -5,6 +5,7 @@ keywords: volume, health details page
 summary: 您可以使用卷 / 运行状况详细信息页面查看有关选定卷的详细信息，例如容量，存储效率，配置，保护， 标注和生成的事件。您还可以查看有关该卷的相关对象和相关警报的信息。 
 ---
 = 卷 / 运行状况详细信息页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

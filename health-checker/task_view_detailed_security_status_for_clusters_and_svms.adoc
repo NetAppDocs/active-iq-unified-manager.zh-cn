@@ -5,6 +5,7 @@ keywords: view, cluster security status, svm security status, volume encryption 
 summary: '" 安全性 " 页面显示所有集群的高级别安全状态以及各个集群的详细安全状态。详细的集群状态包括集群合规性， SVM 合规性和卷加密合规性。' 
 ---
 = 查看集群和 Storage VM 的详细安全状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

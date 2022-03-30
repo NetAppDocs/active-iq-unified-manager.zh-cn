@@ -5,6 +5,7 @@ keywords: reverse, resync, dialog box
 summary: 如果保护关系因源卷被禁用而中断，而目标卷成为读 / 写卷，则可以通过反向重新同步反转关系方向，使目标成为新的源，而源成为新的目标。 
 ---
 = 反向重新同步对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

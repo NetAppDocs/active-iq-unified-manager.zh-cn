@@ -5,6 +5,7 @@ keywords: unified manager, maintenance, window
 summary: 您可以定义 Unified Manager 维护窗口，以便在已计划集群维护且您不希望收到大量不需要的通知时禁止特定时间范围内的事件和警报。 
 ---
 = 什么是 Unified Manager 维护窗口
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

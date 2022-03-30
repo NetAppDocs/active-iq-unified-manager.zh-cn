@@ -5,6 +5,7 @@ keywords: clusters, unallocated, LUN, capacity, indentify, additional, workloads
 summary: 您可以创建一个报告来查找未分配 LUN 容量最多且大于 0.5 TB 的集群，以帮助确定可以在何处添加其他工作负载。 
 ---
 = 创建报告以确定未分配 LUN 容量最多的集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: openjdk, jre, linux, upgrade
 summary: 您可以在安装了 Unified Manager 的 Linux 服务器上升级到较新版本的 OpenJDK ，以获取安全漏洞修复。 
 ---
 = 在 Linux 上升级 OpenJDK
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

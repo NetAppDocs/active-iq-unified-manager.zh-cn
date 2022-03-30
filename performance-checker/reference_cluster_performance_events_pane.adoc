@@ -5,6 +5,7 @@ keywords: cluster, performance, events, pane, counter
 summary: 集群性能事件窗格显示集群的性能统计信息和所有活动事件。在监控集群以及所有与集群相关的性能和事件时，此功能最有用。 
 ---
 = 集群性能事件窗格
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

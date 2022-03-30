@@ -5,6 +5,7 @@ keywords: view, user, user, group, quotas
 summary: Storage VM/ 运行状况详细信息页面显示有关在 SVM 上配置的用户和用户组配额的信息。您可以查看用户或用户组的名称，对磁盘和文件设置的限制，已用磁盘和文件空间以及用于通知的电子邮件地址。 
 ---
 = 查看用户和用户组配额
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

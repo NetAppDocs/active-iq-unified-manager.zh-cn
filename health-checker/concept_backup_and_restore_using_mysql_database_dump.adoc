@@ -5,6 +5,7 @@ keywords: backup, restore, using, mysql, database, dump
 summary: MySQL 数据库转储备份是 Active IQ Unified Manager 数据库和配置文件的副本，可在发生系统故障或数据丢失时使用。您可以计划将备份写入本地目标或远程目标。强烈建议您定义 Active IQ Unified Manager 主机系统外部的远程位置。 
 ---
 = 使用 MySQL 数据库转储进行备份和还原
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: display, information, performance, events
 summary: 您可以使用事件管理清单页面查看 Unified Manager 所监控集群上的所有性能事件的列表。通过查看此信息，您可以确定最严重的事件，然后深入查看详细信息以确定事件的发生原因。 
 ---
 = 显示有关性能事件的信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

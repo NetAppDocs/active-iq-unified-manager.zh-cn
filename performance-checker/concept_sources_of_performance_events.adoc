@@ -5,6 +5,7 @@ keywords: sources, performance, events
 summary: 性能事件是指与集群上的工作负载性能相关的问题。它们可以帮助您识别响应时间较长的存储对象，也称为高延迟。与同时发生的其他运行状况事件一起，您可以确定可能导致或导致响应时间较慢的问题。 
 ---
 = 性能事件的来源
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

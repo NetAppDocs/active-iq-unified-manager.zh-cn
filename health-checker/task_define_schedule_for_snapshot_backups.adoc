@@ -5,6 +5,7 @@ keywords: define, backup, schedule, linux, windows
 summary: 您可以使用 Unified Manager UI 配置创建 Unified Manager Snapshot 备份的计划。 
 ---
 = 为 Linux 和 Windows 定义备份计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

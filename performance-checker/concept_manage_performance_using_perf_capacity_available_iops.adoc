@@ -5,6 +5,7 @@ keywords: managing, performance, performance, capacity, available, iops, informa
 summary: 性能容量表示在不超过资源的有用性能的情况下，您可以从该资源中获得多少吞吐量。使用现有性能计数器查看时，性能容量是指在延迟变为问题描述之前从节点或聚合获得最大利用率的时间点。 
 ---
 = 使用性能容量和可用 IOPS 信息管理性能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

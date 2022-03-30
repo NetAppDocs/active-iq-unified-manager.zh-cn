@@ -5,6 +5,7 @@ keywords: view, node, iops, workloads, reside, only, local node
 summary: '节点 IOPS 计数器图表可以突出显示操作仅通过本地节点并使用网络 LIF 对远程节点上的卷执行读 / 写操作的位置。IOPS - " 总计（本地） " 和 " 细分（本地） " 图表仅显示当前节点上本地卷中的数据的 IOPS 。' 
 ---
 = 根据仅驻留在本地节点上的工作负载查看节点 IOPS
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

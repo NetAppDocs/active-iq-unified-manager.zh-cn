@@ -5,6 +5,7 @@ keywords: roles, workloads, involved, performance, event
 summary: Unified Manager 使用角色确定工作负载是否参与性能事件。角色包括受影响的人，抢占资源的人和鲨鱼。用户定义的工作负载可以同时是受影响的工作负载，抢占资源的工作负载和资源的工作负载。 
 ---
 = 性能事件中涉及的工作负载的角色
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

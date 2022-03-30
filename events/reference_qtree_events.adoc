@@ -5,6 +5,7 @@ keywords: qtree, events, impact area, capacity
 summary: qtree 事件可为您提供有关 qtree 容量以及文件和磁盘限制的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
 ---
 = qtree 事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

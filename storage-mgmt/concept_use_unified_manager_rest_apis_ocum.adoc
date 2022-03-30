@@ -5,6 +5,7 @@ keywords: use, unified manager, rest, apis
 summary: Active IQ Unified Manager 为您提供了 REST API ，用于查看有关监控和管理存储环境的信息。API 还允许根据策略配置和管理存储对象。 
 ---
 = 使用 Unified Manager REST API
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

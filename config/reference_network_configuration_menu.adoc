@@ -5,6 +5,7 @@ keywords: network configuration menu
 summary: 通过网络配置菜单，您可以管理网络设置。如果 Unified Manager 用户界面不可用，则应使用此菜单。 
 ---
 = 网络配置菜单
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

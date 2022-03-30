@@ -5,6 +5,7 @@ keywords: access, points, generating, reports
 summary: 您可以在 Unified Manager 中收集有关集群的信息，以便通过 UI ， MySQL 数据库查询和 REST API 创建报告。 
 ---
 = 用于生成报告的访问点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

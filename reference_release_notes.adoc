@@ -5,6 +5,7 @@ keywords: release notes, active iq unified manager
 summary: 概括介绍 Active IQ Unified Manager 的新增功能，限制和已知问题。 
 ---
 = 发行说明
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

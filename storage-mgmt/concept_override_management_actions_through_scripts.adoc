@@ -5,6 +5,7 @@ keywords: override, management, actions, scripts
 summary: 您可以创建自定义脚本并将其与警报关联，以便针对特定事件采取特定操作，而不是选择在管理操作页面或 Unified Manager 信息板上为其提供的默认管理操作。 
 ---
 = 通过脚本覆盖管理操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

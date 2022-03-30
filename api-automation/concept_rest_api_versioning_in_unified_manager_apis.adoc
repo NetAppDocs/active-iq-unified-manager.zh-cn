@@ -5,6 +5,7 @@ keywords: api, version, active iq, unified, manager
 summary: Active IQ Unified Manager 中的 REST API URI 用于指定版本号。例如， /v2/datacenter/SVM/SVM 。/v2/datacenter/SVM/SVM 中的版本号 v2 表示特定版本中使用的 API 版本。此版本号可通过发回客户端可以处理的响应来最大限度地减少 API 更改对客户端软件的影响。 
 ---
 = Active IQ Unified Manager 中的 API 版本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

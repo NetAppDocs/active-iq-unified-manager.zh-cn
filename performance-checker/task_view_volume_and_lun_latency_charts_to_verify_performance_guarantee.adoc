@@ -5,6 +5,7 @@ keywords: view, volume, lun, latency, charts, verify, performance, guarantee
 summary: '您可以查看已订阅 " 性能保证 " 计划的卷和 LUN ，以验证延迟是否未超过您所保证的水平。' 
 ---
 = 查看卷和 LUN 延迟图表以验证性能保证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

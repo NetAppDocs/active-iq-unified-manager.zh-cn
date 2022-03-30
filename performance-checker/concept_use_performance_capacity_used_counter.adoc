@@ -5,6 +5,7 @@ keywords: performance, capacity, counter, manage, performance
 summary: 通常，企业希望在已用性能容量百分比低于 100 的情况下运行，以便高效利用资源，同时保留一些额外的性能容量以满足高峰期的需求。您可以使用阈值策略自定义何时针对已用性能容量高值发送警报。 
 ---
 = 使用已用性能容量计数器管理性能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

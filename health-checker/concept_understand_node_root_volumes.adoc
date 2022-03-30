@@ -5,6 +5,7 @@ keywords: understand, node, root, volumes
 summary: 您可以使用 Unified Manager 监控节点根卷。最佳实践是，节点根卷应具有足够的容量，以防止节点关闭。 
 ---
 = 了解节点根卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

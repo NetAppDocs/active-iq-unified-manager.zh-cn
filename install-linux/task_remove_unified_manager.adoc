@@ -5,6 +5,7 @@ keywords: remove, unified manager
 summary: 只需一个命令，即可从 Red Hat Enterprise Linux 或 CentOS 主机停止和卸载 Unified Manager 。 
 ---
 = 正在删除 Unified Manager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

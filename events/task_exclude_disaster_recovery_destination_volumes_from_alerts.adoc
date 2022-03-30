@@ -5,6 +5,7 @@ keywords: exclude, disaster, recovery, destination, volumes, generate, alerts
 summary: 配置卷警报时，您可以在警报对话框中指定一个字符串，用于标识一个卷或一组卷。但是，如果为 SVM 配置了灾难恢复，则源卷和目标卷的名称相同，因此您将收到这两个卷的警报。 
 ---
 = 从生成警报中排除灾难恢复目标卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

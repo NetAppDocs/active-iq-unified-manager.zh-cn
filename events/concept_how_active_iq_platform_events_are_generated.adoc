@@ -5,6 +5,7 @@ keywords: active IQ, platform, events, generated
 summary: Active IQ 平台意外事件和风险会转换为 Unified Manager 事件，如下图所示。 
 ---
 = 如何生成 Active IQ 平台事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: manage, storage, efficiency, policies, guidelines, create, custom
 summary: 通过存储效率策略（ Storage Efficiency Policy ， SEP ），您可以定义工作负载的存储效率特征。您可以在最初创建工作负载时为工作负载分配 SEP ，也可以稍后通过编辑工作负载来分配 SEP 。 
 ---
 = 管理存储效率策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

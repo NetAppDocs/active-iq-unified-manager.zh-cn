@@ -5,6 +5,7 @@ keywords: view, performance, capacity, counter charts, identify, issues
 summary: 您可以在性能资源管理器页面上查看节点和聚合的已用性能容量图表。这样，您可以查看特定时间范围内选定节点和聚合的详细性能容量数据。 
 ---
 = 查看性能容量计数器图表以确定问题
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

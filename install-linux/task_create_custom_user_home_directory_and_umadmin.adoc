@@ -5,6 +5,7 @@ keywords: create, custom, user, home, directory, umadmin, password, prior, insta
 summary: 在安装 Unified Manager 之前，您可以创建自定义主目录并定义自己的 umadmin 用户密码。此任务是可选的，但某些站点可能需要灵活地覆盖 Unified Manager 安装默认设置。 
 ---
 = 在安装之前创建自定义用户主目录和 umadmin 密码
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

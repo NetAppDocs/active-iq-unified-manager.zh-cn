@@ -5,6 +5,7 @@ keywords: node, resources, overutilized, performance, events
 summary: 如果单个节点的运行效率超过其运行效率上限，则 Unified Manager 会生成节点资源过度利用警告事件，从而可能影响工作负载延迟。通过这些系统定义的事件，可以在许多工作负载受到延迟影响之前更正潜在的性能问题。 
 ---
 = 响应节点资源过度利用的性能事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

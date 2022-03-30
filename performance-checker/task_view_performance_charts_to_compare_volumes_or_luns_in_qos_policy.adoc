@@ -5,6 +5,7 @@ keywords: view, performance, charts, compare, volumes, luns, same, qos, policy, 
 summary: 您可以查看同一 QoS 策略组中的卷和 LUN ，然后在一个 IOPS ， MB/ 秒或 IOPS/TB 图表上比较性能，以确定是否存在任何问题。 
 ---
 = 查看性能图表以比较同一 QoS 策略组中的卷或 LUN
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

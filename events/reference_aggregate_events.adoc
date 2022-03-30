@@ -5,6 +5,7 @@ keywords: aggregate events, impact, area, availability, capacity, configuration,
 summary: 聚合事件为您提供聚合状态信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
 ---
 = 聚合事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

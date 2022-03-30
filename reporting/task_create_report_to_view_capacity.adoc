@@ -5,6 +5,7 @@ keywords: create, report, show, aggregate, capacity, table, chart
 summary: 您可以使用总计和集群模式列图表格式创建报告来分析 Excel 文件中的容量。 
 ---
 = 创建报告以显示聚合容量表和图表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: configure, backup, location, windows
 summary: 即使在 Windows 上安装了 Active IQ Unified Manager ，您也应配置要存储 Snapshot 备份的卷。 
 ---
 = 配置 Windows 的备份位置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

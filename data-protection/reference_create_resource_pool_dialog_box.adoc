@@ -5,6 +5,7 @@ keywords: create, resource pool, dialog box
 summary: 您可以使用创建资源池对话框来命名和描述新资源池，以及向该资源池添加聚合和从中删除聚合。 
 ---
 = 创建资源池对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

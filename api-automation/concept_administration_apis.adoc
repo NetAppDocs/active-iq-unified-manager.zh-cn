@@ -5,6 +5,7 @@ keywords: perform, administrative, tasks
 summary: 您可以使用管理类别下的 API 修改备份设置，验证备份文件信息和集群证书，以及将 ONTAP 集群作为 Active IQ Unified Manager 数据源进行管理。 
 ---
 = 执行管理任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

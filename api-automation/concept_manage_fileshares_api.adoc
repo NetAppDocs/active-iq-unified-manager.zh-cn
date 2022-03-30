@@ -5,6 +5,7 @@ keywords: manage, file, share
 summary: 您可以使用 /storage-provider/file-shares API 查看，添加，修改和删除数据中心环境中的 CIFS 和 NFS 文件共享卷。 
 ---
 = 管理文件共享
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

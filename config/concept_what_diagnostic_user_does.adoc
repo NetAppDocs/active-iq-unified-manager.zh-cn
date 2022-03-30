@@ -5,6 +5,7 @@ keywords: diagnostic, user, capabilities
 summary: 诊断访问的目的是使技术支持能够帮助您进行故障排除，您只能在技术支持的指导下使用它。 
 ---
 = 诊断用户功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: upload, new, active iq, rules, file
 summary: Unified Manager 会自动检查新的 Active IQ 规则文件，并在存在较新规则时下载新文件。但是，在无法访问外部网络的站点中，您需要手动上传规则文件。 
 ---
 = 上传新的 Active IQ 规则文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

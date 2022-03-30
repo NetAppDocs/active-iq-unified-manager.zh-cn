@@ -5,6 +5,7 @@ keywords: schedule, imported, reports
 summary: 您可以计划在早期版本的 Unified Manager 中创建和导入的现有报告。 
 ---
 = 计划导入的 .rptdesign 报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

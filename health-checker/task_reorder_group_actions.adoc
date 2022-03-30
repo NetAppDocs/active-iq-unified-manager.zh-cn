@@ -5,6 +5,7 @@ keywords: reorder, group actions
 summary: 您可以更改要应用于组中存储对象的组操作的顺序。组操作会根据存储对象的排名按顺序应用于这些对象。最低排名将分配给您上次配置的组操作。您可以根据需要更改组操作的排名。 
 ---
 = 重新排列组操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

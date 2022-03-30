@@ -5,6 +5,7 @@ keywords: view, unassigned, events
 summary: 您可以查看未分配的事件，然后将每个事件分配给可以解决这些事件的用户。 
 ---
 = 查看未分配的事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

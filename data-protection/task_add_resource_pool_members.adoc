@@ -5,6 +5,7 @@ keywords: add, resource, pool, members
 summary: 一个资源池由多个成员聚合组成。您可以向现有资源池添加聚合，以增加可用于二级卷配置的空间量。 
 ---
 = 正在添加资源池成员
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

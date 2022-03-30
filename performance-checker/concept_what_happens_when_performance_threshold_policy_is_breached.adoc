@@ -5,6 +5,7 @@ keywords: happens, performance, threshold, policy, breached
 summary: 如果某个计数器值在持续时间指定的时间内超过其定义的性能阈值，则会违反此阈值并报告事件。 
 ---
 = 违反性能阈值策略时会发生什么情况
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

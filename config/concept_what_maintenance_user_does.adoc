@@ -5,6 +5,7 @@ keywords: what, maintenance, user does, installation, unified manager
 summary: '维护用户是在 Red Hat Enterprise Linux 或 CentOS 系统上安装 Unified Manager 期间创建的。维护用户名为 "umadmin" 用户。维护用户在 Web UI 中具有应用程序管理员角色，该用户可以创建后续用户并为其分配角色。' 
 ---
 = 维护用户执行的操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: asynchronous, mirror, vault, relationship, events, impact area, protec
 summary: 异步镜像和存储关系事件可为您提供有关异步 SnapMirror 和存储关系状态的信息，以便您可以监控潜在问题。卷和 Storage VM 保护关系均支持异步镜像和存储关系事件。但是， Storage VM 灾难恢复仅支持存储关系。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
 ---
 = 异步镜像和存储关系事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

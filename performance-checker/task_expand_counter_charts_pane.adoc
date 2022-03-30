@@ -5,6 +5,7 @@ keywords: expand, counter, charts, pane
 summary: '您可以展开 " 计数器图表 " 窗格，使图表更大，更易于阅读。' 
 ---
 = 展开计数器图表窗格
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

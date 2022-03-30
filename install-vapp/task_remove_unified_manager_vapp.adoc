@@ -5,6 +5,7 @@ keywords: remove unified manager
 summary: 您可以通过删除安装了 Unified Manager 软件的虚拟机（ VM ）来卸载 Unified Manager 。 
 ---
 = 正在删除 Unified Manager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

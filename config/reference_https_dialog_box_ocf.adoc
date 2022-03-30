@@ -5,6 +5,7 @@ keywords: https certificate page
 summary: '您可以通过 "HTTPS 证书 " 页面查看当前安全证书，下载证书签名请求，生成新的 HTTPS 证书或安装新的 HTTPS 证书。' 
 ---
 = HTTPS 证书页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

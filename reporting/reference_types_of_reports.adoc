@@ -5,6 +5,7 @@ keywords: types, reports
 summary: 此表全面列出了可作为报告提供的视图和清单页面，您可以对这些视图和页面进行自定义，下载和计划。 
 ---
 = 报告类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

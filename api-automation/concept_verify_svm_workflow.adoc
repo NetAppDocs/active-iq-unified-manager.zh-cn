@@ -5,6 +5,7 @@ keywords: verify, svms, clusters
 summary: 在配置文件共享或 LUN 之前，您必须验证集群上是否已创建 Storage Virtual Machine （ SVM ）。 
 ---
 = 验证集群上的 SVM
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

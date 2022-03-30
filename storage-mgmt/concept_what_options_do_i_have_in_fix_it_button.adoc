@@ -5,6 +5,7 @@ keywords: fix it,fix all
 summary: '" 管理操作 " 页面为您提供了 " 修复 " 或 " 全部修复 " 按钮，用于修复 Unified Manager 通过事件收到通知的问题。' 
 ---
 = 看到 " 修复 " 或 " 全部修复 " 按钮时，我有哪些选项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

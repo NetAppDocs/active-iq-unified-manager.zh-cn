@@ -5,6 +5,7 @@ keywords: understand, user, interface
 summary: Unified Manager 用户界面主要由一个信息板组成，该信息板可提供受监控对象的概览视图。此外，还可以通过用户界面查看所有集群对象。 
 ---
 = 了解用户界面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

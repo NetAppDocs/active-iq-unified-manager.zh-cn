@@ -5,6 +5,7 @@ keywords: event management, system,
 summary: 事件管理系统（ EMS ）从 ONTAP 内核的不同部分收集事件数据，并提供事件转发机制。这些 ONTAP 事件可以在 Unified Manager 中报告为 EMS 事件。集中式监控和管理可简化根据这些 EMS 事件配置关键 EMS 事件和警报通知的过程。 
 ---
 = 什么是事件管理系统事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

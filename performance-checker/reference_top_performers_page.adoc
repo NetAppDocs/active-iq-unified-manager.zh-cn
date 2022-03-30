@@ -5,6 +5,7 @@ keywords: top, performers, page
 summary: '性能最佳的存储对象页面会根据您选择的性能计数器显示性能最高或最低的存储对象。例如，在 Storage VM 类别中，您可以显示 IOPS 最高，延迟最高或 MB/ 秒最低的 SVM此外，此页面还会显示性能最佳的对象是否存在任何活动性能事件（ " 新增 " 或 " 已确认 " ）。' 
 ---
 = 性能最佳的对象页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

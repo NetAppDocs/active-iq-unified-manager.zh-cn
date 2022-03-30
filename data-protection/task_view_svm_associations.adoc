@@ -5,6 +5,7 @@ keywords: view, storage, vm peers
 summary: 您可以使用 Storage VM 对等方页面查看现有 Storage VM 对等方及其属性，并确定是否需要其他 Storage VM 。 
 ---
 = 查看 Storage VM 对等方
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

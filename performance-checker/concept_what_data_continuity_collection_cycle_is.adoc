@@ -5,6 +5,7 @@ keywords: data, continuity, collection, cycle
 summary: 数据连续性收集周期会在实时集群性能收集周期之外检索性能数据，默认情况下，该收集周期每五分钟运行一次。通过数据连续性收集， Unified Manager 可以填补因无法收集实时数据而出现的统计数据空白。 
 ---
 = 什么是数据连续性收集周期
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

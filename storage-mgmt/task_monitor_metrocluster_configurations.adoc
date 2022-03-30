@@ -5,6 +5,7 @@ keywords: monitor, metrocluster, configurations
 summary: 您可以监控 MetroCluster 配置中的连接问题。详细信息包括集群中组件和连接的状态以及 MetroCluster 配置中集群之间的连接状态。 
 ---
 = 监控 MetroCluster 配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

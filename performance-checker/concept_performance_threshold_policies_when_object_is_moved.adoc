@@ -5,6 +5,7 @@ keywords: happens, performance, threshold, policies, object, moved
 summary: 由于性能阈值策略已分配给存储对象，因此，如果移动对象，则在移动完成后，所有已分配的阈值策略仍会附加到该对象。例如，如果将卷或 LUN 移动到其他聚合，则阈值策略对于新聚合上的卷或 LUN 仍处于活动状态。 
 ---
 = 移动对象时性能阈值策略会发生什么情况
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

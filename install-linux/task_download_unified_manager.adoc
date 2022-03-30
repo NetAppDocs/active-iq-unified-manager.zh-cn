@@ -5,6 +5,7 @@ keywords: download, Unified Manager
 summary: '要安装 Unified Manager ，您必须从 NetApp 支持站点下载 Unified Manager ` .zip` 文件。' 
 ---
 = 正在下载 Unified Manager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

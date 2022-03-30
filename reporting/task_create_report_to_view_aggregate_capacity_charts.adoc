@@ -5,6 +5,7 @@ keywords: create, report, show, aggregate, total, available, capacity, charts
 summary: 您可以创建一个报告，以 Excel 图表格式分析存储总容量和已提交容量。 
 ---
 = 创建报告以显示聚合总容量与可用容量图表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

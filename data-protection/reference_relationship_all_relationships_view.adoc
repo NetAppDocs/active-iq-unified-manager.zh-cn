@@ -5,6 +5,7 @@ keywords: volume, relationships
 summary: '" 关系：所有关系 " 视图显示有关存储系统上的保护关系的信息。' 
 ---
 = Relationship ：所有关系视图
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

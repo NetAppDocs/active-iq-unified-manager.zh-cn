@@ -5,6 +5,7 @@ keywords: storage, efficiency
 summary: 通过存储效率，您可以以最低的成本存储最大数量的数据，并在占用较少空间的同时适应数据的快速增长。NetApp 存储效率战略基于其核心 ONTAP 操作系统和任意位置写入文件布局（ WAFL ）文件系统提供的存储虚拟化和统一存储的内置基础。 
 ---
 = 什么是存储效率
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

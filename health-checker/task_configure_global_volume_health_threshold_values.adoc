@@ -5,6 +5,7 @@ keywords: configure, global, volume, health, threshold values
 summary: 您可以为所有卷配置全局运行状况阈值，以跟踪任何违反阈值的情况。系统会针对违反运行状况阈值的情况生成相应的事件，您可以根据这些事件采取预防措施。您可以根据适用于所有受监控卷的阈值最佳实践设置来配置全局值。 
 ---
 = 配置全局卷运行状况阈值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

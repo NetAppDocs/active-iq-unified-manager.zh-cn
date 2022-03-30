@@ -5,6 +5,7 @@ keywords: nvme, namespace, events, impact area, availability, performance
 summary: NVMe 命名空间事件可为您提供有关命名空间状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
 ---
 = NVMe 命名空间事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

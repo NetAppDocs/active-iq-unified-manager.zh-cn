@@ -5,6 +5,7 @@ keywords: enabling, flash cache, node, improve, workload, performance
 summary: 您可以通过在集群中的每个节点上启用 Flash Cache ® 智能数据缓存来提高工作负载性能。 
 ---
 = 在节点上启用 Flash Cache 如何提高工作负载性能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

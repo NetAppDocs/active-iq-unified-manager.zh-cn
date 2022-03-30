@@ -5,6 +5,7 @@ keywords: delete, snapshot copies
 summary: 您可以删除 Snapshot 副本以节省空间或释放磁盘空间，也可以删除不再需要的 Snapshot 副本。 
 ---
 = 正在删除 Snapshot 副本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

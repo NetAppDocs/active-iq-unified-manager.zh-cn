@@ -5,6 +5,7 @@ keywords: group actions, work, storage, objects
 summary: 组操作是对组中的所有存储对象执行的操作。例如，您可以将卷阈值组操作配置为同时更改组中所有卷的卷阈值。 
 ---
 = 组操作如何对存储对象执行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

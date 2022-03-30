@@ -5,6 +5,7 @@ keywords: job, objects, asynchronous, processes
 summary: Active IQ Unified Manager 提供了作业 API ，用于检索有关在运行其他 API 时执行的作业的信息。您必须了解使用作业对象时异步处理的工作原理。 
 ---
 = 作业对象异步进程
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: report, workflow
 summary: 用于描述报告工作流的决策树。 
 ---
 = 报告工作流
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

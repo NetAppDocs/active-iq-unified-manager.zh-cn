@@ -5,6 +5,7 @@ keywords: manage, saml, authentication, settings
 summary: 配置远程身份验证设置后，您可以启用安全断言标记语言（ Security Assertion Markup Language ， SAML ）身份验证，以便远程用户先通过安全身份提供程序（ IdP ）进行身份验证，然后才能访问 Unified Manager Web UI 。 
 ---
 = 管理 SAML 身份验证设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

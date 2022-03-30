@@ -5,6 +5,7 @@ keywords: reorder, annotation rules
 summary: 您可以更改 Unified Manager 将标注规则应用于存储对象的顺序。标注规则会根据存储对象的排名按顺序应用于这些对象。配置标注规则时，排名最低。但是，您可以根据需要更改标注规则的排名。 
 ---
 = 重新排列标注规则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

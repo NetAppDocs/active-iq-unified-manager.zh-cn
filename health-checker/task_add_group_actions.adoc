@@ -5,6 +5,7 @@ keywords: add, group, actions
 summary: 您可以配置要应用于组中存储对象的组操作。通过为组配置操作，您可以节省时间，因为不必将这些操作单独添加到每个对象。 
 ---
 = 正在添加组操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

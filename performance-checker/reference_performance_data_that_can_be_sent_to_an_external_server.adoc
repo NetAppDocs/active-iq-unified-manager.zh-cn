@@ -5,6 +5,7 @@ keywords: performance, data, external, server
 summary: Unified Manager 从其监控的所有集群收集各种性能数据。您可以将特定的数据组发送到外部服务器。 
 ---
 = 可发送到外部服务器的性能数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

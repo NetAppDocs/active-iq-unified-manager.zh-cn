@@ -5,6 +5,7 @@ keywords: refining, performance, inventory, page, contents
 summary: 性能对象的清单页面包含一些工具，可帮助您细化对象清单数据内容，从而快速轻松地找到特定数据。 
 ---
 = 细化性能清单页面内容
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

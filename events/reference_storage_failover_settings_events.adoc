@@ -5,6 +5,7 @@ keywords: storage, failover, settings, events, impact area, availability
 summary: 存储故障转移（ Storage Failover ， SFO ）设置事件为您提供有关存储故障转移是否已禁用或未配置的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
 ---
 = 存储故障转移设置事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

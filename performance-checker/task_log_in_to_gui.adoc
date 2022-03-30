@@ -5,6 +5,7 @@ keywords: log in, ui, unified manager
 summary: 您可以使用支持的 Web 浏览器登录到 Unified Manager UI 。 
 ---
 = 登录到 UI
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

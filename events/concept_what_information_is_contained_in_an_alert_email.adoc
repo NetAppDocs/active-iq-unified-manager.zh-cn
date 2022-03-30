@@ -5,6 +5,7 @@ keywords: information, contained, alert, email
 summary: Unified Manager 警报电子邮件可提供事件类型，事件严重性，为发生原因事件而违反的策略或阈值的名称以及事件的问题描述。此电子邮件还为每个事件提供了一个超链接，可用于在用户界面中查看此事件的详细信息页面。 
 ---
 = 警报电子邮件中包含哪些信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

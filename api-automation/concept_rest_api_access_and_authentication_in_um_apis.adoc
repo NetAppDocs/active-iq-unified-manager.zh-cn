@@ -5,6 +5,7 @@ keywords: rest api, access, authentication, active iq, unified, manager
 summary: Active IQ Unified Manager REST API 可通过任何可以问题描述 HTTP 请求的 Web 浏览器或编程平台进行访问。Unified Manager 支持基本的 HTTP 身份验证机制。在调用 Unified Manager REST API 之前，您必须对用户进行身份验证。 
 ---
 = Active IQ Unified Manager 中的 REST API 访问和身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

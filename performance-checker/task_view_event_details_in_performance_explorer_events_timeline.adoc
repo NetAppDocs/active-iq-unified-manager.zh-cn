@@ -5,6 +5,7 @@ keywords: view, event, details, timeline
 summary: 您可以在性能资源管理器的事件时间线窗格中查看所有事件及其相关详细信息。这是一种快速高效的方法，可用于查看指定时间范围内根对象上发生的所有运行状况和性能事件，这在对性能问题进行故障排除时非常有用。 
 ---
 = 在事件时间线中查看事件详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

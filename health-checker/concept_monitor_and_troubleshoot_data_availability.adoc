@@ -5,6 +5,7 @@ keywords: monitor, troubleshoot, data availability
 summary: Unified Manager 可监控授权用户访问存储数据的可靠性，在出现阻止或阻碍访问的情况时向您发出警报，并可用于诊断这些情况并分配和跟踪其解决方法。 
 ---
 = 监控数据可用性并对其进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

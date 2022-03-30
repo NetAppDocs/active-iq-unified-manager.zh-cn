@@ -5,6 +5,7 @@ keywords: move, logical, interfaces, lifs
 summary: 将逻辑接口（ Logical Interface ， LIF ）移动到不太繁忙的端口有助于改善负载平衡，帮助进行维护操作和性能调整，并减少间接访问。 
 ---
 = 移动逻辑接口（ LIF ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

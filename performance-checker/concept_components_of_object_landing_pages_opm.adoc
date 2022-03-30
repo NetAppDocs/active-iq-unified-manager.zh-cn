@@ -5,6 +5,7 @@ keywords: components, object, landing pages
 summary: 对象登录页面提供了有关所有严重事件，警告事件和信息性事件的详细信息。它们提供了有关所有集群对象性能的详细视图，使您可以选择和比较不同时间段的各个对象。 
 ---
 = 对象登录页面的组件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

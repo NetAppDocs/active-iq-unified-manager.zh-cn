@@ -5,6 +5,7 @@ keywords: understand storage vm peers
 summary: Storage VM 对等方是指从源 Storage VM 到目标 Storage VM 的映射，供合作伙伴应用程序用于资源选择和二级卷配置。 
 ---
 = 了解 Storage VM 对等方
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

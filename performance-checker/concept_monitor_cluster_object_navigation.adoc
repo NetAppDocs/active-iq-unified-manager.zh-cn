@@ -5,6 +5,7 @@ keywords: monitor, cluster, object, navigation
 summary: 您可以监控 Unified Manager 管理的任何集群中所有对象的性能。通过监控存储对象，您可以全面了解集群和对象的性能，其中包括性能事件监控。您可以高级别查看性能和事件，也可以进一步调查对象性能和性能事件的任何详细信息。 
 ---
 = 监控集群对象导航
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

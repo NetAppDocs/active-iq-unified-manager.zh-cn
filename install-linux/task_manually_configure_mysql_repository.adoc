@@ -5,6 +5,7 @@ keywords: data center manager, manually, configure, mysql repository
 summary: 如果要安装 Unified Manager 的系统无法访问 MySQL Community Edition 存储库，则必须手动下载并配置该存储库才能成功安装。 
 ---
 = 手动配置 MySQL 存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

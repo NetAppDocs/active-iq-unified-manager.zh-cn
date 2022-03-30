@@ -5,6 +5,7 @@ keywords: view, performance, metrics
 summary: 'Active IQ Unified Manager 在 /datacenter" 类别下为您提供了一组 API ，可用于查看数据中心中集群和存储对象的性能数据。这些 API 会检索不同存储对象的性能数据，例如集群，节点， LUN ，卷， 聚合和 Storage VM 。' 
 ---
 = 查看性能指标
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: review, impact, configuration, changes, workload, performance
 summary: 集群上的配置更改（例如故障磁盘， HA 故障转移或移动的卷）可能会对卷性能产生负面影响，并且发生原因会增加延迟。 
 ---
 = 查看配置更改对工作负载性能的影响
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

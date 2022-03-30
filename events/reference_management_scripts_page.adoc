@@ -5,6 +5,7 @@ keywords: scripts, page, command, buttons, list, view
 summary: 通过脚本页面，您可以将自定义脚本添加到 Unified Manager 中。您可以将这些脚本与警报关联，以便自动重新配置存储对象。 
 ---
 = 脚本页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

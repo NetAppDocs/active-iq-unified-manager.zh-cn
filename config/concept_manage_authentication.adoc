@@ -5,6 +5,7 @@ keywords: manage, authentication
 summary: 您可以在 Unified Manager 服务器上使用 LDAP 或 Active Directory 启用身份验证，并将其配置为与服务器配合使用以对远程用户进行身份验证。 
 ---
 = 管理身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

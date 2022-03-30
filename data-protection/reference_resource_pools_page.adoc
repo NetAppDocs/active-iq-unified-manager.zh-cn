@@ -5,6 +5,7 @@ keywords: resource, pools, page
 summary: '" 资源池 " 页面可显示现有资源池及其成员，并可用于创建，监控和管理资源池以进行配置。' 
 ---
 = 资源池页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

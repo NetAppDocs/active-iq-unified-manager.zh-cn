@@ -5,6 +5,7 @@ keywords: update, saml, authentication, settings, unified manager, security, cer
 summary: 对 Unified Manager 服务器上安装的 HTTPS 安全证书进行任何更改都需要更新 SAML 身份验证配置设置。如果您重命名主机系统，为主机系统分配新的 IP 地址或手动更改系统的安全证书，则此证书将更新。 
 ---
 = 更改 Unified Manager 安全证书后更新 SAML 身份验证设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

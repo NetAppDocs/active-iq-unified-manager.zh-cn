@@ -5,6 +5,7 @@ keywords: change, length, time, unified manager, retains, event, performance, da
 summary: 默认情况下， Unified Manager 会将所有受监控集群的事件数据和性能数据存储 6 个月。之后，系统将自动删除旧数据，以便为新数据腾出空间。此默认时间范围适用于大多数配置，但包含许多集群和节点的大型配置可能需要缩短保留期限，以便 Unified Manager 以最佳状态运行。 
 ---
 = 更改 Unified Manager 保留事件和性能数据的时间长度
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cluster, components, why, contention
 summary: 您可以在集群组件发生争用时确定集群性能问题。使用此组件的工作负载的性能下降，其客户端请求响应时间（延迟）增加，从而在 Unified Manager 中触发事件。 
 ---
 = 集群组件及其可能发生争用的原因
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

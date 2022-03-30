@@ -5,6 +5,7 @@ keywords: metrocluster, configuration, health, check
 summary: 您可以使用 Unified Manager 查看 MetroCluster 配置中集群的运行状况。运行状况和事件可帮助您确定是否存在可能影响工作负载性能的硬件或软件问题。 
 ---
 = MetroCluster 配置运行状况检查
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

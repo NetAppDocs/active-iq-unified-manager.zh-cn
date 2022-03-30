@@ -5,6 +5,7 @@ keywords: customize, reports
 summary: 您可以通过多种方式自定义视图，以便创建一个报告，其中包含管理 ONTAP 集群所需的所有信息。 
 ---
 = 自定义报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

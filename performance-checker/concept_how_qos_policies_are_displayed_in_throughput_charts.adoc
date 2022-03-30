@@ -5,6 +5,7 @@ keywords: different, types, qos, policies, display, throughput, charts
 summary: 您可以在性能资源管理器和工作负载分析 IOPS ， IOPS/TB 和 MB/ 秒图表中查看已应用于卷或 LUN 的 ONTAP 定义的服务质量（ QoS ）策略设置。图表中显示的信息因应用于工作负载的 QoS 策略类型而异。 
 ---
 = 不同类型的 QoS 策略如何显示在吞吐量图表中
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

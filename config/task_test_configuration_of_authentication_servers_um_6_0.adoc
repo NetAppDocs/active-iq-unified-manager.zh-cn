@@ -5,6 +5,7 @@ keywords: test, configuration, authentication servers
 summary: 您可以验证身份验证服务器的配置，以确保管理服务器能够与这些服务器进行通信。您可以通过从身份验证服务器中搜索远程用户或远程组并使用已配置的设置对其进行身份验证来验证配置。 
 ---
 = 测试身份验证服务器的配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

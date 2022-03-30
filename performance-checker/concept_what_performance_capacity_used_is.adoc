@@ -5,6 +5,7 @@ keywords: performance, capacity, used
 summary: 已用性能容量计数器可帮助您确定节点或聚合的性能是否达到工作负载增加时性能可能会降低的程度。它还可以显示节点或聚合当前是否在特定时间段内过度使用。已用性能容量与利用率类似，但前者可更深入地了解特定工作负载的物理资源中可用的性能功能。 
 ---
 = 已用性能容量是多少
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

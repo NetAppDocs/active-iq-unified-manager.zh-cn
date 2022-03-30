@@ -5,6 +5,7 @@ keywords: remove, custom, umadmin, user, maintenance group
 summary: 如果您在安装 Unified Manager 之前创建了自定义主目录来定义自己的 umadmin 用户和维护帐户，则应在卸载 Unified Manager 后删除这些项。 
 ---
 = 删除自定义 umadmin 用户和维护组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

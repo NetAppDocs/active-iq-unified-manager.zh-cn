@@ -5,6 +5,7 @@ keywords: workload analyzer, charts, display, data
 summary: 工作负载分析器页面显示有关可能影响工作负载的任何当前事件的信息，可能修复导致此事件的问题描述的建议以及用于分析性能和容量历史记录的图表。 
 ---
 = 工作负载分析器显示的数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

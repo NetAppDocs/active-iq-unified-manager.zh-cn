@@ -5,6 +5,7 @@ keywords: view, list, Snapshot copies
 summary: 您可以查看选定卷的 Snapshot 副本列表。您可以使用 Snapshot 副本列表计算删除一个或多个 Snapshot 副本后可回收的磁盘空间量，并且可以根据需要删除这些 Snapshot 副本。 
 ---
 = 查看 Snapshot 副本列表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

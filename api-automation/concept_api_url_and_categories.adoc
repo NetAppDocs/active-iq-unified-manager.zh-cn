@@ -5,6 +5,7 @@ keywords: active iq, unified manager, api, access, categories
 summary: 通过 Active IQ Unified Manager API ，您可以管理和配置环境中的存储对象。您还可以访问 Unified Manager Web UI 来执行其中某些功能。 
 ---
 = Active IQ Unified Manager API 访问和类别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 :pp: &#43;&#43;

@@ -5,6 +5,7 @@ keywords: unified manager, migrate, virtual, appliance, linux system
 summary: 如果要更改运行 Unified Manager 的主机操作系统，您可以将 Unified Manager MySQL 数据库转储备份从虚拟设备还原到 Red Hat Enterprise Linux 或 CentOS Linux 系统。 
 ---
 = 将 Unified Manager 虚拟设备迁移到 Linux 系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

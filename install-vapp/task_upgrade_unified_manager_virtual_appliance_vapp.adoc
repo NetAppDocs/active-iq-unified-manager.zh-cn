@@ -5,6 +5,7 @@ keywords: upgrade, unified manager, virtual, appliance
 summary: 您可以升级 Unified Manager 虚拟设备 
 ---
 = 升级 Unified Manager 虚拟设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

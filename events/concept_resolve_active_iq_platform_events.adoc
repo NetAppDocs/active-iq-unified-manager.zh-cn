@@ -5,6 +5,7 @@ keywords: active iq, resolve, events
 summary: Active IQ 平台意外事件和风险与其他 Unified Manager 事件类似，因为它们可以分配给其他用户进行解决，并且具有相同的可用状态。但是，在使用修复按钮解决这些类型的事件时，您可以在几小时内验证解决方法。 
 ---
 = 解决 Active IQ 平台事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: create, report, view, volumes, inaccessible, mount, path
 summary: 您可以创建报告以查找挂载路径不可访问的卷。 
 ---
 = 创建报告以查看挂载路径不可访问的卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

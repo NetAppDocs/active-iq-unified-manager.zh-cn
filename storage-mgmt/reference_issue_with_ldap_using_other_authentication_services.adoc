@@ -5,6 +5,7 @@ keywords: issue, addi, ldap, use, other, authentication, services
 summary: 故障排除：问题描述使用其他身份验证服务添加 LDAP 
 ---
 = 问题描述与使用其他身份验证服务添加 LDAP
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

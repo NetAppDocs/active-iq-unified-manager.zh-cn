@@ -5,6 +5,7 @@ keywords: description, predefined, annotation values
 summary: 数据优先级是预定义的标注，其值为任务关键型，高和低。通过这些值，您可以根据存储对象所含数据的优先级为其添加标注。您不能编辑或删除预定义的标注值。 
 ---
 = 预定义标注值的问题描述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

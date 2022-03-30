@@ -5,6 +5,7 @@ keywords: lun, events, impact area, availability, capacity, configuration, perfo
 summary: LUN 事件可为您提供有关 LUN 状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
 ---
 = LUN 事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

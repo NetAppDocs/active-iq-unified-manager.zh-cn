@@ -5,6 +5,7 @@ keywords: unified manager, protocol, port, requirements
 summary: 通过所需的端口和协议，可以在 Unified Manager 服务器与受管存储系统，服务器和其他组件之间进行通信。 
 ---
 = 协议和端口要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

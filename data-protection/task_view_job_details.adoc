@@ -5,6 +5,7 @@ keywords: view, job, details
 summary: '启动作业后，您可以从 " 作业详细信息 " 页面跟踪其进度，并监控关联的任务以了解可能的错误。' 
 ---
 = 查看作业详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

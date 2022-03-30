@@ -5,6 +5,7 @@ keywords: unified manager, user, roles, capabilities
 summary: 根据您分配的用户角色，您可以确定可以在 Unified Manager 中执行的操作。 
 ---
 = Unified Manager 用户角色和功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

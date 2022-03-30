@@ -5,6 +5,7 @@ keywords: determine, volume, offline, host, node
 summary: 您可以使用 Unified Manager Web UI 确认或消除卷因主机节点关闭而脱机以及存储故障转移到其 HA 对配对节点失败的可能性。 
 ---
 = 确定卷是否因其主机节点已关闭而脱机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

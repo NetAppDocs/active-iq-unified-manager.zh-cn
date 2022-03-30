@@ -5,6 +5,7 @@ keywords: troubleshoot, ontap, volumes, gateway, api
 summary: 网关 API 充当一个网关，可调用 ONTAP API 来查询有关 ONTAP 存储对象的信息，并采取补救措施来解决报告的问题。 
 ---
 = 使用网关 API 对 ONTAP 卷进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

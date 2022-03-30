@@ -5,6 +5,7 @@ keywords: add, disk, space, unified manager, database, directory
 summary: Unified Manager 数据库目录包含从 ONTAP 系统收集的所有运行状况和性能数据。在某些情况下，可能需要增加数据库目录的大小。 
 ---
 = 向 Unified Manager 数据库目录添加磁盘空间
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

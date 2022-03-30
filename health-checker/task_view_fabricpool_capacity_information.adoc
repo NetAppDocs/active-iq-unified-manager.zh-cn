@@ -5,6 +5,7 @@ keywords: view, fabricPool, cloud tier, mirror tier, capacity, information
 summary: 您可以在这些对象的容量和性能清单及详细信息页面上查看集群，聚合和卷的 FabricPool 容量信息。配置镜像层后，这些页面还会显示 FabricPool 镜像信息。 
 ---
 = 查看 FabricPool 容量信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

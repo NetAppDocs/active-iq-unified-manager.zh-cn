@@ -5,6 +5,7 @@ keywords: create, edit, storage, efficiency, policies
 summary: 如果系统定义的存储效率策略与您的工作负载要求不匹配，您可以创建自己的存储效率策略，以便针对您的工作负载进行优化。 
 ---
 = 创建和编辑存储效率策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

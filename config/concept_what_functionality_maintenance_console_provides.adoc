@@ -5,6 +5,7 @@ keywords: functionality, maintenance, console
 summary: 通过 Unified Manager 维护控制台，您可以维护 Unified Manager 系统上的设置，并进行任何必要的更改以防止出现问题。 
 ---
 = 维护控制台提供的功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

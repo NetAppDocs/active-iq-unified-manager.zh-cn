@@ -5,6 +5,7 @@ keywords: configure, audit logs
 summary: 您可以使用审核日志部分中的配置按钮为审核日志文件配置滚动策略，并为审核日志启用远程日志记录。 
 ---
 = 配置审核日志
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: view, status, management, actions, chosen, fix
 summary: '您可以在 " 管理操作 " 页面中查看已选择修复的所有管理操作的状态。在 Unified Manager 向集群发送 ONTAP 命令后，大多数操作显示为已快速完成。但是，某些操作（例如移动卷）可能需要更长时间。' 
 ---
 = 查看您选择修复的管理操作的状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

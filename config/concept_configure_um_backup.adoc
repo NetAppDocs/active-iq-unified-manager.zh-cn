@@ -5,6 +5,7 @@ keywords: configure, unified manager, backup
 summary: 您可以通过一组配置步骤在 Unified Manager 上配置备份功能，这些配置步骤将通过维护控制台在主机系统和上执行。 
 ---
 = 配置 Unified Manager 备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

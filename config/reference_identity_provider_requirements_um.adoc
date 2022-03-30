@@ -5,6 +5,7 @@ keywords: identity, provider, requirements
 summary: 在将 Unified Manager 配置为使用身份提供程序（ Identity Provider ， IdP ）对所有远程用户执行 SAML 身份验证时，您需要了解一些必需的配置设置，以便成功连接到 Unified Manager 。 
 ---
 = 身份提供程序要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

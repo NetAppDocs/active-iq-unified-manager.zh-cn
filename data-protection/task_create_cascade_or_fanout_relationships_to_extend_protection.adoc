@@ -5,6 +5,7 @@ keywords: create, cascade fanout, relationships, extend protection, existing pro
 summary: 您可以通过从源卷创建扇出或从现有关系的目标卷创建级联来扩展对现有关系的保护。如果您需要将数据从一个站点复制到多个站点或通过创建更多备份来提供额外保护，则可以执行此操作。 
 ---
 = 创建级联或扇出关系以从现有保护关系扩展保护
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

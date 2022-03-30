@@ -5,6 +5,7 @@ keywords: edit, annotation rules
 summary: 您可以编辑标注规则来修改条件组中的条件组和条件，以便在存储对象中添加标注或删除标注。 
 ---
 = 编辑标注规则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

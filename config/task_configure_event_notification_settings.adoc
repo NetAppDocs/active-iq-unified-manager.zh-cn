@@ -5,6 +5,7 @@ keywords: configure, event, notification, settings
 summary: 您可以将 Unified Manager 配置为在生成事件或将事件分配给用户时发送警报通知。您可以配置用于发送警报的 SMTP 服务器，也可以设置各种通知机制，例如，可以通过电子邮件或 SNMP 陷阱发送警报通知。 
 ---
 = 配置事件通知设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

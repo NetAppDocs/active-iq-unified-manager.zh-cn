@@ -5,6 +5,7 @@ keywords: delete, group actions
 summary: 当不再需要组操作时，您可以从 Unified Manager 中删除组操作。 
 ---
 = 正在删除组操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

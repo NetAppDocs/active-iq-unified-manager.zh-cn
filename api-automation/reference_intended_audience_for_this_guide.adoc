@@ -5,6 +5,7 @@ keywords: audience, guide
 summary: 本指南面向创建通过 REST API 与 Active IQ Unified Manager 软件连接的应用程序的开发人员。 
 ---
 = 本指南的受众
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

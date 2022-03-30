@@ -5,6 +5,7 @@ keywords: create, schedule, dialog box
 summary: 通过创建计划对话框，您可以为 SnapMirror 和 SnapVault 关系传输创建基本或高级保护计划。您可以创建一个新的计划来增加因频繁更新数据而导致的数据传输频率，也可以在不频繁更改数据时创建一个不太频繁的计划。 
 ---
 = 创建计划对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

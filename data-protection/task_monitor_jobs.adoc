@@ -5,6 +5,7 @@ keywords: monitor, jobs
 summary: 您可以使用作业页面监控作业状态，并查看存储服务类型，状态，提交时间和已完成时间等作业属性，以确定作业是否已成功完成。 
 ---
 = 监控作业
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: fix, ontap, issues, directly, unified manager, fix it, fix-it, remedia
 summary: '您可以直接从 Unified Manager 用户界面修复某些 ONTAP 问题，而不必使用 ONTAP System Manager 或 ONTAP 命令行界面。" 管理操作 " 选项可修复已触发 Unified Manager 事件的许多 ONTAP 问题。' 
 ---
 = 直接从 Unified Manager 管理 ONTAP 问题或功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

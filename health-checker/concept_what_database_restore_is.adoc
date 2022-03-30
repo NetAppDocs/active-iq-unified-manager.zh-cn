@@ -5,6 +5,7 @@ keywords: unified manager, database, restore
 summary: MySQL 数据库还原是指将现有 Unified Manager 备份文件还原到相同或不同 Unified Manager 服务器的过程。您可以从 Unified Manager 维护控制台执行还原操作。 
 ---
 = 什么是数据库还原
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

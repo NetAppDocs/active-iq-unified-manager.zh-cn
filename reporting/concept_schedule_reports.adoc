@@ -5,6 +5,7 @@ keywords: scheduling, reports
 summary: 当您拥有要重复使用并作为报告共享的视图后，您可以使用 Active IQ Unified Manager 对其进行计划。您可以管理计划的报告，更改每个报告计划的收件人和分发频率。 
 ---
 = 计划报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

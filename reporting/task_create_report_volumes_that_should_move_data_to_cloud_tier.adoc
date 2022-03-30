@@ -5,6 +5,7 @@ keywords: create, report, identify, volumes, FabricPool, aggregates, data, cloud
 summary: '您可以创建一个报告，其中包含当前驻留在 FabricPool 聚合上，具有 " 层 " 云建议以及具有大量冷数据的卷的列表。此报告可帮助您确定是否应将某些卷的分层策略更改为 " 自动 " 或 " 全部 " ，以便将更多冷数据（非活动数据）卸载到云层。' 
 ---
 = 创建报告以确定 FabricPool 聚合上应将数据移至云层的卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

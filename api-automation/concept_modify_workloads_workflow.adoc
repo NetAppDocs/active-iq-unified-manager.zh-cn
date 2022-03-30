@@ -5,6 +5,7 @@ keywords: modify, storage, workloads
 summary: 修改存储工作负载包括使用缺少的参数更新 LUN 或文件共享，或者更改现有参数。 
 ---
 = 修改存储工作负载
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

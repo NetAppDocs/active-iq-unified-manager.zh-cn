@@ -5,6 +5,7 @@ keywords: discovery, process, works
 summary: 将集群添加到 Unified Manager 后，服务器将发现集群对象并将其添加到数据库中。了解发现过程的工作原理有助于您管理组织的集群及其对象。 
 ---
 = 发现过程的工作原理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

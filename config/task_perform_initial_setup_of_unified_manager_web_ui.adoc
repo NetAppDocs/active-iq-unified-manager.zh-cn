@@ -5,6 +5,7 @@ keywords: perform, initial, setup, unified manager web ui
 summary: 要使用 Unified Manager ，必须先配置初始设置选项，包括 NTP 服务器，维护用户电子邮件地址， SMTP 服务器主机以及添加 ONTAP 集群。 
 ---
 = 执行 Unified Manager Web UI 的初始设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: managed, objects, pane
 summary: '" 性能摘要 " 选项卡中的 " 受管对象 " 窗格可全面概述集群的存储对象类型和数量。使用此窗格可以跟踪每个集群中对象的状态。' 
 ---
 = 受管对象窗格
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

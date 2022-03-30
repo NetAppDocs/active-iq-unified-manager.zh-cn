@@ -5,6 +5,7 @@ keywords:
 summary: 您可以从报告计划页面管理报告计划。您可以查看，修改或删除现有计划。 
 ---
 = 管理报告计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

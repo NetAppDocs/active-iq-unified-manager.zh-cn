@@ -5,6 +5,7 @@ keywords: edit, alerts
 summary: 您可以编辑警报属性，例如与警报关联的资源，事件，收件人，通知选项，通知频率， 和关联脚本。 
 ---
 = 编辑警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

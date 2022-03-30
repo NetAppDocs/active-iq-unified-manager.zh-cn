@@ -5,6 +5,7 @@ keywords: virtual, infrastructure, hardware, system, requirements, virtual appli
 summary: 在虚拟基础架构或物理系统上安装 Unified Manager 应满足内存， CPU 和磁盘空间的最低要求。 
 ---
 = 虚拟基础架构和硬件系统要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

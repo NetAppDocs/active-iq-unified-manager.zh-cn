@@ -5,6 +5,7 @@ keywords: manually, configure, epel repository
 summary: 如果要安装 Unified Manager 的系统无法访问适用于 Enterprise Linux 的额外软件包（ EEL ）存储库，则必须手动下载并配置存储库才能成功安装。 
 ---
 = 手动配置 EPEL 存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

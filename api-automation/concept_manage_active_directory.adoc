@@ -5,6 +5,7 @@ keywords: manage, active, directory, mapping
 summary: 您可以使用此处列出的 API 管理 SVM 上配置 CIFS 共享所需的 Active Directory 映射。需要配置 Active Directory 映射，以便将 SVM 映射到 ONTAP 。 
 ---
 = 管理 Active Directory 映射
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

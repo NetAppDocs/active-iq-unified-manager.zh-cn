@@ -5,6 +5,7 @@ keywords: port, events, impact area, availability, performance
 summary: 端口事件可为您提供有关集群端口的状态，以便您可以监控端口上的更改或问题，例如端口是否已关闭。 
 ---
 = 端口事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

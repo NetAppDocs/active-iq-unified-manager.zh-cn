@@ -5,6 +5,7 @@ keywords: set up, authentication, services
 summary: 通过身份验证服务，可以先对身份验证服务器中的远程用户或远程组进行身份验证，然后再为其提供对 Unified Manager 的访问权限。您可以使用预定义的身份验证服务（例如 Active Directory 或 OpenLDAP ）或配置自己的身份验证机制来对用户进行身份验证。 
 ---
 = 设置身份验证服务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

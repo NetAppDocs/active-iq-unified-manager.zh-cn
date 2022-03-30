@@ -5,6 +5,7 @@ keywords: performance, event, analysis, notification
 summary: 性能事件用于通知您因集群组件上的争用而导致的工作负载的 I/O 性能问题。Unified Manager 将分析事件以确定涉及的所有工作负载，争用组件以及事件是否仍为您可能需要解决的问题描述。 
 ---
 = 性能事件分析和通知
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: quick start guide, QSG, Linux QSG, RHEL QSG, quick installation
 summary: 基于 Linux 平台的 Unified Manager 快速入门指南。 
 ---
 = Linux 安装快速入门说明
+:allow-uri-read: 
 
 
 

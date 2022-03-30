@@ -5,6 +5,7 @@ keywords: edit, resource pool, dialog box
 summary: 您可以使用编辑资源池对话框更改现有资源池的名称和问题描述。例如，如果原始名称和问题描述不准确或不正确，您可以对其进行更改，使其更精确。 
 ---
 = 编辑资源池对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

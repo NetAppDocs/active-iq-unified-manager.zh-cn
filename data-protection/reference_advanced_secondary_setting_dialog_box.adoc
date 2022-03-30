@@ -5,6 +5,7 @@ keywords: advanced, secondary, settings, dialog box
 summary: 您可以使用高级二级设置对话框在二级卷上启用版本灵活复制，多个副本备份以及与空间相关的设置。如果要更改启用或禁用当前设置，可以使用高级二级设置对话框。 
 ---
 = 高级二级设置对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

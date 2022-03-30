@@ -5,6 +5,7 @@ keywords: volume, encryption, compliance, categories
 summary: 下表介绍了 Unified Manager 评估的卷加密参数，这些参数用于确定卷上的数据是否受到充分保护，不会被未经授权的用户访问。 
 ---
 = 卷合规性类别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

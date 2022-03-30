@@ -5,6 +5,7 @@ keywords: window, layout, customization
 summary: 通过 Active IQ Unified Manager ，您可以自定义存储和网络对象页面上的信息布局。通过自定义窗口，您可以控制可查看的数据以及数据的显示方式。 
 ---
 = 窗口布局自定义
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

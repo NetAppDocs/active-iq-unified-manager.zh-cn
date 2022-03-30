@@ -5,6 +5,7 @@ keywords: performance, capacity, threshold, conditions
 summary: 您可以创建用户定义的性能阈值策略，以便在节点或聚合的已用性能容量值超过定义的已用性能容量阈值设置时触发事件。 
 ---
 = 已用性能容量性能阈值条件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

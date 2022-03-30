@@ -5,6 +5,7 @@ keywords: latency, forecast, performance, analysis
 summary: Unified Manager 使用延迟预测来表示受监控工作负载的典型 I/O 延迟（响应时间）活动。当工作负载的实际延迟超过延迟预测的上限时，它会向您发出警报，从而触发动态性能事件，以便您可以分析性能问题描述并采取更正操作来解决此问题。 
 ---
 = 如何在性能分析中使用延迟预测
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

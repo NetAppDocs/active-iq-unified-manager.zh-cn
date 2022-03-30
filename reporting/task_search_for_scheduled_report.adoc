@@ -5,6 +5,7 @@ keywords: search, schedule, report
 summary: 您可以按名称，视图名称，对象类型或收件人搜索计划的报告。 
 ---
 = 正在搜索已计划的报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: subscribe, ontap, ems events
 summary: 您可以订阅接收由安装了 ONTAP 软件的系统生成的事件管理系统（ EMS ）事件。系统会自动向 Unified Manager 报告一部分 EMS 事件，但只有在订阅这些事件后，才会报告其他 EMS 事件。 
 ---
 = 订阅 ONTAP EMS 事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

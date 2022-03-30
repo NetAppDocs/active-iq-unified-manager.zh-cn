@@ -5,6 +5,7 @@ keywords: remove, cluster
 summary: 您可以使用集群设置页面从 Unified Manager 中删除集群。例如，如果集群发现失败或您要停用存储系统，则可以删除集群。 
 ---
 = 删除集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

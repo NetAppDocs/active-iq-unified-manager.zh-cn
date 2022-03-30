@@ -5,6 +5,7 @@ keywords: unified manager, databases, access, custom, reporting
 summary: Unified Manager 使用 MySQL 数据库存储其监控的集群中的数据。数据会保留在 MySQL 数据库的各种架构中。 
 ---
 = Unified Manager 数据库可供自定义报告访问
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: select, source, snapshot, copy, dialog box
 summary: 您可以使用选择源 Snapshot 副本对话框选择特定的 Snapshot 副本以在保护关系之间传输数据，也可以选择默认行为，具体取决于您是初始化，更新还是重新同步关系，以及此关系是 SnapMirror 还是 SnapVault 。 
 ---
 = 选择源 Snapshot 副本对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

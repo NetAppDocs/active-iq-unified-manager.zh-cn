@@ -5,6 +5,7 @@ keywords: specify, time range, correlated objects
 summary: '通过 " 性能资源管理器 " 页面上的 " 时间范围 " 选择器，您可以指定对象数据比较的时间范围。指定时间范围可细化性能资源管理器页面的内容，以便仅显示您指定的时间范围内的对象数据。' 
 ---
 = 指定相关对象的时间范围
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

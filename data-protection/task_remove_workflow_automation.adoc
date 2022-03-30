@@ -5,6 +5,7 @@ keywords: remove, oncommand, workflow, automation, setup, unified manager
 summary: 如果您不再需要使用工作流自动化，可以从 Unified Manager 中删除 OnCommand Workflow Automation 设置。 
 ---
 = 从 Unified Manager 中删除 OnCommand Workflow Automation 设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

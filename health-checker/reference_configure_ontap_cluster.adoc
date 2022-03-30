@@ -5,6 +5,7 @@ keywords: netapp, snapshot, backup, windows, configure, ontap, cluster
 summary: 在为 Windows 配置 Active IQ Unified Manager for Snapshot 备份和还原之前，您应该对 ONTAP 和 Windows 主机执行少量预配置。 
 ---
 = 正在配置 ONTAP 集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

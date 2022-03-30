@@ -5,6 +5,7 @@ keywords: performance, cluster, landing page
 summary: 性能集群登录页面显示选定集群的性能状态概况。通过此页面，您可以访问选定集群上存储对象的每个性能计数器的完整详细信息。 
 ---
 = 性能集群登录页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

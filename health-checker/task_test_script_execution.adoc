@@ -5,6 +5,7 @@ keywords: test, script, execution
 summary: 在为存储对象生成警报时，您可以验证脚本是否已正确执行。 
 ---
 = 测试脚本执行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

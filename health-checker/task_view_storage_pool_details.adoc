@@ -5,6 +5,7 @@ keywords: view, storage pool, details
 summary: 您可以查看存储池的详细信息以监控存储池运行状况，总缓存和可用缓存以及已用分配和可用分配。 
 ---
 = 查看存储池详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

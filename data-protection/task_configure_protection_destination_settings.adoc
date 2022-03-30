@@ -5,6 +5,7 @@ keywords: configure, destination, efficiency, settings
 summary: 您可以使用高级目标设置对话框在保护目标上配置目标效率设置，例如重复数据删除，数据压缩，自动增长和空间保证。如果要最大程度地提高目标卷或二级卷的空间利用率，请使用这些设置。 
 ---
 = 配置目标效率设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

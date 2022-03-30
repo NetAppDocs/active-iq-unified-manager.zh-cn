@@ -5,6 +5,7 @@ keywords: manage, storage, objects, data center
 summary: 通过数据中心类别下的 REST API ，您可以管理数据中心中的存储对象，例如集群，节点，聚合， Storage VM ， 卷， LUN ，文件共享和命名空间。这些 API 可用于查询对象的配置，而其中一些 API 可用于执行添加，删除或修改这些对象的操作。 
 ---
 = 管理数据中心中的存储对象
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

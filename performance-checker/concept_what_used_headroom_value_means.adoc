@@ -5,6 +5,7 @@ keywords: performance, capacity, value, means
 summary: 已用性能容量值可帮助您确定当前过度利用或未充分利用的节点和聚合。这样，您就可以重新分配工作负载，以提高存储资源的效率。 
 ---
 = 已用性能容量值的含义
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

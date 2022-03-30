@@ -5,6 +5,7 @@ keywords: create, report, view, aggregates, reaching, full capacity
 summary: 您可以创建一个报告来查找容量即将达到全满的聚合，以便添加更多容量或将工作负载移动到其他聚合。 
 ---
 = 创建报告以查看容量达到全满的聚合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

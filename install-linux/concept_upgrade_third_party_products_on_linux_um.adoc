@@ -5,6 +5,7 @@ keywords: data center manager, upgrade, third-party products
 summary: 如果安装在 Linux 系统上，则可以在 Unified Manager 上升级第三方产品，例如 JRE 。 
 ---
 = 安装 Unified Manager 后升级第三方产品
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

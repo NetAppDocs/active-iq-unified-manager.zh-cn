@@ -5,6 +5,7 @@ keywords: understand, view, report, relationship
 summary: 下载或计划时，视图和清单页面将成为报告。 
 ---
 = 了解视图和报告关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

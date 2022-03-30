@@ -5,6 +5,7 @@ keywords: performance, counters, tracked, thresholds
 summary: 某些常见性能计数器（例如 IOPS 和 MB/ 秒）可以为所有存储对象设置阈值。还有一些计数器只能为特定存储对象设置阈值。 
 ---
 = 可以使用阈值跟踪哪些性能计数器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: definitions, user types
 summary: 用户类型指定用户持有的帐户类型，其中包括远程用户，远程组，本地用户，数据库用户和维护用户。其中每种类型都有自己的角色，该角色由具有管理员角色的用户分配。 
 ---
 = 用户类型的定义
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: create, email, notification, format, user, group, quotas
 summary: 如果存在与配额相关的问题描述（违反软限制或达到硬限制），您可以为发送给用户或用户组的电子邮件创建通知格式。 
 ---
 = 为用户和用户组配额创建电子邮件通知格式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

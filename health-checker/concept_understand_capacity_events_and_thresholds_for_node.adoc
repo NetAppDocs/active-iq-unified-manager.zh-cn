@@ -5,6 +5,7 @@ keywords: understand, events, thresholds, node, root, aggregates
 summary: 您可以使用 Unified Manager 监控节点根聚合。最佳做法是在根聚合中厚配置根卷，以防止节点暂停。 
 ---
 = 了解节点根聚合的事件和阈值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

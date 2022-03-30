@@ -5,6 +5,7 @@ keywords: change, unified manager, host, name
 summary: 有时，您可能需要更改已安装 Unified Manager 的系统的主机名。例如，您可能希望重命名主机，以便按类型，工作组或受监控集群组更轻松地识别 Unified Manager 服务器。 
 ---
 = 更改 Unified Manager 主机名
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

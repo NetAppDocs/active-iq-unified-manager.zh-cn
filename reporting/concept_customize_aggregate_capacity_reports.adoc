@@ -5,6 +5,7 @@ keywords: customize, aggregate, capacity, reports
 summary: 这些示例自定义报告用于帮助您确定与聚合存储容量相关的潜在问题并做出响应。 
 ---
 = 自定义聚合容量报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

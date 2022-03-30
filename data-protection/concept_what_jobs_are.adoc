@@ -5,6 +5,7 @@ keywords: jobs
 summary: 作业是一系列可使用 Unified Manager 监控的任务。通过查看作业及其关联任务，您可以确定它们是否已成功完成。 
 ---
 = 什么是作业
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: retrieve, support bundle, unix, linux, client
 summary: 如果您是 UNIX 或 Linux 用户，则可以使用 Linux 客户端服务器上的命令行界面（ CLI ）从 vApp 检索支持包。您可以使用 SCP 或 SFTP 检索支持包。 
 ---
 = 使用 UNIX 或 Linux 客户端检索支持包
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: add, space, data directory, linux, host
 summary: '如果在最初设置 Linux 主机并安装 Unified Manager 时为 ` /opt/netapp/data` 目录分配的磁盘空间不足，无法支持 Unified Manager ，则可以在安装后通过增加 ` /opt/netapp/data` 目录上的磁盘空间来添加磁盘空间。' 
 ---
 = 向 Linux 主机的数据目录添加空间
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

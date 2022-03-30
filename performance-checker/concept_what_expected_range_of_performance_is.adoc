@@ -5,6 +5,7 @@ keywords: expected, range, performance, latency, forecast, formed
 summary: 延迟预测是对特定时间的性能上限和下限值的预测。对于工作负载延迟，上限值构成性能阈值。当实际值超过性能阈值时， Unified Manager 将触发动态性能事件。 
 ---
 = 什么是预期性能范围
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

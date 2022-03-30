@@ -5,6 +5,7 @@ keywords: create, report, view, HA pairs, available, capacity
 summary: 您可以创建一个报告来查找容量最多的高可用性（ HA ）对来配置新卷和 LUN 。 
 ---
 = 创建报告以查看可用容量最多的 HA 对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

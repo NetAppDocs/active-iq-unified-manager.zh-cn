@@ -5,6 +5,7 @@ keywords: disable, saml authentication, maintenance, console
 summary: 如果无法访问 Unified Manager 图形用户界面，则可能需要从维护控制台禁用 SAML 身份验证。如果配置不当或 IdP 不可访问，则可能会发生这种情况。 
 ---
 = 从维护控制台禁用 SAML 身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

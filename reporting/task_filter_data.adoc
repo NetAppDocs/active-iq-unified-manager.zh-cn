@@ -5,6 +5,7 @@ keywords: filtering, data
 summary: 筛选数据以确保结果符合您的报告要求。通过筛选，您可以仅显示感兴趣的数据。 
 ---
 = 筛选数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

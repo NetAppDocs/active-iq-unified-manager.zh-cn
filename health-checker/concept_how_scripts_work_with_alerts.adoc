@@ -5,6 +5,7 @@ keywords: scripts, work, alerts
 summary: 您可以将警报与脚本关联，以便在 Unified Manager 中针对事件发出警报时执行脚本。您可以使用这些脚本解决存储对象的问题，或者确定正在生成事件的存储对象。 
 ---
 = 脚本如何处理警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

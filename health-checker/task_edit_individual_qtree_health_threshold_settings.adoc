@@ -5,6 +5,7 @@ keywords: edit, individual, qtree, health, threshold, settings
 summary: 您可以编辑一个或多个 qtree 的 qtree 容量的运行状况阈值设置。超过阈值时，系统会生成警报并向您发送通知。这些通知可帮助您根据生成的事件采取预防措施。 
 ---
 = 编辑单个 qtree 运行状况阈值设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

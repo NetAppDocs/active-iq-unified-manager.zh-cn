@@ -5,6 +5,7 @@ keywords: filter, data, object, inventory, performance, pages
 summary: '您可以筛选 " 对象清单性能 " 页面中的数据，以便根据特定条件快速查找数据。您可以使用筛选功能缩小 " 对象清单性能 " 页面的内容范围，以便仅显示您指定的结果。这样可以非常高效地仅显示您感兴趣的性能数据。' 
 ---
 = 筛选对象清单性能页面中的数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

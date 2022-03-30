@@ -5,6 +5,7 @@ keywords: configure, protection, dialog box
 summary: 您可以使用配置保护对话框为集群上的所有读取，写入和数据保护卷创建 SnapMirror 和 SnapVault 关系，以确保复制源卷或主卷上的数据。 
 ---
 = 配置保护对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

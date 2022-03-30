@@ -5,6 +5,7 @@ keywords: defining, list, correlated, objects, comparison, graphing
 summary: '您可以在 " 计数器图表 " 窗格中定义相关对象列表，以进行数据和性能比较。例如，如果 Storage Virtual Machine （ SVM ）遇到性能问题描述，则可以比较 SVM 中的所有卷，以确定可能导致问题描述的卷。' 
 ---
 = 定义用于比较图形的相关对象列表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: perform, unattended, installation, unified manager
 summary: 您可以使用命令行界面安装 Unified Manager ，而无需用户干预。您可以通过将参数以键值对的形式传递来完成无人值守安装。 
 ---
 = 执行 Unified Manager 的无人参与安装
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

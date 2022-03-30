@@ -5,6 +5,7 @@ keywords: restore, data, health, volumes view
 summary: 您可以使用运行状况：所有卷视图上的还原功能从 Snapshot 副本还原覆盖或删除的文件，目录或整个卷。 
 ---
 = 使用运行状况：所有卷视图还原数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

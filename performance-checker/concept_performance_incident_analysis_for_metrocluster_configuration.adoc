@@ -5,6 +5,7 @@ keywords: performance, event, analysis, metrocluster, configuration
 summary: 您可以使用 Unified Manager 分析 MetroCluster 配置的性能事件。您可以确定事件中涉及的工作负载，并查看建议的解决操作。 
 ---
 = MetroCluster 配置的性能事件分析
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

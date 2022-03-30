@@ -5,6 +5,7 @@ keywords: add, disks, perform, aggregate, layout, reconstruction
 summary: 您可以向聚合添加磁盘以提高该聚合的存储容量和性能。添加磁盘后，只有在重建聚合之后，性能才会有所提高。 
 ---
 = 添加磁盘并执行聚合布局重建
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

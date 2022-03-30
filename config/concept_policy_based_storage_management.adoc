@@ -5,6 +5,7 @@ keywords: slo, storage efficiency policy, storage workloads
 summary: 通过基于策略的存储管理选项，可以根据服务级别目标（ Service Level Objective ， SLO ）进行存储管理。默认情况下，此选项处于启用状态。 
 ---
 = 启用基于策略的存储管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

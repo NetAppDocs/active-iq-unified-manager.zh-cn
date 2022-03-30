@@ -5,6 +5,7 @@ keywords: rediscover clusters,
 summary: '您可以从 "Cluster Setup" 页面手动重新发现集群，以获取有关集群运行状况，监控状态和性能状态的最新信息。' 
 ---
 = 重新发现集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

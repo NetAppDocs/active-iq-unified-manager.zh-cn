@@ -5,6 +5,7 @@ keywords: understanding, reports
 summary: 报告可显示有关存储，网络，服务质量和保护关系的详细信息，帮助您在潜在问题发生之前发现并解决这些问题。 
 ---
 = 了解报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

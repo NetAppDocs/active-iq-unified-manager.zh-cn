@@ -5,6 +5,7 @@ keywords: acknowledge, resolve, events
 summary: 在开始处理生成事件的问题描述之前，您应确认某个事件，这样您就不会继续收到重复的警报通知。对特定事件采取更正操作后，应将此事件标记为已解决。 
 ---
 = 确认并解决事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

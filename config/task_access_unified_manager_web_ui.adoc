@@ -5,6 +5,7 @@ keywords: access, unified manager, web ui
 summary: 安装 Unified Manager 后，您可以访问 Web UI 来设置 Unified Manager ，以便开始监控 ONTAP 系统。 
 ---
 = 访问 Unified Manager Web UI
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

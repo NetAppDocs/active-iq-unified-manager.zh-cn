@@ -5,6 +5,7 @@ keywords: remove, performance, threshold, policies, storage, objects
 summary: 如果您不再希望 Unified Manager 监控性能计数器的值，则可以从存储对象中删除用户定义的性能阈值策略。 
 ---
 = 从存储对象中删除性能阈值策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

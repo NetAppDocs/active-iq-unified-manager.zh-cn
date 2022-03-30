@@ -5,6 +5,7 @@ keywords: create, snapmirror, relationship, version-flexible, replication
 summary: 您可以使用版本灵活的复制创建 SnapMirror 关系。即使源卷和目标卷在不同版本的 ONTAP 下运行，也可以通过版本灵活的复制实施 SnapMirror 保护。 
 ---
 = 使用版本灵活的复制创建 SnapMirror 关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: edit, user, settings
 summary: 您可以编辑为每个用户指定的用户设置，例如电子邮件地址和角色。例如，您可能希望更改存储操作员用户的角色，并为该用户分配存储管理员权限。 
 ---
 = 编辑用户设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

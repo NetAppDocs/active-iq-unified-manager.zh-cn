@@ -5,6 +5,7 @@ keywords: svm, peers, page
 summary: 通过 SVM 对等方页面，您可以查看源和目标 Storage VM 之间的现有 Storage VM 对等方，并创建新的 Storage VM 以供合作伙伴应用程序使用以创建 SnapMirror 和 SnapVault 关系。 
 ---
 = SVM 对等方页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

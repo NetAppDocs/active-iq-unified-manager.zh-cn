@@ -5,6 +5,7 @@ keywords: cluster, operations, affect, workload, latency
 summary: 操作（ IOPS ）表示集群上所有用户定义和系统定义的工作负载的活动。IOPS 统计信息可帮助您确定集群进程（例如创建备份或运行重复数据删除）是否正在影响工作负载延迟（响应时间），或者是否可能导致或影响性能事件。 
 ---
 = 集群操作如何影响工作负载延迟
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

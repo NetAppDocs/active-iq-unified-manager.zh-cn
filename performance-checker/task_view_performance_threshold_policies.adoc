@@ -5,6 +5,7 @@ keywords: view, performance, threshold, policies
 summary: '您可以从 " 性能阈值 " 页面查看当前定义的所有性能阈值策略。' 
 ---
 = 查看性能阈值策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

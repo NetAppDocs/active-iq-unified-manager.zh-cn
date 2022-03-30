@@ -5,6 +5,7 @@ keywords: support bundle, technical support
 summary: 如果问题描述需要比 AutoSupport 消息提供的诊断和故障排除信息更详细，您可以向技术支持发送支持包。 
 ---
 = 向技术支持发送支持包
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

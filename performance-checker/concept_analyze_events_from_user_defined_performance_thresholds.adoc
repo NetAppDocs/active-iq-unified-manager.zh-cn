@@ -5,6 +5,7 @@ keywords: analyze, events, user-defined, performance, thresholds
 summary: 根据用户定义的阈值生成的事件表示某个存储对象（例如聚合或卷）的性能计数器已超过您在策略中定义的阈值。这表示集群对象遇到性能问题描述。 
 ---
 = 根据用户定义的性能阈值分析事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

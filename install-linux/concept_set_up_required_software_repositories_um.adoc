@@ -5,6 +5,7 @@ keywords: set up, required, software, repositories
 summary: 系统必须能够访问某些存储库，以便安装程序可以访问和安装所有必需的软件依赖项。 
 ---
 = 设置所需的软件存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

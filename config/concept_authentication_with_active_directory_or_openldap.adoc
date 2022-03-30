@@ -5,6 +5,7 @@ keywords: authentication, active directory, openldap
 summary: 您可以在管理服务器上启用远程身份验证，并将管理服务器配置为与身份验证服务器进行通信，以便身份验证服务器中的用户可以访问 Unified Manager 。 
 ---
 = 使用 Active Directory 或 OpenLDAP 进行身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

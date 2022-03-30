@@ -5,6 +5,7 @@ keywords: qos, policy, group, performance, events
 summary: 当工作负载吞吐量（ IOPS ， IOPS/TB 或 MBps ）超过定义的 ONTAP QoS 策略设置且工作负载延迟正在受到影响时， Unified Manager 将生成 QoS 策略警告事件。通过这些系统定义的事件，可以在许多工作负载受到延迟影响之前更正潜在的性能问题。 
 ---
 = 响应 QoS 策略组性能事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

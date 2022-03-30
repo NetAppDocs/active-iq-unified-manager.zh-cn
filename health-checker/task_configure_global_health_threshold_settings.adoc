@@ -5,6 +5,7 @@ keywords: configure, global health, threshold settings
 summary: 您可以为容量，增长， Snapshot 预留，配额和索引节点配置全局运行状况阈值条件，以有效监控聚合，卷和 qtree 大小。您还可以编辑用于生成超过滞后阈值的事件的设置。 
 ---
 = 配置全局运行状况阈值设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

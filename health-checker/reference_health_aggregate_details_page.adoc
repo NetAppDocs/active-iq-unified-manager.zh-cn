@@ -5,6 +5,7 @@ keywords: unified manager, aggregate, health details page
 summary: 您可以使用聚合 / 运行状况详细信息页面查看有关选定聚合的详细信息，例如容量，磁盘信息，配置详细信息和生成的事件。您还可以查看有关该聚合的相关对象和相关警报的信息。 
 ---
 = 聚合 / 运行状况详细信息页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

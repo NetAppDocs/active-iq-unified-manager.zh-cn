@@ -5,6 +5,7 @@ keywords: restore, dialog box
 summary: 您可以使用还原对话框将数据从特定 Snapshot 副本还原到卷。 
 ---
 = 还原对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

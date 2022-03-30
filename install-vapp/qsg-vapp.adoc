@@ -5,6 +5,7 @@ keywords: quick start guide, QSG, VMWare QSG, vApp QSG, quick installation
 summary: 基于 VMware vSphere 平台的 Unified Manager 快速入门指南。 
 ---
 = VMware 安装快速入门说明
+:allow-uri-read: 
 
 
 

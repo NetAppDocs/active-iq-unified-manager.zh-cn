@@ -5,6 +5,7 @@ keywords: happens, when, event, received
 summary: 'Unified Manager 收到事件后，该事件将显示在 " 信息板 " 页面， " 事件管理 " 清单页面， " 集群 / 性能 " 页面的 " 摘要 " 和 " 资源管理器 " 选项卡以及对象特定的清单页面（例如 " 卷 / 运行状况 " 清单页面）中。' 
 ---
 = 收到事件时会发生什么情况
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

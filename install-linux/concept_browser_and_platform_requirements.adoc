@@ -5,6 +5,7 @@ keywords: supported browsers
 summary: 要访问 Unified Manager Web UI ，请使用支持的浏览器。 
 ---
 = 支持的浏览器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

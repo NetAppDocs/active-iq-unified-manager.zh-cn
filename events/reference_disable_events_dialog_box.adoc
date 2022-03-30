@@ -5,6 +5,7 @@ keywords: disable, events, dialog box, properties, area, command buttons
 summary: '" 禁用事件 " 对话框将显示可禁用事件的事件类型列表。您可以根据特定严重性为事件类型禁用事件，也可以为一组事件禁用事件。' 
 ---
 = 禁用事件对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

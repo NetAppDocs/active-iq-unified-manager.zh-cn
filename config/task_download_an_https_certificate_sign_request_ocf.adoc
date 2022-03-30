@@ -5,6 +5,7 @@ keywords: download, https, certificate, signing, request
 summary: 您可以下载当前 HTTPS 安全证书的证书签名请求，以便将文件提供给证书颁发机构进行签名。CA 签名证书有助于防止中间人攻击，并提供比自签名证书更好的安全保护。 
 ---
 = 下载 HTTPS 证书签名请求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

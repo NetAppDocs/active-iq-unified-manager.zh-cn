@@ -5,6 +5,7 @@ keywords: check, client, network, issues
 summary: 当连接到集群上卷的客户端增加其 I/O 请求时，集群必须更努力地满足需求。对集群的需求增加会导致组件争用，增加使用该组件的工作负载的延迟，并在 Unified Manager 中触发事件。 
 ---
 = 检查客户端或网络问题
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

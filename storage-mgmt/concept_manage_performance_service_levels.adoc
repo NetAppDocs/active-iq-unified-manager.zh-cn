@@ -5,6 +5,7 @@ keywords: manage, performance, service, levels
 summary: 通过性能服务级别，您可以定义工作负载的性能和存储目标。您可以在最初创建工作负载时为工作负载分配性能服务级别，也可以稍后通过编辑工作负载来分配性能服务级别。 
 ---
 = 管理性能服务级别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

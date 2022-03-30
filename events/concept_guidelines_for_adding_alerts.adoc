@@ -5,6 +5,7 @@ keywords: guidelines, adding, alerts
 summary: 您可以根据资源添加警报，例如集群，节点，聚合或卷以及特定严重性类型的事件。作为最佳实践，您可以在添加任何关键对象所属的集群后为该对象添加警报。 
 ---
 = 添加警报的准则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

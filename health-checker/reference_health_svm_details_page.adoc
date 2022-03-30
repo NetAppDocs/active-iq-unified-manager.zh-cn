@@ -5,6 +5,7 @@ keywords: storage VM, health details page
 summary: 您可以使用 Storage VM/ 运行状况详细信息页面查看有关选定 Storage VM 的详细信息，例如其运行状况，容量，配置，数据策略，逻辑接口（ LIF ）， LUN ， qtree ，用户，用户组配额和保护详细信息。您还可以查看有关 Storage VM 的相关对象和相关警报的信息。 
 ---
 = Storage VM/ 运行状况详细信息页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

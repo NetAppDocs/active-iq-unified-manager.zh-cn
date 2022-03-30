@@ -5,6 +5,7 @@ keywords: understand, root, object
 summary: 根对象是用于比较其他对象的基线。这样，您可以查看其他对象的数据并将其与根对象进行比较，从而提供性能数据分析，帮助您排除故障并提高对象性能。 
 ---
 = 了解根对象
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: resynchronize, protection, relationships, volume, relationships page
 summary: 在卷关系页面中，您可以重新同步关系，以便从禁用源卷的事件中恢复，或者在您要将当前源更改为其他卷时恢复关系。 
 ---
 = 从卷关系页面重新同步保护关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

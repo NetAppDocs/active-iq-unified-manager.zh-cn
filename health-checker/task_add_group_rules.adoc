@@ -5,6 +5,7 @@ keywords: add, group rules
 summary: 您可以为组创建组规则，以便将卷，集群或 Storage Virtual Machine （ SVM ）等存储对象动态添加到组。要创建组规则，必须至少配置一个条件组并至少配置一个条件。 
 ---
 = 正在添加组规则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

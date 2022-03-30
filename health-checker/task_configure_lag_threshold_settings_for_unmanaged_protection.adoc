@@ -5,6 +5,7 @@ keywords: configure, lag, threshold settings, unmanaged, protection, relationshi
 summary: 您可以编辑非受管保护关系的全局默认滞后警告和错误运行状况阈值设置，以便根据您的需要按一定间隔生成事件。 
 ---
 = 为非受管保护关系配置滞后阈值设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

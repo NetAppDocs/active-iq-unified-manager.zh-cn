@@ -5,6 +5,7 @@ keywords: system-defined, performance, threshold, policies, cluster, node. aggre
 summary: Unified Manager 提供了一些标准阈值策略，用于监控集群性能并自动生成事件。默认情况下，这些策略处于启用状态，如果违反监控的性能阈值，它们将生成警告或信息事件。 
 ---
 = 系统定义的性能阈值策略的类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: unified manager ,rest api, reporting
 summary: 您可以使用 REST API 通过查看 Unified Manager 捕获的运行状况，容量，性能和安全信息来帮助管理集群。 
 ---
 = 可用于报告的 Unified Manager REST API
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

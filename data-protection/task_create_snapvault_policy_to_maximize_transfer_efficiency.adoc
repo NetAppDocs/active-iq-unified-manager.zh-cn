@@ -5,6 +5,7 @@ keywords: create, snapvault, policy,  maximize, transfer, efficiency
 summary: 您可以创建新的 SnapVault 策略来设置 SnapVault 传输的优先级。您可以使用策略最大程度地提高保护关系中从主卷到二级卷的传输效率。 
 ---
 = 创建 SnapVault 策略以最大程度地提高传输效率
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

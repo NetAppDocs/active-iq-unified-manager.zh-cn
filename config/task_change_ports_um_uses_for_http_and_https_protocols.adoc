@@ -5,6 +5,7 @@ keywords: change, ports, unified manager, uses, http, https, protocols
 summary: 为了确保安全， Unified Manager 用于 HTTP 和 HTTPS 协议的默认端口可以在安装后进行更改。对于 HTTP ，默认端口为 80 ，对于 HTTPS ，默认端口为 443 。 
 ---
 = 更改 Unified Manager 用于 HTTP 和 HTTPS 协议的端口
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: introduction, active iq unified manager
 summary: 通过 Active IQ Unified Manager （以前称为 OnCommand 统一管理器），您可以从一个界面监控和管理 ONTAP 存储系统的运行状况和性能。 
 ---
 = Active IQ Unified Manager 简介
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

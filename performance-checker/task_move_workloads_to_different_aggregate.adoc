@@ -5,6 +5,7 @@ keywords: move, workloads, different, aggregate
 summary: 您可以使用 Unified Manager 帮助确定比工作负载当前所在的聚合不太繁忙的聚合，然后将选定卷或 LUN 移动到该聚合。将高性能工作负载移动到不太繁忙的聚合或启用了闪存存储的聚合，可以提高工作负载的性能。 
 ---
 = 将工作负载移动到其他聚合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: abort, active, data protection, transfer, volume health details page
 summary: 如果要停止正在进行的 SnapMirror 复制，您可以中止活动的数据保护传输。如果传输不是基线传输，您也可以清除传输的重新启动检查点。如果传输与卷移动等其他操作发生冲突，您可以中止传输。 
 ---
 = 从卷 / 运行状况详细信息页面中止活动的数据保护传输
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

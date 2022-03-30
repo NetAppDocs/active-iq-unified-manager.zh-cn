@@ -5,6 +5,7 @@ keywords: calculate, reclaimable space, snapshot copies
 summary: 您可以计算删除一个或多个 Snapshot 副本后可回收的磁盘空间量。 
 ---
 = 计算 Snapshot 副本的可回收空间
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: retry, failed, protection job
 summary: 采取措施修复失败的保护作业后，您可以使用重试再次运行该作业。重试作业将使用原始作业 ID 创建新作业。 
 ---
 = 重试失败的保护作业
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

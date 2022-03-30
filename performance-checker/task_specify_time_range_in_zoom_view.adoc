@@ -5,6 +5,7 @@ keywords: specify, time range, zoom view
 summary: '通过 " 计数器图表缩放视图 " 窗口中的 " 时间范围 " 控件，您可以指定选定图表的日期和时间范围。这样，您可以根据预设时间范围或您自己的自定义时间范围快速查找特定数据。' 
 ---
 = 在缩放视图中指定时间范围
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

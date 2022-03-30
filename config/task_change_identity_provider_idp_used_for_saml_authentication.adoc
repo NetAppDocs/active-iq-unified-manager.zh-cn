@@ -5,6 +5,7 @@ keywords: change, identity, provider, used, saml, authentication
 summary: 您可以更改 Unified Manager 用于对远程用户进行身份验证的身份提供程序（ IdP ）。 
 ---
 = 更改用于 SAML 身份验证的身份提供程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

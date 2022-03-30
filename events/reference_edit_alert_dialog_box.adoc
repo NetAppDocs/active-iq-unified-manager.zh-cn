@@ -5,6 +5,7 @@ keywords: edit, alert, dialog box, name, resources, events, actions
 summary: 您可以编辑警报属性，例如与警报关联的资源，事件，脚本和通知选项。 
 ---
 = 编辑警报对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

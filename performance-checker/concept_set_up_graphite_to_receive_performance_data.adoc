@@ -5,6 +5,7 @@ keywords: setting, graphite, receive, performance, data, unified manager
 summary: Graphite 是一款开放式软件工具，用于从计算机系统收集性能数据并绘制图形。必须正确配置 Graphite 服务器和软件，才能从 Unified Manager 接收统计数据。 
 ---
 = 设置 Graphite 以从 Unified Manager 接收性能数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: types, performance, counter, charts
 summary: 标准性能图表可显示选定存储对象的计数器值。每个细分计数器图表都会显示按读取，写入和其他类别细分的总值。此外，在缩放视图中显示图表时，某些细分计数器图表会显示更多详细信息。 
 ---
 = 性能计数器图表的类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

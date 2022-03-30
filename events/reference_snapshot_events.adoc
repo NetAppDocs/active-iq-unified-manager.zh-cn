@@ -5,6 +5,7 @@ keywords: snapshot, events, impact area, availability
 summary: Snapshot 事件提供了有关快照状态的信息，可用于监控快照是否存在潜在问题。事件按影响区域分组，并包括事件名称，陷阱名称，影响级别，源类型和严重性。 
 ---
 = Snapshot 事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

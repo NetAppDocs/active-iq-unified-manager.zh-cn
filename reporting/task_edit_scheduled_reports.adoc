@@ -5,6 +5,7 @@ keywords: editing, schedule, reports
 summary: 计划报告后，您可以在报告计划页面上对其进行编辑。 
 ---
 = 编辑计划的报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

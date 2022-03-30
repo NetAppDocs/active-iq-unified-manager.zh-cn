@@ -5,6 +5,7 @@ keywords: jobs, page
 summary: 通过作业页面，您可以查看当前正在运行的所有合作伙伴应用程序保护作业以及已完成的作业的当前状态和其他信息。您可以使用此信息查看哪些作业仍在运行，以及某个作业是成功还是失败。 
 ---
 = 作业页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

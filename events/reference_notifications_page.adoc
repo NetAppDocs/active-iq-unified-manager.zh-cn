@@ -5,6 +5,7 @@ keywords: notifications page, email, smtp, server, snmp
 summary: 您可以将 Unified Manager 服务器配置为在生成事件或将事件分配给用户时发送通知。您还可以配置通知机制。例如，可以通过电子邮件或 SNMP 陷阱发送通知。 
 ---
 = 通知页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

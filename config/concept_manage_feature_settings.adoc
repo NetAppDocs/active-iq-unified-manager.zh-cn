@@ -5,6 +5,7 @@ keywords: uploading scripts, api gateway, slo or policy-based storage management
 summary: 通过功能设置页面，您可以在 Active IQ Unified Manager 中启用和禁用特定功能。其中包括根据策略创建和管理存储对象，启用 API 网关，上传用于管理警报的脚本，根据非活动时间超时 Web UI 会话以及禁用接收 Active IQ 平台事件。 
 ---
 = 管理功能设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

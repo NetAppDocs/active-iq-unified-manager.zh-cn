@@ -5,6 +5,7 @@ keywords: create, snapvault, protection, relationship, health, volumes view
 summary: '您可以使用 " 运行状况：所有卷 " 视图为同一 Storage VM 上的一个或多个卷创建 SnapVault 关系，以便为保护目的启用数据备份。' 
 ---
 = 从运行状况：所有卷视图创建 SnapVault 保护关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

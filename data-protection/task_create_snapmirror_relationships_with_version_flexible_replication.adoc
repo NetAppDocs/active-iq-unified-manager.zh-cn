@@ -5,6 +5,7 @@ keywords: create, snapmirror, relationships, version-flexible, replication, back
 summary: 您可以使用版本灵活的复制和备份选项功能创建 SnapMirror 关系。通过备份选项功能，您可以实施 SnapMirror 保护，并在目标位置保留多个版本的备份副本。 
 ---
 = 使用版本灵活复制和备份选项创建 SnapMirror 关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

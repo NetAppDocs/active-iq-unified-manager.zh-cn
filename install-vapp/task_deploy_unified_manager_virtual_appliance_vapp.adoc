@@ -5,6 +5,7 @@ keywords: deploy, unified manager, virtual appliance
 summary: 下载安装文件后，您可以将 Unified Manager 部署为虚拟设备。使用 vSphere Web Client 在 ESXi 服务器上部署虚拟设备。部署虚拟设备时，系统会创建一个虚拟机。 
 ---
 = 部署 Unified Manager 虚拟设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

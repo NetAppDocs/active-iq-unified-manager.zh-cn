@@ -5,6 +5,7 @@ keywords: collect, data, monitor, workload, performance
 summary: Unified Manager 每 5 分钟收集并分析一次工作负载活动，以确定性能事件，并每 15 分钟检测一次配置更改。它最多保留 30 天的 5 分钟历史性能和事件数据，并使用这些数据预测所有受监控工作负载的预期延迟范围。 
 ---
 = 收集数据并监控工作负载性能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

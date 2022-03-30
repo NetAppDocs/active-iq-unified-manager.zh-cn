@@ -5,6 +5,7 @@ keywords: backup, restore, unified manager, virtual, appliance
 summary: 安装在虚拟设备上的 Unified Manager 的备份和还原模式是捕获和还原完整虚拟应用程序的映像。 
 ---
 = 在虚拟设备上备份和还原 Unified Manager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

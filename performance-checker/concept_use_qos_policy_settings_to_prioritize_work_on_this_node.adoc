@@ -5,6 +5,7 @@ keywords: qos, policy, settings, prioritize, work, node
 summary: 您可以对 QoS 策略组设置限制，以控制其所含工作负载的每秒 I/O 数（ IOPS ）或 MBps 吞吐量限制。如果工作负载位于没有设置限制的策略组中，例如默认策略组，或者设置的限制不符合您的需求，您可以增加设置的限制或将工作负载移动到具有所需限制的新策略组或现有策略组。 
 ---
 = 使用 QoS 策略设置为此节点确定工作的优先级
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

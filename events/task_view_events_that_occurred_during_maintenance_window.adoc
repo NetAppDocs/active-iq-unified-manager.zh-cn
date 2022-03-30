@@ -5,6 +5,7 @@ keywords: view, events, occurred, maintenance, window
 summary: '如有必要，您可以查看 Unified Manager 维护窗口期间为所有存储对象生成的事件。维护窗口完成且所有系统资源均已备份和运行后，大多数事件将显示为 " 已废弃 " 状态。' 
 ---
 = 查看维护窗口期间发生的事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

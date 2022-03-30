@@ -5,6 +5,7 @@ keywords: select, performance, thresholds, counter, charts, zoom, view
 summary: 在计数器图表缩放视图中应用阈值可提供性能阈值事件发生情况的详细视图。这样，您可以应用或删除阈值，并立即查看结果，这有助于您确定下一步是否应进行故障排除。 
 ---
 = 在计数器图表缩放视图中选择性能阈值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

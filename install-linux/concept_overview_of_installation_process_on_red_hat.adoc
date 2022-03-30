@@ -5,6 +5,7 @@ keywords: overview, installation process
 summary: 安装工作流介绍了在使用 Unified Manager 之前必须执行的任务。 
 ---
 = 安装过程概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

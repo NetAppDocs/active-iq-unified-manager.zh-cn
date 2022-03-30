@@ -5,6 +5,7 @@ keywords: components, node, failover, planning page, performance, statistics, gr
 summary: '" 性能 / 节点故障转移规划 " 页面的组件将显示在网格和 " 正在比较 " 窗格中。通过这些部分，您可以评估节点故障转移对接管节点性能的影响。' 
 ---
 = 节点故障转移规划页面的组件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: relationships page, monitor, storage, vm
 summary: '您可以从清单保护部分的关系页面监控 Storage VM 灾难恢复关系。默认情况下，在应用成分卷关系筛选器时， " 关系 " 页面仅列出顶级关系。' 
 ---
 = 使用关系监控 Storage VM 页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

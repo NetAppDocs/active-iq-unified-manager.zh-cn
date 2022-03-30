@@ -5,6 +5,7 @@ keywords: manage, monitor, protection, relationships
 summary: 通过 Active IQ Unified Manager ，您可以创建保护关系，监控受管集群上的 SnapMirror 和 SnapVault 关系并对其进行故障排除，以及在数据被覆盖或丢失时还原数据。 
 ---
 = 管理和监控保护关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

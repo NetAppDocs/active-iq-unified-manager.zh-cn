@@ -5,6 +5,7 @@ keywords: remote authentication, page
 summary: '您可以使用 " 远程身份验证 " 页面配置 Unified Manager ，使其能够与身份验证服务器进行通信，以便对尝试登录到 Unified Manager Web UI 的远程用户进行身份验证。' 
 ---
 = 远程身份验证页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

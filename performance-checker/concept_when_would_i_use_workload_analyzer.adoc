@@ -5,6 +5,7 @@ keywords: workload analyzer, use
 summary: 通常，您可以使用工作负载分析器对用户报告的延迟问题描述进行故障排除，更全面地分析报告的事件或警报，或者探索您发现运行异常的工作负载。 
 ---
 = 何时使用工作负载分析器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

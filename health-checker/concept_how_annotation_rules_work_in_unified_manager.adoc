@@ -5,6 +5,7 @@ keywords: annotation rules, work, unified manager
 summary: 标注规则是您定义的用于标注存储对象（卷，集群或 Storage Virtual Machine （ SVM ））的标准。您可以使用条件组或条件来定义标注规则。 
 ---
 = 标注规则在 Unified Manager 中的工作原理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: description, event, impact, areas
 summary: 事件分为六个影响区域（可用性，容量，配置，性能，保护， 和安全性）以使您能够集中精力处理您负责的事件类型。 
 ---
 = 事件影响区域的问题描述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

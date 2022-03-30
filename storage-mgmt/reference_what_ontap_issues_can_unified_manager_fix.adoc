@@ -5,6 +5,7 @@ keywords: ontap issues, fix it action, automatic remediation feature, remediatio
 summary: '下表介绍了 ONTAP 可以通过单击 " 修复 " 或 " 全部修复 " 按钮直接从 Unified Manager 用户界面解决的 Unified Manager 问题。' 
 ---
 = Unified Manager 可以修复哪些问题
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

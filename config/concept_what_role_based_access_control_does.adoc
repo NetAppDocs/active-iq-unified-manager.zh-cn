@@ -5,6 +5,7 @@ keywords: role-based, access, control
 summary: 通过基于角色的访问控制（ Role-Based Access Control ， RBAC ），管理员可以通过定义角色来管理用户组。如果需要将特定功能的访问权限限制为选定管理员，则必须为其设置管理员帐户。如果要限制管理员可以查看的信息及其可以执行的操作，则必须将角色应用于您创建的管理员帐户。 
 ---
 = 基于角色的访问控制的作用
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

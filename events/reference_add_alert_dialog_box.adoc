@@ -5,6 +5,7 @@ keywords: add, alert, dialog, box, name, resources, events, actions, command but
 summary: 您可以创建警报，以便在生成特定事件时向您发出通知，从而快速解决问题描述问题，从而最大限度地减少对环境的影响。您可以为单个资源或一组资源以及特定严重性类型的事件创建警报。您还可以指定警报的通知方法和频率。 
 ---
 = 添加警报对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

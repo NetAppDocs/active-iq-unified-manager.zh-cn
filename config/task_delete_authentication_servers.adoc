@@ -5,6 +5,7 @@ keywords: delete, authentication, servers
 summary: 如果要阻止 Unified Manager 服务器与身份验证服务器通信，可以删除身份验证服务器。例如，如果要更改管理服务器正在与其通信的身份验证服务器，则可以删除此身份验证服务器并添加新的身份验证服务器。 
 ---
 = 删除身份验证服务器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

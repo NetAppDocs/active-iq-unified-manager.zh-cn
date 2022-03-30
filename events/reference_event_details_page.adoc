@@ -5,6 +5,7 @@ keywords: event, details, page
 summary: 在事件详细信息页面中，您可以查看选定事件的详细信息，例如事件严重性，影响级别，影响区域和事件源。此外，您还可以查看追加信息，了解可通过哪些修复方法来解析问题描述。 
 ---
 = 事件详细信息页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

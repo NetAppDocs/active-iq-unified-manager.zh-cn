@@ -5,6 +5,7 @@ keywords: types, workloads, monitored, unified manager
 summary: 您可以使用 Unified Manager 监控两种类型的工作负载的性能：用户定义的工作负载和系统定义的工作负载。 
 ---
 = Unified Manager 监控的工作负载类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

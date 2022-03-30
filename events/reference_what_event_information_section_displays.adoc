@@ -5,6 +5,7 @@ keywords: event, information, section, displays
 summary: 您可以使用事件详细信息页面上的事件信息部分查看有关选定事件的详细信息，例如事件严重性，影响级别，影响区域和事件源。 
 ---
 = Event Information 部分显示的内容
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

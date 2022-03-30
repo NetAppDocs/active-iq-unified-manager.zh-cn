@@ -5,6 +5,7 @@ keywords: annotations
 summary: 标注是分配给另一个文本字符串（值）的文本字符串（名称）。每个标注名称 - 值对都可以使用标注规则与存储对象动态关联。将存储对象与预定义的标注关联后，您可以筛选和查看与其相关的事件。您可以将标注应用于集群，卷和 Storage Virtual Machine （ SVM ）。 
 ---
 = 什么是标注
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

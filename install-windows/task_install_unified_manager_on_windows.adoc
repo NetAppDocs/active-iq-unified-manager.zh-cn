@@ -5,6 +5,7 @@ keywords: install, unified manager
 summary: 您可以安装 Unified Manager 来监控数据存储容量，可用性，性能和保护问题并对其进行故障排除。 
 ---
 = 安装 Unified Manager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: performance, banner, messages, descriptions
 summary: Unified Manager 可能会在通知页面（通过通知铃）上显示横幅消息，以提醒您特定集群的状态问题。 
 ---
 = 性能横幅消息和说明
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

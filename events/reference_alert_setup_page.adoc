@@ -5,6 +5,7 @@ keywords: alert, setup, page, command buttons, list view, details area
 summary: '"Alert Setup" 页面将显示警报列表，并提供有关警报名称，状态，通知方法和通知频率的信息。您还可以从此页面添加，编辑，删除，启用或禁用警报。' 
 ---
 = 警报设置页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

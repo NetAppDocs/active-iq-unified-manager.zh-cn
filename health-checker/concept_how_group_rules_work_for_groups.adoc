@@ -5,6 +5,7 @@ keywords: group rules, work, groups
 summary: 组规则是您定义的一个标准，用于将存储对象（卷，集群或 SVM ）包含在特定组中。您可以使用条件组或条件为组定义组规则。 
 ---
 = 组规则如何用于组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

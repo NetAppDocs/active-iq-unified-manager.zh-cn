@@ -5,6 +5,7 @@ keywords: assign, policies, workloads, single, multiple, storage, system-recomme
 summary: 您可以使用不同的导航选项从所有工作负载页面为存储工作负载分配存储效率策略（ Storage Efficiency Policy ， SEP ）和性能服务级别（ Performance Service Levels ， PSL ）。 
 ---
 = 为工作负载分配策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: performance, monitor, metrocluster, configurations
 summary: 通过 Unified Manager ，您可以监控 MetroCluster 配置中集群之间的写入吞吐量，以确定写入吞吐量较高的工作负载。如果这些高性能工作负载导致本地集群上的其他卷的 I/O 响应时间较长，则 Unified Manager 将触发性能事件以通知您。 
 ---
 = 监控 MetroCluster 配置的性能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: view, qos, policy, group, settings, applied, specific, volumes, luns
 summary: 您可以查看已应用于卷和 LUN 的 QoS 策略组，也可以链接到性能 /QoS 策略组视图以显示每个 QoS 策略的详细配置设置。 
 ---
 = 查看应用于特定卷或 LUN 的 QoS 策略组设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

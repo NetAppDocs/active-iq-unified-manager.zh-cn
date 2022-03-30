@@ -5,6 +5,7 @@ keywords: export, storage, data, reports
 summary: 您可以以各种输出格式导出存储数据，然后使用导出的数据构建报告。例如，如果有 10 个关键事件尚未解决，您可以从事件管理清单页面导出数据以创建报告，然后将报告发送给能够解决问题的管理员。 
 ---
 = 将存储数据导出为报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

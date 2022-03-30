@@ -5,6 +5,7 @@ keywords: workloads, overview, data center, sections
 summary: 工作负载表示卷或 LUN 等存储对象的输入 / 输出（ I/O ）操作。存储的配置方式取决于预期的工作负载要求。只有在存储对象之间存在流量时， Active IQ Unified Manager 才会跟踪工作负载统计信息。例如，在用户开始使用数据库或电子邮件应用程序后，可以使用工作负载 IOPS 和延迟值。 
 ---
 = 工作负载概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

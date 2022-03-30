@@ -5,6 +5,7 @@ keywords: workload analyzer
 summary: 可以通过多种方法从用户界面启动工作负载分析器。下面介绍如何从左侧导航窗格启动此工具。 
 ---
 = 使用工作负载分析器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

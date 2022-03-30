@@ -5,6 +5,7 @@ keywords: view, volume, protection status, dashboard protection card, protection
 summary: '" 数据保护 " 页面提供了数据中心中所有受保护卷的数据保护详细信息的整体视图。' 
 ---
 = 查看卷保护状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

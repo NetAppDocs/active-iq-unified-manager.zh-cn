@@ -5,6 +5,7 @@ keywords: create, edit, performance, service, Levels
 summary: 如果系统定义的性能服务级别与您的工作负载要求不匹配，您可以创建自己的性能服务级别，这些服务级别针对您的工作负载进行了优化。 
 ---
 = 创建和编辑性能服务级别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

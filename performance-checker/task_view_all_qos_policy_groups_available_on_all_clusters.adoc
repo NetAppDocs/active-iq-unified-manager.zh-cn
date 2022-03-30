@@ -5,6 +5,7 @@ keywords: viewing, qos, policy, groups, available, clusters
 summary: 您可以显示 Unified Manager 正在监控的集群上所有可用的 QoS 策略组的列表。其中包括传统 QoS 策略，自适应 QoS 策略以及由 Unified Manager 性能服务级别策略管理的 QoS 策略。 
 ---
 = 查看所有集群上可用的所有 QoS 策略组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

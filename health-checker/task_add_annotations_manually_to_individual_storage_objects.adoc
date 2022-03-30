@@ -5,6 +5,7 @@ keywords: add, annotations, manually, individual, storage objects
 summary: 您可以手动为选定卷，集群和 SVM 添加标注，而无需使用标注规则。您可以为一个或多个存储对象添加标注，并为标注指定所需的名称 - 值对组合。 
 ---
 = 手动向单个存储对象添加标注
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

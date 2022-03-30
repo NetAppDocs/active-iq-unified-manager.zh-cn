@@ -5,6 +5,7 @@ keywords: unified manager, configuration, changes, detected
 summary: Unified Manager 可监控集群中的配置更改，以帮助您确定某个更改是否可能导致或影响性能事件。性能资源管理器页面会显示一个更改事件图标（），以指示检测到更改的日期和时间。 
 ---
 = Unified Manager 检测到配置更改
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

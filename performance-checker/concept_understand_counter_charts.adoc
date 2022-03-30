@@ -5,6 +5,7 @@ keywords: understand, counter, charts
 summary: '通过 " 计数器图表 " 窗格中的图表，您可以查看和比较根对象以及从相关对象网格中添加的对象的性能数据。这有助于您了解性能趋势，隔离和解决性能问题。' 
 ---
 = 了解计数器图表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

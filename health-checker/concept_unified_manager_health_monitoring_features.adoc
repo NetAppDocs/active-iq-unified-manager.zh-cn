@@ -5,6 +5,7 @@ keywords: unified manager, health, monitor, features
 summary: Unified Manager 基于服务器基础架构构建，可提供可扩展性，可支持性以及增强的监控和通知功能。Unified Manager 支持监控运行 ONTAP 软件的系统。 
 ---
 = Unified Manager 运行状况监控功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

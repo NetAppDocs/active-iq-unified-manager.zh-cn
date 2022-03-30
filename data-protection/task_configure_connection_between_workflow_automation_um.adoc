@@ -5,6 +5,7 @@ keywords: configure, connection, workflow, automation, unified manager
 summary: 您可以在 OnCommand Workflow Automation （ WFA ）和 Unified Manager 之间配置安全连接。通过连接到 Workflow Automation ，您可以使用 SnapMirror 和 SnapVault 配置工作流等保护功能以及用于管理 SnapMirror 关系的命令。 
 ---
 = 在 Workflow Automation 和 Unified Manager 之间配置连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

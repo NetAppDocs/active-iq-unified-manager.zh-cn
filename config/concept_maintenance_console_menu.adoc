@@ -5,6 +5,7 @@ keywords: maintenance, console, menus
 summary: 维护控制台包含多个不同的菜单，可用于维护和管理 Unified Manager 服务器的特殊功能和配置设置。 
 ---
 = 维护控制台菜单
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

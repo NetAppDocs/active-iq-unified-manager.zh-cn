@@ -5,6 +5,7 @@ keywords: unified, manager, reporting
 summary: Active IQ Unified Manager （以前称为 OnCommand Unified Manager ）可以查看，自定义，下载和计划 ONTAP 存储系统的报告。这些报告可以提供有关存储系统容量，运行状况，性能和保护关系的详细信息。 
 ---
 = Unified Manager 报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

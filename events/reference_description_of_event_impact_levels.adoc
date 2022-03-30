@@ -5,6 +5,7 @@ keywords: description, event, impact, levels
 summary: 每个事件都与一个影响级别（意外事件，风险，事件或升级）关联，以帮助您确定需要立即采取更正操作的事件的优先级。 
 ---
 = 事件影响级别的问题描述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: assign, performance, threshold, policies, storage, objects
 summary: 您可以为存储对象分配用户定义的性能阈值策略，以便 Unified Manager 在性能计数器值超过策略设置时报告事件。 
 ---
 = 为存储对象分配性能阈值策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

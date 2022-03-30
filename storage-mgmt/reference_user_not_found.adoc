@@ -5,6 +5,7 @@ keywords: user, not, found
 summary: 故障排除：未找到用户 
 ---
 = 未找到用户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

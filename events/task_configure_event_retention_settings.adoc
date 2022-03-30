@@ -5,6 +5,7 @@ keywords: configure, event, retention, settings
 summary: 您可以指定事件在自动删除之前在 Unified Manager 服务器中保留的月数。 
 ---
 = 配置事件保留设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

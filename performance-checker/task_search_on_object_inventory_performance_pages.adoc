@@ -5,6 +5,7 @@ keywords: object, inventory, performance, pages
 summary: 您可以在对象清单性能页面上搜索字符串。使用页面右上角的搜索字段可根据对象名称或策略名称快速查找数据。这样，您可以快速查找特定对象及其关联数据，或者快速查找策略并查看关联的策略对象数据。 
 ---
 = 在对象清单性能页面上搜索
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

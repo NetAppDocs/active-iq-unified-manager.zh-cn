@@ -5,6 +5,7 @@ keywords: monitor, vmware, virtual, infrastructure, not, supported
 summary: 通过 Active IQ Unified Manager ，您可以查看虚拟基础架构中的虚拟机（ VM ），并监控虚拟环境中的存储和性能问题并对其进行故障排除。您可以使用此功能确定存储环境中的任何延迟问题，或者 vCenter Server 上报告的性能事件。 
 ---
 = 监控 VMware 虚拟基础架构
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

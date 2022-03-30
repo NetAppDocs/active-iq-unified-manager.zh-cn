@@ -5,6 +5,7 @@ keywords: feature settings, active iq, portal, events
 summary: 您可以指定是要启用还是禁用 Active IQ 门户事件。此设置允许 Active IQ 门户发现和显示有关系统配置，布线等的其他事件。默认情况下，此选项处于启用状态。 
 ---
 = 启用 Active IQ 门户事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: create, report, view, available, volume, capacity, charts
 summary: 您可以创建一个报告来分析 Excel 图表中的可用卷容量。 
 ---
 = 创建报告以查看可用的卷容量图表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: performance, cluster, summary page
 summary: '" 性能集群摘要 " 页面提供了集群的活动事件， IOPS 性能和 MB/ 秒性能的摘要。此页面还包括集群中存储对象的总数。' 
 ---
 = 性能集群摘要页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

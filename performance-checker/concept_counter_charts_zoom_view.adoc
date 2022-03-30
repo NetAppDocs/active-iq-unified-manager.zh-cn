@@ -5,6 +5,7 @@ keywords: counter, charts, zoom, view
 summary: 计数器图表提供了一个缩放视图，可用于放大指定时间段内的性能详细信息。这样，您可以更精细地查看性能详细信息和事件，这在排除性能问题时非常有用。 
 ---
 = 计数器图表缩放视图
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

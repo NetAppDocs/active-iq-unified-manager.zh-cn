@@ -5,6 +5,7 @@ keywords: identify, problem, perform, corrective actions, failed, protection job
 summary: 您可以在事件详细信息页面的发生原因字段中查看作业失败错误消息，并确定作业因 Snapshot 副本错误而失败。然后，您将转到卷 / 运行状况详细信息页面以收集更多信息。 
 ---
 = 确定问题并对失败的保护作业执行更正操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

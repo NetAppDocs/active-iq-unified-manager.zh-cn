@@ -5,6 +5,7 @@ keywords: understand, events, adaptive, qos, policies, defined, block, size
 summary: 自适应 QoS 策略组会根据卷大小自动扩展吞吐量上限或下限，从而在卷大小发生变化时保持 IOPS 与 TB 的比率。从 ONTAP 9.5 开始，您可以在 QoS 策略中指定块大小，以便同时有效地应用 MB/ 秒阈值。 
 ---
 = 了解已定义块大小的自适应 QoS 策略中的事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: select, predefined, time, range
 summary: 在查看集群对象性能数据时，选择预定义的时间范围可以快速，高效地自定义和聚焦数据输出。选择预定义的时间范围时，可以使用长达 13 个月的数据。 
 ---
 = 选择预定义的时间范围
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: view, volumes, luns, same. qos, policy, group
 summary: 您可以显示已分配给同一 QoS 策略组的卷和 LUN 的列表。 
 ---
 = 查看同一 QoS 策略组中的卷或 LUN
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

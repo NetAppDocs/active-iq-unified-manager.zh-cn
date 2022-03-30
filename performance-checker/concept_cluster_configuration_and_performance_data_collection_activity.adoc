@@ -5,6 +5,7 @@ keywords: cluster, configuration, performance, data, collection, activity
 summary: 集群配置数据的收集间隔为 15 分钟。例如，添加集群后，需要 15 分钟才能在 Unified Manager UI 中显示集群详细信息。更改集群时也会应用此间隔。 
 ---
 = 集群配置和性能数据收集活动
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storage vm, compliance, svm compliance, categories
 summary: 下表介绍了 Unified Manager 评估的 Storage Virtual Machine （ SVM ）安全合规性标准， NetApp 建议以及参数是否影响对 SVM 是否合规的整体判断。 
 ---
 = Storage VM 合规性类别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

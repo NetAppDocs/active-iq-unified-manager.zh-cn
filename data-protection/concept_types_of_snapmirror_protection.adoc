@@ -5,6 +5,7 @@ keywords: types, snapmirror, protection, consistency group, snapmirror business 
 summary: 根据数据存储拓扑的部署情况，您可以使用 Unified Manager 配置多种类型的 SnapMirror 保护关系。所有形式的 SnapMirror 保护均可提供故障转移灾难恢复保护，但在性能，版本灵活性和多个备份副本保护方面提供不同的功能。 
 ---
 = SnapMirror 保护的类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

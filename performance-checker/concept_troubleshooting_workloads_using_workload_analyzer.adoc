@@ -5,6 +5,7 @@ keywords: workload analyzer, troubleshoot
 summary: 通过工作负载分析器，您可以在一个页面上查看单个工作负载的重要运行状况和性能标准，以协助进行故障排除。通过查看工作负载的所有当前事件和过去事件，您可以更好地了解工作负载现在可能具有性能或容量问题描述的原因。 
 ---
 = 使用工作负载分析器对工作负载进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapvault, relationship, events, impact area, protection
 summary: SnapVault 关系事件可为您提供有关 SnapVault 关系状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
 ---
 = SnapVault 关系事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

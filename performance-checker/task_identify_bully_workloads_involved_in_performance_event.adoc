@@ -5,6 +5,7 @@ keywords: identify, bully workloads, dynamic, performance, event
 summary: 在 Unified Manager 中，您可以确定哪些工作负载在争用集群组件的使用情况上偏差最高。确定这些工作负载有助于您了解集群上某些卷的响应时间（延迟）为何较慢。 
 ---
 = 确定动态性能事件中涉及的抢占资源的工作负载
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

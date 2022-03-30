@@ -5,6 +5,7 @@ keywords: delete, annotations
 summary: 您可以删除不再需要的自定义标注及其值。 
 ---
 = 删除标注
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

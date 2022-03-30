@@ -5,6 +5,7 @@ keywords: provisioning, performance service levels, storage management, enable, 
 summary: 从 Unified Manager 9.7 开始，您可以在 ONTAP 集群上配置存储工作负载（卷和 LUN ），并根据分配的性能服务级别管理这些工作负载。此功能类似于在 ONTAP System Manager 中创建工作负载并附加 QoS 策略，但如果使用 Unified Manager 应用此功能，则可以在 Unified Manager 实例监控的所有集群之间配置和管理工作负载。 
 ---
 = 启用和禁用基于策略的存储管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

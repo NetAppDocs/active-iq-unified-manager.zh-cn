@@ -5,6 +5,7 @@ keywords: dynamic, performance, event, chart, details
 summary: 对于动态性能事件，事件详细信息页面的系统诊断部分列出了处于争用状态的集群组件延迟或使用率最高的前几个工作负载。性能统计信息基于检测到性能事件的时间，直到上次分析事件为止。这些图表还会显示处于争用状态的集群组件的历史性能统计信息。 
 ---
 = 动态性能事件图表详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

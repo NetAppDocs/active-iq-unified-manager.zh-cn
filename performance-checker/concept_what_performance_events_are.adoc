@@ -5,6 +5,7 @@ keywords: performance, events
 summary: 性能事件是指与集群上的工作负载性能相关的事件。它们可以帮助您确定响应时间较长的工作负载。与同时发生的运行状况事件一起，您可以确定可能导致或导致响应时间较慢的问题。 
 ---
 = 什么是性能事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

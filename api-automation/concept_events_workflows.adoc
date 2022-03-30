@@ -5,6 +5,7 @@ keywords: determine, issues, storage, objects, events
 summary: 当数据中心中的存储对象超过阈值时，您将收到有关该事件的通知。使用此通知，您可以分析问题描述并使用事件 API 采取更正操作。 
 ---
 = 使用事件确定存储对象中的问题
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

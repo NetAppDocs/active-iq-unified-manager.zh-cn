@@ -5,6 +5,7 @@ keywords: active iq, unified manager
 summary: Active IQ Unified Manager 提供了一组 API ，用于通过 RESTful Web 服务界面管理受支持存储系统上的存储资源，以实现任何第三方集成。 
 ---
 = Active IQ Unified Manager 入门
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: view, events, system, details
 summary: 通过事件 API ，您可以检索为数据中心中受监控集群生成的事件。 
 ---
 = 管理事件和警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

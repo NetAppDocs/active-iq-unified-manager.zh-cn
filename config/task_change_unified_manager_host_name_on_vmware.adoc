@@ -5,6 +5,7 @@ keywords: change, unified manager, virtual, appliance, host name
 summary: 首次部署 Unified Manager 虚拟设备时，系统会为网络主机分配一个名称。您可以在部署后更改主机名。如果更改主机名，则还必须重新生成 HTTPS 证书。 
 ---
 = 更改 Unified Manager 虚拟设备主机名
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

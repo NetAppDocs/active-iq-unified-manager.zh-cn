@@ -5,6 +5,7 @@ keywords: customize, qtree, capacity, reports
 summary: 这些示例自定义报告用于帮助您识别和响应与 qtree 容量相关的潜在问题。 
 ---
 = 自定义 qtree 容量报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

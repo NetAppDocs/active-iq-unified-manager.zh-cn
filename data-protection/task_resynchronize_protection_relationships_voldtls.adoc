@@ -5,6 +5,7 @@ keywords: resynchronize, protection, relationships, volume, health details page
 summary: 您可以重新同步已断开的 SnapMirror 或 SnapVault 关系上的数据，然后将目标设置为读 / 写，以便源上的数据与目标上的数据匹配。如果删除了源卷上所需的通用 Snapshot 副本，从而导致 SnapMirror 或 SnapVault 更新失败，您也可以重新同步。 
 ---
 = 通过卷 / 运行状况详细信息页面重新同步保护关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

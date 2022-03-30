@@ -5,6 +5,7 @@ keywords: aggregates, dialog box
 summary: 您可以使用聚合对话框选择要添加到资源池的聚合。 
 ---
 = 聚合对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

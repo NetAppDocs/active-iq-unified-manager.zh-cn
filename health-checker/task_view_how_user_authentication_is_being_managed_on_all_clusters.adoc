@@ -5,6 +5,7 @@ keywords: view, cluster authentication status, user authentication, manage, clus
 summary: '" 安全性 " 页面显示用于对每个集群上的用户进行身份验证的身份验证类型，以及使用每种类型访问集群的用户数量。这样，您就可以验证是否按照贵组织的定义安全地执行用户身份验证。' 
 ---
 = 查看如何在所有集群上管理用户身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

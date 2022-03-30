@@ -5,6 +5,7 @@ keywords: email, notification, format, page
 summary: 电子邮件通知格式页面显示存在与配额相关的问题描述（已违反软限制或已达到硬限制）时发送给用户或用户组的电子邮件的规则。 
 ---
 = 电子邮件通知格式页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

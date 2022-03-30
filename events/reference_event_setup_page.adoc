@@ -5,6 +5,7 @@ keywords: event, setup, page, command, buttons, list, view
 summary: '"Event Setup" 页面将显示已禁用的事件列表，并提供相关对象类型和事件严重性等信息。您还可以执行全局禁用或启用事件等任务。' 
 ---
 = 事件设置页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

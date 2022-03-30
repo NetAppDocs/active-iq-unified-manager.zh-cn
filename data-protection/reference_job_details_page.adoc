@@ -5,6 +5,7 @@ keywords: job, details, page
 summary: 通过作业详细信息页面，您可以查看有关正在运行，已排队或已完成的特定保护作业任务的状态和其他信息。您可以使用此信息监控保护作业进度并对作业失败进行故障排除。 
 ---
 = 作业详细信息页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

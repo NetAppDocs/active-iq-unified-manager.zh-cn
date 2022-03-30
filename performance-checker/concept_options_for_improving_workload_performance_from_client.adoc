@@ -5,6 +5,7 @@ keywords: options, improving, workload, performance, client-side
 summary: 您可以检查向性能事件中涉及的卷发送 I/O 的客户端工作负载，例如应用程序或数据库，以确定客户端更改是否可以更正此事件。 
 ---
 = 用于从客户端提高工作负载性能的选项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

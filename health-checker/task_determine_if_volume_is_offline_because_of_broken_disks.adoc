@@ -5,6 +5,7 @@ keywords: determine, volume, offline, broken disks, aggregate
 summary: 您可以使用 Unified Manager Web UI 确认或消除卷脱机的可能性，因为 RAID 磁盘问题已使其主机聚合脱机。 
 ---
 = 确定卷是否因聚合中的磁盘损坏而脱机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: Common, unified, manager, health, workflows, tasks
 summary: 与 Unified Manager 关联的一些常见管理工作流和任务包括：选择要监控的存储集群；诊断对数据可用性，容量和保护产生不利影响的情况；还原丢失的数据；配置和管理卷；根据需要捆绑诊断数据并将其发送给技术支持。 
 ---
 = 常见 Unified Manager 运行状况工作流和任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

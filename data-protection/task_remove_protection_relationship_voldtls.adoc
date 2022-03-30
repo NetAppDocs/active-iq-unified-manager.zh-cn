@@ -5,6 +5,7 @@ keywords: remove, protection, relationship,  volume, health details page
 summary: 您可以删除保护关系以永久删除选定源和目标之间的现有关系：例如，当您要使用其他目标创建关系时。此操作将删除所有元数据，并且无法撤消。 
 ---
 = 从卷 / 运行状况详细信息页面中删除保护关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: uninstall, unified manager
 summary: 您可以使用程序和功能向导卸载 Unified Manager ，也可以从命令行界面执行无人参与的卸载。 
 ---
 = 卸载 Unified Manager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 :pp: &#43;&#43;

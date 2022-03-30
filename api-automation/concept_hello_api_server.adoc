@@ -5,6 +5,7 @@ keywords: hello, api server
 summary: Hello API 服务器是一个示例程序，用于演示如何使用简单的 REST 客户端在 Active IQ Unified Manager 中调用 REST API 。此示例程序以 JSON 格式（此服务器仅支持 application/json 格式）提供有关 API 服务器的基本详细信息。 
 ---
 = 您好， API 服务器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

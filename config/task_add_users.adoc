@@ -5,6 +5,7 @@ keywords: add, users
 summary: 您可以使用用户页面添加本地用户或数据库用户。您还可以添加属于身份验证服务器的远程用户或组。您可以为这些用户分配角色，并且根据这些角色的权限，用户可以使用 Unified Manager 管理存储对象和数据，或者查看数据库中的数据。 
 ---
 = 添加用户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

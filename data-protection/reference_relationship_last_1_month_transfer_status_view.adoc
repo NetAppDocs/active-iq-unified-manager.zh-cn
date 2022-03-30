@@ -5,6 +5,7 @@ keywords: relationship, 1 month, transfer status, view
 summary: '通过 " 关系：过去 1 个月的传输状态 " 视图，您可以分析异步关系中的卷和 Storage VM 在一段时间内的传输趋势。此页面还会显示传输是成功还是失败。' 
 ---
 = Relationship ： Last 1 Month Transfer Status 视图
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

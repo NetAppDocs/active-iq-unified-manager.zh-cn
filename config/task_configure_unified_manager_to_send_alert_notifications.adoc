@@ -5,6 +5,7 @@ keywords: configure, unified manager, send, alert, notifications
 summary: 您可以将 Unified Manager 配置为发送通知，以便就环境中的事件向您发出警报。在发送通知之前，您必须配置其他几个 Unified Manager 选项。 
 ---
 = 配置 Unified Manager 以发送警报通知
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

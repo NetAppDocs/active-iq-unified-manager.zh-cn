@@ -5,6 +5,7 @@ keywords: regenerate, https certificate, dialog, box
 summary: 通过重新生成 HTTPS 证书对话框，您可以自定义安全信息，然后使用该信息生成新的 HTTPS 证书。 
 ---
 = 重新生成 HTTPS 证书对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

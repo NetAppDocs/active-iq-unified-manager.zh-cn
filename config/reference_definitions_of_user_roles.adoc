@@ -5,6 +5,7 @@ keywords: definitions, user roles
 summary: 维护用户或应用程序管理员为每个用户分配一个角色。每个角色都包含某些特权。您可以在 Unified Manager 中执行的活动范围取决于分配给您的角色以及该角色包含的权限。 
 ---
 = 用户角色的定义
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

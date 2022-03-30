@@ -5,6 +5,7 @@ keywords: sort, object, inventory, performance, pages
 summary: '您可以按任何列按升序或降序对 " 对象清单性能 " 页面上的所有数据进行排序。这样，您就可以快速找到对象清单数据，这在检查性能或开始故障排除过程时非常有用。' 
 ---
 = 对对象清单性能页面进行排序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

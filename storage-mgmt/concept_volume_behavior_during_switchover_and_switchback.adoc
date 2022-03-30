@@ -5,6 +5,7 @@ keywords: volume, behavior, switchover, switchback
 summary: 触发将发生原因活动卷从一个集群移动到灾难恢复组中另一个集群的切换或切回事件。集群上处于活动状态并向客户端提供数据的卷将停止，而另一集群上的卷将激活并开始提供数据。Unified Manager 仅监控处于活动状态且正在运行的卷。 
 ---
 = 切换和切回期间的卷行为
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

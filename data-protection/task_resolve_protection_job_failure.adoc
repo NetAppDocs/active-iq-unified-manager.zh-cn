@@ -5,6 +5,7 @@ keywords: resolve, protection, job failure
 summary: 此工作流举例说明如何通过 Unified Manager 信息板识别和解决保护作业故障。 
 ---
 = 解决保护作业故障
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

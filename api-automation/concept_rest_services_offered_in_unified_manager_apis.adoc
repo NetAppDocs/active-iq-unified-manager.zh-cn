@@ -5,6 +5,7 @@ keywords: rest, services, offer, active iq, unified, manager
 summary: 在开始使用 Active IQ Unified Manager API 之前，您应了解所提供的 REST 服务和操作。 
 ---
 = Active IQ Unified Manager 提供的 REST 服务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

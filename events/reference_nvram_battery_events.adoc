@@ -5,6 +5,7 @@ keywords: nvram, battery, events, impact area, availability
 summary: NVRAM 电池事件可为您提供电池状态信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
 ---
 = NVRAM 电池事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

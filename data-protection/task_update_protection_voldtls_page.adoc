@@ -5,6 +5,7 @@ keywords: initialize, update, protection, relationships, volume, health details 
 summary: 您可以对新的保护关系执行首次基线传输，或者如果关系已初始化，而您希望执行手动的计划外增量更新以立即传输数据，则可以更新此关系。 
 ---
 = 通过卷 / 运行状况详细信息页面初始化或更新保护关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

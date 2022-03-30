@@ -5,6 +5,7 @@ keywords: move, workloads, node, different, ha pair
 summary: 您可以使用 Unified Manager 帮助确定不同高可用性（ HA ）对中节点上可用性能容量比当前运行工作负载的 HA 对更多的聚合。然后，您可以将选定卷移动到新 HA 对上的聚合。 
 ---
 = 将工作负载移动到其他 HA 对中的节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

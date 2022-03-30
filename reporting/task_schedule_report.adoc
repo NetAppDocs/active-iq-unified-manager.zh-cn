@@ -5,6 +5,7 @@ keywords: report, schedule
 summary: 在您有要计划定期生成和分发的视图或 Excel 文件后，您可以计划报告。 
 ---
 = 计划报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: http, status, code, active iq, unified manager
 summary: 在运行 API 或解决问题时，您应了解 Active IQ Unified Manager API 使用的各种 HTTP 状态代码和错误代码。 
 ---
 = Active IQ Unified Manager 中使用的 HTTP 状态代码
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

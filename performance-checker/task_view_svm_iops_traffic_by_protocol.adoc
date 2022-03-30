@@ -5,6 +5,7 @@ keywords: view, svm, iops, traffic, protocol
 summary: '您可以使用性能 /SVM 资源管理器页面查看 SVM 的详细 IOPS 信息。"IOPS - 总计 " 计数器图表显示 SVM 上的总 IOPS 使用量， "IOPS - 细分 " 计数器图表有助于确定读取，写入和其他 IOPS 对 SVM 的影响。' 
 ---
 = 按协议查看 SVM IOPS 流量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: summary page, charts, counter, statistics
 summary: '" 摘要 " 页面将显示计数器图表，其中包含有关过去 72 小时内每个对象的事件和性能的详细信息。此数据不会自动刷新，但在上次加载页面时为最新数据。" 摘要 " 页面中的图表问题解答我需要进一步了解的问题？' 
 ---
 = 摘要页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

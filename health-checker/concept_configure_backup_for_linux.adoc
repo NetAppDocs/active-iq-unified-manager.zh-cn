@@ -5,6 +5,7 @@ keywords: netapp, snapshot, linux, operate, system, configure, backup
 summary: 如果 Active IQ Unified Manager 安装在 Linux 计算机上，则可以决定使用 NetApp Snapshot 配置备份和还原。 
 ---
 = 在 Linux 上配置备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

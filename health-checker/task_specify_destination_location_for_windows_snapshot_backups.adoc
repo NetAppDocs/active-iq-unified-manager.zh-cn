@@ -5,6 +5,7 @@ keywords: specify, destination location, windows, snapshot, backups
 summary: 您应在已在其中一个 ONTAP 集群中配置的卷上配置 Active IQ Unified Manager Snapshot 备份的目标位置，并使用维护控制台定义该位置。 
 ---
 = 指定 Windows Snapshot 备份的目标位置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

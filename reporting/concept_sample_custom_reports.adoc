@@ -5,6 +5,7 @@ keywords: sample, custom, reports
 summary: 这些示例自定义报告通常用于帮助您确定潜在问题并在出现问题之前对潜在问题做出响应。 
 ---
 = 示例自定义报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

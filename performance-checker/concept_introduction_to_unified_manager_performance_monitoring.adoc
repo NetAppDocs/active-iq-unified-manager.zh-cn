@@ -5,6 +5,7 @@ keywords: introduction, active iq, unified manager, performance, monitor
 summary: Active IQ Unified Manager （原 OnCommand Unified Manager ）可为运行 NetApp ONTAP 软件的系统提供性能监控功能和事件根源分析。 
 ---
 = Active IQ Unified Manager 性能监控简介
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

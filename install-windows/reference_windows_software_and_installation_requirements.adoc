@@ -5,6 +5,7 @@ keywords: windows, software, installation, requirements, system
 summary: 要在 Windows 上成功安装 Unified Manager ，您应确保安装 Unified Manager 的系统满足软件要求。 
 ---
 = Windows 软件和安装要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 :pp: &#43;&#43;

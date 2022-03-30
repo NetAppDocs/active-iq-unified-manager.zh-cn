@@ -5,6 +5,7 @@ keywords: remove, inactive, volumes, luns
 summary: 将聚合可用空间标识为问题描述后，您可以搜索未使用的卷和 LUN 并将其从聚合中删除。这有助于缓解磁盘空间不足的问题描述。 
 ---
 = 删除非活动卷和 LUN
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

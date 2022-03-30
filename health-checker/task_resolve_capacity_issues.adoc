@@ -5,6 +5,7 @@ keywords: resolve, capacity issues
 summary: 此工作流举例说明了如何解决容量问题描述。在这种情况下，您是管理员或操作员，并可访问 Unified Manager 信息板页面以查看任何受监控的存储对象是否存在容量问题。您希望确定可能的发生原因并解决此问题。 
 ---
 = 解决容量问题
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: understand, performance, events, alerts
 summary: 性能事件是指 Unified Manager 在发生预定义条件或性能计数器值超过阈值时自动生成的通知。事件可帮助您确定受监控集群中的性能问题。 
 ---
 = 了解性能事件和警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

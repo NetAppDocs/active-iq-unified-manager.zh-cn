@@ -5,6 +5,7 @@ keywords: view, cluster security status, svm security status, high-level
 summary: 'Unified Manager 信息板上的 " 安全 " 面板根据您的当前视图显示所有集群或单个集群的高级安全状态。' 
 ---
 = 查看集群安全状态概况
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

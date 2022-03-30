@@ -5,6 +5,7 @@ keywords: set, protection, relationships, unified manager
 summary: 要使用 Unified Manager 和 OnCommand Workflow Automation 设置 SnapMirror 和 SnapVault 关系以保护数据，您必须执行几个步骤。 
 ---
 = 在 Unified Manager 中设置保护关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

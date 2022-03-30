@@ -3244,7 +3244,6 @@
   <block id="8de21a35f65c014ecc55f169fd0bf784" category="doc">了解节点根卷</block>
   <block id="1aafd50acd3eec04290825cc7070495e" category="paragraph">如果节点根卷的已用容量超过节点根卷总容量的 80% ，则会生成节点根卷空间接近全满事件。您可以为事件配置警报以获取通知。您可以使用 ONTAP 系统管理器或 ONTAP 命令行界面采取适当的操作以防止节点关闭。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
   <block id="3137ef72598d7594f057d3be7920e952" category="summary">您可以使用 " 运行状况：所有卷 " 视图为同一 Storage VM 上的一个或多个卷创建 SnapVault 关系，以便为保护目的启用数据备份。</block>
   <block id="db86253f7843b8ab497704209fd4f2c9" category="doc">从运行状况：所有卷视图创建 SnapVault 保护关系</block>
   <block id="b97129194b59af319f9dcc7d6f39fc0a" category="list-text">您必须已设置 Workflow Automation 。</block>
@@ -11512,4 +11511,15 @@
   <block id="304235bddd1bfe240019774dacdbd71e" category="inline-link-macro">适用于 SM-BC 的 ONTAP 9 文档</block>
   <block id="2eaa1a82c95cbdf0e4d38d70a85a96d7" category="paragraph">要了解有关 SnapMirror 同步业务连续性的更多信息，请参见 <block ref="c3c54812d1152ab82d144dc87f0ce5db" category="inline-link-macro-rx"></block>。</block>
   <block id="e6426dd2e05e7210d50c422898f18af7" category="paragraph">有关 SM-BC 的信息，请参见 <block ref="c3c54812d1152ab82d144dc87f0ce5db" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律声明提供对版权声明、商标、专利等的访问。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
 </blocks>

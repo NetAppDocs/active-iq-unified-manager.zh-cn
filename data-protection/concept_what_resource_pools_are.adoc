@@ -5,6 +5,7 @@ keywords: resource pools
 summary: 资源池是由存储管理员使用 Unified Manager 创建的一组聚合，用于为配对应用程序配置备份管理。 
 ---
 = 什么是资源池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

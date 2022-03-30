@@ -5,6 +5,7 @@ keywords: configure, destination, schedule, database dump, backups
 summary: 您可以配置 Unified Manager 数据库转储备份设置，以设置数据库备份路径，保留数量和备份计划。您可以启用每日或每周计划备份。默认情况下，计划的备份处于禁用状态，但您应设置备份计划。 
 ---
 = 配置数据库转储备份的目标和计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: quota, limits
 summary: 用户配额限制是 Unified Manager 服务器用来评估用户的空间使用量是否已接近限制或已达到用户配额设置的限制的值。如果超过软限制或达到硬限制， Unified Manager 服务器将生成用户配额事件。 
 ---
 = 什么是配额限制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

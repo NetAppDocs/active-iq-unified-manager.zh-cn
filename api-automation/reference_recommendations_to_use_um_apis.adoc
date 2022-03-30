@@ -5,6 +5,7 @@ keywords: recommendations, apis, active iq, unified, manager
 summary: 在 Active IQ Unified Manager 中使用 API 时，应遵循某些建议的做法。 
 ---
 = 有关使用 Active IQ Unified Manager API 的建议
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

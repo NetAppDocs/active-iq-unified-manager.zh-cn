@@ -5,6 +5,7 @@ keywords: create, database, user
 summary: 要支持在 Workflow Automation 和 Unified Manager 之间建立连接或访问数据库视图，您必须先在 Unified Manager Web UI 中创建一个具有集成架构或报告架构角色的数据库用户。 
 ---
 = 创建数据库用户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

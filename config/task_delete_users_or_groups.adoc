@@ -5,6 +5,7 @@ keywords: delete, users, groups
 summary: 您可以从管理服务器数据库中删除一个或多个用户，以防止特定用户访问 Unified Manager 。您还可以删除组，以便组中的所有用户都无法再访问管理服务器。 
 ---
 = 删除用户或组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

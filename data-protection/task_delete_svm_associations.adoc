@@ -5,6 +5,7 @@ keywords: delete, storage, vm, peers
 summary: 您可以删除配对应用程序的 Storage VM 对等方以删除源和目标 Storage VM 之间的二级配置关系；例如，当目标 Storage VM 已满且您希望创建新的 Storage VM 保护对等方时，您可以执行此操作。 
 ---
 = 正在删除 Storage VM 对等方
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

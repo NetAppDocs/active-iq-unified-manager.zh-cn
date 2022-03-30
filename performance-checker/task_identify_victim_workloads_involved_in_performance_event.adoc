@@ -5,6 +5,7 @@ keywords: identify, victim workloads, dynamic, performance, event
 summary: 在 Unified Manager 中，您可以确定哪些卷工作负载因争用存储组件导致的响应时间（延迟）偏差最高。确定这些工作负载有助于您了解访问这些工作负载的客户端应用程序的运行速度为何比平常要慢。 
 ---
 = 确定动态性能事件中涉及的受影响工作负载
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

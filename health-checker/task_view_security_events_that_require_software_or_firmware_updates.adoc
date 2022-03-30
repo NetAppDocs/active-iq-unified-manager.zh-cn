@@ -5,6 +5,7 @@ keywords: upgrade events, view, security events, software, firmware updates
 summary: '某些安全事件的影响区域为 " 升级 " 。这些事件是从 Active IQ 平台报告的，它们确定了需要升级 ONTAP 软件，节点固件或操作系统软件才能解决的问题（有关安全建议）。' 
 ---
 = 查看可能需要更新软件或固件的安全事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: understanding, node, failover, planning page
 summary: '" 性能 / 节点故障转移规划 " 页面可估算节点的高可用性（ HA ）配对节点发生故障时对节点的性能影响。Unified Manager 根据 HA 对中节点的历史性能进行估算。' 
 ---
 = 了解和使用 Node Failover Planning 页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

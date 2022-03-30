@@ -5,6 +5,7 @@ keywords: security compliance settings, security feature settings, ONTAP hardeni
 summary: 您可以在 Unified Manager 上启用或禁用合规性监控的安全参数。 
 ---
 = 为合规性启用和禁用安全设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: unified manager, workload, latency, identify, performance, issues
 summary: 工作负载延迟（响应时间）是指集群上的卷响应客户端应用程序的 I/O 请求所需的时间。Unified Manager 会使用延迟检测性能事件并向您发出警报。 
 ---
 = Unified Manager 如何使用工作负载延迟来确定性能问题
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: delete, scripts
 summary: 当不再需要脚本或脚本无效时，您可以从 Unified Manager 中删除该脚本。 
 ---
 = 正在删除脚本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

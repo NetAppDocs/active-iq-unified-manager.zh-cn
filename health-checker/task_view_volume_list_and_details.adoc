@@ -5,6 +5,7 @@ keywords: view, volume list, details
 summary: '在运行状况：所有卷视图中，您可以监控卷清单。" 容量：所有卷 " 视图可用于查看有关集群中卷的容量和利用率的信息。' 
 ---
 = 查看卷列表和详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

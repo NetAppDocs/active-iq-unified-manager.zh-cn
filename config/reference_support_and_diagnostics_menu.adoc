@@ -5,6 +5,7 @@ keywords: support and diagnostics, menu
 summary: '通过 " 支持和诊断 " 菜单，您可以生成一个支持包，您可以将该支持包发送给技术支持以获得故障排除帮助。' 
 ---
 = 支持和诊断菜单
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

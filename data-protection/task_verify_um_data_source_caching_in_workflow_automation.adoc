@@ -5,6 +5,7 @@ keywords: verify, unified manager, data source, cache, workflow automation
 summary: 您可以通过在 Workflow Automation 中检查数据源采集是否成功来确定 Unified Manager 数据源缓存是否正常工作。如果将 Workflow Automation 与 Unified Manager 集成，则可以执行此操作，以确保集成后 Workflow Automation 功能可用。 
 ---
 = 在 Workflow Automation 中验证 Unified Manager 数据源缓存
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

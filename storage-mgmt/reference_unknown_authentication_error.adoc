@@ -5,6 +5,7 @@ keywords: unknown, authentication, error
 summary: 故障排除：未知身份验证错误 
 ---
 = 未知身份验证错误
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

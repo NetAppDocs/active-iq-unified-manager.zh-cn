@@ -5,6 +5,7 @@ keywords: resynchronize, dialog box
 summary: 通过重新同步对话框，您可以重新同步先前已断开的 SnapMirror 或 SnapVault 关系上的数据，然后将目标设置为读 / 写卷。如果删除了源卷上所需的通用 Snapshot 副本，从而导致 SnapMirror 或 SnapVault 更新失败，您也可以重新同步。 
 ---
 = 重新同步对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

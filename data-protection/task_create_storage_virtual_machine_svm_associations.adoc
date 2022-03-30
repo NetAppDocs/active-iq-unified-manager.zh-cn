@@ -5,6 +5,7 @@ keywords: create, storage, vm, peers
 summary: 通过创建 Storage Virtual Machine 对等方向导，合作伙伴保护应用程序可以将源 Storage VM 与目标 Storage VM 相关联，以便用于 SnapMirror 和 SnapVault 关系。在初始配置目标卷时，合作伙伴应用程序会使用这些关联来确定要选择的资源。 
 ---
 = 创建 Storage VM 对等方
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

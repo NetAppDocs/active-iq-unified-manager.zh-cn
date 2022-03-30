@@ -5,6 +5,7 @@ keywords: sort, data
 summary: 要对结果进行排序，请单击一列并指示升序或降序。对数据排序会优先考虑报告所需的信息。 
 ---
 = 对数据进行排序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: advanced, destination, settings, dialog box
 summary: 您可以使用高级目标设置对话框在目标卷上启用空间保证设置。如果源上禁用了空间保证，但希望在目标上启用空间保证，则可以选择高级设置。SnapMirror 关系中的重复数据删除，数据压缩和自动增长设置将从源卷继承，并且无法更改。 
 ---
 = 高级目标设置对话框
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

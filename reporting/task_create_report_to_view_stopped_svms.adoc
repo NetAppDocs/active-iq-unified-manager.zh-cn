@@ -5,6 +5,7 @@ keywords: create, report, view, stopped, storage VMs
 summary: 您可以创建报告以显示所有已停止 SVM 的列表。 
 ---
 = 创建报告以查看已停止的 Storage VM
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

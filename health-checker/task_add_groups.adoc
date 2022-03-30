@@ -5,6 +5,7 @@ keywords: add, groups
 summary: 您可以创建组来组合集群，卷和 Storage Virtual Machine （ SVM ），以便于管理。 
 ---
 = 添加组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

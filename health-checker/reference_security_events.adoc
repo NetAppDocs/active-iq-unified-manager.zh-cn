@@ -5,6 +5,7 @@ keywords: security events
 summary: 安全事件根据适用于 ONTAP 9 的 NetApp 安全加固指南中定义的参数，为您提供有关 ONTAP 集群， Storage Virtual Machine （ SVM ）和卷的安全状态的信息。这些事件会向您通知潜在问题，以便您评估其严重性并在必要时修复问题描述。 
 ---
 = 安全事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

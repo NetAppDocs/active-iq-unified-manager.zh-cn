@@ -5,6 +5,7 @@ keywords: resolving, performance, events
 summary: 您可以使用建议的操作尝试自行解决性能事件。前三个建议始终显示，第四个建议下的操作特定于显示的事件类型。 
 ---
 = 解决性能事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

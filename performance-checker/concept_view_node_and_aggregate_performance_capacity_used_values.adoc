@@ -5,6 +5,7 @@ keywords: view, node, aggregate, performance, capacity, used, values
 summary: 您可以监控集群中所有节点或所有聚合的已用性能容量值，也可以查看单个节点或聚合的详细信息。 
 ---
 = 查看节点和聚合已用性能容量值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

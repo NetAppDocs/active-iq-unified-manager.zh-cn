@@ -5,6 +5,7 @@ keywords: move, workloads, another, node, different, ha pair
 summary: 您可以使用 Unified Manager 帮助确定其他 HA 对中节点上比当前运行工作负载的 HA 对不繁忙的聚合。然后，您可以将选定卷移动到新 HA 对上的聚合。通过将高性能工作负载移动到不太繁忙的节点上的聚合，可以提高两个节点上的工作负载的性能。 
 ---
 = 将工作负载移动到其他 HA 对中的另一个节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

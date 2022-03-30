@@ -5,6 +5,7 @@ keywords: components, performance, explorer, page
 summary: '通过 " 性能资源管理器 " 页面，您可以比较集群中类似对象的性能，例如集群中的所有卷。在对性能事件进行故障排除和微调对象性能时，这很有用。您还可以将对象与根对象进行比较，根对象是进行其他对象比较的基线。' 
 ---
 = 性能资源管理器页面的组件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

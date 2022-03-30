@@ -5,6 +5,7 @@ keywords: edit, user-defined, performance, threshold, policies
 summary: 您可以编辑现有性能阈值策略的阈值设置。如果您发现在某些阈值条件下收到的警报过多或过少，则此功能非常有用。 
 ---
 = 编辑用户定义的性能阈值策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

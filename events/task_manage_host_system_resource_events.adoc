@@ -5,6 +5,7 @@ keywords: manage, host, system, resource, events
 summary: Unified Manager 包含一项服务，用于监控安装了 Unified Manager 的主机系统上的资源问题。主机系统上的可用磁盘空间不足或内存不足等问题可能会触发管理工作站事件，这些事件在用户界面顶部显示为横幅消息。 
 ---
 = 管理主机系统资源事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

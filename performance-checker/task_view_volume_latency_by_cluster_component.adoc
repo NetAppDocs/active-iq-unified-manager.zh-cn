@@ -5,6 +5,7 @@ keywords: view, volume, latency, cluster, component
 summary: 您可以使用卷性能资源管理器页面查看卷的详细延迟信息。延迟 - 总计计数器图表显示卷上的总延迟，延迟 - 细分计数器图表有助于确定读取和写入延迟对卷的影响。 
 ---
 = 按集群组件查看卷延迟
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

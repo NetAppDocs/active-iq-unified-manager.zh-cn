@@ -5,6 +5,7 @@ keywords: create, storage, virtual machine, peers, wizard
 summary: 通过创建 Storage Virtual Machine 对等方向导，您可以对源和目标 Storage VM 建立对等关系，以便在 SnapMirror 和 SnapVault 保护关系中使用。 
 ---
 = 创建 Storage Virtual Machine 对等方向导
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

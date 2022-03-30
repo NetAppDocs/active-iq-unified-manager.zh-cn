@@ -5,6 +5,7 @@ keywords: manage, storage, efficiency, policy
 summary: 您可以使用存储提供程序 API 查看，创建，修改和删除存储效率策略。 
 ---
 = 管理存储效率策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: system, configuration, menu
 summary: 通过 System Configuration 菜单，您可以通过提供各种选项来管理虚拟设备，例如查看服务器状态以及重新启动和关闭虚拟机。 
 ---
 = System Configuration 菜单
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

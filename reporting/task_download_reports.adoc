@@ -5,6 +5,7 @@ keywords: download, reports
 summary: 您可以下载报告并将数据以逗号分隔值（ CSV ）文件， Microsoft Excel （ .XLSX ）文件或 PDF 文件的形式保存到本地或网络驱动器。您可以使用 Microsoft Excel 等电子表格应用程序打开 CSV 和 XLSX 文件，也可以使用 Adobe Acrobat 等读者打开 PDF 文件。 
 ---
 = 下载报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

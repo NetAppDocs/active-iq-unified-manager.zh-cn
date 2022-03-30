@@ -5,6 +5,7 @@ keywords: run, storage, efficiency, operations, less, busy, times
 summary: 您可以将处理存储效率操作的策略或计划修改为在受影响的卷工作负载不太繁忙时运行。 
 ---
 = 在不太繁忙的时间运行存储效率操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

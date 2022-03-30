@@ -5,6 +5,7 @@ keywords: view, events, details
 summary: '您可以查看有关 Unified Manager 触发的事件的详细信息以采取更正操作。例如，如果存在运行状况事件 " 卷脱机 " ，则可以单击该事件以查看详细信息并执行更正操作。' 
 ---
 = 查看事件和事件详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

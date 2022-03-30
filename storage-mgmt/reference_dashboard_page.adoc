@@ -5,6 +5,7 @@ keywords: dashboard page,
 summary: '信息板页面包含一些 " 面板 " ，用于显示所监控集群的容量，性能和安全运行状况概貌。此页面还提供了一个管理操作面板，其中列出了 Unified Manager 可用来解决某些事件的修复程序。' 
 ---
 = 信息板页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

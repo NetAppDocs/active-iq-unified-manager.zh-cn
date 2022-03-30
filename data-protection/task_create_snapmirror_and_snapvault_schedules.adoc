@@ -5,6 +5,7 @@ keywords: create, snapmirror, snapvault, schedules
 summary: 您可以创建基本或高级 SnapMirror 和 SnapVault 计划，以便在源卷或主卷上启用自动数据保护传输，从而根据卷上的数据更改频率提高传输频率或降低传输频率。 
 ---
 = 创建 SnapMirror 和 SnapVault 计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cluster, imbalance, performance, events
 summary: 如果集群中的一个节点的负载远远高于其他节点，因此可能会影响工作负载延迟，则 Unified Manager 将生成集群不平衡警告事件。通过这些系统定义的事件，可以在许多工作负载受到延迟影响之前更正潜在的性能问题。 
 ---
 = 响应集群不平衡性能事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

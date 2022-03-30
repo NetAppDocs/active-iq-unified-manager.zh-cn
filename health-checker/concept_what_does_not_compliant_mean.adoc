@@ -5,6 +5,7 @@ keywords: not compliant, compliant
 summary: 如果不符合根据《适用于 ONTAP 9 的 NetApp 安全加固指南》中定义的建议评估的任何安全标准，则集群和 Storage Virtual Machine （ SVM ）将被视为不合规。此外，如果任何 SVM 被标记为不合规，则集群将被视为不合规。 
 ---
 = 不合规的含义
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

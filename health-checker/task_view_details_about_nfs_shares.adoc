@@ -5,6 +5,7 @@ keywords: view, details, nfs shares
 summary: 您可以查看有关所有 NFS 共享的详细信息，例如其状态，与卷（ FlexGroup 卷或 FlexVol 卷）关联的路径，客户端对 NFS 共享的访问级别以及为导出的卷定义的导出策略。使用运行状况：所有 NFS 共享视图查看所有受监控集群上的所有 NFS 共享，并使用 Storage VM/ 运行状况详细信息页面查看特定 Storage Virtual Machine （ SVM ）上的所有 NFS 共享。 
 ---
 = 查看有关 NFS 共享的详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

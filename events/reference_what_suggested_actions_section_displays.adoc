@@ -5,6 +5,7 @@ keywords: suggest, actions, section, displays
 summary: 事件详细信息页面的建议操作部分提供了事件的可能原因，并提供了一些操作建议，以便您可以尝试自行解决事件。建议的操作将根据已违反的事件类型或阈值类型进行自定义。 
 ---
 = 建议的操作部分显示的内容
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

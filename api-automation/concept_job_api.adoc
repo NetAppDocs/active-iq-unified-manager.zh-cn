@@ -5,6 +5,7 @@ keywords: jobs, view
 summary: 您可以使用 management-server 类别下的 Jobs API 查看异步操作的执行详细信息。 
 ---
 = 查看作业和系统详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

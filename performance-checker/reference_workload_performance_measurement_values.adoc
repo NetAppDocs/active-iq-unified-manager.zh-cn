@@ -5,6 +5,7 @@ keywords: workload, performance, measurement, values
 summary: Unified Manager 会根据历史和预期统计值测量集群上的工作负载性能，这些统计值构成工作负载的延迟预测值。它会将实际工作负载统计值与延迟预测进行比较，以确定何时工作负载性能过高或过低。未按预期执行的工作负载将触发动态性能事件以通知您。 
 ---
 = 工作负载性能测量值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

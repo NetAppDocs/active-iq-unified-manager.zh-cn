@@ -5,6 +5,7 @@ keywords: create, report, view, aggregates, full
 summary: '您可以创建报告以突出显示已满 80% 或以上的聚合。' 
 ---
 = 创建报告以查看已满 80% 或以上的聚合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

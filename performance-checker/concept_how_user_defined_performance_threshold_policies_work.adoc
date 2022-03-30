@@ -5,6 +5,7 @@ keywords: user-defined, performance, threshold, policies, work
 summary: 您可以对存储对象（例如聚合和卷）设置性能阈值策略，以便将事件发送给存储管理员，通知管理员集群遇到性能问题描述。 
 ---
 = 用户定义的性能阈值策略的工作原理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

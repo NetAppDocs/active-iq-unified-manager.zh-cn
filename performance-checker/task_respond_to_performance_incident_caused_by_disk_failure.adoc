@@ -5,6 +5,7 @@ keywords: dynamic, performance, event, disk, failure
 summary: 您可以使用 Unified Manager 调查因工作负载过度利用聚合而导致的性能事件。此外，您还可以使用 Unified Manager 检查聚合的运行状况，以查看在聚合上检测到的最新运行状况事件是否导致性能事件。 
 ---
 = 响应因磁盘故障而导致的动态性能事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

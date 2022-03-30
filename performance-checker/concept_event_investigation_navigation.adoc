@@ -5,6 +5,7 @@ keywords: event, investigation, navigation
 summary: 通过 Unified Manager 事件详细信息页面，您可以深入了解任何性能事件。在调查性能事件，进行故障排除以及微调系统性能时，此功能非常有用。 
 ---
 = 事件调查导航
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

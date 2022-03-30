@@ -5,6 +5,7 @@ keywords: audit, logging
 summary: 您可以使用审核日志来检测审核日志是否受到影响。系统会监控用户执行的所有活动，并将其记录在审核日志中。对 Active IQ Unified Manager 的所有用户界面和公开公开的 API 功能执行审核。 
 ---
 = 审核日志记录
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

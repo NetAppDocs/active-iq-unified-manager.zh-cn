@@ -5,6 +5,7 @@ keywords: storage, qos, control, workload, throughput
 summary: 您可以创建服务质量（ QoS ）策略组来控制其所含工作负载的每秒 I/O 数（ IOPS ）或吞吐量（ MB/ 秒）限制。如果工作负载位于没有设置限制的策略组中，例如默认策略组，或者设置的限制不符合您的需求，您可以增加此限制或将工作负载移动到具有所需限制的新策略组或现有策略组。 
 ---
 = 存储 QoS 如何控制工作负载吞吐量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

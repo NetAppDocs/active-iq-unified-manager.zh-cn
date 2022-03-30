@@ -5,6 +5,7 @@ keywords: threshold, policy, node, failover, planning page
 summary: '您可以创建节点阈值策略，以便在潜在故障转移会将接管节点的性能降低到不可接受的水平时，您可以在 " 性能 / 节点故障转移规划 " 页面中收到通知。' 
 ---
 = 将阈值策略与节点故障转移规划页面结合使用
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

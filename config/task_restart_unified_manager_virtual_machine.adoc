@@ -5,6 +5,7 @@ keywords: restart, unified manager, virtual, machine
 summary: 您可以从 Unified Manager 的维护控制台重新启动虚拟机。生成新的安全证书或虚拟机出现问题时，必须重新启动。 
 ---
 = 重新启动 Unified Manager 虚拟机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

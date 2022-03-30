@@ -5,6 +5,7 @@ keywords: monitor, virtual, machines, view, summary, topology, expand
 summary: 对于虚拟机（ VM ）应用程序上的任何延迟问题描述，您可能需要监控 VM 以分析发生原因并对其进行故障排除。将 VM 的 vCenter Server 和托管 VM 存储的 ONTAP 集群添加到 Unified Manager 后，这些 VM 将可用。 
 ---
 = 监控虚拟机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
