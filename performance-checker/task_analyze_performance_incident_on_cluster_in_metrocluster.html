@@ -45,12 +45,52 @@
   <link rel="stylesheet" href='/zh-cn/active-iq-unified-manager/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/zh-cn/active-iq-unified-manager/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/active-iq-unified-manager/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/active-iq-unified-manager/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/active-iq-unified-manager/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/zh-cn/active-iq-unified-manager/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/zh-cn/active-iq-unified-manager/css/tabbed-blocks.css" type="text/css">
-  <link rel='stylesheet' href='/zh-cn/active-iq-unified-manager/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-cn/active-iq-unified-manager/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
@@ -60,15 +100,6 @@
 
   <script src='/zh-cn/active-iq-unified-manager/js/na-utility.js'></script>
   <script src='/zh-cn/active-iq-unified-manager/js/clouddocs.js'></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    var head = document.getElementsByTagName('head')[0];
-    var adobe = document.createElement("script");
-    adobe.type = "text/javascript";
-    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
-    head.appendChild(adobe);
-  }
-  </script>
   <script src='/zh-cn/active-iq-unified-manager/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/zh-cn/active-iq-unified-manager/js/toc.js'></script>
@@ -121,16 +152,8 @@
               $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-81697994-3');
-  }
   </script>
-  <script src='/zh-cn/active-iq-unified-manager/js/version-dropdown.js'></script>
+  <script src='/zh-cn/active-iq-unified-manager/js/custom-dropdown.js'></script>
   <script src='/zh-cn/active-iq-unified-manager/js/FileSaver.min.js'></script>
   <script src='/zh-cn/active-iq-unified-manager/js/jszip-utils.min.js'></script>
   <script src='/zh-cn/active-iq-unified-manager/js/jszip.min.js'></script>
@@ -138,20 +161,15 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
   <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/issues/new?body=Page%3A%20[分析 MetroCluster 配置中集群上的动态性能事件](https://docs.netapp.com/zh-cn/active-iq-unified-manager/performance-checker/task_analyze_performance_incident_on_cluster_in_metrocluster.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/active-iq-unified-manager/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/blob/main/performance-checker/task_analyze_performance_incident_on_cluster_in_metrocluster.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/active-iq-unified-manager/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/active-iq-unified-manager/images/article-sm.svg" class="github-icon" />提供者指南</a>
-    </div>
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/issues/new?body=Page%3A%20[分析 MetroCluster 配置中集群上的动态性能事件](https://docs.netapp.com/zh-cn/active-iq-unified-manager/performance-checker/task_analyze_performance_incident_on_cluster_in_metrocluster.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/active-iq-unified-manager/images/discuss-sm.svg" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/blob/main/performance-checker/task_analyze_performance_incident_on_cluster_in_metrocluster.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/active-iq-unified-manager/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/active-iq-unified-manager/images/article-sm.svg" class="github-icon" />提供者指南</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此页面上</div>
@@ -161,6 +179,7 @@
       </nav>
     </div>
   </div>
+  
   
   <!-- Start top_hat -->
   <div class="n-top-hat">
@@ -244,7 +263,8 @@
           data-did-you-mean="搜索 {suggestion}。" 
           data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
           data-results-found="找到 {hitCount} 个结果"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -333,6 +353,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/zh-cn/active-iq-unified-manager/pdfs/fullsite-sidebar/Active_IQ_Unified_Manager_文档.pdf" >
           <img src="/zh-cn/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
 
@@ -343,6 +366,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/入门.pdf" 
@@ -371,6 +397,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_VMware_vSphere_系统上安装_Unified_Manager.pdf" 
@@ -384,6 +413,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Active_IQ_Unified_Manager_简介.pdf" 
@@ -410,6 +442,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Unified_Manager_的安装要求.pdf" 
@@ -442,6 +477,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/安装_升级和删除_Unified_Manager_软件.pdf" 
@@ -457,6 +495,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/部署_Unified_Manager.pdf" 
@@ -483,6 +524,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/升级_Unified_Manager.pdf" 
@@ -531,6 +575,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_Linux_系统上安装_Unified_Manager.pdf" 
@@ -544,6 +591,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Active_IQ_Unified_Manager_简介.pdf" 
@@ -570,6 +620,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Unified_Manager_的安装要求.pdf" 
@@ -602,6 +655,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/安装_升级和删除_Unified_Manager_软件.pdf" 
@@ -617,6 +673,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/设置所需的软件存储库.pdf" 
@@ -645,6 +704,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_Linux_系统上安装_Unified_Manager.pdf" 
@@ -677,6 +739,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_Red_Hat_Enterprise_Linux_或_CentOS_上升级_Unified_Manager.pdf" 
@@ -703,6 +768,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/安装_Unified_Manager_后升级第三方产品.pdf" 
@@ -751,6 +819,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_Windows_系统上安装_Unified_Manager.pdf" 
@@ -764,6 +835,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Active_IQ_Unified_Manager_简介.pdf" 
@@ -790,6 +864,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Unified_Manager_的安装要求.pdf" 
@@ -822,6 +899,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/安装_升级和删除_Unified_Manager_软件.pdf" 
@@ -837,6 +917,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_Windows_上安装_Unified_Manager.pdf" 
@@ -867,6 +950,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/升级第三方产品.pdf" 
@@ -913,6 +999,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/执行配置和管理任务.pdf" 
@@ -926,6 +1015,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/正在配置_Active_IQ_Unified_Manager.pdf" 
@@ -947,6 +1039,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/配置_Unified_Manager_以发送警报通知.pdf" 
@@ -987,6 +1082,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/更改_Unified_Manager_主机名.pdf" 
@@ -1000,6 +1098,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/更改_Unified_Manager_虚拟设备主机名.pdf" 
@@ -1050,6 +1151,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理功能设置.pdf" 
@@ -1086,6 +1190,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用维护控制台.pdf" 
@@ -1109,6 +1216,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/维护控制台菜单.pdf" 
@@ -1147,6 +1257,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/向_Unified_Manager_数据库目录添加磁盘空间.pdf" 
@@ -1184,6 +1297,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理用户访问.pdf" 
@@ -1197,6 +1313,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/添加用户.pdf" 
@@ -1246,6 +1365,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理_SAML_身份验证设置.pdf" 
@@ -1282,6 +1404,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理身份验证.pdf" 
@@ -1301,6 +1426,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/审核日志记录.pdf" 
@@ -1338,6 +1466,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理安全证书.pdf" 
@@ -1359,6 +1490,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/证书管理的页面说明.pdf" 
@@ -1403,6 +1537,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/监控和管理存储.pdf" 
@@ -1416,6 +1553,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Active_IQ_Unified_Manager_简介.pdf" 
@@ -1435,6 +1575,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Unified_Manager_服务器的功能.pdf" 
@@ -1468,6 +1611,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/了解用户界面.pdf" 
@@ -1506,6 +1652,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/通过信息板监控和管理集群.pdf" 
@@ -1521,6 +1670,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/直接从_Unified_Manager_修复或管理_ONTAP_问题.pdf" 
@@ -1560,6 +1712,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理集群.pdf" 
@@ -1594,6 +1749,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/监控_VMware_虚拟基础架构.pdf" 
@@ -1622,6 +1780,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/配置和管理工作负载.pdf" 
@@ -1635,6 +1796,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/工作负载概述.pdf" 
@@ -1665,6 +1829,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理性能服务级别.pdf" 
@@ -1689,6 +1856,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理存储效率策略.pdf" 
@@ -1722,6 +1892,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理和监控_MetroCluster_配置.pdf" 
@@ -1735,6 +1908,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/监控_MetroCluster_配置的性能.pdf" 
@@ -1776,6 +1952,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理配额.pdf" 
@@ -1799,6 +1978,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/了解有关配额的更多信息.pdf" 
@@ -1827,6 +2009,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/配额的问题描述对话框.pdf" 
@@ -1862,6 +2047,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/故障排除.pdf" 
@@ -1875,6 +2063,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/向_Unified_Manager_数据库目录添加磁盘空间.pdf" 
@@ -1931,6 +2122,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理事件和警报.pdf" 
@@ -1944,6 +2138,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理事件.pdf" 
@@ -1959,6 +2156,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/什么是事件管理系统事件.pdf" 
@@ -2009,6 +2209,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/什么是_Unified_Manager_维护窗口.pdf" 
@@ -2039,6 +2242,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/了解有关事件的更多信息.pdf" 
@@ -2075,6 +2281,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/事件和严重性类型的列表.pdf" 
@@ -2161,6 +2370,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/事件窗口和对话框的问题描述.pdf" 
@@ -2178,6 +2390,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/事件详细信息页面.pdf" 
@@ -2228,6 +2443,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理警报.pdf" 
@@ -2245,6 +2463,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/正在添加警报.pdf" 
@@ -2283,6 +2504,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/警报窗口和对话框的问题描述.pdf" 
@@ -2320,6 +2544,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理脚本.pdf" 
@@ -2343,6 +2570,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/脚本窗口和对话框的问题描述.pdf" 
@@ -2387,6 +2617,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/监控和管理集群性能.pdf" 
@@ -2400,6 +2633,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Active_IQ_Unified_Manager_性能监控简介.pdf" 
@@ -2432,6 +2668,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_Unified_Manager_GUI_中导航性能工作流.pdf" 
@@ -2447,6 +2686,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/图形界面和导航路径.pdf" 
@@ -2488,6 +2730,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/了解性能事件和警报.pdf" 
@@ -2518,6 +2763,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理性能阈值.pdf" 
@@ -2562,6 +2810,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/通过信息板监控集群性能.pdf" 
@@ -2590,6 +2841,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用工作负载分析器对工作负载进行故障排除.pdf" 
@@ -2618,6 +2872,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/从性能集群登录页面监控集群性能.pdf" 
@@ -2633,6 +2890,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/性能集群登录页面.pdf" 
@@ -2646,6 +2906,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/性能集群摘要页面.pdf" 
@@ -2692,6 +2955,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用性能清单页面监控性能.pdf" 
@@ -2707,6 +2973,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/细化性能清单页面内容.pdf" 
@@ -2746,6 +3015,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用性能资源管理器页面监控性能.pdf" 
@@ -2763,6 +3035,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/指定相关对象的时间范围.pdf" 
@@ -2803,6 +3078,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/计数器图表缩放视图.pdf" 
@@ -2841,6 +3119,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/对象登录页面的组件.pdf" 
@@ -2876,6 +3157,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用_QoS_策略组信息管理性能.pdf" 
@@ -2912,6 +3196,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用性能容量和可用_IOPS_信息管理性能.pdf" 
@@ -2950,6 +3237,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/了解和使用_Node_Failover_Planning_页面.pdf" 
@@ -2980,6 +3270,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/收集数据并监控工作负载性能.pdf" 
@@ -3005,6 +3298,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/监控_MetroCluster_配置的性能.pdf" 
@@ -3029,6 +3325,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/什么是性能事件.pdf" 
@@ -3068,6 +3367,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/分析性能事件.pdf" 
@@ -3083,6 +3385,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/根据用户定义的性能阈值分析事件.pdf" 
@@ -3107,6 +3412,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/根据系统定义的性能阈值分析事件.pdf" 
@@ -3139,6 +3447,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/分析动态性能阈值中的事件.pdf" 
@@ -3158,6 +3469,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/MetroCluster_配置的性能事件分析.pdf" 
@@ -3217,6 +3531,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/解决性能事件.pdf" 
@@ -3242,6 +3559,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在不太繁忙的时间运行存储效率操作.pdf" 
@@ -3301,6 +3621,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_Unified_Manager_服务器和外部数据提供程序之间设置连接.pdf" 
@@ -3338,6 +3661,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/监控和管理集群运行状况.pdf" 
@@ -3351,6 +3677,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Active_IQ_Unified_Manager_运行状况监控简介.pdf" 
@@ -3377,6 +3706,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理和监控集群和集群对象运行状况.pdf" 
@@ -3390,6 +3722,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/了解集群监控.pdf" 
@@ -3459,6 +3794,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/常见_Unified_Manager_运行状况工作流和任务.pdf" 
@@ -3472,6 +3810,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/监控数据可用性并对其进行故障排除.pdf" 
@@ -3485,6 +3826,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/扫描并解决存储故障转移互连链路断开情况.pdf" 
@@ -3509,6 +3853,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/解决卷脱机问题.pdf" 
@@ -3522,6 +3869,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/针对卷脱机情况执行诊断操作.pdf" 
@@ -3568,6 +3918,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/解决容量问题.pdf" 
@@ -3592,6 +3945,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理运行状况阈值.pdf" 
@@ -3607,6 +3963,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/配置全局运行状况阈值设置.pdf" 
@@ -3652,6 +4011,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理集群安全目标.pdf" 
@@ -3665,6 +4027,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/评估的安全标准是什么.pdf" 
@@ -3722,6 +4087,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理备份和还原操作.pdf" 
@@ -3737,6 +4105,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用_MySQL_数据库转储进行备份和还原.pdf" 
@@ -3767,6 +4138,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用_NetApp_Snapshot_进行备份和还原.pdf" 
@@ -3780,6 +4154,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_Linux_上配置备份.pdf" 
@@ -3806,6 +4183,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_Windows_上配置备份.pdf" 
@@ -3866,6 +4246,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理脚本.pdf" 
@@ -3896,6 +4279,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理和监控组.pdf" 
@@ -3909,6 +4295,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/了解组.pdf" 
@@ -3968,6 +4357,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用标注确定存储对象事件的优先级.pdf" 
@@ -3981,6 +4373,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/了解有关标注的更多信息.pdf" 
@@ -4040,6 +4435,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/通过_Web_UI_和维护控制台发送支持包.pdf" 
@@ -4074,6 +4472,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/与多个工作流相关的任务和信息.pdf" 
@@ -4124,6 +4525,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/保护和还原数据.pdf" 
@@ -4137,6 +4541,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/创建保护关系并对其进行故障排除.pdf" 
@@ -4152,6 +4559,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/在_Unified_Manager_中设置保护关系.pdf" 
@@ -4182,6 +4592,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/执行保护关系故障转移和故障恢复.pdf" 
@@ -4212,6 +4625,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/解决保护作业故障.pdf" 
@@ -4247,6 +4663,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理和监控保护关系.pdf" 
@@ -4334,6 +4753,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/监控_Storage_VM_灾难恢复保护关系.pdf" 
@@ -4382,6 +4804,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/保护关系的问题描述窗口和对话框.pdf" 
@@ -4470,6 +4895,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/生成自定义报告.pdf" 
@@ -4483,6 +4911,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Unified_Manager_报告.pdf" 
@@ -4496,6 +4927,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/用于生成报告的访问点.pdf" 
@@ -4539,6 +4973,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用报告.pdf" 
@@ -4558,6 +4995,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/自定义报告.pdf" 
@@ -4601,6 +5041,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/计划报告.pdf" 
@@ -4614,6 +5057,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/计划报告.pdf" 
@@ -4638,6 +5084,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理报告计划.pdf" 
@@ -4673,6 +5122,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/示例自定义报告.pdf" 
@@ -4686,6 +5138,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/自定义集群存储报告.pdf" 
@@ -4716,6 +5171,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/自定义聚合容量报告.pdf" 
@@ -4744,6 +5202,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/自定义卷容量报告.pdf" 
@@ -4772,6 +5233,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/自定义_qtree_容量报告.pdf" 
@@ -4796,6 +5260,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/自定义_NFS_共享报告.pdf" 
@@ -4822,6 +5289,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/自定义_Storage_VM_报告.pdf" 
@@ -4848,6 +5318,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/自定义卷关系报告.pdf" 
@@ -4882,6 +5355,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/自定义卷性能报告.pdf" 
@@ -4915,6 +5391,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/示例_Microsoft_Excel_报告.pdf" 
@@ -4954,6 +5433,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/使用_REST_API_管理存储.pdf" 
@@ -4967,6 +5449,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Active_IQ_Unified_Manager_入门.pdf" 
@@ -4999,6 +5484,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Active_IQ_Unified_Manager_中的_REST_API_访问和身份验证.pdf" 
@@ -5031,6 +5519,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/Unified_Manager_REST_API.pdf" 
@@ -5058,6 +5549,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理工作负载.pdf" 
@@ -5103,6 +5597,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/存储管理的通用工作流.pdf" 
@@ -5122,6 +5619,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/工作负载管理工作流.pdf" 
@@ -5141,6 +5641,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/修改存储工作负载.pdf" 
@@ -7045,6 +7548,7 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
+
   </div>
   
 
@@ -7093,7 +7597,7 @@
 <p class="page-details">
   
     
-    <time datetime="2021-11-04 21:44:06 +0000">11/04/2021</time>
+    <time datetime="2022-04-18 07:16:23 +0000">04/18/2022</time>
     
   
 
@@ -7180,98 +7684,122 @@
   <div class="n-footer__bottom">
     <div class="n-container">
       <div class="n-footer__bottom-left">
-
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
-
-</ul>
-</div>
-<div class="n-footer__social-links">
-<ul class="n-footer__social-link-list">
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
-<span class="n-footer__social-link-text">blog</span>
-<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
-  <title>blog@</title>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#blog"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
-<span class="n-footer__social-link-text">community</span>
-<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
-<title>community@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#comments"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
-<span class="n-footer__social-link-text">twitter</span>
-<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
-<title>twitter@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#twitter"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
-<span class="n-footer__social-link-text">facebook</span>
-<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
-<title>facebook@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#facebook"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
-<span class="n-footer__social-link-text">linkedin</span>
-<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
-<title>linkedin@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#linkedin"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
-<span class="n-footer__social-link-text">youtube</span>
-<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
-<title>youtube@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#youtube"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
-<span class="n-footer__social-link-text">slideshare</span>
-<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
-<title>slideshare@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#slideshare"></use>
-</svg>
-
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-<div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
-  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
-  </p>
-</div>
-</div>
-</div>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">条款和条件</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">想就我们的网站提供反馈?</span>
+              <a target="_self" href="javascript:netapp_mailto()">请告诉我们</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-cn/announcements/">通知</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/active-iq-unified-manager/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
       </div><!-- Elasticsearch JS -->
