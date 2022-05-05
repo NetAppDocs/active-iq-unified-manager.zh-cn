@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>管理性能服务级别</title>
+  <title>性能服务级别</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="管理性能服务级别" />
+  <meta property="og:title" content="性能服务级别" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-cn/active-iq-unified-manager/storage-mgmt/concept_manage_performance_service_levels.html" />
-	<meta property="og:description" content="通过性能服务级别，您可以定义工作负载的性能和存储目标。您可以在最初创建工作负载时为工作负载分配性能服务级别，也可以稍后通过编辑工作负载来分配性能服务级别。" />
+	<meta property="og:description" content="性能服务级别计算和管理。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/active-iq-unified-manager/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="通过性能服务级别，您可以定义工作负载的性能和存储目标。您可以在最初创建工作负载时为工作负载分配性能服务级别，也可以稍后通过编辑工作负载来分配性能服务级别。">
-  <meta name="keywords" content=" manage, performance, service, levels"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="性能服务级别计算和管理。">
+  <meta name="keywords" content=" manage, performance service level, PSL, User-defined, system-defined PSL, bursty, Database PSL, extreme PSL, beyond extreme PSL"><!-- Icons -->
   <link rel="icon" href="/zh-cn/active-iq-unified-manager/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/issues/new?body=Page%3A%20[管理性能服务级别](https://docs.netapp.com/zh-cn/active-iq-unified-manager/storage-mgmt/concept_manage_performance_service_levels.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/active-iq-unified-manager/images/discuss-sm.svg" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/blob/main/storage-mgmt/concept_manage_performance_service_levels.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/active-iq-unified-manager/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/active-iq-unified-manager/images/article-sm.svg" class="github-icon" />提供者指南</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/issues/new?body=Page%3A%20[性能服务级别](https://docs.netapp.com/zh-cn/active-iq-unified-manager/storage-mgmt/concept_manage_performance_service_levels.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/active-iq-unified-manager/images/discuss-sm.svg" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/blob/main/storage-mgmt/concept_manage_performance_service_levels.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/active-iq-unified-manager/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/active-iq-unified-manager/images/article-sm.svg" class="github-icon" />提供者指南</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此页面上</div>
@@ -1916,31 +1916,6 @@
           </a>
           
 
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/监控_MetroCluster_配置的性能.pdf" 
-            
-          >
-            <img src="/zh-cn/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
-            监控 MetroCluster 配置的性能
-          </a>
-          
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
 
 
 
@@ -2746,86 +2721,6 @@
           
           <a target="_blank" 
             
-              href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/了解性能事件和警报.pdf" 
-            
-          >
-            <img src="/zh-cn/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
-            了解性能事件和警报
-          </a>
-          
-
-
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
-
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理性能阈值.pdf" 
-            
-          >
-            <img src="/zh-cn/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
-            管理性能阈值
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
-
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
               href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/通过信息板监控集群性能.pdf" 
             
           >
@@ -3306,6 +3201,17 @@
 
 
 
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -3314,13 +3220,27 @@
           
           <a target="_blank" 
             
-              href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/监控_MetroCluster_配置的性能.pdf" 
+              href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/了解性能事件和警报.pdf" 
             
           >
             <img src="/zh-cn/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
-            监控 MetroCluster 配置的性能
+            了解性能事件和警报
           </a>
           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3341,11 +3261,11 @@
           
           <a target="_blank" 
             
-              href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/什么是性能事件.pdf" 
+              href="/zh-cn/active-iq-unified-manager/pdfs/sidebar/管理性能阈值.pdf" 
             
           >
             <img src="/zh-cn/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
-            什么是性能事件
+            管理性能阈值
           </a>
           
 
@@ -3357,12 +3277,17 @@
 
 
 
-          
-        </li>
-      </ul>
-    
 
-  
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4797,12 +4722,6 @@
 
 
 
-
-
-
-
-
-
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -4818,10 +4737,6 @@
             保护关系的问题描述窗口和对话框
           </a>
           
-
-
-
-
 
 
 
@@ -6196,12 +6111,9 @@
       </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/storage-mgmt/concept_manage_and_monitor_metrocluster_configurations.html">
         <div class="na-navbar-padding"> 管理和监控 MetroCluster 配置</div>
       </a>
-      <ul><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/storage-mgmt/concept_performance_monitoring_of_metrocluster.html">
-        <div class="na-navbar-padding"> 监控 MetroCluster 配置的性能</div>
-      </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/storage-mgmt/concept_volume_behavior_during_switchover_and_switchback.html">
         切换和切回期间的卷行为
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/storage-mgmt/reference_cluster_connectivity_status_definitions.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/storage-mgmt/reference_cluster_connectivity_status_definitions.html">
         集群连接状态定义
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/storage-mgmt/reference_data_mirroring_status_definitions.html">
         数据镜像状态定义
@@ -6503,42 +6415,6 @@
         正在搜索存储对象
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_filter_inventory_page_content.html">
         筛选清单页面内容
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/performance-checker/concept_understand_performance_events_and_alerts.html">
-        <div class="na-navbar-padding"> 了解性能事件和警报</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_sources_of_performance_events.html">
-        性能事件的来源
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/reference_performance_event_severity_types.html">
-        性能事件严重性类型
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_cluster_configuration_changes_detected_by_unified_manager.html">
-        Unified Manager 检测到配置更改
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/reference_types_of_system_defined_performance_threshold_policies.html">
-        系统定义的性能阈值策略的类型
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/performance-checker/concept_manage_performance_thresholds.html">
-        <div class="na-navbar-padding"> 管理性能阈值</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_how_user_defined_performance_threshold_policies_work.html">
-        用户定义的性能阈值策略的工作原理
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_what_happens_when_performance_threshold_policy_is_breached.html">
-        违反性能阈值策略时会发生什么情况
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/reference_what_performance_metrics_can_be_monitored_using_thresholds.html">
-        可以使用阈值跟踪哪些性能计数器
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/reference_what_objects_can_be_used_in_threshold_policies.html">
-        在组合阈值策略中可以使用哪些对象和计数器
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_create_user_defined_performance_threshold_policies.html">
-        创建用户定义的性能阈值策略
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_assign_performance_threshold_policies_to_storage_objects.html">
-        为存储对象分配性能阈值策略
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_view_performance_threshold_policies.html">
-        查看性能阈值策略
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_edit_user_defined_performance_threshold_policies.html">
-        编辑用户定义的性能阈值策略
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_remove_performance_threshold_policies_from_storage_objects.html">
-        从存储对象中删除性能阈值策略
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_what_happens_when_performance_threshold_policy_is_changed.html">
-        更改性能阈值策略时会发生什么情况
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_performance_threshold_policies_when_object_is_moved.html">
-        移动对象时性能阈值策略会发生什么情况
       </a></li></ul></li><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/performance-checker/concept_monitor_cluster_performance_from_dashboard.html">
         <div class="na-navbar-padding"> 通过信息板监控集群性能</div>
       </a>
@@ -6706,15 +6582,20 @@
         Unified Manager 如何使用工作负载延迟来确定性能问题
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_how_cluster_operations_can_affect_workload_latency.html">
         集群操作如何影响工作负载延迟
-      </a></li><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/performance-checker/concept_performance_monitor_of_metrocluster_configurations.html">
-        <div class="na-navbar-padding"> 监控 MetroCluster 配置的性能</div>
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_performance_monitor_of_metrocluster_configurations.html">
+        监控 MetroCluster 配置的性能
+      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/performance-checker/concept_understand_performance_events_and_alerts.html">
+        <div class="na-navbar-padding"> 了解性能事件和警报</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_volume_behavior_during_switchover_and_switchback.html">
-        切换和切回期间的卷行为
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/performance-checker/concept_what_performance_events_are.html">
-        <div class="na-navbar-padding"> 什么是性能事件</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/reference_performance_event_analysis_and_notification.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_sources_of_performance_events.html">
+        性能事件的来源
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/reference_performance_event_severity_types.html">
+        性能事件严重性类型
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_cluster_configuration_changes_detected_by_unified_manager.html">
+        Unified Manager 检测到配置更改
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/reference_types_of_system_defined_performance_threshold_policies.html">
+        系统定义的性能阈值策略的类型
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/reference_performance_event_analysis_and_notification.html">
         性能事件分析和通知
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_how_um_determines_performance_impact_for_incident.html">
         Unified Manager 如何确定事件的性能影响
@@ -6722,7 +6603,32 @@
         集群组件及其可能发生争用的原因
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_roles_of_workloads_involved_in_performance_incident.html">
         性能事件中涉及的工作负载的角色
-      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/performance-checker/concept_analyze_performance_events.html">
+      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/performance-checker/concept_manage_performance_thresholds.html">
+        <div class="na-navbar-padding"> 管理性能阈值</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_how_user_defined_performance_threshold_policies_work.html">
+        用户定义的性能阈值策略的工作原理
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_what_happens_when_performance_threshold_policy_is_breached.html">
+        违反性能阈值策略时会发生什么情况
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/reference_what_performance_metrics_can_be_monitored_using_thresholds.html">
+        可以使用阈值跟踪哪些性能计数器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/reference_what_objects_can_be_used_in_threshold_policies.html">
+        在组合阈值策略中可以使用哪些对象和计数器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_create_user_defined_performance_threshold_policies.html">
+        创建用户定义的性能阈值策略
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_assign_performance_threshold_policies_to_storage_objects.html">
+        为存储对象分配性能阈值策略
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_view_performance_threshold_policies.html">
+        查看性能阈值策略
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_edit_user_defined_performance_threshold_policies.html">
+        编辑用户定义的性能阈值策略
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_remove_performance_threshold_policies_from_storage_objects.html">
+        从存储对象中删除性能阈值策略
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_what_happens_when_performance_threshold_policy_is_changed.html">
+        更改性能阈值策略时会发生什么情况
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/concept_performance_threshold_policies_when_object_is_moved.html">
+        移动对象时性能阈值策略会发生什么情况
+      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/active-iq-unified-manager/performance-checker/concept_analyze_performance_events.html">
         <div class="na-navbar-padding"> 分析性能事件</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/performance-checker/task_display_information_about_performance_event.html">
@@ -6940,16 +6846,16 @@
         卷合规性类别
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/health-checker/concept_what_does_not_compliant_mean.html">
         不合规的含义
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/health-checker/task_view_high_level_cluster_security_status.html">
-        查看集群安全状态概况
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/health-checker/task_view_detailed_security_status_for_clusters_and_svms.html">
-        查看集群和 SVM 的详细安全状态
+        查看集群和Storage VM的详细安全状态
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/health-checker/task_view_security_events_that_require_software_or_firmware_updates.html">
         查看可能需要更新软件或固件的安全事件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/health-checker/task_view_how_user_authentication_is_being_managed_on_all_clusters.html">
         查看如何在所有集群上管理用户身份验证
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/health-checker/task_view_encryption_status_of_all_volumes.html">
         查看所有卷的加密状态
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/health-checkertask_view_antiransomware_status_of_all_volumes_storage_vms.html">
+        查看所有卷和Storage VM的反勒索软件状态
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/health-checker/task_view_all_security_events.html">
         查看所有活动安全事件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/health-checker/task_add_alerts_for_security_events.html">
@@ -7237,16 +7143,10 @@
         从 Storage VM 页面查看保护关系
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/task_view_storage_vms_based_on_protection_status.html">
         根据保护状态查看 Storage VM
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/concept_understand_svm_associations.html">
-        了解 Storage VM 对等方
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/reference_protection_storage_virtual_machine_associations_page.html">
+        了解Storage VM关联
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/concept_storage_virtual_machine_and_resource_pool_requirements.html">
         支持存储服务的 SVM 和资源池要求
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/task_create_storage_virtual_machine_svm_associations.html">
-        创建 Storage VM 对等方
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/task_view_svm_associations.html">
-        查看 Storage VM 对等方
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/task_delete_svm_associations.html">
-        正在删除 Storage VM 对等方
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/concept_what_jobs_are.html">
         什么是作业
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/task_monitor_jobs.html">
@@ -7268,10 +7168,6 @@
         编辑资源池对话框
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/reference_aggregates_dialog_box.html">
         聚合对话框
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/reference_protection_storage_virtual_machine_associations_page.html">
-        SVM 对等方页面
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/reference_create_storage_virtual_machine_associations_wizard.html">
-        创建 Storage Virtual Machine 对等方向导
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/reference_protection_jobs_page.html">
         作业页面
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/active-iq-unified-manager/data-protection/reference_job_details_page.html">
@@ -7592,37 +7488,107 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">管理性能服务级别</h1>
+  <h1 class="n-doc__component-detail-heading">性能服务级别</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 07:16:23 +0000">04/18/2022</time>
+    <time datetime="2022-05-05 08:28:43 +0000">05/05/2022</time>
     
   
 
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>通过性能服务级别，您可以定义工作负载的性能和存储目标。您可以在最初创建工作负载时为工作负载分配性能服务级别，也可以稍后通过编辑工作负载来分配性能服务级别。</p>
+<p>通过性能服务级别(PSL)、您可以定义工作负载的性能和存储目标。您可以在最初创建工作负载时为工作负载分配PSL、也可以稍后通过编辑工作负载来分配PSL。</p>
 </div>
 <div class="paragraph">
-<p>存储资源的管理和监控基于服务级别目标（ Service Level Objective ， SLO ）。SLO 由基于所需性能和容量的服务级别协议定义。在 Unified Manager 中， SLO 是指在 NetApp 存储上运行的应用程序的 PSL 定义。存储服务会根据底层资源的性能和利用率进行区分。PSL 是存储服务目标的问题描述。通过 PSL ，存储提供程序可以为工作负载指定性能和容量目标。</p>
+<p>存储资源的管理和监控基于服务级别目标（ Service Level Objective ， SLO ）。SLO 由基于所需性能和容量的服务级别协议定义。在 Unified Manager 中， SLO 是指在 NetApp 存储上运行的应用程序的 PSL 定义。存储服务会根据底层资源的性能和利用率进行区分。PSL 是存储服务目标的问题描述。通过 PSL ，存储提供程序可以为工作负载指定性能和容量目标。在为工作负载分配PSL时、ONTAP 上的相应工作负载将通过其性能和容量目标进行管理。每个PSL均按峰值、预期和绝对最小IOPS以及预期延迟进行管理。</p>
 </div>
 <div class="paragraph">
-<p>Unified Manager 提供了一些无法更改的预设策略。这些预定义的性能服务级别包括： " 至高性能 " ， " 性能 " 和 " 价值 " 。极高性能，性能和价值 PSL 适用于数据中心中的大多数常见存储工作负载。Unified Manager 还为数据库应用程序提供了三个 PSL ：适用于数据库日志的至高 PSL ，适用于数据库共享数据的至高 PSL 以及适用于数据库数据的至高 PSL 。这些是性能极高的 PSL ，支持突发 IOPS ，适用于吞吐量需求最高的数据库应用程序。如果这些预定义的 PSL 不符合您的要求，则可以根据您的需求创建新的 PSL 。</p>
+<p>Unified Manager具有以下类型的PSL：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>系统定义</strong>：Unified Manager提供了一些无法更改的预设策略。这些预定义的PSL包括：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>极致性能</p>
+</li>
+<li>
+<p>性能</p>
+</li>
+<li>
+<p>价值</p>
+<div class="paragraph">
+<p>极高性能，性能和价值 PSL 适用于数据中心中的大多数常见存储工作负载。</p>
+</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>您可以从 * 策略 * &gt; * 性能服务级别 * 页面以及使用存储提供程序 API 访问 PSL 。通过为存储工作负载分配 PSL 来管理存储工作负载非常方便，因为您不必单独管理存储工作负载。也可以通过重新分配另一个 PSL 来管理任何修改，而不是单独管理这些修改。</p>
+<p>Unified Manager还为数据库应用程序提供了三个性能服务级别。这些是性能极高的 PSL ，支持突发 IOPS ，适用于吞吐量需求最高的数据库应用程序。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>适用于数据库日志的至高性能</p>
+</li>
+<li>
+<p>适用于数据库共享数据的至高性能</p>
+</li>
+<li>
+<p>适用于数据库数据的至高性能</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>用户定义</strong>：如果预定义的性能服务级别不符合您的要求、则可以根据您的需求创建新的PSL。有关信息，请参见 <a href="../storage-mgmt/task_create_and_edit_psls.html">"创建和编辑性能服务级别"</a>。</p>
+</li>
+<li>
+<p><strong>超出至高性能</strong>：超出至高性能PSL是系统建议的PSL、适用于要求IOPS高于至高性能的工作负载。系统会根据工作负载的IOPS、容量和延迟对这些工作负载进行内部分析、并在*存储&gt;工作负载&gt;所有工作负载*屏幕上为每个工作负载建议使用"超出至高PSL"。您可以将PSL应用于工作负载、以确保最佳性能。</p>
+<div class="paragraph">
+<p>根据工作负载行为、系统会动态生成工作负载的IOPS参数、并以`超过至高&lt;number-(峰值IOPS/TB)&gt;&lt;数字(预期IOPS/TB)&gt;`的格式附加到"超出至高" PSL的名称中。例如、如果系统确定工作负载的峰值和预期IOPS分别为`106345`和`37929`、则为该工作负载生成的"超出极高PSL"将命名为`超过极高106345 37929`。虽然系统建议使用这些PSL、但在将其分配给工作负载时、这些PSL的类型会标记为`User-Defined`。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="通过分配psl管理工作负载">通过分配PSL管理工作负载</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>您可以从*策略*&gt;*性能服务级别*页面以及使用存储提供程序API访问PSL。通过为存储工作负载分配 PSL 来管理存储工作负载非常方便，因为您不必单独管理存储工作负载。也可以通过重新分配另一个 PSL 来管理任何修改，而不是单独管理这些修改。Unified Manager可帮助您根据内部评估和建议为工作负载分配PSL。</p>
 </div>
 <div class="paragraph">
-<p>您不能修改系统定义的 PSL 或当前分配给工作负载的 PSL 。您不能删除分配给工作负载的 PSL ，也不能删除唯一可用的 PSL 。</p>
+<p>有关为工作负载分配系统建议的PSL的信息、请参见 <a href="..//storage-mgmt/concept_assign_policies_on_workloads.html#assigning-system-recommended-psls-to-workloads">"为工作负载分配系统建议的 PSL"</a></p>
 </div>
 <div class="paragraph">
-<p>" 性能服务级别 " 页面列出了可用的 PSL 策略，并可用于添加，编辑和删除这些策略。此页面显示以下信息：</p>
+<p>" 性能服务级别 " 页面列出了可用的 PSL 策略，并可用于添加，编辑和删除这些策略。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/active-iq-unified-manager/images/note.svg" alt="注">
+</td>
+<td class="content">
+您不能修改系统定义的 PSL 或当前分配给工作负载的 PSL 。您不能删除分配给工作负载的 PSL ，也不能删除唯一可用的 PSL 。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>此页面显示以下信息：</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -7641,7 +7607,7 @@
 <p>Name</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>性能服务级别的名称。</p>
+<p>PSL的名称。</p>
 </div></div></td>
 </tr>
 <tr>
@@ -7654,7 +7620,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>预期 IOPS</p>
+<p>预期 IOPS/TB</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>应用程序应在 LUN 或文件共享上执行的最小 IOPS 数。预期 IOPS 用于根据存储对象分配的大小指定最小预期分配的 IOPS 。</p>
@@ -7662,7 +7628,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>峰值 IOPS</p>
+<p>峰值 IOPS/TB</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>应用程序可以对 LUN 或文件共享执行的最大 IOPS 数。峰值 IOPS 用于根据存储对象的已分配大小或存储对象的已用大小指定可能分配的最大 IOPS 。</p>
@@ -7741,14 +7707,48 @@
 </tbody>
 </table>
 <div class="paragraph">
-<p>有关峰值 IOPS 和预期 IOPS 如何帮助在 ONTAP 集群上实现一致的差异化性能的信息，请参见以下知识库文章：</p>
+<p>有关峰值 IOPS 和预期 IOPS 如何帮助在 ONTAP 集群上实现一致的差异化性能的信息，请参见以下知识库文章：https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/What_is_Performance_Budgeting%3F["什么是性能预算？"]</p>
+</div>
+<div class="sect2">
+<h3 id="为违反psl定义的阈值的工作负载生成的事件">为违反PSL定义的阈值的工作负载生成的事件</h3>
+<div class="paragraph">
+<p>请注意、如果工作负载在前一小时30%的时间内超过预期延迟值、则Unified Manager将生成以下事件之一、以通知您可能存在性能问题描述 ：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>已违反性能服务级别策略定义的工作负载卷延迟阈值</p>
+</li>
+<li>
+<p>已违反性能服务级别策略定义的工作负载LUN延迟阈值。</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/What_is_Performance_Budgeting%3F">"什么是性能预算？"</a></p>
+<p>您可能需要分析工作负载，以查看可能导致延迟值增加的原因。</p>
 </div>
 <div class="paragraph">
-<p>请注意，如果工作负载在前一小时 30% 的时间内超过预期延迟值，则 Unified Manager 将生成以下事件之一，以通知您可能存在性能问题描述： " 已违反性能服务级别策略定义的工作负载卷延迟阈值 " 或 " 已违反性能服务级别策略定义的工作负载 LUN 延迟阈值 " 。您可能需要分析工作负载，以查看可能导致延迟值增加的原因。</p>
+<p>有关详细信息，请参见以下链接：</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../events/reference_volume_events.html#impact-area-performance">"卷事件"</a></p>
+</li>
+<li>
+<p><a href="../performance-checker/concept_what_happens_when_performance_threshold_policy_is_breached.html">"违反性能阈值策略时会发生什么情况"</a></p>
+</li>
+<li>
+<p><a href="..//performance-checker/concept_how_unified_manager_uses_workload_response_time.html">"Unified Manager 如何使用工作负载延迟来确定性能问题"</a></p>
+</li>
+<li>
+<p><a href="../performance-checker/concept_what_performance_events_are.html">"什么是性能事件"</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="系统定义的psl">系统定义的PSL</h3>
 <div class="paragraph">
 <p>下表提供了有关系统定义的 PSL 的信息：</p>
 </div>
@@ -7912,6 +7912,9 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
