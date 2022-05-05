@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: manage, lun 
 summary: 您可以使用 /storage-provider/lun API 查看，添加，修改和删除数据中心环境中的 LUN 。 
 ---
-= 管理 LUN
+= 使用API管理LUN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

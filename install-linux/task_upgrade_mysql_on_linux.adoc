@@ -11,13 +11,13 @@ summary: 您可以在安装了 Unified Manager 的 Linux 服务器上升级到�
 
 
 [role="lead"]
-您可以在安装了 Unified Manager 的 Linux 服务器上升级到较新版本的 MySQL ，以获取安全漏洞修复。如果系统上安装的 MySQL 版本早于 8.0.27 ，则 Unified Manager 9.10 升级过程会自动将 MySQL 升级到 8.0.27 。您不应将 MySQL 从早期版本独立升级到 8.0.27 。
+您可以在安装了 Unified Manager 的 Linux 服务器上升级到较新版本的 MySQL ，以获取安全漏洞修复。如果系统上安装的MySQL版本早于8.0.28、则Unified Manager 9.11升级过程会自动将MySQL升级到8.0.28。您不应将MySQL从早期版本独立升级到8.0.28。
 
 * 您需要的内容 *
 
 对于安装了 Unified Manager 的 Linux 系统，您必须具有 root 权限。
 
-您只能将 MySQL 8.0.27 的基本版本升级到更高版本，以便进行次要更新。
+您只能将MySQL 8.0.28的基本版本升级到更高版本、以便进行次要更新。
 
 .步骤
 . 以 root 用户身份登录到 Unified Manager 主机。
@@ -25,11 +25,11 @@ summary: 您可以在安装了 Unified Manager 的 Linux 服务器上升级到�
 . 将捆绑包解压缩到目标系统上的目录。
 . 在取消绑定后，您会在目录中获得多个 ` .rpm` 软件包，但 Unified Manager 仅需要以下 rpm 软件包：
 +
-** mysql-commune-client-8.0.27
-** mysql-commune-libs-8.0.27
-** mysql-commune-server-8.0.27
-** mysql-commune-common-8.0.27
-** mysql-commune-client-plugins-8.0.27 删除所有其他 ` .rpm` 软件包。但是，将所有软件包安装在 rpm 软件包中不会出现发生原因错误。
+** mysql-commune-client-8.0.28
+** mysql-commune-libs-8.0.28
+** mysql-commune-server-8.0.28
+** mysql-commune-common-8.0.28
+** mysql-commune-client-plugins-8.0.28删除所有其他`.rpm`软件包。但是，将所有软件包安装在 rpm 软件包中不会出现发生原因错误。
 
 
 . 按所示顺序停止 Unified Manager 服务和关联的 MySQL 软件：

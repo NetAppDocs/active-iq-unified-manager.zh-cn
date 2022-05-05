@@ -23,33 +23,32 @@ summary: 您可以使用程序和功能向导卸载 Unified Manager ，也可以
 .步骤
 . 通过选择以下选项之一卸载 Unified Manager ：
 +
-[cols="2*"]
-|===
-| 要从 ... 卸载 Unified Manager ，请执行以下操作： | 那么 ... 
+** 如果从*程序和功能*向导卸载Unified Manager、请执行以下步骤：
++
+... 导航到 * 控制面板 * > * 程序和功能 * 。
+... 选择 Active IQ Unified Manager ，然后单击 * 卸载 * 。
 
 
- a| 
-程序和功能向导：
-| ： 
+** 如果从命令行卸载Unified Manager、请执行以下步骤：
++
+... 使用管理员权限登录到Windows命令行。
+... 导航到Active IQ Unified Manager 目录、然后运行以下命令：
++
+`+msiexec /x｛A78760DB-7EC0-4305- 97DB-E4A89CDFF4E1｝/qn /l* v %systemdrive%\UmUnInstall.log+`
 
-
- a| 
-.. 导航到 * 控制面板 * > * 程序和功能 * 。
-.. 选择 Active IQ Unified Manager ，然后单击 * 卸载 * 。
-
- a| 
-命令行
-
-|===
 +
 如果在服务器上启用了用户帐户控制（ UAC ），并且您以域用户身份登录，则必须使用命令行卸载方法。
 
 +
 Unified Manager 已从系统中卸载。
 
+
+
+
+
 . 卸载 Unified Manager 卸载期间未删除的以下第三方软件包和数据：
 +
-** 第三方软件包： JRE ， MySQL ， Microsoft Visual C&#43 ； &#43 ； 2015 可重新分发软件包和 7zip
+** 第三方软件包：JRE、MySQL、Microsoft Visual C&#43；&#43；2015年可重新分发、Python、 和7zip
 ** Unified Manager 生成的 MySQL 应用程序数据
 ** 应用程序日志和应用程序数据目录的内容
 

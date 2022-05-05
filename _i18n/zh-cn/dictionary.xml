@@ -24,10 +24,7 @@
   <block id="dc45c2b39a506f4db838911d67200b0a" category="paragraph">特定类型存储对象在特定时间段（超过 72 小时）内的性能的高级别聚合值。</block>
   <block id="cf35b134176d8cf6bb230693679ad4ff" category="paragraph">将检索对象的基本详细信息，例如节点或集群的详细信息。</block>
   <block id="b3b07e7b8277f44ed6e9e7e8e8579f2a" category="paragraph">未检索到任何特定详细信息。</block>
-  <block id="7778f16d4295e8577e74d7058fb876a5" category="paragraph">系统会为单个对象检索累积计数器，例如读取，写入，总计和其他计数器，例如最小，最大，第 95 百分位以及一段时间内的平均性能值。例如， ` /datacenter/cluster/nodes/\ ｛ key ｝ /metrics` API 检索节点的以下详细信息（以及其他信息）：</block>
   <block id="b3c678f9c71cd51674956271d307db61" category="admonition">摘要值中的 95 百分位表示为该时间段收集的样本中 95% 的计数器值小于指定的 95 百分位值。</block>
-  <block id="eeebbebe982b16eae3d34f7772b61583" category="paragraph">对于同一类型的所有对象，将显示一个聚合值。例如， ` /datacenter/cluster/nodes/Analytics` API 检索所有节点的以下值（以及其他值）：</block>
-  <block id="887ae8ed46727f1bc92ce86b997fa389" category="paragraph">时间范围和示例数据基于以下计划：数据的时间范围。示例可以是 1 小时， 12 小时， 1 天， 2 天， 3 天， 15d ， 1 瓦， 1 米， 2 米， 3 米， 6 万。如果范围超过 3 天（ 72 小时），则可以获得 1 小时的样本，否则为 5 分钟的样本。每个时间范围的时间段如下：</block>
   <block id="7195b873ebe0544a8ed589eccc941fff" category="list-text">1 小时：最近一小时的指标在 5 分钟内取样。</block>
   <block id="1c619939aea29b8671d2c0519882c15e" category="list-text">12h ：最近 12 小时内的指标在 5 分钟内取样。</block>
   <block id="d8d99ec78494ec580bf42dafb37bdd6f" category="list-text">1d ：最近一天的指标取样时间超过 5 分钟。</block>
@@ -511,31 +508,23 @@
   <block id="9966a118962913f23fdc13c6ab637e77" category="paragraph">要创建 LUN ，请确保已将检索到的值添加为必需的输入参数。</block>
   <block id="90c764bb5ddb317b1d8d07e77de09fad" category="paragraph">存储效率策略是用于创建 LUN 的可选参数。</block>
   <block id="6280c5b5faa0d06803616c53024ca4b9" category="paragraph">您必须输入要创建的 LUN 的所有详细信息作为输入参数。</block>
-  <block id="049262646740308b766e6e531e2293cb" category="paragraph">Wombat ：提取 1</block>
   <block id="bf0a6ce01c458cedfc683803e00e1122" category="paragraph">JSON 输出将显示一个作业对象密钥，您可以使用该关键字验证您创建的 LUN 。</block>
   <block id="8b9993195033db0f202c52842b83921a" category="list-text">使用查询作业时返回的作业对象密钥验证 LUN 创建：</block>
   <block id="2802e294767ec3795cae28f735f00911" category="paragraph">响应结束时，您会看到创建的 LUN 的密钥。</block>
-  <block id="00dfe9ed0fc0e00120c4b2a9cf7f1071" category="paragraph">Wombat ：提取第 2 个</block>
   <block id="a03c16367d60fe677b196252b102ace8" category="list-text">通过使用返回的密钥运行以下 API 来验证 LUN 的创建：</block>
   <block id="e24e3f7419560b5cabc960162dcb8756" category="paragraph">您可以看到， ` /storage-provider/lun` 的 POST 方法会在内部调用每个功能所需的所有 API 并创建对象。例如，它会调用 ` /storage-provider/performance-service-levels/` API 来为 LUN 分配性能服务级别。</block>
-  <block id="f7d00850e5e407e047637ea533202062" category="paragraph">Wombat ：提取第 3 项</block>
-  <block id="56989fc7a9a7e886de1fa98a56a0a9c8" category="section-title">LUN 创建或映射失败的故障排除步骤</block>
   <block id="0abdcda4480c5da9f6088c32502b745e" category="paragraph">完成此工作流后，您可能仍会看到 LUN 创建失败。即使已成功创建 LUN ，与 igroup 的 LUN 映射也可能会因创建 LUN 的节点上没有 SAN LIF 或访问端点而失败。如果发生故障，您可以看到以下消息：</block>
   <block id="2366e4d85c1368efcd2a4b6f5bb1096d" category="paragraph">按照以下故障排除步骤解决此故障。</block>
   <block id="f786a57b6968727e522d93814213101a" category="list-text">在尝试创建 LUN 的 SVM 上创建一个支持 iSCSI/FCP 协议的访问端点。</block>
   <block id="71ad100ad3f24e98bca747d9d52bcf1a" category="paragraph">您必须输入要创建的访问端点的详细信息作为输入参数。</block>
   <block id="da44b9fefa343f39fca68be1e0e89779" category="paragraph">确保已在输入参数中添加地址以指示 LUN 的主节点，并添加 ha_address 以指示主节点的配对节点。运行此操作时，它会在主节点和配对节点上创建访问端点。</block>
-  <block id="45befbbf82d7f446106c805dd91a1a72" category="paragraph">Wombat ：提取第 4 个</block>
   <block id="d944773e838e30b10cae87b55ec1104e" category="list-text">使用 JSON 输出中返回的作业对象密钥查询作业，以验证它是否已成功运行以在 SVM 上添加访问端点，以及是否已在 SVM 上启用 iSCSI/FCP 服务。</block>
   <block id="d7d7df74e1ce5335b4163f7e77a3a691" category="paragraph">在输出末尾，您可以看到创建的访问端点的密钥。在以下输出中， "name" ： "accessEndpointKey" 值表示在 LUN 的主节点上创建的访问端点，其密钥为 9c964258-14ef-11ea-952-00a098e32c28 。"name" ： "accessEndpointHAKey" 值表示在主节点的配对节点上创建的访问端点，其密钥为 9d347006-14ef-11ea-8760-00a098e3215f 。</block>
-  <block id="5508c78db23fdfa6a088655edd121e51" category="paragraph">Wombat ：提取第 5 个</block>
   <block id="49be75367a8d9b7f89252d7838bcbb95" category="list-text">修改 LUN 以更新 igroup 映射。有关工作流修改的详细信息，请参见 " `M修改存储工作负载` " 。</block>
   <block id="242cbd5484218f67c45660e797c7a225" category="paragraph">在输入中，指定要用于更新 LUN 映射的 igroup 密钥以及 LUN 密钥。</block>
-  <block id="b586e3d0271583461b3aa9cc743628e0" category="paragraph">Wombat ：摘录 6</block>
   <block id="31cadb84616458057fb8387b48d2b77c" category="paragraph">JSON 输出将显示一个作业对象密钥，您可以使用该对象密钥验证映射是否成功。</block>
   <block id="59ed257d858cdb21c7060d47730cf5ea" category="list-text">使用 LUN 密钥查询以验证 LUN 映射。</block>
   <block id="3d1e874465f4fdd7f5a34c813378c606" category="paragraph">在输出中，您可以看到 LUN 已成功映射到最初配置它的 igroup （密钥 d19ec2fa-fec7-11e8-b23d-00a098e32c28 ）。</block>
-  <block id="9af5b136cd1d5fd076dc14822c50821b" category="paragraph">Wombat ：提取 7</block>
   <block id="57469eb10fb3f5934db52348b0c7ea12" category="summary">您可以使用安全类别中的 API 控制用户对 Active IQ Unified Manager 中选定集群对象的访问。您可以添加本地用户或数据库用户。您还可以添加属于身份验证服务器的远程用户或组。根据分配给用户的角色的权限，用户可以在 Unified Manager 中管理存储对象或查看数据。</block>
   <block id="93e4e8b56119093f81b4aed41ceeea38" category="doc">管理用户</block>
   <block id="af0c210a6f2ae84e551c9886dbe2638d" category="paragraph">您可以使用 `sSecurity` 类别中的 API 控制用户对 Active IQ Unified Manager 中选定集群对象的访问。您可以添加本地用户或数据库用户。您还可以添加属于身份验证服务器的远程用户或组。根据分配给用户的角色的权限，用户可以在 Unified Manager 中管理存储对象或查看数据。</block>
@@ -2136,7 +2125,6 @@
   <block id="c977ccf6a1cca8720916aa986e8e90e1" category="list-text">在视图菜单中，选择 * 运行状况：所有集群 * 视图以查看运行状况信息，或者选择 * 容量：所有集群 * 视图以查看有关所有集群中存储容量和利用率的详细信息。</block>
   <block id="a80dcf26976d9ce1a0b8078a55d9aa08" category="list-text">单击集群名称可在 * 集群 / 运行状况 * 详细信息页面中查看集群的完整详细信息。</block>
   <block id="b6bde5ece7fba8cda6e408dc0cec702c" category="paragraph"><block ref="b6bde5ece7fba8cda6e408dc0cec702c" category="inline-link-macro-rx"></block></block>
-  <block id="ede6fbde73bf0485fdd055280b82001d" category="summary">您可以生成包含诊断信息的支持包，以便将其发送给技术支持以获取故障排除帮助。从 Unified Manager 9.8 开始，如果 Unified Manager 服务器已连接到 Internet ，您还可以从维护控制台将支持包上传到 NetApp 。</block>
   <block id="dd3d7fe723d933be7fc14ce6b3b64c01" category="doc">生成并上传支持包</block>
   <block id="56c12fd8a5cff84a91ee618e03c20183" category="paragraph">您必须以维护用户身份访问维护控制台。</block>
   <block id="a514c988b092c5f5cdc72bc048202257" category="paragraph">由于某些类型的支持数据可能会占用大量集群资源或需要很长时间才能完成，因此，在选择完整支持包时，您可以指定要包含或排除的数据类型以减小支持包大小。您还可以选择创建一个轻型支持包，该包只包含 30 天的日志和配置数据库记录，它不包括性能数据，采集录制文件和服务器堆转储。</block>
@@ -2801,24 +2789,8 @@
   <block id="e92528b72844561e5d317c4ddfbaf664" category="paragraph">显示选定 FlexClone 卷的父卷的名称和容量。只有当选定卷为 FlexClone 卷时，才会显示父卷。</block>
   <block id="15ef496ae746b4e0218bb79355f85962" category="paragraph">通过 " 相关组 " 窗格，您可以查看与选定卷关联的组列表。</block>
   <block id="583cbc558bb147ccf3a3521937140fef" category="paragraph">" 相关警报 " 窗格可用于查看为选定卷创建的警报列表。您也可以通过单击添加警报链接来添加警报，或者通过单击警报名称来编辑现有警报。</block>
-  <block id="afb078a3db15f9c680517f2df6a673eb" category="summary">" 安全性 " 页面显示所有集群的高级别安全状态以及各个集群的详细安全状态。详细的集群状态包括集群合规性， SVM 合规性和卷加密合规性。</block>
   <block id="80b444e335b0732b7b90623cbd5717e9" category="doc">查看集群和 Storage VM 的详细安全状态</block>
-  <block id="dcc1562e004411d25dd6d80348614e36" category="paragraph">" 安全性 " 页面显示所有集群的高级别安全状态以及各个集群的详细安全状态。</block>
-  <block id="d2de9251171314e14830e48763c831b0" category="paragraph">作为系统管理员，您可以使用 * 安全性 * 页面查看 ONTAP 集群和 Storage VM 在数据中心和站点级别的安全优势。</block>
-  <block id="5d582990e94f0286cf780932d6652813" category="paragraph">您可以根据定义的参数收集和分析信息，以检测受监控集群和 Storage VM 上的可疑行为或任何未经授权的系统更改。</block>
-  <block id="6de41def29128fecf2b724bf9d3bd477" category="paragraph">详细的集群状态包括集群合规性， SVM 合规性和卷加密合规性。</block>
-  <block id="12bf1764410c2cd6952534f31c7f8be2" category="paragraph">集群 / 安全详细信息页面通过检查全局 FIPS ， Telnet ，不安全 SSH 设置，登录横幅，网络时间协议等安全参数，提供集群安全合规性的默认视图。 AutoSupport HTTPS 传输和默认管理员。</block>
-  <block id="bb16d284fad982cea57d74217a1303dd" category="paragraph">Storage VM/ 安全性详细信息页面可通过检查安全参数（例如 Storage VM ，集群，登录横幅，审核日志和不安全的 SSH 设置）来提供 Storage VM 安全合规性的默认视图。</block>
-  <block id="63c96579178978ec9ef522c07cddb50b" category="paragraph">您也可以从集群和 Storage VM 详细信息页面生成，计划和下载安全合规性报告。</block>
-  <block id="31feacd175bfb8433129ea3266c03241" category="paragraph">在 * 安全信息板 * 中，单击 * 集群合规性 * 和 * 存储 VM 合规性 * 卡中的 * 查看报告 * 。</block>
   <block id="0da0e153560fee72ee839d42802ffce4" category="list-text">根据您要查看所有受监控集群或单个集群的安全状态，选择 * 所有集群 * 或从下拉菜单中选择一个集群。</block>
-  <block id="001cdcc1bced815dbb889c31d496a91c" category="list-text">单击 * 安全性 * 面板中的右箭头。</block>
-  <block id="21b404ba083f7cb1aacb4498842a979b" category="paragraph">" 安全性 " 页面将显示以下信息：</block>
-  <block id="37462259fe1133486ea0bfe4e480c5d4" category="list-text">集群安全状态（合规或不合规的集群数量）</block>
-  <block id="672f035432eaef3b1070ec3b0f8801f8" category="list-text">SVM 安全状态（合规或不合规的 SVM 数量）</block>
-  <block id="4b94431060fff6aed3bb4c4607431e43" category="list-text">卷加密状态（已加密或未加密的卷数）</block>
-  <block id="1113c5580efb5e128133e0c849ea6b54" category="list-text">每个集群上使用的集群身份验证方法</block>
-  <block id="a4deeec5e2b40be9ffab412cfc04266c" category="list-text">请参见<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block> 有关如何使所有集群， SVM 和卷符合 NetApp 安全建议的说明。</block>
   <block id="0773e722b06724950cd91ae0b155d2b2" category="summary">导航到报告为脱机的卷的 "Volume/Health" 详细信息页面后，您可以搜索追加信息以帮助诊断卷脱机情况。</block>
   <block id="312861dc1c768f4bf2bba5f63d8d0920" category="doc">针对卷脱机情况执行诊断操作</block>
   <block id="b39050683788fd1119696ec82cdb91b2" category="paragraph">如果报告脱机的卷未被有意脱机，则该卷可能会因为多种原因脱机。</block>
@@ -3116,15 +3088,6 @@
   <block id="eb72de6c30dbdd13a821634400904a6a" category="paragraph">建议将备份文件复制到默认目录 ` \ProgramData\NetApp\OnCommandAppData\ocum\backup` 。数据库存储库文件必须复制到 ` \backup` 目录下的 ` \database_dump _repos` 子目录。</block>
   <block id="948c2cb498a24536a687ebde6b50f93d" category="paragraph">还原功能是针对平台和版本的。您只能在同一版本的 Unified Manager 上还原 Unified Manager MySQL 备份，并且 Windows 备份只能在 Windows 平台上还原。</block>
   <block id="aa3ab80f8d41d2b351afa9c6f3df95ab" category="paragraph">如果文件夹名称包含空格，则必须使用双引号将备份文件的绝对路径或相对路径包括在内。</block>
-  <block id="aab5eede3370dc677f5e40ee8f7d8364" category="summary">Unified Manager 信息板上的 " 安全 " 面板根据您的当前视图显示所有集群或单个集群的高级安全状态。</block>
-  <block id="885f5600f37af7d8d04e7e7d203755b2" category="doc">查看集群安全状态概况</block>
-  <block id="fdf9ab6d7d8f2cd2596a368e1dc822ce" category="paragraph">Unified Manager 信息板上的 " 安全性 " 面板根据当前视图显示所有集群或单个集群的高级别安全状态。</block>
-  <block id="4cb5151bae27cc78c3bfad72d948e1fe" category="list-text">查看 * 安全性 * 面板以查看整体状态。</block>
-  <block id="8f6de4832f68549c5e00fbd7e1e6721c" category="paragraph">此面板将显示：</block>
-  <block id="3f922fc1d1faab7789fa067de040413e" category="list-text">列出过去 24 小时内收到的安全事件</block>
-  <block id="eaf4d3bbced59181bfd5927fa3b8501e" category="list-text">从每个事件到 " 事件 " 详细信息页面的链接</block>
-  <block id="7787565caf02ff4b3762baed16dc09e4" category="list-text">一个链接，用于在事件管理清单页面中查看所有活动安全事件</block>
-  <block id="3a33d89d67956f13839553ac8bb070d4" category="list-text">单击面板顶部的右箭头可在 * 安全性 * 页面中查看安全详细信息。</block>
   <block id="683db528db87f79cfc80e3b7bd8cb8f4" category="summary">如果要更改运行 Unified Manager 的主机操作系统，您可以将 Unified Manager MySQL 数据库转储备份从虚拟设备还原到 Red Hat Enterprise Linux 或 CentOS Linux 系统。</block>
   <block id="78a4b48e7cdb9b97aa7767907cc7567d" category="doc">将 Unified Manager 虚拟设备迁移到 Linux 系统</block>
   <block id="5c96c912b91fd84d629dedfd84808218" category="list-text">在虚拟设备上：</block>
@@ -3324,44 +3287,11 @@
   <block id="c86be4c7cc6733aa1395ae98bc490c33" category="paragraph">丢弃所做的选择并关闭初始化 / 更新对话框。</block>
   <block id="1cab5d959d1d53ea75184e3242f4a65f" category="list-text">* 提交 *</block>
   <block id="91c734c8451fe6de2215da06b51641d1" category="paragraph">保存所做的选择并启动初始化或更新作业。</block>
-  <block id="05e36b04644c76640a3bcea423fce5ea" category="summary">通过创建 Storage Virtual Machine 对等方向导，您可以对源和目标 Storage VM 建立对等关系，以便在 SnapMirror 和 SnapVault 保护关系中使用。</block>
-  <block id="0dd5b5485a767274f86c400be6c4bf82" category="doc">创建 Storage Virtual Machine 对等方向导</block>
-  <block id="3b4281ed45dc58c49c0b6cf92e4d07a2" category="section-title">选择源</block>
-  <block id="b57d98e0e35c6e4aa0549b8ce17454a6" category="paragraph">通过 " 选择源 " 面板，您可以选择 Storage VM 对等方中的源 Storage VM 或主 Storage VM 。</block>
   <block id="f53ab048178d767c14635a79e485a5d4" category="list-text">* 任意 *</block>
-  <block id="a4af972c86e9540dc467c581ad6cdb78" category="paragraph">用于在任何 Storage VM 源与一个或多个目标或二级 Storage VM 之间创建对等关系。这意味着，当前需要保护的所有现有 Storage VM 以及未来创建的任何 Storage VM 都会与指定的目标 Storage VM 建立对等关系。例如，您可能希望将来自不同位置的多个不同源的应用程序备份到一个位置的一个或多个目标 Storage VM 。</block>
   <block id="7ff1c9dbf7b85364c9af00726d6f9d5f" category="list-text">* 单个 *</block>
-  <block id="2277c977dc0a5cb5a92083ddd6dc65e9" category="paragraph">用于将特定源 Storage VM 与一个或多个目标 Storage VM 建立对等关系。例如，如果要为数据必须彼此分离的多个客户端提供存储服务，请选择此选项将特定 Storage VM 源与仅分配给该客户端的特定 Storage VM 目标关联起来。</block>
   <block id="94b198184f9abf7490f8c90a6423f2a8" category="list-text">* 无（外部） *</block>
-  <block id="7747781658cb621a36f95c1cea0d1f17" category="paragraph">用于在源 Storage VM 和目标 Storage VM 的外部灵活卷之间创建关联。</block>
-  <block id="40a9aa8d8be93bdef25a488011f71fcb" category="list-text">Storage Virtual Machine</block>
-  <block id="235744ec4f198c8925b6017b73ac00ed" category="paragraph">列出可用源 Storage VM 的名称</block>
-  <block id="bf014d0813e4bc087a939d17be8585d9" category="paragraph">列出每个 Storage VM 所在的集群</block>
-  <block id="9f59e920306861d4a8ecc5e05f91077a" category="list-text">* 允许此类关系 *</block>
-  <block id="17f0f723254ba6ca325664769847cf9b" category="paragraph">用于选择关联的关系类型：</block>
   <block id="794cb725c5631ad99b5b7c000307f0df" category="list-text">SnapMirror</block>
-  <block id="6fd5c94530cd60405b715b3db6e50c7c" category="paragraph">指定 SnapMirror 关系作为对等类型。选择此选项可将数据从选定源复制到选定目标。</block>
-  <block id="5bc075cee240a70af54270621d93765c" category="list-text">SnapVault</block>
-  <block id="79f93e4bb02826152950992d788ea861" category="paragraph">指定 SnapVault 关系作为对等类型。选择此选项可将选定主位置备份到选定二级位置。</block>
-  <block id="b9a5a8f115d7d36db5c7de24573f1699" category="section-title">选择保护目标</block>
-  <block id="198160302fc794b90fd130f1e6a61543" category="paragraph">通过创建 Storage Virtual Machine 对等方向导的选择保护目标面板，您可以选择复制或复制数据的位置。每个集群只能在一个目标 Storage VM 上创建对等关系。</block>
-  <block id="2bf3220fca0a33666671c39ab6e7700b" category="list-text">* 下一步 *</block>
-  <block id="62718807f6473eb834d1802698cbf29f" category="paragraph">进入向导中的下一页。</block>
   <block id="ffb270b8c3662e075a4fb87f91c4ca29" category="list-text">* 返回 *</block>
-  <block id="cd0ae77bc690e7a274eff62b2fb3556b" category="paragraph">返回到向导中的上一页。</block>
-  <block id="ed4cff269f04ad4ee858eaa0c6ba75b4" category="list-text">* 完成 *</block>
-  <block id="d49933a421d8be143d097b270e3d1af3" category="paragraph">应用所做的选择并创建关联。</block>
-  <block id="2b2fd73d6891a5b1d044286fb87874c1" category="paragraph">丢弃所做的选择并关闭创建 Storage Virtual Machine 对等方向导。</block>
-  <block id="869fe30ad46c36e32a9a4a39c6ecfd80" category="summary">Storage VM 对等方是指从源 Storage VM 到目标 Storage VM 的映射，供合作伙伴应用程序用于资源选择和二级卷配置。</block>
-  <block id="fc3d43f179d4dac52ecbdb1b6f94e694" category="doc">了解 Storage VM 对等方</block>
-  <block id="ce681dc0c4c66bae81df988629a9875f" category="paragraph">无论目标 Storage VM 是二级目标还是三级目标，都始终会在源 Storage VM 和目标 Storage VM 之间创建对等方。您不能使用二级目标 Storage VM 作为源来创建与三级目标 Storage VM 的对等关系。</block>
-  <block id="d8b3c9b1ed1d65a9b7bfef730eeb85c5" category="paragraph">您可以通过以下三种方式为 Storage VM 建立对等关系：</block>
-  <block id="c6e4459e48c8973d086f78f2f2facfe8" category="list-text">为任何 Storage VM 建立对等关系</block>
-  <block id="d4ed4fb2ff0fb13eb779514445ea7bf2" category="paragraph">您可以在任何主源 Storage VM 和一个或多个目标 Storage VM 之间创建对等关系。这意味着，当前需要保护的所有现有 Storage VM 以及未来创建的任何 Storage VM 都会与指定的目标 Storage VM 建立对等关系。例如，您可能希望将来自不同位置的多个不同源的应用程序备份到一个位置的一个或多个目标 Storage VM 。</block>
-  <block id="73f5dce2d269d6cbb5f8e87e9ebe1039" category="list-text">为特定 Storage VM 建立对等关系</block>
-  <block id="7fe1dfe45e41b9019be4323b32d15e2b" category="paragraph">您可以在特定源 Storage VM 和一个或多个特定目标 Storage VM 之间创建对等关系。例如，如果要为数据必须彼此分离的多个客户端提供存储服务，则可以选择此选项将特定源 Storage VM 与仅分配给该客户端的特定目标 Storage VM 关联起来。</block>
-  <block id="0544ad83848fb054e4a2b88f10e7dd20" category="list-text">与外部 Storage VM 建立对等关系</block>
-  <block id="9701fc1e68aac847303d8f4eaed963c7" category="paragraph">您可以在源 Storage VM 和目标 Storage VM 的外部灵活卷之间创建对等关系。</block>
   <block id="c3c6572d062c951811ca1fe741903a2c" category="summary">此工作流举例说明如何通过 Unified Manager 信息板识别和解决保护作业故障。</block>
   <block id="6e94f95fe800c798b5c1bd6f98900d04" category="doc">解决保护作业故障</block>
   <block id="047a20fcd4bbec3aa2f90c8a7b3a2fac" category="paragraph">由于此工作流中的某些任务要求您使用管理员角色登录，因此您必须熟悉使用各种功能所需的角色。</block>
@@ -3944,7 +3874,6 @@
   <block id="d05bfecdcd178e7b2e9fadea4ca07289" category="paragraph">显示特定于选定任务的消息。消息可能包括错误原因以及解决错误的建议。并非所有任务都显示任务消息。</block>
   <block id="01517086ee90260d3b75492f0e6e194f" category="summary">" 关系：所有关系 " 视图显示有关存储系统上的保护关系的信息。</block>
   <block id="7b468f364c89cc15b88debc63877f777" category="doc">Relationship ：所有关系视图</block>
-  <block id="87940b71673e7cc35b4dc1d178e531aa" category="paragraph">默认情况下，访问关系页面时，显示的报告将包括卷和 Storage VM 的顶级保护关系。通过沿页面顶部排列的控件，您可以选择特定视图，执行搜索以查找特定对象，创建并应用筛选器以缩小显示数据列表的范围，在页面上添加 / 删除列或对列重新排序以及将页面上的数据导出为 .csv ， .pdf 。 或 .xlsx 文件。自定义页面后，您可以将结果保存为自定义视图，然后计划定期生成此数据的报告并通过电子邮件发送。默认情况下，当您选择 * 关系 * 菜单时，显示的报告将包括数据中心中卷和 Storage VM 的保护关系。您可以使用 * 筛选器 * 选项仅查看选定的存储系统，例如仅查看卷或仅查看 Storage VM 。同一报告将显示在存储页面中，并且仅针对选定存储实体。如果要查看卷或 Storage VM 关系，可以访问 * 存储 * &gt; * 卷 * &gt; * 关系：所有关系 * 页面或访问 * 保护 * &gt; * 关系 * &gt; * 关系： 所有关系 * ，并使用 * 筛选器 * 中的 * 关系对象类型 * 选项仅筛选出卷或 Storage VM 数据。</block>
   <block id="bcfdd5fdcc9473e6fb8c763bb717d278" category="paragraph">列出所有保护关系的关系页面会为目标集群提供一个 * 在 System Manager* 中查看 " 链接，可用于在 ONTAP 系统管理器中查看相同的对象。</block>
   <block id="2ea7f5b2289a2721f6c9c85bbdef00d9" category="paragraph">显示保护关系的当前状态。</block>
   <block id="8b927ab73fcb2da14543715283041fd8" category="paragraph">此状态可以是错误（<block ref="1c0ac20dc7bfc87e98ae13e96d02d807" category="inline-image-macro-rx" type="image"></block>），警告（<block ref="f1c08a3c67e9109a6739da91403bf2f1" category="inline-image-macro-rx" type="image"></block>）或 OK （<block ref="1f713a82aed699daab6064ddfb5af937" category="inline-image-macro-rx" type="image"></block>）。</block>
@@ -4221,14 +4150,9 @@
   <block id="77b0ae415a0cadc7ff1f54850c7625e6" category="list-text">如果正在查看 " 运行状况：所有卷 " 视图，请找到要保护的卷并右键单击该卷；然后从菜单中选择 * 保护 * &gt; * SnapMirror * 。此时将显示配置保护对话框。</block>
   <block id="f52ba981ac20a126c6bf3c85ef56ef28" category="paragraph">如果您指定的目标 SVM 在低于所保护的源卷的 ONTAP 早期版本下运行，并且该早期版本支持版本灵活复制，则此任务会自动为 SnapMirror 配置版本灵活复制。</block>
   <block id="3ecf5b618ede025c9ab779efa87d7824" category="list-text">如果您指定的目标 SVM 在与源卷相同的 ONTAP 版本下运行，但您仍希望使用版本灵活的复制功能配置 SnapMirror ，请单击 * 高级 * 以启用版本灵活的复制，然后单击 * 应用 * 。</block>
-  <block id="6af1c366c850f055ec525eaeb2ba98f8" category="summary">通过创建 Storage Virtual Machine 对等方向导，合作伙伴保护应用程序可以将源 Storage VM 与目标 Storage VM 相关联，以便用于 SnapMirror 和 SnapVault 关系。在初始配置目标卷时，合作伙伴应用程序会使用这些关联来确定要选择的资源。</block>
-  <block id="b12741b41a001c5120c76ebbb6906169" category="doc">创建 Storage VM 对等方</block>
   <block id="cd855f2a6babfd09e8661adbd66fd542" category="list-text">要关联的 Storage VM 必须已存在。</block>
   <block id="e7ae8c35dd30d581b2afb0bdd41d6022" category="paragraph">对于任何源 Storage VM 和关系类型，您只能在每个目标集群上选择一个目标 Storage VM 。</block>
   <block id="1f50d476926ce4538385faff1794ca90" category="paragraph">使用 delete 和 create 函数更改关联仅会影响未来的配置操作。它不会移动现有目标卷。</block>
-  <block id="e873bd9b149268e1319b6391958c3134" category="list-text">在左侧导航窗格中，单击 * 保护 * &gt; * Storage VM 对等方 * 。</block>
-  <block id="fefa3bd0f37c4bbe2b3224ed10a3f04b" category="list-text">在 * SVM 对等方 * 页面中，单击 * 创建 * 。</block>
-  <block id="cb0db9fce78a8cedf59b973e66482972" category="paragraph">此时将启动创建 Storage Virtual Machine 对等方向导。</block>
   <block id="bc069eb87626aebc1bd2b120ad29a95a" category="list-text">选择以下源之一：</block>
   <block id="941f1b096a398e966f8533fbe7669919" category="paragraph">如果要在任何主 Storage VM 源与一个或多个目标 Storage VM 之间创建关联，请选择此选项。这意味着，当前需要保护的所有现有 Storage VM 以及未来创建的任何 Storage VM 都会与指定的目标 Storage VM 相关联。例如，您可能希望将来自不同位置的多个不同源的应用程序备份到一个位置的一个或多个目标 Storage VM 。</block>
   <block id="5f2fa351d88f412c7a32f68ce472fe93" category="paragraph">如果要选择与一个或多个目标 Storage VM 关联的特定源 Storage VM ，请选择此选项。例如，如果要为数据必须彼此分离的多个客户端提供存储服务，请选择此选项将特定 Storage VM 源与仅分配给该客户端的特定 Storage VM 目标关联起来。</block>
@@ -4381,19 +4305,6 @@
   <block id="fc2427a78034e0d0152e7ffa1b7ed537" category="list-text">单击 * 继续 * 以中断此关系。</block>
   <block id="290e156192fbc3ad39ae4470a7eb1265" category="list-text">在 * 卷关系 * 页面中，在 * 关系状态 * 列中确认此关系已断开。</block>
   <block id="a6fd819671a3696ed24be66e93539c1c" category="paragraph">默认情况下，关系状态列处于隐藏状态，因此您可能需要在显示 / 隐藏列列表中选择它 <block ref="34bd982602c6232a32e58052887af0f0" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="efa95b4884c7ad55cef5ff0f22a9f4d0" category="summary">通过 SVM 对等方页面，您可以查看源和目标 Storage VM 之间的现有 Storage VM 对等方，并创建新的 Storage VM 以供合作伙伴应用程序使用以创建 SnapMirror 和 SnapVault 关系。</block>
-  <block id="2a982392e1612a05191cf6ddbfa1593c" category="doc">SVM 对等方页面</block>
-  <block id="ae82db71950cdba3c98193dd5d6dc78a" category="paragraph">打开创建 Storage Virtual Machine 对等方页面。</block>
-  <block id="fded0c5c4988f0a0b7f32253f98db7e6" category="paragraph">用于删除选定的 Storage VM 对等方。</block>
-  <block id="16b19128ae61170ad9c096423b9c17c7" category="section-title">Storage VM 对等方列表</block>
-  <block id="47b57e1bffd9f9a11eb4577923a05130" category="paragraph">SVM 对等方列表将在表中显示已创建的源和目标 Storage VM 关联以及每个关联所允许的保护关系类型。</block>
-  <block id="55ba62e9ca581e797c609dca5a830b31" category="list-text">* 源 Storage Virtual Machine*</block>
-  <block id="78dc91bb0108ce04f512e1b2be560981" category="paragraph">显示源 SVM 的名称。</block>
-  <block id="886ce023ef569a2d42dbc3d16774055e" category="paragraph">显示源集群的名称。</block>
-  <block id="3008bb235f999c5f317dfb5b9108e286" category="list-text">* 目标 Storage Virtual Machine*</block>
-  <block id="38d55d2bd99f6700ed6c2c038c765058" category="paragraph">显示目标 SVM 的名称。</block>
-  <block id="918325ed98d67df1964d7fd5ad695dd3" category="paragraph">显示目标集群的名称。</block>
-  <block id="f1cccf26d53ddd05424d38fb169cb14b" category="paragraph">显示保护关系的类型。关系类型为 SnapMirror 或 SnapVault 。</block>
   <block id="3a1959ef1a7dc429f4d0104a88edeb42" category="summary">在 " 卷关系 " 页面中，您可以暂停保护关系，以临时防止发生数据传输。如果您要为包含数据库的 SnapMirror 目标卷创建 Snapshot 副本，并且希望在 Snapshot 副本操作期间确保其内容稳定，则可以暂停关系。</block>
   <block id="c44e1b9f4c3415a502140c8dfb077c9b" category="doc">从卷关系页面暂停保护关系</block>
   <block id="196892ce9e55aaf94daf6273ddc90814" category="paragraph">暂停操作不会显示在以下实例中：</block>
@@ -4425,13 +4336,8 @@
   <block id="972a9014bb0bfc9f3b884b6c23ef2517" category="list-text">单击 * 是 * 重新加载 Web UI ，然后添加 Workflow Automation 功能。</block>
   <block id="62580aa51e9dd22e6410288365e0cfae" category="inline-link">NetApp 文档： OnCommand Workflow Automation （当前版本）</block>
   <block id="385f2125f2c2eed2ad18d00d78cfc7d4" category="paragraph"><block ref="385f2125f2c2eed2ad18d00d78cfc7d4" category="inline-link-rx"></block></block>
-  <block id="211fcc46210c802376e8a05e5b121781" category="summary">您可以删除配对应用程序的 Storage VM 对等方以删除源和目标 Storage VM 之间的二级配置关系；例如，当目标 Storage VM 已满且您希望创建新的 Storage VM 保护对等方时，您可以执行此操作。</block>
-  <block id="8b3f5d68c02c2a4ca1b1389570caf07d" category="doc">正在删除 Storage VM 对等方</block>
-  <block id="cea86a01121943e33e0d143d2ee4525f" category="paragraph">除非至少选择一个 Storage VM 对等方，否则 * 删除 * 按钮将被禁用。使用删除和创建功能更改关联仅会影响未来的配置操作；它不会移动现有目标卷。</block>
-  <block id="ea664e4a357b117a2d5e11309531b2a1" category="list-text">至少选择一个 Storage VM 对等方。</block>
   <block id="3eabaead42f5f7f6cec383644c048895" category="paragraph">已启用 * 删除 * 按钮。</block>
   <block id="681505e48158965ebaeed0d2df2a1fca" category="list-text">单击 * 删除。 *</block>
-  <block id="72974a0f04f1178a2c3fade391929cd3" category="paragraph">选定的 Storage VM 对等方将从列表中删除。</block>
   <block id="9b2c1ed96990ab18ff40a6a49a31144c" category="summary">您可以创建新的 SnapVault 策略来设置 SnapVault 传输的优先级。您可以使用策略最大程度地提高保护关系中从主卷到二级卷的传输效率。</block>
   <block id="7cc6454d15c5e0d08ca32cd572bc6939" category="doc">创建 SnapVault 策略以最大程度地提高传输效率</block>
   <block id="adb525c4f675ad06c6875d775e0f65ad" category="list-text">您必须已完成配置保护对话框中的目标信息区域。</block>
@@ -4442,9 +4348,6 @@
   <block id="b1e2fd08f0942f1db1d048c03d8939ac" category="list-text">* 可选： * 在 * 注释 * 字段中，输入策略注释。</block>
   <block id="45a76f8eacc1ca960404c7d018b39ebb" category="list-text">在 * 复制标签 * 区域中，根据需要添加或编辑复制标签。</block>
   <block id="a36c1fc493d26dfdc29105ef7011a23d" category="paragraph">新策略将显示在创建策略下拉列表中。</block>
-  <block id="898a67b9ac61663670d605ccaec1f8f2" category="summary">您可以使用 Storage VM 对等方页面查看现有 Storage VM 对等方及其属性，并确定是否需要其他 Storage VM 。</block>
-  <block id="7c8359e321282c2dcba0d0487956d276" category="doc">查看 Storage VM 对等方</block>
-  <block id="7bd9cb218372285d85e6fa15976ce620" category="paragraph">此时将显示 Storage VM 对等方及其属性的列表。</block>
   <block id="fdb114cc52d0df1389b777d80f9dbf95" category="summary">您可以使用高级目标设置对话框在目标卷上启用空间保证设置。如果源上禁用了空间保证，但希望在目标上启用空间保证，则可以选择高级设置。SnapMirror 关系中的重复数据删除，数据压缩和自动增长设置将从源卷继承，并且无法更改。</block>
   <block id="c53a2ea5684792ffef8f660a8d8e822f" category="doc">高级目标设置对话框</block>
   <block id="6945317d8b0db275e1b767843815fe73" category="section-title">空间保证</block>
@@ -4485,33 +4388,16 @@
   <block id="61d33a2f59fc1818883ab99b2aa3c7de" category="summary">" 数据保护 " 页面提供了数据中心中所有受保护卷的数据保护详细信息的整体视图。</block>
   <block id="d19670f77aee82fbec428cd8a280d1c3" category="doc">查看卷保护状态</block>
   <block id="efa8584b9264c2d34dd884498d614984" category="paragraph">" 数据保护 " 页面提供了单个集群中所有受保护卷或数据中心中所有集群的数据保护详细信息的整体视图。</block>
-  <block id="64332ce68042970c3d35c31074370221" category="paragraph">单击信息板上 " 数据保护 " 面板顶部的右箭头即可查看这些详细信息。此屏幕包含两个部分。在信息板上选择所有集群时， * 所有集群 * 部分将显示受 SnapMirror 关系和 Snapshot 副本保护的数据中心级别的所有集群的保护状态。您可以在 * 单个集群 * 部分中选择一个特定集群，以查看该集群中受保护卷的状态。</block>
-  <block id="4907beb1e99d45188b753adebc981436" category="paragraph">如果您在信息板上选择了一个集群，则此页面将显示该集群上受保护卷的详细信息。</block>
-  <block id="1a5373df50f13823428b45e5607c8288" category="paragraph">您可以将鼠标悬停在每个条形图上以查看相应的计数。单击条形图可转到卷屏幕，其中包含选定的相应卷。单击每个事件中的链接将转到 " 事件 " 详细信息页面。您可以单击 * 查看全部 * 链接以查看事件管理清单页面中的所有活动保护事件。</block>
   <block id="b0e0ed81a414c61d19e9faf379612eda" category="list-text">根据您要查看所有受监控集群或单个集群的数据保护状态，选择 * 所有集群 * 或从下拉菜单中选择一个集群。</block>
-  <block id="ef69dd54941839389d8f5c1ad0ec080d" category="list-text">单击数据保护面板中的右箭头。</block>
-  <block id="0a744df930cf119103672a6734dfb507" category="section-title">数据保护页面</block>
-  <block id="e4ffacb26e0557b21d884c8244479d0c" category="paragraph">" 数据保护 " 页面显示了所有集群中受保护卷的以下面板。</block>
-  <block id="ac96048bdb798de6f8535d460fd2af4a" category="admonition">对于 Snapshot 副本的卷计数，源卷和目标卷均会考虑在内。对于 SnapMirror 关系，将计算已启用读取和写入的源卷。不考虑目标卷和根卷。SnapMirror 计数包括源和目标位于相同或不同集群上的卷数。</block>
-  <block id="1055b3701ee60c07c7e03eb50483d847" category="list-text">* Snapshot 概述 * ： Snapshot 副本保护的卷概述，例如：</block>
   <block id="8e984f28e5c48ccba4af1263bf69faad" category="list-text">受 Snapshot 副本保护和不受 Snapshot 副本保护的卷总数。</block>
   <block id="2e3906baac4bd7086e3f61c18c870031" category="admonition">要将某个卷视为受保护卷，应启用该卷的 Snapshot 副本计划。</block>
-  <block id="71a6bbf63c1b54b8bdf97d327b6e8399" category="list-text">正在使用或超过 Snapshot 副本预留空间的卷总数。此值对于查看已用磁盘空间量或计算删除一个或多个 Snapshot 副本后可回收的空间非常重要。</block>
   <block id="1107f975941682cb6b641736b0aa1d31" category="list-text">* SnapMirror 概述 * ： SnapMirror 策略保护的卷概述，例如：</block>
   <block id="3a60b741a5557e8aa08d73dc698857dd" category="list-text">受相应 SnapMirror 策略保护的卷数，例如卷 SnapMirror 关系， Storage VM 灾难恢复（ SVM-DR ）及其组合。</block>
-  <block id="591455e076868d59cdba2183b58695a5" category="list-text">SnapMirror 关系中出现滞后的卷总数。如果卷具有多个 SnapMirror 关系，则会选择最差的滞后。</block>
-  <block id="466ddf4e9724c1677ff14837da150545" category="paragraph">单个集群列表显示特定集群的 SnapMirror 关系和 Snapshot 保护的状态。</block>
   <block id="8edfc19378266c45d3cf36f429e688f7" category="list-text">* Snapshot 副本分析 * 详细介绍了以下信息：</block>
   <block id="51c01c75729b5fa023d5ed08b4edc574" category="list-text">Snapshot 副本的各个事件，包括过去 24 小时内引发的事件。</block>
   <block id="f0ae8a8550f52ce1d214e5fb18f805c4" category="list-text">受 Snapshot 副本保护和不受 Snapshot 副本保护的卷的详细图表。</block>
-  <block id="bf8ea0891c0c41da67428b1580a3f5e8" category="list-text">卷使用，未使用和违反预留的 Snapshot 副本容量。您可以使用此信息计算删除一个或多个 Snapshot 副本后已利用或可回收的空间。</block>
-  <block id="a6ceb6d0ba0792548a5a8c398bcaf8d6" category="list-text">卷的细分按其 Snapshot 副本的数量计算。返回的 Snapshot 副本数量仅适用于联机且可用的卷。</block>
   <block id="780c8c5a0e6bb4760e680dcb28b6e077" category="list-text">* SnapMirror 分析 * 详细介绍了以下信息：</block>
   <block id="d56f963dcc83eec427c434ef2c4eab7f" category="list-text">为 SnapMirror 关系引发的各个事件，包括过去 24 小时内引发的事件</block>
-  <block id="fab80019d13d0477e0025a920589aa8f" category="list-text">由每个 SnapMirror 策略（例如卷 SnapMirror 关系， Storage VM 灾难恢复（ SVM-DR ）及其组合）保护的卷数。</block>
-  <block id="c0f66f57d9d712568156f3b260416aea" category="list-text">受 SnapMirror 关系类型（例如异步镜像，异步存储，异步镜像存储， StrictSync ， SnapMirror 业务连续性（ SMBC ）一致性组和 Sync ）保护的卷数。</block>
-  <block id="0e1fe953d78fc893f47e2ba002baf05c" category="list-text">关系状态为 " 运行状况良好 " 或 " 运行状况不正常 " 的卷数。只有当卷的所有 SnapMirror 关系运行状况良好时，才会将此卷视为运行状况良好。</block>
-  <block id="d168bc6b08b3094d1d14fb532321c27e" category="list-text">按恢复点目标（ RPO ）滞后持续时间的速率对卷计数进行细分。</block>
   <block id="f0de0fe5a83917f4b715ebdaa971c5b7" category="summary">您可以创建基本或高级 SnapMirror 和 SnapVault 计划，以便在源卷或主卷上启用自动数据保护传输，从而根据卷上的数据更改频率提高传输频率或降低传输频率。</block>
   <block id="6580276b7d1b191f71dd48ef9a6bae01" category="doc">创建 SnapMirror 和 SnapVault 计划</block>
   <block id="294bcfade06abc0b236d572becedae78" category="list-text">您必须已完成配置保护对话框中的目标信息区域。</block>
@@ -4624,7 +4510,6 @@
   <block id="2b8a390c9d807a8f2a5ffbcb3f94eec0" category="paragraph">此时将显示编辑资源池窗口。</block>
   <block id="eff4c71d505881effd29cb9385e84d09" category="list-text">根据需要编辑资源池名称和问题描述。</block>
   <block id="7ea0063870b3cf8512c8d5af60671a0e" category="paragraph">新名称和问题描述将显示在资源池列表中。</block>
-  <block id="09b5c43509703a54bc7df15066a66381" category="summary">您可以从清单保护部分的关系页面监控 Storage VM 灾难恢复关系。默认情况下，在应用成分卷关系筛选器时， " 关系 " 页面仅列出顶级关系。</block>
   <block id="5c196853deac6391854895386e646897" category="doc">使用关系监控 Storage VM 页面</block>
   <block id="5bad779f049e7a02cf94db40e2098a90" category="paragraph">您可以使用筛选器查看 Storage VM 灾难恢复关系。</block>
   <block id="027c071716ffaad6dde0b33788f176e3" category="list-text">在左侧导航窗格中，单击 * 保护 * &gt; * 关系 * 。</block>
@@ -4685,7 +4570,6 @@
   <block id="e3ba6c64064adba107328f731ffc579e" category="summary">要在 Windows 上成功安装 Unified Manager ，您应确保安装 Unified Manager 的系统满足软件要求。</block>
   <block id="abbfbdaf21746bca446ca43c755eb8ef" category="doc">Windows 软件和安装要求</block>
   <block id="00b445c51af4d8484e4707ea89f09276" category="section-title">操作系统软件</block>
-  <block id="234ad54522d9925af496168ab12f5c8d" category="paragraph">您可以在以下 Windows 版本上安装 Unified Manager ： * Microsoft Windows Server 2016 Standard 和 Datacenter Edition * Microsoft Windows Server 2019 Standard 和 Datacenter Edition</block>
   <block id="84d4d095f4b0442f31e07426efa9b0a7" category="paragraph">Unified Manager 在 64 位 Windows 操作系统上支持以下语言：</block>
   <block id="78463a384a5aa4fad5fa73e2f506ecfc" category="list-text">英语</block>
   <block id="f32ced6a9ba164c4b3c047fd1d7c882e" category="list-text">Japanese:</block>
@@ -4698,8 +4582,6 @@
   <block id="ffbed9334b8ec87b5d47c862a02cb5ec" category="paragraph">以下第三方软件包与 Unified Manager 捆绑在一起。如果系统上未安装这些第三方软件包，则 Unified Manager 会在安装过程中安装这些软件包。</block>
   <block id="f036a764432b8b9592c8463741728fec" category="list-text">Microsoft Visual C&amp;#43 ； &amp;#43 ； 2015 年可重新分发软件包 14.26.28720.3 版</block>
   <block id="b7bc4a8db8f6fcae60ca624f6b4cd972" category="list-text">Microsoft Visual C&amp;#43 ； &amp;#43 ；适用于 Visual Studio 2013 的可重新分发软件包 12.0.40660.0 版</block>
-  <block id="b69583bdad3a63373172cbe89ddde845" category="list-text">Python 3.9.x</block>
-  <block id="0c487400e7de3d10fd03ccbb93cad0bb" category="list-text">OpenJDK 11.0.12 版</block>
   <block id="3eb9f5dac9a6d7c6556c2754973bdc44" category="list-text">p7zip 版本 18.05 或更高版本</block>
   <block id="7a296bb9772806c9ddf9f83ed9bb3d5f" category="paragraph">从 Unified Manager 9.5 开始， Unified Manager 安装包中提供了 OpenJDK ，并会自动安装该软件包。从 Unified Manager 9.5 开始，不支持 Oracle Java 。</block>
   <block id="dd2148991fe37222c2cd074a08be9207" category="paragraph">如果已预安装 MySQL ，则应确保：</block>
@@ -4716,11 +4598,9 @@
   <block id="ce103923838f9bc916d8e7cb36cf9794" category="list-text">您应禁用 Microsoft IIS 全球 Web 发布服务，并确保端口 80 和 443 可用。</block>
   <block id="a52e8dd64ba5c532ee8a9127c4a53694" category="list-text">您应确保在安装期间已禁用 "`Windows Installer RDS 兼容性` " 的远程桌面会话主机设置。</block>
   <block id="2e9f7284307b6c63613fea773cab2249" category="list-text">UDP 端口 514 应为空闲端口，不应由任何其他服务使用。</block>
-  <block id="a8ffce21d748532a69e40672feeeaef6" category="paragraph">Unified Manager 安装程序会在 Windows Defender 中配置以下排除项：</block>
   <block id="443953c08ed4d54d7066b9aa4207cbbe" category="list-text">Unified Manager 数据目录</block>
   <block id="92989804e9614b922b48cda022c3a4c9" category="list-text">Unified Manager 安装目录</block>
   <block id="560a4b149b9bbe1df98009b8d0ebcf46" category="list-text">MySQL 数据目录</block>
-  <block id="f2f43eb69cd848b60346743d98242154" category="paragraph">如果您的服务器安装了其他防病毒扫描程序，则应手动配置这些排除项。</block>
   <block id="cfe968c64b22de8426ac7f90136f1316" category="summary">在虚拟基础架构或物理系统上安装 Unified Manager 应满足内存， CPU 和磁盘空间的最低要求。</block>
   <block id="d6145dcd730a183bcf77f4b71f69e639" category="doc">虚拟基础架构和硬件系统要求</block>
   <block id="0ef1e75692a257ada16b2a5f71393746" category="paragraph">下表显示了为内存， CPU 和磁盘空间资源建议的值。这些值已经过限定，以便 Unified Manager 满足可接受的性能级别。</block>
@@ -4884,17 +4764,13 @@
   <block id="a17f437aedf2eddaf8ba841b0c1aeb45" category="doc">卸载 Unified Manager</block>
   <block id="9722ab728446f937c918c0e5e4e40c5e" category="list-text">卸载软件之前，必须从 Unified Manager 服务器中删除所有集群（数据源）。</block>
   <block id="2d3ba2f501d37069b8008b423d5274ab" category="list-text">通过选择以下选项之一卸载 Unified Manager ：</block>
-  <block id="789480eefa867b16c3a85237d473ed23" category="cell">要从 ... 卸载 Unified Manager ，请执行以下操作：</block>
   <block id="c1325f6903ebb5ebb2bb519a73ddb1b0" category="cell">那么 ...</block>
-  <block id="e2157921c8787523debaa4fbda78086e" category="paragraph">程序和功能向导：</block>
-  <block id="853ae90f0351324bd73ea615e6487517" category="cell">：</block>
   <block id="c84847b1c0a346868ca317d209ade628" category="list-text">导航到 * 控制面板 * &gt; * 程序和功能 * 。</block>
   <block id="3be4bd1042d49050b5bccb3d066f2f3b" category="list-text">选择 Active IQ Unified Manager ，然后单击 * 卸载 * 。</block>
   <block id="760fbdfafca0cf0cfd2502103679fc22" category="paragraph">命令行</block>
   <block id="4499aa2594bc72ac198b29f4d2e83a5f" category="paragraph">如果在服务器上启用了用户帐户控制（ UAC ），并且您以域用户身份登录，则必须使用命令行卸载方法。</block>
   <block id="ee99d2d1577097422ec79510b2fd84e9" category="paragraph">Unified Manager 已从系统中卸载。</block>
   <block id="cee9c9f467d07df0f536920b0c81137d" category="list-text">卸载 Unified Manager 卸载期间未删除的以下第三方软件包和数据：</block>
-  <block id="7438230d8a9b1f99f2b10963201bec22" category="list-text">第三方软件包： JRE ， MySQL ， Microsoft Visual C&amp;#43 ； &amp;#43 ； 2015 可重新分发软件包和 7zip</block>
   <block id="894a8f514225c80240b55b038fd71a5b" category="list-text">Unified Manager 生成的 MySQL 应用程序数据</block>
   <block id="4ce380ffb0c2ac7f432c9a646e41fc52" category="list-text">应用程序日志和应用程序数据目录的内容</block>
   <block id="6605fc759866ab4c0dbffd94c7ca51ff" category="summary">请务必了解在 Windows 上下载和安装 Unified Manager 的步骤顺序。</block>
@@ -4908,7 +4784,6 @@
   <block id="5daa5e1fcf40ce18b66f6bcc86e1fc79" category="paragraph">如果您计划为 Unified Manager 配置 SAML 身份验证，以便身份提供程序（ IdP ）能够对用户进行身份验证，则还应检查 IdP 支持的浏览器列表。</block>
   <block id="c3aaa3d5e1c6e7542a12d69e8624f700" category="summary">您可以通过在 Windows 平台上下载并运行安装文件来升级 Unified Manager 。</block>
   <block id="0521c408c6c49e7445ee8ef5abc25b44" category="doc">升级 Unified Manager</block>
-  <block id="391e3ccecfd1a5bc4a6b1424155e04b7" category="paragraph">您可以通过在 Windows 平台上下载并运行安装文件将 Unified Manager 9.8 或 9.9 升级到 9.10 。</block>
   <block id="433edfcc5f5751863b077c654c315d95" category="list-text">要升级 Unified Manager 的系统应满足系统和软件要求。</block>
   <block id="0ebe162817a0beff48242b1dc3ac7f2d" category="inline-link-macro">硬件系统要求</block>
   <block id="6809e5c79eb6a750a89a2ba4592b6b72" category="paragraph"><block ref="6809e5c79eb6a750a89a2ba4592b6b72" category="inline-link-macro-rx"></block></block>
@@ -4989,7 +4864,6 @@
   <block id="b014cda139580b337c10a0df729494ba" category="list-text">对于安装了 Unified Manager 的系统，您应具有 Windows 管理员权限。</block>
   <block id="ab52ec799c459cf45e42ec0d063a73fe" category="list-text">您应具有 MySQL root 用户的密码。</block>
   <block id="c3d0e635616031ccca55f35ac35769c2" category="list-text">您应该能够访问目录中由 NetApp 提供的 `password.bat` 脚本</block>
-  <block id="8eda65499ae27c0fca3257012afe8f30" category="paragraph">` \Program Files\NetApp\Findings\bin` 。</block>
   <block id="b38dd1119d43581dc92fe29ccecf4465" category="list-text">以管理员用户身份登录到 Unified Manager 主机。</block>
   <block id="11de7b3c75301534d4163a29dd7de95f" category="list-text">使用 Windows 服务控制台停止以下 Unified Manager 服务：</block>
   <block id="d009625a0fc75690f7f94100d6ed3196" category="list-text">启动 `password.bat` 脚本以开始密码更改过程：</block>
@@ -5009,16 +4883,13 @@
   <block id="9520854478b675c31f0555786a67f9b4" category="summary">您可以在安装了 Unified Manager 的 Windows 服务器上升级到较新版本的 OpenJDK ，以获取安全漏洞修复。</block>
   <block id="b70d1d0a2a88ed730b8d7e854c93fdbe" category="doc">升级 OpenJDK</block>
   <block id="27a27fa27099c3dd7d2e0cb3d56381f0" category="paragraph">对于安装了 Unified Manager 的系统，您必须具有 Windows 管理员权限。</block>
-  <block id="7e85600490b8fb8f09d8eed3dac925a5" category="paragraph">您可以更新版本系列中的 OpenJDK 版本。例如，您可以从 OpenJDK 11.0.9 升级到 OpenJDK 11.0.12 ，但不能直接从 OpenJDK 11 更新到 OpenJDK 12 。</block>
   <block id="13e3592e5e441ee49815c64ebd90f10f" category="list-text">将适当版本的 OpenJDK （ 64 位）从 OpenJDK 站点下载到目标系统。</block>
   <block id="db7fdcdf000c603674beba9fdd7c8075" category="paragraph">例如，从下载 `openjdk-11_windows-x64_bin.zip<block ref="b90546eba13061ee913dc6d313e28839" category="inline-link-rx"></block>。</block>
   <block id="7d7f701fa4b6dfcc4812f34ebd909b72" category="list-text">展开 `zip` 文件。</block>
-  <block id="e63adb915964a7470fb81d10efd31708" category="list-text">将生成的 `JDK` 目录（例如， `JDK-11.0.12` ）中的目录和文件复制到 Java 的安装位置。示例： `C ： \Program Files\NetApp\JDK\`</block>
   <block id="4ce60e4b06ffbfa5ed76fd9dbdcbe958" category="list-text">使用 Windows 服务控制台启动 Unified Manager 服务：</block>
   <block id="a5c4a2efcdcb095ac76dbf214e41d635" category="summary">基于 Linux 平台的 Unified Manager 快速入门指南。</block>
   <block id="69b2ae16273665eaebb99a26650649b5" category="doc">Windows 安装快速入门说明</block>
   <block id="1e496ca2f7a66d863132588473f14de2" category="section-title">系统要求</block>
-  <block id="c77a66b379540bb4341f088044ab2a10" category="list-text">操作系统： Microsoft Windows Server 2016 和 2019 64 位标准版和数据中心版。支持以下语言：</block>
   <block id="a2d94c8de89a700634c79d7c9d4fc2c0" category="list-text">RAM ： 12 GB</block>
   <block id="a2992f349299086d8d17ee3b7a471aa7" category="list-text">CPU ：总计 9572 MHz</block>
   <block id="ce144bc93be4300e9c20965d4a541b93" category="list-text">可用磁盘空间： 100 GB 磁盘空间用于安装目录， 50 GB 磁盘空间用于 MySQL 数据目录</block>
@@ -5340,15 +5211,12 @@
   <block id="b05f44518adbc76950119415dab7a92e" category="paragraph">服务处理器脱机（ ocumEvtServiceProcessorOffline ）</block>
   <block id="3382e9ca606f74cdded9fdde703350de" category="summary">Unified Manager 会自动检查新的 Active IQ 规则文件，并在存在较新规则时下载新文件。但是，在无法访问外部网络的站点中，您需要手动上传规则文件。</block>
   <block id="47a1bdec12f9908ef6c7d1f58fb4b4c5" category="doc">上传新的 Active IQ 规则文件</block>
-  <block id="ea75e424bca80f4ec587ba490969d40c" category="list-text">必须启用 Active IQ 事件报告。</block>
   <block id="53a36a15b8ceb49552246904985c7ed0" category="list-text">您必须从 NetApp 支持站点下载规则文件。</block>
-  <block id="9b5415e4731d301fb8c7af3f1f2913d7" category="paragraph">建议您大约每月下载一次新的规则文件，以确保存储系统受到保护并以最佳方式运行。规则文件位于：<block ref="09d2f5e3e45bfdce0a0610eb279c565b" category="inline-link-rx"></block></block>
   <block id="60dde4212626cebc7bdc85f14ffd4918" category="list-text">在可访问网络的计算机上，导航到 NetApp 支持站点并下载当前规则 ` .zip` 文件。</block>
   <block id="795efe57fc509c635bfd81bae42c429a" category="list-text">将规则文件传输到可带入安全区域的某些介质，然后将其复制到安全区域的系统。</block>
   <block id="4421167ad738c8af5d557114df57d61a" category="list-text">在 * 事件设置 * 页面中，单击 * 上传规则 * 按钮。</block>
   <block id="ac0e842289c6024c058415ace93b5b9c" category="list-text">在 * 上传规则 * 对话框中，导航到您下载的规则 ` .zip` 文件并选择该文件，然后单击 * 上传 * 。</block>
   <block id="521fae8e49947c61ff1591a5512ef18a" category="paragraph">此过程可能需要几分钟时间。</block>
-  <block id="277e15854850b1163619e94dba46434b" category="paragraph">规则文件将在 Unified Manager 服务器上解压缩。在受管集群午夜后生成 AutoSupport 文件后， Unified Manager 将根据规则文件检查集群，并根据需要生成新的风险和意外事件。</block>
   <block id="232d482e62b5d5b04041f98245fa580a" category="summary">磁盘事件可为您提供有关磁盘状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。</block>
   <block id="e1b75f1937203420054244f0ccd43b1d" category="doc">磁盘事件</block>
   <block id="c61ecd1f538d513c52cdf36a444d7a7c" category="paragraph">闪存磁盘 - 备用块几乎已使用（ ocumEvtClusterFlashDiskFewerSpareBlockError ）</block>
@@ -5772,17 +5640,13 @@
   <block id="94c9d75efcd8cb6ea599403a5a380a59" category="paragraph">达到开始时间后，集群将进入维护模式，并生成 " 对象维护窗口已启动 " 事件。</block>
   <block id="7491ba98277407189786487949ead132" category="summary">对于动态性能事件，事件详细信息页面的系统诊断部分列出了处于争用状态的集群组件延迟或使用率最高的前几个工作负载。性能统计信息基于检测到性能事件的时间，直到上次分析事件为止。这些图表还会显示处于争用状态的集群组件的历史性能统计信息。</block>
   <block id="9ae243581bbda56a359c59bee68b6c53" category="doc">动态性能事件图表详细信息</block>
-  <block id="97757c42f4e50e7a50165f62ad57b19c" category="paragraph">例如，您可以确定组件利用率较高的工作负载，以确定要移至利用率较低的组件的工作负载。移动工作负载将减少当前组件的工作量，从而可能使该组件摆脱争用状态。此部分的是检测到事件并最后分析事件的时间和日期范围。对于活动事件（新事件或已确认事件），上次分析的时间将继续更新。</block>
-  <block id="df0ef18578ba604e1705bebc4678bdd3" category="paragraph">将光标悬停在延迟和活动图表上方时，这些图表将显示排名靠前的工作负载的名称。单击图表右侧的工作负载类型菜单，您可以根据工作负载在事件中的角色（包括 _鲨 鱼 _ ， _bulles_ 或 _victims_ ）对这些工作负载进行排序，并显示有关其延迟及其在争用集群组件上的使用情况的详细信息。您可以将实际值与预期值进行比较，以查看工作负载何时超出其预期延迟或使用量范围。请参见 _workloads Monitored by Unified Manager_ 。</block>
   <block id="db69501da9f35d5723a50c4a668d5bb1" category="paragraph">按延迟峰值偏差排序时，表中不会显示系统定义的工作负载，因为延迟仅适用于用户定义的工作负载。延迟值非常低的工作负载不会显示在表中。</block>
-  <block id="f4e4699c007dae28f5198390082cd17e" category="paragraph">有关动态性能阈值的详细信息，请参见 _What events is_ 。有关 Unified Manager 如何对工作负载进行排名并确定排序顺序的信息，请参见 _How Unified Manager determines the performance impact for an event_ 。</block>
   <block id="7427acf420f5207b8ae1131352d073c7" category="paragraph">图形中的数据显示上次分析事件之前 24 小时的性能统计信息。每个工作负载的实际值和预期值均基于工作负载参与事件的时间。例如，检测到事件后，工作负载可能会参与事件，因此其性能统计信息可能与检测事件时的值不匹配。默认情况下，工作负载按延迟峰值（最高）偏差排序。</block>
   <block id="2545bfbff2b57fe22210b418aa7b0bde" category="paragraph">由于 Unified Manager 最多可保留 30 天的 5 分钟历史性能和事件数据，因此，如果事件超过 30 天，则不会显示任何性能数据。</block>
   <block id="a1fb5903985467b316b77afec2a094fa" category="list-text">* 工作负载排序列 *</block>
   <block id="12f3d074758a71c04659536f7c71fe85" category="list-text">* 延迟图表 *</block>
   <block id="ad66c9e4c4aac43f31d0399bd4bda649" category="paragraph">显示上次分析期间事件对工作负载延迟的影响。</block>
   <block id="733e7290b02f4bcfc4024e1c7717761e" category="list-text">* 组件使用情况列 *</block>
-  <block id="7c1f3eeafc59e1d661d732b95f6ccf9c" category="paragraph">显示有关处于争用状态的集群组件的工作负载使用情况的详细信息。在图中，实际使用量为蓝线。红色条会突出显示从检测时间到上次分析时间的事件持续时间。有关详细信息，请参见 _workload performance measurements 。</block>
   <block id="6b3abe7014911eaecd1bb9f29044ebe9" category="paragraph">对于网络组件，由于网络性能统计信息来自集群之外的活动，因此不会显示此列。</block>
   <block id="c1488620d5b7412ffad628b521ecbba0" category="list-text">* 组件使用情况 *</block>
   <block id="63c1fe7ae0c47abf05be33ca259c4db4" category="paragraph">显示网络处理，数据处理和聚合组件的利用率历史记录（以百分比表示），或者显示 QoS 策略组组件的活动历史记录（以百分比表示）。不会显示网络或互连组件的图表。您可以指向统计信息以查看特定时间点的使用情况统计信息。</block>
@@ -7820,7 +7684,6 @@
   <block id="b6e46cbd1b673d1e673a6e8e057a5c8c" category="paragraph">修复集群 B 并执行切回后， Vol3p 将在集群 B 上再次处于活动状态，并显示切换期间的历史统计信息和统计信息缺口。除非发生另一次切换，否则无法从集群 A 查看 Vol3b ：</block>
   <block id="aa79b6dfffdb81f9ff1b71ea8efb4cda" category="image-alt">OPM MCC 卷</block>
   <block id="43380a60a1d5a3dcb4817db0a0bb12c5" category="list-text">非活动的 MetroCluster 卷（例如，切回后集群 A 上的 Vol3b ）会通过消息 "`this volume was deleted` " 来标识。此卷并未实际删除，但 Unified Manager 当前不会监控此卷，因为它不是活动卷。</block>
-  <block id="b89f5e498abc9e286f68cc0139f527ee" category="list-text">如果一个 Unified Manager 正在监控 MetroCluster 配置中的两个集群，则卷搜索将返回当时处于活动状态的任何卷的信息。例如，如果发生切换且 Vol3 在集群 A 上处于活动状态，则搜索 "`Vol3` " 将返回集群 A 上 Vol3b 的统计信息和事件</block>
   <block id="e3e95a85fd025a8e0e285e2561159bbe" category="summary">工作负载分析器页面显示有关可能影响工作负载的任何当前事件的信息，可能修复导致此事件的问题描述的建议以及用于分析性能和容量历史记录的图表。</block>
   <block id="b5fb18da7c3398568bbe73fbf858fe6c" category="doc">工作负载分析器显示的数据</block>
   <block id="ba092de88fbba6144602df834bd7cacd" category="paragraph">在页面顶部，您可以指定要分析的工作负载（卷或 LUN ）的名称以及要查看统计信息的时间范围。如果要查看较短或较长的时间段，您可以随时更改时间范围。</block>
@@ -9073,7 +8936,6 @@
   <block id="e5bb72d910c6bd4af263b66381e46d9f" category="paragraph">如果在安装之前定义了此信息，则安装脚本将发现这些设置并使用定义的值，而不是使用安装默认设置。</block>
   <block id="f6dfac06a120ad910330ab2bc9b3dd5e" category="paragraph">此外，默认 Unified Manager 安装会将 umadmin 用户包括在 ` /etc/sudoers.d/` 目录的 sudoers 文件（`ocum_sudoers` 和 `ocie_sudoers` ）中。如果由于安全策略或某个安全监控工具而从环境中删除此内容，则必须将其重新添加。您需要保留 sudoers 配置，因为某些 Unified Manager 操作需要这些 sudo 权限。</block>
   <block id="d4b00de1554eff3ac10e20d1f23e292f" category="paragraph">环境中的安全策略不能限制 Unified Manager 维护用户的 sudo 权限。如果权限受限，某些 Unified Manager 操作可能会失败。在成功安装后以 umadmin 用户身份登录后，验证您是否能够运行以下 sudo 命令。</block>
-  <block id="1a7f1dfeda0d90dbd7609485508fbec6" category="paragraph">`sudo /etc/init.d/ocie status`</block>
   <block id="328b8a8d521336be73262ea714c1e325" category="paragraph">此命令应返回 ocie 服务的相应状态，并且不会出现任何错误。</block>
   <block id="eec7883a2bcc70de8473576c1f08a5bd" category="list-text">以 root 用户身份登录到服务器。</block>
   <block id="3daffc60e45994853d71bd4a3d47f4b3" category="list-text">`m名为 " 维护` " 的 umadmin 组帐户：</block>
@@ -9095,12 +8957,10 @@
   <block id="73354680b9aadf478f1227e2ce786698" category="paragraph">示例输出：</block>
   <block id="621484ac778dedeb75471521b4e3da7b" category="admonition">在此输出中，上下文为 `default_t` 。您应将此上下文更改为 `mysqld_db_t` 。</block>
   <block id="fa2520cc69af2b496fc097509862e5e6" category="list-text">执行以下步骤可根据您的挂载方式 ` /opt/netapp/data` 设置上下文。</block>
-  <block id="8cce1b3b882f8a60215ae93e9b8463b4" category="list-text">运行以下命令将上下文设置为 `mysqld_db_t` ：</block>
   <block id="34ebc927070d1f0f0d168222751672fe" category="list-text">如果已在 ` /etc/fstab` 中配置了 ` /opt/netapp/data` ，则应编辑 ` /etc/fstab` 文件。对于 ` /opt/netapp/data/` mount 选项，将 MySQL 标签添加为：</block>
   <block id="2ff1717e7948ea020c7558f5edcec1eb" category="paragraph">`context=system_u ： object_r ： mysqld_db_t ： s0`</block>
   <block id="d488a1160c393f49a2c9ed8bd9ebe7ff" category="list-text">卸载并重新挂载 ` /opt/netapp/data/` 以启用上下文。</block>
   <block id="467d316f506a1751012e8dc8bb6ab3b6" category="list-text">如果您使用的是直接 NFS 挂载，请运行以下命令将上下文设置为 `mysqld_db_t` ：</block>
-  <block id="372632985965e1ae915d17aaf74889b9" category="paragraph">`m挂载 &lt;nfsshare&gt; ： /&lt;mountpoint&gt;/opt/netapp/data -o context=system_u ： object_r ： mysqld_db_t ： s0` 。验证上下文是否设置正确：</block>
   <block id="f39e428b6f0460103461690dc7698da5" category="paragraph">`ls -dz /opt/netapp/data/`</block>
   <block id="5a2ae553bb790b75ebf1d88245170467" category="section-title">挂载 /opt/netapp 和 /opt/netapp/data/ 时配置 SELinux 环境也会单独挂载</block>
   <block id="6a67b52571647cab034e5469c7dbe03b" category="paragraph">在这种情况下，首先应按照上一节所述为 ` /opt/netapp/data/` 设置上下文。为 ` /opt/netapp/data/` 设置正确的上下文后，请确保父目录 ` /opt/netapp` 未将 SELinux 上下文设置为 `file_t` 。</block>
@@ -9118,7 +8978,6 @@
   <block id="456be3986dc6aff928e7e16f07f8562f" category="section-title">挂载 /opt/netapp 且 /opt/netapp/data/ 未单独挂载时配置 SELinux 环境</block>
   <block id="783fab70a524af7455cb9f3470f68fdd" category="paragraph">如果您已在系统中挂载了 ` /opt/NetApp` ，并且 SELinux 设置为 `Enforcing` ，请确保 ` /opt/NetApp` 的 SELinux 上下文类型设置为 `mysqld_db_t` ，这是数据库文件位置的默认上下文元素。</block>
   <block id="8c5fb5a31457ddb0a355f79b5006fd17" category="list-text">执行以下步骤可根据您的挂载方式 ` /opt/NetApp` 设置上下文。</block>
-  <block id="6f9bd0afae96bb9d85903bf888bb1a45" category="list-text">如果您已在 ` /etc/fstab` 中配置了 ` /opt/NetApp` ，请编辑 ` /etc/fstab` 文件。对于 ` /opt/netapp/` mount 选项，将 MySQL 标签添加为：</block>
   <block id="f9051411037b243027cff1ee99de2113" category="list-text">卸载，然后再次挂载 ` /opt/netapp/` 以启用上下文。</block>
   <block id="02c78a8183418401c853e94f3d195414" category="paragraph">`ls -dz /opt/netapp/`</block>
   <block id="77d0d0a6430abce719553e446f56f1b1" category="summary">您可以在物理或虚拟 Red Hat Enterprise Linux 或 CentOS 平台上安装 Unified Manager 。</block>
@@ -9171,11 +9030,8 @@
   <block id="bd83ea599d4b1bc4b0405111a4f0e137" category="summary">安装 Unified Manager 的 Linux 系统需要特定版本的操作系统和支持软件。</block>
   <block id="e1b471357a7f865e8079b188a4eedcd7" category="doc">Linux 软件和安装要求</block>
   <block id="dbbb4ab63646c15ff10f8545fb7cdfb6" category="paragraph">Linux 系统必须安装以下版本的操作系统和支持软件：</block>
-  <block id="ee615346278b33520c4013511a807b10" category="list-text">Red Hat Enterprise Linux 或 CentOS 7.x 和 8.x 版，基于 x86_64 架构。不支持 CentOS 流。</block>
   <block id="65f0429f6a80d2b534cf7c4fe5215206" category="paragraph">有关受支持的 Red Hat Enterprise Linux 和 CentOS 版本的最新完整列表，请参见互操作性表。</block>
-  <block id="ba319a4c4016780cd7c22ad751a1ad56" category="admonition">NetApp 不支持使用 Microsoft System Center Configuration Manager （ SCCM ）等第三方工具安装 Unified Manager 。</block>
   <block id="7357f7d7e3e2aa8fbcd5222429988b84" category="paragraph">以下第三方软件包是必需的，但 Unified Manager 不提供这些软件包。这些软件包会在安装期间由 `yum` 安装程序自动安装，前提是您已按照以下各节所述配置存储库。</block>
-  <block id="4b7bbc94176007b0c7640a27ef7b6282" category="list-text">OpenJDK 11.0.12 版（来自 Red Hat Extra Enterprise Linux Server 存储库）</block>
   <block id="f2238d96fe29373ff3726e2b77321ab3" category="list-text">Python 3.6.x</block>
   <block id="d1e7aabda60322abe75bf0db2ca50764" category="list-text">p7zip 16.02 或更高版本（从 Red Hat Extra Packages for Enterprise Linux 存储库）</block>
   <block id="78381976b37490cec80cd2fe2b00d51a" category="paragraph">在升级任何第三方软件之前，您必须关闭正在运行的 Unified Manager 实例。第三方软件安装完成后，您可以重新启动 Unified Manager 。</block>
@@ -9265,7 +9121,6 @@
   <block id="4b9d5e4986edb2a9d0749936a3c5a16a" category="summary">系统必须能够访问某些存储库，以便安装程序可以访问和安装所有必需的软件依赖项。</block>
   <block id="90076945ee4945f723bcfab540de5957" category="doc">设置所需的软件存储库</block>
   <block id="38e6765f489199cbac8d654040013a22" category="doc">Linux 安装快速入门说明</block>
-  <block id="ad725a8cf93b940ceeb22009da4cbe69" category="list-text">操作系统：基于 x86_64 架构的 Red Hat Enterprise Linux 和 CentOS 7.x 和 8.x 版，使用操作系统安装程序的 * 软件选择 * 选项中的 " 带 GUI 的服务器 " 基础环境安装</block>
   <block id="480c2974456cfdab733c75db7656f977" category="list-text">RAM ： 12 GB ， CPU ：总计 9572 MHz</block>
   <block id="dd6993bbff983390c9accd8acbf1ed57" category="list-text">可用磁盘空间： ` /opt/netapp/data` 目录中有 100 GB 磁盘空间，根分区中有 50 GB 磁盘空间。对于单独挂载的 ` /opt` 和 ` /var/log` 目录，请确保 ` /opt` 具有 15 GB ， ` /var/log` 具有 16 GB ， ` /tmp` 具有 10 GB 可用空间。</block>
   <block id="5b2ce921bf2eb800e2901c4f436230d9" category="paragraph">有关详细的系统要求以及在安全站点中安装产品的信息，请参见 <block ref="510d66df11f8e08701d0e806aec8f2c4" category="inline-link-macro-rx"></block> 和 <block ref="6b67f16fed93b756518b295cb43f355b" category="inline-link-macro-rx"></block>。</block>
@@ -9287,7 +9142,6 @@
   <block id="c2d77eb29a616635aaace5e484e7110e" category="paragraph">您必须对安装了 Unified Manager 的 Red Hat Enterprise Linux 或 CentOS 服务器具有 root 用户访问权限。</block>
   <block id="bd4c43ed11101c9806bd4fded878628b" category="list-text">以 root 用户身份登录到要重新启动 Unified Manager 服务的服务器。</block>
   <block id="b29348a660e9e748ea4fd292d57cfaf5" category="summary">您可以通过在 Red Hat 平台上下载并运行安装文件来升级 Unified Manager 。</block>
-  <block id="13ddd135bd2860acc9d2a7dde58cf8b6" category="paragraph">您可以通过在 Red Hat 平台上下载并运行安装文件从 Unified Manager 9.8 或 9.9 升级到 9.10 。</block>
   <block id="851b63dfbfda9a56a4773ddff04a3bb8" category="list-text">要升级 Unified Manager 的系统必须满足系统和软件要求。</block>
   <block id="476492554416aa7a1518b6deeea2245d" category="list-text">在升级 Unified Manager 之前，您必须安装或升级到正确版本的 OpenJDK 。</block>
   <block id="7db7f0fa38ea709bf1cfa08b1cc2edf4" category="inline-link-macro">在 Linux 上升级 JRE</block>
@@ -9295,7 +9149,6 @@
   <block id="e4ed881267e1fda6e2abe689c01e2602" category="list-text">您必须已订阅 Red Hat Enterprise Linux 订阅管理器。</block>
   <block id="ed2c45fc23f3cfea044bc28997ea71c4" category="list-text">为了避免数据丢失，如果在升级期间存在问题描述，则必须已为 Unified Manager 数据库创建备份。此外，建议您将备份文件从 ` /opt/netapp/data` 目录移动到外部位置。</block>
   <block id="57631e141b8f0f57a0f764b018516b87" category="list-text">您应已完成所有正在运行的操作，因为 Unified Manager 在升级过程中不可用。</block>
-  <block id="9036fc0a5fcfd893d6d6b4578a8aea1f" category="list-text">运行此命令以安装新版本： `yum install * 。 rpm`</block>
   <block id="d37d0b63e336071083beff10d6864144" category="list-text">启动 Unified Manager 服务器。运行以下命令：</block>
   <block id="d29364de1efc0d3a8b2b3b2e091e6ce6" category="list-text">登录到目标 Red Hat Enterprise Linux 或 CentOS 服务器。</block>
   <block id="9d8fac2d2928116ea867fc277420d176" category="list-text">将 Unified Manager 捆绑包下载到服务器。</block>
@@ -9356,7 +9209,6 @@
   <block id="16cb709111f75691259b4300511c4561" category="inline-link-macro">《 Unified Manager 最佳实践指南》</block>
   <block id="7174744f7763cc5d954bc0e92733b774" category="paragraph">此外，在安装另一个 Unified Manager 实例之前，一个 Unified Manager 实例可以监控的节点数也存在限制。有关详细信息，请参见 <block ref="fb1ddd70760829cfad3621d150dc6027" category="inline-link-macro-rx"></block></block>
   <block id="b09592db93e99e16c02d56499bcc0e46" category="summary">您可以在 VMware vSphere 上升级到 Unified Manager</block>
-  <block id="539da2d4c01289a71cdecb9e92ed5f9d" category="paragraph">您只能从 9.8 或 9.9 版升级到 Unified Manager 9.10 。</block>
   <block id="165614b596769629e2b5d0efa723fdc8" category="inline-link-macro">下载 Unified Manager ISO 映像</block>
   <block id="638adcb0fb1e666005e78ce6507750e4" category="list-text"><block ref="1527bfdac02a122c6f1ea8d5355cabb9" category="inline-link-macro-rx"></block>。</block>
   <block id="cb06beddce96e08399fea241fef33e34" category="inline-link-macro">升级 Unified Manager</block>
@@ -9418,7 +9270,6 @@
   <block id="0fe01979c09e5c4c4a13629e8a2dc63f" category="list-text">在提示符处输入密码，然后单击 * 输入 * 。</block>
   <block id="827e9bc6912741afa9fd15061acbdf3a" category="paragraph">VM 控制台将显示 Unified Manager Web UI 的 URL 。</block>
   <block id="b251c0d5b9ac9a245c3e5680b898541b" category="paragraph">您可以访问 Web UI 以执行 Unified Manager 的初始设置，如 _Unified Active IQ Unified Manager 系统配置指南中所述。</block>
-  <block id="6afd3f4c5093ce2e5e2c7336e809091a" category="admonition">在 VMware vSphere 系统上安装 Unified Manager 时， MySQL 3306 的默认端口仅限于本地主机。这不会影响保留先前配置的任何升级情形。可以修改此配置，并可通过维护控制台将此连接提供给其他主机。</block>
   <block id="add00995c60192dd032b1173fc3f8673" category="admonition">如果使用此端口或任何其他端口连接到 VMware vCenter Server 或 ESXi 服务器，请确保此端口可用且可以在安全站点中连接。</block>
   <block id="c2e93c29da046a9d351a6f1cf070cfc7" category="summary">您可以通过删除安装了 Unified Manager 软件的虚拟机（ VM ）来卸载 Unified Manager 。</block>
   <block id="6ada6fa6d95057606e896986fa32ae13" category="list-text">您应具有用于访问 VMware vCenter Server 和 vSphere Web Client 的凭据。</block>
@@ -9468,7 +9319,6 @@
   <block id="726763bf5aecf665420de6eeab308805" category="image-alt">部署顺序 oc 6 0</block>
   <block id="186ee8f743cf6f79dae8d8b6579d0b17" category="summary">您可以升级 Unified Manager 虚拟设备</block>
   <block id="a1008c9caf7ebe0f026c39a427ae352b" category="doc">升级 Unified Manager 虚拟设备</block>
-  <block id="43ccc80c0c263f070a643421783200f4" category="paragraph">您可以将 Unified Manager 虚拟设备从 9.8 和 9.9 版本升级到 9.10 。</block>
   <block id="d9a8a070a49436c3c76ab9b3ca5a89ff" category="list-text">您已从 NetApp 支持站点下载升级文件 ISO 映像。</block>
   <block id="d24355e99c12f5ea949a960382388c4a" category="list-text">要升级 Unified Manager 的系统满足系统和软件要求。</block>
   <block id="f83b30b10a41161d1e74855dfac05f77" category="list-text">对于 vSphere 6.5 及更高版本的用户，您已安装 VMware 远程控制台（ VMRC ）。</block>
@@ -9907,7 +9757,6 @@
   <block id="2cd66e4cb1059caf02b4b6194a8ee5dd" category="paragraph">集群管理 IP 地址必须是管理 Storage Virtual Machine （ SVM ）的集群管理 LIF 。如果使用节点管理 LIF ，则操作将失败。</block>
   <block id="81bd0e8291ca755124cc9a7da825fd2f" category="list-text">集群必须运行 ONTAP 9.1 或更高版本的软件。</block>
   <block id="ef449751178f433197590c3c5074c337" category="list-text">ONTAP 管理员用户名和密码</block>
-  <block id="22699c2de937903a991a77ce57d4e158" category="paragraph">此帐户必须具有 _admin_ 角色，并且应用程序访问权限设置为 _ontapi_ ， _ssh_ 和 _http_ 。</block>
   <block id="a76dce9421f54828d6c4fec13fc1a2e1" category="list-text">使用 HTTPS 协议连接到集群的端口号（通常为端口 443 ）</block>
   <block id="519e5490fb88463363f7c8fd07cbbf79" category="list-text">您拥有所需的证书。需要两种类型的证书：</block>
   <block id="b3b9ec51477086ec9642119cccfc771a" category="inline-link">如何在 ONTAP 9 中续订 SSL 证书</block>
@@ -10487,14 +10336,8 @@
   <block id="545ff8fed052f1a7d89b3009d5b2b769" category="paragraph">您可以使用搜索框搜索某些对象属性，以帮助细化清单页面中的项目列表。例如，您可以输入 "clone" 以细化卷清单页面中的卷列表，从而查看其中包含 "clone" 一词的所有卷。</block>
   <block id="83672ae9d125d72b27dc1fed195fc766" category="list-text">* 正在导出数据 *</block>
   <block id="0bdb9561f65edfacafe46db434b17da0" category="paragraph">您可以单击 * 报告 * 按钮（或 * 导出 * 按钮）将数据导出为逗号分隔值 ` （ .csv ）` 文件， ` （ .pdf ）` 文档或 Microsoft Excel ` （ .xlsx ）` 文件，并使用导出的数据构建报告。</block>
-  <block id="9d0c2b795242f902ab102f1763823a7b" category="summary">通过性能服务级别，您可以定义工作负载的性能和存储目标。您可以在最初创建工作负载时为工作负载分配性能服务级别，也可以稍后通过编辑工作负载来分配性能服务级别。</block>
-  <block id="7cb3ba427d55e6e636788665caa3ec26" category="paragraph">存储资源的管理和监控基于服务级别目标（ Service Level Objective ， SLO ）。SLO 由基于所需性能和容量的服务级别协议定义。在 Unified Manager 中， SLO 是指在 NetApp 存储上运行的应用程序的 PSL 定义。存储服务会根据底层资源的性能和利用率进行区分。PSL 是存储服务目标的问题描述。通过 PSL ，存储提供程序可以为工作负载指定性能和容量目标。</block>
-  <block id="24f489c836216c262d726fe34baae40e" category="paragraph">Unified Manager 提供了一些无法更改的预设策略。这些预定义的性能服务级别包括： " 至高性能 " ， " 性能 " 和 " 价值 " 。极高性能，性能和价值 PSL 适用于数据中心中的大多数常见存储工作负载。Unified Manager 还为数据库应用程序提供了三个 PSL ：适用于数据库日志的至高 PSL ，适用于数据库共享数据的至高 PSL 以及适用于数据库数据的至高 PSL 。这些是性能极高的 PSL ，支持突发 IOPS ，适用于吞吐量需求最高的数据库应用程序。如果这些预定义的 PSL 不符合您的要求，则可以根据您的需求创建新的 PSL 。</block>
-  <block id="d957ef03b1c82352c468b8bb696fc793" category="paragraph">您可以从 * 策略 * &gt; * 性能服务级别 * 页面以及使用存储提供程序 API 访问 PSL 。通过为存储工作负载分配 PSL 来管理存储工作负载非常方便，因为您不必单独管理存储工作负载。也可以通过重新分配另一个 PSL 来管理任何修改，而不是单独管理这些修改。</block>
   <block id="7005bc0b5df720e94cd308b434fee220" category="paragraph">您不能修改系统定义的 PSL 或当前分配给工作负载的 PSL 。您不能删除分配给工作负载的 PSL ，也不能删除唯一可用的 PSL 。</block>
-  <block id="3be5151bc97f1686c9fef5708fe4dd73" category="paragraph">" 性能服务级别 " 页面列出了可用的 PSL 策略，并可用于添加，编辑和删除这些策略。此页面显示以下信息：</block>
   <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">字段</block>
-  <block id="7bf6301ab544e8c9b641a48abd1f8094" category="paragraph">性能服务级别的名称。</block>
   <block id="0a3c9475d1e35e62da5f0d597fb21890" category="paragraph">策略是系统定义的还是用户定义的。</block>
   <block id="d092327d9f42b95ebbd634d5d44c3a30" category="paragraph">预期 IOPS</block>
   <block id="7bf4ff4f56c6a407eb807d4b6794420c" category="paragraph">应用程序应在 LUN 或文件共享上执行的最小 IOPS 数。预期 IOPS 用于根据存储对象分配的大小指定最小预期分配的 IOPS 。</block>
@@ -10517,10 +10360,7 @@
   <block id="17f71c02b476fa71125b526ff2677e20" category="paragraph">集群中的总可用容量和已用容量。</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="paragraph">工作负载</block>
   <block id="0560dd7798f23fb552c8ee7fad9e6494" category="paragraph">已分配 PSL 的存储工作负载数量。</block>
-  <block id="9e28180b8b0ed53cf76cc8f82f0de990" category="paragraph">有关峰值 IOPS 和预期 IOPS 如何帮助在 ONTAP 集群上实现一致的差异化性能的信息，请参见以下知识库文章：</block>
   <block id="6a2f7c6fed6294a90127063b3b99b00d" category="inline-link">什么是性能预算？</block>
-  <block id="ca8d1d6e78ce890ca12599250d6fd33a" category="paragraph"><block ref="ca8d1d6e78ce890ca12599250d6fd33a" category="inline-link-rx"></block></block>
-  <block id="49d22a2b55c0267f82a42fe68caf3118" category="paragraph">请注意，如果工作负载在前一小时 30% 的时间内超过预期延迟值，则 Unified Manager 将生成以下事件之一，以通知您可能存在性能问题描述： " 已违反性能服务级别策略定义的工作负载卷延迟阈值 " 或 " 已违反性能服务级别策略定义的工作负载 LUN 延迟阈值 " 。您可能需要分析工作负载，以查看可能导致延迟值增加的原因。</block>
   <block id="a852266f42be6bf03c311f8a5855c8b3" category="paragraph">下表提供了有关系统定义的 PSL 的信息：</block>
   <block id="6242d8dfa9aad926035ef1dc1578534b" category="cell">问题描述和用例</block>
   <block id="19db00508a37205f06d4d348a5208f2c" category="cell">预期延迟（毫秒 / 操作）</block>
@@ -10717,7 +10557,6 @@
   <block id="2fafe59f8f0f817a41c3ec1b40e7390f" category="paragraph">您可以将系统建议的 PSL 分配给数据中心中未分配 PSL 的存储工作负载，或者分配的 PSL 与系统建议不匹配。要使用此功能，请单击 * 分配系统建议 PSL* 按钮。您无需选择特定工作负载。</block>
   <block id="6ad7dc0a210fe4d969bf95d55ceae294" category="paragraph">此建议由系统分析在内部确定，对于 IOPS 和其他参数与任何可用 PSL 的定义不一致的工作负载，此建议将跳过。此外， `Waiting for I/O` 和 Learning 状态的存储工作负载也不包括在内。</block>
   <block id="bf55685261d9f53c0f30821c3fd98be4" category="paragraph">Unified Manager 会在工作负载名称中查找一些特殊关键字来覆盖系统分析并为工作负载建议其他 PSL 。如果工作负载的名称中包含字母 "`ora` " ，则建议使用 "* 至高性能 * PSL" 。如果工作负载的名称中包含字母 "`VM` " ，则建议使用 "* 性能 "* PSL" 。</block>
-  <block id="8282d35ad52f263e93b74a64b6fbfa9b" category="paragraph">响应时间偏差超过性能阈值的工作负载称为受影响的工作负载，而 NVRAM 写入吞吐量偏差高于正常值并导致出现争用的工作负载称为 _bulis_ 。由于只有写入请求才会镜像到配对集群，因此 Unified Manager 不会分析读取吞吐量。</block>
   <block id="e914595f1e53d9a321e9209c476b6b89" category="paragraph"><block ref="e914595f1e53d9a321e9209c476b6b89" category="inline-link-macro-rx"></block></block>
   <block id="87dde0c171bff2ae51197b700e179074" category="paragraph"><block ref="87dde0c171bff2ae51197b700e179074" category="inline-link-macro-rx"></block></block>
   <block id="4e07955739f9126355991a4d6bcb27b7" category="paragraph"><block ref="4e07955739f9126355991a4d6bcb27b7" category="inline-link-macro-rx"></block></block>
@@ -11064,10 +10903,6 @@
   <block id="21879704494cd9abadd311d2f6dab477" category="doc">配额的问题描述对话框</block>
   <block id="4e9d6d4d3c82d991ce8d49f58bff12dc" category="summary">所有工作负载视图显示数据中心集群上所有可用工作负载的列表。</block>
   <block id="018d3ec165f27acba9e4a45ef0acf035" category="doc">查看工作负载</block>
-  <block id="bbe0e7a4338f91f5b9fc53366ee0071c" category="paragraph">所有工作负载视图会列出与 Unified Manager 管理的 ONTAP 集群关联的存储工作负载。此外，您还可以通过此页面为存储工作负载分配存储效率策略（ Storage Efficiency Policy ， SEP ）和性能服务级别（ Performance Service Levels ， PSL ）。</block>
-  <block id="c97816d6e916edb5d5a4d1eb2f52d105" category="paragraph">将集群添加到 Unified Manager 时，系统会自动发现每个集群上的存储工作负载并将其显示在此页面上，但 FlexGroup 卷及其成分卷除外。</block>
-  <block id="a6318b2274381d27256359bfb1b93adb" category="paragraph">只有在对存储工作负载启动 I/O 操作后， Unified Manager 才会开始分析工作负载以获得建议（建议的 PSL ）。对于未执行任何 I/O 操作的新发现的存储工作负载，状态为 "`Waiting for I/O` " 。对存储工作负载执行 I/O 操作后， Unified Manager 将开始分析，工作负载状态将更改为 "`Learning ……` " 。分析完成后（自 I/O 操作开始起 24 小时内），将显示存储工作负载的建议 PSL 。</block>
-  <block id="e07c411887b0f746d48ec3eda65e1220" category="paragraph">使用 * 工作负载 * &gt; * 所有工作负载 * 选项，您可以执行多项任务：</block>
   <block id="a9372e236069e9faaa55a9b6f1622b96" category="list-text">添加或配置存储工作负载</block>
   <block id="b81e94e61e4dd867ef7d060f7a0d929a" category="list-text">查看和筛选工作负载列表</block>
   <block id="41ac12e9811b01321ab5266888eb831f" category="list-text">为存储工作负载分配 PSL</block>
@@ -11078,7 +10913,6 @@
   <block id="a7904deaa8ab0a3cb4fd9ca423e1e9f4" category="section-title">查看和筛选工作负载</block>
   <block id="93e41f41a38251bca376c06a90b2d35f" category="paragraph">在所有工作负载屏幕上，您可以查看数据中心中的所有工作负载，或者根据特定存储工作负载的 PSL 或名称搜索这些工作负载。您可以使用筛选器图标输入搜索的特定条件。您可以按不同的筛选条件进行搜索，例如按主机集群或 Storage VM 进行搜索。通过 * 容量总计 * 选项，可以按工作负载的总容量（以 MB 为单位）进行筛选。但是，在这种情况下，返回的工作负载数量可能会有所不同，因为系统会在字节级别比较总容量。</block>
   <block id="c87fa7c6e759d8461cef460152c0f88d" category="paragraph">对于每个工作负载，将显示主机集群和 Storage VM 等信息以及分配的 PSL 和 SEP 。</block>
-  <block id="747575017fc251da3cef661215955460" category="paragraph">您还可以通过此页面查看工作负载的性能详细信息。您可以通过单击 * 选择 / 排序列 * 按钮并选择要查看的特定列来查看有关工作负载的 IOPS ，容量和延迟的详细信息。" 性能视图 " 列显示工作负载的平均 IOPS 和峰值 IOPS ，您可以单击工作负载分析器图标以查看详细的 IOPS 分析。"IOPS 分析 " 弹出窗口中的 * 分析工作负载 * 按钮将转到 " 工作负载分析 " 页面，在此可以选择一个时间范围并查看选定工作负载的延迟，吞吐量和容量趋势。有关工作负载分析器的详细信息，请参见 _Troubleshooting Workloads Using the Workload analyzer</block>
   <block id="2631d37d37bc9b5c474e05a1e1c726ae" category="section-title">分析工作负载的性能和容量标准</block>
   <block id="9fb9ad42cd98a4cc8213472f859685f8" category="paragraph">您可以单击 * 性能视图 * 列中的条形图图标来查看有关工作负载的性能信息以帮助进行故障排除。要在 " 工作负载分析 " 页面上查看性能和容量图表以分析对象，请单击 * 分析工作负载 * 按钮。</block>
   <block id="d5238307b8804969155ba0a3d399d9a4" category="summary">通过菜单栏中的通知铃，您可以快速查看 Unified Manager 正在跟踪的最重要活动事件。</block>
@@ -11218,23 +11052,13 @@
   <block id="2dcd695b929fbb86815e565342310bf0" category="paragraph">" 信息板 " 页面包含 " 面板 " ，用于显示正在监控的集群的容量，性能和安全运行状况概况。此页面还提供了一个管理操作面板，其中列出了 Unified Manager 可用来解决某些事件的修复程序。</block>
   <block id="04a5f6e98f6a6fb512c08abc7b6e1834" category="paragraph">大多数面板还会显示该类别中的活动事件数量以及过去 24 小时内添加的新事件数量。此信息有助于您确定可能需要进一步分析哪些集群才能解决事件。单击这些事件将显示排名靠前的事件，并提供指向经过筛选以显示该类别中活动事件的事件管理清单页面的链接。</block>
   <block id="1fed3e7a8a0ba543e4b67922a67fbf09" category="paragraph">在信息板顶部，您可以选择这些面板是显示所有受监控集群（ " 所有集群 " ）的信息还是显示单个集群的信息。您可以先查看所有集群的状态，然后在需要查看详细信息时深入查看各个集群。</block>
-  <block id="b9336d3d8dfe7df72e97729fb4cfff6a" category="paragraph">根据您的配置，以下列出的某些面板不会显示在页面上。</block>
-  <block id="7159b8d16e082bb281a900b08b5b3c53" category="list-text">* 管理操作面板 *</block>
-  <block id="b24d4d22a9c52aa56f43f1857d9e3856" category="paragraph">Unified Manager 可以全面诊断某些问题并提供单一解决方案。如果可用，这些解决方法将显示在此面板中，并显示 * 修复它 * 或 * 全部修复 * 按钮。您可以直接从 Unified Manager 修复这些问题，而不必使用 ONTAP 系统管理器或 ONTAP 命令行界面。要查看所有问题，请单击</block>
   <block id="c076c04a5923aa493f5d80439c0a607e" category="inline-link-macro">直接从 Unified Manager 修复 ONTAP 问题</block>
-  <block id="5264ee457cbb4786c8014caff863b77f" category="paragraph">请参见 <block ref="4de06821690ec8505ff30e3d01558e54" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
-  <block id="fefbd613edf4fa6e465728bd4899ff3c" category="list-text">* 容量面板 *</block>
   <block id="cef503ab15e4ed36b018cb3a90d14ae4" category="paragraph">在查看所有集群时，此面板会显示每个集群的已用物理容量（应用存储效率节省后）和物理可用容量（不包括潜在的存储效率节省），预计磁盘达到全满前的天数， 以及基于已配置的 ONTAP 存储效率设置的数据精简率。它还会列出任何已配置云层的已用容量。单击条形图可转到该集群的聚合清单页面。单击 " 达到全满天数 " 文本将显示一条消息，用于标识剩余容量天数最少的聚合；单击聚合名称可查看更多详细信息。</block>
   <block id="1d775ead11df49b05265d255ec97ba03" category="paragraph">查看单个集群时，此面板会显示按本地层上的每个磁盘类型排序的数据聚合的已用物理容量和物理可用容量，以及云层的已用容量和物理可用容量。单击某个磁盘类型的条形图可转到使用该磁盘类型的卷的卷清单页面。</block>
   <block id="72ff6bbe84ebdc6126c97ef71a5082b1" category="paragraph">在查看所有集群时，此面板会显示每个集群的性能容量值（过去 1 小时的平均值）以及性能容量达到上限之前的天数（基于每日增长率）。单击条形图可转到该集群的节点清单页面。请注意，节点清单页面会显示过去 72 小时的平均性能容量。单击 "Days to Full" 文本将显示一条消息，指出剩余性能容量天数最少的节点；单击节点名称可查看更多详细信息。</block>
   <block id="d2b96729b551f106fbc157a73649ed9e" category="paragraph">查看单个集群时，此面板会显示集群已用性能容量百分比，总 IOPS 和总吞吐量（ MB/ 秒）值，以及预计这三个指标中每个指标达到上限之前的天数。</block>
   <block id="ce0a654c3b5c722340279eb742f2247d" category="paragraph">查看单个集群时，此面板会显示当前在特定 IOPS 范围内运行的工作负载总数，并在将光标悬停在图表上时指示每个磁盘类型的数量。</block>
   <block id="db3ec3afcbb3550eaf2d4f9224d2c3b6" category="paragraph">此面板显示分配给每个性能服务级别（ PSL ）策略的遵从和不遵从工作负载总数。它还会显示未分配 PSL 的工作负载数量。单击条形图可转到 " 工作负载 " 页面中分配给该策略的符合性工作负载。单击条形图后面的数字可转到分配给该策略的遵从和不遵从工作负载。</block>
-  <block id="ef4fe1b8268d44620ad24ec7733645fd" category="list-text">* 安全面板 *</block>
-  <block id="9a268bcb23ec0f95e8394deaee691d7b" category="paragraph">在查看所有集群时，此面板会显示合规和不合规的集群数量，合规和不合规的 Storage VM 数量以及加密和未加密的卷数量。合规性基于<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block>。单击面板顶部的右箭头可在安全性页面中查看所有集群的安全详细信息。</block>
-  <block id="c39f9f0462b38c1550c10afc121f8195" category="paragraph">查看单个集群时，此面板会显示集群是否合规，合规和不合规的 Storage VM 数量以及加密和未加密的卷数量。单击面板顶部的右箭头可在安全性页面中查看集群的安全详细信息。有关详细信息，请参见 <block ref="3817c92b8c868f8dcff11bea431f7255" category="inline-link-macro-rx"></block>。</block>
-  <block id="779207efbcb31e6ce540b3be751f94e1" category="list-text">* 数据保护面板 *</block>
-  <block id="1932eeb4d3404b8cddfc5c356e5b58a4" category="paragraph">此面板显示数据中心中单个或所有集群的数据保护摘要。它会显示过去 24 小时在 ONTAP 中引发的数据保护事件总数和活动事件数。此面板将显示一个集群中的卷数，或者显示受 Snapshot 副本和 SnapMirror 关系保护的数据中心中的所有集群的卷数。此外，还会显示 SnapMirror 恢复点目标（ RPO ）滞后的卷数。您可以将鼠标悬停在此处查看相应的计数和图例。单击条形图可转到卷屏幕，其中包含选定的相应卷。单击每个事件中的链接将转到 " 事件 " 详细信息页面。您可以单击 * 查看全部 * 链接以查看事件管理清单页面中的所有活动保护事件。有关详细信息，请参见 <block ref="cce169fddfae7a31f74f472dce696e49" category="inline-link-macro-rx"></block>。</block>
   <block id="780ec40cc715a112c118d12f06bd508f" category="paragraph">查看所有集群时，您可以选择按最高 IOPS ，最高吞吐量（ MB/ 秒）或最高已用物理容量对集群进行排序。</block>
   <block id="56301f99c72abc61a51cf04b7c012878" category="paragraph">查看单个集群时，您可以选择按最高 IOPS ，最高吞吐量（ MB/ 秒）或最高已用逻辑容量排序的工作负载。</block>
   <block id="c1f3cc81a0cfeaaaecf2394212cf9ea0" category="inline-link-macro">使用 Unified Manager 自动修复解决问题</block>
@@ -11457,7 +11281,6 @@
   <block id="77d7ce66941e6a8a53f84f813d2b2bf1" category="sidebar">使用 REST API 管理存储</block>
   <block id="32d8b1bb1bdc5067bfbde495253b3469" category="sidebar">监控和管理集群运行状况</block>
   <block id="7a8adec5b77b397bb264a687d8a6c162" category="sidebar">SVM 合规性类别</block>
-  <block id="358c01d38ef061cd86f4fbe039092253" category="sidebar">查看集群和 SVM 的详细安全状态</block>
   <block id="d549fcac9e4340e7fb3d154a339f9c13" category="sidebar">保护和还原数据</block>
   <block id="7daa41760e1a8fba65d06a1a254f35d9" category="sidebar">创建保护关系并对其进行故障排除</block>
   <block id="7518ca1d997947cafeacfe6e7557df98" category="sidebar">从运行状况 / 所有卷视图创建 SnapVault 保护关系</block>
@@ -11477,25 +11300,9 @@
   <block id="2d00b9d7d66bb4524df569339f8a571c" category="sidebar">直接从 Unified Manager 修复或管理 ONTAP 问题</block>
   <block id="725999ab15ba9076beeae097d322f86a" category="paragraph">`ActiveIQUnifiedManager-x.y.exe /V"mysql_password=mysql_password INSTALLDIR=\" 安装目录 \" mysql_data_DIR=\"MySQL 数据目录 \" maintenance_password=maintenance_password maintenance_username=maintenance_username /qn /l* v CompletePathForLogFile"`</block>
   <block id="fcd7df289adf5001f27988061b118e6d" category="paragraph">`ActiveIQUnifiedManager-x.y.exe /V"mysql_password=mysql_password INSTALLDIR=\" 安装目录 \" mysql_data_DIR=\"MySQL 数据目录 \" maintenance_password=maintenance_password maintenance_username=maintenance_username /qr /l* v CompletePathForLogFile"`</block>
-  <block id="ce358b3113b47d3203aa2868dcd1aed9" category="list-text">MySQL 社区版 8.0.27</block>
-  <block id="603140aee7e0394e7a45b946fa63701d" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的 MySQL 版本早于 8.0.27 ，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.0.27 。您不能将早期版本的 MySQL 独立升级到 8.0.27 。</block>
   <block id="faba12e25d46c49b1bf20440c559a011" category="list-text">* 更改 NTP 服务 *</block>
   <block id="57663e46604227b9442d1cfe28abf917" category="paragraph">在 `NTP` 和 `systemd-timesyncd` 服务之间切换。</block>
   <block id="24dde324c273e6fbdb5e05a5335b2997" category="paragraph">有关配置步骤的信息，请参见 <block ref="b867a7663a8e0fd154dcc2c6962f7760" category="inline-link-macro-rx"></block>。</block>
-  <block id="9f5b309ea6f5c0107df68af41b42385c" category="paragraph">您可以在安装了 Unified Manager 的 Linux 服务器上升级到较新版本的 MySQL ，以获取安全漏洞修复。如果系统上安装的 MySQL 版本早于 8.0.27 ，则 Unified Manager 9.10 升级过程会自动将 MySQL 升级到 8.0.27 。您不应将 MySQL 从早期版本独立升级到 8.0.27 。</block>
-  <block id="ca431acdff879bf74443b03a3ea7b05e" category="paragraph">您只能将 MySQL 8.0.27 的基本版本升级到更高版本，以便进行次要更新。</block>
-  <block id="0dd020de8717fef4759ed42bb7a9371e" category="list-text">mysql-commune-client-8.0.27</block>
-  <block id="54bf75329ac0640a1a4b19d525aa3298" category="list-text">mysql-commune-libs-8.0.27</block>
-  <block id="5d2f50f494763ca33ac61b7394b49365" category="list-text">mysql-commune-server-8.0.27</block>
-  <block id="9b02dcce074ad8f0677667ae3bdefe4a" category="list-text">mysql-commune-common-8.0.27</block>
-  <block id="ebda0ef640f941a251bca0c42fabf09b" category="list-text">mysql-commune-client-plugins-8.0.27 删除所有其他 ` .rpm` 软件包。但是，将所有软件包安装在 rpm 软件包中不会出现发生原因错误。</block>
-  <block id="37354e6beb8513ddd7766e179aaab3e2" category="list-text">* MySQL 要求 * ：在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的 MySQL 版本早于 8.0.27 ，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.0.27 。</block>
-  <block id="1db6ec26f9e37dfe675bdaf66bc0347c" category="paragraph">但是，您可能需要将 MySQL 升级到系统上的最新次要版本。在升级到下一个次要版本之前，请确保系统上的 MySQL 基本版本为 8.0.27 。</block>
-  <block id="a1071bfb77eca5179d618fb7269b7629" category="paragraph">如果您的站点没有配置 MySQL 8.0.27 的存储库，则可能无法升级 Unified Manager 。要在升级之前配置存储库，请执行以下步骤：</block>
-  <block id="8bd7aee1af6eb4a67ab8ad5f5b38af79" category="list-text">下载所需最低版本的 MySQL RPM 软件包（在本例中为 8.0.27 ），并将其保存在存储 `netapp-um&lt;version&gt;.x86_64` 的同一目录中。</block>
-  <block id="a4f051daab9927f07a1368a1390cf080" category="paragraph">MySQL 8.0.27 社区版</block>
-  <block id="9141d8b8e038016829f182b871f131e8" category="list-text">如果安装的 MySQL 版本早于 MySQL 8.0.27 社区版，请输入以下命令将其卸载：</block>
-  <block id="ddfa8d995a85ef5f86e5eae4134040c1" category="list-text">MySQL Community Edition 8.0.27 版（从 MySQL 存储库）。</block>
   <block id="afdabd70b25ac8d92c6c796efc0bc1ff" category="paragraph">` 数据中心 / 集群 / 许可 / 许可证 /datacenter/ 集群 / 许可 / 许可证 /\ ｛ key ｝`</block>
   <block id="67566ae5ee0878974aed5a2b1f52321f" category="paragraph">`manmanagement-server/events/ ｛ key ｝`</block>
   <block id="363b24906686e470f3b827a7e14ced28" category="paragraph">` /management-server/alers` ` /management-server/alers/ ｛ key ｝`</block>
@@ -11506,8 +11313,6 @@
   <block id="10ca66f0a363b90a579ee48398d9ca6c" category="inline-link">ONTAP REST API 自动化</block>
   <block id="64bce96c9eeebb3c2c4e4047917784d7" category="paragraph"><block ref="64bce96c9eeebb3c2c4e4047917784d7" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
-  <block id="777d37d26729d37bb63eecb74c435e85" category="inline-link">Active IQ Unified Manager 9.10 注意事项</block>
-  <block id="0c8699048289beedeedb54f53b9ba0e1" category="paragraph"><block ref="0c8699048289beedeedb54f53b9ba0e1" category="inline-link-rx"></block></block>
   <block id="304235bddd1bfe240019774dacdbd71e" category="inline-link-macro">适用于 SM-BC 的 ONTAP 9 文档</block>
   <block id="2eaa1a82c95cbdf0e4d38d70a85a96d7" category="paragraph">要了解有关 SnapMirror 同步业务连续性的更多信息，请参见 <block ref="c3c54812d1152ab82d144dc87f0ce5db" category="inline-link-macro-rx"></block>。</block>
   <block id="e6426dd2e05e7210d50c422898f18af7" category="paragraph">有关 SM-BC 的信息，请参见 <block ref="c3c54812d1152ab82d144dc87f0ce5db" category="inline-link-macro-rx"></block>。</block>
@@ -11522,4 +11327,304 @@
   <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="cbc6eeba3b8cd006dc2ca8ece384da6e" category="paragraph">OpenJDK 11.0.14版</block>
+  <block id="9c5ad3fafb573abb0b53ed02adba014e" category="paragraph">MySQL 8.0.28社区版</block>
+  <block id="e6bf42dd3a3e9586ee0a5b97f5a51749" category="list-text">如果安装的MySQL版本早于MySQL 8.0.28社区版、请输入以下命令将其卸载：</block>
+  <block id="3cfcc2a63606c5600f5f04e614e429f2" category="list-text">运行以下命令将上下文设置为`mysqld_db_t`：`semanage fcontext -a -t mysqld_db_t "/opt/netapp/data"```restorecon -R -R -v /opt/netapp/data`</block>
+  <block id="11e1b3755b142a082c6c226b589a4ea6" category="paragraph">`m挂载&lt;nfsshare&gt;：/&lt;mountpoint&gt;/opt/netapp/data -o context=system_u：object_r：mysqld_db_t：s0`</block>
+  <block id="b5ac9f231ec8ae835394a788fd0afdaa" category="list-text">运行以下命令将上下文设置为`mysqld_db_t`：`semanage fcontext -a -t mysqld_db_t "/opt/netapp"```restorecon -R -R -v /opt/netapp`</block>
+  <block id="613745ec62ddcebb7c0ec2f29c362910" category="list-text">如果您已在 ` /etc/fstab` 中配置了 ` /opt/NetApp` ，请编辑 ` /etc/fstab` 文件。对于`/opt/netapp/` mount选项、将MySQL标签添加为：`context=system_u：object_r：mysqld_db_t：s0`</block>
+  <block id="3ee408ca1ea10d7387d490dc700a0356" category="list-text">如果您使用的是直接NFS挂载、请运行以下命令将上下文设置为`mysqld_db_t`：`mount &lt;nfsshare&gt;：/&lt;mountpoint&gt;/opt/netapp -o context=system_u：object_r：mysqld_db_t：s0`</block>
+  <block id="4432f39d800933fa29075adf5d2cb426" category="paragraph">您可以在安装了 Unified Manager 的 Linux 服务器上升级到较新版本的 MySQL ，以获取安全漏洞修复。如果系统上安装的MySQL版本早于8.0.28、则Unified Manager 9.11升级过程会自动将MySQL升级到8.0.28。您不应将MySQL从早期版本独立升级到8.0.28。</block>
+  <block id="24f1ea1882439997228bd802f68fa9f6" category="paragraph">您只能将MySQL 8.0.28的基本版本升级到更高版本、以便进行次要更新。</block>
+  <block id="026936ad00ebc4ae1db79f070a927a45" category="list-text">mysql-commune-client-8.0.28</block>
+  <block id="e690854523c7fac0083784d171463dbd" category="list-text">mysql-commune-libs-8.0.28</block>
+  <block id="7416b1d102126167619be7c1bc2917b9" category="list-text">mysql-commune-server-8.0.28</block>
+  <block id="7e4bff08468b3a2ecc016a808e2b84e3" category="list-text">mysql-commune-common-8.0.28</block>
+  <block id="e627c2b9dd11c910856a3d949365b0ba" category="list-text">mysql-commune-client-plugins-8.0.28删除所有其他`.rpm`软件包。但是，将所有软件包安装在 rpm 软件包中不会出现发生原因错误。</block>
+  <block id="5f03fcd1de4eb6c394b1713126eeae48" category="admonition">在Linux系统上安装Unified Manager时、MySQL 3306的默认端口仅限于本地主机。这不会影响保留先前配置的任何升级情形。可以修改此配置、并通过使用维护控制台上的`Control access to MySQL port 3306`选项将此连接提供给其他主机。</block>
+  <block id="1fd2b463bf2d975db21df998b30ccb30" category="list-text">操作系统：基于x86_64架构的Red Hat Enterprise Linux 7.x和8.x或CentOS 7.x版、使用操作系统安装程序的*软件选择*选项中的"带GUI的服务器"基础环境安装</block>
+  <block id="840ec4a41a9ca59255cff17c52cb8305" category="list-text">基于x86_64架构的Red Hat Enterprise Linux 7.x和8.x版。</block>
+  <block id="c103e3707bdc04abe684cb4ef4e84763" category="list-text">基于x86_64架构的CentOS 7.x版。不支持 CentOS 流。</block>
+  <block id="daeb4be1c40e0342f376799aa2056aca" category="list-text">MySQL社区版8.0.28 (从MySQL存储库)。</block>
+  <block id="172925fbf80ec8e28224e1554c88ee8a" category="list-text">OpenJDK 11.0.14版(从Red Hat Extra Enterprise Linux Server存储库)</block>
+  <block id="0fbcaf1888cb0fd21b1de45da9705406" category="paragraph">`sUdo systemctl status ocie`</block>
+  <block id="209d8f24350d3586c7e8e77bccf146f6" category="paragraph">您可以更新版本系列中的 OpenJDK 版本。例如、您可以从OpenJDK 11.0.9升级到OpenJDK 11.0.14、但不能直接从OpenJDK 11更新到OpenJDK 12。</block>
+  <block id="52404be5282c18d0b7e21cbc0500660d" category="paragraph">您可以通过在Red Hat平台上下载并运行安装文件从Unified Manager 9.9或9.10升级到9.11。</block>
+  <block id="afebc350be46a62a45b648162f68d68a" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.28、则Unified Manager升级过程会自动将MySQL升级到8.0.28。</block>
+  <block id="aab338915e32b60e92c8de3a23aa5c5d" category="list-text">操作系统</block>
+  <block id="21fae6ca9851125bcb8a2ae0fceec434" category="list-text">Microsoft Windows Server 2019标准版和数据中心版</block>
+  <block id="fcf00af2a56dc582433fdec6019bd75f" category="list-text">Microsoft Windows Server 2022标准版和数据中心版</block>
+  <block id="abc1339f3a6e6d5793784f7eba3a817c" category="paragraph">`C：\Program Files\NetApp\Findes\bin`。</block>
+  <block id="9c94357d35bed777ae75ec5b1fb148ea" category="paragraph">您可以通过在Windows平台上下载并运行安装文件将Unified Manager 9.9或9.10升级到9.11。</block>
+  <block id="7fa1b8306b61bbac5aec005baa3183b3" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.28、则Unified Manager升级过程会自动将MySQL升级到8.0.28。您不能将早期版本的 MySQL 独立升级到 8.0.27 。</block>
+  <block id="fa667d9ec9e561ac6d6553c9ffa6ad45" category="list-text">如果Windows系统上安装了活动防病毒软件、则Unified Manager升级可能会失败。在升级Unified Manager之前、应禁用系统上的所有病毒扫描软件。</block>
+  <block id="95321bf41584f0af5249cfe77a131451" category="list-text">如果您的Windows系统上安装了活动防病毒软件、请确保在升级完成后手动从防病毒扫描中排除以下路径：</block>
+  <block id="903905888af29b1f6e5156b704c32cf8" category="paragraph">您可以更新版本系列中的 OpenJDK 版本。例如、您可以从OpenJDK 11.0.12升级到OpenJDK 11.0.13、但不能直接从OpenJDK 11更新到OpenJDK 12。</block>
+  <block id="a326ba42b2f3cdc07bf58761b1c4f56e" category="list-text">将生成的`JDK`目录(例如、`JDK-11.0.13`)中的目录和文件复制到Java的安装位置。示例： `C ： \Program Files\NetApp\JDK\`</block>
+  <block id="35b673088d49c428fe4b71d1fb68ac32" category="paragraph">您可以在以下Windows版本上安装Unified Manager：</block>
+  <block id="97acc1a41f0c48f305dbbeb45d754400" category="admonition">NetApp不支持使用Microsoft System Center Configuration Manager (SCCM)等第三方工具安装Unified Manager。</block>
+  <block id="66f07fbd2c7baf01707e9c250b4e3fae" category="list-text">MySQL社区版8.0.28</block>
+  <block id="2c9628de3d31520370d95ae47b0f78f8" category="list-text">Python 3.9.2</block>
+  <block id="fb4a7fa57c26a71e226044f076d4cdcb" category="list-text">OpenJDK 11.0.13版</block>
+  <block id="8c0efbddadc6fd60891df7fc8dca2445" category="list-text">如果您的Windows系统上安装了活动防病毒软件、则Unified Manager安装可能会失败。在安装Unified Manager之前、应禁用系统上的所有病毒扫描软件。安装完成后、请确保手动从防病毒扫描中排除以下路径：</block>
+  <block id="f2b9e947e73ecf5aa3eb9084d5484e42" category="list-text">如果您的Windows系统上安装了活动防病毒软件、请在安装完成后手动从防病毒扫描中排除以下路径：</block>
+  <block id="d09e8f5749e3b7058a8289ba431458ea" category="list-text">如果从*程序和功能*向导卸载Unified Manager、请执行以下步骤：</block>
+  <block id="c8c3810a14893ac6d3284dbe2703b42e" category="list-text">如果从命令行卸载Unified Manager、请执行以下步骤：</block>
+  <block id="b5c53960619159f07babd813281a0c5f" category="list-text">使用管理员权限登录到Windows命令行。</block>
+  <block id="8f03a3d977b03b60a275743462ed9db9" category="list-text">导航到Active IQ Unified Manager 目录、然后运行以下命令：</block>
+  <block id="2e5a5aa28eccce1bee3eb2d3c56b5309" category="paragraph">`+msiexec /x｛A78760DB-7EC0-4305- 97DB-E4A89CDFF4E1｝/qn /l* v %systemdrive%\UmUnInstall.log+`</block>
+  <block id="281a23b64ca4e7554e3f0e93b5e421a4" category="list-text">第三方软件包：JRE、MySQL、Microsoft Visual C&amp;#43；&amp;#43；2015年可重新分发、Python、 和7zip</block>
+  <block id="e870626bc44af1911308a20544309fa5" category="admonition">在 VMware vSphere 系统上安装 Unified Manager 时， MySQL 3306 的默认端口仅限于本地主机。这不会影响保留先前配置的任何升级情形。可以修改此配置、并通过使用维护控制台上的`Control access to MySQL port 3306`选项将此连接提供给其他主机。</block>
+  <block id="7094bfb22911ca78c26602f6b95b78fa" category="paragraph">您只能将Active IQ Unified Manager 从9.9或9.10版升级到9.11版。</block>
+  <block id="bbd76c12bdee88db10f4352bb5c25c68" category="paragraph">您可以将Active IQ Unified Manager 虚拟设备从版本9.9或9.10升级到9.11。</block>
+  <block id="e097d9836e6942eb333688aa40c458db" category="paragraph">您可以创建角色并分配功能来控制用户对Active IQ Unified Manager 的访问。您可以确定具有访问Unified Manager中选定对象所需功能的用户。只有具有这些角色和功能的用户才能在Unified Manager中管理对象。</block>
+  <block id="6bb4bacb8a95b59b89d6baf47ca57e37" category="paragraph">此帐户必须具有_admin_角色、并且应用程序访问权限设置为_ontapi_、_console _和_http_。</block>
+  <block id="6f07476dbe3e0c87ef5417742f01281d" category="summary">您可以生成包含诊断信息的支持包，以便将其发送给技术支持以获取故障排除帮助。您也可以从维护控制台将支持包上传到NetApp。</block>
+  <block id="f6edcb137df0b7c4e3fba5f2b371471f" category="paragraph">您可以生成包含诊断信息的支持包，以便将其发送给技术支持以获取故障排除帮助。</block>
+  <block id="f90eb4e62285b9cd8dd7d52b71e3aaeb" category="paragraph">从 Unified Manager 9.8 开始，如果 Unified Manager 服务器已连接到 Internet ，您还可以从维护控制台将支持包上传到 NetApp 。</block>
+  <block id="38bf356bc057c1b138ed0aadbc422129" category="summary">"安全性"页面显示所有集群和Storage VM的高级别安全状态。详细的集群状态包括集群合规性， SVM 合规性和卷加密合规性。</block>
+  <block id="2dfcaeaf7d872d0b41ac1a7fad3f1bc0" category="doc">查看集群和Storage VM的安全状态</block>
+  <block id="363bd7c65ddeb743b3e567f3bb86d1f0" category="paragraph">通过Active IQ Unified Manager 、您可以从界面的不同位置查看环境中存储对象的安全状态。您可以根据定义的参数收集和分析信息和报告、并检测受监控集群和Storage VM上的可疑行为或未经授权的系统更改。</block>
+  <block id="ac7c06182b625c627e480ce0c60ff4ed" category="paragraph">有关安全建议、请参见<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block></block>
+  <block id="468b211c23c8f85e2679c3384b195d38" category="section-title">在安全性页面上查看对象级别的安全状态</block>
+  <block id="78162355da23f5dd80cdec8e2b9e0d00" category="paragraph">作为系统管理员、您可以使用*安全性*页面查看ONTAP 集群和Storage VM在数据中心和站点级别的安全优势。支持的对象包括集群、Storage VM和卷。请按照以下步骤操作：</block>
+  <block id="3f9660f836b3463f167780161b6ee0d0" category="list-text">单击 * 安全性 * 面板中的右箭头。此时将显示安全性页面。</block>
+  <block id="93924d03189237f928d2d949fb28735f" category="paragraph">单击条形图、计数和`查看报告`链接可转到卷、集群或Storage VM页面、以便根据需要查看相应的详细信息或生成报告。</block>
+  <block id="b43d6869eba5b9bd943124b60e04f21d" category="paragraph">安全性页面将显示以下面板：</block>
+  <block id="4993aada6aa45a3c41b60560e1e8038f" category="list-text">*集群合规性*：数据中心中所有集群的安全状态(合规或不合规的集群数量)</block>
+  <block id="9f6fdf8e9a5d57c041e9628e7be7fa35" category="list-text">* Storage VM Compliance *：数据中心中所有Storage VM的安全状态(合规或不合规的Storage VM数量)</block>
+  <block id="d49afaff9aaec964ded02b9322457e39" category="list-text">*卷加密*：环境中所有卷的卷加密状态(已加密或未加密的卷数)</block>
+  <block id="9bd0b3e4f58ac076db0d253c51537186" category="list-text">*卷反勒索软件状态*：环境中所有卷的安全状态(启用或禁用了反勒索软件的卷数)</block>
+  <block id="bc32a70e3caba18ce60ff911b2778444" category="list-text">*集群身份验证和证书*：使用SAML、Active Directory等每种身份验证方法或通过证书和本地身份验证的集群数量。此面板还会显示证书已过期或将在60天后过期的集群数量。</block>
+  <block id="c37bd528b0f31f7b63f3174349bd301f" category="section-title">在集群页面上查看所有集群的安全详细信息</block>
+  <block id="ca65898956ec031b96dc28b5d94bc51b" category="paragraph">通过*集群/安全性*详细信息页面、您可以查看集群级别的安全合规状态。</block>
+  <block id="c486eb92eb850d8e82e8a715bc3992df" category="list-text">在左侧导航窗格中、单击*存储&gt;集群*。</block>
+  <block id="5ca0fa2f751156952c40aeb7a9590b88" category="list-text">选择*查看&gt;安全性&gt;所有集群*。</block>
+  <block id="0d846c68d80d20ea88b6b3083d22bca7" category="paragraph">默认安全参数、例如全局FIPS、Telnet、不安全的SSH设置、登录横幅、网络时间协议、 此时将显示AutoSupport HTTPS传输以及集群证书到期状态。</block>
+  <block id="52c148109936ec0cc34f1b38fb262428" category="inline-image-macro">kabob 图标</block>
+  <block id="b4f67db8d0f90c2e20b1813f2c70ad96" category="paragraph">您可以单击 <block ref="be3a4fe65d997bdec7cc224e43adfb38" category="inline-image-macro-rx" type="image"></block> 更多选项按钮、然后选择在Unified Manager的*安全性*页面或System Manager上查看安全详细信息。您应具有有效的凭据才能在System Manager上查看详细信息。</block>
+  <block id="6827c086d302f51abdea5a46454c54f9" category="admonition">如果集群的证书已过期、您可以单击*集群证书有效期*下的`已过期`、然后从System Manager (9.10.1及更高版本)续订证书。如果System Manager实例的版本早于9.10.1、则无法单击`expired`。</block>
+  <block id="abd66bce9d2a771ac36e0132cc434dc0" category="section-title">从Storage VM页面查看所有集群的安全详细信息</block>
+  <block id="a3051107bf8d2b163dbfd3f778574303" category="paragraph">通过*存储VM /安全性*详细信息页面、您可以查看Storage VM级别的安全合规状态。</block>
+  <block id="d8f98730cfda4cc64ef2c3441ff554a8" category="list-text">在左侧导航窗格中、单击*存储&gt;存储VM*。</block>
+  <block id="3011ef7c1bc86abe89d8eeeaf7c4c472" category="list-text">选择*查看&gt;安全性&gt;所有Storage VM*。此时将显示包含安全参数的集群列表。</block>
+  <block id="419ebf74a5546d21b1acd80acf25cc21" category="paragraph">您可以通过检查安全参数(例如Storage VM、集群、登录横幅、审核日志和不安全的SSH设置)来查看Storage VM的安全合规性的默认视图。</block>
+  <block id="1df41a302d0ac8f8b5c67157bf788ab9" category="inline-link-macro">查看所有卷和Storage VM的反勒索软件状态</block>
+  <block id="17b7a8cd3718b23c5fbc68976d54fae8" category="paragraph">_有关 卷和Storage VM的反勒索软件安全详细信息、请参见 <block ref="bca545b4103a280a86945e429acfe26a" category="inline-link-macro-rx"></block>...</block>
+  <block id="15b9361b9fb7038f56e85f3904037d8c" category="doc">正在评估哪些安全标准</block>
+  <block id="2e97b5e5f53687c2edc46f6cfe0a5451" category="list-text">调解器</block>
+  <block id="142ceab668a9fc374d2beb0a4ef23836" category="paragraph">显示集群是否支持调解器以及调解器的连接状态。</block>
+  <block id="79ccc97c418cc26f3467425720f5d2c7" category="paragraph">当集群不支持调解器时显示。</block>
+  <block id="ac10863a89ea5da5d78b29ab7d8d4db9" category="list-text">未配置</block>
+  <block id="2fdd5dc5585243c3197c271994fd12c9" category="paragraph">显示集群何时支持调解器、但未配置调解器。</block>
+  <block id="d64c1cefb3e1d5cdfa216f6d3407ec17" category="paragraph">显示集群何时支持调解器且调解器已配置。调解器状态以颜色表示。绿色表示调解器状态为可访问。红色表示无法访问调解器状态。</block>
+  <block id="e915243d2d9237ec496fdc596ffdf04a" category="summary">您可以查看所有卷和Storage VM及其当前防勒索软件状态的列表、以便确定卷上的数据是否受到充分保护、不会受到勒索软件攻击。</block>
+  <block id="7c2c886acbcd2892de2344c60378626c" category="doc">查看所有卷和Storage VM的反勒索软件状态</block>
+  <block id="b7fb2bac588b5767cf6c705188c389c3" category="paragraph">您可以查看所有卷和Storage VM (SVM)及其当前防勒索软件状态的列表、以便确定卷和SVM上的数据是否受到充分保护、免受勒索软件攻击。</block>
+  <block id="a921172c77574003a53c4e7d463e4a78" category="inline-link-macro">ONTAP ：支持反勒索软件</block>
+  <block id="72e5e5991e9c7a2e51d3ba91ca2a8e1d" category="paragraph">有关不同反勒索软件状态的详细信息、请参见 <block ref="ebbc50671d350b612b279b18dc92d3ce" category="inline-link-macro-rx"></block>。</block>
+  <block id="073bfac42f064e9ab9cfb7df8c7310dd" category="section-title">查看具有反勒索软件检测功能的所有卷的安全详细信息</block>
+  <block id="1699ca27220cc19000bd17d85d3b28e2" category="list-text">在视图菜单中、选择*运行状况*&gt;*安全*&gt;*防勒索软件*</block>
+  <block id="765682c922feb0f0b9b563508b989dbd" category="list-text">在*安全性：反勒索软件*视图中、您可以按各个字段进行排序或使用筛选器。</block>
+  <block id="f8b04b532a660e0cf7f2af7a9d837104" category="admonition">脱机卷、受限卷、SnapLock 卷、FlexGroup 卷、FlexCache 卷、 仅SAN卷、已停止Storage VM的卷、Storage VM的根卷或数据保护卷。</block>
+  <block id="afaf73af225dba83673ea47b3051dc3d" category="section-title">查看具有防勒索软件检测功能的所有Storage VM的安全详细信息</block>
+  <block id="9b1365de5b07fbb66019457a4c7fb6a5" category="list-text">选择*查看&gt;安全性&gt;反勒索软件*。此时将显示具有防勒索软件状态的SVM列表。</block>
+  <block id="3dcc0199352a1721fd1f864e772d652e" category="admonition">未启用NAS协议的Storage VM不支持反勒索软件监控。</block>
+  <block id="55d42c07c7a3bf8612627277cc3d1372" category="paragraph">有关本产品中使用的第三方版权和许可证的信息。</block>
+  <block id="1209c02696508f6ee7115d3ea4bf25c6" category="inline-link">Active IQ Unified Manager 9.11注意事项</block>
+  <block id="3d745b5d025273b12b90dd2a14f03c74" category="paragraph"><block ref="3d745b5d025273b12b90dd2a14f03c74" category="inline-link-rx"></block></block>
+  <block id="3aa0793f7dfdec5c9a41e17ceb9fd31b" category="doc">使用API查看存储工作负载</block>
+  <block id="0479a086f219db093ecf35b973d0c99f" category="doc">使用API验证集群上的SVM</block>
+  <block id="d5ebd8ed6c85ed5d37684affd2fa4def" category="doc">使用API管理工作负载</block>
+  <block id="84664a7128e22baacddd3aa191e0ac07" category="doc">使用API管理Active Directory映射</block>
+  <block id="ab470ee832c0f6b186ca1f4cda819c60" category="doc">使用API确定聚合中的空间问题</block>
+  <block id="40febffd8f8abd2d75c8d5b5a891196e" category="doc">使用API修改NFS文件共享以支持CIFS</block>
+  <block id="50e0f11482fceefc2d65544335ead398" category="doc">用于工作负载管理的API工作流</block>
+  <block id="c13f46060eb3abf10c16a81f7386d02d" category="doc">使用事件API确定存储对象中的问题</block>
+  <block id="686de7649ff29618b2533b83f236c1f9" category="doc">使用API配置LUN</block>
+  <block id="dae4b302d39d8710b93f2ab7e79ad44c" category="paragraph">= LUN创建或映射失败的故障排除步骤</block>
+  <block id="d5931491b56d1cc70bbacab3848ce5e3" category="doc">用于存储管理的通用API工作流</block>
+  <block id="d131c53163ad1393b868bfe59511a561" category="doc">使用API管理事件和警报</block>
+  <block id="1b7f5aa3167ef79634d49e211d977ca9" category="doc">使用API管理性能服务级别</block>
+  <block id="a04ca9649d91705a1631f7dedd600667" category="doc">使用API配置CIFS和NFS文件共享</block>
+  <block id="151dc20bb4e8b513a82b648656bd9368" category="doc">使用API管理文件共享</block>
+  <block id="176ffeae86fc36be6a62affe4dc7670e" category="doc">使用API查看性能指标</block>
+  <block id="ec6d62e34bf5aa5be0613a5f0bf48d90" category="paragraph">系统会为单个对象检索累积计数器，例如读取，写入，总计和其他计数器，例如最小，最大，第 95 百分位以及一段时间内的平均性能值。</block>
+  <block id="c72068f0f4cfcce2af4ad5f5ca198d95" category="paragraph">对于同一类型的所有对象，将显示一个聚合值。</block>
+  <block id="edd03550acb1b4d7eebfc242f3bca941" category="paragraph">时间范围和示例数据基于以下计划：数据的时间范围。示例可以是 1 小时， 12 小时， 1 天， 2 天， 3 天， 15d ， 1 瓦， 1 米， 2 米， 3 米， 6 万。如果范围超过 3 天（ 72 小时），则可以获得 1 小时的样本，否则为 5 分钟的样本。每个时间范围的时间段如下：</block>
+  <block id="592f555d9ca68fc305a20da038e2c4a4" category="section-title">指标API的输出示例</block>
+  <block id="d77db93932ca545cf6a9aaa595e545e0" category="paragraph">例如、`/datacenter/cluster/nodes/\｛key｝/metrics` API检索节点的以下详细信息(以及其他信息)：</block>
+  <block id="6fbb4072aff20a4023eb905e2ff55de2" category="section-title">分析API的输出示例</block>
+  <block id="c0815a51f8ff3d35fb21c55ed784fe4d" category="paragraph">例如， ` /datacenter/cluster/nodes/Analytics` API 检索所有节点的以下值（以及其他值）：</block>
+  <block id="d0afe4282d5750b811bf856294b7ee90" category="section-title">可用API的列表</block>
+  <block id="69e0c36da903d0d4cb49d6796d3d396f" category="doc">使用API修改存储工作负载</block>
+  <block id="1a4d8144779e6af61297c952cc00b125" category="doc">使用API管理用户</block>
+  <block id="c294c1867833805e6f5e0f7d96fbb7d4" category="doc">使用API管理存储效率策略</block>
+  <block id="0a3a79412d400bd0f3c4afd224e8b5b8" category="doc">使用API管理数据中心中的存储对象</block>
+  <block id="f1b02590625e2386e3e74ef798497ebc" category="doc">使用API管理LUN</block>
+  <block id="7f645fd53d70dc3f9dc7175759aec65b" category="doc">使用API执行管理任务</block>
+  <block id="cbdc76f186be9437aa185542dedea7ff" category="doc">使用API管理访问端点</block>
+  <block id="c1687ae8cb39008ec36f3b77f2402b2c" category="paragraph">通过 Unified Manager ，您可以监控 MetroCluster 配置中集群之间的写入吞吐量，以确定写入吞吐量较高的工作负载。</block>
+  <block id="790b40c85b71368d543d3cf3c0b0b091" category="paragraph">如果这些高性能工作负载导致本地集群上的其他卷的 I/O 响应时间较长，则 Unified Manager 将触发性能事件以通知您。</block>
+  <block id="82aec6fe5f2c3512a731aa49c2639796" category="paragraph">您可以通过从以下屏幕分析相应LUN和卷的工作负载来查看MetroCluster 配置中任何集群的吞吐量。您可以按集群筛选结果。从左侧导航窗格中：</block>
+  <block id="2a37c81fbb283264fc94f7411dd3c82b" category="list-text">*存储&gt;集群&gt;性能：所有集群*视图。请参见</block>
+  <block id="040c9f3199e4edb365b407a5522d8b14" category="list-text">*存储&gt;卷&gt;性能：所有卷*视图。</block>
+  <block id="1f5bcd8c3b9ed0be47ee37a37cefbf3f" category="list-text">*存储&gt; LUN &gt;性能：所有LUN*视图。</block>
+  <block id="0936894fcc6f2d39208694eaacc0a235" category="list-text">*工作负载分析&gt;所有工作负载*</block>
+  <block id="d96a098aa8eb06c65224284e82ae6777" category="paragraph">对于动态性能事件，事件详细信息页面的系统诊断部分列出了处于争用状态的集群组件延迟或使用率最高的前几个工作负载。</block>
+  <block id="f9d3d6d4d2bd1aa28384ee37c610caba" category="paragraph">性能统计信息基于检测到性能事件的时间，直到上次分析事件为止。这些图表还会显示处于争用状态的集群组件的历史性能统计信息。</block>
+  <block id="25d38563524852b9ac9f9be71ef268a1" category="paragraph">例如，您可以确定组件利用率较高的工作负载，以确定要移至利用率较低的组件的工作负载。移动工作负载将减少当前组件的工作量，从而可能使该组件摆脱争用状态。此部分顶部是检测到事件并最后分析事件的时间和日期范围。对于活动事件(新事件或已确认事件)、将更新上次分析的时间。</block>
+  <block id="706d37f40cd6eb841506e386386017b9" category="paragraph">将光标悬停在延迟和活动图表上方时，这些图表将显示排名靠前的工作负载的名称。单击图表右侧的工作负载类型菜单，您可以根据工作负载在事件中的角色（包括 _鲨 鱼 _ ， _bulles_ 或 _victims_ ）对这些工作负载进行排序，并显示有关其延迟及其在争用集群组件上的使用情况的详细信息。您可以将实际值与预期值进行比较，以查看工作负载何时超出其预期延迟或使用量范围。有关信息，请参见 <block ref="509b647e49f1115274d5173373879611" category="inline-link-macro-rx"></block>。</block>
+  <block id="dff7d1c15c5dde10579e28c9c435ec86" category="paragraph">有关动态性能阈值的详细信息、请参见 <block ref="880f9de9d7dcc0d0351211e1a449b506" category="inline-link-macro-rx"></block>。</block>
+  <block id="278a177ac7739bc1de2f85f04ba9a90b" category="paragraph">有关Unified Manager如何对工作负载进行排名并确定排序顺序的信息、请参见 <block ref="eaa71b6f3a7583249cbad31583882340" category="inline-link-macro-rx"></block>。</block>
+  <block id="4c72721e1b36c4a399a797b95f0f934a" category="paragraph">显示有关处于争用状态的集群组件的工作负载使用情况的详细信息。在图中，实际使用量为蓝线。红色条会突出显示从检测时间到上次分析时间的事件持续时间。有关详细信息，请参见 <block ref="30adc51a7babb5a51be3e9a06a23aa95" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae0d976bc456ed2b687e9e1494f96a6f" category="paragraph">Unified Manager会自动检查是否存在新的Active IQ 事件(规则)文件、如果存在较新的规则、则会下载新文件。但是，在无法访问外部网络的站点中，您需要手动上传规则文件。</block>
+  <block id="a7e941a5fe778db0eea3545de1d113b2" category="admonition">Active IQ 规则也称为Config Advisor (CA)安全规则。</block>
+  <block id="12ceac5d2e383ae3aa41ecb5a4689a7d" category="paragraph">如果在没有网络连接的站点中安装Unified Manager或将Unified Manager升级到特定版本、则捆绑的Active IQ 规则将自动可上传。但是、建议您大约每月从NetApp支持站点下载一次新的规则文件、以确保生成更新后的事件、并且存储系统仍能以最佳状态运行。</block>
+  <block id="a845907823c19859aed3b0f18a38da4f" category="list-text">必须启用Active IQ 门户事件报告。默认情况下，此功能处于启用状态。有关信息，请参见 <block ref="8658b0fde93c687ddd323db3f722b419" category="inline-link-macro-rx"></block>。</block>
+  <block id="dfe7deebcd40f4161d9b14c981c9d0d4" category="paragraph">规则文件位于：<block ref="d1cfde6f5a58e572b4bc1737c935d4ad" category="inline-link-rx"></block></block>
+  <block id="7baeb0c9081f1a8cb146f93643de73dc" category="paragraph">捆绑的规则软件包包括规则存储库、数据源和NetApp知识库文章。</block>
+  <block id="201ca5b66dc9dc1a3dc4493152ebe8ca" category="admonition">在Windows系统上、在没有网络连接的站点中、NetApp知识库文章默认不会与安装程序捆绑在一起。您可以从支持站点下载_secure rules.zip文件并将其上传、以查看所有规则的知识库文章。</block>
+  <block id="7e90bd45823841034e4e866f708433ba" category="paragraph">规则文件将在 Unified Manager 服务器上解压缩。在受管集群在午夜后生成AutoSupport 文件后、Unified Manager将根据规则文件检查集群、并根据需要生成新的风险和意外事件。</block>
+  <block id="a0f263b9cc09522b877ec0d8c725a9d9" category="summary">作为存储管理员，您可以使用命令行界面命令对存储对象执行查询，例如，对集群，聚合，卷， qtree 和 LUN 。</block>
+  <block id="159e979b9af8e11071d96adc2e429f87" category="admonition">要运行_um run_命令、请确保您的帐户具有_console应用程序访问权限。</block>
+  <block id="926c1db915510c0dea522b314f2f37b1" category="paragraph">集群证书即将过期(ocumEvtClusterCertificateAboutToExpire)</block>
+  <block id="d555b856e6422225ce026b79cc781404" category="paragraph">集群证书已过期(ocumEvtClusterCertificateExpirered)</block>
+  <block id="b46b622b74332441365c7c69cbe27dab" category="paragraph">卷Snapshot预留未充分利用(volumeSnaphotReserveUnutilizedWarning)</block>
+  <block id="57472a018b361036c61c50edd8ef006b" category="paragraph">卷Snapshot预留未充分利用(volumeSnaphotReserveUnutilizedCleared)</block>
+  <block id="fa639c75b35101ded38bbd88ebfdf11a" category="section-title">影响区域：数据保护</block>
+  <block id="099458017e32324ca23af72d14d5f0d2" category="paragraph">卷的本地Snapshot保护不足(volumeLacksLocalProtectionWarning)</block>
+  <block id="dd5f6d15bb6d675fda4fcf6ead3f4098" category="paragraph">卷的本地Snapshot保护不足(volumeLacksLocalProtectionCleared)</block>
+  <block id="47d1c28840597a2ae7e6016669e00f6a" category="paragraph">已在集群上添加ONTAP 调解器(snapmirrorMediatorAdded)</block>
+  <block id="255f9cf61279c6d67c62f927071a3e8f" category="paragraph">已从集群中删除ONTAP 调解器(已删除snapmirrorMediator）</block>
+  <block id="a6bacc83dfdb1c9689535a09836f8550" category="paragraph">无法从集群访问ONTAP 调解器(snapmirrorMediatorUnreachable)</block>
+  <block id="cf7f72fb2e3e5a9df104130ba81c194e" category="paragraph">调解器</block>
+  <block id="da953faa02ca184ebcadd69694229ca0" category="paragraph">无法从集群访问ONTAP 调解器(snapmirrorMediatorMisconfigured)</block>
+  <block id="dc7d8942cdb2f367c68f30d022efa7f0" category="paragraph">ONTAP 调解器连接已重新建立、已重新同步并可用于SMBC (snapmirrorMediatorInQuoral)</block>
+  <block id="8002c010879d451de4416c97251e7e29" category="summary">通过Storage VM关联页面、您可以查看源和目标Storage VM之间的现有Storage VM关联。</block>
+  <block id="b31a8b073692fe4fc7d0416d77032d55" category="doc">了解Storage VM关联</block>
+  <block id="8210ed29bdbce4c1e73c2d1c02b5282d" category="paragraph">Storage Virtual Machine (Storage VM)关联是指从源Storage VM到目标Storage VM的映射、供合作伙伴应用程序用于资源选择和二级卷配置。</block>
+  <block id="eebfa1a3ea89701aa073f2e0c24d4210" category="paragraph">无论目标Storage VM是二级目标还是三级目标、都会在源Storage VM和目标Storage VM之间创建关联。您不能使用二级目标Storage VM作为源来创建与三级目标Storage VM的关联。</block>
+  <block id="f46d5829df25f3d6453ce030811b888f" category="paragraph">作为应用程序管理员或存储管理员、您可以在*保护*&gt;*存储VM关联*页面上查看环境中的Storage VM关联。</block>
+  <block id="65900e7edecadc6566c91a3a55beb80a" category="paragraph">可以通过以下三种方式关联SVM：</block>
+  <block id="af28d79c27ec7868806eb52b66765432" category="list-text">*关联任何Storage VM*：您可以在任何主源Storage VM与一个或多个目标SVM之间创建关联。这意味着、当前需要保护的所有现有SVM以及未来创建的任何SVM都会与指定的目标SVM相关联。例如、您可能希望将来自不同位置的多个不同源的应用程序备份到一个位置的一个或多个目标SVM。</block>
+  <block id="598ee3be574e8c69b305596a6e7385bf" category="list-text">*关联特定Storage VM*：您可以在特定源Storage VM与一个或多个特定目标SVM之间创建关联。例如，如果要为数据必须彼此分离的多个客户端提供存储服务，则可以选择此选项将特定源 Storage VM 与仅分配给该客户端的特定目标 Storage VM 关联起来。</block>
+  <block id="2b2e5138960ce3d6824a982ba08d8bae" category="list-text">*与外部Storage VM*关联：您可以在源Storage VM与目标Storage VM的外部灵活卷之间创建关联。</block>
+  <block id="7da2edb845ba897c58d65bd9a88f8ef2" category="section-title">创建Storage VM关联</block>
+  <block id="61b530baa8f60c5e2288fb6ccdfa6380" category="paragraph">通过创建Storage Virtual Machine关联向导、合作伙伴保护应用程序可以将源Storage VM与目标Storage VM相关联、以便用于SnapMirror和SnapVault 关系。合作伙伴应用程序在初始配置目标卷时使用这些关联来确定要选择的资源。dd</block>
+  <block id="093bfc06b3ba97de48c36c373b1d8a67" category="list-text">在左侧导航窗格中、单击*保护*&gt;*存储VM关联*。</block>
+  <block id="0d882d92bf60713a394d80ffd55a986a" category="list-text">在*存储VM关联*页面上、单击*创建*。</block>
+  <block id="ba1a0033d8ddcf21c0dbcd5360526b4f" category="paragraph">此时将启动*创建Storage Virtual Machine关联*向导。</block>
+  <block id="b62286553877887b6e5266cb311292ac" category="section-title">删除Storage VM关联</block>
+  <block id="8ba065ab119d7c4653197635d796b282" category="paragraph">您可以删除配对应用程序的Storage VM关联以删除源和目标Storage VM之间的二级配置关系；例如、当目标Storage VM已满且您希望创建新的Storage VM保护关联时、可以执行此操作。</block>
+  <block id="1df7e1a7c8bf8c7e99481899b98eb1bf" category="paragraph">除非至少选择一个Storage VM关联、否则*删除*按钮将被禁用。使用删除和创建功能更改关联仅会影响未来的配置操作；它不会移动现有目标卷。</block>
+  <block id="5de9d55f08d138829510f52e1d4232e2" category="list-text">至少选择一个Storage VM关联。</block>
+  <block id="dbdac0c65ca56ce1c51d43ddb0fad70d" category="paragraph">选定Storage VM关联将从列表中删除。</block>
+  <block id="c5571ff9e71f9fd2a0853229ddb7006d" category="summary">您可以从清单保护部分的关系页面监控 Storage VM 灾难恢复关系。默认情况下、在应用成分卷关系筛选器时、"关系"页面仅列出顶级关系。</block>
+  <block id="b518d96f65df8e3a8c5bd9b294314ee7" category="paragraph">默认情况下、访问关系页面时、显示的报告将包括卷和Storage VM的顶级保护关系。通过沿页面顶部排列的控件，您可以选择特定视图，执行搜索以查找特定对象，创建并应用筛选器以缩小显示数据列表的范围，在页面上添加 / 删除列或对列重新排序以及将页面上的数据导出为 .csv ， .pdf 。 或 .xlsx 文件。自定义页面后，您可以将结果保存为自定义视图，然后计划定期生成此数据的报告并通过电子邮件发送。默认情况下，当您选择 * 关系 * 菜单时，显示的报告将包括数据中心中卷和 Storage VM 的保护关系。您可以使用 * 筛选器 * 选项仅查看选定的存储系统，例如仅查看卷或仅查看 Storage VM 。同一报告将显示在存储页面中，并且仅针对选定存储实体。如果要查看卷或 Storage VM 关系，可以访问 * 存储 * &gt; * 卷 * &gt; * 关系：所有关系 * 页面或访问 * 保护 * &gt; * 关系 * &gt; * 关系： 所有关系 * ，并使用 * 筛选器 * 中的 * 关系对象类型 * 选项仅筛选出卷或 Storage VM 数据。</block>
+  <block id="fcd4ecf1cf7bb8267ec59d4f89b505b1" category="list-text">*调解器*</block>
+  <block id="496eb323c2ee5c388095071435b45af0" category="paragraph">显示调解器状态。</block>
+  <block id="6b186591bdb6b54c5178194cd438daf3" category="paragraph">如果集群不支持SnapMirror业务连续性。</block>
+  <block id="6470ad126b37899e643afe35ff51f8fd" category="paragraph">如果未配置此集群、或者配置了此集群、但仅添加目标集群、而源集群不会添加到Unified Manager中。</block>
+  <block id="26eeb2415026ecc2a99b19ae10c4e13e" category="list-text">调解器IP地址</block>
+  <block id="a5a42e7a9482f606a51f46baffc94087" category="paragraph">如果已配置、则源集群和目标集群都会添加到Unified Manager中。</block>
+  <block id="7e68f07357c45081317f53387f7266d7" category="list-text">单击数据保护面板中的右箭头。此时将显示数据保护页面。</block>
+  <block id="b924604020dfecc1a01747f4bfa15308" category="paragraph">根据您选择的是数据中心中的一个还是所有集群、此页面将显示受Snapshot副本或SnapMirror策略保护的卷的数据保护状态、并显示未受保护的卷的计数。从*单个集群*列表中选择一个集群可显示该集群中受保护卷的Snapshot保护和SnapMirror关系状态。</block>
+  <block id="0fde569b1b44739553ddaaff6135e124" category="paragraph">单击此页面上的事件将转到事件详细信息页面。您可以单击 * 查看全部 * 链接以查看事件管理清单页面中的所有活动保护事件。您可以将鼠标悬停在此处查看相应的计数和图例。您可以单击：</block>
+  <block id="dc79b580b3abcee40a5c1db816776add" category="list-text">有关未受保护的卷和受Snapshot副本保护的卷的条形图、请转到卷页面并查看详细信息。</block>
+  <block id="9ec4449ec67cf67ff4e6137a8c70a14c" category="list-text">所有关系的条形图将转到"关系"页面、其中的详细信息将按源集群进行筛选。</block>
+  <block id="6d19d82d08dc4fb56d5d3cf966bcf011" category="section-title">查看受Snapshot副本保护的卷的保护状态</block>
+  <block id="d40958165499de2e87385de241423123" category="paragraph">* Snapshot副本概述*：Snapshot副本保护的卷概述、例如：</block>
+  <block id="ceeeda459e0591e5d314980d38fad5cf" category="list-text">正在使用或超过 Snapshot 副本预留空间的卷总数。</block>
+  <block id="7dfeeba5b190ae4593179e8561ef6250" category="list-text">卷使用，未使用和违反预留的 Snapshot 副本容量。</block>
+  <block id="2501c27643bb600124234f1b0df79e6b" category="list-text">卷的细分按其 Snapshot 副本的数量计算。</block>
+  <block id="a7a85c14f79a3bddc67ff04c5e702692" category="section-title">有关Snapshot副本的注意事项</block>
+  <block id="cae7a1ed2c80d90222287b47bcfb88f4" category="list-text">要计算受Snapshot副本保护的卷、应同时考虑源卷和目标卷。</block>
+  <block id="435e270285812ae55d84b098321f6830" category="list-text">返回的 Snapshot 副本数量仅适用于联机且可用的卷。</block>
+  <block id="d2f4424e946a423fe802573596a82a64" category="list-text">Snapshot副本的预留空间值对于查看已用磁盘空间量或计算删除一个或多个Snapshot副本后可回收的空间非常重要。</block>
+  <block id="48815cc485f34516122d402c7691bcbc" category="section-title">查看SnapMirror关系的保护状态</block>
+  <block id="eebf9b70421de9e6316f48de3e2cef0b" category="list-text">根据滞后状态、发生恢复点目标(RPO)滞后的SnapMirror关系总数。</block>
+  <block id="2cd111e77d7b5983398bdaaaee149c7b" category="list-text">每种类型的SnapMirror策略所保护的卷数。</block>
+  <block id="5c421974ea0511d51906133dd8756205" category="list-text">受SnapMirror关系类型(例如异步镜像、异步存储、异步镜像存储、StricxtSync、SnapMirror业务连续性(SMBC)一致性组和Sync)保护的关系数。</block>
+  <block id="43e5aa2d7191d2fad1b5eb6a2779c47c" category="list-text">运行状况良好和运行状况不正常的关系的数量。</block>
+  <block id="2fb2c7d03a760408a3f8150c23df4876" category="list-text">卷关系计数的细分。您可以按RPO滞后时间和状态切换图表。</block>
+  <block id="63a0f94f271c2db3ea63bb2e1407963f" category="section-title">有关SnapMirror关系的注意事项</block>
+  <block id="8306a92378d26e760d7af3731743817d" category="list-text">在计算SnapMirror关系时、系统会计算已启用读取和写入的源卷。不考虑目标卷和根卷。</block>
+  <block id="8d511bbd194d35f08464a136bb70dcde" category="list-text">SnapMirror关系计数包括源和目标位于相同或不同集群上的卷数。</block>
+  <block id="1db6a4edd103342870b2b9c5978d7367" category="list-text">数据复制中RPO滞后的滞后持续时间取决于SnapMirror关系。根据设置的关系阈值、此状态可归类为`ok`、`warning`或`error`。您可以查看状态以确定这些参数是否按预期工作、或者是否需要处理任何问题描述。</block>
+  <block id="3ff4f762b527be69fe7eec08ae35b87b" category="list-text">如果卷具有多个SnapMirror关系、则每个关系类型都会计入RPO滞后。</block>
+  <block id="e1b7796fc1c8956e35e14e1dd971c172" category="list-text">如果源和目标之间的数据复制出现问题、例如关系中断、则卷关系会被视为运行状况不正常。</block>
+  <block id="40847d7e9432dd6c5361ae54fc2d16af" category="paragraph">根据您的配置、信息板上会显示下面列出的某些面板。</block>
+  <block id="c25d753eab05371bc6f1dc93bfec9172" category="section-title">管理操作面板</block>
+  <block id="b6df0767f4960b7629f2e371610e9307" category="paragraph">Unified Manager 可以全面诊断某些问题并提供单一解决方案。如果可用，这些解决方法将显示在此面板中，并显示 * 修复它 * 或 * 全部修复 * 按钮。您可以直接从 Unified Manager 修复这些问题，而不必使用 ONTAP 系统管理器或 ONTAP 命令行界面。要查看所有问题、请单击See <block ref="4de06821690ec8505ff30e3d01558e54" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
+  <block id="fef8cf4e4a8fdf24035fdd7ad0e12bef" category="section-title">容量面板</block>
+  <block id="b05da785853a29a927e963aad5156c60" category="section-title">性能容量面板</block>
+  <block id="13096b4da9a657a34280608c81422b64" category="section-title">工作负载IOPS面板</block>
+  <block id="4826f254fef1719f5ec200536a9b8d1c" category="section-title">工作负载性能面板</block>
+  <block id="6a9602a49f20f6de2a3c680bee025bf2" category="section-title">安全面板</block>
+  <block id="fcdbb03270e6f3305ff3df7b28850700" category="paragraph">"安全"面板将根据您的当前视图显示所有集群或单个集群的高级安全状态。此面板将显示：</block>
+  <block id="536271dfa8f2f9916a13c215d3f41af1" category="list-text">列出过去24小时内收到的安全事件。单击某个事件可在事件详细信息页面上查看详细信息</block>
+  <block id="456c95875c5f07d10bea6adf0d6afc89" category="list-text">集群安全状态(合规和不合规集群的数量)</block>
+  <block id="73898bf7f2b529343bbba3505b24ff2d" category="list-text">Storage VM安全状态(合规和不合规Storage VM的计数)</block>
+  <block id="2cdea3c1ee33ca0bea905c24386731bc" category="list-text">卷加密状态(已加密或未加密的卷计数)</block>
+  <block id="ef1b9b8be04891e22fa3ddf0fd376165" category="list-text">卷反勒索软件状态(启用或禁用了反勒索软件的卷数量)</block>
+  <block id="4e1bd1faabb7657ed9737620db0b2e94" category="paragraph">您可以单击合规和不合规集群、Storage VMS、加密和未加密卷以及卷反勒索软件状态的条形图、转到相应页面并查看筛选后的集群、Storage VM和卷的安全详细信息。</block>
+  <block id="0c9a288d39552e7a6119f62b6d3007b4" category="paragraph">合规性基于<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block>。单击面板顶部的右箭头可在安全性页面上查看所有集群的安全详细信息。有关信息，请参见<block ref="13e0397bd43d0f4ef0a0e2d1f1544b6c" category="inline-link-macro-rx"></block></block>
+  <block id="79e2397f76dee4064846f95fa07791eb" category="section-title">数据保护面板</block>
+  <block id="9e8696d44288182cf40230af51f64455" category="paragraph">此面板显示数据中心中单个或所有集群的数据保护摘要。它会显示过去 24 小时在 ONTAP 中引发的数据保护事件总数和活动事件数。单击每个事件中的链接将转到 " 事件 " 详细信息页面。您可以单击 * 查看全部 * 链接以查看事件管理清单页面中的所有活动保护事件。</block>
+  <block id="2e49679d1be13246fb079f59529684e7" category="paragraph">此面板还会显示集群中的卷数、或者显示受Snapshot副本和SnapMirror关系保护的数据中心中的所有集群的卷数。对于SnapMirror关系、将考虑源集群上的卷计数。您还可以根据滞后状态查看SnapMirror恢复点目标(RPO)滞后的卷关系数量。您可以将鼠标悬停在此处查看相应的计数和图例。您可以单击：</block>
+  <block id="96e0ea5d27f828094ba80affb2d69831" category="list-text">所有关系的条形图将转到"关系"页面、其中会根据源集群筛选详细信息。</block>
+  <block id="88706e5bba10c2cfad56cdea8c4ba6fe" category="paragraph">有关详细信息，请参见 <block ref="cce169fddfae7a31f74f472dce696e49" category="inline-link-macro-rx"></block>。</block>
+  <block id="f57c4b418e2731d49f5e6d4704d476ed" category="section-title">使用情况概述面板</block>
+  <block id="66576d2d96c5af7a461b297c7c1fee81" category="summary">性能服务级别计算和管理。</block>
+  <block id="8552175c85e7998c59b8494bc1ae857d" category="paragraph">通过性能服务级别(PSL)、您可以定义工作负载的性能和存储目标。您可以在最初创建工作负载时为工作负载分配PSL、也可以稍后通过编辑工作负载来分配PSL。</block>
+  <block id="184ab5bd8865091b7cda3174a886cc26" category="paragraph">存储资源的管理和监控基于服务级别目标（ Service Level Objective ， SLO ）。SLO 由基于所需性能和容量的服务级别协议定义。在 Unified Manager 中， SLO 是指在 NetApp 存储上运行的应用程序的 PSL 定义。存储服务会根据底层资源的性能和利用率进行区分。PSL 是存储服务目标的问题描述。通过 PSL ，存储提供程序可以为工作负载指定性能和容量目标。在为工作负载分配PSL时、ONTAP 上的相应工作负载将通过其性能和容量目标进行管理。每个PSL均按峰值、预期和绝对最小IOPS以及预期延迟进行管理。</block>
+  <block id="b36a5e567e88c0ae0a64778c42ea9981" category="paragraph">Unified Manager具有以下类型的PSL：</block>
+  <block id="3843fd811f1ec0b59d9cdd4a7e47df49" category="list-text">*系统定义*：Unified Manager提供了一些无法更改的预设策略。这些预定义的PSL包括：</block>
+  <block id="778ad35b71454a746f2ee05ac17deabd" category="paragraph">极高性能，性能和价值 PSL 适用于数据中心中的大多数常见存储工作负载。</block>
+  <block id="5cf5ab634f22e11b8dd5e06cc7f1a0de" category="paragraph">Unified Manager还为数据库应用程序提供了三个性能服务级别。这些是性能极高的 PSL ，支持突发 IOPS ，适用于吞吐量需求最高的数据库应用程序。</block>
+  <block id="ce3e57f2cc08dc30303717cb709cb3a2" category="list-text">*用户定义*：如果预定义的性能服务级别不符合您的要求、则可以根据您的需求创建新的PSL。有关信息，请参见 <block ref="d0a8b7ff5ef359e804ab1c178548b2d2" category="inline-link-macro-rx"></block>。</block>
+  <block id="23f0b729594406f218589023be1672eb" category="list-text">*超出至高性能*：超出至高性能PSL是系统建议的PSL、适用于要求IOPS高于至高性能的工作负载。系统会根据工作负载的IOPS、容量和延迟对这些工作负载进行内部分析、并在*存储&gt;工作负载&gt;所有工作负载*屏幕上为每个工作负载建议使用"超出至高PSL"。您可以将PSL应用于工作负载、以确保最佳性能。</block>
+  <block id="16b8789642bf182efe1472aa8429f79e" category="paragraph">根据工作负载行为、系统会动态生成工作负载的IOPS参数、并以`超过至高&lt;number-(峰值IOPS/TB)&gt;&lt;数字(预期IOPS/TB)&gt;`的格式附加到"超出至高" PSL的名称中。例如、如果系统确定工作负载的峰值和预期IOPS分别为`106345`和`37929`、则为该工作负载生成的"超出极高PSL"将命名为`超过极高106345 37929`。虽然系统建议使用这些PSL、但在将其分配给工作负载时、这些PSL的类型会标记为`User-Defined`。</block>
+  <block id="83f918c807b58b71db4acbbc77ef8853" category="section-title">通过分配PSL管理工作负载</block>
+  <block id="b441b9d3821de1d37228c33142c7feaf" category="paragraph">您可以从*策略*&gt;*性能服务级别*页面以及使用存储提供程序API访问PSL。通过为存储工作负载分配 PSL 来管理存储工作负载非常方便，因为您不必单独管理存储工作负载。也可以通过重新分配另一个 PSL 来管理任何修改，而不是单独管理这些修改。Unified Manager可帮助您根据内部评估和建议为工作负载分配PSL。</block>
+  <block id="928ef7d59a43368b1173f812a02322ba" category="paragraph">有关为工作负载分配系统建议的PSL的信息、请参见 <block ref="39911180f1611c3a58b984217400bf00" category="inline-link-macro-rx"></block></block>
+  <block id="5f88ffd5a97eb92e999fdce0e40231d7" category="paragraph">" 性能服务级别 " 页面列出了可用的 PSL 策略，并可用于添加，编辑和删除这些策略。</block>
+  <block id="e245f2c7c1f2c99c5a6c90f2a8a9d663" category="paragraph">此页面显示以下信息：</block>
+  <block id="83059b29ded5b1932b48e4206971a5ee" category="paragraph">PSL的名称。</block>
+  <block id="921ad87862a6cb534bf64a36dc685190" category="paragraph">预期 IOPS/TB</block>
+  <block id="eddcc0fdb991cbf3e872a7d78bdaebf5" category="paragraph">峰值 IOPS/TB</block>
+  <block id="9ca8a856539b5ae9a3a54f23f3b229f3" category="paragraph">有关峰值 IOPS 和预期 IOPS 如何帮助在 ONTAP 集群上实现一致的差异化性能的信息，请参见以下知识库文章：<block ref="ca8d1d6e78ce890ca12599250d6fd33a" category="inline-link-rx"></block></block>
+  <block id="1e2877fe5a3aa4eeb47784f53a7249e3" category="section-title">为违反PSL定义的阈值的工作负载生成的事件</block>
+  <block id="e2bdcd05f95d60578d7e6bfd9d2544d6" category="paragraph">请注意、如果工作负载在前一小时30%的时间内超过预期延迟值、则Unified Manager将生成以下事件之一、以通知您可能存在性能问题描述 ：</block>
+  <block id="8b6b4056f93370fb709800d66f772b5f" category="list-text">已违反性能服务级别策略定义的工作负载卷延迟阈值</block>
+  <block id="b5645d14881cb50cc5446fff8f8f2fe3" category="list-text">已违反性能服务级别策略定义的工作负载LUN延迟阈值。</block>
+  <block id="f14587ffeeb503db87509f1c835e8083" category="paragraph">您可能需要分析工作负载，以查看可能导致延迟值增加的原因。</block>
+  <block id="983d6eba134705aa52a8cccb4900a665" category="list-text"><block ref="983d6eba134705aa52a8cccb4900a665" category="inline-link-macro-rx"></block></block>
+  <block id="827edeea8771884703cf6933b5bd4082" category="list-text"><block ref="827edeea8771884703cf6933b5bd4082" category="inline-link-macro-rx"></block></block>
+  <block id="1a25e589af391acb5b5e54c86cd6e406" category="list-text"><block ref="1a25e589af391acb5b5e54c86cd6e406" category="inline-link-macro-rx"></block></block>
+  <block id="e0c824f40f429abde0d08c6e8828e913" category="list-text"><block ref="e0c824f40f429abde0d08c6e8828e913" category="inline-link-macro-rx"></block></block>
+  <block id="898e52de0af612227a2f8c15ffca7e07" category="section-title">系统定义的PSL</block>
+  <block id="234af0ddc4a71a876356b59cb2384ed5" category="inline-link">ActiveIQ UM"分配系统建议的性能服务级别"无法适应高度可变的工作负载</block>
+  <block id="3d7f2134db93b92515eeb7d6dd0d42fd" category="paragraph">另请参见知识库(KB)文章<block ref="392a353923a129bf2dd9e8f509eb075c" category="inline-link-rx"></block></block>
+  <block id="c5cabe6c2ad2795d23383728084e1ab7" category="paragraph">将集群添加到Unified Manager时、系统会自动发现每个集群上的存储工作负载、并将其显示在工作负载页面上。</block>
+  <block id="2be7409d28477749d18d42c97d70700f" category="paragraph">只有在对存储工作负载启动 I/O 操作后， Unified Manager 才会开始分析工作负载以获得建议（建议的 PSL ）。</block>
+  <block id="e2fa63eeafabf7368d2bbe40551b89b4" category="paragraph">不包括FlexGroup 卷及其成分卷。</block>
+  <block id="69fde75d614c2addee8e60ebec0e1b4f" category="paragraph">"工作负载概述"页面显示了数据中心中的工作负载概述以及数据中心的空间和性能概述。</block>
+  <block id="0d08c8c5cfaa7e6e5e5560cb3b198979" category="list-text">*工作负载概述*面板：显示工作负载总数以及已分配或未分配PSL的工作负载数量。此外、还会显示每个PSL的工作负载计数的细分。单击这些计数将转到包含已筛选工作负载的*所有工作负载*视图。您还可以查看不符合系统建议的工作负载数量、并通过单击*分配系统建议的PSL*按钮为其分配系统建议的PSL。</block>
+  <block id="4b150d0a068c78ebc07c09b002c83b57" category="list-text">*数据中心概述*面板：显示数据中心的可用空间和已用空间(TiB)以及性能(IOPS)。此外、还会显示每个PSL下所有工作负载的可用空间和已用空间(TiB)以及性能(IOPS)的详细信息。</block>
+  <block id="4cd601372baffe466cc8b21d1c762ff1" category="section-title">所有工作负载视图</block>
+  <block id="d068c2e7f4320ed06ddfd0cc2263c0a6" category="paragraph">"*存储"&gt;"工作负载"&gt;"所有工作负载*"页面列出了与Unified Manager管理的ONTAP 集群关联的存储工作负载。</block>
+  <block id="671b92fdc84cea69331beecbe6db5269" category="paragraph">对于未执行任何 I/O 操作的新发现的存储工作负载，状态为 "`Waiting for I/O` " 。对存储工作负载执行 I/O 操作后， Unified Manager 将开始分析，工作负载状态将更改为 "`Learning ……` " 。分析完成后（自 I/O 操作开始起 24 小时内），将显示存储工作负载的建议 PSL 。</block>
+  <block id="c681e8e426b88a2016f782ee4077d546" category="paragraph">此外，您还可以通过此页面为存储工作负载分配存储效率策略（ Storage Efficiency Policy ， SEP ）和性能服务级别（ Performance Service Levels ， PSL ）。您可以执行多个任务：</block>
+  <block id="971cc8c4f0d2e73f8c855ffbb4ee780e" category="list-text">单击*存储&gt;工作负载&gt;所有工作负载&gt;创建*。</block>
+  <block id="caf11825967fd06c8f4051cb91a0c703" category="list-text">创建工作负载。有关信息，请参见 <block ref="03ab5ac19ec9b39f52b8777442abceaa" category="inline-link-macro-rx"></block></block>
+  <block id="65cf3f9a6be1632ade211076f9897d9b" category="paragraph">您还可以通过此页面查看工作负载的性能详细信息。您可以通过单击 * 选择 / 排序列 * 按钮并选择要查看的特定列来查看有关工作负载的 IOPS ，容量和延迟的详细信息。" 性能视图 " 列显示工作负载的平均 IOPS 和峰值 IOPS ，您可以单击工作负载分析器图标以查看详细的 IOPS 分析。</block>
+  <block id="b676c40bb705faec2024beabbc555a79" category="paragraph">"* IOPS分析*"弹出窗口中的"*分析工作负载*"按钮将转到"工作负载分析"页面、在此可以选择一个时间范围并查看选定工作负载的延迟、吞吐量和容量趋势。有关工作负载分析器的详细信息、请参见 <block ref="c4de40ea8216795b8aee67ff6e4289bc" category="inline-link-macro-rx"></block></block>
+  <block id="06a5431002003681ab6baa452dc0c7c7" category="paragraph">有关详细信息，请参见 <block ref="27f2a443d50f465254d755a8f399eae1" category="inline-link-macro-rx"></block></block>
+  <block id="a26d614c9e0553f09a3b94b7c06f9fff" category="summary">容量测量单位是物理和逻辑容量</block>
+  <block id="a28def0e6555993fb14b2d945874f854" category="sidebar">Active IQ Unified Manager 9.10的文档</block>
+  <block id="0d8a88420d6ff91d22ed7f26bf97d526" category="sidebar">查看集群和Storage VM的详细安全状态</block>
+  <block id="934295d1ea6542a74e859da73b8634ee" category="sidebar">了解Storage VM关联</block>
 </blocks>

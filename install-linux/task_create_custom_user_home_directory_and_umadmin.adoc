@@ -35,7 +35,7 @@ summary: 在安装 Unified Manager 之前，您可以创建自定义主目录并
 
 环境中的安全策略不能限制 Unified Manager 维护用户的 sudo 权限。如果权限受限，某些 Unified Manager 操作可能会失败。在成功安装后以 umadmin 用户身份登录后，验证您是否能够运行以下 sudo 命令。
 
-`sudo /etc/init.d/ocie status`
+`sUdo systemctl status ocie`
 
 此命令应返回 ocie 服务的相应状态，并且不会出现任何错误。
 

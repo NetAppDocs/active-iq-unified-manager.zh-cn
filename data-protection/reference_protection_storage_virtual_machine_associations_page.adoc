@@ -1,58 +1,102 @@
 ---
 permalink: data-protection/reference_protection_storage_virtual_machine_associations_page.html 
 sidebar: sidebar 
-keywords: svm, peers, page 
-summary: 通过 SVM 对等方页面，您可以查看源和目标 Storage VM 之间的现有 Storage VM 对等方，并创建新的 Storage VM 以供合作伙伴应用程序使用以创建 SnapMirror 和 SnapVault 关系。 
+keywords: svm, association, page 
+summary: 通过Storage VM关联页面、您可以查看源和目标Storage VM之间的现有Storage VM关联。 
 ---
-= SVM 对等方页面
+= 了解Storage VM关联
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-通过 SVM 对等方页面，您可以查看源和目标 Storage VM 之间的现有 Storage VM 对等方，并创建新的 Storage VM 以供合作伙伴应用程序使用以创建 SnapMirror 和 SnapVault 关系。
+Storage Virtual Machine (Storage VM)关联是指从源Storage VM到目标Storage VM的映射、供合作伙伴应用程序用于资源选择和二级卷配置。
+
+无论目标Storage VM是二级目标还是三级目标、都会在源Storage VM和目标Storage VM之间创建关联。您不能使用二级目标Storage VM作为源来创建与三级目标Storage VM的关联。
+
+作为应用程序管理员或存储管理员、您可以在*保护*>*存储VM关联*页面上查看环境中的Storage VM关联。
+
+可以通过以下三种方式关联SVM：
+
+* *关联任何Storage VM*：您可以在任何主源Storage VM与一个或多个目标SVM之间创建关联。这意味着、当前需要保护的所有现有SVM以及未来创建的任何SVM都会与指定的目标SVM相关联。例如、您可能希望将来自不同位置的多个不同源的应用程序备份到一个位置的一个或多个目标SVM。
+* *关联特定Storage VM*：您可以在特定源Storage VM与一个或多个特定目标SVM之间创建关联。例如，如果要为数据必须彼此分离的多个客户端提供存储服务，则可以选择此选项将特定源 Storage VM 与仅分配给该客户端的特定目标 Storage VM 关联起来。
+* *与外部Storage VM*关联：您可以在源Storage VM与目标Storage VM的外部灵活卷之间创建关联。
 
 
 
-== 命令按钮
 
-命令按钮可用于执行以下任务：
+== 创建Storage VM关联
 
-* * 创建 * 。
+通过创建Storage Virtual Machine关联向导、合作伙伴保护应用程序可以将源Storage VM与目标Storage VM相关联、以便用于SnapMirror和SnapVault 关系。合作伙伴应用程序在初始配置目标卷时使用这些关联来确定要选择的资源。dd
+
+* 您需要的内容 *
+
+* 要关联的 Storage VM 必须已存在。
+* 您必须具有应用程序管理员或存储管理员角色。
+
+
+对于任何源 Storage VM 和关系类型，您只能在每个目标集群上选择一个目标 Storage VM 。
+
+使用 delete 和 create 函数更改关联仅会影响未来的配置操作。它不会移动现有目标卷。
+
+.步骤
+. 在左侧导航窗格中、单击*保护*>*存储VM关联*。
+. 在*存储VM关联*页面上、单击*创建*。
 +
-打开创建 Storage Virtual Machine 对等方页面。
+此时将启动*创建Storage Virtual Machine关联*向导。
 
-* * 删除 *
+. 选择以下源之一：
 +
-用于删除选定的 Storage VM 对等方。
-
-
-
-
-
-== Storage VM 对等方列表
-
-SVM 对等方列表将在表中显示已创建的源和目标 Storage VM 关联以及每个关联所允许的保护关系类型。
-
-* * 源 Storage Virtual Machine*
+** * 任意 *
 +
-显示源 SVM 的名称。
+如果要在任何主 Storage VM 源与一个或多个目标 Storage VM 之间创建关联，请选择此选项。这意味着，当前需要保护的所有现有 Storage VM 以及未来创建的任何 Storage VM 都会与指定的目标 Storage VM 相关联。例如，您可能希望将来自不同位置的多个不同源的应用程序备份到一个位置的一个或多个目标 Storage VM 。
 
-* * 源集群 *
+** * 单个 *
 +
-显示源集群的名称。
+如果要选择与一个或多个目标 Storage VM 关联的特定源 Storage VM ，请选择此选项。例如，如果要为数据必须彼此分离的多个客户端提供存储服务，请选择此选项将特定 Storage VM 源与仅分配给该客户端的特定 Storage VM 目标关联起来。
 
-* * 目标 Storage Virtual Machine*
+** * 无（外部） *
 +
-显示目标 SVM 的名称。
+如果要在源 Storage VM 与目标 Storage VM 的外部灵活卷之间创建关联，请选择此选项。
 
-* * 目标集群 *
-+
-显示目标集群的名称。
 
-* * 类型 *
+
+. 选择要创建的一种或两种保护关系类型：
 +
-显示保护关系的类型。关系类型为 SnapMirror 或 SnapVault 。
+** * SnapMirror *
+** * SnapVault *
+
+
+. 单击 * 下一步 * 。
+. 选择一个或多个 Storage VM 保护目标。
+. 单击 * 完成 * 。
+
+
+
+
+== 删除Storage VM关联
+
+您可以删除配对应用程序的Storage VM关联以删除源和目标Storage VM之间的二级配置关系；例如、当目标Storage VM已满且您希望创建新的Storage VM保护关联时、可以执行此操作。
+
+* 您需要的内容 *
+
+您必须具有应用程序管理员或存储管理员角色。
+
+除非至少选择一个Storage VM关联、否则*删除*按钮将被禁用。使用删除和创建功能更改关联仅会影响未来的配置操作；它不会移动现有目标卷。
+
+.步骤
+. 在左侧导航窗格中、单击*保护*>*存储VM关联*。
+. 至少选择一个Storage VM关联。
++
+已启用 * 删除 * 按钮。
+
+. 单击 * 删除。 *
++
+此时将显示警告对话框。
+
+. 单击 * 是 * 继续。
++
+选定Storage VM关联将从列表中删除。
 
 

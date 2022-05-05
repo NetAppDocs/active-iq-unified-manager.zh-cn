@@ -136,4 +136,59 @@ SnapMirror 关系
  a| 
 error
 
+
+
+ a| 
+已在集群上添加ONTAP 调解器(snapmirrorMediatorAdded)
+ a| 
+事件
+ a| 
+集群
+ a| 
+信息
+
+
+
+ a| 
+已从集群中删除ONTAP 调解器(已删除snapmirrorMediator）
+ a| 
+事件
+ a| 
+集群
+ a| 
+信息
+
+
+
+ a| 
+无法从集群访问ONTAP 调解器(snapmirrorMediatorUnreachable)
+ a| 
+风险
+ a| 
+调解器
+ a| 
+警告
+
+
+
+ a| 
+无法从集群访问ONTAP 调解器(snapmirrorMediatorMisconfigured)
+ a| 
+风险
+ a| 
+调解器
+ a| 
+error
+
+
+
+ a| 
+ONTAP 调解器连接已重新建立、已重新同步并可用于SMBC (snapmirrorMediatorInQuoral)
+ a| 
+事件
+ a| 
+调解器
+ a| 
+信息
+
 |===

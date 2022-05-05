@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: common, workflows, storage, management 
 summary: 常见工作流为客户端应用程序开发人员提供了一些示例，说明客户端应用程序如何调用 Active IQ Unified Manager API 来执行常见存储管理功能。本节包含其中一些示例工作流。 
 ---
-= 存储管理的通用工作流
+= 用于存储管理的通用API工作流
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

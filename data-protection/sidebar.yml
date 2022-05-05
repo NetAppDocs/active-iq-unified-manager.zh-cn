@@ -122,16 +122,10 @@ entries:
       url: "/data-protection/task_view_protection_relationships_from_storage_vms_page.html"
     - title: 根据保护状态查看 Storage VM
       url: "/data-protection/task_view_storage_vms_based_on_protection_status.html"
-  - title: 了解 Storage VM 对等方
-    url: "/data-protection/concept_understand_svm_associations.html"
+  - title: 了解Storage VM关联
+    url: "/data-protection/reference_protection_storage_virtual_machine_associations_page.html"
   - title: 支持存储服务的 SVM 和资源池要求
     url: "/data-protection/concept_storage_virtual_machine_and_resource_pool_requirements.html"
-  - title: 创建 Storage VM 对等方
-    url: "/data-protection/task_create_storage_virtual_machine_svm_associations.html"
-  - title: 查看 Storage VM 对等方
-    url: "/data-protection/task_view_svm_associations.html"
-  - title: 正在删除 Storage VM 对等方
-    url: "/data-protection/task_delete_svm_associations.html"
   - title: 什么是作业
     url: "/data-protection/concept_what_jobs_are.html"
   - title: 监控作业
@@ -153,10 +147,6 @@ entries:
       url: "/data-protection/reference_edit_resource_pool_dialog_box.html"
     - title: 聚合对话框
       url: "/data-protection/reference_aggregates_dialog_box.html"
-    - title: SVM 对等方页面
-      url: "/data-protection/reference_protection_storage_virtual_machine_associations_page.html"
-    - title: 创建 Storage Virtual Machine 对等方向导
-      url: "/data-protection/reference_create_storage_virtual_machine_associations_wizard.html"
     - title: 作业页面
       url: "/data-protection/reference_protection_jobs_page.html"
     - title: 作业详细信息页面

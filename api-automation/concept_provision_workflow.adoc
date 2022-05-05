@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: workflow, workload, management 
 summary: 使用 Active IQ Unified Manager ，您可以配置和修改存储工作负载（ LUN ， NFS 文件共享和 CIFS 共享）。配置包括多个步骤，从创建 Storage Virtual Machine （ SVM ）到对存储工作负载应用性能服务级别和存储效率策略。修改工作负载包括修改特定参数并启用其附加功能的步骤。 
 ---
-= 工作负载管理工作流
+= 用于工作负载管理的API工作流
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

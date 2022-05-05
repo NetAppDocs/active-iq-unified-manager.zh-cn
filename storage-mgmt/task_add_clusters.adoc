@@ -22,7 +22,7 @@ summary: 您可以将集群添加到 Active IQ Unified Manager 中，以便监�
 
 * 要访问集群，您必须具有用户名和密码。
 +
-此帐户必须具有 _admin_ 角色，并且应用程序访问权限设置为 _ontapi_ ， _ssh_ 和 _http_ 。
+此帐户必须具有_admin_角色、并且应用程序访问权限设置为_ontapi_、_console _和_http_。
 
 * 您必须知道要使用 HTTPS 协议连接到集群的端口号（通常为端口 443 ）。
 * 集群必须运行 ONTAP 9.1 或更高版本的软件。

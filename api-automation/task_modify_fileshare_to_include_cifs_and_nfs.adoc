@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: modify, nfs, file, share, support, cifs 
 summary: 您可以修改 NFS 文件共享以支持 CIFS 协议。在创建文件共享期间，可以为同一文件共享同时指定访问控制列表（ ACL ）参数和导出策略规则。但是，如果要在创建 NFS 文件共享的同一个卷上启用 CIFS ，则可以更新该文件共享上的 ACL 参数以支持 CIFS 。 
 ---
-= 修改 NFS 文件共享以支持 CIFS
+= 使用API修改NFS文件共享以支持CIFS
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -424,6 +424,28 @@ Volume
  a| 
 警告
 
+
+
+ a| 
+卷Snapshot预留未充分利用(volumeSnaphotReserveUnutilizedWarning)
+ a| 
+事件
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷Snapshot预留未充分利用(volumeSnaphotReserveUnutilizedCleared)
+ a| 
+事件
+ a| 
+Volume
+ a| 
+警告
+
 |===
 
 
@@ -867,6 +889,35 @@ Volume
 
  a| 
 卷出现高噪声反勒索软件警报（ anantiRansomwareFeatureNoisyVolume ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+|===
+
+
+== 影响区域：数据保护
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+卷的本地Snapshot保护不足(volumeLacksLocalProtectionWarning)
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷的本地Snapshot保护不足(volumeLacksLocalProtectionCleared)
  a| 
 风险
  a| 

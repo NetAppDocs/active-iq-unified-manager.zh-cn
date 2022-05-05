@@ -1,7 +1,7 @@
 ---
 permalink: events/task_upload_new_active_iq_rules_file.html 
 sidebar: sidebar 
-keywords: upload, new, active iq, rules, file 
+keywords: upload, new, active iq AIQ rules, rules file, CA secure rules, config advisor rules 
 summary: Unified Manager 会自动检查新的 Active IQ 规则文件，并在存在较新规则时下载新文件。但是，在无法访问外部网络的站点中，您需要手动上传规则文件。 
 ---
 = 上传新的 Active IQ 规则文件
@@ -11,18 +11,31 @@ summary: Unified Manager 会自动检查新的 Active IQ 规则文件，并在�
 
 
 [role="lead"]
-Unified Manager 会自动检查新的 Active IQ 规则文件，并在存在较新规则时下载新文件。但是，在无法访问外部网络的站点中，您需要手动上传规则文件。
+Unified Manager会自动检查是否存在新的Active IQ 事件(规则)文件、如果存在较新的规则、则会下载新文件。但是，在无法访问外部网络的站点中，您需要手动上传规则文件。
+
+
+NOTE: Active IQ 规则也称为Config Advisor (CA)安全规则。
+
+如果在没有网络连接的站点中安装Unified Manager或将Unified Manager升级到特定版本、则捆绑的Active IQ 规则将自动可上传。但是、建议您大约每月从NetApp支持站点下载一次新的规则文件、以确保生成更新后的事件、并且存储系统仍能以最佳状态运行。
 
 * 您需要的内容 *
 
-* 必须启用 Active IQ 事件报告。
+* 必须启用Active IQ 门户事件报告。默认情况下，此功能处于启用状态。有关信息，请参见 link:../config/concept_active_iq_platform_events.html["启用 Active IQ 门户事件"]。
 * 您必须从 NetApp 支持站点下载规则文件。
++
+规则文件位于： https://mysupport.netapp.com/api/content-service/staticcontents/content/public/tools/unifiedmanager/ca/secure_rules.zip[]
 
 
-建议您大约每月下载一次新的规则文件，以确保存储系统受到保护并以最佳方式运行。规则文件位于： http://mysupport.netapp.com/NOW/public/unified_manager/bin/secure_rules.zip[]
 
 .步骤
 . 在可访问网络的计算机上，导航到 NetApp 支持站点并下载当前规则 ` .zip` 文件。
++
+捆绑的规则软件包包括规则存储库、数据源和NetApp知识库文章。
+
++
+
+NOTE: 在Windows系统上、在没有网络连接的站点中、NetApp知识库文章默认不会与安装程序捆绑在一起。您可以从支持站点下载_secure rules.zip文件并将其上传、以查看所有规则的知识库文章。
+
 . 将规则文件传输到可带入安全区域的某些介质，然后将其复制到安全区域的系统。
 . 在左侧导航窗格中，单击 * 存储管理 * > * 事件设置 * 。
 . 在 * 事件设置 * 页面中，单击 * 上传规则 * 按钮。
@@ -32,4 +45,4 @@ Unified Manager 会自动检查新的 Active IQ 规则文件，并在存在较�
 
 
 
-规则文件将在 Unified Manager 服务器上解压缩。在受管集群午夜后生成 AutoSupport 文件后， Unified Manager 将根据规则文件检查集群，并根据需要生成新的风险和意外事件。
+规则文件将在 Unified Manager 服务器上解压缩。在受管集群在午夜后生成AutoSupport 文件后、Unified Manager将根据规则文件检查集群、并根据需要生成新的风险和意外事件。

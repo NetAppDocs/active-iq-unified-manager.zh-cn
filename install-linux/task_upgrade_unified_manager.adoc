@@ -11,7 +11,7 @@ summary: 您可以通过在 Red Hat 平台上下载并运行安装文件来升�
 
 
 [role="lead"]
-您可以通过在 Red Hat 平台上下载并运行安装文件从 Unified Manager 9.8 或 9.9 升级到 9.10 。
+您可以通过在Red Hat平台上下载并运行安装文件从Unified Manager 9.9或9.10升级到9.11。
 
 * 您需要的内容 *
 
@@ -30,24 +30,7 @@ link:task_upgrade_openjdk_on_linux_ocum.html["在 Linux 上升级 JRE"]
 * 为了避免数据丢失，如果在升级期间存在问题描述，则必须已为 Unified Manager 数据库创建备份。此外，建议您将备份文件从 ` /opt/netapp/data` 目录移动到外部位置。
 * 在升级期间，系统可能会提示您确认是要保留先前的默认设置以将性能数据保留 13 个月，还是将其更改为 6 个月。确认后，将清除 6 个月后的历史性能数据。
 * 您应已完成所有正在运行的操作，因为 Unified Manager 在升级过程中不可用。
-* * MySQL 要求 * ：在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的 MySQL 版本早于 8.0.27 ，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.0.27 。
-+
-但是，您可能需要将 MySQL 升级到系统上的最新次要版本。在升级到下一个次要版本之前，请确保系统上的 MySQL 基本版本为 8.0.27 。
-
-+
-如果您的站点没有配置 MySQL 8.0.27 的存储库，则可能无法升级 Unified Manager 。要在升级之前配置存储库，请执行以下步骤：
-
-+
-.. 下载所需最低版本的 MySQL RPM 软件包（在本例中为 8.0.27 ），并将其保存在存储 `netapp-um<version>.x86_64` 的同一目录中。
-.. 运行此命令以安装新版本： `yum install * 。 rpm`
-.. 启动 Unified Manager 服务器。运行以下命令：
-+
-... `systemctl start ocie`
-... `systemctl start ocieau`
-
-
-
-
+* 在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.28、则Unified Manager升级过程会自动将MySQL升级到8.0.28。
 
 
 .步骤
@@ -96,6 +79,13 @@ Unified Manager 所需的 RPM 模块将解压缩到目标目录。
 .. 将目录更改为安装系统上的新目录，并运行以下命令以安装 MySQL Community Edition 及其依赖项。
 +
 `yum install * 。 rpm`
+
+.. 启动 Unified Manager 服务器。运行以下命令：
++
+`systemctl start ocie`
+
++
+`systemctl start ocieau`
 
 
 

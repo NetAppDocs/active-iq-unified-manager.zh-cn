@@ -2,7 +2,7 @@
 permalink: data-protection/task_monitor_storage_vms_using_relationships_page.html 
 sidebar: sidebar 
 keywords: relationships page, monitor, storage, vm 
-summary: '您可以从清单保护部分的关系页面监控 Storage VM 灾难恢复关系。默认情况下，在应用成分卷关系筛选器时， " 关系 " 页面仅列出顶级关系。' 
+summary: '您可以从清单保护部分的关系页面监控 Storage VM 灾难恢复关系。默认情况下、在应用成分卷关系筛选器时、"关系"页面仅列出顶级关系。' 
 ---
 = 使用关系监控 Storage VM 页面
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: '您可以从清单保护部分的关系页面监控 Storage VM 灾难�
 
 
 [role="lead"]
-您可以从清单保护部分的关系页面监控 Storage VM 灾难恢复关系。默认情况下，在应用成分卷关系筛选器时， " 关系 " 页面仅列出顶级关系。
+您可以从清单保护部分的关系页面监控 Storage VM 灾难恢复关系。默认情况下、在应用成分卷关系筛选器时、"关系"页面仅列出顶级关系。
 
 * 您需要的内容 *
 

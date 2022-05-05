@@ -1,7 +1,7 @@
 ---
 permalink: data-protection/view-protection-status.html 
 sidebar: sidebar 
-keywords: view, volume, protection status, dashboard protection card, protection panel, protection widget 
+keywords: volume relationship, protection status, dashboard protection card, protection widget, lag, relationship health, healthy relationship, lag threshold, relationship event, source cluster, snapmirror, snapshot 
 summary: '" 数据保护 " 页面提供了数据中心中所有受保护卷的数据保护详细信息的整体视图。' 
 ---
 = 查看卷保护状态
@@ -13,62 +13,74 @@ summary: '" 数据保护 " 页面提供了数据中心中所有受保护卷的�
 [role="lead"]
 " 数据保护 " 页面提供了单个集群中所有受保护卷或数据中心中所有集群的数据保护详细信息的整体视图。
 
-单击信息板上 " 数据保护 " 面板顶部的右箭头即可查看这些详细信息。此屏幕包含两个部分。在信息板上选择所有集群时， * 所有集群 * 部分将显示受 SnapMirror 关系和 Snapshot 副本保护的数据中心级别的所有集群的保护状态。您可以在 * 单个集群 * 部分中选择一个特定集群，以查看该集群中受保护卷的状态。
-
-如果您在信息板上选择了一个集群，则此页面将显示该集群上受保护卷的详细信息。
-
-您可以将鼠标悬停在每个条形图上以查看相应的计数。单击条形图可转到卷屏幕，其中包含选定的相应卷。单击每个事件中的链接将转到 " 事件 " 详细信息页面。您可以单击 * 查看全部 * 链接以查看事件管理清单页面中的所有活动保护事件。
-
 .步骤
 . 在左侧导航窗格中，单击 * 信息板 * 。
 . 根据您要查看所有受监控集群或单个集群的数据保护状态，选择 * 所有集群 * 或从下拉菜单中选择一个集群。
-. 单击数据保护面板中的右箭头。
+. 单击数据保护面板中的右箭头。此时将显示数据保护页面。
+
+
+根据您选择的是数据中心中的一个还是所有集群、此页面将显示受Snapshot副本或SnapMirror策略保护的卷的数据保护状态、并显示未受保护的卷的计数。从*单个集群*列表中选择一个集群可显示该集群中受保护卷的Snapshot保护和SnapMirror关系状态。
+
+单击此页面上的事件将转到事件详细信息页面。您可以单击 * 查看全部 * 链接以查看事件管理清单页面中的所有活动保护事件。您可以将鼠标悬停在此处查看相应的计数和图例。您可以单击：
+
+* 有关未受保护的卷和受Snapshot副本保护的卷的条形图、请转到卷页面并查看详细信息。
+* 所有关系的条形图将转到"关系"页面、其中的详细信息将按源集群进行筛选。
 
 
 
 
-== 数据保护页面
+== 查看受Snapshot副本保护的卷的保护状态
 
-" 数据保护 " 页面显示了所有集群中受保护卷的以下面板。
+* Snapshot副本概述*：Snapshot副本保护的卷概述、例如：
 
-
-NOTE: 对于 Snapshot 副本的卷计数，源卷和目标卷均会考虑在内。对于 SnapMirror 关系，将计算已启用读取和写入的源卷。不考虑目标卷和根卷。SnapMirror 计数包括源和目标位于相同或不同集群上的卷数。
-
-* * Snapshot 概述 * ： Snapshot 副本保护的卷概述，例如：
-+
-** 受 Snapshot 副本保护和不受 Snapshot 副本保护的卷总数。
-+
-
-NOTE: 要将某个卷视为受保护卷，应启用该卷的 Snapshot 副本计划。
-
-** 正在使用或超过 Snapshot 副本预留空间的卷总数。此值对于查看已用磁盘空间量或计算删除一个或多个 Snapshot 副本后可回收的空间非常重要。
+* 受 Snapshot 副本保护和不受 Snapshot 副本保护的卷总数。
+* 正在使用或超过 Snapshot 副本预留空间的卷总数。
 
 
-* * SnapMirror 概述 * ： SnapMirror 策略保护的卷概述，例如：
-+
-** 受相应 SnapMirror 策略保护的卷数，例如卷 SnapMirror 关系， Storage VM 灾难恢复（ SVM-DR ）及其组合。
-** SnapMirror 关系中出现滞后的卷总数。如果卷具有多个 SnapMirror 关系，则会选择最差的滞后。
+* Snapshot 副本分析 * 详细介绍了以下信息：
+
+* Snapshot 副本的各个事件，包括过去 24 小时内引发的事件。
+* 受 Snapshot 副本保护和不受 Snapshot 副本保护的卷的详细图表。
+* 卷使用，未使用和违反预留的 Snapshot 副本容量。
+* 卷的细分按其 Snapshot 副本的数量计算。
 
 
 
 
-单个集群列表显示特定集群的 SnapMirror 关系和 Snapshot 保护的状态。
+=== 有关Snapshot副本的注意事项
 
-* * Snapshot 副本分析 * 详细介绍了以下信息：
-+
-** Snapshot 副本的各个事件，包括过去 24 小时内引发的事件。
-** 受 Snapshot 副本保护和不受 Snapshot 副本保护的卷的详细图表。
-** 卷使用，未使用和违反预留的 Snapshot 副本容量。您可以使用此信息计算删除一个或多个 Snapshot 副本后已利用或可回收的空间。
-** 卷的细分按其 Snapshot 副本的数量计算。返回的 Snapshot 副本数量仅适用于联机且可用的卷。
+* 要计算受Snapshot副本保护的卷、应同时考虑源卷和目标卷。
+* 返回的 Snapshot 副本数量仅适用于联机且可用的卷。
+* 要将某个卷视为受保护卷，应启用该卷的 Snapshot 副本计划。
+* Snapshot副本的预留空间值对于查看已用磁盘空间量或计算删除一个或多个Snapshot副本后可回收的空间非常重要。
 
 
-* * SnapMirror 分析 * 详细介绍了以下信息：
-+
-** 为 SnapMirror 关系引发的各个事件，包括过去 24 小时内引发的事件
-** 由每个 SnapMirror 策略（例如卷 SnapMirror 关系， Storage VM 灾难恢复（ SVM-DR ）及其组合）保护的卷数。
-** 受 SnapMirror 关系类型（例如异步镜像，异步存储，异步镜像存储， StrictSync ， SnapMirror 业务连续性（ SMBC ）一致性组和 Sync ）保护的卷数。
-** 关系状态为 " 运行状况良好 " 或 " 运行状况不正常 " 的卷数。只有当卷的所有 SnapMirror 关系运行状况良好时，才会将此卷视为运行状况良好。
-** 按恢复点目标（ RPO ）滞后持续时间的速率对卷计数进行细分。
 
 
+== 查看SnapMirror关系的保护状态
+
+* SnapMirror 概述 * ： SnapMirror 策略保护的卷概述，例如：
+
+* 受相应 SnapMirror 策略保护的卷数，例如卷 SnapMirror 关系， Storage VM 灾难恢复（ SVM-DR ）及其组合。
+* 根据滞后状态、发生恢复点目标(RPO)滞后的SnapMirror关系总数。
+
+
+* SnapMirror 分析 * 详细介绍了以下信息：
+
+* 为 SnapMirror 关系引发的各个事件，包括过去 24 小时内引发的事件
+* 每种类型的SnapMirror策略所保护的卷数。
+* 受SnapMirror关系类型(例如异步镜像、异步存储、异步镜像存储、StricxtSync、SnapMirror业务连续性(SMBC)一致性组和Sync)保护的关系数。
+* 运行状况良好和运行状况不正常的关系的数量。
+* 卷关系计数的细分。您可以按RPO滞后时间和状态切换图表。
+
+
+
+
+=== 有关SnapMirror关系的注意事项
+
+* 在计算SnapMirror关系时、系统会计算已启用读取和写入的源卷。不考虑目标卷和根卷。
+* SnapMirror关系计数包括源和目标位于相同或不同集群上的卷数。
+* 数据复制中RPO滞后的滞后持续时间取决于SnapMirror关系。根据设置的关系阈值、此状态可归类为`ok`、`warning`或`error`。您可以查看状态以确定这些参数是否按预期工作、或者是否需要处理任何问题描述。
+* 如果卷具有多个SnapMirror关系、则每个关系类型都会计入RPO滞后。
+* 如果源和目标之间的数据复制出现问题、例如关系中断、则卷关系会被视为运行状况不正常。
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: provision, cifs, nfs, file, shares 
 summary: 您可以使用 Active IQ Unified Manager 中提供的配置 API 在 Storage Virtual Machine （ SVM ）上配置 CIFS 共享和 NFS 文件共享。此配置工作流详细介绍了在创建文件共享之前检索 SVM 密钥，性能服务级别和存储效率策略的步骤。 
 ---
-= 配置 CIFS 和 NFS 文件共享
+= 使用API配置CIFS和NFS文件共享
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

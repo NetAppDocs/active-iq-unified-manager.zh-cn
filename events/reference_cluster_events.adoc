@@ -637,4 +637,26 @@ SSH 正在使用不安全的密码（ ocumClusterSSHInsecure ）
  a| 
 警告
 
+
+
+ a| 
+集群证书即将过期(ocumEvtClusterCertificateAboutToExpire)
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+集群证书已过期(ocumEvtClusterCertificateExpirered)
+ a| 
+风险
+ a| 
+集群
+ a| 
+error
+
 |===

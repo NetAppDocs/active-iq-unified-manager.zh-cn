@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: provision, luns 
 summary: 您可以使用 Active IQ Unified Manager 中提供的配置 API 在 Storage Virtual Machine （ SVM ）上配置 LUN 。此配置工作流详细介绍了在创建 LUN 之前检索 SVM 密钥，性能服务级别和存储效率策略的步骤。 
 ---
-= 配置 LUN
+= 使用API配置LUN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -126,9 +126,6 @@ image::../media/create_luns.gif[创建 LUNs]
 您必须输入要创建的 LUN 的所有详细信息作为输入参数。
 
 +
-Wombat ：提取 1
-
-+
 JSON 输出将显示一个作业对象密钥，您可以使用该关键字验证您创建的 LUN 。
 
 . 使用查询作业时返回的作业对象密钥验证 LUN 创建：
@@ -148,9 +145,6 @@ JSON 输出将显示一个作业对象密钥，您可以使用该关键字验证
 |===
 +
 响应结束时，您会看到创建的 LUN 的密钥。
-
-+
-Wombat ：提取第 2 个
 
 . 通过使用返回的密钥运行以下 API 来验证 LUN 的创建：
 +
@@ -174,13 +168,9 @@ Wombat ：提取第 2 个
 您可以看到， ` /storage-provider/lun` 的 POST 方法会在内部调用每个功能所需的所有 API 并创建对象。例如，它会调用 ` /storage-provider/performance-service-levels/` API 来为 LUN 分配性能服务级别。
 
 +
-Wombat ：提取第 3 项
+= LUN创建或映射失败的故障排除步骤
 
 
-
-
-
-== LUN 创建或映射失败的故障排除步骤
 
 完成此工作流后，您可能仍会看到 LUN 创建失败。即使已成功创建 LUN ，与 igroup 的 LUN 映射也可能会因创建 LUN 的节点上没有 SAN LIF 或访问端点而失败。如果发生故障，您可以看到以下消息：
 
@@ -217,9 +207,6 @@ The nodes <node_name> and <partner_node_name> have no LIFs configured with the i
 确保已在输入参数中添加地址以指示 LUN 的主节点，并添加 ha_address 以指示主节点的配对节点。运行此操作时，它会在主节点和配对节点上创建访问端点。
 
 ====
-+
-Wombat ：提取第 4 个
-
 . 使用 JSON 输出中返回的作业对象密钥查询作业，以验证它是否已成功运行以在 SVM 上添加访问端点，以及是否已在 SVM 上启用 iSCSI/FCP 服务。
 +
 [cols="3*"]
@@ -241,9 +228,6 @@ Wombat ：提取第 4 个
 +
 在输出末尾，您可以看到创建的访问端点的密钥。在以下输出中， "name" ： "accessEndpointKey" 值表示在 LUN 的主节点上创建的访问端点，其密钥为 9c964258-14ef-11ea-952-00a098e32c28 。"name" ： "accessEndpointHAKey" 值表示在主节点的配对节点上创建的访问端点，其密钥为 9d347006-14ef-11ea-8760-00a098e3215f 。
 
-+
-Wombat ：提取第 5 个
-
 . 修改 LUN 以更新 igroup 映射。有关工作流修改的详细信息，请参见 " `M修改存储工作负载` " 。
 +
 [cols="3*"]
@@ -264,9 +248,6 @@ patch
 
 +
 * 示例 curc*
-
-+
-Wombat ：摘录 6
 
 +
 JSON 输出将显示一个作业对象密钥，您可以使用该对象密钥验证映射是否成功。
@@ -291,8 +272,5 @@ JSON 输出将显示一个作业对象密钥，您可以使用该对象密钥验
 
 +
 在输出中，您可以看到 LUN 已成功映射到最初配置它的 igroup （密钥 d19ec2fa-fec7-11e8-b23d-00a098e32c28 ）。
-
-+
-Wombat ：提取 7
 
 

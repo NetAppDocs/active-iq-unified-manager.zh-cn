@@ -1,7 +1,7 @@
 ---
 permalink: performance-checker/concept_performance_monitor_of_metrocluster_configurations.html 
 sidebar: sidebar 
-keywords: performance, monitor, metrocluster, configurations 
+keywords: performance, monitor, metrocluster, throughput 
 summary: 通过 Unified Manager ，您可以监控 MetroCluster 配置中集群之间的写入吞吐量，以确定写入吞吐量较高的工作负载。如果这些高性能工作负载导致本地集群上的其他卷的 I/O 响应时间较长，则 Unified Manager 将触发性能事件以通知您。 
 ---
 = 监控 MetroCluster 配置的性能
@@ -11,10 +11,35 @@ summary: 通过 Unified Manager ，您可以监控 MetroCluster 配置中集群�
 
 
 [role="lead"]
-通过 Unified Manager ，您可以监控 MetroCluster 配置中集群之间的写入吞吐量，以确定写入吞吐量较高的工作负载。如果这些高性能工作负载导致本地集群上的其他卷的 I/O 响应时间较长，则 Unified Manager 将触发性能事件以通知您。
+通过 Unified Manager ，您可以监控 MetroCluster 配置中集群之间的写入吞吐量，以确定写入吞吐量较高的工作负载。
+
+如果这些高性能工作负载导致本地集群上的其他卷的 I/O 响应时间较长，则 Unified Manager 将触发性能事件以通知您。
+
+
+NOTE: Unified Manager 将 MetroCluster 配置中的集群视为单个集群。它不会区分配对集群，也不会关联每个集群的写入吞吐量。
 
 当 MetroCluster 配置中的本地集群将其数据镜像到其配对集群时，数据将写入 NVRAM ，然后通过交换机间链路（ ISL ）传输到远程聚合。Unified Manager 会分析 NVRAM ，以确定写入吞吐量较高而过度利用 NVRAM 的工作负载，从而使 NVRAM 处于争用状态。
 
 响应时间偏差超过性能阈值的工作负载称为 _victims_nvram ，而写入 NVRAM 的吞吐量偏差高于正常值并导致出现争用的工作负载称为 _bulbulles_ 。由于只有写入请求才会镜像到配对集群，因此 Unified Manager 不会分析读取吞吐量。
 
-Unified Manager 将 MetroCluster 配置中的集群视为单个集群。它不会区分配对集群，也不会关联每个集群的写入吞吐量。
+您可以通过从以下屏幕分析相应LUN和卷的工作负载来查看MetroCluster 配置中任何集群的吞吐量。您可以按集群筛选结果。从左侧导航窗格中：
+
+* *存储>集群>性能：所有集群*视图。请参见
+* *存储>卷>性能：所有卷*视图。
+* *存储> LUN >性能：所有LUN*视图。
+* *工作负载分析>所有工作负载*
+
+
+* 相关信息 *
+
+link:../performance-checker/reference_performance_event_analysis_and_notification.html["性能事件分析和通知"]
+
+link:../performance-checker/concept_performance_incident_analysis_for_metrocluster_configuration.html["MetroCluster 配置的性能事件分析"]
+
+link:../performance-checker/concept_roles_of_workloads_involved_in_performance_incident.html["性能事件中涉及的工作负载的角色"]
+
+link:../performance-checker/task_identify_victim_workloads_involved_in_performance_event.html["确定性能事件中涉及的受影响工作负载"]
+
+link:../performance-checker/task_identify_bully_workloads_involved_in_performance_event.html["确定性能事件中涉及的抢占资源的工作负载"]
+
+link:../performance-checker/task_identify_shark_workloads_involved_in_performance_event.html["确定性能事件中涉及的鲨鱼工作负载"]

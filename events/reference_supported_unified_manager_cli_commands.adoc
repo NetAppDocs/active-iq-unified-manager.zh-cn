@@ -1,8 +1,8 @@
 ---
 permalink: events/reference_supported_unified_manager_cli_commands.html 
 sidebar: sidebar 
-keywords: supported, unified manager, cli, commands 
-summary: 作为存储管理员，您可以使用命令行界面命令对存储对象执行查询，例如，对集群，聚合，卷， qtree 和 LUN 。您可以使用命令行界面命令查询 Unified Manager 内部数据库和 ONTAP 数据库。您还可以在操作开始或结束时执行或触发警报时执行的脚本中使用 CLI 命令。 
+keywords: supported, unified manager, cli, commands, cmd, um cli, um run, 
+summary: 作为存储管理员，您可以使用命令行界面命令对存储对象执行查询，例如，对集群，聚合，卷， qtree 和 LUN 。 
 ---
 = 支持的 Unified Manager 命令行界面命令
 :allow-uri-read: 
@@ -14,6 +14,9 @@ summary: 作为存储管理员，您可以使用命令行界面命令对存储�
 作为存储管理员，您可以使用命令行界面命令对存储对象执行查询，例如，对集群，聚合，卷， qtree 和 LUN 。您可以使用命令行界面命令查询 Unified Manager 内部数据库和 ONTAP 数据库。您还可以在操作开始或结束时执行或触发警报时执行的脚本中使用 CLI 命令。
 
 所有命令都必须在命令 `um CLI login` 前面加上有效的用户名和密码以进行身份验证。
+
+
+NOTE: 要运行_um run_命令、请确保您的帐户具有_console应用程序访问权限。
 
 |===
 | CLI 命令 | Description | 输出 

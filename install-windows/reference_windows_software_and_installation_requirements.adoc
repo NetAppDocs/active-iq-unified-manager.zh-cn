@@ -18,7 +18,11 @@ summary: 要在 Windows 上成功安装 Unified Manager ，您应确保安装 Un
 
 == 操作系统软件
 
-您可以在以下 Windows 版本上安装 Unified Manager ： * Microsoft Windows Server 2016 Standard 和 Datacenter Edition * Microsoft Windows Server 2019 Standard 和 Datacenter Edition
+您可以在以下Windows版本上安装Unified Manager：
+
+* Microsoft Windows Server 2019标准版和数据中心版
+* Microsoft Windows Server 2022标准版和数据中心版
+
 
 Unified Manager 在 64 位 Windows 操作系统上支持以下语言：
 
@@ -31,6 +35,9 @@ Unified Manager 在 64 位 Windows 操作系统上支持以下语言：
 
 http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
 
+
+NOTE: NetApp不支持使用Microsoft System Center Configuration Manager (SCCM)等第三方工具安装Unified Manager。
+
 此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。
 
 
@@ -41,9 +48,9 @@ http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
 
 * Microsoft Visual C&#43 ； &#43 ； 2015 年可重新分发软件包 14.26.28720.3 版
 * Microsoft Visual C&#43 ； &#43 ；适用于 Visual Studio 2013 的可重新分发软件包 12.0.40660.0 版
-* MySQL 社区版 8.0.27
-* Python 3.9.x
-* OpenJDK 11.0.12 版
+* MySQL社区版8.0.28
+* Python 3.9.2
+* OpenJDK 11.0.13版
 * p7zip 版本 18.05 或更高版本
 
 
@@ -77,17 +84,11 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFly 19.0.0 与 Unified 
 * 您应禁用 Microsoft IIS 全球 Web 发布服务，并确保端口 80 和 443 可用。
 * 您应确保在安装期间已禁用 "`Windows Installer RDS 兼容性` " 的远程桌面会话主机设置。
 * UDP 端口 514 应为空闲端口，不应由任何其他服务使用。
+* 如果您的Windows系统上安装了活动防病毒软件、则Unified Manager安装可能会失败。在安装Unified Manager之前、应禁用系统上的所有病毒扫描软件。安装完成后、请确保手动从防病毒扫描中排除以下路径：
++
+** Unified Manager 数据目录
+** Unified Manager 安装目录
+** MySQL 数据目录
 
 
-[NOTE]
-====
-Unified Manager 安装程序会在 Windows Defender 中配置以下排除项：
 
-* Unified Manager 数据目录
-* Unified Manager 安装目录
-* MySQL 数据目录
-
-
-如果您的服务器安装了其他防病毒扫描程序，则应手动配置这些排除项。
-
-====

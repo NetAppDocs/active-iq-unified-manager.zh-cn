@@ -11,7 +11,7 @@ summary: 您可以通过在 Windows 平台上下载并运行安装文件来升�
 
 
 [role="lead"]
-您可以通过在 Windows 平台上下载并运行安装文件将 Unified Manager 9.8 或 9.9 升级到 9.10 。
+您可以通过在Windows平台上下载并运行安装文件将Unified Manager 9.9或9.10升级到9.11。
 
 * 您需要的内容 *
 
@@ -34,7 +34,7 @@ link:reference_windows_software_and_installation_requirements.html["Windows 软�
 在开始升级之前，请确保系统上已安装 Microsoft .NET 4.5.2 或更高版本。
 
 ====
-* 在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的 MySQL 版本早于 8.0.27 ，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.0.27 。您不能将早期版本的 MySQL 独立升级到 8.0.27 。
+* 在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.28、则Unified Manager升级过程会自动将MySQL升级到8.0.28。您不能将早期版本的 MySQL 独立升级到 8.0.27 。
 * 您应具有 Windows 管理员权限。确保您的用户名不以感叹号 "` ！` " 开头。如果运行此安装的用户名以 "` ！` " 开头，则安装 Unified Manager 可能会失败。
 * 您应具有有效的凭据才能登录到 NetApp 支持站点。
 * 为避免数据丢失，如果在升级期间存在问题描述，则应已为 Unified Manager 计算机创建备份。
@@ -44,6 +44,7 @@ link:reference_windows_software_and_installation_requirements.html["Windows 软�
 
 * 在升级期间，系统可能会提示您确认是要保留先前的默认设置以将性能数据保留 13 个月，还是将其更改为 6 个月。确认后，将清除 6 个月后的历史性能数据。
 * 在升级之前，您应关闭 _<INSTALLDIR>\JDK_ 和 _MySQL Data Directory_ 中所有打开的文件或文件夹。
+* 如果Windows系统上安装了活动防病毒软件、则Unified Manager升级可能会失败。在升级Unified Manager之前、应禁用系统上的所有病毒扫描软件。
 
 
 在升级过程中， Unified Manager 不可用。在升级 Unified Manager 之前，您应完成所有正在运行的操作。
@@ -69,6 +70,13 @@ This setup will perform an upgrade of Unified Manager. Do you want to continue?
 . 单击 * 是 * ，然后单击 * 下一步 * 。
 . 输入在安装期间设置的 MySQL8 根密码，然后单击 * 下一步 * 。
 . 登录到 Unified Manager Web UI 并验证版本号。
+. 如果您的Windows系统上安装了活动防病毒软件、请确保在升级完成后手动从防病毒扫描中排除以下路径：
++
+** Unified Manager 数据目录
+** Unified Manager 安装目录
+** MySQL 数据目录
+
+
 
 
 [NOTE]
