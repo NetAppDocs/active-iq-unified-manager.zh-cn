@@ -4566,7 +4566,6 @@
   <block id="254045ee23205cb1ac3f6e05905ecfab" category="summary">概括介绍 Active IQ Unified Manager 的新增功能，限制和已知问题。</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">发行说明</block>
   <block id="12dc360fa3d8165171389ee06172a133" category="inline-link">《 Active IQ Unified Manager 发行说明》</block>
-  <block id="4e427abe6975ad68570ad74a11e7a6b2" category="paragraph">有关详细信息，请参见<block ref="d0f8dfd7cdd23d8e0e271d321686681b" category="inline-link-rx"></block>。</block>
   <block id="e3ba6c64064adba107328f731ffc579e" category="summary">要在 Windows 上成功安装 Unified Manager ，您应确保安装 Unified Manager 的系统满足软件要求。</block>
   <block id="abbfbdaf21746bca446ca43c755eb8ef" category="doc">Windows 软件和安装要求</block>
   <block id="00b445c51af4d8484e4707ea89f09276" category="section-title">操作系统软件</block>
@@ -11627,4 +11626,5 @@
   <block id="a28def0e6555993fb14b2d945874f854" category="sidebar">Active IQ Unified Manager 9.10的文档</block>
   <block id="0d8a88420d6ff91d22ed7f26bf97d526" category="sidebar">查看集群和Storage VM的详细安全状态</block>
   <block id="934295d1ea6542a74e859da73b8634ee" category="sidebar">了解Storage VM关联</block>
+  <block id="0d4c7c4a66605b6134a539fd94ba3c6a" category="paragraph">有关详细信息，请参见<block ref="d6b13b683bf04ebfc408e75a5dbc55ae" category="inline-link-rx"></block>。</block>
 </blocks>

@@ -13,4 +13,4 @@ summary: 概括介绍 Active IQ Unified Manager 的新增功能，限制和已�
 [role="lead"]
 概括介绍 Active IQ Unified Manager 的新增功能，限制和已知问题。
 
-有关详细信息，请参见 https://library.netapp.com/ecm/ecm_download_file/ECMLP2879275["《 Active IQ Unified Manager 发行说明》"]。
+有关详细信息，请参见 https://library.netapp.com/ecm/ecm_download_file/ECMLP2882089["《 Active IQ Unified Manager 发行说明》"]。
