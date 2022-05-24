@@ -29,9 +29,3 @@ summary: 如果您是 Windows 用户，则可以下载并安装一个工具，�
 . 选择要复制的支持包的目标目录。
 . 选择要复制的支持包，然后使用工具将文件从 Unified Manager 服务器复制到本地系统。
 
-
-* 相关信息 *
-
-https://filezilla-project.org/["Filezilla - https://filezilla-project.org/"]
-
-http://winscp.net["WinSCP - http://winscp.net"]

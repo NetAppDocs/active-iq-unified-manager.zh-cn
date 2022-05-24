@@ -71,4 +71,4 @@ NOTE: 如果集群的证书已过期、您可以单击*集群证书有效期*下
 
 您可以单击 image:icon_kabob.gif["kabob 图标"] 更多选项按钮、然后选择在Unified Manager的*安全性*页面或System Manager上查看安全详细信息。您应具有有效的凭据才能在System Manager上查看详细信息。
 
-_有关 卷和Storage VM的反勒索软件安全详细信息、请参见 link:health-checker/task_view_antiransomware_status_of_all_volumes_storage_vms.html["查看所有卷和Storage VM的反勒索软件状态"]...
+有关卷和Storage VM的反勒索软件安全详细信息、请参见 link:../health-checker/task_view_antiransomware_status_of_all_volumes_storage_vms.html["查看所有卷和Storage VM的反勒索软件状态"]。

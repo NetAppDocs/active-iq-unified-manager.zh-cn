@@ -126,7 +126,7 @@ entries:
     - title: 查看所有卷的加密状态
       url: "/health-checker/task_view_encryption_status_of_all_volumes.html"
     - title: 查看所有卷和Storage VM的反勒索软件状态
-      url: health-checker/task_view_antiransomware_status_of_all_volumes_storage_vms.html
+      url: "/health-checker/task_view_antiransomware_status_of_all_volumes_storage_vms.html"
     - title: 查看所有活动安全事件
       url: "/health-checker/task_view_all_security_events.html"
     - title: 为安全事件添加警报

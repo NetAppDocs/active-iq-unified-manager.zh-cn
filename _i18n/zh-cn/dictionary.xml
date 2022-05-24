@@ -1912,10 +1912,6 @@
   <block id="d804f14fed19d038031c63aaf63b1e60" category="paragraph">该工具将显示 /support 目录的内容，您可以查看所有现有支持包。</block>
   <block id="4ea80963e3ffca1f675de4b70c2d5529" category="list-text">选择要复制的支持包的目标目录。</block>
   <block id="2e5c0e84121900760b963dfd8293ed90" category="list-text">选择要复制的支持包，然后使用工具将文件从 Unified Manager 服务器复制到本地系统。</block>
-  <block id="ad33d03e901ed8ed38f8e0d4fc6c3943" category="inline-link">FileZilla -<block ref="f27bb4f2df782f8d161ce6a58c23dfc8" category="inline-link-rx"></block></block>
-  <block id="e295733f62179fad76f68948d59ceb8e" category="paragraph"><block ref="e295733f62179fad76f68948d59ceb8e" category="inline-link-rx"></block></block>
-  <block id="60e77e93661a419436dd6e9a13601c8e" category="inline-link">WinSCP —<block ref="69901d6c3168572fb93db04c8aad9aba" category="inline-link-rx"></block></block>
-  <block id="2151674523016a699197dcd7b05b8ae2" category="paragraph"><block ref="2151674523016a699197dcd7b05b8ae2" category="inline-link-rx"></block></block>
   <block id="93afe6d7c422425dde612080439dc433" category="summary">在为存储对象生成警报时，您可以验证脚本是否已正确执行。</block>
   <block id="d13e68886332f083054942c5d93f308f" category="doc">测试脚本执行</block>
   <block id="3566980487aa7d04ffe8ae5b9d7fccc3" category="list-text">您必须已将支持的文件格式的脚本上传到 Unified Manager 。</block>
@@ -2114,8 +2110,6 @@
   <block id="4713082ec3f35b415638abeba331ad6c" category="list-text">要查看有关集群中卷的容量和利用率的详细信息，请在 " 视图 " 菜单中选择 " 容量：所有卷视图 " 。</block>
   <block id="0f5ff7824e124b9145d27f63cdc1d5fd" category="list-text">要查看完整的详细信息，请单击卷名称。</block>
   <block id="0ff278b9f9cf51a445b0a588d858a62a" category="list-text">* 可选： * 通过单击最小详细信息对话框中的 * 查看相关 * ，查看与卷相关的对象。</block>
-  <block id="a68af024b1e93239842b9fe11f210fdd" category="inline-link-macro">运行状况 / 卷页面</block>
-  <block id="718687c644ada88bc9596f01fa1a0c05" category="paragraph"><block ref="718687c644ada88bc9596f01fa1a0c05" category="inline-link-macro-rx"></block></block>
   <block id="d315718e318a7be7ad37473a312a1af2" category="inline-link-macro">创建报告以查看可用的卷容量图表</block>
   <block id="00d7e1662e9b95a42822f0d6ac5f9d93" category="paragraph"><block ref="00d7e1662e9b95a42822f0d6ac5f9d93" category="inline-link-macro-rx"></block></block>
   <block id="3eb3eb97f8f824b5b99d5a60cf10470a" category="summary">您可以使用运行状况：所有集群视图查看集群清单。" 容量：所有集群 " 视图可用于查看有关所有集群中存储容量和利用率的汇总信息。</block>
@@ -6841,7 +6835,6 @@
   <block id="0c2e9d4863653214a62d913812cbc653" category="section-title">MetroCluster 切换期间的阈值策略功能</block>
   <block id="0575303d0ae931130f71ae180dba7327" category="paragraph">在 MetroCluster 配置中，从一个集群移动到另一个集群的对象不会保留其用户定义的阈值策略设置。如果需要，您可以对已移至配对集群的卷和 LUN 应用阈值策略。对象移回其原始集群后，系统将自动重新应用用户定义的阈值策略。</block>
   <block id="6ccaf24c820f8d6b7ed5059c38c51eed" category="inline-link-macro">切换和切回期间的卷行为</block>
-  <block id="2bac4152870bbd285f893cd6dad62bc9" category="paragraph"><block ref="2bac4152870bbd285f893cd6dad62bc9" category="inline-link-macro-rx"></block></block>
   <block id="1e5f6bca2e8698bdfa9454d4f3db3fdd" category="summary">您可以对存储对象（例如聚合和卷）设置性能阈值策略，以便将事件发送给存储管理员，通知管理员集群遇到性能问题描述。</block>
   <block id="bb3d84a8e82a7406b465e7e136efc6b1" category="doc">用户定义的性能阈值策略的工作原理</block>
   <block id="4d7fd4486e648ab5ee4c0ca91e31184d" category="paragraph">您可以通过以下方式为存储对象创建性能阈值策略：</block>
@@ -11410,7 +11403,6 @@
   <block id="3011ef7c1bc86abe89d8eeeaf7c4c472" category="list-text">选择*查看&gt;安全性&gt;所有Storage VM*。此时将显示包含安全参数的集群列表。</block>
   <block id="419ebf74a5546d21b1acd80acf25cc21" category="paragraph">您可以通过检查安全参数(例如Storage VM、集群、登录横幅、审核日志和不安全的SSH设置)来查看Storage VM的安全合规性的默认视图。</block>
   <block id="1df41a302d0ac8f8b5c67157bf788ab9" category="inline-link-macro">查看所有卷和Storage VM的反勒索软件状态</block>
-  <block id="17b7a8cd3718b23c5fbc68976d54fae8" category="paragraph">_有关 卷和Storage VM的反勒索软件安全详细信息、请参见 <block ref="bca545b4103a280a86945e429acfe26a" category="inline-link-macro-rx"></block>...</block>
   <block id="15b9361b9fb7038f56e85f3904037d8c" category="doc">正在评估哪些安全标准</block>
   <block id="2e97b5e5f53687c2edc46f6cfe0a5451" category="list-text">调解器</block>
   <block id="142ceab668a9fc374d2beb0a4ef23836" category="paragraph">显示集群是否支持调解器以及调解器的连接状态。</block>
@@ -11627,4 +11619,10 @@
   <block id="0d8a88420d6ff91d22ed7f26bf97d526" category="sidebar">查看集群和Storage VM的详细安全状态</block>
   <block id="934295d1ea6542a74e859da73b8634ee" category="sidebar">了解Storage VM关联</block>
   <block id="0d4c7c4a66605b6134a539fd94ba3c6a" category="paragraph">有关详细信息，请参见<block ref="d6b13b683bf04ebfc408e75a5dbc55ae" category="inline-link-rx"></block>。</block>
+  <block id="4846618aae53fceef12654a9844ba9d7" category="paragraph">有关卷和Storage VM的反勒索软件安全详细信息、请参见 <block ref="eba4385d459b6d6dd7b9bd580b2fbf7f" category="inline-link-macro-rx"></block>。</block>
+  <block id="870f5ef7bd12dc2c56965bfcd2ec62f2" category="paragraph">如果您收到有关缺少密钥或密钥不匹配的错误、并且安装失败、请尝试以下步骤：</block>
+  <block id="3066589d00db39c012813cfbdb5ac98f" category="list-text">在已连接的系统上、运行以下命令导入已更新的MySQL密钥：</block>
+  <block id="ce16a447d798efe968d2235fb0e11c5b" category="list-text">在未连接Internet的系统上、更新MySQL repod文件并标记`ggcheck=0`以禁用`gpgcheck`。</block>
+  <block id="eb8cc10ea7290daea0c59a212428f061" category="paragraph"><block ref="eb8cc10ea7290daea0c59a212428f061" category="inline-link-macro-rx"></block></block>
+  <block id="5ecb6b24c169667ff1a176768115659e" category="sidebar">Active IQ Unified Manager</block>
 </blocks>

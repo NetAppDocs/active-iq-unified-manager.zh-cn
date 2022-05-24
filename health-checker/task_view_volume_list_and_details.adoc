@@ -36,6 +36,4 @@ summary: '在运行状况：所有卷视图中，您可以监控卷清单。" �
 
 * 相关信息 *
 
-link:../task_view_aggregate_list_and_details.html["运行状况 / 卷页面"]
-
 link:../reporting/task_create_report_to_view_available_volume_capacity_charts.html["创建报告以查看可用的卷容量图表"]
