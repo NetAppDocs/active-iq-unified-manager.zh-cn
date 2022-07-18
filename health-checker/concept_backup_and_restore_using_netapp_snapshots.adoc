@@ -1,8 +1,8 @@
 ---
 permalink: health-checker/concept_backup_and_restore_using_netapp_snapshots.html 
 sidebar: sidebar 
-keywords: backup, restore, using, netapp, snapshots 
-summary: NetApp Snapshot 备份会为 Unified Manager 数据库和配置文件创建一个时间点映像，您可以使用此映像在发生系统故障或数据丢失时进行还原。您计划定期将 Snapshot 备份写入其中一个 ONTAP 集群上的卷，以便始终具有最新副本。 
+keywords: snapshot copy, copies, restore, using, netapp, snapshots 
+summary: NetApp Snapshot副本会为Unified Manager数据库和配置文件创建一个时间点映像、您可以使用此映像在发生系统故障或数据丢失时进行还原。您计划定期将Snapshot副本写入其中一个ONTAP 集群上的卷、以便始终具有最新副本。 
 ---
 = 使用 NetApp Snapshot 进行备份和还原
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: NetApp Snapshot 备份会为 Unified Manager 数据库和配置文件�
 
 
 [role="lead"]
-NetApp Snapshot 备份会为 Unified Manager 数据库和配置文件创建一个时间点映像，您可以使用此映像在发生系统故障或数据丢失时进行还原。您计划定期将 Snapshot 备份写入其中一个 ONTAP 集群上的卷，以便始终具有最新副本。
+NetApp Snapshot副本会为Unified Manager数据库和配置文件创建一个时间点映像、您可以使用此映像在发生系统故障或数据丢失时进行还原。您计划定期将Snapshot副本写入其中一个ONTAP 集群上的卷、以便始终具有最新副本。
 
 [NOTE]
 ====

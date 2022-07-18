@@ -1,7 +1,7 @@
 ---
 permalink: health-checker/concept_configure_destination_and_schedule_for_database_dump_backups.html 
 sidebar: sidebar 
-keywords: configure, destination, schedule, database dump, backups 
+keywords: configure, destination, schedule, database dump, backups, snapshot copy, copies 
 summary: 您可以配置 Unified Manager 数据库转储备份设置，以设置数据库备份路径，保留数量和备份计划。您可以启用每日或每周计划备份。默认情况下，计划的备份处于禁用状态，但您应设置备份计划。 
 ---
 = 配置数据库转储备份的目标和计划
@@ -31,7 +31,7 @@ summary: 您可以配置 Unified Manager 数据库转储备份设置，以设置
 
 [NOTE]
 ====
-* 如果您发现增量备份文件的数量过大，无法容纳为备份分配的空间，则可以定期创建新的完整备份，以替换旧的完整备份及其所有子增量文件。另外，如果 Unified Manager 安装在 Linux 系统上，则您可能需要开始使用 NetApp Snapshot 备份方法。
+* 如果您发现增量备份文件的数量过大、无法容纳为备份分配的空间、则可以定期执行完整备份以替换旧备份及其增量文件。另一种选择是、您可以使用Snapshot副本进行备份。
 * 在添加新集群的最初 15 天内进行的备份可能不够准确，无法获取历史性能数据。
 
 

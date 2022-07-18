@@ -1,8 +1,8 @@
 ---
 permalink: health-checker/task_configure_windows_host_machine.html 
 sidebar: sidebar 
-keywords: netapp, snapshot, backup, windows, configure, windows host machine 
-summary: '您需要配置安装了 Active IQ Unified Manager 的 Windows 主机，以便为 NetApp Snapshot 备份做好准备。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "iscsi" ，然后单击 iSCSI 启动程序。' 
+keywords: netapp, snapshot copy, copies windows, configure, windows host machine 
+summary: '您需要先配置Windows主机、然后才能使用NetApp Snapshot备份和还原Active IQ Unified Manager。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "iscsi" ，然后单击 iSCSI 启动程序。' 
 ---
 = 配置 Windows 主机
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: '您需要配置安装了 Active IQ Unified Manager 的 Windows 主机�
 
 
 [role="lead"]
-您需要配置安装了 Active IQ Unified Manager 的 Windows 主机，以便为 NetApp Snapshot 备份做好准备。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "`iSCSI` " ，然后单击 * iSCSI 启动程序 * 。
+您需要先配置Windows主机、然后才能使用NetApp Snapshot备份和还原Active IQ Unified Manager。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "`iSCSI` " ，然后单击 * iSCSI 启动程序 * 。
 
 * 您需要的内容 *
 

@@ -1,8 +1,8 @@
 ---
 permalink: health-checker/reference_configure_ontap_cluster.html 
 sidebar: sidebar 
-keywords: netapp, snapshot, backup, windows, configure, ontap, cluster 
-summary: 在为 Windows 配置 Active IQ Unified Manager for Snapshot 备份和还原之前，您应该对 ONTAP 和 Windows 主机执行少量预配置。 
+keywords: netapp, snapshot copy, copies, backup, windows, configure, ontap, cluster 
+summary: 您需要先在ONTAP 集群上执行几个预配置步骤、然后才能在Windows系统上使用Snapshot副本备份和还原Active IQ Unified Manager。 
 ---
 = 正在配置 ONTAP 集群
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 在为 Windows 配置 Active IQ Unified Manager for Snapshot 备份和�
 
 
 [role="lead"]
-在为 Windows 配置 Active IQ Unified Manager for Snapshot 备份和还原之前，您应该对 ONTAP 和 Windows 主机执行少量预配置。
+您需要先在ONTAP 集群上执行几个预配置步骤、然后才能在Windows系统上使用Snapshot副本备份和还原Active IQ Unified Manager。
 
 您可以使用命令提示符或 System Manager 用户界面配置 ONTAP 集群。配置 ONTAP 集群涉及到将数据 LIF 配置为可用作 iSCSI LIF 分配给 Storage VM 。下一步是使用 System Manager 用户界面配置启用了 iSCSI 的 Storage VM 。您需要为此 Storage VM 配置一个静态网络路由，以控制 LIF 如何将网络用于出站流量。
 

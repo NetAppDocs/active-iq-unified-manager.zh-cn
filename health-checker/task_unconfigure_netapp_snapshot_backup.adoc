@@ -1,7 +1,7 @@
 ---
 permalink: health-checker/task_unconfigure_netapp_snapshot_backup.html 
 sidebar: sidebar 
-keywords: netapp, modify, snapshot backup, windows, unconfigure, backup type 
+keywords: netapp, modify, snapshot copy, copies, windows, unconfigure, backup type 
 summary: 如果要更改 Active IQ Unified Manager 系统的备份类型，则可以使用维护控制台选项。通过取消配置 NetApp Snapshot 备份选项，您可以回退到基于 MySQL 的备份。 
 ---
 = 修改备份类型
@@ -11,7 +11,7 @@ summary: 如果要更改 Active IQ Unified Manager 系统的备份类型，则�
 
 
 [role="lead"]
-如果要更改 Active IQ Unified Manager 系统的备份类型，则可以使用维护控制台选项。通过取消配置 NetApp Snapshot 备份选项，您可以回退到基于 MySQL 的备份。
+如果要更改 Active IQ Unified Manager 系统的备份类型，则可以使用维护控制台选项。通过*取消配置NetApp Snapshot备份*选项、您可以回退到基于MySQL的备份。
 
 * 您需要的内容 *
 
@@ -19,13 +19,13 @@ summary: 如果要更改 Active IQ Unified Manager 系统的备份类型，则�
 
 .步骤
 . 访问维护控制台
-. 从 * 主菜单 * 中选择 4 进行备份还原。
+. 从*主菜单*中选择4进行备份和还原。
 . 从 * 备份和还原菜单 * 中选择 2 。
 . 对于 * 取消配置 NetApp Snapshot 备份 * ，选择 4 。
 +
 此时将显示所执行的操作，这些操作包括停止服务，中断符号链接，将数据从存储移动到目录，然后重新启动服务。
 
 +
-取消配置 NetApp Snapshot 备份后，备份机制将更改为基于 MySQL 的默认备份机制。此更改将显示在常规设置的数据库备份部分中。
+修改备份方法后、备份机制将从Snapshot副本更改为默认MySQL备份。此更改将显示在常规设置的数据库备份部分中。
 
 

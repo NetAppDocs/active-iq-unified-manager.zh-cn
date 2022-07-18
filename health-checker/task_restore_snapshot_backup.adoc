@@ -1,10 +1,10 @@
 ---
 permalink: health-checker/task_restore_snapshot_backup.html 
 sidebar: sidebar 
-keywords: restore, linux, snapshot, backup, windows 
+keywords: restore, unified manager, snapshot copy, copies, 
 summary: 如果发生数据丢失或数据损坏，您可以将 Unified Manager 还原到先前的稳定状态，同时最大程度地减少数据丢失。您可以使用 Unified Manager 维护控制台将 Unified Manager Snapshot 数据库还原到本地或远程操作系统。 
 ---
-= 还原 Linux 和 Windows 的 Snapshot 备份
+= 使用Snapshot副本还原Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -24,37 +24,19 @@ summary: 如果发生数据丢失或数据损坏，您可以将 Unified Manager 
 .步骤
 . 连接到 Unified Manager 系统的 IP 地址或完全限定域名。
 +
-|===
+** Linux：安全Shell
+** Windows：Power Shell
 
 
- a| 
-* Linux *
-
-
-
- a| 
-安全外壳
-
-
-
- a| 
-* Windows *
-
-
-
- a| 
-Power Shell
-
-|===
 . 使用 root 用户凭据登录到系统。
 . 输入命令 `mainstion_console` 并按 Enter 键。
-. 在维护控制台 * 主菜单 * 中，输入 * 备份还原 * 选项的编号。
-. 输入 * 使用 NetApp Snapshot* 进行备份和还原的编号。
+. 在维护控制台*主菜单*中、为*备份还原*选项输入4。
+. 输入2以选择"*使用NetApp Snapshot*备份和还原"。
 +
-如果要还原到新服务器，则在安装 Unified Manager 后，请勿启动用户界面，也不要在安装完成后配置任何集群，用户或身份验证设置。输入 * 配置 NetApp Snapshot 备份 * 的编号，然后按照原始系统上配置的方式配置 Snapshot 备份设置。
+如果要还原到新服务器，则在安装 Unified Manager 后，请勿启动用户界面，也不要在安装完成后配置任何集群，用户或身份验证设置。输入1以选择*配置NetApp Snapshot备份*、并像在原始系统上一样配置Snapshot副本的设置。
 
-. 输入 * 使用 NetApp Snapshot* 还原的数字。
-. 选择要还原的 Snapshot 备份文件，然后按 * 输入 * 。
+. 输入3以选择*使用NetApp Snapshot*还原。
+. 选择要从中还原Unified Manager的Snapshot副本。按 * 输入 * 。
 . 还原过程完成后，登录到 Unified Manager 用户界面。
 
 

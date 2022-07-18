@@ -1,17 +1,17 @@
 ---
 permalink: health-checker/task_specify_destination_location_for_windows_snapshot_backups.html 
 sidebar: sidebar 
-keywords: specify, destination location, windows, snapshot, backups 
-summary: 您应在已在其中一个 ONTAP 集群中配置的卷上配置 Active IQ Unified Manager Snapshot 备份的目标位置，并使用维护控制台定义该位置。 
+keywords: specify, destination location, windows, snapshot copy, copies 
+summary: 您应在已在其中一个Active IQ Unified Manager 集群中配置的卷上配置ONTAP Snapshot副本的目标位置。您应使用维护控制台来定义位置。 
 ---
-= 指定 Windows Snapshot 备份的目标位置
+= 在Windows上指定Snapshot副本的目标位置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您应在已在其中一个 ONTAP 集群中配置的卷上配置 Active IQ Unified Manager Snapshot 备份的目标位置，并使用维护控制台定义该位置。
+您应在已在其中一个Active IQ Unified Manager 集群中配置的卷上配置ONTAP Snapshot副本的目标位置。您应使用维护控制台来定义位置。
 
 * 您必须具有安装 Active IQ Unified Manager 的 Windows 主机的管理员权限。
 * 您必须拥有有权登录到 Unified Manager 服务器维护控制台的用户 ID 和密码。
@@ -45,5 +45,5 @@ summary: 您应在已在其中一个 ONTAP 集群中配置的卷上配置 Active
 ** 用于与 ONTAP 通信的 iSCSI 启动程序
 
 
-. 如果尚未创建 Snapshot 备份计划，请退出维护控制台并启动 Active IQ Unified Manager 界面以创建此计划。
+. 退出维护控制台并启动Active IQ Unified Manager 界面、为Snapshot副本创建计划。
 

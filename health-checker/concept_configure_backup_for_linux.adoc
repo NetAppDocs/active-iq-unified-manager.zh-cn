@@ -1,7 +1,7 @@
 ---
 permalink: health-checker/concept_configure_backup_for_linux.html 
 sidebar: sidebar 
-keywords: netapp, snapshot, linux, operate, system, configure, backup 
+keywords: netapp, snapshot copy, copies, linux, operate, system, configure, backup 
 summary: 如果 Active IQ Unified Manager 安装在 Linux 计算机上，则可以决定使用 NetApp Snapshot 配置备份和还原。 
 ---
 = 在 Linux 上配置备份
@@ -13,13 +13,13 @@ summary: 如果 Active IQ Unified Manager 安装在 Linux 计算机上，则可�
 [role="lead"]
 如果 Active IQ Unified Manager 安装在 Linux 计算机上，则可以决定使用 NetApp Snapshot 配置备份和还原。
 
-Snapshot 备份所需时间非常短，通常只需几分钟， Unified Manager 数据库锁定时间非常短，因此不会对安装造成任何中断。此映像占用的存储空间极少，并且性能开销极低，因为它仅记录自上次创建 Snapshot 副本以来对文件所做的更改。由于 Snapshot 是在 ONTAP 集群上创建的，因此您可以根据需要利用 SnapMirror 等其他 NetApp 功能来创建二级保护。
+Snapshot副本所需时间非常短、通常只需几分钟、Unified Manager数据库锁定时间非常短、因此安装不会发生任何中断。此映像占用的存储空间极少，并且性能开销极低，因为它仅记录自上次创建 Snapshot 副本以来对文件所做的更改。由于 Snapshot 是在 ONTAP 集群上创建的，因此您可以根据需要利用 SnapMirror 等其他 NetApp 功能来创建二级保护。
 
 在开始备份操作之前， Unified Manager 会执行完整性检查以验证目标系统是否可用。
 
 [NOTE]
 ====
-* 您只能在同一版本的 Active IQ Unified Manager 上还原 Snapshot 备份。
+* 您只能在同一版本的Active IQ Unified Manager 上还原Snapshot副本。
 +
 例如，如果您在 Unified Manager 9.9 上创建备份，则只能在 Unified Manager 9.9 系统上还原备份。
 

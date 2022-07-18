@@ -1,7 +1,7 @@
 ---
 permalink: health-checker/concept_backup_and_restore_using_mysql_database_dump.html 
 sidebar: sidebar 
-keywords: backup, restore, using, mysql, database, dump 
+keywords: backup, restore, using, mysql, database, dump, snapshot copy, copies 
 summary: MySQL 数据库转储备份是 Active IQ Unified Manager 数据库和配置文件的副本，可在发生系统故障或数据丢失时使用。您可以计划将备份写入本地目标或远程目标。强烈建议您定义 Active IQ Unified Manager 主机系统外部的远程位置。 
 ---
 = 使用 MySQL 数据库转储进行备份和还原
@@ -15,7 +15,7 @@ MySQL 数据库转储备份是 Active IQ Unified Manager 数据库和配置文�
 
 [NOTE]
 ====
-如果 Unified Manager 安装在 Linux 和 Windows 服务器上，则 MySQL 数据库转储是默认的备份机制。对于 Red Hat Enterprise Linux ， CentOS Linux 系统或 Windows ，如果 Active IQ Unified Manager 正在管理大量集群和节点，或者您的 MySQL 备份需要数小时才能完成，则可以使用 NetApp Snapshot 备份方法。
+如果 Unified Manager 安装在 Linux 和 Windows 服务器上，则 MySQL 数据库转储是默认的备份机制。但是、如果Unified Manager正在管理大量集群和节点、或者您的MySQL备份需要数小时才能完成、则可以使用Snapshot副本进行备份。此功能可在Red Hat Enterprise Linux、CentOS Linux系统和Windows上使用。
 
 ====
 数据库转储备份由备份目录中的一个文件和数据库存储库目录中的一个或多个文件组成。备份目录中的文件非常小，因为它仅包含指向重新创建备份所需的数据库存储库目录中的文件的指针。

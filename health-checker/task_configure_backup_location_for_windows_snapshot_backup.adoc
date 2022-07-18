@@ -1,8 +1,8 @@
 ---
 permalink: health-checker/task_configure_backup_location_for_windows_snapshot_backup.html 
 sidebar: sidebar 
-keywords: configure, backup, location, windows 
-summary: 即使在 Windows 上安装了 Active IQ Unified Manager ，您也应配置要存储 Snapshot 备份的卷。 
+keywords: configure, backup, location, windows, snapshot copy, copies 
+summary: 在Windows上备份Unified Manager后、您应配置用于存储Snapshot副本的卷。 
 ---
 = 配置 Windows 的备份位置
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 即使在 Windows 上安装了 Active IQ Unified Manager ，您也应�
 
 
 [role="lead"]
-即使在 Windows 上安装了 Active IQ Unified Manager ，您也应配置要存储 Snapshot 备份的卷。
+在Windows上备份Unified Manager后、您应配置用于存储Snapshot副本的卷。
 
 * 您需要的内容 *
 

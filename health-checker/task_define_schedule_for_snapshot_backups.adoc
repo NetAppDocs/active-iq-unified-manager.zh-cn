@@ -1,8 +1,8 @@
 ---
 permalink: health-checker/task_define_schedule_for_snapshot_backups.html 
 sidebar: sidebar 
-keywords: define, backup, schedule, linux, windows 
-summary: 您可以使用 Unified Manager UI 配置创建 Unified Manager Snapshot 备份的计划。 
+keywords: define, backup, schedule, linux, windows, snapshot copy, copies 
+summary: 您可以使用Unified Manager UI配置创建Unified Manager Snapshot副本的计划。 
 ---
 = 为 Linux 和 Windows 定义备份计划
 :allow-uri-read: 
@@ -11,15 +11,15 @@ summary: 您可以使用 Unified Manager UI 配置创建 Unified Manager Snapsho
 
 
 [role="lead"]
-您可以使用 Unified Manager UI 配置创建 Unified Manager Snapshot 备份的计划。
+您可以使用Unified Manager UI配置创建Unified Manager Snapshot副本的计划。
 
 * 您需要的内容 *
 
 * 您必须具有操作员，应用程序管理员或存储管理员角色。
-* 您必须已从维护控制台配置 NetApp Snapshot 备份设置，以确定要创建快照的目标。
+* 您必须已配置从维护控制台创建Snapshot副本的设置、以确定要创建快照的目标。
 
 
-Snapshot 备份只需几分钟即可创建完毕， Unified Manager 数据库仅锁定几秒钟。
+Snapshot副本只需几分钟即可创建完毕、Unified Manager数据库仅锁定几秒钟。
 
 [NOTE]
 ====
@@ -37,7 +37,7 @@ Snapshot 备份只需几分钟即可创建完毕， Unified Manager 数据库仅
 . 单击 * 应用 * 。
 
 
-Snapshot 备份文件会根据计划创建。您可以在数据库备份页面中查看可用的备份文件。
+Snapshot副本将根据计划创建。您可以在数据库备份页面中查看可用的备份文件。
 
 由于此卷和快照的重要性，您可能需要为此卷创建一个或两个警报，以便在以下任一情况下收到通知：
 
@@ -47,7 +47,7 @@ Snapshot 备份文件会根据计划创建。您可以在数据库备份页面�
 
 * 快照数量接近上限。使用事件 * Snapshot 副本太多 * 设置警报。
 +
-您可以使用 ONTAP 系统管理器或 ONTAP 命令行界面删除较早的快照，以便始终有空间进行新的快照备份。
+您可以使用ONTAP 系统管理器或ONTAP 命令行界面删除较早的快照、以便始终有空间可供新的Snapshot副本使用。
 
 
 

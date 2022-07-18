@@ -833,22 +833,13 @@
   <block id="41d943ad309360a62690c81eed6494bf" category="paragraph">您也可以单击最小详细信息对话框中的 * 查看详细信息 * 来查看完整的详细信息。</block>
   <block id="68694825c7200ffde572a8d66c1976de" category="list-text">单击最小详细信息对话框中的 * 查看相关 * ，查看与 SVM 相关的对象。</block>
   <block id="146b54492f9e3bbe7f0eab12ebad671a" category="summary">如果发生数据丢失或数据损坏，您可以将 Unified Manager 还原到先前的稳定状态，同时最大程度地减少数据丢失。您可以使用 Unified Manager 维护控制台将 Unified Manager Snapshot 数据库还原到本地或远程操作系统。</block>
-  <block id="32148cb10d776b094dced327a1b0fc4e" category="doc">还原 Linux 和 Windows 的 Snapshot 备份</block>
   <block id="e93453301a9f4ba773074e263e24f3aa" category="list-text">您必须具有 Linux 主机的 root 用户凭据以及安装了 Unified Manager 的 Windows 主机的管理权限。</block>
   <block id="2b3fe6a45c51384886449255d59b9174" category="list-text">您必须拥有有权登录到 Unified Manager 服务器维护控制台的用户 ID 和密码。</block>
   <block id="32e3809f8d6ed42f5004ad8b8baa3a43" category="paragraph">还原功能是针对平台和版本的。您只能在同一版本的 Unified Manager 上还原 Unified Manager 备份。</block>
   <block id="cdb3b41720fff6c8a03e2b1cbbb34e11" category="list-text">连接到 Unified Manager 系统的 IP 地址或完全限定域名。</block>
-  <block id="d8613fd0262f0065e011c1c70144fae1" category="paragraph">* Linux *</block>
-  <block id="6ace128b686261095a774f72e0443c9a" category="paragraph">安全外壳</block>
-  <block id="798f4b2607b39e7e9b593d42368f1ed3" category="paragraph">* Windows *</block>
-  <block id="5036b66bea4412997f6307cc829222a3" category="paragraph">Power Shell</block>
   <block id="8838ce682897f309ce14643e22c2df54" category="list-text">使用 root 用户凭据登录到系统。</block>
   <block id="173a85c5c6bdf2dee74309dc573461a4" category="list-text">输入命令 `mainstion_console` 并按 Enter 键。</block>
   <block id="d48ff2ea11e7b7d221c362effc2a70e4" category="list-text">在维护控制台 * 主菜单 * 中，输入 * 备份还原 * 选项的编号。</block>
-  <block id="fc425df0709b7d093f412725b3bf1fbf" category="list-text">输入 * 使用 NetApp Snapshot* 进行备份和还原的编号。</block>
-  <block id="d8f5437d42a441dfa168ae96d656db29" category="paragraph">如果要还原到新服务器，则在安装 Unified Manager 后，请勿启动用户界面，也不要在安装完成后配置任何集群，用户或身份验证设置。输入 * 配置 NetApp Snapshot 备份 * 的编号，然后按照原始系统上配置的方式配置 Snapshot 备份设置。</block>
-  <block id="31068d97c65389f456740fdba6fb893d" category="list-text">输入 * 使用 NetApp Snapshot* 还原的数字。</block>
-  <block id="80cc8897454c59019774aafa996e72b0" category="list-text">选择要还原的 Snapshot 备份文件，然后按 * 输入 * 。</block>
   <block id="7e3a7f64abb10a8ec2278d71c2ef33cf" category="list-text">还原过程完成后，登录到 Unified Manager 用户界面。</block>
   <block id="503b5dbfe28c3dee835f7d0560bbbcda" category="paragraph">还原备份后，如果 Workflow Automation 服务器不起作用，请执行以下步骤：</block>
   <block id="8df76bdcdaac41e808833597fb1acc15" category="list-text">在 Workflow Automation 服务器上，更改 Unified Manager 服务器的 IP 地址以指向最新的计算机。</block>
@@ -920,8 +911,6 @@
   <block id="af72e4a0267d9949729e09700b75184d" category="list-text">使用 REST API 通过查看 Unified Manager 捕获的运行状况，容量和性能信息来帮助管理集群。请参见 <block ref="1c1fc9aeaa18b66544b062a77cce0a7c" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="b8496a14ff4b794a94b62e121844a8ad" category="list-text">向技术支持发送支持包</block>
   <block id="c378b949211960b7600706f3b0b6c302" category="paragraph">存储管理员可以使用维护控制台检索支持包并将其发送给技术支持。如果问题描述需要比 AutoSupport 消息更详细的诊断和故障排除信息，则必须将支持包发送给技术支持。</block>
-  <block id="f53f51112c1b2a05048cc9021799a91e" category="summary">您可以在已在其中一个 ONTAP 集群中配置的卷上配置 Active IQ Unified Manager Snapshot 备份的目标位置。您可以从 Active IQ Unified Manager 维护控制台定义位置。</block>
-  <block id="28159d6dfa1a39e6f3ad07c1cf591e1b" category="doc">指定 Snapshot 备份的目标位置</block>
   <block id="ce528b6890fb6b6c48fa6a2e269faa21" category="list-text">您必须具有安装 Active IQ Unified Manager 的 Linux 主机的 root 用户凭据。</block>
   <block id="24794d5f05454fa6bf8b40e88fe9eab1" category="list-text">您必须具有集群管理 IP 地址， Storage VM 的名称，卷的名称以及存储系统用户名和密码。</block>
   <block id="257925ea2fb77c58fa506e21a73a157b" category="list-text">您必须已将卷挂载到 Active IQ Unified Manager 主机，并且必须具有挂载路径。</block>
@@ -938,7 +927,6 @@
   <block id="8420102fd6d86210f856088e2715d39a" category="list-text">在卷中创建一个新目录并复制 Active IQ Unified Manager 数据库配置文件</block>
   <block id="edd58a58db7e35fe06f237ba7a4accf8" category="list-text">从 Active IQ Unified Manager 中删除文件并创建指向新数据库目录的符号链接</block>
   <block id="0e5a6eb9a29c8f12f681639b77afd06c" category="list-text">重新启动所有服务</block>
-  <block id="b3cebd9bcd8b335d0acc8502548bdfe1" category="list-text">如果尚未创建 Snapshot 备份计划，请退出维护控制台并启动 Active IQ Unified Manager 界面以创建此计划。</block>
   <block id="40d1e8c1e23ff430ec55f7059aeb29de" category="summary">您可以为所有卷配置全局运行状况阈值，以跟踪任何违反阈值的情况。系统会针对违反运行状况阈值的情况生成相应的事件，您可以根据这些事件采取预防措施。您可以根据适用于所有受监控卷的阈值最佳实践设置来配置全局值。</block>
   <block id="67d61a1f90343dc94095bd23e79f381c" category="doc">配置全局卷运行状况阈值</block>
   <block id="796758c28556120cb631d8a2e1380265" category="paragraph">大多数阈值选项都具有默认值，以便更好地进行监控。但是，您可以根据环境要求更改这些值。</block>
@@ -1252,9 +1240,7 @@
   <block id="477d0545ba1af4b566e541fb89c13899" category="paragraph">删除组不会删除与组关联的组操作。但是，删除组后，这些组操作将取消映射。</block>
   <block id="352fdda78d684cf9e0a638bbab208994" category="summary">如果 Active IQ Unified Manager 安装在 Linux 计算机上，则可以决定使用 NetApp Snapshot 配置备份和还原。</block>
   <block id="ed8b4ef99c4658d8051ea76a5775dd5f" category="doc">在 Linux 上配置备份</block>
-  <block id="3235d168c9706a85abd9f513a35efe99" category="paragraph">Snapshot 备份所需时间非常短，通常只需几分钟， Unified Manager 数据库锁定时间非常短，因此不会对安装造成任何中断。此映像占用的存储空间极少，并且性能开销极低，因为它仅记录自上次创建 Snapshot 副本以来对文件所做的更改。由于 Snapshot 是在 ONTAP 集群上创建的，因此您可以根据需要利用 SnapMirror 等其他 NetApp 功能来创建二级保护。</block>
   <block id="14cd7aa6f775e39058779319ad926776" category="paragraph">在开始备份操作之前， Unified Manager 会执行完整性检查以验证目标系统是否可用。</block>
-  <block id="dacad086c3866e5006889b83dbff8a9b" category="list-text">您只能在同一版本的 Active IQ Unified Manager 上还原 Snapshot 备份。</block>
   <block id="8eb7892587443ba12dc3bdc027a2a3a5" category="paragraph">例如，如果您在 Unified Manager 9.9 上创建备份，则只能在 Unified Manager 9.9 系统上还原备份。</block>
   <block id="d4a551e46758fef6fb9e080f35e16395" category="list-text">如果对 Snapshot 配置进行了任何更改，则可能会将此快照发生原因为无效。</block>
   <block id="97926c3c0aa12ad373dbf69a58ced1a0" category="summary">标注是分配给另一个文本字符串（值）的文本字符串（名称）。每个标注名称 - 值对都可以使用标注规则与存储对象动态关联。将存储对象与预定义的标注关联后，您可以筛选和查看与其相关的事件。您可以将标注应用于集群，卷和 Storage Virtual Machine （ SVM ）。</block>
@@ -1290,7 +1276,6 @@
   <block id="897560ad797d0527dd90ae2a25f3f6c1" category="list-text">单击 * 添加条件 * 。</block>
   <block id="4333a6bc2c62d5d99eec8ed2d081886c" category="list-text">重复步骤 8 到 10 ，方法是在步骤 8 中选择 * data-priority * 作为操作数，在步骤 9 中选择 * is-* 作为操作符，在步骤 10 中选择 * critical* 作为值。</block>
   <block id="1e242efdff601adf92010e64b5aad895" category="list-text">单击 * 添加 * 为组规则创建条件。</block>
-  <block id="efa017f823fbacb99447313c5a3cce39" category="summary">NetApp Snapshot 备份会为 Unified Manager 数据库和配置文件创建一个时间点映像，您可以使用此映像在发生系统故障或数据丢失时进行还原。您计划定期将 Snapshot 备份写入其中一个 ONTAP 集群上的卷，以便始终具有最新副本。</block>
   <block id="a47153d54b7968c03bc59c4c044aaccf" category="doc">使用 NetApp Snapshot 进行备份和还原</block>
   <block id="403875c0649c7ac18910973842019b9a" category="paragraph">此功能不适用于虚拟设备上安装的 Active IQ Unified Manager 。</block>
   <block id="f20ca1c38c857d997291ae32adb9eba0" category="summary">默认情况下，所有事件均处于启用状态。您可以禁用特定事件，以防止为环境中不重要的事件生成通知。如果要恢复接收已禁用事件的通知，可以启用这些事件。</block>
@@ -1342,8 +1327,6 @@
   <block id="b144b5b0a1861c67cb81a1c4e1750a21" category="paragraph">如果需要提供身份验证信息来访问用作 HTTP 代理的服务器，请选中此框。</block>
   <block id="2d394dbce1dc639d25c58355a2a4bfbd" category="paragraph">输入向 HTTP 代理进行身份验证所需的用户名和密码。</block>
   <block id="e86102c0990dc028ec62723526b51706" category="paragraph">不支持仅提供基本身份验证的 HTTP 代理。</block>
-  <block id="861c2853233db617d584ff94b9ad8386" category="summary">您可以使用 ONTAP 系统管理器或 ONTAP 命令行界面配置将 Snapshot 备份存储在其中一个 ONTAP 集群上的卷。</block>
-  <block id="349d7a256fa4f3d0418ee6eb5d23aae0" category="doc">配置 Snapshot 备份位置</block>
   <block id="b7f65d9e1cdb3964676f5e08758b08bb" category="paragraph">集群， Storage VM 和卷必须满足以下要求：</block>
   <block id="7c9a067ed7fc3d318d415405ab0cb349" category="list-text">集群要求：</block>
   <block id="83d846dfbb93149a3f4d1024ba7ef34b" category="list-text">必须安装 ONTAP 9.3 或更高版本</block>
@@ -1684,8 +1667,6 @@
   <block id="e8733827df4f6de7654f034986a257b9" category="paragraph">" 相关警报 " 窗格可用于查看选定集群的警报列表。您也可以通过单击添加警报链接来添加警报，或者通过单击警报名称来编辑现有警报。</block>
   <block id="179f4b3feb146242422827ff332382ee" category="inline-link-macro">存储池对话框</block>
   <block id="6c3553c92f508e03df160191004a791f" category="paragraph"><block ref="6c3553c92f508e03df160191004a791f" category="inline-link-macro-rx"></block></block>
-  <block id="a58013aafcee31ff5cd79561dd6d040d" category="summary">您应从维护控制台将 Active IQ Unified Manager 备份配置为 NetApp Snapshot 备份。</block>
-  <block id="0d87e7e4bbf8397f4455198487c3f61b" category="doc">从维护控制台配置 NetApp Snapshot 备份</block>
   <block id="aee3a95235c93d4d8b2545ff685b0e4a" category="paragraph">您应了解系统的以下详细信息：</block>
   <block id="606e8e68864ef13b5bed9d31ed5797be" category="list-text">集群 IP 地址</block>
   <block id="c9c34e0d9a5a20d6a7dbd22b6fdac3f1" category="list-text">Storage VM 名称</block>
@@ -1696,7 +1677,6 @@
   <block id="9052146612c3ab94f1f20beeaacf22f9" category="list-text">访问 Unified Manager 的维护控制台。</block>
   <block id="df92fdbdb9c940558c8bc9139cbc6f85" category="list-text">输入 4 选择 * 备份还原 * 。</block>
   <block id="03e6497ebccd718be784d97d4ed63b2b" category="list-text">输入 2 选择 * 使用 NetApp Snapshot* 备份和还原。</block>
-  <block id="684fec4838a87ca7dc679a28c9e5bb12" category="paragraph">如果要更改备份配置，请为更新 NetApp Snapshot 备份配置输入 3 。您只能更新密码。</block>
   <block id="6fafc96e75f122b9ca0dfa70e1dce340" category="list-text">在菜单中，输入 1 以选择 * 配置 NetApp Snapshot 备份 * 。</block>
   <block id="71abde451e7a33246cf7749cab1faab4" category="list-text">输入 1 以提供所需信息。</block>
   <block id="89665b3633dabf5bd26255fed5d14a20" category="list-text">提供维护控制台的用户名和密码，然后确认 LUN 已挂载到主机上。</block>
@@ -1767,7 +1747,6 @@
   <block id="3161ea58ae7a0a482ba7ff8a2ceaebec" category="paragraph">显示受软件和硬件加密保护的卷数。</block>
   <block id="fbab2c7fd3dec7dd755640d7b38ceeb1" category="paragraph">未加密</block>
   <block id="a61fa7795b321634988aa117af7979c4" category="paragraph">显示未加密的卷数。</block>
-  <block id="12cbdd6ef1715b048e4f35d8e8dcd9b7" category="summary">即使在 Windows 上安装了 Active IQ Unified Manager ，您也应配置要存储 Snapshot 备份的卷。</block>
   <block id="24b6bcea87dfc79f56c5982f8cf8a3d9" category="doc">配置 Windows 的备份位置</block>
   <block id="28d4390de9be5ac07ec2afb08ad0012e" category="list-text">它由 Unified Manager 监控</block>
   <block id="e2f71a6651ab8846dfcc8dd56a14ab80" category="list-text">ONTAP 集群上的 iSCSI 连接</block>
@@ -1826,11 +1805,9 @@
   <block id="6dab4a22026046a1cce46cf4e8f8e917" category="summary">如果要更改 Active IQ Unified Manager 系统的备份类型，则可以使用维护控制台选项。通过取消配置 NetApp Snapshot 备份选项，您可以回退到基于 MySQL 的备份。</block>
   <block id="c00e0a79e3a4f68a3448b0ba8cb107e8" category="doc">修改备份类型</block>
   <block id="6979cadafb4e3b67b5a0bda70225f50f" category="list-text">访问维护控制台</block>
-  <block id="5047f1f25159dc471aa0a6bb927628f1" category="list-text">从 * 主菜单 * 中选择 4 进行备份还原。</block>
   <block id="3bb3cb0671c1a0c88752482b82d3af27" category="list-text">从 * 备份和还原菜单 * 中选择 2 。</block>
   <block id="79d03be693d1947313fa5d96b1465a52" category="list-text">对于 * 取消配置 NetApp Snapshot 备份 * ，选择 4 。</block>
   <block id="b1a2bd33a1262ae98361b42f30087b97" category="paragraph">此时将显示所执行的操作，这些操作包括停止服务，中断符号链接，将数据从存储移动到目录，然后重新启动服务。</block>
-  <block id="fa174b19ea56ab3592c90febf4d1fb03" category="paragraph">取消配置 NetApp Snapshot 备份后，备份机制将更改为基于 MySQL 的默认备份机制。此更改将显示在常规设置的数据库备份部分中。</block>
   <block id="63dfb2c8ea624da5f34114d9283b302e" category="summary">您可以使用集群清单页面显示全 SAN 阵列集群的运行状况和容量状态。</block>
   <block id="09d53ec07e8371ef10b07d304b7b11b2" category="doc">查看所有 SAN 阵列集群的运行状况和容量状态</block>
   <block id="21b05cfdb7ce226413f5ff9982e8dede" category="paragraph">您可以在运行状况：所有集群视图和容量：所有集群视图中查看所有 SAN 阵列集群的概述信息。此外，您还可以在集群 / 运行状况详细信息页面中查看详细信息。</block>
@@ -1865,9 +1842,7 @@
   <block id="85c25332f5af7cffdf3449420cb47c1a" category="paragraph">默认情况下， " 新建 " 和 " 已确认 " 事件将显示在 " 事件管理 " 清单页面上。</block>
   <block id="da71eb4b8e434f438366c469380ee04f" category="list-text">从 " 视图 " 菜单中，选择 * 活动安全事件 * 。</block>
   <block id="2c7d4b596a2ce9eecf120c5af53e6d11" category="paragraph">此页面将显示过去 7 天生成的所有新增和已确认安全事件。</block>
-  <block id="a8e1ee6100209bd26e4466a900b48b9e" category="summary">您需要配置安装了 Active IQ Unified Manager 的 Windows 主机，以便为 NetApp Snapshot 备份做好准备。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "iscsi" ，然后单击 iSCSI 启动程序。</block>
   <block id="979a48f08ca3a5524a9fb0584ff575d4" category="doc">配置 Windows 主机</block>
-  <block id="c757bda4c8288d9600da64281ad2d062" category="paragraph">您需要配置安装了 Active IQ Unified Manager 的 Windows 主机，以便为 NetApp Snapshot 备份做好准备。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "`iSCSI` " ，然后单击 * iSCSI 启动程序 * 。</block>
   <block id="f59c0adda3b9640a8678653e8048637e" category="paragraph">您应清理主机上先前的任何配置。</block>
   <block id="34f7e7c2649322ad73b758a14fe6338b" category="paragraph">如果您尝试在全新安装的 Windows 上启动 iSCSI 启动程序，系统将提示您进行确认，确认后，将显示 iSCSI 属性对话框。如果是现有的 Windows 安装，则会显示 iSCSI 属性对话框，其中的目标为非活动或正在尝试连接。因此，您需要确保删除 Windows 主机上先前的所有配置。</block>
   <block id="187c685c05bc4596438f1065a9e15994" category="list-text">清理主机上先前的所有配置。</block>
@@ -1999,22 +1974,17 @@
   <block id="b0615107eb488522f97c49ecba9a0b02" category="list-text">`Change_capacity_threshold` 排名为 1 的组操作，用于配置卷的容量</block>
   <block id="e01a0eaf335f15a6b29d99c42df8e9a4" category="list-text">`Change_snapshot_copies` 排名为 2 的组操作，用于配置卷的 Snapshot 副本</block>
   <block id="a4a32630a4c40008e70e516c834b39a5" category="paragraph">`Change_capacity_threshold` 组操作始终优先于 `Change_snapshot_copies` 组操作，并应用于卷 A当 Unified Manager 完成一个监控周期后，将根据 `Change_capacity_threshold` group 操作重新评估卷 A 的运行状况阈值相关事件。您不能为 G1 或 G2 组配置其他卷阈值类型的组操作。</block>
-  <block id="fd74e222140ff1a307995237bebe2c51" category="summary">您可以使用 Unified Manager UI 配置创建 Unified Manager Snapshot 备份的计划。</block>
   <block id="967205d4e2ec30d380acd32f8d73993b" category="doc">为 Linux 和 Windows 定义备份计划</block>
-  <block id="ec132bfc3954b5c04cfbf039ac3267c8" category="list-text">您必须已从维护控制台配置 NetApp Snapshot 备份设置，以确定要创建快照的目标。</block>
-  <block id="ed761335c7ab7d0918f158c55a70caa6" category="paragraph">Snapshot 备份只需几分钟即可创建完毕， Unified Manager 数据库仅锁定几秒钟。</block>
   <block id="052d9a630b7b68ae24d203fece5512e0" category="paragraph">在添加新集群的最初 15 天内进行的备份可能不够准确，无法获取历史性能数据。</block>
   <block id="78bc84911eb423f64dab2e455740693d" category="list-text">在左侧导航窗格中，单击 * 常规 * &gt; * 数据库备份 * 。</block>
   <block id="9daa697ea449b51992fc999705c3ca4f" category="list-text">在 * 数据库备份 * 页面中，单击 * 备份设置 * 。</block>
   <block id="ef9404f439510686ea3fc2d2a498e945" category="list-text">在 * 保留数量 * 字段中输入要保留的最大 Snapshot 副本数。</block>
   <block id="ee045c7ecd2df065d64deaede9a8a762" category="paragraph">保留数量的默认值为 10 。最大 Snapshot 副本数取决于集群上的 ONTAP 软件版本。您可以将此字段留空以实施最大值，而不管 ONTAP 版本如何。</block>
   <block id="de0c9d871d0f7ebd6f1a3d921d52301b" category="list-text">选择 * 计划每日 * 或 * 计划每周 * 按钮，然后指定计划详细信息。</block>
-  <block id="1f7a831939148700efbf3b0a1070f210" category="paragraph">Snapshot 备份文件会根据计划创建。您可以在数据库备份页面中查看可用的备份文件。</block>
   <block id="c028e9599e750afadb79697d92d3896d" category="paragraph">由于此卷和快照的重要性，您可能需要为此卷创建一个或两个警报，以便在以下任一情况下收到通知：</block>
   <block id="0005648d66ebf8e8796b78cbddbfbfab" category="list-text">卷空间已满 90% 。使用事件 * 卷空间已满 * 设置警报。</block>
   <block id="753759a900a213e5141553234b892565" category="paragraph">您可以使用 ONTAP 系统管理器或 ONTAP 命令行界面向卷添加容量，以使 Unified Manager 数据库不会用尽空间。</block>
   <block id="6c739ccf617b158f5d9e91237a5cbbd9" category="list-text">快照数量接近上限。使用事件 * Snapshot 副本太多 * 设置警报。</block>
-  <block id="58d09fb2703ad1d7697865acd260b5d7" category="paragraph">您可以使用 ONTAP 系统管理器或 ONTAP 命令行界面删除较早的快照，以便始终有空间进行新的快照备份。</block>
   <block id="16baca3564bcca6430acf44f5cd814d1" category="paragraph">您可以在警报设置页面中配置警报。</block>
   <block id="7c1e24d6c6d320f2ae69aa514ca0194c" category="summary">您可以为容量，增长， Snapshot 预留，配额和索引节点配置全局运行状况阈值条件，以有效监控聚合，卷和 qtree 大小。您还可以编辑用于生成超过滞后阈值的事件的设置。</block>
   <block id="82aadbb8d499194c7ccf391d840334b9" category="doc">配置全局运行状况阈值设置</block>
@@ -2060,7 +2030,6 @@
   <block id="6c04472eb8434da04b6836ebd12218b7" category="summary">Active IQ Unified Manager 支持使用 iSCSI 协议通过 LUN 在 Windows 操作系统上使用 NetApp Snapshot 进行备份和还原。</block>
   <block id="a76b011d1f0216bb407469e9fcb9b607" category="doc">在 Windows 上配置备份</block>
   <block id="0df0d708323b0db94db9a4c857653fde" category="paragraph">可以在所有 UM 服务运行时进行基于 Snapshot 的备份。由于备份会在整个数据库上设置全局读取锁定，从而阻止任何并发写入，因此会在 Snapshot 中捕获数据库的一致状态。要使 Windows 操作系统上安装的 Unified Manager 系统使用 NetApp Snapshot 执行备份和还原，您应首先使用维护控制台将 Unified Manager 备份配置为 Snapshot 。</block>
-  <block id="e2aeeb8d5925be531d7b83fdf0c7e0d4" category="paragraph">在为 Active IQ Unified Manager 备份配置 Snapshot 安装之前，您需要执行以下配置任务。</block>
   <block id="f1d2b7cc5beb46f3b0a532b5d98c6193" category="list-text">配置 ONTAP 集群</block>
   <block id="9034ed23b3c744a50f9c5977ea2d17a2" category="list-text">配置 Windows 主机</block>
   <block id="43635d5c791247e97712948d7926c11c" category="summary">您可以在这些对象的容量和性能清单及详细信息页面上查看集群，聚合和卷的 FabricPool 容量信息。配置镜像层后，这些页面还会显示 FabricPool 镜像信息。</block>
@@ -2149,8 +2118,6 @@
   <block id="f8e76be652adee13708fdac477f5fec3" category="paragraph">支持包将上传到 NetApp 。</block>
   <block id="697f4653a992617dd4712ec69a7d6bc2" category="paragraph">如果 Unified Manager 服务器未连接到 Internet ，或者由于任何其他原因无法上传支持包，则可以手动检索并发送。您可以使用 SFTP 客户端或 UNIX 或 Linux 命令行界面命令检索它。在 Windows 安装中，您可以使用远程桌面（ RDP ）检索支持包。</block>
   <block id="caa975f681ad52d1effd3184e3cca2ad" category="paragraph">生成的支持包位于 VMware 系统上的 /support 目录， Linux 系统上的 /opt/netapp/data/support/ 以及 Windows 系统上的 ProgramData\NetApp\OnCommandAppData\ocum\support 中。</block>
-  <block id="b54f31dd6204fb4eea238c710ce88c52" category="summary">您应在已在其中一个 ONTAP 集群中配置的卷上配置 Active IQ Unified Manager Snapshot 备份的目标位置，并使用维护控制台定义该位置。</block>
-  <block id="799bf19e536ac1b86d71b01a9e77ae44" category="doc">指定 Windows Snapshot 备份的目标位置</block>
   <block id="efe1c3aca20669b1d8155e3996b3683e" category="list-text">您必须具有安装 Active IQ Unified Manager 的 Windows 主机的管理员权限。</block>
   <block id="6818bf7e4f9158793c3db8c8d905f8ac" category="list-text">您必须具有集群管理 IP 地址， Storage VM 的名称，卷的名称， LUN 名称以及存储系统用户名和密码。</block>
   <block id="1abe1b3d8a962cf1074567c717f8a207" category="list-text">您必须已将卷作为网络驱动器挂载到 Active IQ Unified Manager 主机，并且必须具有挂载驱动器。</block>
@@ -2868,7 +2835,6 @@
   <block id="1f71f2dddc78f11345d26a52622fcdf5" category="paragraph">如果状态异常或违反预定义的阈值，则会生成事件。如果配置为执行此操作，则 Unified Manager 会在事件触发警报时向指定的收件人发送通知。</block>
   <block id="13e4304c150d5c87f513047dda49387e" category="summary">MySQL 数据库转储备份是 Active IQ Unified Manager 数据库和配置文件的副本，可在发生系统故障或数据丢失时使用。您可以计划将备份写入本地目标或远程目标。强烈建议您定义 Active IQ Unified Manager 主机系统外部的远程位置。</block>
   <block id="9e0ca761831fb0f0dabbfe885a87d055" category="doc">使用 MySQL 数据库转储进行备份和还原</block>
-  <block id="d3e2a44d169c2c9766d5e5082da2116f" category="paragraph">如果 Unified Manager 安装在 Linux 和 Windows 服务器上，则 MySQL 数据库转储是默认的备份机制。对于 Red Hat Enterprise Linux ， CentOS Linux 系统或 Windows ，如果 Active IQ Unified Manager 正在管理大量集群和节点，或者您的 MySQL 备份需要数小时才能完成，则可以使用 NetApp Snapshot 备份方法。</block>
   <block id="33fc247e555720879316017b076f2029" category="paragraph">数据库转储备份由备份目录中的一个文件和数据库存储库目录中的一个或多个文件组成。备份目录中的文件非常小，因为它仅包含指向重新创建备份所需的数据库存储库目录中的文件的指针。</block>
   <block id="2f3b4c9172b561f3e884b4272c129fb6" category="paragraph">首次生成数据库备份时，将在备份目录中创建一个文件，并在数据库存储库目录中创建一个完整备份文件。下次生成备份时，将在备份目录中创建一个文件，并在数据库存储库目录中创建一个增量备份文件，其中包含与完整备份文件的差异。此过程将在您创建其他备份时继续进行，直到达到最大保留设置，如下图所示。</block>
   <block id="e7fbcbeb2e1e5f4c9bede03c1fbb8e41" category="image-alt">数据库备份</block>
@@ -3109,7 +3075,6 @@
   <block id="0ec05bf21cd0f16f93a449b1386e8731" category="list-text">如果正在使用 WFA ，请重新配置 Workflow Automation 连接的两端。</block>
   <block id="640bb33494f0264c862c986b79089535" category="list-text">如果使用的是 SAML ，请重新配置 SAML 身份验证设置。</block>
   <block id="70fb369a76a29d2a865f82c744477faf" category="paragraph">确认 Linux 系统上的所有内容均按预期运行后，您可以关闭并删除 Unified Manager 虚拟设备。</block>
-  <block id="abade1525053b328cd00ac394aa22707" category="summary">在为 Windows 配置 Active IQ Unified Manager for Snapshot 备份和还原之前，您应该对 ONTAP 和 Windows 主机执行少量预配置。</block>
   <block id="8f13a5846c3dde639a93fc2554f271af" category="doc">正在配置 ONTAP 集群</block>
   <block id="39d8477a9ad9ed927746b978b28ad783" category="paragraph">您可以使用命令提示符或 System Manager 用户界面配置 ONTAP 集群。配置 ONTAP 集群涉及到将数据 LIF 配置为可用作 iSCSI LIF 分配给 Storage VM 。下一步是使用 System Manager 用户界面配置启用了 iSCSI 的 Storage VM 。您需要为此 Storage VM 配置一个静态网络路由，以控制 LIF 如何将网络用于出站流量。</block>
   <block id="376d1e880f6b042f169c02ad77bc437e" category="paragraph">您应该有一个专用卷和一个 LUN 用于备份配置。选定卷应仅包含一个 LUN 。LUN 的大小应至少是 Active IQ Unified Manager 预期处理的数据大小的两倍。</block>
@@ -3172,7 +3137,6 @@
   <block id="cd3c68cc6b8f9809448f7e2960f3960a" category="paragraph">权限： 0750 ，所有权： jboss ：维护</block>
   <block id="84c873c921ee7808689d6f63f0b75d7b" category="list-text">如果 Unified Manager 安装在 Windows 系统上并使用 MySQL 备份，请确保只有管理员才能访问备份目录。</block>
   <block id="e899e8ad18a40aa68cb10f881b14d962" category="paragraph">与后续备份相比，首次执行备份所需的时间要多，因为第一次备份是完整备份。完整备份可能超过 1 GB ，并且可能需要三到四个小时。后续备份是增量备份，所需时间更短。</block>
-  <block id="c70b90896f6047560d324950d0533f1c" category="list-text">如果您发现增量备份文件的数量过大，无法容纳为备份分配的空间，则可以定期创建新的完整备份，以替换旧的完整备份及其所有子增量文件。另外，如果 Unified Manager 安装在 Linux 系统上，则您可能需要开始使用 NetApp Snapshot 备份方法。</block>
   <block id="1a5988c5d76a9ffec9bf0d2d58f2b1bb" category="list-text">为备份路径，保留数量和计划配置适当的值。</block>
   <block id="ad85571c0744603fcf1a8896664ac91b" category="paragraph">保留数量的默认值为 10 ；您可以使用 0 创建无限备份。</block>
   <block id="c9defe82acaadaf0bc7351323651edfd" category="paragraph">数据库转储备份文件会根据计划创建。您可以在数据库备份页面中查看可用的备份文件。</block>
@@ -4557,7 +4521,6 @@
   <block id="4f2e6bc5ca97a3229fbc4389a1fd950f" category="list-text">卷 ID 未知时，例如，您具有集群间关系且尚未发现目标集群</block>
   <block id="1041e475889285c550e40043f53c7d77" category="list-text">在 * 卷 / 运行状况 * 详细信息页面的 * 保护 * 选项卡中，右键单击拓扑视图中要暂停的保护关系的关系。</block>
   <block id="4b2a905ff63b6c148444ce2c8193ec7c" category="list-text">从菜单中选择 * 暂停 * 。</block>
-  <block id="254045ee23205cb1ac3f6e05905ecfab" category="summary">概括介绍 Active IQ Unified Manager 的新增功能，限制和已知问题。</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">发行说明</block>
   <block id="12dc360fa3d8165171389ee06172a133" category="inline-link">《 Active IQ Unified Manager 发行说明》</block>
   <block id="e3ba6c64064adba107328f731ffc579e" category="summary">要在 Windows 上成功安装 Unified Manager ，您应确保安装 Unified Manager 的系统满足软件要求。</block>
@@ -7225,7 +7188,6 @@
   <block id="feca2c67539b00b94278185357af09dc" category="paragraph">默认情况下，系统定义的集群性能阈值策略会分配给 Unified Manager 监控的每个集群：</block>
   <block id="f79e2da0e7f82c468889e02fe9c2b430" category="list-text">* 集群负载不平衡 *</block>
   <block id="59661535e0d4f683fcb4a3ed8aa66f1d" category="paragraph">确定一个节点的运行负载远高于集群中其他节点，从而可能影响工作负载延迟的情况。</block>
-  <block id="f45a891026b056f4e276c653d9981111" category="paragraph">为此，它会比较集群中所有节点的已用性能容量值，以确定任何节点之间是否存在 30% 的负载差异。这是一个警告事件。</block>
   <block id="7294f6f733c6ce2ec3340b93d27e5213" category="list-text">* 集群容量不平衡 *</block>
   <block id="83a1ff6d54cb25f3d06152e4e5d82750" category="paragraph">确定一个聚合的已用容量远远高于集群中的其他聚合，从而可能影响操作所需的空间的情况。</block>
   <block id="8846b64490352c0a0e83eeef475bff88" category="paragraph">为此，它会比较集群中所有聚合的已用容量值，以确定任何聚合之间是否存在 70% 的差异。这是一个警告事件。</block>
@@ -11220,7 +11182,6 @@
   <block id="ade5571002c140197ffda62a04c25ae4" category="paragraph">收集集群配置信息的监控间隔为 15 分钟。例如，添加集群后，需要 15 分钟才能在 Unified Manager UI 中显示集群对象。更改集群时，此时间范围也是如此。例如，如果向集群中的 SVM 添加两个新卷，则在下一轮询间隔之后，用户界面中会显示这些新对象，最长可能为 15 分钟。</block>
   <block id="3f685c5e6d90131effce2b40e4a4b07e" category="paragraph">下图显示了发现过程：</block>
   <block id="e999bab26f41b7a7606311fad961b3b0" category="paragraph">由于收集 15 天的性能数据需要占用大量 CPU 资源，因此建议您错开添加新集群的时间，以便不会在太多集群上同时运行数据连续性收集轮询。</block>
-  <block id="03c4964bc816e433324ce19426448ce5" category="sidebar">Active IQ Unified Manager 文档</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
   <block id="54cee202b784163d7cdf325cdd6aa6c6" category="sidebar">快速开始安装 VMware vSphere</block>
   <block id="a63af8d4197dd6c65eaa56176a1f0040" category="sidebar">快速开始安装 Linux</block>
@@ -11624,5 +11585,46 @@
   <block id="3066589d00db39c012813cfbdb5ac98f" category="list-text">在已连接的系统上、运行以下命令导入已更新的MySQL密钥：</block>
   <block id="ce16a447d798efe968d2235fb0e11c5b" category="list-text">在未连接Internet的系统上、更新MySQL repod文件并标记`ggcheck=0`以禁用`gpgcheck`。</block>
   <block id="eb8cc10ea7290daea0c59a212428f061" category="paragraph"><block ref="eb8cc10ea7290daea0c59a212428f061" category="inline-link-macro-rx"></block></block>
-  <block id="5ecb6b24c169667ff1a176768115659e" category="sidebar">Active IQ Unified Manager</block>
+  <block id="8b5c53741ace59564e91943c6402cc3a" category="summary">您需要先配置Windows主机、然后才能使用NetApp Snapshot备份和还原Active IQ Unified Manager。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "iscsi" ，然后单击 iSCSI 启动程序。</block>
+  <block id="1248b2e744f7fb1ee933bde0f938b102" category="paragraph">您需要先配置Windows主机、然后才能使用NetApp Snapshot备份和还原Active IQ Unified Manager。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "`iSCSI` " ，然后单击 * iSCSI 启动程序 * 。</block>
+  <block id="f8cd459ff4a7192edfbedc254b7bca7b" category="paragraph">在配置Unified Manager以创建Snapshot副本之前、您应执行以下配置任务。</block>
+  <block id="acb0ccecf8f7da295a8d8689fb4fa3dd" category="paragraph">如果要更改 Active IQ Unified Manager 系统的备份类型，则可以使用维护控制台选项。通过*取消配置NetApp Snapshot备份*选项、您可以回退到基于MySQL的备份。</block>
+  <block id="4a5252be16df0bd596f3669798985895" category="list-text">从*主菜单*中选择4进行备份和还原。</block>
+  <block id="49404a8cd7fa908019ad2c0c44d457dd" category="paragraph">修改备份方法后、备份机制将从Snapshot副本更改为默认MySQL备份。此更改将显示在常规设置的数据库备份部分中。</block>
+  <block id="57d3cd2d30301429d6637d67f82d9d7e" category="summary">您应在已在其中一个Active IQ Unified Manager 集群中配置的卷上配置ONTAP Snapshot副本的目标位置。您应使用维护控制台来定义位置。</block>
+  <block id="12fc5ceb004caac51bc7adc0919885d2" category="doc">指定Snapshot副本的目标位置</block>
+  <block id="9106687d633b6347a2301128578a0d53" category="list-text">如果尚未创建Snapshot副本计划、请退出维护控制台并启动Active IQ Unified Manager 界面、以便为该副本创建计划。</block>
+  <block id="078057cb4fbbb2df6414096389bdf757" category="doc">使用Snapshot副本还原Unified Manager</block>
+  <block id="6c1317e22f5a52a7e1ef24b0cfcf2808" category="list-text">Linux：安全Shell</block>
+  <block id="84097b5c25253e555f1241a6265b1fc7" category="list-text">Windows：Power Shell</block>
+  <block id="6e84cad578a085c5bfb17f2ceafb779f" category="list-text">在维护控制台*主菜单*中、为*备份还原*选项输入4。</block>
+  <block id="b5d6cee6ecab9f76ec82923903ef56bf" category="list-text">输入2以选择"*使用NetApp Snapshot*备份和还原"。</block>
+  <block id="f253c94ba6549aff2dc48be199312f74" category="paragraph">如果要还原到新服务器，则在安装 Unified Manager 后，请勿启动用户界面，也不要在安装完成后配置任何集群，用户或身份验证设置。输入1以选择*配置NetApp Snapshot备份*、并像在原始系统上一样配置Snapshot副本的设置。</block>
+  <block id="547fc6d1c680c3c977eefc644b5f84bb" category="list-text">输入3以选择*使用NetApp Snapshot*还原。</block>
+  <block id="c129bd96bead8458af46982d8d46013a" category="list-text">选择要从中还原Unified Manager的Snapshot副本。按 * 输入 * 。</block>
+  <block id="ebd9d5f342d8f7a252c552caa368fdd4" category="summary">在Windows上备份Unified Manager后、您应配置用于存储Snapshot副本的卷。</block>
+  <block id="980280f09e181d6a54b6e6584a7a57ba" category="summary">您可以使用ONTAP 系统管理器或ONTAP 命令行界面配置将Snapshot副本存储在其中一个ONTAP 集群上的卷。</block>
+  <block id="5e9f7df21e2aee170e82e836a89c9b1b" category="doc">配置Snapshot副本位置</block>
+  <block id="4b57407417c4e1c7dd9db9b01598349f" category="summary">NetApp Snapshot副本会为Unified Manager数据库和配置文件创建一个时间点映像、您可以使用此映像在发生系统故障或数据丢失时进行还原。您计划定期将Snapshot副本写入其中一个ONTAP 集群上的卷、以便始终具有最新副本。</block>
+  <block id="9d0c3ab790f8c8c94d736d5f3f7b064c" category="summary">您可以使用Unified Manager UI配置创建Unified Manager Snapshot副本的计划。</block>
+  <block id="276db03bd79cf1fd1f7a4b944102de33" category="list-text">您必须已配置从维护控制台创建Snapshot副本的设置、以确定要创建快照的目标。</block>
+  <block id="83abd8acb2b7676da1cf771f64b62650" category="paragraph">Snapshot副本只需几分钟即可创建完毕、Unified Manager数据库仅锁定几秒钟。</block>
+  <block id="657c331ddbfc73b6b9a208a8ae9baa85" category="paragraph">Snapshot副本将根据计划创建。您可以在数据库备份页面中查看可用的备份文件。</block>
+  <block id="8eb7c975105334e9a925e8d0ae7bea1f" category="paragraph">您可以使用ONTAP 系统管理器或ONTAP 命令行界面删除较早的快照、以便始终有空间可供新的Snapshot副本使用。</block>
+  <block id="fbd8791f9c18f8663521f8eeaa9d956a" category="summary">您需要先在ONTAP 集群上执行几个预配置步骤、然后才能在Windows系统上使用Snapshot副本备份和还原Active IQ Unified Manager。</block>
+  <block id="39127dab30a1b4106495040a421b4171" category="list-text">如果您发现增量备份文件的数量过大、无法容纳为备份分配的空间、则可以定期执行完整备份以替换旧备份及其增量文件。另一种选择是、您可以使用Snapshot副本进行备份。</block>
+  <block id="5a5094f086cece37d0843a7f44251cce" category="paragraph">如果 Unified Manager 安装在 Linux 和 Windows 服务器上，则 MySQL 数据库转储是默认的备份机制。但是、如果Unified Manager正在管理大量集群和节点、或者您的MySQL备份需要数小时才能完成、则可以使用Snapshot副本进行备份。此功能可在Red Hat Enterprise Linux、CentOS Linux系统和Windows上使用。</block>
+  <block id="0dacdc1f422539593cbb5a203b591b4c" category="summary">要使用Snapshot副本进行Active IQ Unified Manager 备份、您应从维护控制台执行一些配置步骤。</block>
+  <block id="154bdb7f32d3fbfa903876b55692d782" category="doc">从维护控制台通过Snapshot副本配置备份</block>
+  <block id="e0075eac991ceb7545f11e534f56b9c5" category="paragraph">如果要更改备份配置、请输入3以选择*更新NetApp Snapshot备份配置*。您只能更新密码。</block>
+  <block id="d642a15bc9e79a0f7e99d72fad5a3ddd" category="paragraph">Snapshot副本所需时间非常短、通常只需几分钟、Unified Manager数据库锁定时间非常短、因此安装不会发生任何中断。此映像占用的存储空间极少，并且性能开销极低，因为它仅记录自上次创建 Snapshot 副本以来对文件所做的更改。由于 Snapshot 是在 ONTAP 集群上创建的，因此您可以根据需要利用 SnapMirror 等其他 NetApp 功能来创建二级保护。</block>
+  <block id="e06e49da3fb49fecd85244c11ba7754d" category="list-text">您只能在同一版本的Active IQ Unified Manager 上还原Snapshot副本。</block>
+  <block id="839fa2b63b981f33da59323dbb6922ca" category="doc">在Windows上指定Snapshot副本的目标位置</block>
+  <block id="5a4a0cbbe603b22097ec5fceadf09c9b" category="list-text">退出维护控制台并启动Active IQ Unified Manager 界面、为Snapshot副本创建计划。</block>
+  <block id="1024da4d1e601efc60b6d334667fb372" category="inline-link-macro">如何在AIQUM中手动更新AIQCASecure规则</block>
+  <block id="ab8d738b545ae820bcf3e08c1381f9d5" category="paragraph">有关详细信息、请参见此知识库(KB)文章： <block ref="2880d9e8074f03320d24915675f84536" category="inline-link-macro-rx"></block></block>
+  <block id="97bbb871095678061fcc80b68b1e751b" category="paragraph">为此、它会比较集群中所有节点的已用性能容量值、以查看是否有任何节点超过30%阈值超过24小时。这是一个警告事件。</block>
+  <block id="5a668f8970655ef1c7d0b0f27eacfe05" category="summary">概括介绍Active IQ Unified Manager 9.11的新增功能、限制和已知问题。</block>
+  <block id="695f7221e4fd4e02429db7170b21c850" category="sidebar">Active IQ Unified Manager 9.11文档</block>
+  <block id="85f73dd16ea214346164b0deea26773b" category="sidebar">Unified Manager</block>
 </blocks>
