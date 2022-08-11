@@ -71,6 +71,4 @@ Volumes
 . 在 * 工作负载分析 * 页面中，您可以在 * 容量趋势 * 区域中选择 "`Cloud Tier View` " ，以查看上个月本地性能层和云层中使用的容量。
 
 
-有关 FabricPool 聚合的详细信息，请参见 _Data ONTAP 9 磁盘和聚合高级指南 _ 。
-
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["《 ONTAP 9 磁盘和聚合高级指南》"]
+有关FabricPool 聚合的详细信息、请参见 https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["磁盘和聚合概述"]。

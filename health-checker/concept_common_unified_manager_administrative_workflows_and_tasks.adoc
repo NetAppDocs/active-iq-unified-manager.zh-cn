@@ -27,7 +27,7 @@ Unified Manager 还可以包含在包含相关易管理性工具（例如 OnComm
 
 * 配置和监控性能意外事件
 +
-管理员可以监控和管理所监控存储系统资源的性能。请参见 link:../performance-checker/concept_introduction_to_unified_manager_performance_monitoring.html["《 Active IQ Unified Manager 集群性能管理工作流指南》"] 有关详细信息 ...
+管理员可以监控和管理所监控存储系统资源的性能。请参见 link:../performance-checker/concept_introduction_to_unified_manager_performance_monitoring.html["Active IQ Unified Manager 性能监控简介"] 有关详细信息 ...
 
 * 诊断和管理卷容量问题
 +
@@ -35,14 +35,14 @@ Unified Manager 还可以包含在包含相关易管理性工具（例如 OnComm
 
 * 配置，监控和诊断保护关系问题
 +
-创建和配置保护关系后，存储管理员可以查看与保护关系相关的潜在问题，保护关系的当前状态，有关受影响关系的当前和历史保护作业成功信息以及故障排除建议。请参见 link:../data-protection/concept_create_and_monitor_protection_relationships.html["《 Active IQ Unified Manager 保护指南》"] 有关详细信息 ...
+创建和配置保护关系后，存储管理员可以查看与保护关系相关的潜在问题，保护关系的当前状态，有关受影响关系的当前和历史保护作业成功信息以及故障排除建议。请参见 link:../data-protection/concept_create_and_monitor_protection_relationships.html["创建，监控保护关系并对其进行故障排除"] 有关详细信息 ...
 
 * 创建备份文件并从备份文件还原数据。
 * 将存储对象与标注关联
 +
 通过将存储对象与标注关联，存储管理员可以筛选和查看与存储对象相关的事件，从而使存储管理员能够确定与事件相关的问题的优先级并解决这些问题。
 
-* 使用 REST API 通过查看 Unified Manager 捕获的运行状况，容量和性能信息来帮助管理集群。请参见 link:../api-automation/concept_get_started_with_um_apis.html["《 Active IQ Unified Manager API 开发人员指南》"] 有关详细信息 ...
+* 使用 REST API 通过查看 Unified Manager 捕获的运行状况，容量和性能信息来帮助管理集群。请参见 link:../api-automation/concept_get_started_with_um_apis.html["Active IQ Unified Manager REST API入门"] 有关详细信息 ...
 * 向技术支持发送支持包
 +
 存储管理员可以使用维护控制台检索支持包并将其发送给技术支持。如果问题描述需要比 AutoSupport 消息更详细的诊断和故障排除信息，则必须将支持包发送给技术支持。

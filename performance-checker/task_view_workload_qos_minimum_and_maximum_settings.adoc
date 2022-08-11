@@ -68,6 +68,4 @@ summary: 您可以在性能资源管理器图表中查看卷或 LUN 上 ONTAP �
 
 如果您发现某些卷或 LUN 的 IOPS 或 MB/ 秒非常高，并对系统资源造成压力，则可以使用 System Manager 或 ONTAP 命令行界面调整 QoS 设置，以便这些工作负载不会影响其他工作负载的性能。
 
-有关调整 QoS 设置 ONTAP 的详细信息，请参见 _QoS 9 性能监控高级指南 _ 。
-
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["《 ONTAP 9 性能监控高级指南》"]
+有关调整QoS设置的详细信息、请参见 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["性能管理概述"]

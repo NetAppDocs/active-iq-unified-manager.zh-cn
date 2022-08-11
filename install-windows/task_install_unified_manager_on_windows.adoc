@@ -89,4 +89,4 @@ Unified Manager 会检测缺少的或预先安装的第三方软件包并列出�
 
 
 
-您可以访问 Web UI 以执行 Unified Manager 的初始设置，如中所述 link:../config/concept_configure_unified_manager.html["《 Active IQ Unified Manager 系统配置指南》"]。
+您可以访问 Web UI 以执行 Unified Manager 的初始设置，如中所述 link:../config/concept_configure_unified_manager.html["正在配置 Active IQ Unified Manager"]。

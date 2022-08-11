@@ -1,21 +1,21 @@
 ---
 permalink: api-automation/reference_intended_audience_for_this_guide.html 
 sidebar: sidebar 
-keywords: audience, guide 
-summary: 本指南面向创建通过 REST API 与 Active IQ Unified Manager 软件连接的应用程序的开发人员。 
+keywords: audience, api, rest 
+summary: 本节面向创建通过REST API与Active IQ Unified Manager 软件连接的应用程序的开发人员。 
 ---
-= 本指南的受众
+= 此内容的受众
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-本指南面向创建通过 REST API 与 Active IQ Unified Manager 软件连接的应用程序的开发人员。
+此处的主题面向创建通过REST API与Active IQ Unified Manager 软件连接的应用程序的开发人员。
 
-本指南还面向希望基本了解如何使用 Unified Manager 中提供的 REST API 构建客户端应用程序以管理和监控 NetApp 存储系统的存储管理员和架构师。
+存储管理员和架构师可以参考此信息、基本了解如何使用Unified Manager REST API构建客户端应用程序来管理和监控NetApp存储系统。
 
-如果要使用存储提供程序， ONTAP 集群和管理管理 API 来管理存储，则应使用本指南。
+如果要使用存储提供程序、ONTAP 集群和管理管理API来管理存储、则应使用此信息。
 
 [NOTE]
 ====

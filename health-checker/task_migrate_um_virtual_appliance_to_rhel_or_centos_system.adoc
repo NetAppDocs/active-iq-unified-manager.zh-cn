@@ -23,7 +23,7 @@ summary: 如果要更改运行 Unified Manager 的主机操作系统，您可以
 
 * 在 Linux 系统上：
 +
-** 您必须已按照安装指南中的说明在 RHEL 或 CentOS 服务器上安装 Unified Manager 。
+** 您必须已按照中的说明在Linux服务器上安装Unified Manager link:../install-linux/concept_install_unified_manager_on_rhel_or_centos.html["在 Linux 系统上安装 Unified Manager"]。
 ** 此服务器上的 Unified Manager 版本必须与使用备份文件的虚拟设备上的版本相同。
 ** 安装后，请勿启动 UI 或在 Linux 系统上配置任何集群，用户或身份验证设置。备份文件会在还原过程中填充此信息。
 ** 您必须具有 Linux 主机的 root 用户凭据。

@@ -36,7 +36,7 @@ image::../media/first_experience_wizard.png[首次体验向导]
 . 在 Red Hat 和 CentOS 系统上，您可以将 umadmin 用户密码从默认的 "`admin` " 字符串更改为个性化字符串。
 . 在设置 API 网关页面中，选择是否要使用 API 网关功能，以便 Unified Manager 能够管理计划使用 ONTAP REST API 监控的 ONTAP 集群。然后单击 * 继续 * 。
 +
-您可以稍后在 Web UI 中通过 * 常规 * > * 功能设置 * > * API 网关 * 启用或禁用此设置。有关 API 的详细信息，请参见 link:../api-automation/concept_get_started_with_um_apis.html["《 Active IQ Unified Manager API 开发人员指南》"]。
+您可以稍后在 Web UI 中通过 * 常规 * > * 功能设置 * > * API 网关 * 启用或禁用此设置。有关API的详细信息、请参见 link:../api-automation/concept_get_started_with_um_apis.html["Active IQ Unified Manager REST API入门"]。
 
 . 添加希望 Unified Manager 管理的集群，然后单击 * 下一步 * 。对于您计划管理的每个集群，您必须具有主机名或集群管理 IP 地址（ IPv4 或 IPv6 ）以及用户名和密码凭据 - 用户必须具有 "`admin` " 角色。
 +

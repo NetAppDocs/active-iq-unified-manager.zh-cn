@@ -86,9 +86,9 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFly 19.0.0 与 Unified 
 * UDP 端口 514 应为空闲端口，不应由任何其他服务使用。
 * 如果您的Windows系统上安装了活动防病毒软件、则Unified Manager安装可能会失败。在安装Unified Manager之前、应禁用系统上的所有病毒扫描软件。安装完成后、请确保手动从防病毒扫描中排除以下路径：
 +
-** Unified Manager 数据目录
-** Unified Manager 安装目录
-** MySQL 数据目录
+** Unified Manager数据目录、例如`C：\ProgramData\NetApp\OnCommandAppData\`
+** Unified Manager安装目录、例如、` C：\Program Files\NetApp\`
+** MySQL数据目录、例如、`C：\ProgramData\MySQLServerData`
 
 
 

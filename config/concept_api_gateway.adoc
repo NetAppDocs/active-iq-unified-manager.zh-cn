@@ -19,4 +19,4 @@ Unified Manager REST API 与 ONTAP REST API 不同，并非所有 ONTAP REST API
 
 启用此功能后，您可以从 * 菜单栏 * > * 帮助按钮 * > * API 文档 * > * 网关 * 类别执行 Unified Manager REST API 。或者，您也可以输入主机名或 IP 地址以及 URL 以访问 REST API 页面，格式为 `https://<hostname>/docs/api/`
 
-有关 API 的详细信息，请参见 _API Active IQ Unified Manager 开发人员指南 _ 。
+有关API的详细信息、请参见 link:../api-automation/concept_get_started_with_um_apis.html["Active IQ Unified Manager REST API入门"]。

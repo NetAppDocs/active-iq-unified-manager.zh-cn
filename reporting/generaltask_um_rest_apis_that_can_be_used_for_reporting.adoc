@@ -13,6 +13,6 @@ summary: 您可以使用 REST API 通过查看 Unified Manager 捕获的运行�
 [role="lead"]
 您可以使用 REST API 通过查看 Unified Manager 捕获的运行状况，容量，性能和安全信息来帮助管理集群。
 
-REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示 Unified Manager REST API 文档，并手动对 API 调用执行问题描述。在 Unified Manager Web UI 的菜单栏中，单击 * 帮助 * 按钮，然后选择 * API 文档 * 。有关 Unified Manager REST API 的信息，请参见 link:../api-automation/concept_get_started_with_um_apis.html["《 Active IQ Unified Manager API 开发人员指南》"]。
+REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示 Unified Manager REST API 文档，并手动对 API 调用执行问题描述。在 Unified Manager Web UI 的菜单栏中，单击 * 帮助 * 按钮，然后选择 * API 文档 * 。有关Unified Manager REST API的信息、请参见 link:../api-automation/concept_get_started_with_um_apis.html["Active IQ Unified Manager REST API入门"]。
 
 要访问 REST API ，您必须具有操作员，存储管理员或应用程序管理员角色。

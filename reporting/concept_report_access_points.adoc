@@ -13,7 +13,7 @@ summary: 您可以在 Unified Manager 中收集有关集群的信息，以便通
 [role="lead"]
 您可以在 Unified Manager 中收集有关集群的信息，以便通过 UI ， MySQL 数据库查询和 REST API 创建报告。
 
-本指南介绍了通过 UI 进行 Unified Manager 报告和计划的信息。
+这些部分介绍了通过UI进行Unified Manager报告和计划的信息。
 
 您可以通过三种方式访问 Unified Manager 提供的报告功能：
 
@@ -22,4 +22,4 @@ summary: 您可以在 Unified Manager 中收集有关集群的信息，以便通
 * 执行 Unified Manager REST API 以返回要查看的信息。
 
 
-本指南介绍了通过 UI 进行 Unified Manager 报告和计划的信息。
+这些部分介绍了通过UI进行Unified Manager报告和计划的信息。

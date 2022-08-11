@@ -156,4 +156,4 @@ Log in to Unified Manager in a web browser by using following details:
 
 
 
-访问 Web UI 以更改 umadmin 用户的默认密码，并执行 Unified Manager 的初始设置，如中所述 link:../config/concept_configure_unified_manager.html["《 Active IQ Unified Manager 系统配置指南》"]。
+访问Web UI以更改umadmin用户的默认密码、并执行Unified Manager的初始设置、如中所述 link:../config/concept_configure_unified_manager.html["正在配置 Active IQ Unified Manager"]。

@@ -96,10 +96,10 @@ HTTPS
 |===
 [NOTE]
 ====
-用于 HTTP 和 HTTPS 通信的端口（端口 80 和 443 ）可以使用 Unified Manager 维护控制台进行更改。有关详细信息，请参见 Active IQ Unified Manager 系统配置指南。
+用于 HTTP 和 HTTPS 通信的端口（端口 80 和 443 ）可以使用 Unified Manager 维护控制台进行更改。有关详细信息、请参见_Configuring Active IQ Unified Manager。
 
 ====
-link:../config/concept_configure_unified_manager.html["《 Active IQ Unified Manager 系统配置指南》"]
+link:../config/concept_configure_unified_manager.html["正在配置 Active IQ Unified Manager"]
 
 
 

@@ -112,6 +112,4 @@ VM 控制台将显示 Unified Manager Web UI 的 URL 。
 
 
 
-您可以访问 Web UI 以执行 Unified Manager 的初始设置，如 _Unified Active IQ Unified Manager 系统配置指南中所述。
-
-link:../config/concept_configure_unified_manager.html["《 Active IQ Unified Manager 系统配置指南》"]
+您可以访问 Web UI 以执行 Unified Manager 的初始设置，如中所述 link:../config/concept_configure_unified_manager.html["正在配置 Active IQ Unified Manager"]。

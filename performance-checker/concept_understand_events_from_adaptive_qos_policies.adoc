@@ -66,6 +66,4 @@ MB/s = (IOPS * Block Size) / 1000
 
 因此，如果因违反包含块大小的自适应 QoS 策略的 MB/ 秒而触发事件，则会在事件详细信息页面的系统诊断部分显示 MB/ 秒图表。如果因违反自适应 QoS 策略的 IOPS 而触发事件，则系统诊断部分会显示一个 IOPS 图表。如果同时违反 IOPS 和 MB/ 秒，您将收到两个事件。
 
-有关调整 QoS 设置 ONTAP 的详细信息，请参见 _QoS 9 性能监控高级指南 _ 。
-
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["《 ONTAP 9 性能监控高级指南》"]
+有关调整QoS设置的详细信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/index.html["性能管理概述"]。
