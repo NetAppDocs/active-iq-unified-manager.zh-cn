@@ -29,16 +29,13 @@ Unified Manager 虚拟设备的 VMware 快照
 
 
 
- a| 
-Red Hat Enterprise Linux 或 CentOS Linux
- a| 
+.2+| Red Hat Enterprise Linux 或 CentOS Linux  a| 
 小型
  a| 
 Unified Manager MySQL 数据库转储
 
 
 
- a| 
  a| 
 大型
  a| 
@@ -46,16 +43,13 @@ Unified Manager 数据库的 NetApp Snapshot
 
 
 
- a| 
-Microsoft Windows
- a| 
+.2+| Microsoft Windows  a| 
 小型
  a| 
 Unified Manager MySQL 数据库转储
 
 
 
- a| 
  a| 
 大型
  a| 
