@@ -1,0 +1,28 @@
+---
+permalink: include/upgrade-path.html 
+sidebar: sidebar 
+keywords: supported upgrade path, upgrade path, n-2, which versions can be upgraded 
+summary: 支持的升级路径 
+---
+= Unified Manager版本支持的升级路径
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager 支持每个版本使用特定的升级路径。
+
+并非所有Unified Manager版本都可以原位升级到更高版本。Unified Manager升级仅限于N-2型号、这意味着只能在所有平台上的未来2个版本中执行升级。例如、您只能从Unified Manager 9.9和9.10升级到Unified Manager 9.11。
+
+如果您运行的版本早于受支持的版本、则需要先将Unified Manager实例升级到受支持的版本之一、然后再升级到当前版本。
+
+例如、如果您安装的版本是OnCommand Unified Manager 9.5、而您希望升级到最新版本的Active IQ Unified Manager 9.11、则可以执行一系列升级。
+
+.升级路径示例：
+. 升级OnCommand Unified Manager 9.5 -> Active IQ Unified Manager 9.7。
+. 升级9.7 -> 9.9。
+. 升级9.9 -> 9.11。
+
+
+有关升级路径列表的详细信息、请参见此内容 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/What_is_the_upgrade_path_for_Active_IQ_Unified_Manager_versions["知识库(KB)文章"^]。

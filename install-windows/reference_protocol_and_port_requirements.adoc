@@ -141,6 +141,8 @@ HTTPS
 NDMP
  a| 
 10000 TCP
+
+7/TCP
  a| 
 用于某些 Snapshot 还原操作。
 

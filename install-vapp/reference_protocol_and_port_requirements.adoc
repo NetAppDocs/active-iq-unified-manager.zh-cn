@@ -136,6 +136,8 @@ NOTE: 如果使用此端口或任何其他端口连接到 VMware vCenter Server 
 NDMP
  a| 
 10000 TCP
+
+7/TCP
  a| 
 用于某些 Snapshot 还原操作。
 
