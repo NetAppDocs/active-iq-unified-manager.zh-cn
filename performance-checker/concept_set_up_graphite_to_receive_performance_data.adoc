@@ -21,7 +21,7 @@ NetApp 不会测试或验证特定版本的 Graphite 或其他第三方工具。
 +
 根据配置中的集群数量以及您选择发送的统计信息对象，最初可能需要创建数千个新文件。每分钟 200 个文件可能需要 15 分钟或更长时间才能创建所有度量文件。创建所有唯一指标文件后，此参数将不再相关。
 
-* 如果您在使用 IPv6 地址部署的服务器上运行 Graphite ，则必须将 /opt/cite/conf/Clone.conf` 文件中 line_controller_interface 的值从 "`0.0.0.0` " 更改为 "` ：` " （` * line_controller_interface = ： *` ）
+* 如果您在使用IPv6地址部署的服务器上运行Graphite、则中line_RECEIVER_interface的值 `/opt/graphite/conf/carbon.conf` 文件必须从"`0.0.0.0`"更改为"`：`" (`*LINE_RECEIVER_INTERFACE = ::*`）
 * 在 ` /opt/lutter/conf/storage-schemes.conf` 文件中，必须使用 `retentions` 参数将频率设置为 5 分钟，并将保留期限设置为与您的环境相关的天数。
 +
 保留期限可以与您的环境所允许的期限相同，但对于至少一个保留设置，必须将频率值设置为 5 分钟。在以下示例中，使用 `pattern` 参数为 Unified Manager 定义了一个部分，这些值会将初始频率设置为 5 分钟，保留期限设置为 100 天： ` *[OPM]*`

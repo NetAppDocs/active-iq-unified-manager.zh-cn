@@ -11,7 +11,7 @@ summary: 您可以在有新版本的软件可用时升级 Unified Manager 。
 
 
 [role="lead"]
-您可以在有新版本的软件可用时升级 Unified Manager 。
+您可以在有新版本可用时升级Unified Manager。
 
 Unified Manager 软件的修补版本如果由 NetApp 提供，则会使用与新版本相同的操作步骤进行安装。
 

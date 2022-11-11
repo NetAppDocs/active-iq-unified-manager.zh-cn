@@ -17,7 +17,7 @@ summary: 如果要安装 Unified Manager 的系统无法访问 MySQL Community E
 
 [NOTE]
 ====
-如果系统没有 Internet 连接，此任务可能会失败。如果要安装 Unified Manager 的系统无法访问 Internet ，请参见 MySQL 文档。
+如果系统没有Internet连接、则此任务可能会失败。如果要安装Unified Manager的系统无法访问Internet、请参见MySQL文档。
 
 ====
 .步骤

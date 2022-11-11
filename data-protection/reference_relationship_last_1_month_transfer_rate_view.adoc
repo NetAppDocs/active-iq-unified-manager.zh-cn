@@ -28,3 +28,10 @@ summary: '通过 " 关系：过去 1 个月的传输速率 " 视图，您可以�
 显示卷传输结束时间和日期。
 
 
+
+* 相关信息 *
+
+* 有关*关系：MetroCluster*视图的信息、请参见 link:../storage-mgmt/task_monitor_metrocluster_configurations.html["监控 MetroCluster 配置"]。
+* 有关*关系：过去1个月传输状态*视图的信息、请参见 link:../data-protection/reference_relationship_last_1_month_transfer_status_view.html["Relationship ： Last 1 Month Transfer Status 视图"]。
+* 有关*关系：所有关系*视图的信息、请参见 link:../data-protection/reference_relationship_last_1_month_transfer_rate_view.html["Relationship ： Last 1 Month Transfer Rate 视图"]
+

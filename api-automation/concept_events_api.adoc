@@ -23,7 +23,7 @@ Unified Manager 将接收在 ONTAP 上为 Unified Manager 监控和管理的集�
 
 通过对此 API 运行修补操作，您可以为此事件启用解析工作流。您可以将事件分配给自己或其他用户，并确认收到事件。在对资源执行步骤以解决触发事件的问题描述时，您可以使用此 API 将事件标记为已解决。
 
-有关事件的详细信息，请参见 link:../events/concept_manage_events.html["管理事件"]
+有关事件的详细信息，请参见 link:../events/concept_manage_events.html["管理事件"]。
 
 [cols="4*"]
 |===
@@ -57,7 +57,7 @@ patch
 
 系统会自动持续生成事件。只有当事件满足特定筛选条件时， Unified Manager 才会生成警报。您可以选择应生成警报的事件。通过使用 ` /management-server/alers` API ，您可以配置警报，以便在发生特定事件或特定严重性类型的事件时自动发送通知。
 
-有关警报的详细信息，请参见 link:../events/concept_manage_alerts.html["管理警报"]
+有关警报的详细信息，请参见 link:../events/concept_manage_alerts.html["管理警报"]。
 
 [cols="4*"]
 |===
@@ -105,7 +105,7 @@ NOTE: 在选择用于添加警报的资源时，请注意，选择集群作为�
 
 通过使用 ` /management-server/scripts` API ，您还可以将警报与触发警报时执行的脚本相关联。您可以使用脚本在 Unified Manager 中自动修改或更新多个存储对象。此脚本与警报关联。当事件触发警报时，将执行脚本。您可以上传自定义脚本，并在生成警报时测试其执行情况。您可以将警报与脚本关联，以便在 Unified Manager 中针对事件发出警报时执行脚本。
 
-有关脚本的详细信息，请参见 link:../events/concept_manage_scripts.html["管理脚本"]
+有关脚本的详细信息，请参见 link:../events/concept_manage_scripts.html["管理脚本"]。
 
 [cols="4*"]
 |===

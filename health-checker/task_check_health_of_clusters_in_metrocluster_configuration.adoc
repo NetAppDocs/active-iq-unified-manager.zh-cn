@@ -11,28 +11,34 @@ summary: 您可以使用 Unified Manager 检查 MetroCluster 配置中集群及�
 
 
 [role="lead"]
-您可以使用 Unified Manager 检查 MetroCluster 配置中集群及其组件的运行状况。如果集群涉及 Unified Manager 检测到的性能事件，则运行状况可以帮助您确定硬件或软件问题描述是否引发了该事件。
+您可以使用Active IQ Unified Manager (Unified Manager)在基于FC的MetroCluster 和基于IP的MetroCluster 配置中检查集群及其组件的运行状况。如果集群涉及 Unified Manager 检测到的性能事件，则运行状况可以帮助您确定硬件或软件问题描述是否引发了该事件。
 
 * 您需要的内容 *
 
 * 您必须具有操作员，应用程序管理员或存储管理员角色。
 * 您必须已分析 MetroCluster 配置的性能事件并获取相关集群的名称。
-* MetroCluster 配置中的两个集群必须由同一个 Unified Manager 实例监控。
+* 通过FC和IP配置的MetroCluster 中的两个集群都必须由同一个Unified Manager实例监控。
 
+
+
+
+== 在基于FC的MetroCluster 配置中确定集群运行状况
+
+按照以下步骤确定基于FC的MetroCluster 配置中的集群运行状况。
 
 .步骤
 . 在左侧导航窗格中，单击 * 事件管理 * 以显示事件列表。
-. 在筛选器面板中，选择 * 源类型 * 类别下的所有 MetroCluster 筛选器。
+. 在筛选器面板中，选择 * 源类型 * 类别下的所有 MetroCluster 筛选器。您可以看到环境中针对所有MetroCluster 配置引发的所有事件。
 . 在 MetroCluster 事件旁边，单击集群的名称。
-+
-此时将显示 " 运行状况：所有集群 " 视图，其中包含有关事件的详细信息。
-
 +
 [NOTE]
 ====
-如果未显示任何 MetroCluster 事件，您可以使用搜索栏搜索性能事件中涉及的集群的名称。
+如果未显示任何MetroCluster 事件、您可以使用搜索栏搜索与基于FC的MetroCluster 配置相关的事件中涉及的集群的名称。
 
 ====
++
+此时将显示 " 运行状况：所有集群 " 视图，其中包含有关事件的详细信息。
+
 . 选择 * MetroCluster 连接 * 选项卡可显示选定集群与其配对集群之间连接的运行状况。
 +
 image::../media/opm_um_mcc_connectivity_tab_png.gif[Unified Manager MetroCluster 连接选项卡]
@@ -50,4 +56,22 @@ image::../media/opm_um_mcc_replication_tab_png.gif[Unified Manager MetroCluster 
 +
 在此示例中，如果本地或配对集群上的 NVRAM 图标为黄色或红色，则带有 NVRAM 的运行状况问题描述可能已导致出现性能事件。如果页面上没有红色或黄色图标，则配对集群上的性能问题描述可能已导致此性能事件。
 
+
+
+
+
+== 在基于IP的MetroCluster 配置中确定集群运行状况
+
+按照以下步骤确定基于IP的MetroCluster 配置中的集群运行状况。
+
+.步骤
+. 在左侧导航窗格中，单击 * 事件管理 * 以显示事件列表。
+. 在筛选器面板的*源类型*类别下、选择 `MetroCluster Relationship` 筛选器。您可以看到环境中针对所有MetroCluster 配置引发的所有事件。
++
+[NOTE]
+====
+如果您看不到报告的MetroCluster 事件、则可以使用搜索栏按与IP上的MetroCluster 配置相关的事件所涉及的集群名称进行搜索。
+
+====
+. 在相关MetroCluster 事件旁边、单击集群的名称。此时将显示"Clusters"页面、其中包含该集群的详细信息。有关确定运行状况问题的信息、请参见 link:../storage-mgmt/task_monitor_metrocluster_configurations.html["监控基于IP的MetroCluster 配置中的连接问题"]。
 

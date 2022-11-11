@@ -74,7 +74,7 @@ summary: 通过 AutoSupport 页面，您可以向技术支持团队发送预定�
 
 == 设置 HTTP 代理服务器
 
-如果您的环境不提供从 Unified Manager 服务器直接访问的权限，您可以指定一个代理来提供 Internet 访问，以便向支持部门发送 AutoSupport 内容。此部分仅适用于管理员和维护用户。
+如果您的环境不提供从Unified Manager服务器直接访问的权限、您可以指定一个代理来提供Internet访问、以便向支持部门发送AutoSupport 内容。此部分仅适用于管理员和维护用户。
 
 * * 使用 HTTP 代理 *
 +

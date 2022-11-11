@@ -1,7 +1,7 @@
 ---
 permalink: data-protection/reference_relationship_all_relationships_view.html 
 sidebar: sidebar 
-keywords: volume, relationships 
+keywords: volume, relationships, metrocluster 
 summary: '" 关系：所有关系 " 视图显示有关存储系统上的保护关系的信息。' 
 ---
 = Relationship ：所有关系视图
@@ -317,4 +317,11 @@ SnapMirror 传输已启动，但某些关联任务正在等待排队。
 ** SnapMirror ，一致性组。
 
 
+
+
+* 相关信息 *
+
+* 有关*关系：MetroCluster 视图的信息、请参见 link:../storage-mgmt/task_monitor_metrocluster_configurations.html["监控 MetroCluster 配置"]。
+* 有关*关系：过去1个月传输状态*视图的信息、请参见 link:../data-protection/reference_relationship_last_1_month_transfer_status_view.html["Relationship ： Last 1 Month Transfer Status 视图"]。
+* 有关*关系：所有关系*视图的信息、请参见 link:../data-protection/reference_relationship_last_1_month_transfer_rate_view.html["Relationship ： Last 1 Month Transfer Rate 视图"]。
 

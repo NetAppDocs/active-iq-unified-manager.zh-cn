@@ -11,38 +11,97 @@ summary: 您可以监控 MetroCluster 配置中的连接问题。详细信息包
 
 
 [role="lead"]
-您可以监控 MetroCluster 配置中的连接问题。详细信息包括集群中组件和连接的状态以及 MetroCluster 配置中集群之间的连接状态。
+您可以监控 MetroCluster 配置中的连接问题。详细信息包括集群中组件和连接的状态以及 MetroCluster 配置中集群之间的连接状态。此处、您将了解如何监控受基于FC的MetroCluster 和基于IP的MetroCluster 配置保护的集群中的连接问题。
+
+您可以从Active IQ Unified Manager 左侧导航窗格的以下视图监控MetroCluster 配置：
+
+* *存储*>*集群*>*保护：MetroCluster 视图
+* *保护*>*关系*>*关系：MetroCluster 视图
+
+
+Unified Manager使用系统运行状况警报指示MetroCluster 配置中组件和连接的状态。
 
 * 您需要的内容 *
 
-* 必须将 MetroCluster 配置中的本地和远程集群添加到 Active IQ Unified Manager 中。
+* 必须将MetroCluster 配置中的本地和远程集群添加到Active IQ Unified Manager 中。
+* 在基于IP的MetroCluster 配置中、如果要支持调解器、则应配置调解器、并通过相应的API将其添加到集群中。
 * 您必须具有操作员，应用程序管理员或存储管理员角色。
 
 
-您可以使用集群 / 运行状况详细信息页面中显示的信息来更正任何连接问题。例如，如果集群中节点和交换机之间的连接已关闭，则会显示以下图标：
 
-image::../media/node_switch_connectivity.gif[节点交换机连接]
 
-如果将指针移动到图标上方，则可以查看有关生成的事件的详细信息。
+== 监控基于FC的MetroCluster 配置中的连接问题
 
-Unified Manager 使用系统运行状况警报监控 MetroCluster 配置中的组件和连接状态。
-
-只有 MetroCluster 配置中的集群才会显示 MetroCluster 连接选项卡。
+对于基于FC的MetroCluster 配置中的集群、连接图表将显示在*集群/运行状况*详细信息页面上。请按照以下步骤操作：
 
 .步骤
 . 在左侧导航窗格中，单击 * 存储 * > * 集群 * 。
 +
 此时将显示所有受监控集群的列表。
 
-. 在 * 运行状况：所有集群 * 视图中，单击要查看其 MetroCluster 配置详细信息的集群的名称。
-. 在 * 集群 / 运行状况 * 详细信息页面中，单击 * MetroCluster 连接 * 选项卡。
+. 在*保护：MetroCluster *视图中、单击要查看其基于FC的MetroCluster 配置详细信息的集群的名称。或者、您也可以按MetroCluster 配置中的集群进行筛选。
+. 在 * 集群 / 运行状况 * 详细信息页面中，单击 * MetroCluster 连接 * 选项卡。只有基于FC的MetroCluster 配置才可以使用* MetroCluster 连接*选项卡。
 +
-MetroCluster 配置的拓扑将显示在相应的集群对象区域中。
+image::../media/opm_um_mcc_connectivity_tab_png.gif[Unified Manager MetroCluster 连接选项卡]
+
++
+MetroCluster 配置的拓扑将显示在相应的集群对象区域中。您可以使用集群 / 运行状况详细信息页面中显示的信息来更正任何连接问题。例如，如果集群中节点和交换机之间的连接已关闭，则会显示以下图标：
 
 
+
+image::../media/node_switch_connectivity.gif[节点交换机连接]
+
+如果将指针移动到图标上方，则可以查看有关生成的事件的详细信息。
 
 如果您在 MetroCluster 配置中发现连接问题，则必须登录到 System Manager 或访问 ONTAP 命令行界面以解决这些问题。
 
+有关确定集群运行状况的详细信息、请参见 link:../health-checker/task_check_health_of_clusters_in_metrocluster_configuration.html#determining-cluster-health-in-metrocluster-over-fc-configuration["在基于FC的MetroCluster 配置中确定集群运行状况"]。
+
+
+
+== 监控基于IP的MetroCluster 配置中的连接问题
+
+对于采用基于IP的MetroCluster 配置的集群、连接图表将显示在*集群*页面上。请按照以下步骤操作：
+
+.步骤
+. 在左侧导航窗格中，单击 * 存储 * > * 集群 * 。
++
+此时将显示所有受监控集群的列表。
+
+. 在*保护：MetroClusters*视图中、单击要查看其基于IP的MetroCluster 配置详细信息的集群的名称。或者、您也可以按MetroCluster 配置中的集群进行筛选。
+. 单击插入项以展开该行 `v` 图标。只有受MetroCluster over IP配置保护的集群才会显示脱字号图标。
++
+您可以查看源站点和镜像站点的拓扑、以及用于连接的调解器(如果有)。您可以查看以下信息：
+
++
+** 站点间的连接
+** 两个站点上的运行状况和可用性问题(如果有)
+** 与调解器相关的问题
+** 复制相关问题。
++
+
+NOTE: 此时将报告以下状态：严重(image:sev_critical_um60.png[""]），错误（image:sev_error_um60.png[""]）或正常（image:sev_normal_um60.png[""]）。您还可以查看同一拓扑中主数据和镜像数据的聚合数据复制状态。
+
++
+在下图中、您可以看到源集群和目标集群之间的站点间连接不可用、并且未配置它们之间的调解器。
+
++
+image:mcc-ip-conn-status.png[""]
+
+
+
+. 单击状态图标。此时将显示一条包含错误定义的消息。如果在基于IP的MetroCluster 配置中为问题描述 引发了事件、您可以单击消息上的*查看事件*按钮并查看事件详细信息。解决问题描述 和事件后、此拓扑中的状态图标将变为正常(image:sev_normal_um60.png[""]）。
+. 您可以在*集群/运行状况*详细信息页面的*配置*选项卡上的* MetroCluster 概述*和*保护*部分中查看更多配置详细信息。
+
+
+
+NOTE: 只有对于基于IP的MetroCluster 配置、您才能在*集群*页面上查看集群拓扑。对于基于FC的MetroCluster 配置中的集群、拓扑将显示在*集群/运行状况*详细信息页面上的* MetroCluster 连接*选项卡上。
+
 * 相关信息 *
 
-link:../health-checker/reference_health_cluster_details_page.html["集群 / 运行状况详细信息页面"]
+* link:../health-checker/reference_health_cluster_details_page.html["集群 / 运行状况详细信息页面"]
+* 有关*关系：MetroCluster*视图的信息、请参见 link:../storage-mgmt/task_monitor_metrocluster_configurations.html["监控 MetroCluster 配置"]。
+* 有关*关系：过去1个月传输状态*视图的信息、请参见 link:../data-protection/reference_relationship_last_1_month_transfer_status_view.html["Relationship ： Last 1 Month Transfer Status 视图"]。
+* 有关*关系：过去1个月传输速率*视图的信息、请参见 link:../data-protection/reference_relationship_last_1_month_transfer_rate_view.html["Relationship ： Last 1 Month Transfer Rate 视图"]。
+* 有关*关系：所有关系*视图的信息、请参见 link:../data-protection/reference_relationship_all_relationships_view.html["Relationship ：所有关系视图"]。
+

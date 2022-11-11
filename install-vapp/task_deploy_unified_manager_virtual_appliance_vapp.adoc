@@ -15,11 +15,11 @@ summary: 下载安装文件后，您可以将 Unified Manager 部署为虚拟设
 
 * 您需要的内容 *
 
-您应查看系统要求。在部署 Unified Manager 虚拟设备之前进行必要的更改。
+您应查看系统要求。在部署Unified Manager虚拟设备之前进行必要的更改。
 
-link:concept_virtual_infrastructure_or_hardware_system_requirements.html["虚拟基础架构要求"]
+请参见 link:concept_virtual_infrastructure_or_hardware_system_requirements.html["虚拟基础架构要求"]。
 
-link:reference_vmware_software_and_installation_requirements.html["VMware 软件和安装要求"]
+请参见 link:reference_vmware_software_and_installation_requirements.html["VMware 软件和安装要求"]。
 
 如果使用动态主机配置协议（ DHCP ），请确保 DHCP 服务器可用，并且 DHCP 和虚拟机（ VM ）网络适配器配置正确。默认情况下， DHCP 已配置。
 
@@ -52,7 +52,14 @@ link:reference_vmware_software_and_installation_requirements.html["VMware 软件
 . 在 vSphere Client 中，单击 * 文件 * > * 部署 OVF 模板 * 。
 . 完成部署 OVF 模板向导以部署 Unified Manager 虚拟设备。
 +
-在 Networking Configuration 页面上：
+在Review Details页面上：
+
++
+** 验证发布者部分的详细信息。消息* Entrust-Code Signing - OVCS2 (可信证书)*用于确认已下载的的的完整性 `OVA` 文件+如果您看到消息* Entruste代码签名- OVCS2 (证书无效)*、请将VMware vCenter Server升级到7.0U3C或更高版本。
+
+
++
+在自定义模板页面上：
 
 +
 ** 使用 DHCP 和 IPv4 寻址时，请将所有字段留空。

@@ -50,3 +50,5 @@ summary: 您可以查看有关所有 SMB/CIFS 共享的详细信息，例如共�
 
 |===
 
+
+有关详细信息，请参见 link:../api-automation/concept_provision_file_share.html["使用API配置CIFS和NFS文件共享"]。

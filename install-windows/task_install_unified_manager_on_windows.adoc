@@ -17,10 +17,10 @@ summary: 您可以安装 Unified Manager 来监控数据存储容量，可用性
 
 * 您计划安装 Unified Manager 的系统应满足系统和软件要求。
 +
-link:concept_virtual_infrastructure_or_hardware_system_requirements.html["硬件系统要求"]
+请参见 link:concept_virtual_infrastructure_or_hardware_system_requirements.html["硬件系统要求"]。
 
 +
-link:reference_windows_software_and_installation_requirements.html["Windows 软件和安装要求"]
+请参见 link:reference_windows_software_and_installation_requirements.html["Windows 软件和安装要求"]。
 
 +
 [NOTE]

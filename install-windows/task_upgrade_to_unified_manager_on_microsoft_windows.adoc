@@ -11,16 +11,16 @@ summary: 您可以通过在 Windows 平台上下载并运行安装文件来升�
 
 
 [role="lead"]
-您可以通过在Windows平台上下载并运行安装文件将Unified Manager 9.9或9.10升级到9.11。
+您可以通过在Windows平台上下载并运行安装文件将Unified Manager 9.10或9.11升级到9.12。
 
 * 您需要的内容 *
 
 * 要升级 Unified Manager 的系统应满足系统和软件要求。
 +
-link:concept_virtual_infrastructure_or_hardware_system_requirements.html["硬件系统要求"]
+请参见 link:concept_virtual_infrastructure_or_hardware_system_requirements.html["硬件系统要求"]。
 
 +
-link:reference_windows_software_and_installation_requirements.html["Windows 软件和安装要求"]
+请参见 link:reference_windows_software_and_installation_requirements.html["Windows 软件和安装要求"]。
 
 +
 [NOTE]
@@ -34,7 +34,7 @@ link:reference_windows_software_and_installation_requirements.html["Windows 软�
 在开始升级之前，请确保系统上已安装 Microsoft .NET 4.5.2 或更高版本。
 
 ====
-* 在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.28、则Unified Manager升级过程会自动将MySQL升级到8.0.28。您不能将早期版本的 MySQL 独立升级到 8.0.27 。
+* 在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.30、则Unified Manager升级过程会自动将MySQL升级到8.0.30。您不能将早期版本的MySQL独立升级到8.0.30。
 * 您应具有 Windows 管理员权限。确保您的用户名不以感叹号 "` ！` " 开头。如果运行此安装的用户名以 "` ！` " 开头，则安装 Unified Manager 可能会失败。
 * 您应具有有效的凭据才能登录到 NetApp 支持站点。
 * 为避免数据丢失，如果在升级期间存在问题描述，则应已为 Unified Manager 计算机创建备份。
@@ -54,7 +54,7 @@ link:reference_windows_software_and_installation_requirements.html["Windows 软�
 .步骤
 . 登录到 NetApp 支持站点，然后导航到 Unified Manager 的 Download 页面：
 +
-https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp 支持站点"]
+https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp 支持站点"]。
 
 . 选择所需的 Unified Manager 版本并接受最终用户许可协议（ EULA ）。
 . 将 Unified Manager Windows 安装文件下载到 Windows 系统上的目标目录。
@@ -69,7 +69,7 @@ This setup will perform an upgrade of Unified Manager. Do you want to continue?
 ----
 . 单击 * 是 * ，然后单击 * 下一步 * 。
 . 输入在安装期间设置的 MySQL8 根密码，然后单击 * 下一步 * 。
-. 登录到 Unified Manager Web UI 并验证版本号。
+. 在支持的Web浏览器上的新窗口中启动Web UI、然后登录以使用升级后的Unified Manager版本。
 . 如果您的Windows系统上安装了活动防病毒软件、请确保在升级完成后手动从防病毒扫描中排除以下路径：
 +
 ** Unified Manager 数据目录

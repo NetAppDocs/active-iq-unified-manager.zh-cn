@@ -104,11 +104,9 @@ MySQL
 |===
 [NOTE]
 ====
-用于 HTTP 和 HTTPS 通信的端口（端口 80 和 443 ）可以使用 Unified Manager 维护控制台进行更改。有关详细信息、请参见_Configuring Active IQ Unified Manager。
+在Windows系统上安装Unified Manager时、MySQL 3306的默认端口仅限于本地主机。这不会影响保留先前配置的任何升级情形。可以修改此配置、并使用将此连接提供给其他主机 `Control access to MySQL port 3306` 选项。有关信息，请参见 link:../config/reference_additional_menu_options.html["其他菜单选项"]。用于 HTTP 和 HTTPS 通信的端口（端口 80 和 443 ）可以使用 Unified Manager 维护控制台进行更改。有关详细信息，请参见 link:../config/concept_configure_unified_manager.html["正在配置 Active IQ Unified Manager"]。
 
 ====
-link:../config/concept_configure_unified_manager.html["正在配置 Active IQ Unified Manager"]
-
 
 
 == 与 Unified Manager 服务器的连接
@@ -141,8 +139,6 @@ HTTPS
 NDMP
  a| 
 10000 TCP
-
-7/TCP
  a| 
 用于某些 Snapshot 还原操作。
 
@@ -155,7 +151,7 @@ HTTPS
  a| 
 443.
  a| 
-用于发送 AutoSupport 信息。需要访问 Internet 才能执行此功能。
+用于发送 AutoSupport 信息。需要访问Internet才能执行此功能。
 
 
 

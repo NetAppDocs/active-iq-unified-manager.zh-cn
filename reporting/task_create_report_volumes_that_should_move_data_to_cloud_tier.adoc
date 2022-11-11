@@ -31,7 +31,7 @@ summary: '您可以创建一个报告，其中包含当前驻留在 FabricPool �
 . 将 " `D` 类型`" 列拖放到 "` 云建议 " 列附近。
 . 单击筛选器图标，添加以下三个筛选器，然后单击 * 应用筛选器 * ：
 +
-** 磁盘类型包含 FabricPool
+** 磁盘类型包含FabricPool
 ** 云建议包含层
 ** 冷数据大于 10 GBimage:../media/filter_cold_data.gif[""]
 

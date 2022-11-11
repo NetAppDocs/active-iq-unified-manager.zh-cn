@@ -49,11 +49,11 @@ summary: 通过生成用户和组配额电子邮件地址的规则页面，您�
 
 规则的语法必须为以下语法之一：
 
-* 如果（ `valid variableoperator` * ），则 `email ID@domain name`
+* 如果( `valid variableoperator *`)然后 `email ID@domain name`
 +
 if 是一个关键字，并且小写。运算符为 = 。电子邮件 ID 可以包含任意字符，有效变量 $USER_OR_GROUP ， $USER 或 $GROUP ，也可以包含任意字符和有效变量 $USER_OR_GROUP ， $USER 或 $GROUP 的组合。域名可以包含任意字符，有效变量 $domain ，也可以包含任意字符和有效变量 $domain 的组合。有效变量可以是大写或小写，但不能是两者的组合。例如， $domain 和 $domain 是有效的，但 $Domain 不是有效的变量。
 
-* 如果（ `valid variableoperator "tring"`` ），则 `email ID@domain name`
+* 如果( `valid variableoperator `string``)然后 `email ID@domain name`
 +
 if 是一个关键字且小写。运算符可以是包含或 = 。电子邮件 ID 可以包含任意字符，有效变量 $USER_OR_GROUP ， $USER 或 $GROUP ，也可以包含任意字符和有效变量 $USER_OR_GROUP ， $USER 或 $GROUP 的组合。域名可以包含任意字符，有效变量 $domain ，也可以包含任意字符和有效变量 $domain 的组合。有效变量可以是大写或小写，但不能是两者的组合。例如， $domain 和 $domain 是有效的，但 $Domain 不是有效的变量。
 

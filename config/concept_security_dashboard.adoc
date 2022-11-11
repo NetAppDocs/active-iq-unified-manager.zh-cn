@@ -36,7 +36,7 @@ summary: 您可以在 Unified Manager 上启用或禁用合规性监控的安全
 启用或禁用的安全合规性参数可能会直接影响集群和 Storage VM 屏幕上的默认安全视图，报告和计划报告。如果您在修改安全参数之前已从这些屏幕上传了 Excel 报告，则下载的 Excel 报告可能会出现故障。
 
 ====
-. 要启用或禁用 ONTAP 集群的自定义设置，请在 * 集群 * 下选择所需的常规设置。有关用于自定义集群合规性的选项的信息，请参见 link:../health-checker/reference_cluster_compliance_categories.html["集群合规性类别"]
+. 要启用或禁用 ONTAP 集群的自定义设置，请在 * 集群 * 下选择所需的常规设置。有关用于自定义集群合规性的选项的信息，请参见 link:../health-checker/reference_cluster_compliance_categories.html["集群合规性类别"]。
 . 要启用或禁用 Storage VM 的自定义设置，请在 * Storage VM* 下选择所需的常规设置。有关用于自定义 Storage VM 合规性的选项的信息，请参见 link:../health-checker/reference_svm_compliance_categories.html["Storage VM 合规性类别"]。
 
 

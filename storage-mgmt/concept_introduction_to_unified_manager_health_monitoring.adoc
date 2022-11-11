@@ -35,7 +35,10 @@ Unified Manager 利用了用于 ONTAP 存储对象的物理和逻辑空间的概
 
 == 容量测量单位
 
-Unified Manager 会根据 1024 （ 2^10^ ）字节的二进制单元计算存储容量。在 ONTAP 9.10.0 及更早版本中，这些单位显示为 KB ， MB ， GB ， TB 和 PB 。从 ONTAP 9.10.1 开始，它们在 Unified Manager 中显示为 KiB ， MIB ， GiB ， TiB 和 PIB 。注意：对于所有版本的 ONTAP ，用于吞吐量的单位仍为 KB/ 秒（ Kbps ）， MB/ 秒（ MBps ）， GB/ 秒（ Gbps ）或 TB/ 秒（ Tbps ）等。
+Unified Manager 会根据 1024 （ 2^10^ ）字节的二进制单元计算存储容量。在 ONTAP 9.10.0 及更早版本中，这些单位显示为 KB ， MB ， GB ， TB 和 PB 。从 ONTAP 9.10.1 开始，它们在 Unified Manager 中显示为 KiB ， MIB ， GiB ， TiB 和 PIB 。
+
+
+NOTE: 对于所有版本的ONTAP 、用于吞吐量的单位仍为KB/秒(Kbps)、MB/秒(MBps)、GB/秒(Gbps)或TB/秒(Tbps)等。
 
 [cols="4*"]
 |===

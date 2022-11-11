@@ -48,7 +48,7 @@ image::../media/vm_workflow.gif[VM 工作流]
 * Unified Manager 不支持 ONTAP 外部映射到 vCenter Server 实例的数据存储库。也不支持在这些数据存储库上具有虚拟磁盘的任何 VM 。
 * 不支持跨多个 LUN 的数据存储库。
 * 不支持使用网络地址转换（ Network Address Translation ， NAT ）映射数据 LIF （访问端点）的数据存储库。
-* 不支持将卷或 LUN 导出为多个 LIF 配置中具有相同 IP 地址的不同集群上的数据存储库，因为 UM 无法确定哪个数据存储库属于哪个集群。
+* 不支持在多LIF配置中将卷或LUN导出为具有相同IP地址的不同集群上的数据存储库、因为Unified Manager无法确定哪个数据存储库属于哪个集群。
 +
 示例：假设集群 A 具有数据存储库 A数据存储库 A 通过 IP 地址为 x.x.x.x 的数据 LIF 导出，并在此数据存储库上创建 VM A 。同样，集群 B 也具有数据存储库 B数据存储库 B 通过 IP 地址为 x.x.x.x 的数据 LIF 导出，并在数据存储库 B 上创建 VM BUM 既无法将 VM A 拓扑的数据存储库 A 映射到相应的 ONTAP 卷 /LUN ，也无法映射 VM B
 

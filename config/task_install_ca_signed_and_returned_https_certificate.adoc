@@ -35,7 +35,7 @@ summary: 您可以在证书颁发机构签名并返回安全证书后上传并�
 . 在显示的对话框中，单击 * 选择文件 ...* 以找到要上传的文件。
 . 选择文件，然后单击 * 安装 * 以安装此文件。
 +
-link:concept_install_https_certificate_generated_using_external_tools.html["安装使用外部工具生成的 HTTPS 证书"]
+有关信息，请参见 link:concept_install_https_certificate_generated_using_external_tools.html["安装使用外部工具生成的 HTTPS 证书"]。
 
 
 

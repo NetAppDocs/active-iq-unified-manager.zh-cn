@@ -11,4 +11,4 @@ summary: 您可以安装 Unified Manager 软件，升级到更高版本的软件
 
 
 [role="lead"]
-您可以安装 Unified Manager 软件，升级到更高版本的软件或删除 Unified Manager 应用程序。
+您可以安装Unified Manager、升级到更高版本或删除Unified Manager应用程序。

@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: cluster, connectivity, status, definitions 
 summary: '在 MetroCluster 配置中，集群之间的连接可以是以下状态之一： " 最佳 " ， " 受影响 " 或 " 已关闭 " 。了解连接状态可以有效地管理 MetroCluster 配置。' 
 ---
-= 集群连接状态定义
+= 基于FC的MetroCluster 配置的集群连接状态定义
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在 MetroCluster 配置中，集群之间的连接可以是以下状态之一： " 最佳 " ， " 受影响 " 或 " 已关闭 " 。了解连接状态可以有效地管理 MetroCluster 配置。
+在基于FC的MetroCluster 配置中、集群之间的连接可以是以下状态之一："最佳"、"受影响"或"已关闭"。了解连接状态可以有效地管理 MetroCluster 配置。
 
 |===
 | 连接状态 | Description | 显示图标 

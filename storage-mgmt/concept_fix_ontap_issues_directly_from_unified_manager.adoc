@@ -21,4 +21,4 @@ Unified Manager 会向集群发送 ONTAP 命令以执行请求的修复。修复
 
 通过某些管理操作，您可以使用 * 全部修复 * 按钮在多个存储对象上修复同一个问题描述。例如，可能有 5 个卷发生 " 卷空间已满 " 事件，可通过单击 " 启用卷自动增长 " 的 * 全部修复 * 管理操作来解决此问题。一键即可在 5 个卷上修复此问题描述。
 
-有关可通过自动修复管理的 ONTAP 问题和功能的信息，请参见 link:../storage-mgmt/reference_what_ontap_issues_can_unified_manager_fix.html["Unified Manager 可以修复哪些问题"]
+有关可通过自动修复管理的 ONTAP 问题和功能的信息，请参见 link:../storage-mgmt/reference_what_ontap_issues_can_unified_manager_fix.html["Unified Manager 可以修复哪些问题"]。

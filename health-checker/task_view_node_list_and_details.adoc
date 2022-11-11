@@ -46,3 +46,10 @@ summary: 您可以使用运行状况：所有节点视图查看集群中的节�
 
 |===
 
+
+有关详细信息，请参见
+
+* link:../performance-checker/performance-view-all.html#performance-all-nodes-view["性能：所有节点视图"]
+* link:../performance-checker/concept_view_node_and_aggregate_available_iops_values.html["查看节点和聚合的可用 IOPS 值"]
+* link:../performance-checker/concept_view_node_and_aggregate_performance_capacity_used_values.html["查看节点和聚合已用性能容量值"]
+

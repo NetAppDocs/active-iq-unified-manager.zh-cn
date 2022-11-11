@@ -11,11 +11,74 @@ summary: 连接事件可为您提供有关集群组件之间以及 MetroCluster 
 
 
 [role="lead"]
-连接事件可为您提供有关集群组件之间以及 MetroCluster 配置中集群之间的连接的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+连接事件可为您提供有关集群组件之间以及基于FC和MetroCluster 基于IP的MetroCluster 配置中的集群之间的连接的信息、以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
 
 
 
-== 影响区域：可用性
+== 这两种配置中通用的事件
+
+这些连接事件对于基于FC的MetroCluster 和基于IP的MetroCluster 配置都很常见。
+
+
+
+=== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+MetroCluster 配对节点之间的所有链路已关闭（ ocumEvtMetroClusterAllLinksBetweenPartnersDown ）
+ a| 
+意外事件
+ a| 
+MetroCluster 关系
+ a| 
+严重
+
+
+
+ a| 
+无法通过对等网络访问 MetroCluster 合作伙伴（ ocumEvtMetroClusterPartnersNotReachebleOverPeeringNetwork ）
+ a| 
+意外事件
+ a| 
+MetroCluster 关系
+ a| 
+严重
+
+
+
+ a| 
+受影响的 MetroCluster 灾难恢复功能（ ocumEvtMetroClusterDRStatusImpacted ）
+ a| 
+风险
+ a| 
+MetroCluster 关系
+ a| 
+严重
+
+
+
+ a| 
+MetroCluster 配置已切换（ ocumEvtMetroClusterDRStatusImpacted ）
+ a| 
+风险
+ a| 
+MetroCluster 关系
+ a| 
+警告
+
+|===
+
+
+== 基于FC的MetroCluster 配置
+
+这些事件与基于FC的MetroCluster 配置相关。
+
+
+
+=== 影响区域：可用性
 
 |===
 | 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
@@ -33,17 +96,6 @@ MetroCluster 交换机间连接
 
 
  a| 
-MetroCluster 配对节点之间的所有链路已关闭（ ocumEvtMetroClusterAllLinksBetweenPartnersDown ）
- a| 
-意外事件
- a| 
-MetroCluster 关系
- a| 
-严重
-
-
-
- a| 
 FC-SAS 网桥到存储堆栈的链路已关闭（ ocumEvtBridgeSasPortDown ）
  a| 
 意外事件
@@ -55,17 +107,6 @@ MetroCluster 网桥堆栈连接
 
 
  a| 
-MetroCluster 配置已切换（ ocumEvtMetroClusterDRStatusImpacted ）
- a| 
-风险
- a| 
-MetroCluster 关系
- a| 
-警告
-
-
-
- a| 
 MetroCluster 配置已部分切换（ ocumEvtMetroClusterDRStatusPartiallyImpacted ）
  a| 
 风险
@@ -73,28 +114,6 @@ MetroCluster 配置已部分切换（ ocumEvtMetroClusterDRStatusPartiallyImpact
 MetroCluster 关系
  a| 
 error
-
-
-
- a| 
-受影响的 MetroCluster 灾难恢复功能（ ocumEvtMetroClusterDRStatusImpacted ）
- a| 
-风险
- a| 
-MetroCluster 关系
- a| 
-严重
-
-
-
- a| 
-无法通过对等网络访问 MetroCluster 合作伙伴（ ocumEvtMetroClusterPartnersNotReachebleOverPeeringNetwork ）
- a| 
-意外事件
- a| 
-MetroCluster 关系
- a| 
-严重
 
 
 
@@ -194,5 +213,40 @@ MetroCluster 交换机网桥连接
 节点堆栈连接
  a| 
 警告
+
+|===
+
+
+== 基于IP的MetroCluster 配置
+
+这些事件与基于IP的MetroCluster 配置相关。
+
+
+
+=== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+MetroCluster IP站点间连接状态为已关闭(mccIntersiteeconnectivityStatusDown)
+ a| 
+风险
+ a| 
+MetroCluster 关系
+ a| 
+严重
+
+
+
+ a| 
+MetroCluser-IP节点到交换机的连接脱机(mccIpPortStatusOffline)
+ a| 
+风险
+ a| 
+Node
+ a| 
+error
 
 |===

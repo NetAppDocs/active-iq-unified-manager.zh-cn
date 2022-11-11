@@ -18,3 +18,5 @@ Unified Manager 提供了一个信息板，用于根据适用于 ONTAP 9_ 的 _N
 请参见 http://www.netapp.com/us/media/tr-4569.pdf["《适用于 ONTAP 9 的 NetApp 安全加固指南》"] （ TR-4569 ），了解详细的建议和解决方案。
 
 除了报告安全状态之外， Unified Manager 还会为存在安全违规的任何集群或 SVM 生成安全事件。您可以在事件管理清单页面中跟踪这些问题，并为这些事件配置警报，以便在发生新的安全事件时通知存储管理员。
+
+有关详细信息，请参见 link:../health-checker/concept_what_security_criteria_is_being_evaluated.html["正在评估哪些安全标准"]。

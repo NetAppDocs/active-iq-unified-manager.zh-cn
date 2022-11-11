@@ -25,7 +25,7 @@ Unified Manager 包括以下功能：
 
 
 * 查看集群发现和监控状态
-* MetroCluster 配置：查看和监控集群组件的配置， MetroCluster 交换机和网桥，问题和连接状态
+* 基于FC和IP的MetroCluster 配置：查看和监控集群组件的配置、问题和连接状态。用于基于FC配置的MetroCluster 的MetroCluster 交换机和网桥
 * 增强的警报，事件和阈值基础架构
 * LDAP ， LDAPS ， SAML 身份验证和本地用户支持
 * RBAC （用于一组预定义角色）

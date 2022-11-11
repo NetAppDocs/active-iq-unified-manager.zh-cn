@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: data mirror, status, definitions 
 summary: 'MetroCluster 配置可提供数据镜像，并在整个站点不可用时额外提供启动故障转移的功能。在 MetroCluster 配置中，集群之间的数据镜像状态可以是 " 正常 " 或 " 镜像不可用 " 。了解状态后，您可以有效地管理 MetroCluster 配置。' 
 ---
-= 数据镜像状态定义
+= 基于FC的MetroCluster 的数据镜像状态定义
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-MetroCluster 配置可提供数据镜像，并在整个站点不可用时额外提供启动故障转移的功能。在 MetroCluster 配置中，集群之间的数据镜像状态可以是 " 正常 " 或 " 镜像不可用 " 。了解状态后，您可以有效地管理 MetroCluster 配置。
+基于FC的MetroCluster 配置可提供数据镜像功能、并可在整个站点不可用时启动故障转移。在基于FC的MetroCluster 配置中、集群之间的数据镜像状态可以是"正常"或"镜像不可用"。了解状态后，您可以有效地管理 MetroCluster 配置。
 
 |===
 | 数据镜像状态 | Description | 显示图标 

@@ -62,7 +62,7 @@ summary: '您可以使用 " 远程身份验证 " 页面配置 Unified Manager �
 
 *** 使用安全连接
 +
-指定使用安全 LDAP 与 LDAPS 身份验证服务器进行通信。
+指定使用安全LDAP与LDAP身份验证服务器进行通信。
 
 
 
@@ -111,6 +111,10 @@ summary: '您可以使用 " 远程身份验证 " 页面配置 Unified Manager �
 *** 组对象类
 +
 指定远程身份验证服务器中所有组的对象类。
+
++
+
+NOTE: 为_Member_、_User Object Class_和_Group Object Class_属性输入的值应与在Active Directory、OpenLDAP和LDAP配置中添加的值相同。否则、身份验证可能会失败。
 
 *** 使用安全连接
 +

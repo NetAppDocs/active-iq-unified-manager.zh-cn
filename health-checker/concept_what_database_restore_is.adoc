@@ -30,4 +30,4 @@ link:../config/task_generate_an_https_security_certificate_ocf.html["生成 HTTP
 
 link:../config/task_enable_saml_authentication_um.html["启用 SAML 身份验证"]
 
-link:..//config/concept_authentication_with_active_directory_or_openldap.html["使用 Active Directory 或 OpenLDAP 进行身份验证"]
+link:../config/concept_authentication_with_active_directory_or_openldap.html["使用 Active Directory 或 OpenLDAP 进行身份验证"]

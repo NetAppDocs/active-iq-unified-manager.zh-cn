@@ -23,4 +23,4 @@ image::../media/management_actions.png[管理操作]
 . 要解决 Unified Manager 可以修复的任何问题，请单击 * 修复它 * 按钮。要修复多个对象上的问题描述，请单击 * 全部修复 * 按钮。
 
 
-有关可通过自动修复修复修复的问题的信息，请参见 link:..//storage-mgmt/reference_what_ontap_issues_can_unified_manager_fix.html["Unified Manager 可以修复哪些问题"]
+有关可通过自动修复修复修复的问题的信息，请参见 link:..//storage-mgmt/reference_what_ontap_issues_can_unified_manager_fix.html["Unified Manager 可以修复哪些问题"]。

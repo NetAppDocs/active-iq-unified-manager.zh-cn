@@ -47,4 +47,4 @@ summary: 由于性能阈值策略已分配给存储对象，因此，如果移�
 
 在 MetroCluster 配置中，从一个集群移动到另一个集群的对象不会保留其用户定义的阈值策略设置。如果需要，您可以对已移至配对集群的卷和 LUN 应用阈值策略。对象移回其原始集群后，系统将自动重新应用用户定义的阈值策略。
 
-link:../storage-mgmt/concept_volume_behavior_during_switchover_and_switchback.html["切换和切回期间的卷行为"]
+有关信息，请参见 link:../storage-mgmt/concept_volume_behavior_during_switchover_and_switchback.html["切换和切回期间的卷行为"]。

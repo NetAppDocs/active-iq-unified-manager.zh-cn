@@ -36,4 +36,7 @@ summary: '在运行状况：所有聚合视图中，您可以监控聚合清单�
 
 * 相关信息 *
 
-link:../health-checker/reference_health_aggregate_details_page.html["聚合 / 运行状况详细信息页面"]
+* link:../health-checker/reference_health_aggregate_details_page.html["聚合 / 运行状况详细信息页面"]
+* link:../performance-checker/performance-view-all.html#performance-all-aggregates-view["性能：所有聚合视图"]
+* link:../reporting/concept_customize_aggregate_capacity_reports.html["自定义聚合容量报告"]
+

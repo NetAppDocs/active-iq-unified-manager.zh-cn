@@ -25,7 +25,7 @@ summary: 要查看虚拟机（ VM ）的性能并对其进行故障排除，必�
 有关详细信息， `D请参见 VMware 文档中 _vSphere 监控和性能指南 _ 的 " 数据收集级别` " 一节。
 
 * vCenter Server 中的延迟值以毫秒为单位进行配置，而不是以微秒为单位进行配置，以便成功计算延迟值。
-* 将数据存储库添加到 vCenter Server 时，您可以同时使用主机的 IP 地址或完全限定域名（ FQDN ）。如果要添加 FQDN ，请确保 Unified Manager 服务器可以解析域名。例如，对于 Linux 安装，请确保在 `` /etc/resolv.conf` 文件中添加域名。
+* 将数据存储库添加到 vCenter Server 时，您可以同时使用主机的 IP 地址或完全限定域名（ FQDN ）。如果要添加 FQDN ，请确保 Unified Manager 服务器可以解析域名。例如、对于Linux安装、请确保在中添加了域名 `/etc/resolv.conf` 文件
 * vCenter Server 的当前时间与 vCenter Server 时区同步。
 * 可以访问 vCenter Server 以成功发现。
 * 将 vCenter Server 添加到 Unified Manager 时，您对 VMware SDK 具有读取访问权限。这是配置轮询所必需的。

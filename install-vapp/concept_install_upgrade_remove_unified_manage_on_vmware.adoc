@@ -11,4 +11,4 @@ summary: 在 VMware vSphere 系统上，您可以安装 Unified Manager 软件�
 
 
 [role="lead"]
-在 VMware vSphere 系统上，您可以安装 Unified Manager 软件，升级到更高版本的软件或删除 Unified Manager 虚拟设备。
+在VMware vSphere系统上、您可以安装Unified Manager、升级到更高版本的软件或删除Unified Manager虚拟设备(vApp)。

@@ -16,7 +16,7 @@ summary: 只需一个命令，即可从 Red Hat Enterprise Linux 或 CentOS 主�
 * 您需要的内容 *
 
 * 您必须对要从中删除 Unified Manager 的服务器具有 root 用户访问权限。
-* 必须在 Red Hat 计算机上禁用安全增强型 Linux （ SELinux ）。使用 `setenforce 0` 命令将 SELinux 运行时模式更改为 "`Permissive` " 。
+* 必须在Linux系统上禁用安全增强型Linux (SELinux)。使用将SELinux运行时模式更改为"`Permissive`" `setenforce 0` 命令：
 * 在删除软件之前，必须从 Unified Manager 服务器中删除所有集群（数据源）。
 
 

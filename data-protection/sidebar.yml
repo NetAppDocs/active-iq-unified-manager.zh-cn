@@ -95,8 +95,6 @@ entries:
     url: "/data-protection/task_resynchronize_protection_relationships.html"
   - title: 通过卷关系页面反转保护关系
     url: "/data-protection/task_reverse_protection_relationships.html"
-  - title: 使用运行状况 / 所有卷视图还原数据
-    url: "/data-protection/task_restore_data_use_health_volumes_page.html"
   - title: 使用卷 / 运行状况详细信息页面还原数据
     url: "/data-protection/task_restore_data_use_health_volume_details_page.html"
   - title: 什么是资源池

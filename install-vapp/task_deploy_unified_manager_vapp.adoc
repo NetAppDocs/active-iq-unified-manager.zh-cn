@@ -17,7 +17,7 @@ summary: 部署 Unified Manager 包括下载软件，部署虚拟设备，创建
 
 * 您应验证并完成部署的系统要求。
 +
-link:concept_requirements_for_installing_unified_manager.html["系统要求"]
+请参见 link:concept_requirements_for_installing_unified_manager.html["系统要求"]。
 
 * 确保您具有以下信息：
 +
@@ -42,6 +42,6 @@ link:concept_requirements_for_installing_unified_manager.html["系统要求"]
 完成部署和初始设置后，您可以在维护控制台中添加集群或配置其他网络设置，然后访问 Web UI 。
 
 .步骤
-. link:task_download_unified_manager_ova_file.html["下载 Unified Manager"]
-. link:task_deploy_unified_manager_virtual_appliance_vapp.html["部署 Unified Manager 虚拟设备"]
+. 按照中的步骤进行操作 link:task_download_unified_manager_ova_file.html["下载 Unified Manager"]。
+. 此外、请按照中的步骤进行操作 link:task_deploy_unified_manager_virtual_appliance_vapp.html["部署 Unified Manager 虚拟设备"]。
 

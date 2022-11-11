@@ -62,6 +62,5 @@ summary: 首次安装 Active IQ Unified Manager 时，将安装默认 HTTPS 证�
 |===
 . 单击 * 是 * 重新生成证书。
 . 重新启动 Unified Manager 服务器，以使新证书生效。
+. 通过查看 HTTPS 证书来验证新证书信息。
 
-
-通过查看 HTTPS 证书来验证新证书信息。

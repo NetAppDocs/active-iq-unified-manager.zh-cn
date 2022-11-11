@@ -71,7 +71,7 @@ Capacity
  a| 
 保护
  a| 
-显示受 SVM-DR 关系保护的 Storage VM ，受 SnapMirror 关系保护的卷以及受 Snapshot 保护的卷的数量。
+显示受SVM-DR关系保护的Storage VM数、受SnapMirror关系保护的卷数、受Snapshot保护的卷数以及受MetroCluster 保护的集群数。
 
 
 

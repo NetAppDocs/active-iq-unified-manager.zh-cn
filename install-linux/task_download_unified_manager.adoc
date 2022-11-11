@@ -29,8 +29,33 @@ https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/
 +
 [NOTE]
 ====
-确保为 Red Hat Enterprise Linux 系统下载正确版本的安装程序文件。根据您安装的是 Red Hat Enterprise Linux 7 还是 8 ，确保下载适当版本的 Unified Manager ` .zip` 文件。
+** 确保为 Red Hat Enterprise Linux 系统下载正确版本的安装程序文件。根据您安装的是 Red Hat Enterprise Linux 7 还是 8 ，确保下载适当版本的 Unified Manager ` .zip` 文件。
+** NetApp建议您下载代码签名证书 (`.pem`)和数字签名 (`.sig`)和 `.zip` 文件
+
 
 ====
-. 验证校验和以确保软件下载正确。
+. 验证已下载软件的校验和是否完整性。
+. 如果您已下载代码签名证书和数字签名、则可以验证安装程序文件的完整性。您可以使用以下命令验证安装程序文件的完整性：
++
+** 此命令将使用代码签名证书中的公有 密钥创建一个文件：
++
+[listing]
+----
+openssl x509 -pubkey -noout -in AIQUM-RHEL-CLIENT-INTER-ROOT.pem > <public_key_file_name>
+----
++
+*** 其中* AIQUM-RHEL-client-inter-root.pem*是包含代码签名证书的文件。
+
+
+** 此命令用于验证安装程序文件上的签名：
++
+[listing]
+----
+openssl dgst -sha256 -verify <public_key_file_name> -signature <signature_file_name> ActiveIQUnifiedManager-<version>.zip
+----
++
+类似的消息 `Verified Ok` 确认安装程序文件可安全使用。
+
+
+
 

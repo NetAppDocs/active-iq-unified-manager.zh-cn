@@ -39,7 +39,9 @@ NOTE: 在此输出中，上下文为 `default_t` 。您应将此上下文更改�
 
 . 执行以下步骤可根据您的挂载方式 ` /opt/netapp/data` 设置上下文。
 +
-.. 运行以下命令将上下文设置为`mysqld_db_t`：`semanage fcontext -a -t mysqld_db_t "/opt/netapp/data"```restorecon -R -R -v /opt/netapp/data`
+.. 运行以下命令将上下文设置为 `mysqld_db_t`：
+`semanage fcontext -a -t mysqld_db_t "/opt/netapp/data"
+`restorecon -R -v /opt/netapp/data`
 .. 如果已在 ` /etc/fstab` 中配置了 ` /opt/netapp/data` ，则应编辑 ` /etc/fstab` 文件。对于 ` /opt/netapp/data/` mount 选项，将 MySQL 标签添加为：
 +
 `context=system_u ： object_r ： mysqld_db_t ： s0`
@@ -146,7 +148,9 @@ NOTE: 在此输出中，上下文为 `default_t` 。您应将此上下文更改�
 
 . 执行以下步骤可根据您的挂载方式 ` /opt/NetApp` 设置上下文。
 +
-.. 运行以下命令将上下文设置为`mysqld_db_t`：`semanage fcontext -a -t mysqld_db_t "/opt/netapp"```restorecon -R -R -v /opt/netapp`
+.. 运行以下命令将上下文设置为 `mysqld_db_t`：
+`semanage fcontext -a -t mysqld_db_t "/opt/netapp"
+`restorecon -R -v /opt/netapp`
 .. 如果您已在 ` /etc/fstab` 中配置了 ` /opt/NetApp` ，请编辑 ` /etc/fstab` 文件。对于`/opt/netapp/` mount选项、将MySQL标签添加为：`context=system_u：object_r：mysqld_db_t：s0`
 .. 卸载，然后再次挂载 ` /opt/netapp/` 以启用上下文。
 .. 如果您使用的是直接NFS挂载、请运行以下命令将上下文设置为`mysqld_db_t`：`mount <nfsshare>：/<mountpoint>/opt/netapp -o context=system_u：object_r：mysqld_db_t：s0`

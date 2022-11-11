@@ -64,3 +64,5 @@ Required除了现有本地主机或其他网络地址之外，还可以使用其
 默认有效期为 397 天。如果您已从先前版本升级，则可能会看到先前的证书有效期未更改。
 
 
+
+有关详细信息，请参见 link:../config/task_generate_an_https_security_certificate_ocf.html["正在生成HTTPS证书"]。

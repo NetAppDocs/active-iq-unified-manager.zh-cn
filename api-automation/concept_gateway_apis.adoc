@@ -13,7 +13,7 @@ summary: 网关 API 具有使用 Active IQ Unified Manager 凭据运行 ONTAP RE
 [role="lead"]
 网关 API 具有使用 Active IQ Unified Manager 凭据运行 ONTAP REST API 和管理存储对象的优势。在 Unified Manager Web UI 中启用 API 网关功能后，可以使用这些 API 。
 
-Unified Manager REST API 仅支持在 Unified Manager 数据源（即 ONTAP 集群）上执行一组选择的操作。您可以通过 ONTAP API 使用其他功能。通过网关 API ， Unified Manager 可以成为一个直通接口，用于在 ONTAP 集群上执行所有 API 请求，而无需单独登录到每个数据中心集群。它作为一个管理点执行，用于在 Unified Manager 实例管理的 ONTAP 集群中运行 API 。通过 API 网关功能， Unified Manager 可以成为一个控制平面，您可以从该平面管理多个 ONTAP 集群，而无需单独登录到这些集群。通过网关 API ，您可以保持登录到 Unified Manager 的状态，并通过运行 ONTAP REST API 操作来管理 ONTAP 集群。
+Unified Manager REST API 仅支持在 Unified Manager 数据源（即 ONTAP 集群）上执行一组选择的操作。您可以通过 ONTAP API 使用其他功能。通过网关API、Unified Manager可以成为一个直通接口、用于在其管理的ONTAP 集群上执行所有API请求、而无需单独登录到每个数据中心集群。它作为一个管理点执行，用于在 Unified Manager 实例管理的 ONTAP 集群中运行 API 。通过 API 网关功能， Unified Manager 可以成为一个控制平面，您可以从该平面管理多个 ONTAP 集群，而无需单独登录到这些集群。通过网关 API ，您可以保持登录到 Unified Manager 的状态，并通过运行 ONTAP REST API 操作来管理 ONTAP 集群。
 
 [NOTE]
 ====
@@ -73,6 +73,9 @@ Unified Manager REST API 仅支持在 Unified Manager 数据源（即 ONTAP 集�
 == 了解 API 网关通道
 
 通过网关 API ，您可以通过 Unified Manager 管理 ONTAP 对象。Unified Manager 可管理集群和身份验证详细信息，并将请求重定向到 ONTAP REST 端点。网关 API 使用 API 网关基本 URL 将 URL 和 Hypermedia 转换为标题和响应正文中的应用程序状态引擎（ HATEOAS ）链接。网关 API 充当代理基础 URL ，您可以将 ONTAP REST URL 附加到该 URL 并执行所需的 ONTAP REST 端点。
+
+
+NOTE: 要使ONTAP API能够通过API网关成功运行、运行API的ONTAP 集群版本必须支持此API。运行ONTAP 集群不支持的API不会返回任何结果。
 
 在此示例中，网关 API （代理基本 URL ）为： ` +/gateway/ ｛ uuid ｝ /+`
 

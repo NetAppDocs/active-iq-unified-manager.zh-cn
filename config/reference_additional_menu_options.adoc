@@ -40,6 +40,10 @@ summary: 您可以使用以下菜单选项在 Unified Manager 服务器上执行
 
 
 
+* *备份还原*
++
+有关信息、请参见下的主题 link:../health-checker/concept_manage_backup_and_restore_operations.html["管理备份和还原操作"]。
+
 * * 性能轮询间隔配置 *
 +
 提供了一个选项，用于配置 Unified Manager 从集群收集性能统计数据的频率。默认收集间隔为 5 分钟。
@@ -50,6 +54,10 @@ summary: 您可以使用以下菜单选项在 Unified Manager 服务器上执行
 * * 查看 / 更改应用程序端口 *
 +
 提供了一个选项，可根据安全要求更改 Unified Manager 用于 HTTP 和 HTTPS 协议的默认端口。对于 HTTP ，默认端口为 80 ，对于 HTTPS ，默认端口为 443 。
+
+* *控制对MySQL端口3306*的访问
++
+控制主机对默认MySQL端口3306的访问。出于安全原因、在Linux、Windows和VMware vSphere系统上全新安装Unified Manager期间、通过此端口的访问仅限于本地主机。使用此选项可以在本地主机和远程主机之间切换此端口的可见性、也就是说、如果仅在您的环境中为本地主机启用了此端口、则也可以使此端口对远程主机可用。或者、如果为所有主机启用了、则只能将此端口的访问限制为本地主机。如果之前在远程主机上启用了访问、则在升级情形中会保留此配置。
 
 * * 退出 *
 +

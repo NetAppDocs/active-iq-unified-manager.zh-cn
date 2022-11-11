@@ -36,4 +36,9 @@ summary: '在运行状况：所有卷视图中，您可以监控卷清单。" �
 
 * 相关信息 *
 
-link:../reporting/task_create_report_to_view_available_volume_capacity_charts.html["创建报告以查看可用的卷容量图表"]
+* link:../health-checker/reference_health_volume_details_page.html["volume：运行状况详细信息页面"]
+* link:../performance-checker/performance-view-all.html#performance-all-volumes-view["性能：所有卷视图"]
+* link:../health-checker/task_view_antiransomware_status_of_all_volumes_storage_vms.html#view-security-details-of-all-volumes-with-anti-ransomware-detection["安全性：反勒索软件视图"]
+* link:../data-protection/task_view_volume_protection_relationships.html["查看卷保护关系"]
+* link:../reporting/task_create_report_to_view_available_volume_capacity_charts.html["创建报告以查看可用的卷容量图表"]
+

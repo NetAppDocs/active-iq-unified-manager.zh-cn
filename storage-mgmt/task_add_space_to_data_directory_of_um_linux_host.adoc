@@ -31,7 +31,7 @@ summary: '如果在最初设置 Linux 主机并安装 Unified Manager 时为 ` /
 +
 .. 为现有 ` /opt/netapp/data` 文件夹上的文件夹获取 SE Linux 类型：
 +
-`se_type=`ls -Z /opt/netapp/data| hz" ｛ print $4 ｝ "| hk -F ： " ｛ print $3 ｝ "| head -1``
+`se_type=`ls -Z /opt/netapp/data| awk '{print $4}'| awk -F: '{print $3}'| head -1`
 
 +
 系统将返回类似于以下内容的确认消息：

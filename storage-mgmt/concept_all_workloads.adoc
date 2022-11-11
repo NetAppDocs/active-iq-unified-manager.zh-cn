@@ -52,7 +52,7 @@ summary: 所有工作负载视图显示数据中心集群上所有可用工作�
 
 .步骤
 . 单击*存储>工作负载>所有工作负载>创建*。
-. 创建工作负载。有关信息，请参见 link:../storage-mgmt/concept_provision_and_manage_workloads.html["配置和管理工作负载"]
+. 创建工作负载。有关信息，请参见 link:../storage-mgmt/concept_provision_and_manage_workloads.html["配置和管理工作负载"]。
 
 
 
@@ -69,8 +69,8 @@ summary: 所有工作负载视图显示数据中心集群上所有可用工作�
 
 === 分析工作负载的性能和容量标准
 
-"* IOPS分析*"弹出窗口中的"*分析工作负载*"按钮将转到"工作负载分析"页面、在此可以选择一个时间范围并查看选定工作负载的延迟、吞吐量和容量趋势。有关工作负载分析器的详细信息、请参见 link:..//performance-checker/concept_troubleshooting_workloads_using_workload_analyzer.html["使用工作负载分析器对工作负载进行故障排除"]
+"* IOPS分析*"弹出窗口中的"*分析工作负载*"按钮将转到"工作负载分析"页面、在此可以选择一个时间范围并查看选定工作负载的延迟、吞吐量和容量趋势。有关工作负载分析器的详细信息、请参见 link:..//performance-checker/concept_troubleshooting_workloads_using_workload_analyzer.html["使用工作负载分析器对工作负载进行故障排除"]。
 
 您可以单击 * 性能视图 * 列中的条形图图标来查看有关工作负载的性能信息以帮助进行故障排除。要在 " 工作负载分析 " 页面上查看性能和容量图表以分析对象，请单击 * 分析工作负载 * 按钮。
 
-有关详细信息，请参见 link:../performance-checker/reference_what_data_does_workload_analyzer_display.html["工作负载分析器显示的数据"]
+有关详细信息，请参见 link:../performance-checker/reference_what_data_does_workload_analyzer_display.html["工作负载分析器显示的数据"]。
