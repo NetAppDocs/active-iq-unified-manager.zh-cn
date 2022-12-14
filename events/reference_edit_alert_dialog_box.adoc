@@ -50,7 +50,7 @@ summary: 您可以编辑警报属性，例如与警报关联的资源，事件�
 +
 [NOTE]
 ====
-只有在选择特定资源类型的所有资源时，才会显示排除选项卡，例如 + Volumes+ 或 + Volumes whose name contains 'xyz'+
+只有在选择特定资源类型的所有资源时，才会显示排除选项卡，例如 +<<All Volumes>>+ 或 +<<All Volumes whose name contains 'xyz'>>+
 
 ====
 
