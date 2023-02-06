@@ -11,22 +11,15 @@ summary: Active IQ Unified Manager REST API 可通过任何可以问题描述 HT
 
 
 [role="lead"]
-Active IQ Unified Manager REST API 可通过任何可以问题描述 HTTP 请求的 Web 浏览器或编程平台进行访问。Unified Manager 支持基本的 HTTP 身份验证机制。在调用 Unified Manager REST API 之前，您必须对用户进行身份验证。
+Active IQ Unified Manager REST API可通过任何可以使用基本HTTP身份验证机制对HTTP请求执行问题描述 的REST客户端或编程平台进行访问。
 
-
-
-== REST 访问
-
-您可以使用任何可以问题描述 HTTP 请求的 Web 浏览器或编程平台来访问 Unified Manager REST API 。例如，登录到 Unified Manager 后，您可以在任何浏览器中键入 URL 以检索所有管理工作站的属性，例如管理工作站名称，密钥和 IP 地址。
+请求和响应示例：
 
 * * 请求 *
 +
-获取
-
-
-
 [listing]
 ----
+Get
 https://<IP address/hostname>:<port_number>/api/v2/datacenter/cluster/clusters
 ----
 * * 响应 *
@@ -107,7 +100,7 @@ https://<IP address/hostname>:<port_number>/api/v2/datacenter/cluster/clusters
 
 
 +
-要通过 Web 浏览器对 HTTP 请求进行问题描述发布，修补和删除，您必须使用浏览器插件。您也可以使用 curl 和 Perl 等脚本平台访问 REST API 。
+要从Web浏览器对HTTP请求进行问题描述 处理、您必须使用REST API浏览器插件。您也可以使用 curl 和 Perl 等脚本平台访问 REST API 。
 
 
 

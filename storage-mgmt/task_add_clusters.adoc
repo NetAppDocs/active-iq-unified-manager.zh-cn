@@ -46,10 +46,9 @@ summary: 您可以将集群添加到 Active IQ Unified Manager 中，以便监�
 
 ====
 +
-*客户端证书*：在对从ONTAP 收到的EMS消息进行身份验证期间使用。此证书属于ONTAP 、在将ONTAP 集群添加到Unified Manager时需要此证书。您不能将证书已过期的集群添加到 Unified Manager 中，如果客户端证书已过期，则应在添加集群之前重新生成该集群。但是，如果已添加且 Unified Manager 正在使用的集群的此证书到期，则 EMS 消息传送功能将在证书过期后继续运行。有关生成证书的信息、请参见知识库(KB)文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_renew_an_SSL_certificate_in_ONTAP_9["如何在System Manager用户界面中续订ONTAP 自签名证书"]。
+*客户端证书*：在对从ONTAP 收到的EMS消息进行身份验证期间使用。此证书属于ONTAP 、在将ONTAP 集群添加到Unified Manager时需要此证书。您不能将证书已过期的集群添加到 Unified Manager 中，如果客户端证书已过期，则应在添加集群之前重新生成该集群。但是，如果已添加且 Unified Manager 正在使用的集群的此证书到期，则 EMS 消息传送功能将在证书过期后继续运行。有关生成证书的信息、请参见知识库(KB)文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_renew_an_SSL_certificate_in_ONTAP_9["如何在System Manager用户界面中续订ONTAP 自签名证书"^]。
 
-* 一个 Unified Manager 实例可以支持特定数量的节点。如果您需要监控的环境超出支持的节点数，则必须安装一个额外的 Unified Manager 实例以监控某些集群。
-* 您可以通过两个 Unified Manager 实例监控一个集群，但前提是您已在集群上配置了另一个集群管理 LIF ，以便 Unified Manager 的每个实例都通过不同的 LIF 进行连接。
+* 一个 Unified Manager 实例可以支持特定数量的节点。如果您需要监控的环境超出支持的节点数，则必须安装一个额外的 Unified Manager 实例以监控某些集群。要查看支持的节点数列表、请参见 https://www.netapp.com/media/13504-tr4621.pdf["《 Unified Manager 最佳实践指南》"^]。
 
 
 .步骤

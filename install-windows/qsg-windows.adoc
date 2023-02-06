@@ -29,7 +29,7 @@ Unified Manager 在 64 位 Windows 操作系统上支持以下语言：
 * 可用磁盘空间： 100 GB 磁盘空间用于安装目录， 50 GB 磁盘空间用于 MySQL 数据目录
 
 
-有关详细的系统要求，请参见 link:../install-windows/concept_requirements_for_installing_unified_manager.html["Unified Manager 的安装要求"] 和 link:http://mysupport.netapp.com/matrix["互操作性表"]。
+有关详细的系统要求，请参见 link:../install-windows/concept_requirements_for_installing_unified_manager.html["Unified Manager 的安装要求"] 和 link:http://mysupport.netapp.com/matrix["互操作性表"^]。
 
 
 

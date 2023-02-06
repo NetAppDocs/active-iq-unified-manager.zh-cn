@@ -118,3 +118,5 @@ summary: 您可以将 Unified Manager 服务器配置为在生成事件或将事
 指定使用隐私协议时的密码。隐私密码适用于具有身份验证和加密功能的 SNMP 版本 3 。
 
 
+
+有关SNMP对象和陷阱的详细信息、您可以下载 link:https://mysupport.netapp.com/site/tools/tool-eula/aiqum-mib["Active IQ Unified Manager MIB"^] 从NetApp 支持站点。

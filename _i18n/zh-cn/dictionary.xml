@@ -638,14 +638,11 @@
   <block id="57a9b1480b1c7570789e3f0f9b348f2b" category="list-text">要执行管理功能，建议使用 Unified Manager UI 。</block>
   <block id="7e93035a4c7813c403d410e855881994" category="summary">Active IQ Unified Manager REST API 可通过任何可以问题描述 HTTP 请求的 Web 浏览器或编程平台进行访问。Unified Manager 支持基本的 HTTP 身份验证机制。在调用 Unified Manager REST API 之前，您必须对用户进行身份验证。</block>
   <block id="3abf2b6a30dc1d8e6cf4f22d87fc74eb" category="doc">Active IQ Unified Manager 中的 REST API 访问和身份验证</block>
-  <block id="b71baaae518b4cfba321e56a31bf83cf" category="section-title">REST 访问</block>
-  <block id="d05ac65fe6e169d97d8dc16811093c9e" category="paragraph">您可以使用任何可以问题描述 HTTP 请求的 Web 浏览器或编程平台来访问 Unified Manager REST API 。例如，登录到 Unified Manager 后，您可以在任何浏览器中键入 URL 以检索所有管理工作站的属性，例如管理工作站名称，密钥和 IP 地址。</block>
   <block id="4da26f41c3171457f3ddbf53c4ce357c" category="list-text">* 请求 *</block>
   <block id="03f44bcdeb9eac56b2f45afcb82d3368" category="list-text">* 响应 *</block>
   <block id="eb6391db314b5af4580f33130f643fa1" category="list-text">` IP 地址 / 主机名 _` 是 API 服务器的 IP 地址或完全限定域名（ FQDN ）。</block>
   <block id="5c06e352f423d0b621ec486ba1ddac59" category="list-text">端口 443</block>
   <block id="886644038ceb418e68b90e363a33a45e" category="paragraph">443 是默认 HTTPS 端口。如果需要，您可以自定义 HTTPS 端口。</block>
-  <block id="0535c12ab1bf9e6e8b5fa038d3c157ac" category="paragraph">要通过 Web 浏览器对 HTTP 请求进行问题描述发布，修补和删除，您必须使用浏览器插件。您也可以使用 curl 和 Perl 等脚本平台访问 REST API 。</block>
   <block id="c75f7811d70d17dbcd88e9d03752cbed" category="section-title">身份验证</block>
   <block id="55f5492d0585d69456c8ee38af804ac6" category="paragraph">Unified Manager 支持 API 的基本 HTTP 身份验证方案。对于安全信息流（请求和响应），只能通过 HTTPS 访问 REST API 。API 服务器向所有客户端提供自签名 SSL 证书，以进行服务器验证。此证书可替换为自定义证书（或 CA 证书）。</block>
   <block id="74b6a9a3bbabb0fe6c40b6199d727d06" category="paragraph">您必须配置用户对 API 服务器的访问权限，以便调用 REST API 。用户可以是本地用户（存储在本地数据库中的用户配置文件）或 LDAP 用户（如果已将 API 服务器配置为通过 LDAP 进行身份验证）。您可以通过登录到 Unified Manager 管理控制台用户界面来管理用户访问。</block>
@@ -4431,7 +4428,6 @@
   <block id="4f4383ae303a1aa1063bb36803e75868" category="paragraph">有关受支持的 Windows 版本的最新完整列表，请参见互操作性表。</block>
   <block id="7347ac6635d17dff22f5422c2e91f0ac" category="inline-link">mysupport.netapp.com/matrix</block>
   <block id="ac57cc1d3f1615aebd022c9ed2e64abe" category="paragraph"><block ref="ac57cc1d3f1615aebd022c9ed2e64abe" category="inline-link-rx"></block></block>
-  <block id="2dedeeb59a743d2abc64040dd65c2e1a" category="paragraph">此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。</block>
   <block id="f7e4f466dd93f7fcac14a9d6f34be286" category="section-title">第三方软件</block>
   <block id="ffbed9334b8ec87b5d47c862a02cb5ec" category="paragraph">以下第三方软件包与 Unified Manager 捆绑在一起。如果系统上未安装这些第三方软件包，则 Unified Manager 会在安装过程中安装这些软件包。</block>
   <block id="f036a764432b8b9592c8463741728fec" category="list-text">Microsoft Visual C&amp;#43 ； &amp;#43 ； 2015 年可重新分发软件包 14.26.28720.3 版</block>
@@ -4739,7 +4735,6 @@
   <block id="a2992f349299086d8d17ee3b7a471aa7" category="list-text">CPU ：总计 9572 MHz</block>
   <block id="ce144bc93be4300e9c20965d4a541b93" category="list-text">可用磁盘空间： 100 GB 磁盘空间用于安装目录， 50 GB 磁盘空间用于 MySQL 数据目录</block>
   <block id="dc351b2abbd920b35cff990b6582b9d7" category="inline-link-macro">互操作性表</block>
-  <block id="3f906b5ebb635b3895caba507b89aa41" category="paragraph">有关详细的系统要求，请参见 <block ref="b2295d63a540e99b9499865a292304a1" category="inline-link-macro-rx"></block> 和 <block ref="6b67f16fed93b756518b295cb43f355b" category="inline-link-macro-rx"></block>。</block>
   <block id="9a3029780c58dd5c4ae9d7c235aacc2e" category="section-title">安装 Active IQ Unified Manager</block>
   <block id="be4d885e0542a29fcfbb71c1ff5a5cb0" category="section-title">下载安装程序：</block>
   <block id="fe477fb8f5012f10b95318c29b24ba27" category="list-text">下载 `ActiveIQUnifiedManager-&lt;version&gt;.exe` 安装包。</block>
@@ -9516,7 +9511,6 @@
   <block id="a76dce9421f54828d6c4fec13fc1a2e1" category="list-text">使用 HTTPS 协议连接到集群的端口号（通常为端口 443 ）</block>
   <block id="c5fe7803895dbf7c8d576bfae98e932f" category="list-text">Unified Manager 服务器上必须有足够的空间。如果数据库目录中已占用的空间超过 90% ，则系统将阻止您向服务器添加集群。</block>
   <block id="c3e85850c32008629806658dc1fd8058" category="paragraph">对于 MetroCluster 配置，必须同时添加本地和远程集群，并且必须正确配置这些集群。</block>
-  <block id="bccf6ddbf29e22b9305ceaa5ea940a8e" category="paragraph">您可以通过两个 Unified Manager 实例监控一个集群，但前提是您已在集群上配置了另一个集群管理 LIF ，以便 Unified Manager 的每个实例都通过不同的 LIF 进行连接。</block>
   <block id="bc3166b51db8c4e1aa25e19fa8b11585" category="list-text">在 Cluster Setup 页面上，单击 * 添加 * 。</block>
   <block id="6b19f9bcdbe7c035b86634062780c720" category="list-text">在添加集群对话框中，指定所需的值，例如集群的主机名或 IP 地址，用户名，密码和端口号。</block>
   <block id="f219179835bbcd9523f2749822fec1f8" category="paragraph">您可以将集群管理 IP 地址从 IPv6 更改为 IPv4 或从 IPv4 更改为 IPv6 。下一个监控周期完成后，新 IP 地址将反映在集群网格和集群配置页面中。</block>
@@ -10338,7 +10332,6 @@
   <block id="f861f735ef57b81425bfd81c26f4ad4c" category="list-text">要访问集群，您必须具有用户名和密码。</block>
   <block id="aa6a2fa2ad8c2fd4c4e3008a0fbf9957" category="list-text">您必须知道要使用 HTTPS 协议连接到集群的端口号（通常为端口 443 ）。</block>
   <block id="4432ef294245e78969b35d0bd52c2262" category="list-text">Unified Manager 服务器上必须有足够的空间。如果已占用的空间超过 90% ，则系统将阻止您向服务器添加集群。</block>
-  <block id="065a183903a5d40080433ae456e485ea" category="list-text">一个 Unified Manager 实例可以支持特定数量的节点。如果您需要监控的环境超出支持的节点数，则必须安装一个额外的 Unified Manager 实例以监控某些集群。</block>
   <block id="f480e99c6887bc78481785dfff641a8d" category="list-text">在添加集群对话框中，根据需要指定值，然后单击 * 提交 * 。</block>
   <block id="8e890a3f142c5bee7825dd0cc9d64b85" category="paragraph">如果您收到一条错误消息，指出无法添加集群，请检查是否存在以下问题：</block>
   <block id="683594a98e7d15af8788591469fb9927" category="list-text">如果两个系统上的时钟未同步，并且 Unified Manager HTTPS 证书开始日期晚于集群上的日期。您必须确保时钟使用 NTP 或类似服务进行同步。</block>
@@ -11058,7 +11051,6 @@
   <block id="95321bf41584f0af5249cfe77a131451" category="list-text">如果您的Windows系统上安装了活动防病毒软件、请确保在升级完成后手动从防病毒扫描中排除以下路径：</block>
   <block id="35b673088d49c428fe4b71d1fb68ac32" category="paragraph">您可以在以下Windows版本上安装Unified Manager：</block>
   <block id="97acc1a41f0c48f305dbbeb45d754400" category="admonition">NetApp不支持使用Microsoft System Center Configuration Manager (SCCM)等第三方工具安装Unified Manager。</block>
-  <block id="8c0efbddadc6fd60891df7fc8dca2445" category="list-text">如果您的Windows系统上安装了活动防病毒软件、则Unified Manager安装可能会失败。在安装Unified Manager之前、应禁用系统上的所有病毒扫描软件。安装完成后、请确保手动从防病毒扫描中排除以下路径：</block>
   <block id="f2b9e947e73ecf5aa3eb9084d5484e42" category="list-text">如果您的Windows系统上安装了活动防病毒软件、请在安装完成后手动从防病毒扫描中排除以下路径：</block>
   <block id="d09e8f5749e3b7058a8289ba431458ea" category="list-text">如果从*程序和功能*向导卸载Unified Manager、请执行以下步骤：</block>
   <block id="c8c3810a14893ac6d3284dbe2703b42e" category="list-text">如果从命令行卸载Unified Manager、请执行以下步骤：</block>
@@ -11435,7 +11427,6 @@
   <block id="9e1d78fcecc3350c4ecf08cec0b298a1" category="list-text">如果您从Web UI添加集群、则基于证书的身份验证将自动启用。如果从维护控制台添加集群、则不会启用基于证书的身份验证。</block>
   <block id="75d2b5faa0992c7cda340e5d43fc46b2" category="list-text">如果为集群启用了基于证书的身份验证、并且您从服务器备份Unified Manager并还原到另一个Unified Manager服务器、其中主机名或IP地址发生了更改、则监控集群可能会失败。要避免失败、请编辑并保存集群详细信息。有关编辑集群详细信息的详细信息、请参见 <block ref="8ec52359a26ce2693e51a81c43bbb7b7" category="inline-link-macro-rx"></block>。</block>
   <block id="222b0f66c06702de8b7c2340008972c3" category="inline-link">如何在System Manager用户界面中续订ONTAP 自签名证书</block>
-  <block id="a8dc37c69f26e87f6805f3e9cccc77a9" category="paragraph">*客户端证书*：在对从ONTAP 收到的EMS消息进行身份验证期间使用。此证书属于ONTAP 、在将ONTAP 集群添加到Unified Manager时需要此证书。您不能将证书已过期的集群添加到 Unified Manager 中，如果客户端证书已过期，则应在添加集群之前重新生成该集群。但是，如果已添加且 Unified Manager 正在使用的集群的此证书到期，则 EMS 消息传送功能将在证书过期后继续运行。有关生成证书的信息、请参见知识库(KB)文章<block ref="f6fcfe83d429d75c147f28f5dc51c095" category="inline-link-rx"></block>。</block>
   <block id="184761bba2bfcfdc4a0906f763235f85" category="paragraph">在Unified Manager 9.12中、保存集群详细信息后、您可以查看集群的相互TLS通信证书。</block>
   <block id="2570092c5c4918f782639770496fb209" category="paragraph">如果未启用基于证书的身份验证、则Unified Manager仅在首次添加集群时才会检查证书。Unified Manager 不会检查对 ONTAP 的每次 API 调用的证书。</block>
   <block id="1b9015a348b3b3bcd576158c9c7a8b20" category="paragraph"><block ref="1b9015a348b3b3bcd576158c9c7a8b20" category="inline-link-macro-rx"></block></block>
@@ -11793,10 +11784,8 @@
   <block id="114a028e9b55b97a58d37b3d704d07d2" category="paragraph">您可以通过在Windows平台上下载并运行安装文件将Unified Manager 9.10或9.11升级到9.12。</block>
   <block id="7e32d4718f2e4988b5bedbbf8300e1be" category="paragraph">请参见 <block ref="faea1ae077af360ba8a684d0f5eba7d8" category="inline-link-macro-rx"></block>。</block>
   <block id="f0e1f067c09250365312c175e69f64aa" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.30、则Unified Manager升级过程会自动将MySQL升级到8.0.30。您不能将早期版本的MySQL独立升级到8.0.30。</block>
-  <block id="5366a32f70ba928794fc68c64b8d1ad1" category="paragraph"><block ref="9578a88e95e047066c6bb7085c41a7ed" category="inline-link-rx"></block>。</block>
   <block id="f91923991c8993a30a6a751c98474af6" category="list-text">在支持的Web浏览器上的新窗口中启动Web UI、然后登录以使用升级后的Unified Manager版本。</block>
   <block id="5ff4b86dbcd6c01705ae6ea152e028ea" category="list-text">MySQL社区版8.0.30版</block>
-  <block id="63aac233d83b28056660593d53ad8bea" category="list-text">Python 3.10.5</block>
   <block id="440738be01fbb5a218a51b31addb72e3" category="list-text">OpenJDK 11.0.16版</block>
   <block id="c25a026897caa6b556a4ed073ea3eab4" category="paragraph">您可以更新版本系列中的 OpenJDK 版本。例如、您可以从OpenJDK 11.0.14升级到OpenJDK 11.0.16、但不能直接从OpenJDK 11更新到OpenJDK 12。</block>
   <block id="83120bcddc0b0db19b2984cc0524dcb9" category="list-text">从生成的复制目录和文件<block ref="30c81266c64bb09194fbb76d80c99fc1" prefix=" " category="inline-code"></block> 目录(例如、<block ref="7b12015226b2c68810e719dd47d11964" prefix=" " category="inline-code"></block> 到Java的安装位置。示例<block ref="b7373e296aa12e5caf1e84edf230028c" prefix=" " category="inline-code"></block></block>
@@ -11872,4 +11861,22 @@
   <block id="25cd83fcc24b4664d675c70561908db4" category="section-title">配置SELinux环境条件<block ref="7e1f8730cbdb33df27f5c6a989e8b48a" prefix=" " category="inline-code"></block> 已挂载</block>
   <block id="8952b2e8f374ce39efcf65ab76f1fb96" category="section-title">配置SELinux环境条件<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> 已挂载、和<block ref="90858e32055033b8ac44ac8a8f3461ae" prefix=" " category="inline-code"></block> 也单独挂载</block>
   <block id="c0f62aa70775648ddb09e5af32691c1a" category="section-title">配置SELinux环境条件<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> 已挂载、和<block ref="90858e32055033b8ac44ac8a8f3461ae" prefix=" " category="inline-code"></block> 不会单独挂载</block>
+  <block id="f9344604b22486566c3e6d70cc163f8b" category="paragraph">Active IQ Unified Manager REST API可通过任何可以使用基本HTTP身份验证机制对HTTP请求执行问题描述 的REST客户端或编程平台进行访问。</block>
+  <block id="e5595563cfe055cddbdb1a7ae1efcfad" category="paragraph">请求和响应示例：</block>
+  <block id="590e5f2d8030dd7492b5a2f24f056c33" category="paragraph">要从Web浏览器对HTTP请求进行问题描述 处理、您必须使用REST API浏览器插件。您也可以使用 curl 和 Perl 等脚本平台访问 REST API 。</block>
+  <block id="85a30fe886275ce866327a1e02256e74" category="inline-link-macro">Active IQ Unified Manager MIB</block>
+  <block id="9266d8a8ea54f308e2376f2d8f7bd96b" category="paragraph">有关SNMP对象和陷阱的详细信息、您可以下载 <block ref="5372b01ca49988ef6d087d475f5f860d" category="inline-link-macro-rx"></block> 从NetApp 支持站点。</block>
+  <block id="04cb263b5536fd6d36e2dbdb66c90bca" category="paragraph">*客户端证书*：在对从ONTAP 收到的EMS消息进行身份验证期间使用。此证书属于ONTAP 、在将ONTAP 集群添加到Unified Manager时需要此证书。您不能将证书已过期的集群添加到 Unified Manager 中，如果客户端证书已过期，则应在添加集群之前重新生成该集群。但是，如果已添加且 Unified Manager 正在使用的集群的此证书到期，则 EMS 消息传送功能将在证书过期后继续运行。有关生成证书的信息、请参见知识库(KB)文章<block ref="efe1c9ee5157428eafcff62008773d6d" category="inline-link-rx"></block>。</block>
+  <block id="3a8f6d8e81e46780cae8b01ced2c6f30" category="list-text">一个 Unified Manager 实例可以支持特定数量的节点。如果您需要监控的环境超出支持的节点数，则必须安装一个额外的 Unified Manager 实例以监控某些集群。要查看支持的节点数列表、请参见<block ref="e93befa6e2a73cbce07a13aa25f57433" category="inline-link-rx"></block>。</block>
+  <block id="339df2b8ee92861a4cb2e6ba77bf71ff" category="list-text">您应手动删除为允许或阻止MySQL端口3306而创建的防火墙规则。防火墙规则不会自动删除。</block>
+  <block id="99f349f68754fcdb8657987c33cdde6e" category="paragraph"><block ref="99f349f68754fcdb8657987c33cdde6e" category="inline-link-rx"></block></block>
+  <block id="ca7a90443f716119f581e53c33117768" category="paragraph"><block ref="ca7a90443f716119f581e53c33117768" category="inline-link-rx"></block></block>
+  <block id="29c81145f8df4c302d2a5db797d28b64" category="paragraph"><block ref="29c81145f8df4c302d2a5db797d28b64" category="inline-link-rx"></block></block>
+  <block id="8d6a739fdd6cb955643a976d6419979f" category="paragraph">此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。由于公司法规的限制、您的Windows系统上可能安装了有效的防病毒软件。在安装Unified Manager之前、应禁用防病毒软件、以防止安装失败。</block>
+  <block id="eb0ae76a28872e0cb3b4b8b29ab56e93" category="list-text">Python 3.11.1</block>
+  <block id="3bf946d0585ec5d059ceedfa02a8bb85" category="list-text">在安装Unified Manager之前、应禁用系统上的所有防病毒软件。安装完成后、请确保手动从防病毒扫描中排除以下路径：</block>
+  <block id="c4c82f53dda4c2a0257081e08f40a0c4" category="paragraph">有关详细的系统要求，请参见 <block ref="b2295d63a540e99b9499865a292304a1" category="inline-link-macro-rx"></block> 和 <block ref="4eee31450bd5635de5fa851f8ec42512" category="inline-link-macro-rx"></block>。</block>
+  <block id="855dd9750d1782e907ace12bdc7c5003" category="paragraph"><block ref="855dd9750d1782e907ace12bdc7c5003" category="inline-link-rx"></block></block>
+  <block id="e61baa5c67d7dd8dca5b3e09283635ed" category="paragraph"><block ref="e61baa5c67d7dd8dca5b3e09283635ed" category="inline-link-rx"></block></block>
+  <block id="31c19d26868a7ff439c08ee8860902af" category="paragraph"><block ref="e61baa5c67d7dd8dca5b3e09283635ed" category="inline-link-rx"></block>。</block>
 </blocks>
