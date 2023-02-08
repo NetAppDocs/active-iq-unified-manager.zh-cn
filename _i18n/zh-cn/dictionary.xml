@@ -10045,14 +10045,12 @@
   <block id="b4043491b8a9aa68946a8ccda3743ca4" category="paragraph">退出 System Configuration 菜单并返回 Main Menu 。</block>
   <block id="03d2af3407e8c97b7de22debe99e225b" category="summary">您可以通过 "HTTPS 证书 " 页面查看当前安全证书，下载证书签名请求，生成新的 HTTPS 证书或安装新的 HTTPS 证书。</block>
   <block id="13d1caaed3e6c81f8257c80ba2a39c92" category="doc">HTTPS 证书页面</block>
-  <block id="d7b0d1b6d6ad1c86e0f50200177ed636" category="paragraph">如果您尚未生成新的 HTTPS 证书，则此页面上显示的证书是在安装期间生成的证书。</block>
   <block id="6e6ebbbb947d7fe90c48de8586fdecdc" category="paragraph">命令按钮可用于执行以下操作：</block>
   <block id="a371515f56c3e7c652f8242e99b4dbf3" category="list-text">* 下载 HTTPS 证书签名请求 *</block>
   <block id="3de3d80d88b0aacb5852327bfd013c53" category="paragraph">下载当前安装的 HTTPS 证书的认证请求。您的浏览器会提示您保存 &lt;hostname&gt;.csr 文件，以便您可以将此文件提供给证书颁发机构进行签名。</block>
   <block id="e8819131331a466690626fd3b5add2cd" category="list-text">* 安装 HTTPS 证书 *</block>
   <block id="a9431950092ecb3c6a16902870f19aac" category="paragraph">用于在证书颁发机构签名并返回安全证书后上传并安装该证书。新证书将在您重新启动管理服务器后生效。</block>
   <block id="05b98e4f91a61c8d20d0971153ec6a73" category="list-text">* 重新生成 HTTPS 证书 *</block>
-  <block id="edecf66ff9f14897fe423361caecb67f" category="paragraph">用于生成 HTTPS 证书，此证书将替换当前安全证书。新证书将在重新启动 Unified Manager 后生效。</block>
   <block id="ce6b9cf9ac0462ce451329d595246da9" category="summary">通过 Active IQ Unified Manager ，您可以自定义存储和网络对象页面上的信息布局。通过自定义窗口，您可以控制可查看的数据以及数据的显示方式。</block>
   <block id="636a8855963f727473bac2df49f2eeb8" category="doc">窗口布局自定义</block>
   <block id="9d0d1e5100cdf0ea84e0c1a69c715320" category="list-text">* 排序 *</block>
@@ -11879,4 +11877,7 @@
   <block id="855dd9750d1782e907ace12bdc7c5003" category="paragraph"><block ref="855dd9750d1782e907ace12bdc7c5003" category="inline-link-rx"></block></block>
   <block id="e61baa5c67d7dd8dca5b3e09283635ed" category="paragraph"><block ref="e61baa5c67d7dd8dca5b3e09283635ed" category="inline-link-rx"></block></block>
   <block id="31c19d26868a7ff439c08ee8860902af" category="paragraph"><block ref="e61baa5c67d7dd8dca5b3e09283635ed" category="inline-link-rx"></block>。</block>
+  <block id="7304b4de80b8634c046d0400082fea65" category="paragraph">您可以通过"HTTPS证书"页面查看当前安全证书、下载证书签名请求、生成新的自签名HTTPS证书或安装新的HTTPS证书。</block>
+  <block id="898314a24a9c4668cfc6ef1288f61096" category="paragraph">如果您尚未生成新的自签名HTTPS证书、则此页面上显示的证书是在安装期间生成的证书。</block>
+  <block id="cff84697c1aa7f822135adc1f1e8d209" category="paragraph">用于生成新的自签名HTTPS证书、此证书将替换当前安全证书。新证书将在重新启动 Unified Manager 后生效。</block>
 </blocks>

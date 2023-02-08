@@ -19,7 +19,7 @@ Active IQ Unified Manager REST API可通过任何可以使用基本HTTP身份验
 +
 [listing]
 ----
-Get
+GET
 https://<IP address/hostname>:<port_number>/api/v2/datacenter/cluster/clusters
 ----
 * * 响应 *
