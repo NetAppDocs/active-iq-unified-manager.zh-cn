@@ -43,7 +43,7 @@ entries:
     url: "/health-checker/task_view_volume_list_and_details.html"
   - title: 查看有关 NFS 共享的详细信息
     url: "/health-checker/task_view_details_about_nfs_shares.html"
-  - title: 查看有关 SMB/CIFS 共享的详细信息
+  - title: 查看有关SMB或CIFS共享的详细信息
     url: "/health-checker/task_view_details_about_cifs_shares.html"
   - title: 查看 Snapshot 副本列表
     url: "/health-checker/task_view_list_of_snapshot_copies.html"
@@ -283,11 +283,11 @@ entries:
     entries:
     - title: 集群组件及其可能发生争用的原因
       url: "/health-checker/concept_cluster_components_and_why_they_can_be_in_contention.html"
-    - title: 卷 / 运行状况详细信息页面
+    - title: 卷运行状况详细信息
       url: "/health-checker/reference_health_volume_details_page.html"
-    - title: Storage VM/ 运行状况详细信息页面
+    - title: Storage VM运行状况详细信息
       url: "/health-checker/reference_health_svm_details_page.html"
-    - title: 集群 / 运行状况详细信息页面
+    - title: 集群运行状况详细信息
       url: "/health-checker/reference_health_cluster_details_page.html"
-    - title: 聚合 / 运行状况详细信息页面
+    - title: 聚合运行状况详细信息
       url: "/health-checker/reference_health_aggregate_details_page.html"

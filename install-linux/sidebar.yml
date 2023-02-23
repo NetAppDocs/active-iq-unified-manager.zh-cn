@@ -34,7 +34,7 @@ entries:
       url: "/install-linux/task_manually_configure_epel_repository.html"
     - title: 手动配置 MySQL 存储库
       url: "/install-linux/task_manually_configure_mysql_repository.html"
-  - title: 在 NFS 或 CIFS 共享上挂载 /opt/netapp 或 /opt/netapp/data 的 SELinux 要求
+  - title: NFS或CIFS共享上的SELinux要求
     url: "/install-linux/task_selinux_requirements_for_mounting_opt_netapp.html"
   - title: 在 Linux 系统上安装 Unified Manager
     url: "/install-linux/concept_install_unified_manager_on_rhel_or_centos.html"

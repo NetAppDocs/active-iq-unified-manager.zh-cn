@@ -6,7 +6,12 @@ summary: 基于 Linux 平台的 Unified Manager 快速入门指南。
 ---
 = Linux 安装快速入门说明
 :allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
 
+
+[role="lead"]
+您可以下载安装包并在物理或虚拟Red Hat Enterprise Linux或CentOS平台上安装Unified Manager。
 
 
 

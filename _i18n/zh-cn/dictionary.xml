@@ -9052,7 +9052,6 @@
   <block id="2a3a1fb09f0975179216fde1cbd8dc57" category="inline-link">VMware vSphere PowerCLI Cmdlet 参考： Restart-VMGuest</block>
   <block id="89cc3af736280ef7a3e6fc0e835ec56a" category="paragraph"><block ref="89cc3af736280ef7a3e6fc0e835ec56a" category="inline-link-rx"></block></block>
   <block id="32e5c16a2c1109e106990eafe2e5051a" category="summary">基于 VMware vSphere 平台的 Unified Manager 快速入门指南。</block>
-  <block id="745f57af3dedfc4d30afa6ced1d0df52" category="doc">VMware 安装快速入门说明</block>
   <block id="781c32908473254b5a4d86a06486a7b7" category="list-text">可用磁盘空间： 5 GB （精简配置）， 152 GB （厚配置）</block>
   <block id="e695544d34f0e201929a62c9aa611da3" category="paragraph">有关详细的系统要求，请参见 <block ref="50e046d8161c36e1c61db998f9999a09" category="inline-link-macro-rx"></block> 和 <block ref="6b67f16fed93b756518b295cb43f355b" category="inline-link-macro-rx"></block>。</block>
   <block id="f98b734b7817840b4280fbdea2b532f1" category="list-text">将文件保存到 vSphere Client 可访问的本地目录或网络目录中。</block>
@@ -10992,16 +10991,10 @@
   <block id="7a8adec5b77b397bb264a687d8a6c162" category="sidebar">SVM 合规性类别</block>
   <block id="d549fcac9e4340e7fb3d154a339f9c13" category="sidebar">保护和还原数据</block>
   <block id="7daa41760e1a8fba65d06a1a254f35d9" category="sidebar">创建保护关系并对其进行故障排除</block>
-  <block id="7518ca1d997947cafeacfe6e7557df98" category="sidebar">从运行状况 / 所有卷视图创建 SnapVault 保护关系</block>
-  <block id="7c35d6a9594204995ca67f76b440f42c" category="sidebar">从运行状况 / 所有卷视图创建 SnapMirror 保护关系</block>
-  <block id="55c616fb8df8d2d739c5a910d9f3e8cc" category="sidebar">关系 / 所有关系视图</block>
-  <block id="917d12d3945843e955409b6049824fe7" category="sidebar">关系 / 过去 1 个月的传输状态视图</block>
-  <block id="b0dea192fed54c3271d44f1043df906f" category="sidebar">关系 / 过去 1 个月的传输速率视图</block>
   <block id="d74069c8854de78bc74ebbb6f3a7d046" category="sidebar">管理事件和警报</block>
   <block id="6f047d4c177cc734ed65cb347cf6bd42" category="sidebar">监控和管理集群性能</block>
   <block id="8b00815fc5298212e3dc28a279ed4a10" category="sidebar">生成自定义报告</block>
   <block id="1d6677925b878ba927adf44f615f75db" category="sidebar">在 Linux 系统上安装 Unified Manager</block>
-  <block id="2c3b76077caf066bc2963e52113e2e78" category="sidebar">在 NFS 或 CIFS 共享上挂载 /opt/netapp 或 /opt/netapp/data 的 SELinux 要求</block>
   <block id="5fc23f7e4ef2f5b01f7034e6f2ceb340" category="sidebar">在 VMware vSphere 系统上安装 Unified Manager</block>
   <block id="09d454f0bf432593d99fbfd84c9f9293" category="sidebar">执行配置和管理任务</block>
   <block id="13ea07d85e49bbdae7a2c0414691f416" category="sidebar">监控和管理存储</block>
@@ -11880,4 +11873,34 @@
   <block id="7304b4de80b8634c046d0400082fea65" category="paragraph">您可以通过"HTTPS证书"页面查看当前安全证书、下载证书签名请求、生成新的自签名HTTPS证书或安装新的HTTPS证书。</block>
   <block id="898314a24a9c4668cfc6ef1288f61096" category="paragraph">如果您尚未生成新的自签名HTTPS证书、则此页面上显示的证书是在安装期间生成的证书。</block>
   <block id="cff84697c1aa7f822135adc1f1e8d209" category="paragraph">用于生成新的自签名HTTPS证书、此证书将替换当前安全证书。新证书将在重新启动 Unified Manager 后生效。</block>
+  <block id="6e9d444f5a98d00ae31eff389dc819fa" category="doc">VMware安装快速入门说明</block>
+  <block id="d92bb0fdb003a277ed75c5c3745b9f31" category="paragraph">您可以下载<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block> 包含根证书的文件<block ref="c47c7c7383225ab55ff591cb59c41e6b" prefix=" " category="inline-code"></block> 文件和<block ref="586ba478b7ebec665f3df120799b6c2e" prefix=" " category="inline-code"></block> 归档、并将Unified Manager部署为虚拟设备。</block>
+  <block id="d37bfa9087091a2643ebb8f003e74798" category="paragraph">您可以下载安装包并在物理或虚拟Red Hat Enterprise Linux或CentOS平台上安装Unified Manager。</block>
+  <block id="ceede60a933cbfe9cb6ef21f0b1f0e00" category="summary">Unified Manager在Windows平台上的快速入门指南。</block>
+  <block id="74eaa85433946affb1737b2598fcdd35" category="paragraph">您可以下载安装包并安装Unified Manager、以监控数据存储容量、可用性、性能和保护问题并对其进行故障排除。</block>
+  <block id="a6d6cdd1e4eb84a93808203243318dd0" category="sidebar">查看有关SMB或CIFS共享的详细信息</block>
+  <block id="721115a56e25cbc2949dce662727ea1a" category="sidebar">卷运行状况详细信息</block>
+  <block id="d2136c0320bc784ec5e976cc7c71f93d" category="sidebar">Storage VM运行状况详细信息</block>
+  <block id="fbf5dae3b577d533c0b3785c65a5e93f" category="sidebar">集群运行状况详细信息</block>
+  <block id="3a63c6b863ef9b4f54c6281b5910c2f9" category="sidebar">聚合运行状况详细信息</block>
+  <block id="f667431c76a047fbe92c5ea4f107f5be" category="sidebar">通过卷运行状况详细信息页面中断SnapMirror关系</block>
+  <block id="825540d2e356a2301d8157e67a70b20a" category="sidebar">通过卷运行状况详细信息页面反转保护关系</block>
+  <block id="9e602f9b4f36392b1a1428c981e37711" category="sidebar">从卷运行状况详细信息页面中删除保护关系</block>
+  <block id="a1b4c0ddea6f9c40fd2cd596b4f7b018" category="sidebar">通过卷运行状况详细信息页面重新同步保护关系</block>
+  <block id="884392bffbe4579f85c30e1e54b015d3" category="sidebar">从所有卷视图创建SnapVault 保护关系</block>
+  <block id="6e05686f2b2c07b3c6c6117873668333" category="sidebar">通过卷运行状况详细信息页面创建SnapVault 保护关系</block>
+  <block id="e9469afe9efe59fc810579b52fb8fc93" category="sidebar">从所有卷视图创建SnapMirror保护关系</block>
+  <block id="7b8c66535079341892aef1a493ce88c4" category="sidebar">通过卷运行状况详细信息页面创建SnapMirror保护关系</block>
+  <block id="7e583f9e2b84b24680ccacedb923f893" category="sidebar">通过卷运行状况详细信息页面编辑保护关系</block>
+  <block id="2f73e4b880758398d71cbda6956e4261" category="sidebar">从卷运行状况详细信息页面中止活动的数据保护传输</block>
+  <block id="1a332e4345b7b166cc346094f426d59b" category="sidebar">通过卷运行状况详细信息页面暂停保护关系</block>
+  <block id="0a7e2554ab5f606db9e7cd3f955d6876" category="sidebar">通过卷运行状况详细信息页面恢复已暂停关系上的计划传输</block>
+  <block id="6b8b5e644fe51ebdbf59ca41a2e0bd5d" category="sidebar">通过卷运行状况详细信息页面初始化或更新保护关系</block>
+  <block id="4854bf8d6304b20e8a8e266470ff2f5a" category="sidebar">使用卷运行状况详细信息页面还原数据</block>
+  <block id="54ad2ceecf79def094226d610fbf9cdf" category="sidebar">初始化或更新对话框</block>
+  <block id="ad1e91efa1709ebf1317182df97e21ac" category="sidebar">所有关系视图</block>
+  <block id="a1aa3dc0c225c91968f0c1b9e0426594" category="sidebar">过去1个月的传输状态视图</block>
+  <block id="97bf8a808bd60b6f18cb0036fc0fa04f" category="sidebar">过去1个月的传输速率视图</block>
+  <block id="9210be7b581b8db7551fb777e02a3edb" category="sidebar">NFS或CIFS共享上的SELinux要求</block>
+  <block id="9304b0fee761c30cb0f91f15de511efc" category="sidebar">创建报告以查看接近全满的聚合</block>
 </blocks>
