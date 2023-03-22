@@ -28,4 +28,4 @@ summary: 通常，我们会根据《适用于 ONTAP 9 的 NetApp 安全加固指
 从 Active IQ 平台报告的升级事件也视为安全事件。这些事件确定了需要升级 ONTAP 软件，节点固件或操作系统软件才能解决的问题（针对安全建议）。这些事件不会显示在 " 安全性 " 面板中，但可从 " 事件管理 " 清单页面访问。
 
 ====
-有关详细信息，请参见 link:..health-checker/concept_manage_cluster_security_objectives.html["管理集群安全目标"]。
+有关详细信息，请参见 link:../health-checker/concept_manage_cluster_security_objectives.html["管理集群安全目标"]。

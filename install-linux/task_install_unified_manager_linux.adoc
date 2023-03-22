@@ -97,16 +97,12 @@ Unified Manager 所需的 ` .rpm` 模块将解压缩到目标目录。
 ----
 . * 可选： * 只有在系统未连接到 Internet 且必须手动下载安装所需的软件包时，才能执行步骤 7 。如果您的系统可以访问Internet、并且所有所需软件包均可用、请转至步骤8。对于未连接到Internet或未使用Red Hat Enterprise Linux存储库的系统、请执行以下步骤以确定是否缺少任何所需的软件包、然后下载这些软件包：
 +
-.. 在要安装 Unified Manager 的系统上，查看可用和不可用软件包的列表：
-
-
-
-
-`yum install netapp-um<version>.x86_64.rpm -assumeno`
-
+.. 在要安装Unified Manager的系统上、查看可用和不可用软件包的列表：+
+`yum install netapp-um<version>.x86_64.rpm --assumeno`
++
 "`Installing ：` " 部分中的项是当前目录中提供的软件包， "`Installing for 相关项：` " 部分中的项是系统中缺少的软件包。
 
-. 在可访问Internet的系统上、下载缺少的软件包：
+.. 在可访问Internet的系统上、下载缺少的软件包：
 +
 `yum install <package_name> -downloadonly -downloaddir=.`
 
@@ -116,9 +112,10 @@ Unified Manager 所需的 ` .rpm` 模块将解压缩到目标目录。
 由于在 Red Hat Enterprise Linux 系统上并非始终启用插件 "`yum 插件下载` " ，因此您可能需要启用功能才能在不安装软件包的情况下下载软件包： `yum install yum -plugin-downloadonly`
 
 ====
-. 将缺少的软件包从已连接Internet的系统复制到您的安装系统。
-+
-.. 以 root 用户身份或使用 `sudo` 运行以下命令以安装软件：
+.. 将缺少的软件包从已连接Internet的系统复制到您的安装系统。
+
+
+. 以 root 用户身份或使用 `sudo` 运行以下命令以安装软件：
 +
 `yum install netapp-um<version>.x86_64 ： rpm`
 
@@ -131,11 +128,11 @@ Unified Manager 所需的 ` .rpm` 模块将解压缩到目标目录。
 请勿尝试使用其他命令（例如 `rpm -ivh` ）进行安装。要在 Red Hat Enterprise Linux 或 CentOS 系统上成功安装 Unified Manager ，需要按特定顺序将所有 Unified Manager 文件和相关文件安装到特定的目录结构中，此结构由 `yum install netapp-um<version>.x86_64` 命令自动强制实施。
 
 ====
-.. 忽略安装消息后立即显示的电子邮件通知。
+. 忽略安装消息后立即显示的电子邮件通知。
 +
 此电子邮件会通知 root 用户初始 cron 作业失败，此操作不会对安装产生负面影响。
 
-.. 安装消息完成后，滚动回这些消息，直到您看到消息，其中系统显示 Unified Manager Web UI 的 IP 地址或 URL ，维护用户名（ umadmin ）和默认密码。
+. 安装消息完成后，滚动回这些消息，直到您看到消息，其中系统显示 Unified Manager Web UI 的 IP 地址或 URL ，维护用户名（ umadmin ）和默认密码。
 +
 此消息类似于以下内容：
 
@@ -152,12 +149,10 @@ Log in to Unified Manager in a web browser by using following details:
   username: umadmin
   password: admin
 ----
-.. 记录 IP 地址或 URL ，分配的用户名（ umadmin ）和当前密码。
-.. 如果在安装 Unified Manager 之前使用自定义主目录创建了一个 umadmin 用户帐户，则必须指定 umadmin 用户登录 Shell ：
+. 记录 IP 地址或 URL ，分配的用户名（ umadmin ）和当前密码。
+. 如果在安装 Unified Manager 之前使用自定义主目录创建了一个 umadmin 用户帐户，则必须指定 umadmin 用户登录 Shell ：
 +
 `usermod -s /bin/maintenance-user-shell.sh umadmin`
-
-
 
 
 

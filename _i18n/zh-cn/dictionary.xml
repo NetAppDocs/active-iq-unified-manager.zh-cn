@@ -8810,7 +8810,6 @@
   <block id="afa28e6a1fe57dc1c2835b52e288f174" category="list-text">运行安装前脚本，以确保不存在可能与 Unified Manager 安装冲突的系统配置设置或任何已安装软件：</block>
   <block id="ae44be51882e1847db9f99864953710d" category="paragraph">`sUdo ./pre_install_check.sh`</block>
   <block id="b06597a497eb21d391372afb93828b7b" category="paragraph">对于 Red Hat Enterprise Linux 8 系统，如果您的内部存储库包含 AppStream 存储库提供的 JDK 11 - OpenJDK ， p7zip 和其他软件包，则必须禁用 AppStream 存储库并安装 MySQL 社区服务器。运行以下命令：</block>
-  <block id="d23d0640eb82a610d248d778f6dc62a5" category="list-text">在要安装 Unified Manager 的系统上，查看可用和不可用软件包的列表：</block>
   <block id="0f6821f28720fad4bff6027633ab91c0" category="paragraph">"`Installing ：` " 部分中的项是当前目录中提供的软件包， "`Installing for 相关项：` " 部分中的项是系统中缺少的软件包。</block>
   <block id="92885fbdd9d6d32bed53f8efe8b5c8fb" category="paragraph">`yum install &lt;package_name&gt; -downloadonly -downloaddir=.`</block>
   <block id="201a76df4d6c4b9b140e52f85c4342de" category="paragraph">由于在 Red Hat Enterprise Linux 系统上并非始终启用插件 "`yum 插件下载` " ，因此您可能需要启用功能才能在不安装软件包的情况下下载软件包： `yum install yum -plugin-downloadonly`</block>
@@ -10985,7 +10984,6 @@
   <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">更多资源</block>
   <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Unified Manager 视频</block>
   <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Unified Manager 博客</block>
-  <block id="b4326b5cab8385bbedf7c504d8569004" category="sidebar">早期版本的文档</block>
   <block id="77d7ce66941e6a8a53f84f813d2b2bf1" category="sidebar">使用 REST API 管理存储</block>
   <block id="32d8b1bb1bdc5067bfbde495253b3469" category="sidebar">监控和管理集群运行状况</block>
   <block id="7a8adec5b77b397bb264a687d8a6c162" category="sidebar">SVM 合规性类别</block>
@@ -11432,7 +11430,6 @@
   <block id="7ae8873e9ecd38f2b40aef36f7c9c414" category="paragraph">您可以使用*审核日志：文件视图*查看和访问Active IQ Unified Manager 中可用的所有审核日志文件。审核日志：文件视图中的文件将根据其创建日期列出。此视图显示从安装或升级到系统中的现有时捕获的所有审核日志的信息。无论何时在 Unified Manager 中执行操作，此信息都会更新，并可在日志中查看。每个日志文件的状态均使用 "`File Integrity Status` " 属性捕获，该属性会受到主动监控，以检测日志文件的篡改或删除情况。如果审核日志在系统中可用，则审核日志可能具有以下状态之一：</block>
   <block id="655e1947df832dc700ee5cb38180cd47" category="paragraph">审核日志文件会定期归档并保存到数据库中以供参考。在归档之前、审核日志会进行数字签名、以保持安全性和完整性。</block>
   <block id="c8395e02d18f8e0b4978ddadc5a96c5f" category="paragraph">生成完整的AutoSupport 包后、支持包将同时包含归档和活动的审核日志文件。但是，在生成轻型支持包时，它仅包含活动的审核日志。不包括归档的审核日志。</block>
-  <block id="dbf1643584a0232aa9b43b46ef46f017" category="paragraph">有关详细信息，请参见 <block ref="7f1eff88d0c64584f1f18cff0575e2dd" category="inline-link-macro-rx"></block>。</block>
   <block id="831c650279a6049f0d1dbd00a67beb0a" category="inline-link-macro">性能：所有集群视图</block>
   <block id="d13329a517ef0035fc129588b3d02915" category="list-text"><block ref="d13329a517ef0035fc129588b3d02915" category="inline-link-macro-rx"></block></block>
   <block id="9558ec78419607c064297bda7f675f6d" category="list-text"><block ref="9558ec78419607c064297bda7f675f6d" category="inline-link-macro-rx"></block></block>
@@ -11903,4 +11900,7 @@
   <block id="97bf8a808bd60b6f18cb0036fc0fa04f" category="sidebar">过去1个月的传输速率视图</block>
   <block id="9210be7b581b8db7551fb777e02a3edb" category="sidebar">NFS或CIFS共享上的SELinux要求</block>
   <block id="9304b0fee761c30cb0f91f15de511efc" category="sidebar">创建报告以查看接近全满的聚合</block>
+  <block id="a800bc3b2ac3625f86ad24d4ae00b6c8" category="list-text">在要安装Unified Manager的系统上、查看可用和不可用软件包的列表：+<block ref="0ebef3d9c59bd558d3f360f5800cf333" prefix=" " category="inline-code"></block></block>
+  <block id="d3959f6465e1edec195c856595d76545" category="paragraph">有关详细信息，请参见 <block ref="3817c92b8c868f8dcff11bea431f7255" category="inline-link-macro-rx"></block>。</block>
+  <block id="ede607b26fd609858d7be7ff1e138cb0" category="sidebar">Active IQ Unified Manager 9.9或更早版本的文档</block>
 </blocks>
