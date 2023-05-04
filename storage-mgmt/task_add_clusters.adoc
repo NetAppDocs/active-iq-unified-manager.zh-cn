@@ -16,37 +16,45 @@ summary: 您可以将集群添加到 Active IQ Unified Manager 中，以便监�
 * 您需要的内容 *
 
 * 您必须具有应用程序管理员角色或存储管理员角色。
-* 您必须具有集群的主机名或集群管理 IP 地址（ IPv4 或 IPv6 ）。
+* 您必须具有以下信息：
++
+** Unified Manager支持内部ONTAP 集群、ONTAP Select 、Cloud Volumes ONTAP。
+** 您必须具有集群的主机名或集群管理 IP 地址（ IPv4 或 IPv6 ）。
 +
 使用主机名时，必须解析为集群管理 LIF 的集群管理 IP 地址。如果使用节点管理 LIF ，则操作将失败。
 
-* 要访问集群，您必须具有用户名和密码。
+** 要访问集群，您必须具有用户名和密码。
 +
 此帐户必须具有_admin_角色、并且应用程序访问权限设置为_ontapi_、_console _和_http_。
 
-* 您必须知道要使用 HTTPS 协议连接到集群的端口号（通常为端口 443 ）。
-* 集群必须运行 ONTAP 9.1 或更高版本的软件。
-* Unified Manager 服务器上必须有足够的空间。如果已占用的空间超过 90% ，则系统将阻止您向服务器添加集群。
-* 您拥有所需的证书。Unified Manager在添加集群时安装安全证书：
+** 您必须知道要使用 HTTPS 协议连接到集群的端口号（通常为端口 443 ）。
+** 集群必须运行 ONTAP 9.1 或更高版本的软件。
+** Unified Manager 服务器上必须有足够的空间。如果已占用的空间超过 90% ，则系统将阻止您向服务器添加集群。
+** 您具有所需的证书：
 +
-*服务器证书*：此证书属于Unified Manager。全新安装的Unified Manager将生成默认的自签名SSL (HTTPS)证书。NetApp建议您将其升级到CA签名证书、以提高安全性。如果服务器证书到期、您应重新生成该证书并重新启动Unified Manager、以便服务加入新证书。有关重新生成SSL证书的详细信息、请参见 link:../config/task_generate_an_https_security_certificate_ocf.html["生成 HTTPS 安全证书"]。
+* SSL (HTTPS)证书*：此证书归Unified Manager所有。全新安装的Unified Manager将生成默认的自签名SSL (HTTPS)证书。NetApp建议您将其升级到CA签名证书、以提高安全性。如果服务器证书到期、您应重新生成该证书并重新启动Unified Manager、以便服务加入新证书。有关重新生成SSL证书的详细信息、请参见 link:../config/task_generate_an_https_security_certificate_ocf.html["生成 HTTPS 安全证书"]。
+
++
+*EMS证书*：此证书归Unified Manager所有。它用于身份验证期间从ONTAP 收到的EMS通知。
 
 +
 *用于相互TLS通信的证书*：在Unified Manager和ONTAP 之间进行相互TLS通信期间使用。系统将根据ONTAP 版本为集群启用基于证书的身份验证。如果运行ONTAP 版本的集群低于9.5、则不会启用基于证书的身份验证。
 
 +
-如果要将旧版本的Unified Manager更新到Unified Manager 9.12、则集群不会自动启用基于证书的身份验证。但是、您可以通过修改和保存集群详细信息来启用此功能。如果证书过期、则应重新生成证书以加入新证书。有关查看和重新生成证书的详细信息、请参见 link:../storage-mgmt/task_edit_clusters.html["编辑集群"]。
+如果要更新旧版本的Unified Manager、则不会自动为集群启用基于证书的身份验证。但是、您可以通过修改和保存集群详细信息来启用此功能。如果证书过期、则应重新生成证书以加入新证书。有关查看和重新生成证书的详细信息、请参见 link:../storage-mgmt/task_edit_clusters.html["编辑集群"]。
 
 +
 [NOTE]
 ====
-** 如果您从Web UI添加集群、则基于证书的身份验证将自动启用。如果从维护控制台添加集群、则不会启用基于证书的身份验证。
-** 如果为集群启用了基于证书的身份验证、并且您从服务器备份Unified Manager并还原到另一个Unified Manager服务器、其中主机名或IP地址发生了更改、则监控集群可能会失败。要避免失败、请编辑并保存集群详细信息。有关编辑集群详细信息的详细信息、请参见 link:../storage-mgmt/task_edit_clusters.html["编辑集群"]。
+*** 如果您从Web UI添加集群、则基于证书的身份验证将自动启用。如果从维护控制台添加集群、则不会启用基于证书的身份验证。
+*** 如果为集群启用了基于证书的身份验证、并且您从服务器备份Unified Manager并还原到另一个Unified Manager服务器、其中主机名或IP地址发生了更改、则监控集群可能会失败。要避免失败、请编辑并保存集群详细信息。有关编辑集群详细信息的详细信息、请参见 link:../storage-mgmt/task_edit_clusters.html["编辑集群"]。
 
 
 ====
 +
-*客户端证书*：在对从ONTAP 收到的EMS消息进行身份验证期间使用。此证书属于ONTAP 、在将ONTAP 集群添加到Unified Manager时需要此证书。您不能将证书已过期的集群添加到 Unified Manager 中，如果客户端证书已过期，则应在添加集群之前重新生成该集群。但是，如果已添加且 Unified Manager 正在使用的集群的此证书到期，则 EMS 消息传送功能将在证书过期后继续运行。有关生成证书的信息、请参见知识库(KB)文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_renew_an_SSL_certificate_in_ONTAP_9["如何在System Manager用户界面中续订ONTAP 自签名证书"^]。
+*集群证书*：此证书归ONTAP 所有。您不能将证书已过期的集群添加到Unified Manager中、如果证书已过期、则应在添加集群之前重新生成该集群。有关生成证书的信息、请参见知识库(KB)文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_renew_an_SSL_certificate_in_ONTAP_9["如何在System Manager用户界面中续订ONTAP 自签名证书"^]。
+
+
 
 * 一个 Unified Manager 实例可以支持特定数量的节点。如果您需要监控的环境超出支持的节点数，则必须安装一个额外的 Unified Manager 实例以监控某些集群。要查看支持的节点数列表、请参见 https://www.netapp.com/media/13504-tr4621.pdf["《 Unified Manager 最佳实践指南》"^]。
 
@@ -58,7 +66,7 @@ summary: 您可以将集群添加到 Active IQ Unified Manager 中，以便监�
 . 在授权主机对话框中，单击 * 查看证书 * 以查看有关集群的证书信息。
 . 单击 * 是 * 。
 +
-在Unified Manager 9.12中、保存集群详细信息后、您可以查看集群的相互TLS通信证书。
+保存集群详细信息后、您可以看到用于集群相互TLS通信的证书。
 
 +
 如果未启用基于证书的身份验证、则Unified Manager仅在首次添加集群时才会检查证书。Unified Manager 不会检查对 ONTAP 的每次 API 调用的证书。

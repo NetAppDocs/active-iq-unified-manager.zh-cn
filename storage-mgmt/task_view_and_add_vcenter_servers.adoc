@@ -20,6 +20,10 @@ summary: 要查看虚拟机（ VM ）的性能并对其进行故障排除，必�
 * 您知道 vCenter Server 名称。
 * 您知道 vCenter Server 的 IP 地址并具有所需的凭据。凭据必须是 vCenter Server 管理员或对 vCenter Server 具有只读访问权限的 root 用户的凭据。
 * 要添加的 vCenter Server 运行 vSphere 6.5 或更高版本。
++
+
+NOTE: Unified Manager for VMware ESXi和vCenter Server支持英语和日语版本。
+
 * vCenter Server 中的数据收集设置会设置为统计信息级别 ` _Level 3_` ，以确保为所有受监控对象收集所需级别的指标。间隔持续时间应为 ` _5 分钟 _` ，保存期限应为 ` _1 天 _` 。
 +
 有关详细信息， `D请参见 VMware 文档中 _vSphere 监控和性能指南 _ 的 " 数据收集级别` " 一节。

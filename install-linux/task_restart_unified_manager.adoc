@@ -19,7 +19,7 @@ summary: 更改配置后，您可能需要重新启动 Unified Manager 。
 
 .步骤
 . 以 root 用户身份登录到要重新启动 Unified Manager 服务的服务器。
-. 按所示顺序停止 Unified Manager 服务和关联的 MySQL 软件：
+. 按以下顺序停止Unified Manager服务和关联的MySQL服务：
 +
 `systemctl stop ocieau`
 
@@ -29,7 +29,7 @@ summary: 更改配置后，您可能需要重新启动 Unified Manager 。
 +
 `systemctl stop mysqld`
 
-. 按所示顺序启动 Unified Manager ：
+. 按以下顺序启动MySQL和Unified Manager服务：
 +
 `systemctl start mysqld`
 
@@ -40,3 +40,9 @@ summary: 更改配置后，您可能需要重新启动 Unified Manager 。
 `systemctl start ocieau`
 
 
+
+[NOTE]
+====
+`mysqld` 是启动和停止MySQL服务器所需的守护进程程序。
+
+====

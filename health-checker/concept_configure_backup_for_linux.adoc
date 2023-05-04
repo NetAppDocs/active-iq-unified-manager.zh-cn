@@ -21,7 +21,7 @@ Snapshot副本所需时间非常短、通常只需几分钟、Unified Manager数
 ====
 * 您只能在同一版本的Active IQ Unified Manager 上还原Snapshot副本。
 +
-例如、如果您在Unified Manager 9.12上创建备份、则只能在Unified Manager 9.12系统上还原备份。
+例如、如果您在Unified Manager 9.13上创建备份、则只能在Unified Manager 9.13系统上还原备份。
 
 * 如果对 Snapshot 配置进行了任何更改，则可能会将此快照发生原因为无效。
 
