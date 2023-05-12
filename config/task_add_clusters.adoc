@@ -54,7 +54,7 @@ summary: 您可以将集群添加到 Active IQ Unified Manager 中，以便监�
 
 ====
 +
-*集群证书*：此证书归ONTAP 所有。您不能将证书已过期的集群添加到Unified Manager中、如果证书已过期、则应在添加集群之前重新生成该集群。有关生成证书的信息、请参见知识库(KB)文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_renew_an_SSL_certificate_in_ONTAP_9["如何在System Manager用户界面中续订ONTAP 自签名证书"^]。
+*集群证书*：此证书归ONTAP 所有。您不能将证书已过期的集群添加到Unified Manager中、如果证书已过期、则应在添加集群之前重新生成该集群。有关生成证书的信息、请参见知识库(KB)文章 https://["如何在System Manager用户界面中续订ONTAP 自签名证书"^]。
 
 
 

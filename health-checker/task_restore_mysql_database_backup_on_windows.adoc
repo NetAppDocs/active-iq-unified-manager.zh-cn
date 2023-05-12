@@ -33,7 +33,7 @@ summary: 如果发生数据丢失或数据损坏，您可以使用还原功能�
 .步骤
 . 如果要还原到新服务器，则在安装 Unified Manager 后，请勿启动用户界面，也不要在安装完成后配置任何集群，用户或身份验证设置。备份文件会在还原过程中填充此信息。
 . 使用管理员凭据登录到 Unified Manager 系统。
-. 以 Windows 管理员身份启动 PowerShell 。
+. 以Windows管理员身份启动PowerShell或命令提示符。
 . 输入命令 `mainstion_console` 并按 Enter 键。
 . 在维护控制台 * 主菜单 * 中，输入 * 备份还原 * 选项的编号。
 . 输入 * 还原 MySQL Backup* 的编号。

@@ -17,8 +17,8 @@ NetApp 不支持对 Unified Manager 应用程序代码进行任何修改。如�
 
 有关对 Unified Manager 服务器应用安全措施的详细信息，请参见知识库文章。
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/Supportability_for_Security_Measures_applied_to_Active_IQ_Unified_Manager_for_Clustered_Data_ONTAP["适用于集群模式 Data ONTAP 的 Active IQ Unified Manager 的安全措施的可支持性"]
+https://["适用于集群模式 Data ONTAP 的 Active IQ Unified Manager 的安全措施的可支持性"]
 
 * 相关信息 *
 
-https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"]
+https://["NetApp 互操作性表工具"]

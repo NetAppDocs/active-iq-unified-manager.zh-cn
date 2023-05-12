@@ -13,9 +13,9 @@ summary: 您可以通过确保正确设置 MetroCluster 配置来防止 MetroClu
 [role="lead"]
 您可以通过确保MetroCluster 已正确设置基于FC和IP的MetroCluster 配置中的镜像工作负载的性能问题。您还可以通过更改配置或升级软件或硬件组件来提高工作负载性能。
 
-请参见 https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster 文档"] 有关在MetroCluster 配置中设置集群的说明、包括光纤通道(FC)交换机、缆线和交换机间链路(ISL)。它还有助于您配置 MetroCluster 软件，以便本地和远程集群可以与镜像卷数据进行通信。有关基于IP的MetroCluster 设置的特定信息、请参见 https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html["安装 MetroCluster IP 配置"]。
+请参见 https://["MetroCluster 文档"] 有关在MetroCluster 配置中设置集群的说明、包括光纤通道(FC)交换机、缆线和交换机间链路(ISL)。它还有助于您配置 MetroCluster 软件，以便本地和远程集群可以与镜像卷数据进行通信。有关基于IP的MetroCluster 设置的特定信息、请参见 https://["安装 MetroCluster IP 配置"]。
 
-您可以将MetroCluster 配置与中的要求进行比较 https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster 文档"] 确定更改或升级MetroCluster 配置中的组件是否可以提高工作负载性能。此比较可帮助问题解答您回答以下问题：
+您可以将MetroCluster 配置与中的要求进行比较 https://["MetroCluster 文档"] 确定更改或升级MetroCluster 配置中的组件是否可以提高工作负载性能。此比较可帮助问题解答您回答以下问题：
 
 * 控制器是否适合您的工作负载？
 * 您是否需要将 ISL 捆绑包升级到更大的带宽才能处理更多吞吐量？
@@ -25,6 +25,6 @@ summary: 您可以通过确保正确设置 MetroCluster 配置来防止 MetroClu
 
 * 相关信息 *
 
-* 有关更换或升级MetroCluster 组件的信息、请参见 https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster 文档"]。
-* 有关升级控制器的信息、请参见 https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/task_upgrade_controllers_in_a_four_node_fc_mcc_us_switchover_and_switchback_mcc_fc_4n_cu.html["使用切换和切回升级 MetroCluster FC 配置中的控制器"] 和 https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/task_upgrade_controllers_in_a_four_node_ip_mcc_us_switchover_and_switchback_mcc_ip.html["使用切换和切回升级MetroCluster IP配置中的控制器"]
+* 有关更换或升级MetroCluster 组件的信息、请参见 https://["MetroCluster 文档"]。
+* 有关升级控制器的信息、请参见 https://["使用切换和切回升级 MetroCluster FC 配置中的控制器"] 和 https://["使用切换和切回升级MetroCluster IP配置中的控制器"]
 

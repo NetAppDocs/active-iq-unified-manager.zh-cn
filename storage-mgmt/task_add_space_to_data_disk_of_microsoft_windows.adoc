@@ -32,7 +32,7 @@ summary: 如果需要增加 Unified Manager 数据库的磁盘空间量，可以
  a| 
 按照 Microsoft 主题中的步骤进行操作：
 
-https://technet.microsoft.com/en-us/library/cc771473(v=ws.11).aspx["扩展基本卷"]
+https://["扩展基本卷"]
 
 
 
@@ -41,7 +41,7 @@ https://technet.microsoft.com/en-us/library/cc771473(v=ws.11).aspx["扩展基本
  a| 
 按照 Microsoft 主题中的步骤进行操作：
 
-https://msdn.microsoft.com/en-us/library/dd163551.aspx["添加硬盘驱动器"]
+https://["添加硬盘驱动器"]
 
 
 
@@ -50,7 +50,7 @@ https://msdn.microsoft.com/en-us/library/dd163551.aspx["添加硬盘驱动器"]
  a| 
 按照 VMware 主题中的步骤进行操作：
 
-https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1004071["增加磁盘分区的大小"]
+https://["增加磁盘分区的大小"]
 
 |===
 

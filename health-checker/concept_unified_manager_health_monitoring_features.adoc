@@ -46,6 +46,6 @@ Unified Manager 包括以下功能：
 存储自动化商店包含 NetApp 认证的自动化存储工作流软件包，这些软件包专为与 OnCommand Workflow Automation （ WFA ）结合使用而开发。您可以下载这些软件包，然后将其导入到 WFA 中以执行这些软件包。自动工作流可从以下位置获得：
 
 +
-https://automationstore.netapp.com["存储自动化存储"]
+https://["存储自动化存储"]
 
 

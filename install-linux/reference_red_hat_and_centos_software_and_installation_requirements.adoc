@@ -25,7 +25,7 @@ Linux 系统必须安装以下版本的操作系统和支持软件：
 
 有关受支持的 Red Hat Enterprise Linux 和 CentOS 版本的最新完整列表，请参见互操作性表。
 
-http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+http://["mysupport.netapp.com/matrix"]
 
 
 

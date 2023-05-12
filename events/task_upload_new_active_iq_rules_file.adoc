@@ -23,7 +23,7 @@ NOTE: Active IQ 规则也称为Config Advisor (CA)安全规则。
 * 必须启用Active IQ 门户事件报告。默认情况下，此功能处于启用状态。有关信息，请参见 link:../config/concept_active_iq_platform_events.html["启用 Active IQ 门户事件"]。
 * 您必须从 NetApp 支持站点下载规则文件。
 +
-规则文件位于： https://mysupport.netapp.com/api/content-service/staticcontents/content/public/tools/unifiedmanager/ca/secure_rules.zip[]
+规则文件位于： https://[]
 
 
 
@@ -47,4 +47,4 @@ NOTE: 在Windows系统上、在没有网络连接的站点中、NetApp知识库�
 
 规则文件将在 Unified Manager 服务器上解压缩。在受管集群在午夜后生成AutoSupport 文件后、Unified Manager将根据规则文件检查集群、并根据需要生成新的风险和意外事件。
 
-有关详细信息、请参见此知识库(KB)文章： https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/How_to_update_AIQCASecure_rules_manually_in_Active_IQ_Unified_Manager["如何在Active IQ Unified Manager 中手动更新AIQCASecure规则"]。
+有关详细信息、请参见此知识库(KB)文章： https://["如何在Active IQ Unified Manager 中手动更新AIQCASecure规则"]。

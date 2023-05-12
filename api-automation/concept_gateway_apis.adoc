@@ -113,4 +113,4 @@ API 将返回该集群中的存储卷列表。响应格式与从 ONTAP 运行相
 curl -X GET "https://<hostname>/api/gateways/e4f33f90-f75f-11e8-9ed9-00a098e3215f/storage/volume" -H "accept: application/hal+json" -H "X-Dot-SVM-UUID: d9c33ec0-5b61-11e9-8760-00a098e3215f"
 -H "Authorization: Basic <Base64EncodedCredentials>"
 ----
-有关使用ONTAP REST API的详细信息、请参见https://docs.netapp.com/us-en/ontap-automation/index.html["ONTAP REST API 自动化"]
+有关使用ONTAP REST API的详细信息、请参见https://["ONTAP REST API 自动化"]

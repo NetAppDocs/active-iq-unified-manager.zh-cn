@@ -71,7 +71,7 @@ Unified Manager 可以全面诊断某些问题并提供单一解决方案。如�
 
 您可以单击合规和不合规集群、Storage VMS、加密和未加密卷以及卷反勒索软件状态的条形图、转到相应页面并查看筛选后的集群、Storage VM和卷的安全详细信息。
 
-合规性基于 http://www.netapp.com/us/media/tr-4569.pdf["《适用于 ONTAP 9 的 NetApp 安全加固指南》"]。单击面板顶部的右箭头可在安全性页面上查看所有集群的安全详细信息。有关信息，请参见link:../health-checker/task_view_detailed_security_status_for_clusters_and_svms.html["查看集群和 Storage VM 的详细安全状态"]。
+合规性基于 http://["《适用于 ONTAP 9 的 NetApp 安全加固指南》"]。单击面板顶部的右箭头可在安全性页面上查看所有集群的安全详细信息。有关信息，请参见link:../health-checker/task_view_detailed_security_status_for_clusters_and_svms.html["查看集群和 Storage VM 的详细安全状态"]。
 
 
 

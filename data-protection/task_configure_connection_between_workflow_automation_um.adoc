@@ -19,7 +19,7 @@ summary: 您可以在 OnCommand Workflow Automation （ WFA ）和 Unified Manag
 +
 [NOTE]
 ====
-WFA 5.1 中提供了 "`WFA 软件包用于管理集群模式 Data ONTAP` " ，因此无需像以往那样从 NetApp 存储自动化存储中下载此软件包并将其单独安装到 WFA 服务器上。  https://automationstore.netapp.com/pack-list.shtml["用于管理 ONTAP 的 WFA 软件包"]
+WFA 5.1 中提供了 "`WFA 软件包用于管理集群模式 Data ONTAP` " ，因此无需像以往那样从 NetApp 存储自动化存储中下载此软件包并将其单独安装到 WFA 服务器上。  https://["用于管理 ONTAP 的 WFA 软件包"]
 
 ====
 * 您必须具有在 Unified Manager 中创建的数据库用户的名称，以支持 WFA 和 Unified Manager 连接。
@@ -48,4 +48,4 @@ WFA 5.1 中提供了 "`WFA 软件包用于管理集群模式 Data ONTAP` " ，�
 
 * 相关信息 *
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61550["NetApp 文档： OnCommand Workflow Automation （当前版本）"]
+http://["NetApp 文档： OnCommand Workflow Automation （当前版本）"]

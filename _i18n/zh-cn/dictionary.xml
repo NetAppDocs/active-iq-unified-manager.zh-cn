@@ -11660,7 +11660,6 @@
   <block id="90ef461f23841e1c3dc26580247959fd" category="list-text">最小分配：是使用"已分配空间"还是"已用空间"来确定最大吞吐量(峰值) IOPS。</block>
   <block id="f6d81ff30a84faf845ece49601784b0a" category="list-text">Expected Latency：存储输入/输出操作的预期平均延迟。</block>
   <block id="a4918d1e2d3364601712640b61668ac3" category="list-text">Shared：对于传统QoS策略、表示策略组中定义的吞吐量值是否在多个对象之间共享。</block>
-  <block id="3e8dedd9367cf7dda99efa4648b40a68" category="list-text">Associated Objects：分配给QoS策略组的工作负载数量。您可以单击QoS策略组名称旁边的展开按钮()来查看有关该策略组的更多详细信息。</block>
   <block id="3cd90a107dd83598c6f4b8687b8ad89e" category="list-text">已分配容量：QoS策略组中的对象当前正在使用的空间量。</block>
   <block id="b0ce459d424ac8a8bf4972ced4fa34af" category="list-text">Associated Objects：分配给QoS策略组的工作负载数量、分为卷和LUN。您可以单击此数字以导航到一个页面、其中提供了有关选定卷或LUN的更多详细信息。</block>
   <block id="034dcd82cded6710adb9ee975eac3378" category="paragraph">有关详细信息、请参见下的主题 <block ref="d9e71bb30662a6bff1b9bdd194cdc91c" category="inline-link-macro-rx"></block>。</block>
@@ -11739,7 +11738,6 @@
   <block id="c1d47624946f3a469492d8dba1510dc8" category="paragraph">按照以下步骤确定基于FC配置的MetroCluster 的数据复制中的任何问题。</block>
   <block id="5627136cfa219c91be032bfe00b32183" category="list-text">在*运行状况：所有集群*视图中、单击要查看其MetroCluster 复制详细信息的集群的名称。在*集群/运行状况详细信息*页面上、单击* MetroCluster 复制*选项卡。</block>
   <block id="97e6ec6e4baff4ed6d4035d75d3c5ddd" category="paragraph">要复制的 MetroCluster 配置的拓扑会显示在本地站点的相应集群对象区域中，其中包含有关要镜像数据的远程站点的信息。如果将指针移动到图标上方，则可以查看有关生成的事件的详细信息。</block>
-  <block id="bcd77e19082ab48b2d951080763c8616" category="paragraph">您可以使用中显示的信息更正任何复制问题。如果您在 MetroCluster 配置中发现镜像问题，则必须登录到 System Manager 或访问 ONTAP 命令行界面以解决这些问题。</block>
   <block id="89e3093deb573e631e9912227e8a119e" category="paragraph">您可以安装Unified Manager、升级到更高版本或删除Unified Manager应用程序。</block>
   <block id="7e32d4718f2e4988b5bedbbf8300e1be" category="paragraph">请参见 <block ref="faea1ae077af360ba8a684d0f5eba7d8" category="inline-link-macro-rx"></block>。</block>
   <block id="f91923991c8993a30a6a751c98474af6" category="list-text">在支持的Web浏览器上的新窗口中启动Web UI、然后登录以使用升级后的Unified Manager版本。</block>
@@ -11913,4 +11911,7 @@
   <block id="21f927966fb538fc77f7b83256804bf9" category="sidebar">Active IQ Unified Manager 9.13文档</block>
   <block id="f2c4e14eadf113bcbadf371fc730a271" category="sidebar">监控MetroCluster 配置</block>
   <block id="8bd5d1eafb044b6a37f8a95068bd98a6" category="sidebar">Unified Manager的API参考</block>
+  <block id="db3375d7decfbb29e343dc2213616878" category="paragraph">您可以使用集群 / 运行状况详细信息页面中显示的信息来更正任何复制问题。如果您在 MetroCluster 配置中发现镜像问题，则必须登录到 System Manager 或访问 ONTAP 命令行界面以解决这些问题。</block>
+  <block id="c438f7aec6602f34fb279fdfb89b02c7" category="list-text">Associated Objects：分配给QoS策略组的工作负载数量。您可以单击展开按钮(<block ref="5bc06105dc11797d871e45be810a1285" category="inline-image-macro-rx" type="image"></block>)以查看有关该策略组的更多详细信息。</block>
+  <block id="c2c8552adcdf172b368e6fec79ced7cb" category="list-text">以Windows管理员身份启动PowerShell或命令提示符。</block>
 </blocks>

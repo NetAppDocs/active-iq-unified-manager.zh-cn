@@ -23,13 +23,13 @@ summary: 如果要安装 Unified Manager 的系统无法访问 MySQL Community E
 .步骤
 . 下载适用于您的安装的 MySQL 存储库。对于 Red Hat Enterprise Linux 7 ，请从以下位置下载：
 +
-` +wget http://repo.mysql.com/yum/mysql-8.0-community/el/7/x86_64/mysql80-community-release-el7-3.noarch.rpm+`[]
+` +wget http://[]
 
 +
 对于版本 8 ，请从以下位置下载：
 
 +
-` +wget http://repo.mysql.com/yum/mysql-8.0-community/el/8/x86_64/mysql80-community-release-el8-1.noarch.rpm+`[]
+` +wget http://[]
 
 . 配置 MySQL 存储库：
 +

@@ -48,7 +48,7 @@ Unified Manager 使用系统运行状况警报监控 MetroCluster 配置中的�
 
 
 
-您可以使用中显示的信息更正任何复制问题。如果您在 MetroCluster 配置中发现镜像问题，则必须登录到 System Manager 或访问 ONTAP 命令行界面以解决这些问题。
+您可以使用集群 / 运行状况详细信息页面中显示的信息来更正任何复制问题。如果您在 MetroCluster 配置中发现镜像问题，则必须登录到 System Manager 或访问 ONTAP 命令行界面以解决这些问题。
 
 * 相关信息 *
 
