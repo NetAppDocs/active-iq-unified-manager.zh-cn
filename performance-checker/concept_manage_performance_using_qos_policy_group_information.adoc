@@ -13,4 +13,4 @@ summary: 通过 Unified Manager ，您可以查看所监控的所有集群上可
 [role="lead"]
 通过 Unified Manager ，您可以查看所监控的所有集群上可用的服务质量（ QoS ）策略组。这些策略可能是使用 ONTAP 软件（ System Manager 或 ONTAP 命令行界面）或 Unified Manager 性能服务级别策略定义的。Unified Manager 还会显示已分配 QoS 策略组的卷和 LUN 。
 
-有关调整QoS设置的详细信息、请参见 https://["性能管理概述"]
+有关调整QoS设置的详细信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/index.html["性能管理概述"]

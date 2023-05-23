@@ -19,7 +19,7 @@ summary: 您可以订阅接收由安装了 ONTAP 软件的系统生成的事件�
 
 您可以订阅任意数量的 EMS 事件。您订阅的所有事件都会经过验证，并且只有经过验证的事件才会应用于您在 Unified Manager 中监控的集群。_EMS ONTAP 9 事件目录 _ 提供指定版本 ONTAP 9 软件的所有 EMS 消息的详细信息。有关适用事件的列表，请从 ONTAP 9 产品文档页面找到 _EMS 事件目录 _ 的相应版本。
 
-https://["ONTAP 9 产品库"]
+https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["ONTAP 9 产品库"]
 
 您可以为订阅的 ONTAP EMS 事件配置警报，也可以为这些事件创建要执行的自定义脚本。
 
@@ -36,7 +36,7 @@ https://["ONTAP 9 产品库"]
 要查看可订阅的 EMS 事件的名称，可以从 ONTAP 集群 Shell 使用 `event route show` 命令（ ONTAP 9 之前的版本）或 `event catalog show` 命令（ ONTAP 9 或更高版本）。
 
 +
-https://["如何在 Active IQ Unified Manager 中配置和接收 ONTAP EMS 事件订阅的警报"]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_and_receive_alerts_from_ONTAP_EMS_Event_Subscription_in_Active_IQ_Unified_Manager["如何在 Active IQ Unified Manager 中配置和接收 ONTAP EMS 事件订阅的警报"]
 
 . 单击 * 添加 * 。
 +

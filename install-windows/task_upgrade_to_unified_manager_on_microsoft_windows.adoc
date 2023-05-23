@@ -54,7 +54,7 @@ summary: 您可以通过在 Windows 平台上下载并运行安装文件来升�
 .步骤
 . 登录到 NetApp 支持站点，然后导航到 Unified Manager 的 Download 页面：
 +
-https://["NetApp 支持站点"^]。
+https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp 支持站点"^]。
 
 . 选择所需的 Unified Manager 版本并接受最终用户许可协议（ EULA ）。
 . 将 Unified Manager Windows 安装文件下载到 Windows 系统上的目标目录。

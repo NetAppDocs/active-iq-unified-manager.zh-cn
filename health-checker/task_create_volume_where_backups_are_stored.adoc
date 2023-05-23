@@ -49,4 +49,4 @@ summary: 您可以使用ONTAP 系统管理器或ONTAP 命令行界面配置将Sn
 
 
 
-有关创建 NFS 卷的详细步骤，请参见 https://["如何在 ONTAP 9 中配置 NFSv4"] 和 http://["《 ONTAP 9 NFS 配置快速指南》"]。
+有关创建 NFS 卷的详细步骤，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_configure_NFSv4_in_Cluster-Mode["如何在 ONTAP 9 中配置 NFSv4"] 和 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-nfsv3-cg/home.html["《 ONTAP 9 NFS 配置快速指南》"]。

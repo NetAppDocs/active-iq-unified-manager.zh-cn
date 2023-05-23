@@ -18,13 +18,13 @@ summary: 如果要安装 Unified Manager 的系统无法访问适用于 Enterpri
 .步骤
 . 下载适用于您的安装的 EPEL 存储库。对于 Red Hat Enterprise Linux 7 ，请从以下位置下载：
 +
-` +wget https://[]
+` +wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm+`[]
 
 +
 对于版本 8 ，请从以下位置下载：
 
 +
-` +wget https://[]
+` +wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm+`[]
 
 . 配置 EPEL 存储库：
 +

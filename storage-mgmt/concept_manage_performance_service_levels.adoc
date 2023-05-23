@@ -132,7 +132,7 @@ Capacity
 已分配 PSL 的存储工作负载数量。
 
 |===
-有关峰值 IOPS 和预期 IOPS 如何帮助在 ONTAP 集群上实现一致的差异化性能的信息，请参见以下知识库文章：https://["什么是性能预算？"]
+有关峰值 IOPS 和预期 IOPS 如何帮助在 ONTAP 集群上实现一致的差异化性能的信息，请参见以下知识库文章：https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/What_is_Performance_Budgeting%3F["什么是性能预算？"]
 
 
 

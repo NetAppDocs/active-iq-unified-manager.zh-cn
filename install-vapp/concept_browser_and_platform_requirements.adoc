@@ -15,7 +15,7 @@ summary: 要访问 Unified Manager Web UI ，请使用支持的浏览器。
 
 互操作性表列出了支持的浏览器版本。
 
-http://["mysupport.netapp.com/matrix"]
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
 
 对于所有浏览器，禁用弹出窗口阻止程序可确保正确显示软件功能。
 
