@@ -11,15 +11,13 @@ summary: 如果先前在 Red Hat Enterprise Linux 7.x 系统上安装了 Unified
 
 
 [role="lead"]
-如果先前在 Red Hat Enterprise Linux 7.x 系统上安装了 Unified Manager ，但需要升级到 Red Hat Enterprise Linux 8.x ，则必须按照本主题中列出的过程之一进行操作。在这两种情况下，都必须在 Red Hat Enterprise Linux 7.x 系统上创建 Unified Manager 的备份，然后将备份还原到 Red Hat Enterprise Linux 8.x 系统。
+如果先前在 Red Hat Enterprise Linux 7.x 系统上安装了 Unified Manager ，但需要升级到 Red Hat Enterprise Linux 8.x ，则必须按照本主题中列出的过程之一进行操作。在这两种情况下，都必须在 Red Hat Enterprise Linux 7.x 系统上创建 Unified Manager 的备份，然后将备份还原到 Red Hat Enterprise Linux 8.x 系统。请注意、支持的Red Hat Enterprise Linux版本为8.0到8.7。
 
 下面列出的两个选项之间的区别是，在一种情况下，您要将 Unified Manager 还原到新的 8.x 服务器，而在另一种情况下，您要对同一台服务器执行还原操作。
 
 由于此任务要求您在 Red Hat Enterprise Linux 7.x 系统上创建 Unified Manager 的备份，因此，只有在准备完成整个升级过程时，才应创建备份，以便 Unified Manager 在最短时间内脱机。在关闭 Red Hat Enterprise Linux 7.x 系统以及启动新的 Red Hat Enterprise Linux 8.x 之前的时间段内， Unified Manager UI 中会显示所收集数据的空隙。
 
-如果您需要查看有关备份和还原过程的详细说明，请参见 _RAID Active IQ Unified Manager 联机帮助。
-
-* 使用新服务器升级主机操作系统 *
+请参见 link:../health-checker/concept_manage_backup_and_restore_operations.html["管理备份和还原操作"] 如果需要查看备份和还原过程的详细说明、
 
 如果您的备用系统可以安装 Red Hat Enterprise Linux 8.x 软件，以便在 Red Hat Enterprise Linux 7.x 系统仍然可用时在该系统上执行 Unified Manager 还原，请按照以下步骤进行操作。
 
