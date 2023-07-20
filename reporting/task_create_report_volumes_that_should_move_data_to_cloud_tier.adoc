@@ -33,11 +33,12 @@ summary: '您可以创建一个报告，其中包含当前驻留在 FabricPool �
 +
 ** 磁盘类型包含FabricPool
 ** 云建议包含层
-** 冷数据大于 10 GBimage:../media/filter_cold_data.gif[""]
+** 冷数据大于 10 GB
+image:../media/filter_cold_data.gif["显示如何添加和应用筛选器的UI屏幕截图。"]
 
 
 . 单击冷数据列的顶部，以使冷数据最多的卷显示在视图的顶部。
-. 使用名称保存此视图以反映此视图显示的内容，例如 "`Vols change tiering policy` " 。image:../media/report_vol_cold_data.gif[""]
+. 使用名称保存此视图以反映此视图显示的内容，例如 "`Vols change tiering policy` " 。image:../media/report_vol_cold_data.gif["一个UI屏幕截图、其中显示了\"Vols\"更改分层策略页面、并按正确顺序列出了所需的列。"]
 . 单击清单页面上的 * 已计划报告 * 按钮。
 . 单击 * 添加计划 * 向报告计划页面添加新行，以便为新报告定义计划特征。
 . 输入报告计划的名称并填写其他报告字段，然后单击复选标记（image:../media/blue_check.gif[""]）。

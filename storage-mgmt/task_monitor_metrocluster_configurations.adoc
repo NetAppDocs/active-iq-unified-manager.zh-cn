@@ -49,7 +49,7 @@ MetroCluster 配置的拓扑将显示在相应的集群对象区域中。您可�
 
 
 
-image::../media/node_switch_connectivity.gif[节点交换机连接]
+image::../media/node_switch_connectivity.gif[节点交换机连接图标]
 
 如果将指针移动到图标上方，则可以查看有关生成的事件的详细信息。
 
@@ -86,7 +86,7 @@ NOTE: 此时将报告以下状态：严重(image:sev_critical_um60.png[""]），
 在下图中、您可以看到源集群和目标集群之间的站点间连接不可用、并且未配置它们之间的调解器。
 
 +
-image:mcc-ip-conn-status.png[""]
+image:mcc-ip-conn-status.png["显示源站点和镜像站点的拓扑以及调解器的UI屏幕截图。"]
 
 
 

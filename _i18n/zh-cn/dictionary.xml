@@ -530,7 +530,6 @@
   <block id="f6f7cdc030251c054f13617216080999" category="paragraph">指 ONTAP 提供的与物理资源无关的存储资源。这些资源与 Storage Virtual Machine （ SVM ，以前称为 Vserver ）关联，并且它们独立于任何特定物理存储资源（例如磁盘，阵列 LUN 或聚合）而存在。</block>
   <block id="c56905729fc808fe336ea9bf2ca70060" category="paragraph">逻辑存储资源包括所有类型的卷和 qtree ，以及可用于这些资源的功能和配置，例如 Snapshot 副本，重复数据删除，数据压缩和配额。</block>
   <block id="bd5fde075b251b5502969a404a6f6bea" category="paragraph">下图显示了双节点集群中的存储资源：</block>
-  <block id="d48282ae57cfe1c6851ddf5ed32ed2dc" category="image-alt">存储资源模型</block>
   <block id="b30145930e86d8dff5c8f1ae3efbfefb" category="summary">使用 Active IQ Unified Manager ，您可以配置和修改存储工作负载（ LUN ， NFS 文件共享和 CIFS 共享）。配置包括多个步骤，从创建 Storage Virtual Machine （ SVM ）到对存储工作负载应用性能服务级别和存储效率策略。修改工作负载包括修改特定参数并启用其附加功能的步骤。</block>
   <block id="33ccee0af49d55e45b259529dd6e61f4" category="doc">工作负载管理工作流</block>
   <block id="045ac4a5977546febb922ff37723c7c8" category="paragraph">本节介绍了以下工作流：</block>
@@ -1106,9 +1105,6 @@
   <block id="896dc4c0b077cc2457b9e7d5e062be49" category="doc">不合规的含义</block>
   <block id="793f63d597e811b6f2259b3b561feced" category="paragraph">如果不满足根据适用于 ONTAP 9_ 的 _NetApp 安全加固指南中定义的建议评估的任何安全标准，则会将集群和 Storage Virtual Machine （ SVM ）视为不合规。此外，如果任何 SVM 被标记为不合规，则集群将被视为不合规。</block>
   <block id="262b5296c8dd1cc0394ba94bca3e0d73" category="paragraph">安全卡中的状态图标对于其合规性具有以下含义：</block>
-  <block id="b9d5b6e8acd314e48a364ba18a32bf2b" category="list-text"><block ref="1f713a82aed699daab6064ddfb5af937" category="inline-image-macro-rx" type="image"></block> - 此参数已按照建议进行配置。</block>
-  <block id="8f43d8a07b8b2dd47e5cc91b346bf4c4" category="list-text"><block ref="f1c08a3c67e9109a6739da91403bf2f1" category="inline-image-macro-rx" type="image"></block> - 未按建议配置参数。</block>
-  <block id="0e0f51fe4a129d870f6bc33c4c236c25" category="list-text"><block ref="41868f0d019012163243e4325070a374" category="inline-image-macro-rx" type="image"></block> —未在集群上启用此功能，或者未按建议配置此参数，但此参数不会影响对象的合规性。</block>
   <block id="48380cc5d841748e2de23ed3327fb541" category="paragraph">请注意，卷加密状态不会影响集群或 SVM 是否合规。</block>
   <block id="fd7badfd3e153a99b89c58f45fb43ee3" category="summary">标注规则是您定义的用于标注存储对象（卷，集群或 Storage Virtual Machine （ SVM ））的标准。您可以使用条件组或条件来定义标注规则。</block>
   <block id="c5b38d4c16c7ad76a1ef5b34ae428fed" category="doc">标注规则在 Unified Manager 中的工作原理</block>
@@ -3899,7 +3895,6 @@
   <block id="7f645c62748b8f341ce5518189046952" category="list-text"><block ref="78f1c7f3617ef41df282842c7aea86dc" category="inline-link-macro-rx"></block>。</block>
   <block id="cf5ca9e866dd6f6af50454c3c37d728b" category="paragraph">当初始源卷重新可用时，您可以决定通过还原源卷来重新建立初始保护关系。在还原源之前，您必须将其与写入前一个目标的数据同步。您可以使用反向重新同步操作来创建新的保护关系，方法是反转原始关系的角色并将源卷与前一个目标同步。此时将为此新关系创建一个新的基线 Snapshot 副本。</block>
   <block id="bfaa254a5cb39b3c43b8f5776f3e8b37" category="paragraph">反转关系类似于级联关系：</block>
-  <block id="567bacd20706fd12312a5d53636dae58" category="image-alt">um toplogy 反向重新同步</block>
   <block id="636d322cf36001b0df3c1f4c631575c2" category="inline-link-macro">中断已反转的 SnapMirror 关系</block>
   <block id="45584357434a808c067b0c7bcf62d4d7" category="list-text"><block ref="6961a01c834d625dff304c8e01f1c155" category="inline-link-macro-rx"></block>。</block>
   <block id="03f1c41c508d338d0625395e3cb82781" category="paragraph">当初始源卷重新同步并可以再次提供数据时，请使用中断操作中断已反转的关系。</block>
@@ -3955,7 +3950,6 @@
   <block id="a5f93a48aa0d4ca79e8ba0ed04367d30" category="list-text">* 文件路径文本框 *</block>
   <block id="e45513157360bfb7708c8ac86dcbb123" category="paragraph">用于键入要将数据还原到的文件路径。输入的路径必须已存在。</block>
   <block id="496ee322ba138fdbc777e5ab2e30145e" category="list-text">* 名称 *</block>
-  <block id="ccc7c10eee77487b91c5e10f59a57941" category="paragraph">显示选定卷的可用文件夹的名称。单击名称列表中的文件夹可显示子文件夹（如果存在）。不会显示文件夹中包含的文件。单击 <block ref="03e56dc1d9ac5d42b32f5f93ce4092cb" category="inline-image-macro-rx" type="image"></block> 选择文件夹后，您将在目录结构中上移一级。</block>
   <block id="71a8b433da1b6f09d4f98005b290c199" category="list-text">* 选择目录 *</block>
   <block id="1f8f89656da4502817635b86061a17c0" category="paragraph">应用所做的选择并关闭浏览目录对话框。如果未选择目录，则此按钮将被禁用。</block>
   <block id="d6c0113f647cfe46a7dd4aab7f60a782" category="paragraph">丢弃所做的选择并关闭 " 浏览目录 " 对话框。</block>
@@ -4093,7 +4087,6 @@
   <block id="355ed02b5bf269a9ac81c210a91b2326" category="section-title">选择要还原的项</block>
   <block id="0ae4cbe4565500f72a0a3eec5adb66af" category="paragraph">通过选择要还原的项区域，您可以选择整个卷或要还原的特定文件和文件夹。您最多可以选择 10 个文件，文件夹或两者的组合。如果选择的项数达到最大值，则项目选择复选框将被禁用。</block>
   <block id="a77fff19e2946aa091859a19a3a2e7a7" category="list-text">* 路径字段 *</block>
-  <block id="06c777159e7f598fdd2986e6b3840ac0" category="paragraph">显示要还原的数据的路径。您可以导航到要还原的文件夹和文件，也可以键入路径。除非您选择或键入路径，否则此字段为空。单击 <block ref="03e56dc1d9ac5d42b32f5f93ce4092cb" category="inline-image-macro-rx" type="image"></block> 选择路径后，您将在目录结构中上移一级。</block>
   <block id="40b243c53eb51550476192bdb9bb1cfb" category="list-text">* 文件夹和文件列表 *</block>
   <block id="04ff9dd403e4707ae615a9ceffbe38dc" category="paragraph">显示您输入的路径的内容。默认情况下，最初会显示根文件夹。单击文件夹名称可显示文件夹的内容。</block>
   <block id="4a07ccbededd2ef14545f6f289a206db" category="paragraph">您可以按如下所示选择要还原的项：</block>
@@ -4774,7 +4767,6 @@
   <block id="e6fc07fb0e600b193f93fbcd7ea620d5" category="paragraph">警报电子邮件会发送给订阅接收警报的所有用户。</block>
   <block id="095be07542fc734d64064bbf87fcd18a" category="paragraph">如果性能计数发生原因器或容量值在收集期间发生较大变化，则对于同一阈值策略，可能会同时触发严重事件和警告事件。在这种情况下，您可能会收到一封有关警告事件的电子邮件和一封有关严重事件的电子邮件。这是因为您可以通过 Unified Manager 单独订阅来接收警告和严重阈值违规的警报。</block>
   <block id="2524784f2bd7d2dbb06f68a697df0f67" category="paragraph">下面显示了一个警报电子邮件示例：</block>
-  <block id="b4d7af3796f89b26c8c4d2e30f449bb9" category="image-alt">UM 电子邮件警报</block>
   <block id="ae17f580c3ba17b390c1d75dd6e2680c" category="summary">您可以定义 Unified Manager 维护窗口，以便在已计划集群维护且您不希望收到大量不需要的通知时禁止特定时间范围内的事件和警报。</block>
   <block id="9388ea725ef6bea31a4e1579b867cb9d" category="doc">什么是 Unified Manager 维护窗口</block>
   <block id="01b593ebca77b41838f52b9b38faeafb" category="paragraph">维护窗口启动后， " 对象维护窗口已启动 " 事件将发布到 " 事件管理 " 清单页面。维护窗口结束时，此事件将自动废弃。</block>
@@ -5607,7 +5599,6 @@
   <block id="0e01981f6f68a17152927292ac267adc" category="doc">解决 Active IQ 平台事件</block>
   <block id="311a918ed191f71e3e34d4f7b035427d" category="paragraph">Active IQ 平台意外事件和风险与其他 Unified Manager 事件类似，因为它们可以分配给其他用户进行解决，并且具有相同的可用状态。但是，使用 * 修复它 * 按钮解决这些类型的事件时，您可以在数小时内验证解决方法。</block>
   <block id="8a49e0150d4e11638ccedb6d64e270b2" category="paragraph">下图显示了在解决从 Active IQ 平台生成的事件时必须执行的操作（绿色）以及 Unified Manager 执行的操作（黑色）。</block>
-  <block id="d1572fcb9f5c13f1eea575c7640be013" category="image-alt">AIQ 和 UM 事件解决方案</block>
   <block id="0e0dea3909c8e70050c5fc144debdd08" category="paragraph">在执行手动解决方案时，您必须登录到 System Manager 或 ONTAP 命令行界面以修复问题描述。只有在集群在午夜生成新的 AutoSupport 消息后，您才能验证问题描述。</block>
   <block id="5133ed34dc41fac7f900bb32c7fb439f" category="paragraph">使用 * 修复它 * 按钮执行半自动解决方案时，您可以在数小时内验证修复是否成功。</block>
   <block id="4fe719bb2337d064fde09abdb1d9323b" category="summary">默认情况下，所有事件均处于启用状态。您可以全局禁用事件，以防止为环境中不重要的事件生成通知。如果要恢复接收已禁用事件的通知，您可以启用这些事件。</block>
@@ -5671,7 +5662,6 @@
   <block id="22028b2a7ee542d452d0faebe43c3e91" category="paragraph">Unified Manager 可以对某些事件进行全面诊断，并使用 * 修复它 * 按钮提供单一解决方案。如果可用，这些解决方案将显示在信息板，事件详细信息页面以及左侧导航菜单上的工作负载分析选项中。</block>
   <block id="62c1c4512db65a8497e64484d26bdb4c" category="paragraph">大多数事件都有各种可能的解决方案，这些解决方案显示在事件详细信息页面中，因此您可以使用 ONTAP System Manager 或 ONTAP 命令行界面实施最佳解决方案。如果 Unified Manager 已确定修复问题描述需要一个解决方案，并且可以使用 ONTAP 命令行界面命令解决此问题，则可以执行 * 修复它 * 操作。</block>
   <block id="ea0caf7a18f82052f22b81d1c41a79a7" category="list-text">要查看可通过 * 信息板 * 修复的事件，请单击 * 信息板 * 。</block>
-  <block id="4a5fe175165969b26b13e8ce49f6d97d" category="image-alt">管理操作</block>
   <block id="4f6aa051079bac1a5f061fa0dcbfe721" category="list-text">要解决 Unified Manager 可以修复的任何问题，请单击 * 修复它 * 按钮。要修复多个对象上的问题描述，请单击 * 全部修复 * 按钮。</block>
   <block id="5c4d8b9e42cb84ba6df2836f086acda2" category="inline-link-macro">Unified Manager 可以修复哪些问题</block>
   <block id="db4bddce941b1e5ea884199ac355f0dd" category="summary">通过事件管理清单页面，您可以查看当前事件及其属性的列表。您可以执行确认，解决和分配事件等任务。您还可以为特定事件添加警报。</block>
@@ -5941,7 +5931,6 @@
   <block id="f9239dd0ba8bc88dddacb9123cff5997" category="paragraph">已删除磁盘架（不适用）</block>
   <block id="52b4d20262708e387b759abe91967d07" category="summary">Active IQ 平台意外事件和风险会转换为 Unified Manager 事件，如下图所示。</block>
   <block id="71d8127500ab57522b5f2427de2cd85c" category="doc">如何生成 Active IQ 平台事件</block>
-  <block id="268090b8284e72cc57625ab835379bf7" category="image-alt">生成 AIQ 和 UM 事件</block>
   <block id="cf08c35e48f69110899768e3b2f8c814" category="paragraph">如您所见，在 Active IQ 平台上编译的规则文件将保持最新，并且每天都会生成集群 AutoSupport 消息，并且 Unified Manager 会每天更新事件列表。</block>
   <block id="8239d1063c84e6fb12dc583b665ffa0f" category="summary">事件管理系统（ EMS ）从 ONTAP 内核的不同部分收集事件数据，并提供事件转发机制。这些 ONTAP 事件可以在 Unified Manager 中报告为 EMS 事件。集中式监控和管理可简化根据这些 EMS 事件配置关键 EMS 事件和警报通知的过程。</block>
   <block id="6612c2926e61f6f4799db088b32c9397" category="doc">什么是事件管理系统事件</block>
@@ -6248,7 +6237,6 @@
   <block id="3726adc13d5f404a42df747f06ddaab8" category="list-text">在 * 计数器图表 * 窗格中，单击 * 选择图表 * ，然后选择 * 性能已用容量 * 图表。</block>
   <block id="c401099acbe2174b99b7ec2692c7c474" category="list-text">向下滚动，直到可以查看图表。</block>
   <block id="7a9a444acf2c38e492552aff0db26af0" category="paragraph">标准图表的颜色显示对象何时处于最佳范围（黄色），何时未充分利用（绿色）以及何时过度利用（红色）。细分图表仅显示根对象的详细性能容量详细信息。</block>
-  <block id="b26b53cf6810080df88192bbe06ef9ae" category="image-alt">性能余量计数器图表</block>
   <block id="dea6a44f1acbd73729580434b2cd1271" category="list-text">如果要以完整大小格式查看任一图表，请单击 * 缩放视图 * 。</block>
   <block id="227f5acbef95998ccbfd9c680d0dab46" category="paragraph">通过这种方式，您可以在单独的窗口中打开多个计数器图表，以便将已用性能容量值与同一时间范围内的 IOPS 或 MBps 值进行比较。</block>
   <block id="0d925cf8857dea396346a45116040ee4" category="summary">您可以将处理存储效率操作的策略或计划修改为在受影响的卷工作负载不太繁忙时运行。</block>
@@ -6267,7 +6255,6 @@
   <block id="83d6279aff05f9fb65333ef455dcbbc3" category="list-text">在选定 SVM 的 * 性能 /SVM 资源管理器 * 页面中，从 IOPS 图表中，从下拉菜单中选择 * 协议 * 。</block>
   <block id="447706c449f59f43bf73830cfa98e1c2" category="paragraph">此时将显示 "IOPS - 协议 " 图表。</block>
   <block id="c468dcd34f66d4c89f937f753cbea9da" category="list-text">要查看较大版本的图表，请选择 * 缩放视图 * 。</block>
-  <block id="0ffbf029a46a176f851bd1083fc59f3f" category="paragraph">此时将显示 IOPS 高级协议比较图表。您可以通过取消选择或选择来限制比较 <block ref="dd1d4035683a3e071dd51657ce989305" category="inline-image-macro-rx" type="image"></block> 与协议关联的。</block>
   <block id="bd4b39dc1bb79b9a1bd07a73251e2579" category="list-text">要查看特定值，请将光标移动到任一图表的图表区域中以查看弹出窗口。</block>
   <block id="6374a42c331317d5def8542f7dec44af" category="summary">Unified Manager 信息板提供了几个面板，用于显示环境中受监控的所有集群的性能状态概况。您可以选择查看所有集群或单个集群的状态。</block>
   <block id="ac42d8d48d6de42d42b681cdef5ff574" category="doc">了解信息板上的性能面板</block>
@@ -6424,7 +6411,6 @@
   <block id="141708e88101bcc14caf70fadd9d1ca7" category="paragraph">可用性能容量计数器可提供仍可用资源的百分比，而可用 IOPS 计数器则可指示在达到最大性能容量之前可向资源添加的确切 IOPS （工作负载）数。</block>
   <block id="e1c4cafb97bf24fa8de515bdeb846d46" category="paragraph">例如，如果您使用的是一对 FAS2520 和 FAS8060 存储系统，则可用性能容量值 30% 表示您有一些可用性能容量。但是，此值无法显示您可以向这些节点部署多少个工作负载。可用 IOPS 计数器可能会显示， FAS8060 上的可用 IOPS 为 500 ，而 FAS2520 上的可用 IOPS 为 100 。</block>
   <block id="cf43cd49aa6781d9f3687022f7488426" category="paragraph">下图显示了节点的延迟与 IOPS 曲线示例。</block>
-  <block id="b9594d17e37349788cf6aff2409ad05d" category="image-alt">可用 IOPS</block>
   <block id="f3f2f733e3c85c406deaa4ab944e5957" category="paragraph">资源可以提供的最大 IOPS 数是已用性能容量计数器为 100% （最佳点）时的 IOPS 数。此操作点表示节点当前以 100 ， 000 IOPS 运行，延迟为 1.0 毫秒 / 操作根据从节点捕获的统计信息， Unified Manager 会确定此节点的最大 IOPS 为 160 ， 000 ，这意味着可用或可用 IOPS 为 60 ， 000 。因此，您可以向此节点添加更多工作负载，以便更高效地使用系统。</block>
   <block id="76bbdbe65e4c9465a250ba7675ad97e1" category="paragraph">如果资源中的用户活动极少，则可用 IOPS 值将根据每个 CPU 核大约 4 ， 500 IOPS 计算得出，并假设使用通用工作负载。这是因为 Unified Manager 缺少数据来准确估计所服务工作负载的特征。</block>
   <block id="b34f5e78d5310dad548b8f0d8e90b7a4" category="summary">工作负载延迟（响应时间）是指集群上的卷响应客户端应用程序的 I/O 请求所需的时间。Unified Manager 会使用延迟检测性能事件并向您发出警报。</block>
@@ -6490,7 +6476,6 @@
   <block id="58a76907de28bf7005edb9a18783bafb" category="list-text">或者，也可以在 " 查看和比较 " 菜单中选择要与此聚合比较的其他对象，然后将其中一个对象添加到 " 比较 " 窗格中。</block>
   <block id="37b1a83664bcd4d6b95ea0e8d87fb8ca" category="paragraph">这两个对象的统计信息都将显示在计数器图表中以供比较。</block>
   <block id="790aad51bcb2986f8c1014202d7e836d" category="list-text">在资源管理器页面右侧的 " 比较 " 窗格中，单击其中一个计数器图表中的 * 缩放视图 * 以查看有关该聚合的性能历史记录的详细信息。</block>
-  <block id="d5481010dfd9d48eb0ff328ef5085148" category="image-alt">监控集群性能</block>
   <block id="4874d54747c5363b318cbf69e35f8e08" category="summary">Unified Manager 可监控集群中的配置更改，以帮助您确定某个更改是否可能导致或影响性能事件。性能资源管理器页面会显示一个更改事件图标（），以指示检测到更改的日期和时间。</block>
   <block id="6ff95c3ab0a969f7be3b4c0e81e77d29" category="summary">性能事件是指与集群上的工作负载性能相关的问题。它们可以帮助您识别响应时间较长的存储对象，也称为高延迟。与同时发生的其他运行状况事件一起，您可以确定可能导致或导致响应时间较慢的问题。</block>
   <block id="83d6bd0af9fba97f0ac87ab1b891fbc9" category="doc">性能事件的来源</block>
@@ -6559,7 +6544,6 @@
   <block id="ecd55bfc88b1bfcc18e74516d3930fe0" category="list-text">在聚合 / 性能资源管理器页面中，从查看和比较菜单中单击 * 此聚合上的卷 * 。</block>
   <block id="425a10f179801ef3880ceeba20ca6550" category="list-text">确定 IOPS 最多的卷。</block>
   <block id="e09eeba9fc0d787fa2e568508d172ab2" category="paragraph">您应调查这些卷，查看是否应应用 QoS 策略或性能服务级别策略，或者更改策略设置，以使这些卷不会在集群上使用如此大的 IOPS 。</block>
-  <block id="e92c9d6f17b2d017213eb1e8d516d86a" category="image-alt">监控集群对象</block>
   <block id="effa6ec295d256166212c21ed1967250" category="summary">" 摘要 " 页面将显示计数器图表，其中包含有关过去 72 小时内每个对象的事件和性能的详细信息。此数据不会自动刷新，但在上次加载页面时为最新数据。" 摘要 " 页面中的图表问题解答我需要进一步了解的问题？</block>
   <block id="84ca298df72ab058f684940ba6fc7883" category="paragraph">" 摘要 " 页面将显示计数器图表，其中包含有关过去 72 小时内每个对象的事件和性能的详细信息。此数据不会自动刷新，但在上次加载页面时为最新数据。" 摘要 " 页面中的图表问题解答 the Question _Do I need to look further ？ _</block>
   <block id="928a3ee10cac32e26a95e3b617e56177" category="section-title">图表和计数器统计信息</block>
@@ -6583,7 +6567,6 @@
   <block id="8f61971105544f79fb059a419e59987f" category="inline-image-macro">树形图图标—警告状态</block>
   <block id="39a396a2214eb795caa2af25e9d375b5" category="paragraph">将光标置于活动事件的事件计数上方可显示事件的类型和数量。严重事件以红色（<block ref="c193fc99558c2b3b75f34ed647245356" category="inline-image-macro-rx" type="image"></block>），警告事件显示为黄色（<block ref="8d9561f21dccdc0043e67ddefc8426e0" category="inline-image-macro-rx" type="image"></block>）。</block>
   <block id="30380d081855a0826aa02a6ad33256a9" category="paragraph">灰色条中图表右上角的数字是过去 72 小时时间段的平均值。趋势折线图底部和顶部显示的数字是过去 72 小时内的最小值和最大值。图表下方的灰色条包含过去 72 小时内的活动（新的和已确认的）事件和废弃事件的计数。</block>
-  <block id="67247dea2fdcd199e4f58d36d2857d08" category="image-alt">IOPS 图</block>
   <block id="623790c30c0b6826a11c3205a7c3af75" category="list-text">* 延迟计数器图表 *</block>
   <block id="5665983b932ec218e6914843a13e01ac" category="paragraph">延迟计数器图表简要概述了前 72 小时内的对象延迟。延迟是指所有 I/O 请求的平均响应时间；以所考虑的集群存储组件中的数据包或块所经历的每操作毫秒数，服务时间，等待时间或两者表示。</block>
   <block id="45b44a7fabf6e768903998581c0ae5cf" category="paragraph">* 前一个（计数器值）： * 标题中的数字显示前 72 小时的平均值。</block>
@@ -6682,7 +6665,6 @@
   <block id="8128ca54f5d45d79c20b5f8d787d91df" category="list-text">指定一个时间段，用于定义计数器必须超过上限的时间长度</block>
   <block id="4fc3fea764f8b616c35934eefb53ac70" category="paragraph">例如，您可以为卷设置性能阈值策略，以便每当卷的 IOPS 超过每秒 750 次操作且持续 10 分钟时，您都会收到严重事件通知。此阈值策略还可以指定当 IOPS 超过每秒 500 次操作且持续 10 分钟时发送警告事件。</block>
   <block id="a74459b16a22c45f05b84fd3b25d02d8" category="paragraph">此处显示了一个计数器图表示例，表示在 1 ： 00 时违反警告阈值（黄色图标），在 12 ： 10 ， 12 ： 30 和 1 ： 10 时违反严重阈值（红色图标）：</block>
-  <block id="2eab52a4b056e0a1b7b1e391aa3fe573" category="image-alt">违反 opm2 阈值</block>
   <block id="5119f8a23d6f611b0a0981510f45e2d8" category="paragraph">必须在指定的持续时间内持续违反阈值。如果由于任何原因阈值降至限制值以下，则后续违反将视为新持续时间的开始。</block>
   <block id="5f4ddf12873bb2c9a84b8324b079511d" category="paragraph">通过某些集群对象和性能计数器，您可以创建一个组合阈值策略，该策略要求两个性能计数器在生成事件之前超过其最大限制。例如，您可以使用以下条件创建阈值策略：</block>
   <block id="874176d2105f6281048413e58a7012bb" category="cell">集群对象</block>
@@ -6769,7 +6751,6 @@
   <block id="19370cee409117f2a4158287d10db115" category="list-text">同步 SnapMirror</block>
   <block id="9adc895df6e8939b22e3bfff9743a04f" category="list-text">在选定卷的 * 卷性能资源管理器 * 页面中，从延迟图表的下拉菜单中选择 * 集群组件 * 。</block>
   <block id="7040fc9795cb1eee0052f56d419f1519" category="paragraph">此时将显示延迟 - 集群组件图表。</block>
-  <block id="c3a89e7c491fb26f3277eaf9db6874d0" category="paragraph">此时将显示集群组件比较图表。您可以通过取消选择或选择来限制比较 <block ref="dd1d4035683a3e071dd51657ce989305" category="inline-image-macro-rx" type="image"></block> 与每个集群组件相关联。</block>
   <block id="ffeeb45af6016ebdbe7bed05f49573b3" category="list-text">要查看特定值，请将光标移动到图表区域以查看弹出窗口。</block>
   <block id="317ee1ffcc439e8d46a64551c57311f3" category="summary">您可以通过在集群中的每个节点上启用 Flash Cache ® 智能数据缓存来提高工作负载性能。</block>
   <block id="2299582b29e77677935169c9a6a32391" category="doc">在节点上启用 Flash Cache 如何提高工作负载性能</block>
@@ -6860,7 +6841,6 @@
   <block id="4e46d77705b2969e287dd5755715eb0a" category="paragraph">多个对象</block>
   <block id="d64856bc0441fd9f4e945bd9be18411c" category="paragraph">选中每个对象左侧的复选框。</block>
   <block id="6519d5c78f0ae2d9b3484d3b1d9e45c7" category="paragraph">页面上的所有对象</block>
-  <block id="dcb18ab3a5abb36ef2aa5644e7906d9b" category="paragraph">单击 <block ref="3e6fc62e3802e046e5d0613c93a37e4e" category="inline-image-macro-rx" type="image"></block> 在列标题中。</block>
   <block id="ac492b16e73eb4fc7caa69d491b25ed2" category="list-text">单击 * 清除性能阈值策略 * 。</block>
   <block id="f541641487f8cbff03487124208205b2" category="paragraph">此时将显示清除阈值策略页面，其中显示了当前分配给存储对象的阈值策略列表。</block>
   <block id="db9a65c97d97a96ad5600eca6392c2ce" category="list-text">选择要从对象中删除的阈值策略，然后单击 * 清除策略 * 。</block>
@@ -6905,7 +6885,6 @@
   <block id="51acf635cd96d4572521db1773629e55" category="list-text">要删除所有筛选器，请单击筛选面板底部的 * 重置 * 。</block>
   <block id="a6d40caea386102a29ebc599a2d568c0" category="section-title">筛选示例</block>
   <block id="5cde0898f112cac0a077a237444382b7" category="paragraph">图中显示了具有三个筛选器的筛选面板。如果筛选器数量少于最多四个，则会显示 * + 添加筛选器 * 按钮。</block>
-  <block id="b0a1d6bd91c03ca3c50d9cd3fa6fafee" category="image-alt">OPM 筛选面板草稿 3.</block>
   <block id="3833ead277badf6fd54e7d02004043c0" category="paragraph">单击 * 应用筛选器 * 后， " 筛选 " 面板将关闭，应用筛选器并显示应用的筛选器数量（<block ref="106769b36670dda8bedb0e744694e40d" category="inline-image-macro-rx" type="image"></block>）。</block>
   <block id="9799afa273bd66f16528dca0948a272a" category="summary">您可以使用 Unified Manager 分析 MetroCluster 配置中检测到性能事件的集群。您可以确定集群名称，事件检测时间以及涉及的抢占资源和受影响的工作负载。</block>
   <block id="1f84d1be1ed15c3ecf853ee68d32ba26" category="doc">分析 MetroCluster 配置中集群上的动态性能事件</block>
@@ -6953,7 +6932,6 @@
   <block id="004869f1a9ddd1ead0838f5a2887a577" category="list-text">从 * 选择图表 * 列表中，选择 * 性能已用容量 * 。</block>
   <block id="8c0701a62859701bd5e6fa89117726c3" category="list-text">在 * 性能Capacity Used * 图表中，选择 * 细分 * 并单击 * 缩放视图 * 。</block>
   <block id="6e2dbb99f7d7cfa8e493148bde59c8f6" category="paragraph">Perf. 的详细图表此时将显示已用容量。</block>
-  <block id="5ef2955712e332340e4ba2e72d04ab17" category="image-alt">余量高级缩放图表</block>
   <block id="396db092214f482e8bdea1421e275918" category="list-text">将光标移动到详细图表上方，可在弹出窗口中查看已用性能容量信息。</block>
   <block id="5549cf30b8f55154c8c993662f4789a2" category="paragraph">性能" 容量可用百分比 " 是指 " 估计接管 " 节点上的可用性能容量。它指示故障转移后接管节点上剩余的性能容量。如果为 0% ，则故障转移会将延迟发生原因增加到接管节点上不可接受的级别。</block>
   <block id="3176cc7d2e2fd592994a696309408a6e" category="list-text">请考虑采取更正操作，以避免性能容量可用百分比较低。</block>
@@ -6986,13 +6964,11 @@
   <block id="077e38e5d43793726e332acfec9bab60" category="list-text">在左侧导航窗格中，单击 * 存储 * &gt; * QoS 策略组 * 。</block>
   <block id="d6b7fde157387f82554490e68443ae6b" category="paragraph">默认情况下，将显示 " 性能：传统 QoS 策略组 " 视图。</block>
   <block id="7137695b21df6f6ed3bcb7bcdc069743" category="list-text">如果您对传统策略组感兴趣，请继续查看此页面。否则，请选择其他视图选项之一以显示 Unified Manager 性能服务级别创建的所有自适应 QoS 策略组或所有 QoS 策略组。</block>
-  <block id="5a01960462db8c65f6513a6466c1be71" category="list-text">在您感兴趣的 QoS 策略中，单击展开按钮（<block ref="5bc06105dc11797d871e45be810a1285" category="inline-image-macro-rx" type="image"></block>）以查看更多详细信息。<block ref="2f400b1aca95bc754cc1fdf503a800f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a648914bae6c91b340c0e37b246873f9" category="list-text">单击卷或 LUN 链接以查看使用此 QoS 策略的对象。</block>
   <block id="829ff77762e06404761ceb316750a0d1" category="paragraph">此时将显示卷或 LUN 的性能清单页面，其中列出了正在使用 QoS 策略的对象。</block>
   <block id="4135f632450da9c2640022f318968c5c" category="summary">已用性能容量计数器可帮助您确定节点或聚合的性能是否达到工作负载增加时性能可能会降低的程度。它还可以显示节点或聚合当前是否在特定时间段内过度使用。已用性能容量与利用率类似，但前者可更深入地了解特定工作负载的物理资源中可用的性能功能。</block>
   <block id="de03bb52106827ee5b3197b545af9a80" category="doc">已用性能容量是多少</block>
   <block id="41a1428868cad1acbd879e6e535db746" category="paragraph">最佳已用性能容量是指节点或聚合的利用率和延迟（响应时间）达到最佳且正在得到高效利用的时间点。下图显示了一个聚合的延迟与利用率曲线示例。</block>
-  <block id="efec4a1649ab6473f21210106ccff0a3" category="image-alt">性能余量图表</block>
   <block id="9605679cb84d6b8de9c3817a49ed5b17" category="paragraph">在此示例中， _Operational point_ 表示聚合当前以 50% 的利用率运行，延迟为 1.0 毫秒 / 操作根据从聚合捕获的统计信息， Unified Manager 确定此聚合可使用额外的性能容量。在此示例中， _optimal point_ 标识为聚合利用率为 80% 且延迟为 2.0 毫秒 / 操作的点因此，您可以向此聚合添加更多卷和 LUN ，以便更高效地使用系统。</block>
   <block id="930fb93660c3915933a3f403a0f683d0" category="paragraph">已用性能容量计数器的数字应大于 "`Utilization` " 计数器，因为性能容量会增加对延迟的影响。例如，如果节点或聚合已使用 70% ，则性能容量值可能在 80% 到 100% 的范围内，具体取决于延迟值。</block>
   <block id="ddc9811812364fc91efe471583f0f385" category="paragraph">但是，在某些情况下，信息板页面上的利用率计数器可能会更高。这是正常的，因为信息板会在每个收集期间刷新当前计数器值；它不会像 Unified Manager 用户界面中的其他页面那样显示一段时间内的平均值。已用性能容量计数器最适合用作一段时间内平均性能的指标，而利用率计数器则最适合用于确定资源的瞬时使用情况。</block>
@@ -7039,7 +7015,6 @@
   <block id="63076656abd3602b264cff8b39758dbf" category="summary">性能集群登录页面简要概述了选定集群的性能，并重点介绍了集群中排名前 10 位的对象的性能状态。性能问题显示在页面顶部的 " 此集群上的所有事件 " 面板中。</block>
   <block id="a4835c26fbd89400712a16c5a24bef66" category="doc">了解性能集群登录页面</block>
   <block id="7c35ca1bcb0fba179fddbc2986621da9" category="paragraph">性能集群登录页面简要概述了 Unified Manager 实例管理的每个集群。此页面为您提供有关事件和性能的信息，并可用于监控集群并对其进行故障排除。下图显示了名为 OPM-mobility 的集群的性能集群登录页面示例：</block>
-  <block id="e1c015ea184977e9c62931ee8a47c5c5" category="image-alt">OPM 集群登录页面草稿</block>
   <block id="2367a1375437c0f5de69df2858c691a5" category="paragraph">"Cluster Summary" 页面上的事件计数可能与 "Performance Event Inventory" 页面上的事件计数不匹配。这是因为，违反组合阈值策略时， "Cluster Summary" 页面可以在 "Latency" 和 "Utilizance" 栏中分别显示一个事件，而违反组合策略时， "Performance Event Inventory" 页面仅显示一个事件。</block>
   <block id="be403b425e38e6b36719566ba11c2ee8" category="paragraph">如果集群已从 Unified Manager 管理中删除，则状态 * 已删除 * 将显示在页面顶部集群名称的右侧。</block>
   <block id="9eaa3b52f09289b99de79cc156636762" category="summary">您可以查看已应用于卷和 LUN 的 QoS 策略组，也可以链接到性能 /QoS 策略组视图以显示每个 QoS 策略的详细配置设置。</block>
@@ -7107,7 +7082,6 @@
   <block id="79218bfbb1fc8109876c019adfd4e00b" category="paragraph">您可以选择一小时到 390 天之间的时间范围。13 个月等于 390 天，因为每个月计为 30 天。指定日期和时间范围可提供更多详细信息，并可用于放大特定性能事件或一系列事件。指定时间范围也有助于排除潜在的性能问题，因为指定日期和时间范围会更详细地显示有关性能事件的数据。使用 * 时间范围 * 控件选择预定义的日期和时间范围，或者指定您自己的自定义日期和时间范围，最长可达 390 天。预定义时间范围的按钮从 * 过去一小时 * 到 * 过去 13 个月 * 不等。</block>
   <block id="fdde008fccbf5ef8e50f49928c5bb3e4" category="paragraph">选择 * 过去 13 个月 * 选项或指定超过 30 天的自定义日期范围将显示一个对话框，提醒您显示超过 30 天的性能数据是使用每小时平均值绘制的，而不是使用 5 分钟数据轮询绘制的。因此，可能会丢失时间线的可视粒度。如果单击对话框中的 * 不再显示 * 选项，则在选择 * 过去 13 个月 * 选项或指定超过 30 天的自定义日期范围时，不会显示此消息。如果时间范围包括从今天起超过 30 天的时间 / 日期，则摘要数据也适用于较小的时间范围。</block>
   <block id="de8dab1aeb2bd021202a5c7224eec5da" category="paragraph">选择时间范围（自定义或预定义）时， 30 天或更短的时间范围基于 5 分钟间隔数据样本。超过 30 天的时间范围基于一小时间隔数据样本。</block>
-  <block id="be122aef3b9420f3eac8c1ad6308c5d1" category="image-alt">时间范围选择器</block>
   <block id="fcfadb84bc578ed8cbc676add38e846d" category="list-text">单击 * 时间范围 * 下拉框，此时将显示时间范围面板。</block>
   <block id="27e62d434ff3a1bdc347df141e25e9a2" category="list-text">要选择预定义的时间范围，请单击 * 时间范围 * 面板右侧的 * 最后一个 ...* 按钮之一。选择预定义的时间范围时，可以使用长达 13 个月的数据。选定的预定义时间范围按钮将突出显示，相应的日期和时间将显示在日历和时间选择器中。</block>
   <block id="bf6447a7c57cdbf2e44cbb7027cc29a6" category="list-text">要选择自定义日期范围，请单击左侧 * 自 * 日历中的开始日期。单击 * 或 * &gt; * 可在日历中向前或向后导航。要指定结束日期，请单击右侧 * 至 * 日历中的一个日期。请注意，除非指定其他结束日期，否则默认结束日期为今天。时间范围面板右侧的 * 自定义范围 * 按钮将突出显示，表示您已选择自定义日期范围。</block>
@@ -7146,9 +7120,7 @@
   <block id="55938315bce378cd0bebd3cf763eb39f" category="cell">要将阈值分配给 ...</block>
   <block id="ed70796e5e1844101ad3544aff8306bd" category="paragraph">该对象左侧的复选框。</block>
   <block id="87dfcc9b5ef0c6047bbd3e7e8503a18b" category="paragraph">每个对象左侧的复选框。</block>
-  <block id="b99563e216a3c4f8bca45d62962282d3" category="paragraph">。 <block ref="3e6fc62e3802e046e5d0613c93a37e4e" category="inline-image-macro-rx" type="image"></block> 下拉框中，然后选择 * 选择此页面上的所有对象 * 。</block>
   <block id="f23cfe49e5db778b8152de99493435cb" category="paragraph">相同类型的所有对象</block>
-  <block id="71671fa46285c6e5ccbc89eb9c304fff" category="paragraph">。 <block ref="3e6fc62e3802e046e5d0613c93a37e4e" category="inline-image-macro-rx" type="image"></block> 下拉框中，然后选择 * 选择所有对象 * 。</block>
   <block id="78e9c92469f3920e2e87bffcd2c310af" category="paragraph">您可以使用排序和筛选功能细化清单页面上的对象列表，以便更轻松地将阈值策略应用于多个对象。</block>
   <block id="750b054bbbe76bb0937eda06bbc47400" category="list-text">进行选择，然后单击 * 分配性能阈值策略 * 。</block>
   <block id="a3ac72aa007ec0388a6bb525fade56cc" category="paragraph">此时将显示分配性能阈值策略页面，其中显示了该特定类型的存储对象存在的阈值策略列表。</block>
@@ -7210,7 +7182,6 @@
   <block id="3281d3cf4c4ca1f96b69c7a91e685f99" category="doc">在计数器图表缩放视图中选择性能阈值</block>
   <block id="08df075e9e49b434e5961c7ff1b3162f" category="paragraph">通过在计数器图表缩放视图中选择阈值，您可以查看有关性能阈值事件的精确数据。您可以应用 " 计数器图表缩放视图 " 的 * 策略 * 区域下显示的任何阈值。</block>
   <block id="0bd7858f9c4415186b140625ba2f1996" category="paragraph">在计数器图表缩放视图中，一次只能对对象应用一个策略。</block>
-  <block id="3021c7eee007e5626f0372fecd008d4a" category="list-text">选择或取消选择 <block ref="dd1d4035683a3e071dd51657ce989305" category="inline-image-macro-rx" type="image"></block> 与策略关联。</block>
   <block id="9dcba5db0a0f444ce47417b6498ea238" category="paragraph">选定阈值将应用于计数器图表缩放视图。严重阈值显示为红色线；警告阈值显示为黄色线。</block>
   <block id="5907867db39683f3bbc54532d9621261" category="summary">如果调整现有性能阈值策略的计数器值或持续时间，则策略更改将应用于使用该策略的所有存储对象。新设置将立即生效， Unified Manager 将开始将所有新收集的性能数据的性能计数器值与新阈值设置进行比较。</block>
   <block id="38a0c938a115fb0e3bd1be17c20504ec" category="doc">更改性能阈值策略时会发生什么情况</block>
@@ -7321,7 +7292,6 @@
   <block id="3f3d45fcb66805cc0f149b9cf58d0757" category="paragraph">单击 * 排序 * 菜单，为选定对象和计数器选择升序或降序排序。选项包括 * 最高到最低 * 和 * 最低到最高 * 。通过这些选项，您可以查看性能最高或最低的对象。</block>
   <block id="7174a10e4e6545b68a8b9cb952a3d88a" category="list-text">* 计数器条 *</block>
   <block id="62b2b10e6923aff6e9b2f5ce31980d72" category="paragraph">图形中的计数器条显示每个对象的性能统计信息，以该项的条形表示。条形图以彩色编码。如果计数器未违反性能阈值，则计数器条将显示为蓝色。如果阈值违规处于活动状态（新事件或已确认事件），则此条将以事件的颜色显示：警告事件将以黄色（<block ref="8d9561f21dccdc0043e67ddefc8426e0" category="inline-image-macro-rx" type="image"></block>），并且严重事件以红色（<block ref="c193fc99558c2b3b75f34ed647245356" category="inline-image-macro-rx" type="image"></block>）。警告事件和严重事件的严重性事件指示符图标进一步指示违反阈值的情况。</block>
-  <block id="0cc1f46876019ed9ab97d6c10e2e234a" category="image-alt">排名前 10 位的示例</block>
   <block id="705cfa340a01a44003a6f14fbe6daa6c" category="paragraph">对于每个图形， X 轴显示选定对象类型的性能最佳的对象。Y 轴显示适用于选定计数器的单位。单击每个垂直条形图元素下方的对象名称链接可导航到选定对象的性能登录页面。</block>
   <block id="ecd4ae019392e00dea76803fc66b16bf" category="list-text">* 严重性事件指示符 *</block>
   <block id="bf8b8d2b26c51f8b67b24018b644a43c" category="paragraph">"* 严重性事件 * " 指示符图标显示在活动严重（<block ref="0ca1aa7b9d99b2cc14b9097078e46730" category="inline-image-macro-rx" type="image"></block>）或警告（<block ref="5bf97e598fad2133993728aec070d7a1" category="inline-image-macro-rx" type="image"></block>）性能最佳的对象图形中的事件。单击 * 严重性事件 * 指示符图标可查看：</block>
@@ -7440,7 +7410,6 @@
   <block id="c8158380e9cfa704318edae66487bd8c" category="list-text">从 " 视图 " 菜单中，单击 * 活动性能事件 * 。</block>
   <block id="6f5de0e990c1c2c4ba885c8d77ecfee7" category="list-text">单击要调查的事件的名称，此时将显示事件详细信息页面。</block>
   <block id="66f7c110f31f9394a1396adf3d8b24ec" category="list-text">查看事件的问题描述并查看建议的操作（如果有），以查看有关事件的更多详细信息，这些信息可能有助于您解决问题描述。您可以单击 * 分析工作负载 * 按钮以显示详细的性能图表，以帮助进一步分析问题描述。</block>
-  <block id="7ec18682cc3b7ebda14813d7da8bf682" category="image-alt">事件流</block>
   <block id="6078dfee861dbb505fd9ca3f1d01c4ae" category="summary">将聚合可用空间标识为问题描述后，您可以搜索未使用的卷和 LUN 并将其从聚合中删除。这有助于缓解磁盘空间不足的问题描述。</block>
   <block id="9c080be3f1a1ea12cc2727166bdeeb36" category="doc">删除非活动卷和 LUN</block>
   <block id="198d4dff82117f3fa1ae4b8beadc39bc" category="paragraph">如果聚合上的性能事件是由磁盘空间不足引起的，则可以通过几种方法确定哪些卷和 LUN 不再使用。</block>
@@ -7486,13 +7455,11 @@
   <block id="1c0ff2ca19c226fc2a6378393481699a" category="paragraph">分配给单个或多个工作负载的自适应 QoS 策略</block>
   <block id="16c4c88190ace4ce34b812c12996780a" category="paragraph">显示 "` （ QoS 自适应）` "</block>
   <block id="17aec5ca4a5d98d24793476dd3f05373" category="paragraph">下图举例说明了这三个选项在计数器图表中的显示方式。</block>
-  <block id="aafe314ac523b3ce0a36a5be365fb431" category="image-alt">3 个 QoS 策略图表</block>
   <block id="b8bcf37a0ac8777f76e99d2ad2bdc323" category="paragraph">如果已在 IOPS 中定义的正常 QoS 策略显示在工作负载的 IOPS/TB 图表中，则 ONTAP 会将 IOPS 值转换为 IOPS/TB 值， Unified Manager 会在 IOPS/TB 图表中显示该策略以及文本 "`QoS ， defined in IOPS` " 。</block>
   <block id="21698aa839bdb9e80614577e38e56e0f" category="paragraph">当以 IOPS/TB 为单位定义的自适应 QoS 策略显示在工作负载的 IOPS 图表中时， ONTAP 会将 IOPS/TB 值转换为 IOPS 值， Unified Manager 会在 IOPS 图表中显示该策略以及文本 "`QoS Adaptive - Used ， 以 IOPS/TB` 为单位定义或 "`QoS Adaptive - Allocated ， defined in IOPS/TB` " ，具体取决于峰值 IOPS 分配设置的配置方式。如果分配设置设置为 "`allocated-space` " ，则会根据卷大小计算峰值 IOPS 。如果分配设置设置为 "`used-space` " ，则会根据卷中存储的数据量并考虑存储效率来计算峰值 IOPS 。</block>
   <block id="621ae9f61c3122a72dddf526dcc1c098" category="paragraph">只有当卷使用的逻辑容量大于或等于 128 GB 时， IOPS/TB 图表才会显示性能数据。如果已用容量在选定时间范围内降至 128 GB 以下，则图表中会显示空隙。</block>
   <block id="f63bfd0f21322837ec283a9385287658" category="summary">触发将发生原因活动卷从一个集群移动到灾难恢复组中另一个集群的切换或切回事件。集群上处于活动状态并向客户端提供数据的卷将停止，而另一集群上的卷将激活并开始提供数据。Unified Manager 仅监控处于活动状态且正在运行的卷。</block>
   <block id="7edc2199c58b1da2fb3f4eafb729d425" category="paragraph">由于卷会从一个集群移动到另一个集群，因此建议您监控这两个集群。Unified Manager 的一个实例可以监控 MetroCluster 配置中的两个集群，但有时两个位置之间的距离需要使用两个 Unified Manager 实例来监控这两个集群。下图显示了 Unified Manager 的一个实例：</block>
-  <block id="97fe7adac30c91a9fdf9123e538b67a2" category="image-alt">OPM MCC 切换</block>
   <block id="868eae64a59536078897606771288a0b" category="paragraph">名称中包含 p 的卷表示主卷，名称中包含 b 的卷是由 SnapMirror 创建的镜像备份卷。</block>
   <block id="cf2937984aafacc5b353a632d3b30b98" category="paragraph">在正常操作期间：</block>
   <block id="8edd1d010af0617ea6c7eab819ea835d" category="list-text">集群 A 具有两个活动卷： Vol1p 和 Vol2p 。</block>
@@ -7508,7 +7475,6 @@
   <block id="0ff2b3ba80693ba40d58e288cfa02b56" category="list-text">在切换到集群 A 期间，不会显示 Vol3p 统计信息和事件。</block>
   <block id="58c59775a2accc0909dcb33893919c42" category="list-text">在首次切换时， Vol3b 看起来像一个新卷，没有历史信息。</block>
   <block id="b6e46cbd1b673d1e673a6e8e057a5c8c" category="paragraph">修复集群 B 并执行切回后， Vol3p 将在集群 B 上再次处于活动状态，并显示切换期间的历史统计信息和统计信息缺口。除非发生另一次切换，否则无法从集群 A 查看 Vol3b ：</block>
-  <block id="aa79b6dfffdb81f9ff1b71ea8efb4cda" category="image-alt">OPM MCC 卷</block>
   <block id="43380a60a1d5a3dcb4817db0a0bb12c5" category="list-text">非活动的 MetroCluster 卷（例如，切回后集群 A 上的 Vol3b ）会通过消息 "`this volume was deleted` " 来标识。此卷并未实际删除，但 Unified Manager 当前不会监控此卷，因为它不是活动卷。</block>
   <block id="e3e95a85fd025a8e0e285e2561159bbe" category="summary">工作负载分析器页面显示有关可能影响工作负载的任何当前事件的信息，可能修复导致此事件的问题描述的建议以及用于分析性能和容量历史记录的图表。</block>
   <block id="b5fb18da7c3398568bbe73fbf858fe6c" category="doc">工作负载分析器显示的数据</block>
@@ -7591,7 +7557,6 @@
   <block id="c09dbb4facab24816c9b707095742f97" category="summary">您可以监控集群中所有节点或所有聚合的已用性能容量值，也可以查看单个节点或聚合的详细信息。</block>
   <block id="16279dd3086904756b699cbbeb24ba8c" category="doc">查看节点和聚合已用性能容量值</block>
   <block id="712879080ee6ac13b7886c04c89f77dd" category="paragraph">已用性能容量值显示在信息板，性能清单页面，性能最佳的对象页面，创建阈值策略页面，性能资源管理器页面以及详细信息图表中。例如， " 性能：所有聚合 " 页面提供了一列 " 性能容量 " ，用于查看所有聚合的已用性能容量值。</block>
-  <block id="cfc6bc56d4559459247a50de98bb1e17" category="image-alt">节点清单已用余量</block>
   <block id="ce4d2c61a97c44620f1967aab84e01e2" category="paragraph">通过监控已用性能容量计数器，您可以确定以下内容：</block>
   <block id="87704c20a8ab6d1497f0684f9cb3405b" category="list-text">任何集群上的任何节点或聚合是否具有较高的已用性能容量值</block>
   <block id="9ced6959284bee4dd5023cf16e3aebef" category="list-text">任何集群上的任何节点或聚合是否具有活动的已用性能容量事件</block>
@@ -7862,7 +7827,6 @@
   <block id="d4cc0d9e5bc1f090e7d072c05be6857c" category="summary">您可以监控集群中所有节点或所有聚合的可用 IOPS 值，也可以查看单个节点或聚合的详细信息。</block>
   <block id="347d0a67d426de9b64ff218179169117" category="doc">查看节点和聚合的可用 IOPS 值</block>
   <block id="cef2c2d5f9d4a5914b59654a7f607fde" category="paragraph">可用 IOPS 值将显示在 " 性能清单 " 页面以及节点和聚合的 " 性能资源管理器 " 页面图表中。例如，在节点 / 性能资源管理器页面中查看节点时，您可以从列表中选择 "`Available IOPS` " 计数器图表，以便比较该节点和该节点上的多个聚合的可用 IOPS 值。</block>
-  <block id="c3d29004b62efdea0a3d1b25a8bbbd95" category="image-alt">可用 IOPS 缩放</block>
   <block id="0363650b824bb30a2361eac863fc7712" category="paragraph">通过监控可用 IOPS 计数器，您可以确定：</block>
   <block id="5b2fa045b4ff5eb6bb7e3dc3406be3d7" category="list-text">可用 IOPS 值最大的节点或聚合，有助于确定未来工作负载的部署位置。</block>
   <block id="5fb3632b7750b6f9dab95ef9c44cf37d" category="list-text">可用 IOPS 值最小的节点或聚合，用于确定应监控的资源，以确定未来可能出现的性能问题。</block>
@@ -7870,13 +7834,11 @@
   <block id="bdb393303057224e3d10fe563cd8d95e" category="summary">对象清单性能页面显示对象类型类别中所有对象的性能信息，性能事件和对象运行状况。这样，您可以一目了然地查看集群中每个对象的性能状态，例如所有节点或所有卷的性能状态。</block>
   <block id="1ccbf74a3bec11c3fb932e9fffa7af48" category="doc">使用性能清单页面监控性能</block>
   <block id="5cf81d2ccd2ec42bd5d6d606f7ff8179" category="paragraph">对象清单性能页面简要概述了对象状态，使您能够评估所有对象的整体性能并比较对象性能数据。您可以通过搜索，排序和筛选来细化对象清单页面的内容。这在监控和管理对象性能时非常有用，因为它可以帮助您快速找到存在性能问题的对象并开始故障排除过程。</block>
-  <block id="e6f3cbb1f140fe4bd02ba7acd6257aea" category="image-alt">性能节点清单</block>
   <block id="902bf8a05cd404f488a8a8bc8245f13d" category="paragraph">默认情况下，性能清单页面上的对象会根据对象性能严重程度进行排序。首先列出具有新严重性能事件的对象，其次列出具有警告事件的对象。这样可以直观地即时指示必须解决的问题。所有性能数据均以 72 小时的平均值为基础。</block>
   <block id="6158951e7ccb50af48d9ee7a94656ab2" category="paragraph">通过单击对象名称列中的对象名称，您可以轻松地从对象清单性能页面导航到对象详细信息页面。例如，在 " 性能 / 所有节点 " 清单页面上，您可以单击 * 节点 * 列中的一个节点对象。对象详细信息页面提供有关选定对象的深入信息和详细信息，包括活动事件的并排比较。</block>
   <block id="d99b375789b68dff65e5529d55c8fd84" category="summary">已用性能容量值可帮助您确定当前过度利用或未充分利用的节点和聚合。这样，您就可以重新分配工作负载，以提高存储资源的效率。</block>
   <block id="d441b7aab782966c210dd6922ebe53ce" category="doc">已用性能容量值的含义</block>
   <block id="1202a0ae8ed30ef28ff19f1fd1944aac" category="paragraph">下图显示了资源的延迟与利用率曲线，并使用彩色点确定了当前运行点所在的三个区域。</block>
-  <block id="5bbdbc11ce2f4e1c65c059acc9ddd015" category="image-alt">性能余量图表超过下方</block>
   <block id="b108119156ea3caf56ffc733e96c6bfc" category="list-text">已用性能容量百分比等于 100 表示处于最佳状态。</block>
   <block id="84392d6a074bd8db744e5f478cd3cc2a" category="paragraph">此时，资源得到了高效利用。</block>
   <block id="6016e0d3925b14d249b35c241a9100d2" category="list-text">已用性能容量百分比大于 100 表示节点或聚合已过度利用，并且工作负载的性能未达到最佳。</block>
@@ -8072,7 +8034,6 @@
   <block id="e1a5af387f1c426eb0aa35ebc7debc79" category="paragraph">通过对象登录页面，您可以检查所有对象的整体性能，并排比较对象性能数据。这在评估性能和对事件进行故障排除时非常有用。</block>
   <block id="51f65a9c20bc1769fdf5f1dfdfc8ff83" category="paragraph">计数器摘要面板和计数器图表中显示的数据基于五分钟的采样间隔。页面左侧的对象清单网格中显示的数据基于一小时的采样间隔。</block>
   <block id="b2713f4e0efe6e39005ce09e249d053f" category="paragraph">下图显示了一个对象登录页面示例，其中显示了资源管理器信息：</block>
-  <block id="1331dfeac4b6eb887c4302559ae372bd" category="image-alt">性能管理器第 1 页</block>
   <block id="a6a1ef951b3f2758fd678a5be8005db5" category="paragraph">根据所查看的存储对象，对象登录页面可能具有以下选项卡，用于提供有关该对象的性能数据：</block>
   <block id="290612199861c31d1036b185b4e69b75" category="list-text">摘要</block>
   <block id="05bb01c4d66ad8af4e59ab9fc3f7e9a3" category="paragraph">显示三个或四个计数器图表，其中包含前 72 小时内每个对象的事件和性能，包括一个趋势线，用于显示该时间段内的高值和低值。</block>
@@ -8148,7 +8109,6 @@
   <block id="3236995c6efa5d7b3810991be7afd995" category="paragraph">查看现有计划</block>
   <block id="80cf96c517a19bec43d42b3db5535837" category="paragraph">使用滚动条和页面控件滚动浏览现有报告列表。</block>
   <block id="9876fad0d0db59b8356a863d5994a750" category="paragraph">编辑现有计划</block>
-  <block id="75526916003d12d0e9dc5d31cc90704a" category="list-text">单击更多图标 <block ref="5dfd6339d943e611b369decf59f9c96d" category="inline-image-macro-rx" type="image"></block> 要使用的计划。</block>
   <block id="0cc99e2b81b313ef751e68b68eeb15b1" category="list-text">进行必要的更改。</block>
   <block id="234bae92a65d3a9c913d183c373cdcc0" category="list-text">单击复选标记以保存所做的更改。</block>
   <block id="aa4d6c589c99cee91379b06851cd17de" category="paragraph">删除现有计划</block>
@@ -8165,7 +8125,6 @@
   <block id="be19d21398bdb9c8727763957b480fd6" category="summary">筛选数据以确保结果符合您的报告要求。通过筛选，您可以仅显示感兴趣的数据。</block>
   <block id="22d26446bbbdc8e6ca869bb68b050a4c" category="doc">筛选数据</block>
   <block id="bd7daa9aa68254e4e8e8a6eb4a1527f7" category="list-text">单击筛选器图标以添加筛选器以突出显示要查看的结果，然后单击 * 应用筛选器 * 。</block>
-  <block id="966ff583a3b667267bfa6cbdddeb3333" category="image-alt">筛选冷数据 2.</block>
   <block id="2c20d1fdc733c16bfdde363b7ee6b15a" category="list-text">为未保存的视图命名以保存所做的更改。</block>
   <block id="0fcfb3fe0508aa07d444370faa5632ab" category="summary">您可以计划在早期版本的 Unified Manager 中创建和导入的现有报告。</block>
   <block id="b1f547eb38bb5f609f2704a992cd3855" category="doc">计划导入的 .rptdesign 报告</block>
@@ -8174,16 +8133,12 @@
   <block id="b69b61a50212f84374c3b65d21c3932a" category="list-text">适用于升级到 Unified Manager 9.6 GA 或更高版本</block>
   <block id="c08cc6e8741b53ab5b2f108ad0c86b4f" category="paragraph">升级到 Unified Manager 9.6 GA 或更高版本后，报告计划页面将列出导入的报告。您可以编辑这些报告的计划，以指定收件人电子邮件地址，频率和格式（ PDF 或 CSV ）。否则，无法在 Unified Manager UI 中编辑或查看这些报告。</block>
   <block id="561d7213fdf244b09d1497e0acd6a41b" category="list-text">打开报告计划页面。如果已导入报告，则会显示一条消息。</block>
-  <block id="35435b1da8e4b23176a1c19732252d66" category="image-alt">消息非 scehduled 报告</block>
   <block id="5ffe00b291cbf430a672e878cdecc174" category="list-text">单击 * 视图 * 名称可显示用于生成报告的 SQL 查询。</block>
-  <block id="18499ea92e24a5fb24e0bbaf3420598a" category="image-alt">importedreport1.</block>
   <block id="d5cd79f2fd239cfcb29b185abe5aec77" category="list-text">单击更多图标 <block ref="5dfd6339d943e611b369decf59f9c96d" category="inline-image-macro-rx" type="image"></block>，单击 * 编辑 * ，定义报告计划详细信息并保存报告。</block>
   <block id="36832d53a3308f3afa1b5d92954a721b" category="paragraph">您也可以从 " 更多 " 图标中删除任何不需要的报告 <block ref="5dfd6339d943e611b369decf59f9c96d" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="1549a1c2034c7d13cf0e8802d31e328c" category="summary">计划报告后，您可以从报告计划页面中将其删除。</block>
   <block id="31926749a31d25590251d0ab967e7c76" category="doc">删除已计划的报告</block>
-  <block id="8301d3fc7f4e78a0705101340d6452a5" category="image-alt">已计划报告 2.</block>
   <block id="d57aa4c410a0dabbe6107b64eadb8670" category="paragraph">如果您拥有相应的权限，则可以删除系统中的任何报告及其计划。</block>
-  <block id="5e54a9ff670a809e8f263a45268ae299" category="list-text">单击更多图标 <block ref="5dfd6339d943e611b369decf59f9c96d" category="inline-image-macro-rx" type="image"></block> 要删除的计划。</block>
   <block id="77575f28aa43d90e6a0f15b9b1a8d7fb" category="paragraph">已计划的报告将从列表中删除，并且将不再按设置的计划生成和分发。</block>
   <block id="bb1c2e9297490454b79f35a4c34168e1" category="paragraph">如果从清单页面中删除自定义视图，则使用该视图的任何自定义 Excel 文件或计划报告也会被删除。</block>
   <block id="96aeeb6ea929356f485d93717faef0eb" category="summary">本节中的示例集群存储报告只是一些示例，可帮助您了解如何创建有关集群容量的报告以帮助您监控存储系统资源。</block>
@@ -8197,12 +8152,10 @@
   <block id="c260e56471f1ddf0962e398026e165f3" category="doc">创建报告以显示聚合总容量与可用容量图表</block>
   <block id="e2d373db25a2dd53e14e11bc92855273" category="paragraph">按照以下步骤打开运行状况：所有聚合视图，在 Excel 中下载此视图，创建总容量和已提交容量图表，上传自定义的 Excel 文件并计划最终报告。</block>
   <block id="fc46fc852c70f48582f9a7229d075937" category="list-text">选择 * 报告 * &gt; * 下载 Excel* 。</block>
-  <block id="4365b6ffd04d6044eeeac175c824379c" category="image-alt">下载 Excel 菜单</block>
   <block id="69719db2a69b651bb5beb2b327f3b20d" category="paragraph">根据您的浏览器，您可能需要单击 * 确定 * 来保存文件。</block>
   <block id="c8416073d36b412c4475b606e1d73d97" category="list-text">在 Excel 中，打开下载的文件。</block>
   <block id="094a5bf357e647edca5a8fda2e926397" category="list-text">如果需要，请单击 * 启用编辑 * 。</block>
   <block id="c6c7f37414a1cf90dc08f511a8051cce" category="list-text">在数据表上，右键单击类型列，然后选择 * 排序 * &gt; * 将 A 排序到 Z* 。</block>
-  <block id="c873854fa56c16f3ad2a7067b6cff474" category="image-alt">排序 01</block>
   <block id="b367ef4fe0697f40f278390ebfc7cbd6" category="paragraph">这将按存储类型对数据进行排列，例如：</block>
   <block id="fb1b6e23a3767d2a31ef7899e6dd3f1e" category="list-text">混合</block>
   <block id="34df20bab5e85dc75bfc94ef569cced9" category="list-text">SSD</block>
@@ -8210,20 +8163,17 @@
   <block id="15d29655c8afd37b637dbaadddaf72dc" category="list-text">选择 `Type ， Total Data Capacity ，` 和 `Available Data Capacity` 列。</block>
   <block id="748e379a8641133a237dd0f39303b8fc" category="list-text">在 * 插入 * 菜单上，选择 `三维列` 图表。</block>
   <block id="1509c6f034e6b0952ae1a593b4be8f3e" category="paragraph">图表将显示在数据表上。</block>
-  <block id="c4a9c48359bb7086b8f07f3e1c614dd7" category="image-alt">3D 列 01</block>
   <block id="5533606e2b0f89ba5836670a4e646995" category="list-text">右键单击图表并选择 * 移动图表 * 。</block>
   <block id="db72784607eb89fa88ff1e973de809e7" category="list-text">选择 * 新工作表 * 并将工作表命名为 * 总存储图表 * 。</block>
   <block id="515cb10f5a739abde059ab744385977d" category="paragraph">确保新工作表显示在信息和数据工作表之后。</block>
   <block id="1818fde485578cfe56662912557f50a9" category="list-text">将图表标题命名为 * 总容量与可用容量 * 。</block>
   <block id="2fc7e864fb4a21fbdaa572bea2173f87" category="list-text">选择图表后，您可以使用 * 设计 * 和 * 格式 * 菜单自定义图表的外观。</block>
   <block id="15894a360b12cd51323eee4e39bc00b8" category="list-text">如果满意，请使用所做的更改保存文件。请勿更改文件名或位置。</block>
-  <block id="70126a4fbb586db6363065a705955127" category="image-alt">总容量与可用容量</block>
   <block id="156babd2d6d8fe1dc6c2490303d5c043" category="list-text">在 Unified Manager 中，选择 * 报告 * &gt; * 上传 Excel* 。</block>
   <block id="229dccd166ebb360945ac567714fd567" category="paragraph">确保您所处的视图与您下载 Excel 文件的视图相同。</block>
   <block id="f75d974d1af8867c4bd7dc88fb592a45" category="list-text">选择已修改的 Excel 文件。</block>
   <block id="31d9f23fbb53d2787e021e33f512537e" category="list-text">单击 * 打开 * 。</block>
   <block id="f7723469586f71e1dd8b674c1c6ab831" category="paragraph">* 报告 * &gt; * 上传 Excel* 菜单项旁边会显示一个复选标记。</block>
-  <block id="06d8df9bc224eaaa39f25cc673a52233" category="image-alt">上传 Excel</block>
   <block id="13ba706138468d7e54964c6993a9481c" category="list-text">单击 * 已计划报告 * 。</block>
   <block id="81c46583a92800c5ebe3e908ba541859" category="paragraph">选择报告的 * XLSX* 格式。</block>
   <block id="d31882ed12c9b7842340a16c6fc7b848" category="paragraph">根据报告中显示的结果，您可能需要平衡聚合上的负载。</block>
@@ -8263,7 +8213,6 @@
   <block id="db568c21c17745aefe0f16a4ba412401" category="list-text">请勿更改现有工作表，数据和信息。而是将数据复制到您创建的新页面。</block>
   <block id="f7732ee2d2caa546fc2aeea6bc9a1784" category="list-text">上述规则的一个例外情况是，您可以在 " `data` " 页面上创建公式。使用数据页面公式在新页面上创建图表。</block>
   <block id="cf0086bb4a43dc37a532182249dbd878" category="list-text">不要为新的工作表数据或信息命名。</block>
-  <block id="5a40613fdcaa69294f3cd310c2dac5ac" category="list-text">如果存在自定义 Excel 文件，则 * 报告 * &gt; * 上传 Excel* 菜单项旁边会有一个复选标记。下载 Excel 文件时，系统将使用具有自定义设置的版本。<block ref="de055095e26f86aa2b2411a5b5188576" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aa7126d28c11d5f18f1234f90c9db15f" category="list-text">打开要用作报告基础的默认视图，自定义视图或已保存视图。</block>
   <block id="b3a50c3f713414a91587d4daa176f518" category="list-text">保存文件。此文件将保存到下载文件夹中。</block>
   <block id="ebe16e7f55c0d4997d81c71590365600" category="list-text">在 Excel 中打开已保存的文件。请勿将文件移动到新位置，或者如果您在其他位置执行工作，请在上传文件之前使用原始文件名将文件保存回原始位置。</block>
@@ -8359,7 +8308,6 @@
   <block id="8cdf5c96bf8c98cd21fe58a06464e590" category="paragraph">根据您的网络配置，选择整列或数据行过多可能会使饼图无法读取。此示例使用三维饼图，但您可以使用任何图表类型。使用最能显示要捕获的数据的图表。</block>
   <block id="5a8bbc823539517987e8d4bef5562d80" category="list-text">将图表标题命名为 * 可用容量 * 。</block>
   <block id="07d57e764788928f5d51e85f1a668526" category="list-text">选择 * 新工作表 * 并将工作表命名为 * 存储卷图表 * 。</block>
-  <block id="23da5576a2e3018e79e87f522008c2a5" category="image-alt">移动图表</block>
   <block id="9fdea4a454a3d6b2d2618dcf4eb29eb1" category="list-text">如果满意，请使用所做的更改保存文件。</block>
   <block id="e934b2873df392ee64a41a389f3db6fd" category="paragraph">根据报告中显示的结果，您可能需要平衡卷上的负载。</block>
   <block id="f97ca7012585860c1c86cfd1f25dd679" category="summary">您可以创建 Storage VM 报告来分析卷信息并查看整体运行状况和存储可用性。例如，您可以创建报告来显示达到最大卷数的 SVM 并分析已停止的 SVM 。</block>
@@ -8373,9 +8321,7 @@
   <block id="54b861db67570a420173ad6974854069" category="list-text">将 " `D` 类型`" 列拖放到 "` 云建议 " 列附近。</block>
   <block id="3dbc7dd06c4f7b4bd4f23ed0f208dd95" category="list-text">单击筛选器图标，添加以下三个筛选器，然后单击 * 应用筛选器 * ：</block>
   <block id="128d803b54c8f7415ff8c05137e8af8f" category="list-text">云建议包含层</block>
-  <block id="d4ecd532a42a051087e05d9c8e3fe473" category="list-text">冷数据大于 10 GB<block ref="532727a2a45bc6d2de8add44be7720e0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="845d5553550b15d133adc5d97a490cba" category="list-text">单击冷数据列的顶部，以使冷数据最多的卷显示在视图的顶部。</block>
-  <block id="6f720b6774d0f9425fca57096e408c35" category="list-text">使用名称保存此视图以反映此视图显示的内容，例如 "`Vols change tiering policy` " 。<block ref="0b32fe8a1e1b7d43415dc2b6aaca0313" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f33981c4e04105a71d478875443e8b3d" category="paragraph">根据报告中显示的结果，您可能希望使用 System Manager 或 ONTAP 命令行界面将某些卷的分层策略更改为 "`auto` " 或 "`all` " ，以便将更多冷数据卸载到云层。</block>
   <block id="6cf0480b8aa27c9193a570f34104fd05" category="summary">这些示例 Microsoft Excel 报告旨在介绍使用 Excel 高级功能提供的报告选项。</block>
   <block id="3d3b92f9bae041f08856994137f75126" category="doc">示例 Microsoft Excel 报告</block>
@@ -8397,26 +8343,20 @@
   <block id="fd2f31dac2afea9aab6d165bcc159795" category="list-text">保存此视图</block>
   <block id="99501227fb678d1738f49d936e406141" category="list-text">计划为自定义视图生成报告</block>
   <block id="fd3024f8a064b069fdbff8808dff006a" category="list-text">单击 * 显示 / 隐藏 * 以确保视 `D图中显示 " 磁盘类型` " 列。</block>
-  <block id="48421082afa55be1b63fc507415a7001" category="image-alt">显示隐藏 3.</block>
   <block id="f8cf4eebfa74625a72053c1d45d29fca" category="paragraph">添加或删除其他列可创建一个视图，其中包含对您的报告重要的字段。</block>
   <block id="df93898b1b6e6abb96e4db2a7701bf68" category="list-text">将 `D"`Cloud Recommendation` " 列旁边的 " 磁盘类型` " 列拖动。</block>
   <block id="4fba30a821f9a7daa3eaf9ceb4c385de" category="list-text">单击筛选器图标以添加以下三个筛选器，然后单击 * 应用筛选器 * ：</block>
   <block id="f53e0bb64e8930df8d4b8985f8d62ec7" category="list-text">磁盘类型包含 FabricPool</block>
-  <block id="4550738c4f37a66755ce38d9f3115e62" category="list-text">冷数据大于 10 GB<block ref="a46bfb4c15f3ba5915e2353041f594b7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf2945c7ab928225eaa3182ec78b0ac0" category="paragraph">请注意，每个筛选器都与一个逻辑和结合使用，因此返回的所有卷都必须满足所有条件。最多可以添加五个筛选器。</block>
   <block id="5c0db32658e0716747fa06b70d18feae" category="list-text">单击冷数据列的顶部对结果进行排序，以使冷数据最多的卷显示在视图的顶部。</block>
   <block id="46dd10e41fa168989a67d08b20327299" category="list-text">自定义此视图后，此视图名称将为未保存视图。为视图命名以反映视图显示的内容，例如 "`Vols change tiering policy` " 。完成后，单击复选标记或按 * 输入 * 以使用新名称保存此视图。</block>
-  <block id="a6a7379999aad866edefb12dabc14d1b" category="image-alt">报告卷代码数据 2.</block>
   <block id="01dcca4e756ffda5befe455a5506dece" category="list-text">在计划或共享报告之前，请下载 * CSV ， * Excel * 或 * PDF * 文件格式的报告以查看输出。</block>
   <block id="2c4aae2be5c70b985befa5d7691be9e9" category="paragraph">使用已安装的应用程序（例如 Microsoft Excel （ CSV 或 Excel ）或 Adobe Acrobat （ PDF ））打开文件，或者保存此文件。</block>
   <block id="1bf08e4303aa6505b4e54ec0f0aee9ba" category="paragraph">您可以使用复杂的筛选器，排序，数据透视表或图表进一步自定义报告，方法是将视图下载为 Excel 文件。在 Excel 中打开文件后，请使用高级功能自定义报告。如果满意，请上传 Excel 文件。运行报告时，此文件及其自定义设置将应用于视图。</block>
   <block id="7e0aecf94428d2d8d78725cf410b13d0" category="list-text">单击清单页面上的 * 已计划报告 * 按钮。与对象相关的所有已计划报告（在本例中为卷）都会显示在列表中。</block>
-  <block id="4045c042457b348132626eb77755c10d" category="image-alt">已计划报告 3.</block>
   <block id="4a8cb39e265958a23971c880a5bd5e78" category="list-text">输入报告的名称并填写其他报告字段，然后单击复选标记（<block ref="084f5fd11ecd9791c3a6678c5f224e6b" category="inline-image-macro-rx" type="image"></block>）。</block>
   <block id="ca1241013262a6547a167156686f707a" category="paragraph">以下示例报告采用 CSV 格式：</block>
-  <block id="88645b6d0a950105a1c4fabb37eaf7e0" category="image-alt">CSV 示例报告</block>
   <block id="3c720f5f5a8dcc3b4bceb81253e6bbbe" category="paragraph">以下示例报告采用 PDF 格式：</block>
-  <block id="c5f0f79741fac65feab9af874a7ab415" category="image-alt">PDF 示例报告</block>
   <block id="3fd3fe4cfb1594928e75c5060a6bcc8c" category="paragraph">根据报告中显示的结果，您可能希望使用 ONTAP System Manager 或 ONTAP 命令行界面将某些卷的分层策略更改为 "`auto` " 或 "`all` " ，以便将更多冷数据卸载到云层。</block>
   <block id="b3ff0e1ce1e40c867af21080a7b19ea3" category="summary">您可以创建报告以查看按日期分组的卷传输。</block>
   <block id="11aa8362495df99546f1d901abd9eda8" category="doc">创建报告以查看按日期分组的卷传输</block>
@@ -8476,12 +8416,10 @@
   <block id="36f750a760b68cd89631c093eaeb9073" category="list-text">=sum （ data ！ G$2 ： data ！ G$50 ）</block>
   <block id="dbafff4cecb05bff6e3941086778c407" category="list-text">=sum （ data ！ H$2 ： data ！ H$50 ）</block>
   <block id="178a558053b374cf32210bce8b752456" category="paragraph">该公式将根据当前数据对每列进行汇总。</block>
-  <block id="0a5456c556f3af0991d1b3e6a6f19d16" category="image-alt">容量总和</block>
   <block id="d96817ec722e928713e9d7b7b1739f07" category="list-text">在数据表中，选择 * 总数据容量（ GB ） * 和 * 已提交容量（ GB ） * 列。</block>
   <block id="1c9b3b00681f97af38ebe35348ef8d93" category="list-text">从 * 插入 * 菜单中选择 * 建议的图表 * ，然后选择 * 集群列 * 图表。</block>
   <block id="634a7ca9638aff27f1b07bac6074a58c" category="list-text">右键单击该图表并选择 * 移动图表 * ，将该图表移动到 `总数据容量` 工作表。</block>
   <block id="07814719f58ef0bb6ebc83ad7cf461a6" category="list-text">选择图表后，您可以使用 * 设计 * 和 * 格式 * 菜单自定义图表的外观。</block>
-  <block id="05871b0b3f9608a2f3fa43a938b7aafa" category="image-alt">集群列图表 2.</block>
   <block id="57c10d759e86cc8b9d09f0bca8a5408a" category="paragraph">根据报告中显示的结果，您可能需要调查如何在整个网络中以最佳方式使用可用容量。</block>
   <block id="ed48b981e2bb947abc52be3e3b172706" category="summary">用于描述报告工作流的决策树。</block>
   <block id="784fca41cf2612fc0bc6eb124a244bd2" category="doc">报告工作流</block>
@@ -8584,7 +8522,6 @@
   <block id="9b6dc27f31137c22db8f96b10b2e8a67" category="paragraph">在视图下拉列表中，带有删除图标的项是您或其他用户创建的现有自定义视图。不带图标的项是 Unified Manager 提供的默认视图。无法修改或删除默认视图。</block>
   <block id="3c2b2e643577f0c0a75d68587795a08e" category="list-text">如果从列表中删除自定义视图，则还会删除使用该视图的任何 Excel 文件或已计划报告。</block>
   <block id="b42822764ea88c6caec89a61226cab61" category="list-text">如果更改自定义视图，则使用该视图的报告将在下次根据报告计划生成报告并通过电子邮件发送时反映所做的更改。更改视图时，请确保所做的更改适用于用于报告的任何关联 Excel 自定义设置。如果需要，您可以通过以下方式更新 Excel 文件：下载该文件，进行所需更改，然后将其作为新的 Excel 视图自定义上传。</block>
-  <block id="74bc8bda03e4b17404c6cec63f5f07f7" category="image-alt">查看下拉列表 3.</block>
   <block id="a7433b405086da699d1603ca6759055b" category="paragraph">只有具有应用程序管理员或存储管理员角色的用户才能看到删除图标，更改或删除视图，或者更改或删除已计划的报告。</block>
   <block id="ac904ba5f4113c7cbb77a7907d0e65fe" category="summary">在您有要计划定期生成和分发的视图或 Excel 文件后，您可以计划报告。</block>
   <block id="ab27ccf7c5b2e6b30aa28cb9d0b148a4" category="doc">计划报告</block>
@@ -8593,7 +8530,6 @@
   <block id="1c36ae054ac3136e79e7863d7153a4b0" category="paragraph">按照以下步骤测试并计划要为视图生成的报告。选择或自定义要使用的视图。以下操作步骤使用的网络视图可显示网络接口的性能，但您可以使用所需的任何视图。</block>
   <block id="eb9b9ca8d849a9eeb51017627244ece6" category="list-text">根据需要使用内置 Unified Manager 功能自定义视图。</block>
   <block id="92b7d05696f12d11e239644c69b2169f" category="list-text">自定义此视图后，您可以在 * 视图 * 字段中提供一个唯一名称，然后单击复选标记以保存此视图。</block>
-  <block id="391ec4c74722c081033471a4642219aa" category="image-alt">查看保存</block>
   <block id="8a82f55dbe08409ad3495200a349037c" category="list-text">您可以使用 Microsoft ® Excel 的高级功能自定义报告。有关详细信息，请参见 <block ref="bdef9f4f34ef74fcb56b4687a78cb23c" category="inline-link-macro-rx"></block>。</block>
   <block id="e2a8a6a544c56804c3f95bc00ddd1322" category="list-text">要在计划或共享输出之前查看输出，请执行以下操作：</block>
   <block id="3136ca79c7b52681aea6af2dd3760a1f" category="paragraph">* 如果使用 Excel 自定义报告 *</block>
@@ -8609,7 +8545,6 @@
   <block id="a644b0919773088d772a902d07521c96" category="list-text">选择格式： * PDF * ， * CSV * 或 * XSLX* 。</block>
   <block id="94b481b22c3d2359fd4112d0e0558639" category="paragraph">对于使用 Excel 自定义内容的报告，请始终选择 * 。 XSLX* 。</block>
   <block id="13e08aa3248749e95fa0682d7f8f447f" category="list-text">单击复选标记（<block ref="084f5fd11ecd9791c3a6678c5f224e6b" category="inline-image-macro-rx" type="image"></block>）以保存报告计划。</block>
-  <block id="b9320816bd594dec7a5e28dc1791d527" category="image-alt">已计划报告</block>
   <block id="8e088a6641305641e3f0dca9b717c72f" category="paragraph">报告将立即作为测试发送。之后，将生成报告，并按计划频率通过电子邮件发送给列出的收件人。</block>
   <block id="374d16eab5d07fd490374fedc2009a74" category="summary">新的 Active IQ Unified Manager 报告功能存在一些限制，您应注意这些限制。</block>
   <block id="d5d12063acbd8f7901cd90a27af00e9d" category="doc">报告限制</block>
@@ -8644,7 +8579,6 @@
   <block id="3ea1f97ab35fae43793036e119f911da" category="summary">计划报告后，您可以在报告计划页面上对其进行编辑。</block>
   <block id="3888955a65585e21ce72a060fcfb4429" category="doc">编辑计划的报告</block>
   <block id="48dfd8addf9b5b9d931258cda2c9b142" category="paragraph">如果您拥有相应的权限，则可以更改系统中的任何报告及其计划。</block>
-  <block id="fb27ad7b2f889df88c11c1446ae50887" category="list-text">单击更多图标 <block ref="5dfd6339d943e611b369decf59f9c96d" category="inline-image-macro-rx" type="image"></block> 要更改的计划。</block>
   <block id="adff6885d0c25b63e9c076fa5bfe2ac8" category="list-text">您可以更改报告计划的 * 计划名称 * ， * 收件人 * 列表， * 频率 * 和 * 格式 * 。</block>
   <block id="3c089aca469ff81256c133ec51b447ce" category="list-text">完成后，单击复选标记以保存所做的更改。</block>
   <block id="9018853cfa1f2a37cbbc2cecf191b8bc" category="summary">这些示例自定义报告通常用于帮助您确定潜在问题并在出现问题之前对潜在问题做出响应。</block>
@@ -9707,7 +9641,6 @@
   <block id="8630c0e9bb6ed2ccbd7663dfb817e41e" category="list-text">已使用安装后提供的 URL 启动 Unified Manager Web UI</block>
   <block id="b266cb989bab6d64a4773d856c6be9db" category="list-text">使用安装期间创建的维护用户名和密码（适用于 Linux 安装的 umadmin 用户）登录</block>
   <block id="0e4f04c3fcd1e16df629c3a649c5b306" category="paragraph">只有在首次访问 Web UI 时，才会显示 Active IQ Unified Manager 的 " 设置开始 " 页面。以下页面来自 VMware 上的安装。</block>
-  <block id="91b6b0acc8c2424a1fcd957d8ce15f49" category="image-alt">首次体验向导</block>
   <block id="8e3cce4c15bd20379785ffe64ff70039" category="paragraph">如果稍后要更改其中任何一个选项，您可以从 Unified Manager 左侧导航窗格中的常规选项中进行选择。请注意， NTP 设置仅适用于 VMware 安装，稍后可以使用 Unified Manager 维护控制台进行更改。</block>
   <block id="cf7d0be63429371e7cebe2879983559f" category="list-text">在 Active IQ Unified Manager 初始设置页面中，输入维护用户电子邮件地址， SMTP 服务器主机名和任何其他 SMTP 选项以及 NTP 服务器（仅限 VMware 安装）。然后单击 * 继续 * 。</block>
   <block id="39188fdd48b44410d0e2e9fbb4ae360c" category="list-text">在 AutoSupport 页面中，单击 * 同意并继续 * 以启用从 Unified Manager 向 NetAppActive IQ 发送 AutoSupport 消息的功能。</block>
@@ -10356,7 +10289,6 @@
   <block id="6e512211beb8fd6a952723c4e1c7368b" category="doc">管理配额</block>
   <block id="91ee9c9d739842e37808ca0479996583" category="summary">您可以监控 MetroCluster 配置中的连接问题。详细信息包括集群中组件和连接的状态以及 MetroCluster 配置中集群之间的连接状态。</block>
   <block id="d63a2c85390193a1d2579ea20f08e15d" category="doc">监控 MetroCluster 配置</block>
-  <block id="e713e9b6962680f6e38501607685e83e" category="image-alt">节点交换机连接</block>
   <block id="6a30f7bcad62ce1906f2eee59828bb4a" category="paragraph">如果将指针移动到图标上方，则可以查看有关生成的事件的详细信息。</block>
   <block id="ef3ca892e9684af6b24a3f96d8ee97ae" category="paragraph">Unified Manager 使用系统运行状况警报监控 MetroCluster 配置中的组件和连接状态。</block>
   <block id="3a506937b5bb5384c61dac16d9df80c7" category="paragraph">此时将显示所有受监控集群的列表。</block>
@@ -10594,16 +10526,12 @@
   <block id="7f181d17e5151df833c62235f25606f9" category="cell">显示图标</block>
   <block id="cb61fef1e5e79e07a80421cb9a073a80" category="paragraph">最佳</block>
   <block id="ffff1583d2fd5cf13c4a0b5da1d34f00" category="paragraph">MetroCluster 配置中的集群之间的连接正常。</block>
-  <block id="a88a3b3fa326c91119c25bc78c733187" category="paragraph"><block ref="a88a3b3fa326c91119c25bc78c733187" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2a2f3c28106a5de3ce552be443b0b5e2" category="paragraph">受影响</block>
   <block id="6652f6a0a90bde13e583b1a0339770ef" category="paragraph">一个或多个错误会影响故障转移可用性的状态；但是， MetroCluster 配置中的两个集群仍处于运行状态。例如，当 ISL 链路关闭，集群间 IP 链路关闭或配对集群无法访问时。</block>
-  <block id="63087c59472b013c33a59eff7581c4df" category="paragraph"><block ref="63087c59472b013c33a59eff7581c4df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="08a38277b0309070706f6652eeae9a53" category="paragraph">已关闭</block>
   <block id="03ed6044b777b78a263e7a5dbbcae3fb" category="paragraph">MetroCluster 配置中的集群之间的连接已关闭，因为一个或两个集群已关闭或集群处于故障转移模式。例如，当配对集群因灾难而关闭时，或者出于测试目的而进行计划内切换时。</block>
   <block id="5d1c4e5932a583628e87e2c187b2b11c" category="paragraph">切换出错：</block>
-  <block id="28c09b41c92beed309a734d0ce7154ba" category="image-alt">MetroCluster 连接已关闭</block>
   <block id="5cd64bda6b25fcd9c11cc557830b1202" category="paragraph">切换成功：</block>
-  <block id="6581cf1085dcf2b37798cb4326d54379" category="image-alt">MetroCluster 连接故障转移</block>
   <block id="cfaaafe5f6e435dccd750d1732e2b80a" category="summary">Unified Manager 用户界面主要由一个信息板组成，该信息板可提供受监控对象的概览视图。此外，还可以通过用户界面查看所有集群对象。</block>
   <block id="0e074898c3d7d755c37545204ec7e893" category="doc">了解用户界面</block>
   <block id="605d06ffbb7b67366593490b2ea886c2" category="paragraph">您可以选择首选视图，并根据需要使用操作按钮。您的屏幕配置将保存在工作空间中，以便在启动 Unified Manager 时可以使用所需的所有功能。但是，在从一个视图导航到另一个视图后再导航回时，此视图可能不相同。</block>
@@ -10637,7 +10565,6 @@
   <block id="f9d342c990bb206745db9520ba805312" category="list-text">* 已完成 * 显示已成功完成和失败的管理操作。* 失败 * 操作提供了失败的原因，以便您可以手动处理问题描述。</block>
   <block id="078efefc4625e28abe7d03fab1dca812" category="list-text">* 进行中 * 显示了正在实施的管理操作以及计划实施的管理操作。</block>
   <block id="42c800420d6ad7d812f808d7c9b90ffa" category="list-text">* 建议 * 显示当前对所有受监控集群处于活动状态的所有管理操作。</block>
-  <block id="f6bb52f2c4944096d1f1be0386fc5f0c" category="list-text">单击左侧导航窗格中的 * 管理操作 * 。或者，也可以单击 <block ref="5dfd6339d943e611b369decf59f9c96d" category="inline-image-macro-rx" type="image"></block> 在 * 信息板 * 上的 * 管理操作 * 面板顶部，选择要查看的视图。</block>
   <block id="ad368da8527e3c80c794d518bb18d894" category="paragraph">此时将显示 Management Actions 页面。</block>
   <block id="aff65d6d0c30df7f7fc62f8541a45fe3" category="list-text">您可以单击 * 问题描述 * 字段中管理操作旁边的脱字号图标，查看有关问题描述以及用于修复问题描述的命令的详细信息。</block>
   <block id="a283c76eb07b5902aab48a81038a57b7" category="list-text">要查看任何 * 失败 * 的操作，请在 * 已完成 * 视图中对 * 状态 * 列进行排序。您也可以使用 * 筛选器 * 工具来实现这一目的。</block>
@@ -11590,7 +11517,6 @@
   <block id="19c95300aa71dfce67b25f4f325cb43c" category="admonition">如果集群中的节点上安装了不同版本的ONTAP 软件、则会列出最低版本号。您可以从"性能：所有节点"视图查看每个节点上安装的ONTAP 版本。</block>
   <block id="86ca0aced7f915554825d0afb4fafab5" category="list-text">Threshold Policy：用户定义的在此存储对象上处于活动状态的性能阈值策略。您可以将光标置于包含省略号(...)的策略名称上、以查看完整策略名称或已分配策略名称列表。分配性能阈值策略和清除性能阈值策略按钮将保持禁用状态、直到您通过单击最左侧的复选框选择一个或多个对象为止。</block>
   <block id="a67ce6ad2c23c9878afe4c5b9cbe4112" category="paragraph">"性能：所有卷"视图简要显示了Unified Manager实例监控的每个FlexVol 卷和FlexGroup 卷的性能事件、计数器数据和配置信息。这样、您可以快速监控卷的性能、并对性能问题和阈值事件进行故障排除。</block>
-  <block id="bd5124e87e242052898c4ae1990dfc3a" category="paragraph">如果要分析特定对象的延迟和吞吐量、请单击更多选项按钮 <block ref="f1336c784cd20ea9f422078d2fa50c9f" category="inline-image-macro-rx" type="image"></block> 然后、*分析工作负载*、您可以在"工作负载分析"页面上查看性能和容量图表。如果您具有System Manager的有效凭据、则可以在System Manager上查看详细信息。</block>
   <block id="bb01f6f71cd48a8c289775c75e483efc" category="admonition">对于数据保护(DP)卷、仅显示用户生成的流量的计数器值。根卷不会显示在此页面上。</block>
   <block id="1460b1209bf25d86786d5edbb7e4c402" category="paragraph">以下是"性能：所有卷"视图中的一些重要字段。</block>
   <block id="1fe4fdc74934561c12cc11ad4475aff6" category="list-text">模式：FlexVol 或FlexGroup。</block>
@@ -11710,7 +11636,6 @@
   <block id="058a0e4a5dedeedc296d95a71a970d42" category="list-text">复制相关问题。</block>
   <block id="ede340a93f59101ca7e364d3f1067bde" category="admonition">此时将报告以下状态：严重(<block ref="df317b61e66e379687b7563a1a8b1de8" category="inline-image-macro-rx" type="image"></block>），错误（<block ref="5aae73370f411c9ca9990d047839fb58" category="inline-image-macro-rx" type="image"></block>）或正常（<block ref="1d548d5cb07a50d174a5c37a0b4c0490" category="inline-image-macro-rx" type="image"></block>）。您还可以查看同一拓扑中主数据和镜像数据的聚合数据复制状态。</block>
   <block id="28cef8e9e725d254ca6d136886760fbf" category="paragraph">在下图中、您可以看到源集群和目标集群之间的站点间连接不可用、并且未配置它们之间的调解器。</block>
-  <block id="136444ea42854c06b8ffeaba599a7421" category="paragraph"><block ref="136444ea42854c06b8ffeaba599a7421" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6ba52b018ddb4342d95c61541029e019" category="list-text">单击状态图标。此时将显示一条包含错误定义的消息。如果在基于IP的MetroCluster 配置中为问题描述 引发了事件、您可以单击消息上的*查看事件*按钮并查看事件详细信息。解决问题描述 和事件后、此拓扑中的状态图标将变为正常(<block ref="1d548d5cb07a50d174a5c37a0b4c0490" category="inline-image-macro-rx" type="image"></block>）。</block>
   <block id="f95af02e2c615f0448cd0072a277560f" category="list-text">您可以在*集群/运行状况*详细信息页面的*配置*选项卡上的* MetroCluster 概述*和*保护*部分中查看更多配置详细信息。</block>
   <block id="57321cb4d050a9993f7e2c916e4e889d" category="admonition">只有对于基于IP的MetroCluster 配置、您才能在*集群*页面上查看集群拓扑。对于基于FC的MetroCluster 配置中的集群、拓扑将显示在*集群/运行状况*详细信息页面上的* MetroCluster 连接*选项卡上。</block>
@@ -11914,4 +11839,96 @@
   <block id="8e48b936ecc4cd90adb6a89647a697bf" category="list-text">操作系统：Red Hat Enterprise Linux 7.x版以及8.0至8.7版，或基于x86_64架构的CentOS 7.x版，使用操作系统安装程序的*软件选择*选项中的“带GUI的服务器”基础环境安装</block>
   <block id="177f4885c5bf3cc6b06090613bb7d325" category="paragraph">如果先前在 Red Hat Enterprise Linux 7.x 系统上安装了 Unified Manager ，但需要升级到 Red Hat Enterprise Linux 8.x ，则必须按照本主题中列出的过程之一进行操作。在这两种情况下，都必须在 Red Hat Enterprise Linux 7.x 系统上创建 Unified Manager 的备份，然后将备份还原到 Red Hat Enterprise Linux 8.x 系统。请注意、支持的Red Hat Enterprise Linux版本为8.0到8.7。</block>
   <block id="06d1a3f5a2c1fab663374946419b7a46" category="paragraph">请参见 <block ref="9a98c86d8dafdd1ad792c075346a9c0b" category="inline-link-macro-rx"></block> 如果需要查看备份和还原过程的详细说明、</block>
+  <block id="1f627cf53c59c3dcb003a3d36f72e53e" category="image-alt">显示Unified Manager单个实例的用户界面屏幕截图。</block>
+  <block id="e0ed7cd9eee5c90155f220097a342182" category="image-alt">显示切换期间卷行为的UI屏幕截图。</block>
+  <block id="b9fb422d6749f5459bceb51a8ce8d2ad" category="image-alt">节点交换机连接图标</block>
+  <block id="1245ab70984df10fe41a16c32de94b79" category="inline-image-macro">显示源站点和镜像站点的拓扑以及调解器的UI屏幕截图。</block>
+  <block id="07a025ae69f8039bab6c6abf2bddffd5" category="paragraph"><block ref="07a025ae69f8039bab6c6abf2bddffd5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4328e10f6974dcd48e51d451f8214db1" category="image-alt">一个UI屏幕截图、其中显示了包含三个筛选器的筛选面板。</block>
+  <block id="782fb4c5ec9a229209f3082c5073e5c4" category="inline-image-macro">MetroCluster连接最佳图标</block>
+  <block id="596f263c8b44e1f9f4bb2690b4fe3e56" category="paragraph"><block ref="596f263c8b44e1f9f4bb2690b4fe3e56" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a62dde0bbdba25da53012df268b4198e" category="image-alt">MetroCluster连接关闭图标</block>
+  <block id="6e603aa770ae8462d9e260c718c531df" category="image-alt">MetroCluster连接故障转移图标</block>
+  <block id="3f7734cbffc7efa256fe14dd9843a637" category="inline-image-macro">MetroCluster连接受影响图标</block>
+  <block id="37e4190f44af188100dd0d615957bb8f" category="paragraph"><block ref="37e4190f44af188100dd0d615957bb8f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7495c2e60977b03d4fd9f88701c5a72c" category="inline-image-macro">更多图标</block>
+  <block id="7c994822b6784430b56b7684746923b4" category="list-text">单击左侧导航窗格中的 * 管理操作 * 。或者，也可以单击 <block ref="725f4bf2ffc300942027282d0182533f" category="inline-image-macro-rx" type="image"></block> 在 * 信息板 * 上的 * 管理操作 * 面板顶部，选择要查看的视图。</block>
+  <block id="9bfdbfc9bf422e0970ea4faae8a35ebb" category="inline-image-macro">upfolder图标</block>
+  <block id="8efb9daa6290ac7a5012150c756b2259" category="paragraph">显示要还原的数据的路径。您可以导航到要还原的文件夹和文件，也可以键入路径。除非您选择或键入路径，否则此字段为空。单击 <block ref="38f36c3d8bc2b072ab2ba2f0387a9f23" category="inline-image-macro-rx" type="image"></block> 选择路径后，您将在目录结构中上移一级。</block>
+  <block id="477c985c6c6e6727f995cedb1e5e6435" category="image-alt">显示反向关系过程的UI屏幕截图。</block>
+  <block id="889b6570db13a97803b3dd55bf216742" category="paragraph">显示选定卷的可用文件夹的名称。单击名称列表中的文件夹可显示子文件夹（如果存在）。不会显示文件夹中包含的文件。单击 <block ref="38f36c3d8bc2b072ab2ba2f0387a9f23" category="inline-image-macro-rx" type="image"></block> 选择文件夹后，您将在目录结构中上移一级。</block>
+  <block id="595033372a33b3b2e88ddc603876b53b" category="image-alt">一个UI屏幕截图、其中显示了Perf.已用容量。</block>
+  <block id="0b1adeccc2e8917c87c18c86d0a0b9f7" category="image-alt">性能：所有聚合页面的UI屏幕截图</block>
+  <block id="a37991352d24568094ee8813e6c91f08" category="image-alt">显示聚合延迟与利用率曲线示例的UI屏幕截图。</block>
+  <block id="fabd87e14688b50d54217ddab5aacfc3" category="image-alt">显示如何调查特定聚合的UI屏幕截图。</block>
+  <block id="8732f871ff7bb423f87a4b906c876f57" category="image-alt">显示名为OPP-mobility的集群的性能集群登录页面示例的UI屏幕截图。</block>
+  <block id="60cc048fae210974de134bfd67f76577" category="image-alt">显示时间范围面板的UI屏幕截图。</block>
+  <block id="2492e5712887bfbbfb7de6bea4cd7cda" category="image-alt">显示示例计数器图表的UI屏幕截图。</block>
+  <block id="52583ec409651e974d8e45794b491ede" category="image-alt">一个UI屏幕截图、其中显示了包含三个筛选器的筛选面板。</block>
+  <block id="54478965fd26c1695be4fa6c77b446ec" category="inline-image-macro">眼睛图标</block>
+  <block id="99286eccb9676d4a181de0e390557c9c" category="list-text">选择或取消选择 <block ref="407d125e19d55a99b4ac9c6949e2352b" category="inline-image-macro-rx" type="image"></block> 与策略关联。</block>
+  <block id="462babbeb087f7c03fec086288d187f8" category="paragraph">如果要分析特定对象的延迟和吞吐量、请单击更多选项按钮 <block ref="c722a999142e1b9406d46961ffb82654" category="inline-image-macro-rx" type="image"></block> 然后、*分析工作负载*、您可以在"工作负载分析"页面上查看性能和容量图表。如果您具有System Manager的有效凭据、则可以在System Manager上查看详细信息。</block>
+  <block id="b397003ae4b701e6628d562247d34f2c" category="image-alt">一个UI屏幕截图、显示了三个选项在计数器图表中的显示方式示例。</block>
+  <block id="eb1c642978fd979848312566e16f7afc" category="paragraph">此时将显示 IOPS 高级协议比较图表。您可以通过取消选择或选择来限制比较 <block ref="407d125e19d55a99b4ac9c6949e2352b" category="inline-image-macro-rx" type="image"></block> 与协议关联的。</block>
+  <block id="9dd283793ee317f51a1de10e42542a91" category="image-alt">显示了许多可能的集群对象导航示例的UI屏幕截图。</block>
+  <block id="3ef7bf8de883cc560af3f1ea850428a3" category="image-alt">显示事件调查导航的UI屏幕截图。</block>
+  <block id="c09817166d012f14ca1f27e46931f5f4" category="image-alt">显示节点延迟与IOPS曲线示例的UI屏幕截图。</block>
+  <block id="3ddb93e23fd356705d9b7c2ff9db9671" category="image-alt">一个UI屏幕截图、其中仅显示细分图表以及根对象的详细性能容量。</block>
+  <block id="416f2494a3ff85ebccd8ee48ca69c1f6" category="image-alt">显示IOPS图形的UI屏幕截图。</block>
+  <block id="e4a0d59910db048032ebe1dbf1de62d8" category="inline-image-macro">选择下拉图标</block>
+  <block id="60592caeae6223a21992cb7eca7c87b8" category="paragraph">单击 <block ref="70257d3efa47e2af65483465ea57dfa2" category="inline-image-macro-rx" type="image"></block> 在列标题中。</block>
+  <block id="2d8a4738202b94c82b1e37dea88eb00e" category="image-alt">显示如何在节点/性能资源管理器页面中查看节点并从列表中选择"Available IOPs"的UI屏幕截图。</block>
+  <block id="16c20a8b27943c8c1c6eecdbc8ea343f" category="image-alt">显示资源延迟与利用率曲线的UI屏幕截图。</block>
+  <block id="40206e52a01c18d429a1e9eff494a574" category="image-alt">一个UI屏幕截图、其中显示了显示资源管理器信息的对象登录页面示例。</block>
+  <block id="d1001975653044735aa1ffd5595e8f92" category="paragraph">此时将显示集群组件比较图表。您可以通过取消选择或选择来限制比较 <block ref="407d125e19d55a99b4ac9c6949e2352b" category="inline-image-macro-rx" type="image"></block> 与每个集群组件相关联。</block>
+  <block id="50ab28ae9a22a8d47fbcec8d592228e9" category="image-alt">显示"性能/所有节点"清单页面中对象详细信息的UI屏幕截图。</block>
+  <block id="2b0fc733a7cc7396d6aa6a488c4f2278" category="image-alt">显示示例警报电子邮件的UI屏幕截图。</block>
+  <block id="19e6d8baed2ec8b3161e1d74783d01ce" category="inline-image-macro">展开按钮图标</block>
+  <block id="51d305573aafef3d72e0a317c6037f34" category="inline-image-macro">显示Unified Manager性能服务级别创建的所有QoS策略组的UI屏幕截图。</block>
+  <block id="74ee10644e55ee027503694aeb0ba6ca" category="list-text">在您感兴趣的 QoS 策略中，单击展开按钮（<block ref="0d06b7ef13aeb304d424aae1786632b2" category="inline-image-macro-rx" type="image"></block>）以查看更多详细信息。<block ref="a2f6f835476d638fd10271125c0480f4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="54cc88543e91a96516501e5271e4a82b" category="image-alt">一个UI屏幕截图、显示图形中以计数器条表示的每个对象的性能统计信息。</block>
+  <block id="5238c6c88068791bb1872a5e05a8d7b4" category="paragraph">。 <block ref="70257d3efa47e2af65483465ea57dfa2" category="inline-image-macro-rx" type="image"></block> 下拉框中，然后选择 * 选择此页面上的所有对象 * 。</block>
+  <block id="98ce7877cb0a64e15846eef0691788fd" category="paragraph">。 <block ref="70257d3efa47e2af65483465ea57dfa2" category="inline-image-macro-rx" type="image"></block> 下拉框中，然后选择 * 选择所有对象 * 。</block>
+  <block id="c72d154d34a1014aa8e811d102b50933" category="image-alt">显示已转换为Unified Manager事件的Active IQ平台意外事件和风险的UI屏幕截图。</block>
+  <block id="ffbe0d06b665bed80588f0e8461002d4" category="image-alt">显示如何从信息板查看和修复事件的UI屏幕截图。</block>
+  <block id="4601240ca052a78e31e094f76f334b6a" category="image-alt">显示Unified Manager在解决事件时必须执行的操作以及所采取的操作的用户界面屏幕截图。</block>
+  <block id="ba261df653b9b923add098824181c801" category="image-alt">显示双节点集群中存储资源的UI屏幕截图。</block>
+  <block id="dbfcd05763fa1f48ada3b77761dc4cfa" category="inline-image-macro">显示如何将Excel上传到报告的UI屏幕截图。</block>
+  <block id="6bbf0103f9453595e0487ac59c2448de" category="list-text">如果存在自定义 Excel 文件，则 * 报告 * &gt; * 上传 Excel* 菜单项旁边会有一个复选标记。下载 Excel 文件时，系统将使用具有自定义设置的版本。<block ref="e6d2f708abbc985ace6a92c600a00904" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c5e34b2c8b350688151b098e947309d4" category="image-alt">显示如何从报告下载Excel的UI屏幕截图。</block>
+  <block id="1f69edf510d99f16d9d7394e91575d10" category="image-alt">数据表的UI屏幕截图、其中显示了基于当前数据的总容量。</block>
+  <block id="f83b85a64ed76eedee81d44bf1b541a7" category="image-alt">显示总数据和已提交容量的图表的UI屏幕截图。</block>
+  <block id="017a933279fc8bf9ae767c84109ad92c" category="image-alt">显示"显示/隐藏"菜单下拉列表的UI屏幕截图。</block>
+  <block id="d162484a21f2abc8a7e6c4db92c3f599" category="inline-image-macro">显示如何从筛选器选项应用筛选器的UI屏幕截图。</block>
+  <block id="ce7dd485e422fc553aae2f81fed0fe1c" category="list-text">冷数据大于 10 GB
+<block ref="7a65ec546ca575667cdf7ab8acbb8a83" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7b9c1ecc0c3ff786e8397f2c2e8d50e3" category="image-alt">一个UI屏幕截图、其中显示了"Vols"更改分层策略页面、并按正确顺序列出了所需的列。</block>
+  <block id="fd9c989b156ec2d475fc9910441b5780" category="image-alt">显示与对象相关的所有已计划报告的UI屏幕截图。</block>
+  <block id="d19065af454bff396018ed13030b1235" category="image-alt">显示CSV格式示例报告的UI屏幕截图。</block>
+  <block id="6fa71c44d6186f7c4d31f3a51975364f" category="image-alt">显示PDF格式示例报告的UI屏幕截图。</block>
+  <block id="ddaf9c5a83ac8717f7bc6fc2a6ed7a18" category="image-alt">"视图"下拉列表的UI屏幕截图。</block>
+  <block id="a85bc833070c6fdbef91c0357278ed38" category="image-alt">如果存在导入的报告、则会显示一个显示此消息的UI屏幕截图。</block>
+  <block id="574419736dd1a094bea86cf06639f100" category="image-alt">显示用于生成报告的SQL查询的UI屏幕截图。</block>
+  <block id="c593e4f4250fa9f129051ce599d5317a" category="image-alt">显示如何命名新工作表的UI屏幕截图。</block>
+  <block id="5a84af09dea3465934e5b7f757862827" category="image-alt">显示已计划报告的UI屏幕截图。</block>
+  <block id="0f7289e3904a934b2e14672a76c369d6" category="list-text">单击更多图标 <block ref="b25ce25f3639aa23c6778ce04e0f9921" category="inline-image-macro-rx" type="image"></block> 要删除的计划。</block>
+  <block id="8945e62ebce635d77d71ad095eda9f13" category="list-text">单击更多图标 <block ref="b25ce25f3639aa23c6778ce04e0f9921" category="inline-image-macro-rx" type="image"></block> 要使用的计划。</block>
+  <block id="80ca147a9542e53fb391d348e226d62d" category="image-alt">显示如何保存视图的UI屏幕截图。</block>
+  <block id="7e33598eac8cee49a411447ccd0d9d27" category="image-alt">显示如何保存报告计划的UI屏幕截图。</block>
+  <block id="181437cbf52a06c7c7d1d041f8e37d97" category="image-alt">显示如何添加和应用筛选器的UI屏幕截图。</block>
+  <block id="15d3ae0dd382b3d5338ccbce5c4b4b3c" category="list-text">单击更多图标 <block ref="b25ce25f3639aa23c6778ce04e0f9921" category="inline-image-macro-rx" type="image"></block> 要更改的计划。</block>
+  <block id="00e9b8776d9b0f5333a6944abeccc51b" category="list-text">冷数据大于 10 GB
+<block ref="c0b223f17f3407abaec62a27ae2ab0c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f775b464c433accec6a7a0649ac6631a" category="list-text">使用名称保存此视图以反映此视图显示的内容，例如 "`Vols change tiering policy` " 。<block ref="a2f46dddb995c11c78b4e2890489ab93" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="62a2bd39b34ebcf2c08e411858a180ec" category="image-alt">显示如何在类型列中选择排序的UI屏幕截图。</block>
+  <block id="d108321f23300645831694e00258ed7b" category="image-alt">显示3D柱形图的UI屏幕截图。</block>
+  <block id="cda414f006213103be1327642b219548" category="image-alt">显示总容量与可用容量图表的UI屏幕截图。</block>
+  <block id="b599f3116d2566813498a702ea5f54be" category="image-alt">显示如何添加或删除列的UI屏幕截图。</block>
+  <block id="113339939ed5da8456cff38c6a2dd659" category="inline-image-macro">正常的绿色勾号图标</block>
+  <block id="581ae54a0a64a66fa9583b3c4094e4eb" category="list-text"><block ref="eacc15b31e1b3c1c55031aa4cb60d560" category="inline-image-macro-rx" type="image"></block> - 此参数已按照建议进行配置。</block>
+  <block id="8945e6b7353125220878189e0787b55f" category="inline-image-macro">警告图标</block>
+  <block id="de4937d7b8da96a7481969b8c8d95093" category="list-text"><block ref="daf97ce3259b516686ed6431c8ae9d80" category="inline-image-macro-rx" type="image"></block> - 未按建议配置参数。</block>
+  <block id="6d3602bc1499d37d6352a07745fe82a3" category="inline-image-macro">信息图标</block>
+  <block id="e96f2c1a8d03162235d9658f1ede2286" category="list-text"><block ref="82a2a2f25615dc32e336df95d97b3ec2" category="inline-image-macro-rx" type="image"></block> —未在集群上启用此功能，或者未按建议配置此参数，但此参数不会影响对象的合规性。</block>
+  <block id="fd76af028c19ef3cb6eac6556e7104a7" category="image-alt">显示VMware上安装页面的UI屏幕截图。</block>
 </blocks>

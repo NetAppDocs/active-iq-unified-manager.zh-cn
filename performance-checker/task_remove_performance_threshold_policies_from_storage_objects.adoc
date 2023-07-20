@@ -45,7 +45,7 @@ summary: 如果您不再希望 Unified Manager 监控性能计数器的值，则
  a| 
 页面上的所有对象
  a| 
-单击 image:../media/select_dropdown_65_png.gif[""] 在列标题中。
+单击 image:../media/select_dropdown_65_png.gif["选择下拉图标"] 在列标题中。
 
 |===
 . 单击 * 清除性能阈值策略 * 。

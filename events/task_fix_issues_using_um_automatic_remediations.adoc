@@ -18,7 +18,7 @@ Unified Manager 可以对某些事件进行全面诊断，并使用 * 修复它 
 .步骤
 . 要查看可通过 * 信息板 * 修复的事件，请单击 * 信息板 * 。
 +
-image::../media/management_actions.png[管理操作]
+image::../media/management_actions.png[显示如何从信息板查看和修复事件的UI屏幕截图。]
 
 . 要解决 Unified Manager 可以修复的任何问题，请单击 * 修复它 * 按钮。要修复多个对象上的问题描述，请单击 * 全部修复 * 按钮。
 

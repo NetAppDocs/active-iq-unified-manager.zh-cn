@@ -24,7 +24,7 @@ summary: 您可以创建一个报告来分析 Excel 图表中的可用卷容量�
 . 在左侧导航窗格中，单击 * 存储 * > * 卷 * 。
 . 选择 * 报告 * > * 下载 Excel* 。
 +
-image::../media/download_excel_menu.png[下载 Excel 菜单]
+image::../media/download_excel_menu.png[显示如何从报告下载Excel的UI屏幕截图。]
 
 +
 根据您的浏览器，您可能需要单击 * 确定 * 来保存文件。
@@ -52,7 +52,7 @@ image::../media/download_excel_menu.png[下载 Excel 菜单]
 
 ====
 +
-image::../media/move_chart.png[移动图表]
+image::../media/move_chart.png[显示如何命名新工作表的UI屏幕截图。]
 
 . 选择图表后，您可以使用 * 设计 * 和 * 格式 * 菜单自定义图表的外观。
 . 如果满意，请使用所做的更改保存文件。
@@ -70,7 +70,7 @@ image::../media/move_chart.png[移动图表]
 * 报告 * > * 上传 Excel* 菜单项旁边会显示一个复选标记。
 
 +
-image::../media/upload_excel.png[上传 Excel]
+image::../media/upload_excel.png[显示如何将Excel上传到报告的UI屏幕截图。]
 
 . 单击 * 已计划报告 * 。
 . 单击 * 添加计划 * 向 * 报告计划 * 页面添加新行，以便为新报告定义计划特征。

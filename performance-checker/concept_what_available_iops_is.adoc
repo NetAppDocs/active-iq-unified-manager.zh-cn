@@ -23,7 +23,7 @@ summary: 可用 IOPS 计数器用于确定在资源达到限制之前可添加�
 
 下图显示了节点的延迟与 IOPS 曲线示例。
 
-image::../media/available_iops.gif[可用 IOPS]
+image::../media/available_iops.gif[显示节点延迟与IOPS曲线示例的UI屏幕截图。]
 
 资源可以提供的最大 IOPS 数是已用性能容量计数器为 100% （最佳点）时的 IOPS 数。此操作点表示节点当前以 100 ， 000 IOPS 运行，延迟为 1.0 毫秒 / 操作根据从节点捕获的统计信息， Unified Manager 会确定此节点的最大 IOPS 为 160 ， 000 ，这意味着可用或可用 IOPS 为 60 ， 000 。因此，您可以向此节点添加更多工作负载，以便更高效地使用系统。
 

@@ -25,4 +25,4 @@ summary: 您可以监控 Unified Manager 管理的任何集群中所有对象的
 
 您应调查这些卷，查看是否应应用 QoS 策略或性能服务级别策略，或者更改策略设置，以使这些卷不会在集群上使用如此大的 IOPS 。
 
-image::../media/monitor_cluster_object.png[监控集群对象]
+image::../media/monitor_cluster_object.png[显示了许多可能的集群对象导航示例的UI屏幕截图。]

@@ -22,7 +22,7 @@ summary: '在 MetroCluster 配置中，集群之间的连接可以是以下状�
  a| 
 MetroCluster 配置中的集群之间的连接正常。
  a| 
-image:../media/metrocluster_connectivity_optimal.gif[""]
+image:../media/metrocluster_connectivity_optimal.gif["MetroCluster连接最佳图标"]
 
 
 
@@ -31,7 +31,7 @@ image:../media/metrocluster_connectivity_optimal.gif[""]
  a| 
 一个或多个错误会影响故障转移可用性的状态；但是， MetroCluster 配置中的两个集群仍处于运行状态。例如，当 ISL 链路关闭，集群间 IP 链路关闭或配对集群无法访问时。
  a| 
-image:../media/metrocluster_connectivity_impacted.gif[""]
+image:../media/metrocluster_connectivity_impacted.gif["MetroCluster连接受影响图标"]
 
 
 
@@ -42,10 +42,10 @@ MetroCluster 配置中的集群之间的连接已关闭，因为一个或两个�
  a| 
 切换出错：
 
-image::../media/metrocluster_connectivity_down.gif[MetroCluster 连接已关闭]
+image::../media/metrocluster_connectivity_down.gif[MetroCluster连接关闭图标]
 
 切换成功：
 
-image::../media/metrocluster_connectivity_failover.gif[MetroCluster 连接故障转移]
+image::../media/metrocluster_connectivity_failover.gif[MetroCluster连接故障转移图标]
 
 |===

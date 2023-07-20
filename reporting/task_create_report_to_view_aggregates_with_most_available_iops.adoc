@@ -28,7 +28,7 @@ summary: 此报告显示哪些聚合的每个聚合类型的可用 IOPS 最多�
 . 命名并保存自定义视图 `每个聚合的可用 IOPS`
 . 选择 * 报告 * > * 下载 Excel* 。
 +
-image::../media/download_excel_menu.png[下载 Excel 菜单]
+image::../media/download_excel_menu.png[显示如何从报告下载Excel的UI屏幕截图。]
 
 +
 根据您的浏览器，您可能需要单击 * 确定 * 来保存文件。
@@ -62,7 +62,7 @@ image::../media/download_excel_menu.png[下载 Excel 菜单]
 * 报告 * > * 上传 Excel* 菜单项旁边会显示一个复选标记。
 
 +
-image::../media/upload_excel.png[上传 Excel]
+image::../media/upload_excel.png[显示如何将Excel上传到报告的UI屏幕截图。]
 
 . 单击 * 已计划报告 * 。
 . 单击 * 添加计划 * 向报告计划页面添加新行，以便为新报告定义计划特征。

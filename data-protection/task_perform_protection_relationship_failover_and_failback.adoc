@@ -32,7 +32,7 @@ summary: 如果保护关系中的源卷因硬件故障或灾难而被禁用，�
 反转关系类似于级联关系：
 
 +
-image::../media/um_toplogy_reverse_resync.gif[um toplogy 反向重新同步]
+image::../media/um_toplogy_reverse_resync.gif[显示反向关系过程的UI屏幕截图。]
 
 . link:task_break_snapmirror_relationship_from_health_volume_details.html["中断已反转的 SnapMirror 关系"]。
 +

@@ -21,7 +21,7 @@ summary: 计划报告后，您可以从报告计划页面中将其删除。
 .步骤
 . 在左侧导航窗格中，单击 * 存储管理 * > * 报告计划 * 。
 +
-image::../media/scheduled_reports_2.gif[已计划报告 2.]
+image::../media/scheduled_reports_2.gif[显示已计划报告的UI屏幕截图。]
 
 +
 [NOTE]

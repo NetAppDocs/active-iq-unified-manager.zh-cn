@@ -24,7 +24,7 @@ summary: 您可以使用总计和集群模式列图表格式创建报告来分�
 . 在左侧导航窗格中，单击 * 存储 * > * 聚合 * 。
 . 选择 * 报告 * > * 下载 Excel* 。
 +
-image::../media/download_excel_menu.png[下载 Excel 菜单]
+image::../media/download_excel_menu.png[显示如何从报告下载Excel的UI屏幕截图。]
 
 +
 根据您的浏览器，您可能需要单击 * 确定 * 来保存文件。
@@ -53,7 +53,7 @@ image::../media/download_excel_menu.png[下载 Excel 菜单]
 
 
 
-image::../media/capacitysums.png[容量总和]
+image::../media/capacitysums.png[数据表的UI屏幕截图、其中显示了基于当前数据的总容量。]
 
 . 在数据表中，选择 * 总数据容量（ GB ） * 和 * 已提交容量（ GB ） * 列。
 . 从 * 插入 * 菜单中选择 * 建议的图表 * ，然后选择 * 集群列 * 图表。
@@ -61,7 +61,7 @@ image::../media/capacitysums.png[容量总和]
 . 选择图表后，您可以使用 * 设计 * 和 * 格式 * 菜单自定义图表的外观。
 . 如果满意，请使用所做的更改保存文件。请勿更改文件名或位置。
 +
-image::../media/cluster_column_chart_2.png[集群列图表 2.]
+image::../media/cluster_column_chart_2.png[显示总数据和已提交容量的图表的UI屏幕截图。]
 
 . 在 Unified Manager 中，选择 * 报告 * > * 上传 Excel* 。
 +
@@ -77,7 +77,7 @@ image::../media/cluster_column_chart_2.png[集群列图表 2.]
 * 报告 * > * 上传 Excel* 菜单项旁边会显示一个复选标记。
 
 +
-image::../media/upload_excel.png[上传 Excel]
+image::../media/upload_excel.png[显示如何将Excel上传到报告的UI屏幕截图。]
 
 . 单击 * 已计划报告 * 。
 . 单击 * 添加计划 * 向报告计划页面添加新行，以便为新报告定义计划特征。

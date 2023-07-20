@@ -27,7 +27,7 @@ summary: 在您有要计划定期生成和分发的视图或 Excel 文件后，�
 . 根据需要使用内置 Unified Manager 功能自定义视图。
 . 自定义此视图后，您可以在 * 视图 * 字段中提供一个唯一名称，然后单击复选标记以保存此视图。
 +
-image::../media/view_save.gif[查看保存]
+image::../media/view_save.gif[显示如何保存视图的UI屏幕截图。]
 
 . 您可以使用 Microsoft ® Excel 的高级功能自定义报告。有关详细信息，请参见 link:task_use_excel_to_customize_your_report.html["使用 Excel 自定义报告"]。
 . 要在计划或共享输出之前查看输出，请执行以下操作：
@@ -67,7 +67,7 @@ image::../media/view_save.gif[查看保存]
 ====
 . 单击复选标记（image:../media/blue_check.gif[""]）以保存报告计划。
 +
-image::../media/scheduled_reports.gif[已计划报告]
+image::../media/scheduled_reports.gif[显示如何保存报告计划的UI屏幕截图。]
 
 +
 报告将立即作为测试发送。之后，将生成报告，并按计划频率通过电子邮件发送给列出的收件人。

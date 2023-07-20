@@ -15,7 +15,7 @@ summary: 已用性能容量值可帮助您确定当前过度利用或未充分�
 
 下图显示了资源的延迟与利用率曲线，并使用彩色点确定了当前运行点所在的三个区域。
 
-image::../media/headroom_chart_over_under.gif[性能余量图表超过下方]
+image::../media/headroom_chart_over_under.gif[显示资源延迟与利用率曲线的UI屏幕截图。]
 
 * 已用性能容量百分比等于 100 表示处于最佳状态。
 +

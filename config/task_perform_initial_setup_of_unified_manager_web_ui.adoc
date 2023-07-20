@@ -23,7 +23,7 @@ summary: 要使用 Unified Manager ，必须先配置初始设置选项，包括
 
 只有在首次访问 Web UI 时，才会显示 Active IQ Unified Manager 的 " 设置开始 " 页面。以下页面来自 VMware 上的安装。
 
-image::../media/first_experience_wizard.JPG[首次体验向导]
+image::../media/first_experience_wizard.JPG[显示VMware上安装页面的UI屏幕截图。]
 
 如果稍后要更改其中任何一个选项，您可以从 Unified Manager 左侧导航窗格中的常规选项中进行选择。请注意， NTP 设置仅适用于 VMware 安装，稍后可以使用 Unified Manager 维护控制台进行更改。
 

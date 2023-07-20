@@ -52,14 +52,14 @@ summary: 您可以为存储对象分配用户定义的性能阈值策略，以�
  a| 
 页面上的所有对象
  a| 
-。 image:../media/select_dropdown_65_png.gif[""] 下拉框中，然后选择 * 选择此页面上的所有对象 * 。
+。 image:../media/select_dropdown_65_png.gif["选择下拉图标"] 下拉框中，然后选择 * 选择此页面上的所有对象 * 。
 
 
 
  a| 
 相同类型的所有对象
  a| 
-。 image:../media/select_dropdown_65_png.gif[""] 下拉框中，然后选择 * 选择所有对象 * 。
+。 image:../media/select_dropdown_65_png.gif["选择下拉图标"] 下拉框中，然后选择 * 选择所有对象 * 。
 
 |===
 +

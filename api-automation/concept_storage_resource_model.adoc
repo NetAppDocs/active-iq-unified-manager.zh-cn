@@ -28,4 +28,4 @@ ONTAP 中的存储资源可广泛分类为 _physical storage resources_ 和 _log
 
 下图显示了双节点集群中的存储资源：
 
-image::../media/storage_resource_model.gif[存储资源模型]
+image::../media/storage_resource_model.gif[显示双节点集群中存储资源的UI屏幕截图。]

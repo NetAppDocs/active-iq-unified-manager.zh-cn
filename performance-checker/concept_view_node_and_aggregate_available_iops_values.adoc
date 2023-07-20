@@ -15,7 +15,7 @@ summary: 您可以监控集群中所有节点或所有聚合的可用 IOPS 值�
 
 可用 IOPS 值将显示在 " 性能清单 " 页面以及节点和聚合的 " 性能资源管理器 " 页面图表中。例如，在节点 / 性能资源管理器页面中查看节点时，您可以从列表中选择 "`Available IOPS` " 计数器图表，以便比较该节点和该节点上的多个聚合的可用 IOPS 值。
 
-image::../media/available_iops_zoom.gif[可用 IOPS 缩放]
+image::../media/available_iops_zoom.gif[显示如何在节点/性能资源管理器页面中查看节点并从列表中选择"Available IOPs"的UI屏幕截图。]
 
 通过监控可用 IOPS 计数器，您可以确定：
 

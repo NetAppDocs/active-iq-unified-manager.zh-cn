@@ -25,4 +25,4 @@ summary: 您可以监控 Unified Manager 管理的所有集群的性能。通过
 . 在资源管理器页面右侧的 " 比较 " 窗格中，单击其中一个计数器图表中的 * 缩放视图 * 以查看有关该聚合的性能历史记录的详细信息。
 
 
-image::../media/monitor_cluster_performance.png[监控集群性能]
+image::../media/monitor_cluster_performance.png[显示如何调查特定聚合的UI屏幕截图。]

@@ -13,6 +13,6 @@ summary: Active IQ 平台意外事件和风险会转换为 Unified Manager 事�
 [role="lead"]
 Active IQ 平台意外事件和风险会转换为 Unified Manager 事件，如下图所示。
 
-image::../media/aiq_and_um_event_generation.png[生成 AIQ 和 UM 事件]
+image::../media/aiq_and_um_event_generation.png[显示已转换为Unified Manager事件的Active IQ平台意外事件和风险的UI屏幕截图。]
 
 如您所见，在 Active IQ 平台上编译的规则文件将保持最新，并且每天都会生成集群 AutoSupport 消息，并且 Unified Manager 会每天更新事件列表。

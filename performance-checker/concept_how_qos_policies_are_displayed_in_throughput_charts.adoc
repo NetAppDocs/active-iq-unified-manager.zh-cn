@@ -51,7 +51,7 @@ IOPS 和 MB/ 秒的共享和非共享 QoS 策略使用术语 `minimum` 和 `maxi
 |===
 下图举例说明了这三个选项在计数器图表中的显示方式。
 
-image::../media/3_qos_policy_charts.gif[3 个 QoS 策略图表]
+image::../media/3_qos_policy_charts.gif[一个UI屏幕截图、显示了三个选项在计数器图表中的显示方式示例。]
 
 如果已在 IOPS 中定义的正常 QoS 策略显示在工作负载的 IOPS/TB 图表中，则 ONTAP 会将 IOPS 值转换为 IOPS/TB 值， Unified Manager 会在 IOPS/TB 图表中显示该策略以及文本 "`QoS ， defined in IOPS` " 。
 

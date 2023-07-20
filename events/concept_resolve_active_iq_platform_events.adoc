@@ -15,7 +15,7 @@ Active IQ 平台意外事件和风险与其他 Unified Manager 事件类似，�
 
 下图显示了在解决从 Active IQ 平台生成的事件时必须执行的操作（绿色）以及 Unified Manager 执行的操作（黑色）。
 
-image::../media/aiq_and_um_event_resolution.png[AIQ 和 UM 事件解决方案]
+image::../media/aiq_and_um_event_resolution.png[显示Unified Manager在解决事件时必须执行的操作以及所采取的操作的用户界面屏幕截图。]
 
 在执行手动解决方案时，您必须登录到 System Manager 或 ONTAP 命令行界面以修复问题描述。只有在集群在午夜生成新的 AutoSupport 消息后，您才能验证问题描述。
 

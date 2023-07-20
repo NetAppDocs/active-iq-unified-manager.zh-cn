@@ -22,7 +22,7 @@ summary: 'MetroCluster 配置可提供数据镜像，并在整个站点不可用
  a| 
 MetroCluster 配置中的集群之间的数据镜像正常。
  a| 
-image:../media/metrocluster_connectivity_optimal.gif[""]
+image:../media/metrocluster_connectivity_optimal.gif["MetroCluster连接最佳图标"]
 
 
 
@@ -33,10 +33,10 @@ image:../media/metrocluster_connectivity_optimal.gif[""]
  a| 
 切换出错：
 
-image::../media/metrocluster_connectivity_down.gif[MetroCluster 连接已关闭]
+image::../media/metrocluster_connectivity_down.gif[MetroCluster连接关闭图标]
 
 切换成功：
 
-image::../media/metrocluster_connectivity_failover.gif[MetroCluster 连接故障转移]
+image::../media/metrocluster_connectivity_failover.gif[MetroCluster连接故障转移图标]
 
 |===

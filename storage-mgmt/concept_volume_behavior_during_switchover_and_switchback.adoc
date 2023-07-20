@@ -15,7 +15,7 @@ summary: 触发将发生原因活动卷从一个集群移动到灾难恢复组�
 
 由于卷会从一个集群移动到另一个集群，因此建议您监控这两个集群。Unified Manager 的一个实例可以监控 MetroCluster 配置中的两个集群，但有时两个位置之间的距离需要使用两个 Unified Manager 实例来监控这两个集群。下图显示了 Unified Manager 的一个实例：
 
-image::../media/opm_mcc_switchover.gif[OPM MCC 切换]
+image::../media/opm_mcc_switchover.gif[显示Unified Manager单个实例的用户界面屏幕截图。]
 
 名称中包含 p 的卷表示主卷，名称中包含 b 的卷是由 SnapMirror 创建的镜像备份卷。
 
@@ -45,7 +45,7 @@ Unified Manager 将收集与每个活动卷相关的信息（统计信息，事�
 
 修复集群 B 并执行切回后， Vol3p 将在集群 B 上再次处于活动状态，并显示切换期间的历史统计信息和统计信息缺口。除非发生另一次切换，否则无法从集群 A 查看 Vol3b ：
 
-image::../media/opm_mcc_volumes.gif[OPM MCC 卷]
+image::../media/opm_mcc_volumes.gif[显示切换期间卷行为的UI屏幕截图。]
 
 [NOTE]
 ====

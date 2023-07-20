@@ -61,6 +61,6 @@ summary: '您可以筛选 " 对象清单性能 " 页面中的数据，以便根�
 
 图中显示了具有三个筛选器的筛选面板。如果筛选器数量少于最多四个，则会显示 * + 添加筛选器 * 按钮。
 
-image::../media/opm_filtering_panel_draft_3.gif[OPM 筛选面板草稿 3.]
+image::../media/opm_filtering_panel_draft_3.gif[一个UI屏幕截图、其中显示了包含三个筛选器的筛选面板。]
 
 单击 * 应用筛选器 * 后， " 筛选 " 面板将关闭，应用筛选器并显示应用的筛选器数量（image:../media/opm_filters_applied.gif[""]）。

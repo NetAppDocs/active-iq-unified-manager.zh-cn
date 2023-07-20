@@ -24,11 +24,11 @@ summary: 您可以计划在早期版本的 Unified Manager 中创建和导入的
 .步骤
 . 打开报告计划页面。如果已导入报告，则会显示一条消息。
 +
-image::../media/message_non_scehduled_reports.png[消息非 scehduled 报告]
+image::../media/message_non_scehduled_reports.png[如果存在导入的报告、则会显示一个显示此消息的UI屏幕截图。]
 
 . 单击 * 视图 * 名称可显示用于生成报告的 SQL 查询。
 +
-image::../media/importedreport1.png[importedreport1.]
+image::../media/importedreport1.png[显示用于生成报告的SQL查询的UI屏幕截图。]
 
 . 单击更多图标 image:../media/more_icon.gif[""]，单击 * 编辑 * ，定义报告计划详细信息并保存报告。
 +
