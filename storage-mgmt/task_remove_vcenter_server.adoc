@@ -1,0 +1,30 @@
+---
+permalink: storage-mgmt/task_remove_vcenter_server.html 
+sidebar: sidebar 
+keywords: review, vcenter, server 
+summary: 您可以从Active IQ Unified Manager实例中删除不再需要的vCenter Server。 
+---
+= 正在删除vCenter Server
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从Active IQ Unified Manager实例中删除vCenter Server。例如、如果vCenter Server发现失败或不再需要vCenter Server、您可以将其删除。
+
+删除vCenter Server还会删除此vCenter上托管的所有虚拟机(VM)及其配置数据。删除vCenter Server后、将不再对其及其关联对象和历史数据进行监控。这些更改将反映在vCenter和虚拟机清单页面上。
+
+* 您需要的内容 *
+
+删除vCenter Server之前、请确保满足以下条件：
+
+* 您具有应用程序管理员角色或存储管理员角色。
+* 您应了解vCenter Server名称以及与其关联的相应IP地址。
+
+
+.步骤
+. 在左侧导航窗格中，单击*VMware>vCenter*。
+. 在vCenter页面上、选择要删除的vCenter Server、然后单击*删除*。
+. 在*Remove vCenter*消息对话框中，单击*OK*确认删除请求。
+

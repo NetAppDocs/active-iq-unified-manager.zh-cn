@@ -4429,7 +4429,6 @@
   <block id="a0c0b34e406d28d454ddf495e72c1cb9" category="list-text">它正在使用默认端口。</block>
   <block id="ae6546f7996b91aa7c6e5c482b07f791" category="list-text">未安装示例数据库。</block>
   <block id="a7b80eacf1b625bed035aa3b2a92bc46" category="list-text">服务名称为 " `MYSQL8` " 。</block>
-  <block id="dcfc709b0268fc59e78dee65c4b3d005" category="paragraph">Unified Manager 部署在 WildFly Web 服务器上。WildFly 19.0.0 与 Unified Manager 捆绑并进行配置。</block>
   <block id="f44cea6cd02b888cc6cc539426598769" category="paragraph">在升级任何第三方软件之前，您应关闭正在运行的 Unified Manager 实例。第三方软件安装完成后，您可以重新启动 Unified Manager 。</block>
   <block id="086af4a1a8e18c416fda306afd129ecc" category="section-title">安装要求</block>
   <block id="8477864d39c6c8b50036cae20894546f" category="list-text">应安装 Microsoft .NET 4.5.2 或更高版本。</block>
@@ -4716,7 +4715,6 @@
   <block id="b70d1d0a2a88ed730b8d7e854c93fdbe" category="doc">升级 OpenJDK</block>
   <block id="27a27fa27099c3dd7d2e0cb3d56381f0" category="paragraph">对于安装了 Unified Manager 的系统，您必须具有 Windows 管理员权限。</block>
   <block id="13e3592e5e441ee49815c64ebd90f10f" category="list-text">将适当版本的 OpenJDK （ 64 位）从 OpenJDK 站点下载到目标系统。</block>
-  <block id="db7fdcdf000c603674beba9fdd7c8075" category="paragraph">例如，从下载 `openjdk-11_windows-x64_bin.zip<block ref="b90546eba13061ee913dc6d313e28839" category="inline-link-rx"></block>。</block>
   <block id="7d7f701fa4b6dfcc4812f34ebd909b72" category="list-text">展开 `zip` 文件。</block>
   <block id="4ce60e4b06ffbfa5ed76fd9dbdcbe958" category="list-text">使用 Windows 服务控制台启动 Unified Manager 服务：</block>
   <block id="a5c4a2efcdcb095ac76dbf214e41d635" category="summary">基于 Linux 平台的 Unified Manager 快速入门指南。</block>
@@ -11233,7 +11231,6 @@
   <block id="839fa2b63b981f33da59323dbb6922ca" category="doc">在Windows上指定Snapshot副本的目标位置</block>
   <block id="5a4a0cbbe603b22097ec5fceadf09c9b" category="list-text">退出维护控制台并启动Active IQ Unified Manager 界面、为Snapshot副本创建计划。</block>
   <block id="97bbb871095678061fcc80b68b1e751b" category="paragraph">为此、它会比较集群中所有节点的已用性能容量值、以查看是否有任何节点超过30%阈值超过24小时。这是一个警告事件。</block>
-  <block id="85f73dd16ea214346164b0deea26773b" category="sidebar">Unified Manager</block>
   <block id="ffef03803be76fabe5b17e1b0cca3ca2" category="inline-link-macro">Active IQ Unified Manager REST API入门</block>
   <block id="bc284f9f2dda2417b7038eecc87d4d2c" category="paragraph">REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示 Unified Manager REST API 文档，并手动对 API 调用执行问题描述。在 Unified Manager Web UI 的菜单栏中，单击 * 帮助 * 按钮，然后选择 * API 文档 * 。有关Unified Manager REST API的信息、请参见 <block ref="821164fa8c5ff02f6a5d3ecc3d001b16" category="inline-link-macro-rx"></block>。</block>
   <block id="04e9746ec2f77de5b770208af5510f13" category="paragraph">这些部分介绍了通过UI进行Unified Manager报告和计划的信息。</block>
@@ -11315,7 +11312,6 @@
   <block id="5074bcdc61c8c494ace5e8cf081add31" category="list-text">如果选择了*使用STARTT*或*使用SSL*选项、则在单击*保存*按钮后、将显示证书页面。验证证书详细信息并接受证书以保存通知设置。</block>
   <block id="df3718f6585166cac3f4557a21eabab0" category="paragraph">您可以单击*查看证书详细信息*按钮以查看证书详细信息。如果现有证书已过期、请取消选中*使用STARTT*或*使用SSL*复选框、保存通知设置、然后再次选中*使用STARTT*或*使用SSL*复选框以查看新证书。</block>
   <block id="311a59e5248a2e51a6267bb49a15ab0e" category="paragraph">*用于相互TLS通信的证书*：在Unified Manager和ONTAP 之间进行相互TLS通信期间使用。系统将根据ONTAP 版本为集群启用基于证书的身份验证。如果运行ONTAP 版本的集群低于9.5、则不会启用基于证书的身份验证。</block>
-  <block id="9e1d78fcecc3350c4ecf08cec0b298a1" category="list-text">如果您从Web UI添加集群、则基于证书的身份验证将自动启用。如果从维护控制台添加集群、则不会启用基于证书的身份验证。</block>
   <block id="75d2b5faa0992c7cda340e5d43fc46b2" category="list-text">如果为集群启用了基于证书的身份验证、并且您从服务器备份Unified Manager并还原到另一个Unified Manager服务器、其中主机名或IP地址发生了更改、则监控集群可能会失败。要避免失败、请编辑并保存集群详细信息。有关编辑集群详细信息的详细信息、请参见 <block ref="8ec52359a26ce2693e51a81c43bbb7b7" category="inline-link-macro-rx"></block>。</block>
   <block id="222b0f66c06702de8b7c2340008972c3" category="inline-link">如何在System Manager用户界面中续订ONTAP 自签名证书</block>
   <block id="2570092c5c4918f782639770496fb209" category="paragraph">如果未启用基于证书的身份验证、则Unified Manager仅在首次添加集群时才会检查证书。Unified Manager 不会检查对 ONTAP 的每次 API 调用的证书。</block>
@@ -11658,8 +11654,6 @@
   <block id="89e3093deb573e631e9912227e8a119e" category="paragraph">您可以安装Unified Manager、升级到更高版本或删除Unified Manager应用程序。</block>
   <block id="7e32d4718f2e4988b5bedbbf8300e1be" category="paragraph">请参见 <block ref="faea1ae077af360ba8a684d0f5eba7d8" category="inline-link-macro-rx"></block>。</block>
   <block id="f91923991c8993a30a6a751c98474af6" category="list-text">在支持的Web浏览器上的新窗口中启动Web UI、然后登录以使用升级后的Unified Manager版本。</block>
-  <block id="c25a026897caa6b556a4ed073ea3eab4" category="paragraph">您可以更新版本系列中的 OpenJDK 版本。例如、您可以从OpenJDK 11.0.14升级到OpenJDK 11.0.16、但不能直接从OpenJDK 11更新到OpenJDK 12。</block>
-  <block id="83120bcddc0b0db19b2984cc0524dcb9" category="list-text">从生成的复制目录和文件<block ref="30c81266c64bb09194fbb76d80c99fc1" prefix=" " category="inline-code"></block> 目录(例如、<block ref="7b12015226b2c68810e719dd47d11964" prefix=" " category="inline-code"></block> 到Java的安装位置。示例<block ref="b7373e296aa12e5caf1e84edf230028c" prefix=" " category="inline-code"></block></block>
   <block id="29932be7bd13705461dc34fdd5fb130d" category="list-text"><block ref="5d201191fde87fde991d42023bfce519" category="inline-link-macro-rx"></block>。</block>
   <block id="a8d95967b66bb0c22b84f4845a403b4a" category="list-text"><block ref="1622f6834655f71720b0a402a53647c6" category="inline-link-macro-rx"></block>。</block>
   <block id="3500cda8600fd41d99d99cc2ad910189" category="list-text">有关*关系：MetroCluster 视图的信息、请参见 <block ref="9558ec78419607c064297bda7f675f6d" category="inline-link-macro-rx"></block>。</block>
@@ -11935,4 +11929,22 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="863843d0337c17ec7301aee27dad4298" category="paragraph">您可以更新版本系列中的 OpenJDK 版本。例如、您可以从OpenJDK 11.0.16升级到OpenJDK 11.0.18、但不能直接从OpenJDK 11更新到OpenJDK 12。</block>
+  <block id="4e6cb3b05eb2ca0baeb29eb6344e5432" category="paragraph">例如、下载<block ref="3ea5e0fd12073d79066798f485ea1222" prefix=" " category="inline-code"></block>。</block>
+  <block id="e3ea195a19318267cdc1d27ad9b8642c" category="inline-link-macro">Oracle帐户登录</block>
+  <block id="4f4395612db3fd87fa732ad4576c0447" category="admonition"> 下载文件需要Oracle帐户。如果您没有Oracle帐户、请转到 <block ref="f286dce8bc3d39b38609ac0c11f4f840" category="inline-link-macro-rx"></block> 页面以创建一个。</block>
+  <block id="aa2b11ad1dd4cd77a6434da6fa1398a2" category="list-text">从生成的复制目录和文件<block ref="30c81266c64bb09194fbb76d80c99fc1" prefix=" " category="inline-code"></block> 目录(例如、<block ref="20ea71c4664ee137228518ed973e20e3" prefix=" " category="inline-code"></block> 到Java的安装位置。示例<block ref="b7373e296aa12e5caf1e84edf230028c" prefix=" " category="inline-code"></block></block>
+  <block id="b39eb8b293aab19c862c53f0897b4ab2" category="paragraph">Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Manager捆绑在一起并进行了配置。</block>
+  <block id="cda5e923848265fa933cb0a9b4e6bbd4" category="summary">您可以从Active IQ Unified Manager实例中删除不再需要的vCenter Server。</block>
+  <block id="53155d7df50328d5a08c60b81e95d3ef" category="doc">正在删除vCenter Server</block>
+  <block id="376e03ef3aadcc01297e928d6cef623c" category="paragraph">您可以从Active IQ Unified Manager实例中删除vCenter Server。例如、如果vCenter Server发现失败或不再需要vCenter Server、您可以将其删除。</block>
+  <block id="ea11a696566494f3e2f7f7bfc07d792d" category="paragraph">删除vCenter Server还会删除此vCenter上托管的所有虚拟机(VM)及其配置数据。删除vCenter Server后、将不再对其及其关联对象和历史数据进行监控。这些更改将反映在vCenter和虚拟机清单页面上。</block>
+  <block id="fa5dfe737cfc44ab0b5ac99d7503f49c" category="paragraph">删除vCenter Server之前、请确保满足以下条件：</block>
+  <block id="ac765ea92fedd534778babee969fa772" category="list-text">您具有应用程序管理员角色或存储管理员角色。</block>
+  <block id="1e79b2ec9bdad2cd8583a73a17b2515b" category="list-text">您应了解vCenter Server名称以及与其关联的相应IP地址。</block>
+  <block id="98bc0bd3bb75ed59617996abbbe8aa44" category="list-text">在左侧导航窗格中，单击*VMware&gt;vCenter*。</block>
+  <block id="4cf3a43b5cd40be9479e914697ccc1b0" category="list-text">在vCenter页面上、选择要删除的vCenter Server、然后单击*删除*。</block>
+  <block id="ed2b47ce4d6fcfacbe77e96d5e7bf8fb" category="list-text">在*Remove vCenter*消息对话框中，单击*OK*确认删除请求。</block>
+  <block id="adb5482d172346e58675bd3dae5bf089" category="list-text">您可以从Web UI添加集群、系统会自动启用基于证书的身份验证。</block>
+  <block id="c237abf2822b92e4b37cfd364eb99eaf" category="list-text">您可以通过Unified Manager命令行界面添加集群、但默认情况下不会启用基于证书的身份验证。如果要使用Unified Manager命令行界面添加集群、则需要使用Unified Manager界面编辑此集群。您可以看到 <block ref="33f0770b98ea7c465f6e58d1466ad24f" category="inline-link-macro-rx"></block> 使用Unified Manager命令行界面添加集群。</block>
 </blocks>

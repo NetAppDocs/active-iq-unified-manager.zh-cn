@@ -66,7 +66,7 @@ NOTE: NetApp不支持使用Microsoft System Center Configuration Manager (SCCM)�
 * 服务名称为 " `MYSQL8` " 。
 
 
-Unified Manager 部署在 WildFly Web 服务器上。WildFly 19.0.0 与 Unified Manager 捆绑并进行配置。
+Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Manager捆绑在一起并进行了配置。
 
 [NOTE]
 ====

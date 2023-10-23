@@ -31,7 +31,7 @@ http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
 
 == 第三方软件
 
-Unified Manager 部署在 WildFly Web 服务器上。WildFly 19.0.0 与 Unified Manager 捆绑并进行配置。
+Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Manager捆绑在一起并进行了配置。
 
 以下第三方软件包是必需的，但 Unified Manager 不提供这些软件包。这些软件包会在安装期间由 `yum` 安装程序自动安装，前提是您已按照以下各节所述配置存储库。
 

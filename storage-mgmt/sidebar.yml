@@ -71,6 +71,8 @@ entries:
   entries:
   - title: 查看和添加 vCenter Server
     url: "/storage-mgmt/task_view_and_add_vcenter_servers.html"
+  - title: 正在删除vCenter Server
+    url: "/storage-mgmt/task_remove_vcenter_server.html"
   - title: 监控虚拟机
     url: "/storage-mgmt/concept_monitor_vms.html"
   - title: 查看灾难恢复设置中的虚拟基础架构
