@@ -15,6 +15,9 @@ Graphite 是一款开放式软件工具，用于从计算机系统收集性能�
 
 NetApp 不会测试或验证特定版本的 Graphite 或其他第三方工具。
 
+
+NOTE: Graphite服务器不会从Unified Manager接收卷的性能数据。
+
 按照安装说明安装 Graphite 后，您需要进行以下更改以支持从 Unified Manager 进行统计数据传输：
 
 * 在 ` /opt/kaster/conf/Cone.conf` 文件中，可以在 Graphite 服务器上每分钟创建的最大文件数必须设置为 _200_ （` * MAX_creates_per_minute = 200*` ）。

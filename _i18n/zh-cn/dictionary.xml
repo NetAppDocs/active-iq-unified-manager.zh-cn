@@ -4423,7 +4423,6 @@
   <block id="ffbed9334b8ec87b5d47c862a02cb5ec" category="paragraph">以下第三方软件包与 Unified Manager 捆绑在一起。如果系统上未安装这些第三方软件包，则 Unified Manager 会在安装过程中安装这些软件包。</block>
   <block id="f036a764432b8b9592c8463741728fec" category="list-text">Microsoft Visual C&amp;#43 ； &amp;#43 ； 2015 年可重新分发软件包 14.26.28720.3 版</block>
   <block id="b7bc4a8db8f6fcae60ca624f6b4cd972" category="list-text">Microsoft Visual C&amp;#43 ； &amp;#43 ；适用于 Visual Studio 2013 的可重新分发软件包 12.0.40660.0 版</block>
-  <block id="3eb9f5dac9a6d7c6556c2754973bdc44" category="list-text">p7zip 版本 18.05 或更高版本</block>
   <block id="7a296bb9772806c9ddf9f83ed9bb3d5f" category="paragraph">从 Unified Manager 9.5 开始， Unified Manager 安装包中提供了 OpenJDK ，并会自动安装该软件包。从 Unified Manager 9.5 开始，不支持 Oracle Java 。</block>
   <block id="dd2148991fe37222c2cd074a08be9207" category="paragraph">如果已预安装 MySQL ，则应确保：</block>
   <block id="a0c0b34e406d28d454ddf495e72c1cb9" category="list-text">它正在使用默认端口。</block>
@@ -11442,7 +11441,6 @@
   <block id="6e20e72b50c870b4bf0884ff43d8c4fa" category="paragraph">在 VMware vSphere 系统上安装 Unified Manager 时， MySQL 3306 的默认端口仅限于本地主机。这不会影响保留先前配置的任何升级情形。可以修改此配置、并使用将此连接提供给其他主机<block ref="dd441ca9450a58c2c7b09ab86e8f7a28" prefix=" " category="inline-code"></block> 选项。有关信息，请参见 <block ref="7a82f5d486f644c03667de7815d5d25c" category="inline-link-macro-rx"></block>。用于 HTTP 和 HTTPS 通信的端口（端口 80 和 443 ）可以使用 Unified Manager 维护控制台进行更改。有关详细信息，请参见 <block ref="1ea31912406b3a6cc1e16f90a586273f" category="inline-link-macro-rx"></block>。</block>
   <block id="4cc4dc3d322bbb329c62069ad877831e" category="paragraph">用于发送 AutoSupport 信息。需要访问Internet才能执行此功能。</block>
   <block id="a5014d3257e026e655ee770d9b9b474b" category="paragraph">在VMware vSphere系统上、您可以安装Unified Manager、升级到更高版本的软件或删除Unified Manager虚拟设备(vApp)。</block>
-  <block id="15c3f03e689b85ca140fd9ea6f34f7d9" category="list-text">操作系统：VMware ESXi 6.5、6.7和7.0.x</block>
   <block id="80cd4cbe1704d7224b26b62877da23b2" category="list-text">下载<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block> 包含根证书的文件<block ref="c47c7c7383225ab55ff591cb59c41e6b" prefix=" " category="inline-code"></block> 文件和<block ref="586ba478b7ebec665f3df120799b6c2e" prefix=" " category="inline-code"></block> 文件</block>
   <block id="f27da469eb55d88b24ee57e1213a1957" category="list-text">在下载的目录中<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block> 文件中、输入<block ref="38a59909f09e47a2d2eb432ec7222982" prefix=" " category="inline-code"></block> 命令：+所需的<block ref="586ba478b7ebec665f3df120799b6c2e" prefix=" " category="inline-code"></block> 文件、根证书和<block ref="c47c7c7383225ab55ff591cb59c41e6b" prefix=" " category="inline-code"></block> 文件将解压缩到目标目录。</block>
   <block id="f8535e66202122afabb6c16833facfa1" category="section-title">验证完整性</block>
@@ -11684,7 +11682,6 @@
   <block id="6426459e5a98fa4d3c65adcaafc6ce25" category="paragraph">请参见 <block ref="777cf649ce896eb0afa438e1c2e669be" category="inline-link-macro-rx"></block>。</block>
   <block id="1b69f414d436652d25ad10e85271e543" category="paragraph">在Linux系统上安装Unified Manager时、MySQL 3306的默认端口仅限于本地主机。这不会影响保留先前配置的任何升级情形。可以修改此配置、并使用将此连接提供给其他主机<block ref="dd441ca9450a58c2c7b09ab86e8f7a28" prefix=" " category="inline-code"></block> 选项。有关信息，请参见 <block ref="7a82f5d486f644c03667de7815d5d25c" category="inline-link-macro-rx"></block>。用于 HTTP 和 HTTPS 通信的端口（端口 80 和 443 ）可以使用 Unified Manager 维护控制台进行更改。有关详细信息，请参见 <block ref="1ea31912406b3a6cc1e16f90a586273f" category="inline-link-macro-rx"></block>。</block>
   <block id="de5a7a96234dc79aac999909074c2299" category="list-text">您应已验证下载的的的完整性<block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block> 文件</block>
-  <block id="7565099c5e9f4a08a1730a1715d7329a" category="paragraph">OpenJDK 11.0.17版</block>
   <block id="90e97a629125bdf88ff336405957019b" category="paragraph">预安装脚本会检查系统是否具有有效的Red Hat Enterprise Linux订阅、以及是否有权访问所需的软件存储库。如果此脚本发现任何问题，则必须在安装 Unified Manager 之前修复这些问题。</block>
   <block id="c422ac44d890c41645f67cae009b5f2a" category="list-text">* 可选： * 只有在系统未连接到 Internet 且必须手动下载安装所需的软件包时，才能执行步骤 7 。如果您的系统可以访问Internet、并且所有所需软件包均可用、请转至步骤8。对于未连接到Internet或未使用Red Hat Enterprise Linux存储库的系统、请执行以下步骤以确定是否缺少任何所需的软件包、然后下载这些软件包：</block>
   <block id="c19fa085277d0020749e2ca183d8458c" category="list-text">在可访问Internet的系统上、下载缺少的软件包：</block>
@@ -11768,21 +11765,12 @@
   <block id="a800bc3b2ac3625f86ad24d4ae00b6c8" category="list-text">在要安装Unified Manager的系统上、查看可用和不可用软件包的列表：+<block ref="0ebef3d9c59bd558d3f360f5800cf333" prefix=" " category="inline-code"></block></block>
   <block id="d3959f6465e1edec195c856595d76545" category="paragraph">有关详细信息，请参见 <block ref="3817c92b8c868f8dcff11bea431f7255" category="inline-link-macro-rx"></block>。</block>
   <block id="ede607b26fd609858d7be7ff1e138cb0" category="sidebar">Active IQ Unified Manager 9.9或更早版本的文档</block>
-  <block id="aed235f8caae1a6a0a280cc1ef58a60e" category="summary">概括介绍Active IQ Unified Manager 9.13的新增功能、限制和已知问题。</block>
-  <block id="79c372660015e1225cfb718a6127e153" category="paragraph">有关详细信息，请参见<block ref="cfc179a28e4ac474bea279dee84017fe" category="inline-link-rx"></block>。</block>
   <block id="8ddfb256eb8431a508471cded6714ecf" category="paragraph">存储在此集群上的所有聚合上的数据的实际大小，而不会因使用 ONTAP 存储效率技术而节省空间。这不包括Snapshot副本。</block>
   <block id="d2daed7885c81d5fcd9122e25f5a20a9" category="list-text">数据精简</block>
   <block id="77dcd5af6b77edb26e9280a48b0c170c" category="paragraph">显示不包含Snapshot副本且包含两个有效位数的比率、例如1.8：1。此比率基于配置的ONTAP 存储效率设置。</block>
   <block id="14f31e529433a86f46aed481c5e34cbf" category="list-text">逻辑容量：逻辑空间是指卷中的可用空间（逻辑块）。逻辑空间是指在不考虑重复数据删除或数据压缩结果的情况下如何使用理论空间。" 已用逻辑空间 " 是指已用物理空间加上已配置的存储效率功能（例如重复数据删除和数据压缩）节省的空间。此度量值通常会大于已用物理容量、因为这并不反映数据压缩以及物理空间的其他减少。因此，总逻辑容量可能会高于配置的空间。</block>
-  <block id="0921ca43e3529d8475da8b72f962f28f" category="paragraph">例如、如果您在Unified Manager 9.13上创建备份、则只能在Unified Manager 9.13系统上还原备份。</block>
-  <block id="70d2001544dcfa21ccfc810a3ff8b411" category="paragraph">您可以通过在Linux平台上下载并运行安装文件从Unified Manager 9.11或9.12升级到9.13。</block>
-  <block id="d6fa9d2f7f0a4b280b41dca487f62a1f" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.32、则Unified Manager升级过程会自动将MySQL升级到8.0.32。</block>
-  <block id="7d0057c506b9ad17db0b4a1fc02b16db" category="paragraph">MySQL 8.0.32社区版</block>
-  <block id="e7728561a064d52807136080b20acb13" category="list-text">如果安装的MySQL版本早于MySQL 8.0.32 Community Edition、请输入以下命令将其卸载：</block>
   <block id="57dba854945c4f6c2493e98f1c90027e" category="paragraph">如果安装失败并显示GPG NOKE错误，请使用<block ref="c2d160102b722accd9f40f1124d1f94b" prefix=" " category="inline-code"></block> 从URL导入密钥：</block>
   <block id="a4bbe0d9f37b7122f2ff77a225c697fb" category="paragraph"><block ref="185370afde35f5963c46b7aee9beab40" prefix="" category="inline-code"></block></block>
-  <block id="35524010fccb12bad68691d499d0d145" category="list-text">MySQL Community Edition 8.0.32版(来自MySQL存储库)。</block>
-  <block id="efce93a0629f3dcfb9346a13d5db3313" category="list-text">OpenJDK 11.0.18版(来自Red Hat Extra Enterprise Linux Server存储库)</block>
   <block id="d2a94210021c8b039ff02205332050d6" category="list-text">按以下顺序停止Unified Manager服务和关联的MySQL服务：</block>
   <block id="bc3bdda2dda9f3fd07e80e72f7823d5c" category="list-text">按以下顺序启动MySQL和Unified Manager服务：</block>
   <block id="228689b16f6e524fb9ed06d81f33db6b" category="paragraph"><block ref="7e3bc202e89677c6d62e218685393bf5" prefix="" category="inline-code"></block> 是启动和停止MySQL服务器所需的守护进程程序。</block>
@@ -11795,38 +11783,20 @@
   <block id="604cb85803c2049ee36ec0f56a4b4122" category="paragraph">*集群证书*：此证书归ONTAP 所有。您不能将证书已过期的集群添加到Unified Manager中、如果证书已过期、则应在添加集群之前重新生成该集群。有关生成证书的信息、请参见知识库(KB)文章<block ref="efe1c9ee5157428eafcff62008773d6d" category="inline-link-rx"></block>。</block>
   <block id="2baed68e35271ff9049aae0aaa17514e" category="paragraph">保存集群详细信息后、您可以看到用于集群相互TLS通信的证书。</block>
   <block id="71115803a7c16035111d8a488819a5de" category="paragraph">控制主机对默认MySQL端口3306的访问。出于安全原因、在Linux、Windows和VMware vSphere系统上全新安装Unified Manager期间、通过此端口的访问仅限于本地主机。使用此选项可以在本地主机和远程主机之间切换此端口的可见性、也就是说、如果仅在您的环境中为本地主机启用了此端口、则也可以使此端口对远程主机可用。或者、如果为所有主机启用了、则只能将此端口的访问限制为本地主机。如果之前在远程主机上启用了访问、则在升级情形中会保留此配置。您应在更改端口可见性后检查Windows系统上的防火墙设置、如果将防火墙设置配置为限制对MySQL端口3306的访问、则应禁用这些设置。</block>
-  <block id="3e4aa78bd9a0d047145f83e8b44d347e" category="paragraph">您可以将Active IQ Unified Manager 虚拟设备从9.11或9.12版升级到9.13。</block>
   <block id="992457c87959064e1a1fd8702290dfc5" category="list-text">ESXi 7.0和8.0</block>
   <block id="fb0cd9631dee3f83386725234b971c75" category="list-text">VMware vCenter Server 7.0和8.0</block>
-  <block id="3e7b964de97721901e2ed02363f27551" category="paragraph">您只能将Active IQ Unified Manager 从版本9.11或9.12升级到版本9.13。</block>
-  <block id="7f6b750f9bf81de18f268ee211e2d9f5" category="list-text">MySQL社区版8.0.32版</block>
-  <block id="e8e8c097046d10614223032a87b5da84" category="list-text">Python 3.11.2</block>
-  <block id="03384e848f3ceac203bfa4c37258699a" category="list-text">OpenJDK 11.0.18版</block>
   <block id="633bb5b6eca1c435199c472c91160f36" category="paragraph">在Windows系统上安装Unified Manager时、MySQL 3306的默认端口仅限于本地主机。安装完成后、启用防火墙以限制对端口MySQL 3306的访问。这不会影响保留先前配置的任何升级情形。可以修改此配置、并使用将此连接提供给其他主机<block ref="dd441ca9450a58c2c7b09ab86e8f7a28" prefix=" " category="inline-code"></block> 选项。有关信息，请参见 <block ref="7a82f5d486f644c03667de7815d5d25c" category="inline-link-macro-rx"></block>。用于 HTTP 和 HTTPS 通信的端口（端口 80 和 443 ）可以使用 Unified Manager 维护控制台进行更改。有关详细信息，请参见 <block ref="c0e80a6e89d09d7c5e1f41b64ee3c406" category="inline-link-macro-rx"></block>。</block>
-  <block id="14f32f2b9540cb3cfbc4a3dc18d22c24" category="paragraph">您可以通过在Windows平台上下载并运行安装文件将Unified Manager 9.11或9.12升级到9.13。</block>
-  <block id="6fe12bd8a03c8a86962f99ff4681d944" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.32、则Unified Manager升级过程会自动将MySQL升级到8.0.32。您不能将早期版本的MySQL独立升级到8.0.32。</block>
   <block id="597398cc5b5523b459dfe2d0d9acd2e5" category="paragraph">卷效率操作错误(ocumEvtVolumeEfficiencyOperationError)</block>
-  <block id="c9b65dae69a03687de460e1e880443cd" category="paragraph">并非所有Unified Manager版本都可以原位升级到更高版本。Unified Manager升级仅限于N-2型号、这意味着只能在所有平台上的未来2个版本中执行升级。例如、您只能从Unified Manager 9.11和9.12升级到Unified Manager 9.13。</block>
-  <block id="71fe23ad02d21335634fd808f81abb9d" category="paragraph">例如、如果您安装的版本是OnCommand Unified Manager 9.6、而您要升级到最新版本Active IQ Unified Manager 9.13、则需要执行一系列升级。</block>
-  <block id="fb3b5c035c5ba71c2c59c445e55db80f" category="list-text">升级OnCommand 统一管理器9.6 -&gt; Active IQ Unified Manager 9.8</block>
-  <block id="00a5f608528a3c8f9dee567fa67fce77" category="list-text">升级9.8 -&gt; 9.10.</block>
-  <block id="466bab2e0b2db2e18df0e46fe1bed104" category="list-text">升级9.10 -&gt; 9.12</block>
-  <block id="a7830ad2c8a207ef49179b294bb2f025" category="list-text">升级9.12 -&gt; 9.13</block>
-  <block id="2b90c781f48ab27f0611fcc76595d020" category="inline-link">Active IQ Unified Manager 9.13通知</block>
-  <block id="e6d61d37895b034d3461d5f6ae4e8c77" category="paragraph"><block ref="e6d61d37895b034d3461d5f6ae4e8c77" category="inline-link-rx"></block></block>
   <block id="07e64bde2741cba9c996bfaa9246c42e" category="paragraph">在查看所有集群时、此面板会显示每个集群的已用物理容量(应用存储效率节省后)和可用物理容量(不包括潜在的存储效率节省)、预计磁盘达到全满前的天数、 以及基于已配置的ONTAP 存储效率设置的数据精简率(不含Snapshot副本)。它还会列出任何已配置云层的已用容量。单击条形图可转到该集群的聚合清单页面。单击 " 达到全满天数 " 文本将显示一条消息，用于标识剩余容量天数最少的聚合；单击聚合名称可查看更多详细信息。</block>
   <block id="31da7a174193d0e3fa2ca76d23beaa6f" category="paragraph">您可以在所有工作负载页面和卷 / 运行状况详细信息页面中查看分配给工作负载的 SEP 。您可以在信息板上的"容量"面板和"容量：所有集群"视图中根据这些存储效率查看集群级别的数据精简率(不含Snapshot副本)。</block>
   <block id="82a7176206931de918a75924be730954" category="list-text">在 * 编辑集群 * 对话框中，根据需要修改值。+如果您已修改添加到Unified Manager中的集群的详细信息、则可以根据ONTAP 版本查看相互TLS通信的证书详细信息。有关ONTAP 版本的详细信息、请参见 <block ref="9dbbbab565c0407ee80c1daf0485bbe4" category="inline-link-macro-rx"></block>。+您可以单击*证书详细信息*来查看证书详细信息。如果证书已过期、请单击*重新生成*按钮以加入新证书。</block>
   <block id="9a13b3deb178bc20318d801250fae975" category="admonition">Unified Manager for VMware ESXi和vCenter Server支持英语和日语版本。</block>
   <block id="b0a22f4d07e712fe64b93c1374ccf739" category="paragraph">此时将显示由Unified Manager管理的存储环境中的所有集群。集群列表按收集状态严重性级别列进行排序。您可以单击列标题，按不同列对集群进行排序。</block>
-  <block id="21f927966fb538fc77f7b83256804bf9" category="sidebar">Active IQ Unified Manager 9.13文档</block>
   <block id="f2c4e14eadf113bcbadf371fc730a271" category="sidebar">监控MetroCluster 配置</block>
   <block id="8bd5d1eafb044b6a37f8a95068bd98a6" category="sidebar">Unified Manager的API参考</block>
   <block id="db3375d7decfbb29e343dc2213616878" category="paragraph">您可以使用集群 / 运行状况详细信息页面中显示的信息来更正任何复制问题。如果您在 MetroCluster 配置中发现镜像问题，则必须登录到 System Manager 或访问 ONTAP 命令行界面以解决这些问题。</block>
   <block id="c438f7aec6602f34fb279fdfb89b02c7" category="list-text">Associated Objects：分配给QoS策略组的工作负载数量。您可以单击展开按钮(<block ref="5bc06105dc11797d871e45be810a1285" category="inline-image-macro-rx" type="image"></block>)以查看有关该策略组的更多详细信息。</block>
   <block id="c2c8552adcdf172b368e6fec79ced7cb" category="list-text">以Windows管理员身份启动PowerShell或命令提示符。</block>
-  <block id="db47fc799c325b83f5402d57c0b34b4f" category="list-text">Red Hat Enterprise Linux 7.x版以及8.0到8.7版、基于x86_64架构。</block>
-  <block id="8e48b936ecc4cd90adb6a89647a697bf" category="list-text">操作系统：Red Hat Enterprise Linux 7.x版以及8.0至8.7版，或基于x86_64架构的CentOS 7.x版，使用操作系统安装程序的*软件选择*选项中的“带GUI的服务器”基础环境安装</block>
   <block id="177f4885c5bf3cc6b06090613bb7d325" category="paragraph">如果先前在 Red Hat Enterprise Linux 7.x 系统上安装了 Unified Manager ，但需要升级到 Red Hat Enterprise Linux 8.x ，则必须按照本主题中列出的过程之一进行操作。在这两种情况下，都必须在 Red Hat Enterprise Linux 7.x 系统上创建 Unified Manager 的备份，然后将备份还原到 Red Hat Enterprise Linux 8.x 系统。请注意、支持的Red Hat Enterprise Linux版本为8.0到8.7。</block>
   <block id="06d1a3f5a2c1fab663374946419b7a46" category="paragraph">请参见 <block ref="9a98c86d8dafdd1ad792c075346a9c0b" category="inline-link-macro-rx"></block> 如果需要查看备份和还原过程的详细说明、</block>
   <block id="1f627cf53c59c3dcb003a3d36f72e53e" category="image-alt">显示Unified Manager单个实例的用户界面屏幕截图。</block>
@@ -11947,4 +11917,36 @@
   <block id="ed2b47ce4d6fcfacbe77e96d5e7bf8fb" category="list-text">在*Remove vCenter*消息对话框中，单击*OK*确认删除请求。</block>
   <block id="adb5482d172346e58675bd3dae5bf089" category="list-text">您可以从Web UI添加集群、系统会自动启用基于证书的身份验证。</block>
   <block id="c237abf2822b92e4b37cfd364eb99eaf" category="list-text">您可以通过Unified Manager命令行界面添加集群、但默认情况下不会启用基于证书的身份验证。如果要使用Unified Manager命令行界面添加集群、则需要使用Unified Manager界面编辑此集群。您可以看到 <block ref="33f0770b98ea7c465f6e58d1466ad24f" category="inline-link-macro-rx"></block> 使用Unified Manager命令行界面添加集群。</block>
+  <block id="ebf8b785aaf01b6034ce9adda67a51c9" category="paragraph">您可以通过在Windows平台上下载并运行安装文件将Unified Manager 9.12或9.13升级到9.14。</block>
+  <block id="4d5180c5e0db12f69692d5e800ed5b61" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.34、则Unified Manager升级过程会自动将MySQL升级到8.0.34。您不能将早期版本的MySQL独立升级到8.0.34。</block>
+  <block id="f40472cbd758b6598c019a5411b70a20" category="list-text">MySQL社区版8.0.34版</block>
+  <block id="101ed5d45d39d829253fdd5f84c4d9d7" category="list-text">Python 3.11.6.</block>
+  <block id="18b8e2dd4de2bb94ea0dce1e4606ffc4" category="list-text">OpenJDK 11.0.20版</block>
+  <block id="3d89b288e65d6d87dbc31d2d93a06f41" category="list-text">p7zip 23.01或更高版本</block>
+  <block id="9dfe805f2bba465e37c9c6757ce064ac" category="list-text">Red Hat Enterprise Linux 7.x版以及8.0到8.8版、基于x86_64架构。</block>
+  <block id="9bbfe0d422adb66f304c54f3a069e88e" category="list-text">MySQL Community Edition 8.0.34版(来自MySQL存储库)。</block>
+  <block id="127ae3963ea9ca262d43af6b6d82938e" category="list-text">OpenJDK 11.0.21版(来自Red Hat Extra Enterprise Linux Server存储库)</block>
+  <block id="2bc26f2d587b7f2c75ca61793e89fbc7" category="list-text">操作系统：Red Hat Enterprise Linux 7.x版以及8.0至8.8版、或基于x86_64架构的CentOS 7.x版、使用操作系统安装程序的*软件选择*选项中的"带GUI的服务器"基础环境安装</block>
+  <block id="70f9b1502d4d74c5b86a102e5ed80559" category="paragraph">您可以通过在Linux平台上下载并运行安装文件从Unified Manager 9.12或9.13升级到9.14。</block>
+  <block id="3e82c40e991bcdfb3d6c360a665ef534" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.34、则Unified Manager升级过程会自动将MySQL升级到8.0.34。</block>
+  <block id="98339216090f0e21ec0ce31d07a59ccf" category="paragraph">OpenJDK 11.0.21版</block>
+  <block id="237a41f447fb75307052080892e14e7c" category="paragraph">MySQL 8.0.34社区版</block>
+  <block id="f98499a614ee3e46a1d64724ab7c8d2e" category="list-text">如果安装的MySQL版本早于MySQL 8.0.34 Community Edition、请输入以下命令将其卸载：</block>
+  <block id="80bdec6524a5d6db6b1fc5272cd81192" category="paragraph">您可以将Active IQ Unified Manager虚拟设备从9.12或9.13版升级到9.14版。</block>
+  <block id="c73b4673fd357d50ad7fe6b46f0de007" category="list-text">操作系统：VMware ESXi 7.0和8.0</block>
+  <block id="6466627cb684cdb56ba1cf34674cb157" category="paragraph">您只能将Active IQ Unified Manager从9.12或9.13升级到9.14版。</block>
+  <block id="6e6893b593d627add14e7a987c9dea2d" category="inline-link">Active IQ Unified Manager 9.14通知</block>
+  <block id="4b72586187e7bd694fd5d9d2189fcc3f" category="paragraph"><block ref="4b72586187e7bd694fd5d9d2189fcc3f" category="inline-link-rx"></block></block>
+  <block id="0997083083f2361f4c2adc06c0b5ed3f" category="paragraph">并非所有Unified Manager版本都可以原位升级到更高版本。Unified Manager升级仅限于N-2型号、这意味着只能在所有平台上的未来2个版本中执行升级。例如、您只能从Unified Manager 9.12和9.13升级到Unified Manager 9.14。</block>
+  <block id="3a44bb5359e8b73237753f7fe7d14cc2" category="paragraph">例如、如果您安装的版本是Unified Manager 9.9、而您要升级到Unified Manager 9.14、则需要执行一系列升级。</block>
+  <block id="654876715410c0348ac7ed5f44c94fbd" category="list-text">升级9.9-&gt;9.11.</block>
+  <block id="1e2075a18224b2ccd4cd9feb5cb36456" category="list-text">升级9.11 -&gt; 9.13</block>
+  <block id="de77bda92bea07bb345ff4c0d56146c5" category="list-text">升级9.13 -&gt; 9.14</block>
+  <block id="ab71876b04bdf2178a36a1f75c0b521f" category="admonition">Graphite服务器不会从Unified Manager接收卷的性能数据。</block>
+  <block id="9f05e01be7e6790732b731bbb5ffe318" category="admonition">如果集群运行ONTAP 9.14.1或更高版本、则监控节点根卷的功能不可用。</block>
+  <block id="2bff5bcae094d4c1fca66b645c79b006" category="admonition">如果集群运行ONTAP 9.14.1或更高版本、则监控节点根聚合的功能不可用。</block>
+  <block id="441086e2201fd8009f10645bc596350a" category="paragraph">例如、如果您在Unified Manager 9.14上创建备份、则只能在Unified Manager 9.14系统上还原备份。</block>
+  <block id="275a2c821ec95f125eba6f161f16904e" category="summary">概括介绍Active IQ Unified Manager 9.14的新增功能、限制和已知问题。</block>
+  <block id="72ad43fc7a8d740f98987759e25205fd" category="paragraph">有关详细信息，请参见<block ref="6bb46765ad444f2cca095cf3f36f15dd" category="inline-link-rx"></block>。</block>
+  <block id="9f4289041fd7d66e1eddd2b4aadc4764" category="sidebar">Active IQ Unified Manager 9.14文档</block>
 </blocks>

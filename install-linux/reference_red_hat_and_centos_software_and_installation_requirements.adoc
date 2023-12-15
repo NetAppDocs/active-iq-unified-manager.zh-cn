@@ -19,7 +19,7 @@ summary: 安装 Unified Manager 的 Linux 系统需要特定版本的操作系�
 
 Linux 系统必须安装以下版本的操作系统和支持软件：
 
-* Red Hat Enterprise Linux 7.x版以及8.0到8.7版、基于x86_64架构。
+* Red Hat Enterprise Linux 7.x版以及8.0到8.8版、基于x86_64架构。
 * 基于x86_64架构的CentOS 7.x版。不支持 CentOS 流。
 
 
@@ -35,8 +35,8 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Ma
 
 以下第三方软件包是必需的，但 Unified Manager 不提供这些软件包。这些软件包会在安装期间由 `yum` 安装程序自动安装，前提是您已按照以下各节所述配置存储库。
 
-* MySQL Community Edition 8.0.32版(来自MySQL存储库)。
-* OpenJDK 11.0.18版(来自Red Hat Extra Enterprise Linux Server存储库)
+* MySQL Community Edition 8.0.34版(来自MySQL存储库)。
+* OpenJDK 11.0.21版(来自Red Hat Extra Enterprise Linux Server存储库)
 * Python 3.6.x
 * p7zip 16.02 或更高版本（从 Red Hat Extra Packages for Enterprise Linux 存储库）
 

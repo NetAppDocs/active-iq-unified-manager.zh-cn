@@ -11,7 +11,7 @@ summary: 您可以升级 Unified Manager 虚拟设备
 
 
 [role="lead"]
-您可以将Active IQ Unified Manager 虚拟设备从9.11或9.12版升级到9.13。
+您可以将Active IQ Unified Manager虚拟设备从9.12或9.13版升级到9.14版。
 
 * 您需要的内容 *
 

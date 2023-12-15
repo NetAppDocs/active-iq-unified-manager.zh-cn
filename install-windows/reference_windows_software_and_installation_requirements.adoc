@@ -48,10 +48,10 @@ NOTE: NetApp不支持使用Microsoft System Center Configuration Manager (SCCM)�
 
 * Microsoft Visual C&#43 ； &#43 ； 2015 年可重新分发软件包 14.26.28720.3 版
 * Microsoft Visual C&#43 ； &#43 ；适用于 Visual Studio 2013 的可重新分发软件包 12.0.40660.0 版
-* MySQL社区版8.0.32版
-* Python 3.11.2
-* OpenJDK 11.0.18版
-* p7zip 版本 18.05 或更高版本
+* MySQL社区版8.0.34版
+* Python 3.11.6.
+* OpenJDK 11.0.20版
+* p7zip 23.01或更高版本
 
 
 [NOTE]
