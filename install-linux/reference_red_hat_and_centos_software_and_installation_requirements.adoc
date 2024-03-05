@@ -25,7 +25,9 @@ Linux 系统必须安装以下版本的操作系统和支持软件：
 
 有关受支持的 Red Hat Enterprise Linux 和 CentOS 版本的最新完整列表，请参见互操作性表。
 
-http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"^]
+
+此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。由于公司法规的原因、您的Linux系统上可能安装了漏洞扫描程序(如Quulis)。您应在安装Unified Manager之前禁用漏洞扫描程序、以防止安装失败。
 
 
 
