@@ -1,8 +1,8 @@
 ---
 permalink: data-protection/view-lun-relationships.html 
 sidebar: sidebar 
-keywords: LUN, SM-BC, SnapMirror Business Continuity, Consistency Group, CG 
-summary: 受 SM-BC 保护的 LUN 的统一视图。 
+keywords: LUN, SnapMirror active sync, Consistency Group, CG 
+summary: 受SnapMirror活动同步保护的LUN的统一视图。 
 ---
 = 监控一致性组关系中的 LUN
 :allow-uri-read: 
@@ -11,15 +11,16 @@ summary: 受 SM-BC 保护的 LUN 的统一视图。
 
 
 [role="lead"]
-如果您的 ONTAP 环境支持 SnapMirror 业务连续性（ SM-BC ）来保护具有 LUN 的应用程序，则可以在 Active IQ Unified Manager 上查看和监控这些 LUN 。
+如果您的ONTAP环境支持SnapMirror活动同步到
+保护使用LUN的应用程序、您可以查看和监控Active IQ Unified Manager上的这些LUN。
 
-SM-BC 可确保在 SAN 环境中进行故障转移期间实现零恢复时间目标（ RTO ）。在支持 SM-BC 的典型部署中，卷上的 LUN 受一致性组关系的保护。
+SnapMirror主动同步可确保在SAN环境中的故障转移期间实现零恢复时间目标(Recovery Time客观、RTO)。在支持SnapMirror活动同步的典型部署中、卷上的LUN受一致性组关系的保护。
 
 这些主 LUN 和二级 LUN 是复合 LUN ，或者具有相同 UUID 和序列号的副本 LUN 对。I/O 操作（读取和写入）会在这些复合 LUN 上的源站点和目标站点之间进行多路传输，以确保透明性。
 
 要查看复合 LUN ，应在 Unified Manager 上添加和发现包含属于一致性组关系的 LUN 的主集群和二级集群。仅支持 iSCSI 和 FCP LUN 。
 
-有关 SM-BC 的信息，请参见 link:https://docs.netapp.com/us-en/ontap/smbc/index.html["适用于 SM-BC 的 ONTAP 9 文档"]。
+有关SnapMirror活动同步的信息、请参见 link:https://docs.netapp.com/us-en/ontap/smbc/index.html["适用于SnapMirror活动同步的ONTAP 9文档(原SM-BC)"]。
 
 要查看环境中的复合 LUN ，请执行以下步骤：
 

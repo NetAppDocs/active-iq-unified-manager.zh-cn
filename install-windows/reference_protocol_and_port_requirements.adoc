@@ -101,6 +101,50 @@ MySQL
  a| 
 用于启用对 Unified Manager 的 OnCommand Workflow Automation 和 OnCommand API 服务访问。
 
+
+
+ a| 
+AMQP QPID代理
+ a| 
+TCP/IP
+ a| 
+56072.
+ a| 
+用于内部消息通信。
+
+
+
+ a| 
+AMQP QPID代理
+ a| 
+基于TCP的WebSocket
+ a| 
+56080
+ a| 
+用于侦听此端口上从ONTAP (云代理)接收的消息。
+
+
+
+ a| 
+AMQP QPID代理
+ a| 
+基于TCP的WebSocket
+ a| 
+56443.
+ a| 
+用于侦听此端口上从ONTAP (云代理)接收的消息。 通过此端口的通信支持TLS或SSL提供的加密。
+
+
+
+ a| 
+AMQP QPID代理
+ a| 
+HTTP
+ a| 
+9000
+ a| 
+用于在此页面上启动AMQP管理UI界面。
+
 |===
 [NOTE]
 ====
@@ -216,5 +260,38 @@ NTP
 123/UDP
  a| 
 用于将 Unified Manager 服务器上的时间与外部 NTP 时间服务器同步。（仅限 VMware 系统）
+
+
+
+ a| 
+AMQP QPID代理
+ a| 
+TCP/IP
+ a| 
+56072.
+ a| 
+用于内部消息通信。
+
+
+
+ a| 
+AMQP QPID代理
+ a| 
+基于TCP的WebSocket
+ a| 
+56080
+ a| 
+用于侦听此端口上从ONTAP (云代理)接收的消息。
+
+
+
+ a| 
+AMQP QPID代理
+ a| 
+基于TCP的WebSocket
+ a| 
+56443.
+ a| 
+用于侦听此端口上从ONTAP (云代理)接收的消息。通过此端口进行的通信支持TLS或SSL提供的加密。
 
 |===

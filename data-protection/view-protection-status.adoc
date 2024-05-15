@@ -72,7 +72,7 @@ summary: '" 数据保护 " 页面提供了数据中心中所有受保护卷的�
 
 * 为 SnapMirror 关系引发的各个事件，包括过去 24 小时内引发的事件
 * 每种类型的SnapMirror策略所保护的卷数。
-* 受SnapMirror关系类型(例如异步镜像、异步存储、异步镜像存储、StricxtSync、SnapMirror业务连续性(SMBC)一致性组和Sync)保护的关系数。
+* 受SnapMirror关系类型(例如异步镜像、异步存储、异步镜像存储、StricxtSync、SnapMirror活动同步一致性组和同步)保护的关系数量。
 * 运行状况良好和运行状况不正常的关系的数量。
 * 卷关系计数的细分。您可以按RPO滞后时间和状态切换图表。
 * 非受管关系的滞后阈值。您可以单击设置图标(image:../media/Settings.PNG["滞后阈值设置图标"])以配置滞后阈值设置。有关详细信息，请参见 link:../health-checker/task_configure_lag_threshold_settings_for_unmanaged_protection.html["为非受管保护关系配置滞后阈值设置"]。

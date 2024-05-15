@@ -30,6 +30,9 @@ http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"^]
 此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。由于公司法规的原因、您的Linux系统上可能安装了漏洞扫描程序(如Quulis)。您应在安装Unified Manager之前禁用漏洞扫描程序、以防止安装失败。
 
 
+NOTE: 在内部(Unified Manager和漏洞扫描程序安装在同一个VM上)或外部扫描虚拟机(VM)时、漏洞扫描程序(如Qu固 件)可能会导致CPU使用率较高 (其中Unified Manager和漏洞扫描程序安装在两个不同的服务器上、漏洞扫描程序将扫描安装Unified Manager的VM)。此问题描述通常会导致VM无响应并影响Unified Manager服务。因此、NetApp建议在安装了Unified Manager的虚拟机中禁用漏洞扫描程序。如果无法禁用扫描程序、请在非工作时间扫描虚拟机、并在扫描完成后重新启动服务。
+
+
 
 == 第三方软件
 

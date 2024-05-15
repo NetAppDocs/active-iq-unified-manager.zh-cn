@@ -183,7 +183,7 @@ error
 
 
  a| 
-ONTAP 调解器连接已重新建立、已重新同步并可用于SMBC (snapmirrorMediatorInQuoral)
+已重新建立ONTAP调解器连接、并且已重新同步并已准备好进行SnapMirror活动同步(snapmirector介质 仲裁)
  a| 
 事件
  a| 

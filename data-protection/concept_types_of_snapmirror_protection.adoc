@@ -1,7 +1,7 @@
 ---
 permalink: data-protection/concept_types_of_snapmirror_protection.html 
 sidebar: sidebar 
-keywords: types, snapmirror, protection, consistency group, snapmirror business continuity, smbc, sm-bc 
+keywords: types, snapmirror, protection, consistency group, SnapMirror active sync 
 summary: 根据数据存储拓扑的部署情况，您可以使用 Unified Manager 配置多种类型的 SnapMirror 保护关系。所有形式的 SnapMirror 保护均可提供故障转移灾难恢复保护，但在性能，版本灵活性和多个备份副本保护方面提供不同的功能。 
 ---
 = SnapMirror 保护的类型
@@ -72,14 +72,14 @@ SnapMirror 统一复制允许您在同一目标卷上配置灾难恢复和归档
 ====
 
 
-== SnapMirror 同步业务连续性
+== SnapMirror活动同步
 
-ONTAP 9.8 及更高版本提供了 SnapMirror 业务连续性（ SM-BC ）功能，您可以使用它来保护具有 LUN 的应用程序，使应用程序能够透明地进行故障转移，从而确保在发生灾难时的业务连续性。
+ONTAP 9.8及更高版本提供了SnapMirror主动同步功能、您可以使用它来保护具有LUN的应用程序、从而使应用程序能够透明地进行故障转移、从而确保在发生灾难时保持业务连续性。
 
-您可以通过 Unified Manager 发现和监控集群和 Storage Virtual Machine 上可用的一致性组（ CG ）的同步 SnapMirror 关系。AFF 集群或全 SAN 阵列（ ASA ）集群支持 SM-BC ，其中主集群和二级集群可以是 AFF 或 ASA 。SM-BC 使用 iSCSI 或 FCP LUN 保护应用程序。
+您可以通过 Unified Manager 发现和监控集群和 Storage Virtual Machine 上可用的一致性组（ CG ）的同步 SnapMirror 关系。AFF集群或全SAN阵列(ASA)集群支持SnapMirror主动同步、其中主集群和二级集群可以是AFF或ASA。SnapMirror主动同步可通过iSCSI或FCP LUN保护应用程序。
 
-查看受 SM-BC 关系保护的卷和 LUN 时，您可以获得保护关系，卷清单中的一致性组，一致性组关系的保护拓扑，一致性组关系的历史数据以及长达一年的一致性组关系的历史数据。您也可以下载此报告。此外，您还可以查看一致性组关系的摘要，搜索一致性组关系的支持以及获取有关受一致性组保护的卷的信息。
+查看受SnapMirror活动同步关系保护的卷和LUN时、您可以获得保护关系的统一视图、卷清单中的一致性组、查看一致性组关系的保护拓扑、查看长达一年的一致性组关系的历史数据。您也可以下载此报告。此外，您还可以查看一致性组关系的摘要，搜索一致性组关系的支持以及获取有关受一致性组保护的卷的信息。
 
 在关系页面上，您还可以对受一致性组保护的源和目标存储对象及其关系进行排序，筛选和扩展保护。
 
-要了解有关 SnapMirror 同步业务连续性的更多信息，请参见 link:https://docs.netapp.com/us-en/ontap/smbc/index.html["适用于 SM-BC 的 ONTAP 9 文档"]。
+要了解有关SnapMirror活动同步的详细信息、请参见 link:https://docs.netapp.com/us-en/ontap/smbc/index.html["适用于SnapMirror活动同步的ONTAP 9文档(原SM-BC)"]。

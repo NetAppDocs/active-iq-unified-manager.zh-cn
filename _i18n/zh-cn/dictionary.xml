@@ -2586,7 +2586,6 @@
   <block id="5c370c70723397269b4ad914c34496a7" category="list-text">受保护</block>
   <block id="15d2dc848def03f15b9f71fac220a033" category="paragraph">显示选定卷使用的保护类型。例如，如果卷受一致性组和 SnapMirror 卷关系的保护，则此字段将同时显示 SnapMirror 和一致性组。此字段还提供了一个链接，可将您重定向到 " 关系 " 页面以查看统一关系状态。此链接仅适用于成分卷关系。</block>
   <block id="5f37c1cb711ed8c309b0301fb0061e23" category="list-text">一致性组</block>
-  <block id="a2e58da0c14632bd760681821ca1dcc1" category="paragraph">对于受 SnapMirror 业务连续性（ SM-BC ）关系保护的卷，此列将显示卷的一致性组。</block>
   <block id="b5626a635c1d79df6fc54d9b5833eac2" category="list-text">* 视图 *</block>
   <block id="07c17f8fe1079d9e5598e259b13b9010" category="paragraph">显示选定卷的保护拓扑。此拓扑包括与选定卷相关的所有卷的图形表示。选定卷以深灰色边框表示，拓扑中卷之间的直线表示保护关系类型。拓扑中关系的方向从左到右显示，每个关系的源位于左侧，目标位于右侧。</block>
   <block id="de22a966c00bb6c3b2d618284de781eb" category="paragraph">双粗线用于指定异步镜像关系，单粗线用于指定异步存储关系，双单线用于指定异步镜像存储关系，粗线和非粗线用于指定同步关系。下表显示了同步关系是 StrictSync 关系还是 Sync 关系。</block>
@@ -3296,7 +3295,6 @@
   <block id="7b019e8a912414d9c698e1da5ea979b6" category="paragraph">当所有作业任务成功完成后，初始化或更新操作完成。</block>
   <block id="a6746425c25768de3f5829c152822679" category="summary">您可以通过从源卷创建扇出或从现有关系的目标卷创建级联来扩展对现有关系的保护。如果您需要将数据从一个站点复制到多个站点或通过创建更多备份来提供额外保护，则可以执行此操作。</block>
   <block id="eccb90afe26b65475a488e0727572002" category="doc">创建级联或扇出关系以从现有保护关系扩展保护</block>
-  <block id="01fd56d56b8b61ed28591ffda8aca61b" category="paragraph">您可以使用一致性组将保护范围扩展到卷，一致性组是一个包含多个卷的容器，以便可以将所有卷作为一个实体进行管理。您可以在 Unified Manager 的关系页面中查看 SnapMirror 业务连续性（ SM-BC ）一致性组和同步一致性组关系。</block>
   <block id="fbe2671f1c071a92df1476b2d7fc9056" category="list-text">单击 * 保护 * &gt; * 关系 * 。或者，您也可以从卷详细信息页面查看关系。</block>
   <block id="2193e4925531a683d9994daa17151105" category="list-text">从 * 卷关系 * 页面中，选择要从中扩展保护的 SnapMirror 关系。</block>
   <block id="e0668805326fcf173c6ad9cc1e3beac1" category="list-text">在操作栏上，单击 * 扩展保护 * 。</block>
@@ -3647,10 +3645,6 @@
   <block id="177fc6042efaa10f5da934e8c746e9ba" category="section-title">采用常规同步的 SnapMirror 同步保护</block>
   <block id="9eb6583bd652338b8737991ca4e97e19" category="paragraph">采用 " `re同步` " 的 SnapMirror 同步保护不要求主卷和二级卷始终是彼此的真实副本，从而确保主卷的可用性。如果在尝试向二级卷写入数据时发生复制失败，则主卷和二级卷将不再同步，客户端 I/O 将继续向主卷写入。</block>
   <block id="796715bf5d06ffb08971971b344b2f98" category="paragraph">从 " 运行状况：所有卷 " 视图或 " 卷 / 运行状况 " 详细信息页面监控同步保护关系时， " 还原 " 按钮和 " 关系 " 操作按钮不可用。</block>
-  <block id="6456c750ab46f84e25768e136ae08a82" category="section-title">SnapMirror 同步业务连续性</block>
-  <block id="584350b61ad29e1e1d778af4083e84be" category="paragraph">ONTAP 9.8 及更高版本提供了 SnapMirror 业务连续性（ SM-BC ）功能，您可以使用它来保护具有 LUN 的应用程序，使应用程序能够透明地进行故障转移，从而确保在发生灾难时的业务连续性。</block>
-  <block id="ae29cba1567ab4b1a3f0d7c52960df9d" category="paragraph">您可以通过 Unified Manager 发现和监控集群和 Storage Virtual Machine 上可用的一致性组（ CG ）的同步 SnapMirror 关系。AFF 集群或全 SAN 阵列（ ASA ）集群支持 SM-BC ，其中主集群和二级集群可以是 AFF 或 ASA 。SM-BC 使用 iSCSI 或 FCP LUN 保护应用程序。</block>
-  <block id="74560fead831fee65bfebe70198203e9" category="paragraph">查看受 SM-BC 关系保护的卷和 LUN 时，您可以获得保护关系，卷清单中的一致性组，一致性组关系的保护拓扑，一致性组关系的历史数据以及长达一年的一致性组关系的历史数据。您也可以下载此报告。此外，您还可以查看一致性组关系的摘要，搜索一致性组关系的支持以及获取有关受一致性组保护的卷的信息。</block>
   <block id="4c7cb2eaa5d8a4da948d7b43d793ef6d" category="paragraph">在关系页面上，您还可以对受一致性组保护的源和目标存储对象及其关系进行排序，筛选和扩展保护。</block>
   <block id="7331ad8836c59b4b432445f8fc5c99e4" category="summary">您可以使用版本灵活的复制和备份选项功能创建 SnapMirror 关系。通过备份选项功能，您可以实施 SnapMirror 保护，并在目标位置保留多个版本的备份副本。</block>
   <block id="e36facec58d4fd1ab5145c36e21c2862" category="doc">使用版本灵活复制和备份选项创建 SnapMirror 关系</block>
@@ -3805,7 +3799,6 @@
   <block id="37b62c5243b3ac0c86b34681cb1f66d3" category="paragraph">显示 SnapMirror 关系的源集群的名称。</block>
   <block id="7f835af0acf6578c40118036c326b1fd" category="list-text">* 源节点 *</block>
   <block id="c82a77c5e0228ddadab3bd5aa89bba3e" category="paragraph">显示卷的 SnapMirror 关系的源节点名称链接的名称，并在对象为 Storage VM 或一致性组时显示 SnapMirror 关系节点计数链接。</block>
-  <block id="2f1951fc98d71ae4db2a6daf6cfd535b" category="paragraph">在自定义视图中，单击节点名称链接时，您可以查看和扩展对存储对象的保护，这些存储对象上的卷属于 SM-BC 关系。</block>
   <block id="b7b60d8edfb33c514a3b2bdef700d1e7" category="paragraph">单击节点计数链接时，将转到节点页面，其中包含与此关系关联的相应节点。如果节点数为 0 ，则不会显示任何值，因为没有与此关系关联的节点。</block>
   <block id="b50bbbbd2ce1ff5ad4dd7cb67add6f1d" category="list-text">* 目标节点 *</block>
   <block id="99678ea767aff0838702576fb67a7b91" category="paragraph">显示卷的 SnapMirror 关系的目标节点名称链接的名称，并在对象为 Storage VM 或一致性组时显示 SnapMirror 关系节点计数链接。</block>
@@ -4307,10 +4300,7 @@
   <block id="3618bf1e4e2eb1044754b05f4d5019cd" category="paragraph">显示提交作业的时间。</block>
   <block id="cb099ff63a3dc50de4043d486336aa11" category="paragraph">显示作业完成所用的时间量。默认情况下会显示此列。</block>
   <block id="dda8b65b1dd0aaf67d557b36874b313d" category="paragraph">显示作业完成的时间。默认情况下，此列处于隐藏状态。</block>
-  <block id="8c748cd9318ed681edc4186889ac9837" category="summary">受 SM-BC 保护的 LUN 的统一视图。</block>
   <block id="1ffd4c3f18af104630b0326e8c2dc2c9" category="doc">监控一致性组关系中的 LUN</block>
-  <block id="90d0141ba8dfef63f3b408f5a1db3980" category="paragraph">如果您的 ONTAP 环境支持 SnapMirror 业务连续性（ SM-BC ）来保护具有 LUN 的应用程序，则可以在 Active IQ Unified Manager 上查看和监控这些 LUN 。</block>
-  <block id="7beb94f6fbaef8cd847dcc4e98562c31" category="paragraph">SM-BC 可确保在 SAN 环境中进行故障转移期间实现零恢复时间目标（ RTO ）。在支持 SM-BC 的典型部署中，卷上的 LUN 受一致性组关系的保护。</block>
   <block id="9341b9e1536cc8f4c3652c7e91c736d7" category="paragraph">这些主 LUN 和二级 LUN 是复合 LUN ，或者具有相同 UUID 和序列号的副本 LUN 对。I/O 操作（读取和写入）会在这些复合 LUN 上的源站点和目标站点之间进行多路传输，以确保透明性。</block>
   <block id="f1c21bacefc03e4bd3d91418d06734d5" category="paragraph">要查看复合 LUN ，应在 Unified Manager 上添加和发现包含属于一致性组关系的 LUN 的主集群和二级集群。仅支持 iSCSI 和 FCP LUN 。</block>
   <block id="ad5b7872fd9aa53772e0572d135d92ac" category="paragraph">要查看环境中的复合 LUN ，请执行以下步骤：</block>
@@ -10880,9 +10870,6 @@
   <block id="3890f9f0f1b24b11ec99c5302bb245a3" category="paragraph">有关详细信息，请参见<block ref="ae0acc7a1cf35a69eb7b42685c902841" category="inline-link-rx"></block></block>
   <block id="10ca66f0a363b90a579ee48398d9ca6c" category="inline-link">ONTAP REST API 自动化</block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
-  <block id="304235bddd1bfe240019774dacdbd71e" category="inline-link-macro">适用于 SM-BC 的 ONTAP 9 文档</block>
-  <block id="2eaa1a82c95cbdf0e4d38d70a85a96d7" category="paragraph">要了解有关 SnapMirror 同步业务连续性的更多信息，请参见 <block ref="c3c54812d1152ab82d144dc87f0ce5db" category="inline-link-macro-rx"></block>。</block>
-  <block id="e6426dd2e05e7210d50c422898f18af7" category="paragraph">有关 SM-BC 的信息，请参见 <block ref="c3c54812d1152ab82d144dc87f0ce5db" category="inline-link-macro-rx"></block>。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
@@ -11029,7 +11016,6 @@
   <block id="a6bacc83dfdb1c9689535a09836f8550" category="paragraph">无法从集群访问ONTAP 调解器(snapmirrorMediatorUnreachable)</block>
   <block id="cf7f72fb2e3e5a9df104130ba81c194e" category="paragraph">调解器</block>
   <block id="da953faa02ca184ebcadd69694229ca0" category="paragraph">无法从集群访问ONTAP 调解器(snapmirrorMediatorMisconfigured)</block>
-  <block id="dc7d8942cdb2f367c68f30d022efa7f0" category="paragraph">ONTAP 调解器连接已重新建立、已重新同步并可用于SMBC (snapmirrorMediatorInQuoral)</block>
   <block id="8002c010879d451de4416c97251e7e29" category="summary">通过Storage VM关联页面、您可以查看源和目标Storage VM之间的现有Storage VM关联。</block>
   <block id="b31a8b073692fe4fc7d0416d77032d55" category="doc">了解Storage VM关联</block>
   <block id="8210ed29bdbce4c1e73c2d1c02b5282d" category="paragraph">Storage Virtual Machine (Storage VM)关联是指从源Storage VM到目标Storage VM的映射、供合作伙伴应用程序用于资源选择和二级卷配置。</block>
@@ -11053,7 +11039,6 @@
   <block id="b518d96f65df8e3a8c5bd9b294314ee7" category="paragraph">默认情况下、访问关系页面时、显示的报告将包括卷和Storage VM的顶级保护关系。通过沿页面顶部排列的控件，您可以选择特定视图，执行搜索以查找特定对象，创建并应用筛选器以缩小显示数据列表的范围，在页面上添加 / 删除列或对列重新排序以及将页面上的数据导出为 .csv ， .pdf 。 或 .xlsx 文件。自定义页面后，您可以将结果保存为自定义视图，然后计划定期生成此数据的报告并通过电子邮件发送。默认情况下，当您选择 * 关系 * 菜单时，显示的报告将包括数据中心中卷和 Storage VM 的保护关系。您可以使用 * 筛选器 * 选项仅查看选定的存储系统，例如仅查看卷或仅查看 Storage VM 。同一报告将显示在存储页面中，并且仅针对选定存储实体。如果要查看卷或 Storage VM 关系，可以访问 * 存储 * &gt; * 卷 * &gt; * 关系：所有关系 * 页面或访问 * 保护 * &gt; * 关系 * &gt; * 关系： 所有关系 * ，并使用 * 筛选器 * 中的 * 关系对象类型 * 选项仅筛选出卷或 Storage VM 数据。</block>
   <block id="fcd4ecf1cf7bb8267ec59d4f89b505b1" category="list-text">*调解器*</block>
   <block id="496eb323c2ee5c388095071435b45af0" category="paragraph">显示调解器状态。</block>
-  <block id="6b186591bdb6b54c5178194cd438daf3" category="paragraph">如果集群不支持SnapMirror业务连续性。</block>
   <block id="6470ad126b37899e643afe35ff51f8fd" category="paragraph">如果未配置此集群、或者配置了此集群、但仅添加目标集群、而源集群不会添加到Unified Manager中。</block>
   <block id="26eeb2415026ecc2a99b19ae10c4e13e" category="list-text">调解器IP地址</block>
   <block id="a5a42e7a9482f606a51f46baffc94087" category="paragraph">如果已配置、则源集群和目标集群都会添加到Unified Manager中。</block>
@@ -11072,7 +11057,6 @@
   <block id="48815cc485f34516122d402c7691bcbc" category="section-title">查看SnapMirror关系的保护状态</block>
   <block id="eebf9b70421de9e6316f48de3e2cef0b" category="list-text">根据滞后状态、发生恢复点目标(RPO)滞后的SnapMirror关系总数。</block>
   <block id="2cd111e77d7b5983398bdaaaee149c7b" category="list-text">每种类型的SnapMirror策略所保护的卷数。</block>
-  <block id="5c421974ea0511d51906133dd8756205" category="list-text">受SnapMirror关系类型(例如异步镜像、异步存储、异步镜像存储、StricxtSync、SnapMirror业务连续性(SMBC)一致性组和Sync)保护的关系数。</block>
   <block id="43e5aa2d7191d2fad1b5eb6a2779c47c" category="list-text">运行状况良好和运行状况不正常的关系的数量。</block>
   <block id="2fb2c7d03a760408a3f8150c23df4876" category="list-text">卷关系计数的细分。您可以按RPO滞后时间和状态切换图表。</block>
   <block id="63a0f94f271c2db3ea63bb2e1407963f" category="section-title">有关SnapMirror关系的注意事项</block>
@@ -11908,4 +11892,35 @@
   <block id="ceb9d7e61726cd2e35badf78afd8453a" category="paragraph">您必须定义配额电子邮件地址的规则，并按要执行的顺序输入这些规则。例如、如果要使用电子邮件地址abc@xyz.com接收有关abc违反配额的通知、并对所有其他组使用电子邮件地址dl-$Group@$domain、则规则必须按以下顺序列出：</block>
   <block id="b3740ac32eb3afc08f5d73d7308fc75d" category="list-text">如果($user =='abc')，则为abc@xyz.com</block>
   <block id="76484226a58b4aaad54c923ee565c2de" category="list-text">如果($Group ==*)，则为dl-$Group@$domain</block>
+  <block id="4057b81effceded4a0d56ba83fa2bc4c" category="paragraph">AMQP QPID代理</block>
+  <block id="09cc1306955a7d5b2ed367969d4e9d57" category="paragraph">TCP/IP</block>
+  <block id="3fd4f2a86b42ebe6b3b976affb0cc116" category="paragraph">56072.</block>
+  <block id="a57499f599c00f53ae0461f15154ab23" category="paragraph">用于内部消息通信。</block>
+  <block id="b8ac2ebe76541bcac8e63005436a105a" category="paragraph">基于TCP的WebSocket</block>
+  <block id="b86f29c888784d2245f887b509b5dd32" category="paragraph">56080</block>
+  <block id="794b0fbf4e314ba18f71dba00d68d9b8" category="paragraph">用于侦听此端口上从ONTAP (云代理)接收的消息。</block>
+  <block id="00595c0d01d488a33a068852a0c6b2b8" category="paragraph">56443.</block>
+  <block id="cd91ff9e0f252c06c8c6dc37f1c29ba7" category="paragraph">用于侦听此端口上从ONTAP (云代理)接收的消息。 通过此端口的通信支持TLS或SSL提供的加密。</block>
+  <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="paragraph">9000</block>
+  <block id="c566a5dbb0e92fc14cf27c5abc3316bd" category="paragraph">用于在此页面上启动AMQP管理UI界面。</block>
+  <block id="5c481563f3b57863c0a290b809a1e6ff" category="paragraph">用于侦听此端口上从ONTAP (云代理)接收的消息。通过此端口进行的通信支持TLS或SSL提供的加密。</block>
+  <block id="7c6fa12173c375a840189f157e3cf098" category="admonition">在内部(Unified Manager和漏洞扫描程序安装在同一个VM上)或外部扫描虚拟机(VM)时、漏洞扫描程序(如Qu固 件)可能会导致CPU使用率较高 (其中Unified Manager和漏洞扫描程序安装在两个不同的服务器上、漏洞扫描程序将扫描安装Unified Manager的VM)。此问题描述通常会导致VM无响应并影响Unified Manager服务。因此、NetApp建议在安装了Unified Manager的虚拟机中禁用漏洞扫描程序。如果无法禁用扫描程序、请在非工作时间扫描虚拟机、并在扫描完成后重新启动服务。</block>
+  <block id="c3d15a1717019bd68103a42fb3ccc50c" category="paragraph">对于受SnapMirror活动同步关系保护的卷、此列将显示卷的一致性组。</block>
+  <block id="800a82ff69e2f8716a21195c4646947e" category="paragraph">已重新建立ONTAP调解器连接、并且已重新同步并已准备好进行SnapMirror活动同步(snapmirector介质 仲裁)</block>
+  <block id="c0b79db5f258f0c991a383cbdbf001dd" category="section-title">SnapMirror活动同步</block>
+  <block id="aa7fa8d22937f0168ab9aa9ac2f11f1e" category="paragraph">ONTAP 9.8及更高版本提供了SnapMirror主动同步功能、您可以使用它来保护具有LUN的应用程序、从而使应用程序能够透明地进行故障转移、从而确保在发生灾难时保持业务连续性。</block>
+  <block id="aa3834427e0a44621b2f97d130d97f0e" category="paragraph">您可以通过 Unified Manager 发现和监控集群和 Storage Virtual Machine 上可用的一致性组（ CG ）的同步 SnapMirror 关系。AFF集群或全SAN阵列(ASA)集群支持SnapMirror主动同步、其中主集群和二级集群可以是AFF或ASA。SnapMirror主动同步可通过iSCSI或FCP LUN保护应用程序。</block>
+  <block id="43e6f02aa3159562e8d2c863b942c7ac" category="paragraph">查看受SnapMirror活动同步关系保护的卷和LUN时、您可以获得保护关系的统一视图、卷清单中的一致性组、查看一致性组关系的保护拓扑、查看长达一年的一致性组关系的历史数据。您也可以下载此报告。此外，您还可以查看一致性组关系的摘要，搜索一致性组关系的支持以及获取有关受一致性组保护的卷的信息。</block>
+  <block id="74295afe091080605ebd13a7c5b13c16" category="inline-link-macro">适用于SnapMirror活动同步的ONTAP 9文档(原SM-BC)</block>
+  <block id="4712d933ee439a4c6393014f4dabfd66" category="paragraph">要了解有关SnapMirror活动同步的详细信息、请参见 <block ref="26496dd12886056779393da869786020" category="inline-link-macro-rx"></block>。</block>
+  <block id="c40044b752c941f30f770841b2eec4fe" category="list-text">受SnapMirror关系类型(例如异步镜像、异步存储、异步镜像存储、StricxtSync、SnapMirror活动同步一致性组和同步)保护的关系数量。</block>
+  <block id="66d02d4b9fa89d81026beec1263c3e7c" category="paragraph">您可以使用一致性组将保护范围扩展到卷，一致性组是一个包含多个卷的容器，以便可以将所有卷作为一个实体进行管理。您可以在Unified Manager的关系页面中查看SnapMirror活动同步一致性组和同步一致性组关系。</block>
+  <block id="86e256d427f11c48ba32cc55c5e5ebe5" category="summary">受SnapMirror活动同步保护的LUN的统一视图。</block>
+  <block id="6e91d63ec0b35d3854ade90b706d6b2e" category="paragraph">如果您的ONTAP环境支持SnapMirror活动同步到
+保护使用LUN的应用程序、您可以查看和监控Active IQ Unified Manager上的这些LUN。</block>
+  <block id="ef72865211ff0fce6e6d962bbeb49866" category="paragraph">SnapMirror主动同步可确保在SAN环境中的故障转移期间实现零恢复时间目标(Recovery Time客观、RTO)。在支持SnapMirror活动同步的典型部署中、卷上的LUN受一致性组关系的保护。</block>
+  <block id="daf278f1f618b542e37f15b551577ad6" category="inline-link-macro">适用于SnapMirror活动同步的ONTAP 9文档(原SM-BC)</block>
+  <block id="2e112a6ed41642ec6cb0dbac26f29548" category="paragraph">有关SnapMirror活动同步的信息、请参见 <block ref="e7cb3673e0f365a4cb1a8a44c94d6d2b" category="inline-link-macro-rx"></block>。</block>
+  <block id="fcec3d8aa2186fbec2ebbc509e88c291" category="paragraph">集群不支持SnapMirror活动同步。</block>
+  <block id="f9c3a8b68e3ce1dccddf9f51467e0ed0" category="paragraph">在自定义视图中、单击节点名称链接时、您可以查看和扩展对这些一致性组中的卷属于SnapMirror活动同步关系的存储对象的保护。</block>
 </blocks>
