@@ -19,7 +19,7 @@ summary: '您可以使用性能 /SVM 资源管理器页面查看 SVM 的详细 I
 * NFS
 * FCP
 * iSCSI
-* NVMe
+* NVMe-FC
 
 
 .步骤

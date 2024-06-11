@@ -6238,7 +6238,6 @@
   <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="list-text">NFS</block>
   <block id="a7c815fafe60ae637d38216fa6300395" category="list-text">FCP</block>
   <block id="e4e1c13bb0b14f6cb7608cbecea948ef" category="list-text">iSCSI</block>
-  <block id="70d9e3c68d42d6ec42ab792e06c44357" category="list-text">NVMe</block>
   <block id="83d6279aff05f9fb65333ef455dcbbc3" category="list-text">在选定 SVM 的 * 性能 /SVM 资源管理器 * 页面中，从 IOPS 图表中，从下拉菜单中选择 * 协议 * 。</block>
   <block id="447706c449f59f43bf73830cfa98e1c2" category="paragraph">此时将显示 "IOPS - 协议 " 图表。</block>
   <block id="c468dcd34f66d4c89f937f753cbea9da" category="list-text">要查看较大版本的图表，请选择 * 缩放视图 * 。</block>
@@ -11971,4 +11970,5 @@
   <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Unified Manager 视频</block>
   <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Unified Manager 博客</block>
   <block id="ede607b26fd609858d7be7ff1e138cb0" category="sidebar">Active IQ Unified Manager 9.9或更早版本的文档</block>
+  <block id="3ab5865f7b3fcc5851ae24144b15f370" category="list-text">NVMe-FC</block>
 </blocks>
