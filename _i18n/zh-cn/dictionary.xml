@@ -9049,7 +9049,6 @@
   <block id="47bb143d7a3368c1527db57426ca08e2" category="list-text">重新生成服务器的 HTTPS 证书：</block>
   <block id="4dd5d9e5f71def24c32fed75f03cad64" category="paragraph">` /opt/NetApp/Bines/cert.sh create`</block>
   <block id="8473e7d857ebdae7ad8557024a3c1cf9" category="list-text">重新启动网络服务：</block>
-  <block id="b3ca8da2a2327ebf4f97bafc6363e84d" category="paragraph">`s服务网络重新启动`</block>
   <block id="bd2b6ee9134bd55418f6638971d11a18" category="list-text">重新启动服务后，验证新主机名是否能够对自身执行 ping 操作：</block>
   <block id="4ce5888dbc17259a3375ffb15c2ce7a3" category="paragraph">`ping new_hostname`</block>
   <block id="bdf2badbf9aee4e6a2355ea85ea2e904" category="paragraph">`ping nuthost`</block>
@@ -11971,4 +11970,6 @@
   <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Unified Manager 博客</block>
   <block id="ede607b26fd609858d7be7ff1e138cb0" category="sidebar">Active IQ Unified Manager 9.9或更早版本的文档</block>
   <block id="3ab5865f7b3fcc5851ae24144b15f370" category="list-text">NVMe-FC</block>
+  <block id="db180f51718e113d9c8799523e66b6cc" category="paragraph"><block ref="84f8d8fcacc42af5df652e2ccc99304b" prefix="" category="inline-code"></block></block>
+  <block id="2ffae15ce7fc136fc840cd527bcfa491" category="list-text">在集群级别、Active IQ界面会为身份验证方法"cert"添加两个新的用户组条目。</block>
 </blocks>

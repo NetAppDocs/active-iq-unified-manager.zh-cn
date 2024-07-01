@@ -44,7 +44,7 @@ summary: 有时，您可能需要更改已安装 Unified Manager 的 Red Hat Ent
 
 . 重新启动网络服务：
 +
-`s服务网络重新启动`
+`systemctl restart NetworkManager.service`
 
 . 重新启动服务后，验证新主机名是否能够对自身执行 ping 操作：
 +
