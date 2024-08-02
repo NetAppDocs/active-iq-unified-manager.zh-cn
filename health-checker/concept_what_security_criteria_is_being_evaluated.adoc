@@ -21,7 +21,7 @@ summary: 通常，我们会根据《适用于 ONTAP 9 的 NetApp 安全加固指
 * 卷已启用软件加密还是硬件加密
 
 
-请参见有关合规性类别的主题和 http://www.netapp.com/us/media/tr-4569.pdf["《适用于 ONTAP 9 的 NetApp 安全加固指南》"] 了解详细信息。
+有关详细信息、请参见有关合规性类别的主题和 https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf["《适用于 ONTAP 9 的 NetApp 安全加固指南》"^] 。
 
 [NOTE]
 ====

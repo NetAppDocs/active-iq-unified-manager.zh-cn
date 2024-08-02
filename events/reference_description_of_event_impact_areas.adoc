@@ -35,7 +35,7 @@ summary: 事件分为六个影响区域（可用性，容量，配置，性能�
 
 * * 安全性 *
 +
-安全事件会根据中定义的参数通知您 ONTAP 集群， Storage Virtual Machine （ SVM ）和卷的安全性 http://www.netapp.com/us/media/tr-4569.pdf["《适用于 ONTAP 9 的 NetApp 安全加固指南》"]。
+安全事件会根据中定义的参数通知您ONTAP集群、Storage Virtual Machine (SVM)和卷的安全程度 https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf["《适用于 ONTAP 9 的 NetApp 安全加固指南》"^]。
 
 +
 此外，此区域还包括从 Active IQ 平台报告的升级事件。

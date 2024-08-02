@@ -959,7 +959,6 @@
   <block id="aa5ea9a79b8363872969fe3e4d5ce9b3" category="paragraph">Unified Manager 提供了一个信息板，用于根据适用于 ONTAP 9_ 的 _NetApp 安全加固指南中定义的建议确定 ONTAP 集群， Storage Virtual Machine （ SVM ）和卷的安全程度。</block>
   <block id="e60416fe8f102037593aec660b785842" category="paragraph">此安全信息板的目标是，显示 ONTAP 集群与 NetApp 建议的准则不一致的任何区域，以便您可以修复这些潜在问题。大多数情况下，您将使用 ONTAP 系统管理器或 ONTAP 命令行界面修复这些问题。您的组织可能不会遵循所有建议，因此在某些情况下，您不需要进行任何更改。</block>
   <block id="0303e15cb5131cd4b937c60c3de7bb42" category="inline-link">《适用于 ONTAP 9 的 NetApp 安全加固指南》</block>
-  <block id="60443e5478cdf6c85aba4b527880b533" category="paragraph">请参见<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block> （ TR-4569 ），了解详细的建议和解决方案。</block>
   <block id="349b5120a9ed5730c85dd33d0233bfa1" category="paragraph">除了报告安全状态之外， Unified Manager 还会为存在安全违规的任何集群或 SVM 生成安全事件。您可以在事件管理清单页面中跟踪这些问题，并为这些事件配置警报，以便在发生新的安全事件时通知存储管理员。</block>
   <block id="bac22306a2632f2464a7bc7eb26d21c6" category="summary">此工作流举例说明如何扫描，评估和解决已关闭的存储故障转移互连链路情况。在这种情况下，您是一名管理员，使用 Unified Manager 在节点上开始 ONTAP 版本升级之前扫描存储故障转移风险。</block>
   <block id="66deb8126d9a4e2c908a3654f4ece414" category="doc">扫描并解决存储故障转移互连链路断开情况</block>
@@ -1760,7 +1759,6 @@
   <block id="3a215c293d531341a13e54d1b4f767d8" category="list-text">对等集群的通信是否已加密</block>
   <block id="34c28c126e19226f9ae33dc5640078bb" category="list-text">Storage VM 是否已启用审核日志</block>
   <block id="8083dc3f1ad1356d39b70d2189b04945" category="list-text">卷已启用软件加密还是硬件加密</block>
-  <block id="eab70e6fe7e77946b94068e68a8ce442" category="paragraph">请参见有关合规性类别的主题和<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="c59a5985bd2d618db813147ff21b648b" category="paragraph">从 Active IQ 平台报告的升级事件也视为安全事件。这些事件确定了需要升级 ONTAP 软件，节点固件或操作系统软件才能解决的问题（针对安全建议）。这些事件不会显示在 " 安全性 " 面板中，但可从 " 事件管理 " 清单页面访问。</block>
   <block id="2dbe6bc08eeaacfcdd6eb2fa5758971e" category="summary">您可以查看所有活动的安全事件，然后将每个事件分配给一个可以解决问题描述的用户。此外，如果您不想接收某些安全事件，此列表可帮助您确定要禁用的事件。</block>
   <block id="64151c795a30faf693f1c208a6e66627" category="doc">查看所有活动安全事件</block>
@@ -4448,7 +4446,6 @@
   <block id="56bad51d0fd70713223e857396803caa" category="paragraph">Unified Manager 可以安装在具有少量内存的系统上，但建议的 12 GB RAM 可确保有足够的可用内存来实现最佳性能，并使系统可以随着配置的增长容纳更多集群和存储对象。您不应在部署 Unified Manager 的虚拟机上设置任何内存限制，也不应启用任何妨碍软件利用系统上分配的内存的功能（例如，热气球）。</block>
   <block id="118be0e1a3c862556b2a6426bdcd24de" category="paragraph">此外，在安装另一个 Unified Manager 实例之前，一个 Unified Manager 实例可以监控的节点数也存在限制。有关详细信息，请参见 _Best Practices Guide_ 。</block>
   <block id="9650789293045a87cc14a47729b5ebfc" category="inline-link">技术报告 4621 ：《 Unified Manager 最佳实践指南》</block>
-  <block id="badef135127b32313f0e0eebe283472f" category="paragraph"><block ref="badef135127b32313f0e0eebe283472f" category="inline-link-rx"></block></block>
   <block id="ccd350b03208f21a01e8434aa29bf22c" category="paragraph">内存页面交换会对系统和管理应用程序的性能产生负面影响。争用因主机整体利用率而不可用的 CPU 资源可能会降低性能。</block>
   <block id="eeedd0b411cf8b8d426d2fb1abee2797" category="section-title">专用要求</block>
   <block id="c74cdaf0de603354b9d68a1b99f50e57" category="paragraph">安装 Unified Manager 的物理或虚拟系统应专用于 Unified Manager ，不应与其他应用程序共享。其他应用程序可能会占用系统资源，并会大幅降低 Unified Manager 的性能。</block>
@@ -5087,7 +5084,6 @@
   <block id="64bd5015546813c113a50d1d816a2fce" category="list-text">* 性能 *</block>
   <block id="28a28996e5e10ee62864b322cf2e8851" category="paragraph">性能事件用于通知您集群上的资源，配置或活动状况，这些状况可能会对受监控存储对象上的数据存储输入或检索速度产生不利影响。</block>
   <block id="e28ab1dac11a8a6babec11d768ded66a" category="paragraph">保护事件用于通知您涉及 SnapMirror 关系的意外事件或风险，目标容量问题， SnapVault 关系问题或保护作业问题。托管二级卷和保护关系的任何 ONTAP 对象（尤其是聚合，卷和 SVM ）都会在保护影响区域进行分类。</block>
-  <block id="a9518f09019b40e9f9d0808f91e32925" category="paragraph">安全事件会根据中定义的参数通知您 ONTAP 集群， Storage Virtual Machine （ SVM ）和卷的安全性<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block>。</block>
   <block id="26426dd05fca05471c34919c8d351e36" category="paragraph">此外，此区域还包括从 Active IQ 平台报告的升级事件。</block>
   <block id="2d3a72e2a04782810d904c40473777f4" category="summary">LUN 事件可为您提供有关 LUN 状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。</block>
   <block id="4a581ce7eb8db08cce2f8515f02e2a0e" category="doc">LUN 事件</block>
@@ -6745,7 +6741,6 @@
   <block id="68ae53130f456bd2456bb29985dbcab8" category="paragraph">您可以使用 ONTAP 系统管理器或 ONTAP 命令查看是否已安装或启用 Flash Cache ，如果尚未启用，则可以启用它。以下命令指示是否已在特定节点上启用 Flash Cache ： ` * cluster ：：： &gt; 运行本地选项 flexscale.enable*`</block>
   <block id="4226c3da2a5d50e1c8abfdfbf9bd3780" category="paragraph">有关 Flash Cache 及其使用要求的详细信息，请参见以下技术报告：</block>
   <block id="4d594fa378085e019a42ca73e740986c" category="inline-link">技术报告 3832 ：《 Flash Cache 最佳实践指南》</block>
-  <block id="e9f146d71f531c29c1d0c53c51f7c325" category="paragraph"><block ref="e9f146d71f531c29c1d0c53c51f7c325" category="inline-link-rx"></block></block>
   <block id="e3877e8f3b3beac4f3e096137379bdf2" category="summary">在收集的运行状况和性能数据中显示或显示为事件检测时间的时间戳基于 ONTAP 集群时间，并根据 Web 浏览器上设置的时区进行调整。</block>
   <block id="83d66f6f5b43fb564601eb519bd6cd05" category="doc">时间戳在收集的数据和事件中的含义</block>
   <block id="eec6e4da1ad0ccdaee5da6fb26369a7d" category="paragraph">强烈建议使用网络时间协议（ NTP ）服务器同步 Unified Manager 服务器， ONTAP 集群和 Web 浏览器上的时间。</block>
@@ -7892,7 +7887,6 @@
   <block id="7c48a0120101491ea5a781058b5716de" category="doc">添加磁盘并执行聚合布局重建</block>
   <block id="fdf3b7352c190d213c24db064ec3a78e" category="paragraph">当您在事件详细信息页面上收到系统定义的阈值事件时， event 问题描述文本将列出存在问题的聚合的名称。您可以添加磁盘并在此聚合上重建数据。</block>
   <block id="c993772a65e087ac68acfde3645c3287" category="inline-link">技术报告 3838 ：《存储子系统配置指南》</block>
-  <block id="0379ced083df169219dc62cc5068b75c" category="paragraph"><block ref="0379ced083df169219dc62cc5068b75c" category="inline-link-rx"></block></block>
   <block id="95091a57f218d6046d952565cc667676" category="list-text">在 "Alert Setup" 页面中，单击 * 添加 * 。</block>
   <block id="a607037fa532ec79673821038e1bfa16" category="list-text">在添加警报对话框中，单击 * 名称 * ，然后输入警报的名称和问题描述。</block>
   <block id="8fedaf4d4f425da4f507ae3ef98d37e1" category="list-text">在 Event Name contains 字段中，输入 ` * latency *` ，然后单击箭头以选择所有匹配的事件。</block>
@@ -10902,7 +10896,6 @@
   <block id="38bf356bc057c1b138ed0aadbc422129" category="summary">"安全性"页面显示所有集群和Storage VM的高级别安全状态。详细的集群状态包括集群合规性， SVM 合规性和卷加密合规性。</block>
   <block id="2dfcaeaf7d872d0b41ac1a7fad3f1bc0" category="doc">查看集群和Storage VM的安全状态</block>
   <block id="363bd7c65ddeb743b3e567f3bb86d1f0" category="paragraph">通过Active IQ Unified Manager 、您可以从界面的不同位置查看环境中存储对象的安全状态。您可以根据定义的参数收集和分析信息和报告、并检测受监控集群和Storage VM上的可疑行为或未经授权的系统更改。</block>
-  <block id="ac7c06182b625c627e480ce0c60ff4ed" category="paragraph">有关安全建议、请参见<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block></block>
   <block id="468b211c23c8f85e2679c3384b195d38" category="section-title">在安全性页面上查看对象级别的安全状态</block>
   <block id="78162355da23f5dd80cdec8e2b9e0d00" category="paragraph">作为系统管理员、您可以使用*安全性*页面查看ONTAP 集群和Storage VM在数据中心和站点级别的安全优势。支持的对象包括集群、Storage VM和卷。请按照以下步骤操作：</block>
   <block id="3f9660f836b3463f167780161b6ee0d0" category="list-text">单击 * 安全性 * 面板中的右箭头。此时将显示安全性页面。</block>
@@ -11394,7 +11387,6 @@
   <block id="1668d6113f0198a5d71e61b06adea176" category="paragraph">请参见 <block ref="647c20854538de241d685bd97fe45f7c" category="inline-link-macro-rx"></block>。</block>
   <block id="888f02aac9bcb8c6e63ecf7ecfd510f3" category="list-text">按照中的步骤进行操作 <block ref="4e49003bd707d086ed2473a592c4e5ad" category="inline-link-macro-rx"></block>。</block>
   <block id="5a4a0a33eb52faa90b4efd9ad5bb111c" category="list-text">此外、请按照中的步骤进行操作 <block ref="3d325a30a3d625d98b2da43d85fdf8d6" category="inline-link-macro-rx"></block>。</block>
-  <block id="dd20f685a8b2510866a126106ce9cc1f" category="paragraph">此外，在安装另一个 Unified Manager 实例之前，一个 Unified Manager 实例可以监控的节点数也存在限制。有关详细信息，请参见 <block ref="fb1ddd70760829cfad3621d150dc6027" category="inline-link-macro-rx"></block>。</block>
   <block id="7799421ecdfd8246db1f771c680ae1eb" category="paragraph">VMware vSphere系统上的Unified Manager OVA可在内部运行Debian OS 11 (bullseye)。有关受支持的ESXi服务器版本可以支持的虚拟机硬件版本的信息、请参阅VMware文档。</block>
   <block id="b8c3cbdd8f4d15088d9f9f8a35495d56" category="paragraph">您应查看系统要求。在部署Unified Manager虚拟设备之前进行必要的更改。</block>
   <block id="c9e714997136f329f1dedb985dac518e" category="paragraph">在Review Details页面上：</block>
@@ -11531,7 +11523,6 @@
   <block id="b8abe9a6609bb3dbb02a8eb95689e52c" category="paragraph">有关详细信息，请参见 <block ref="27f2a443d50f465254d755a8f399eae1" category="inline-link-macro-rx"></block>。</block>
   <block id="19d1717773a06d1e7fb84d9111f40f50" category="inline-link">ActiveIQ Unified Manager "分配系统建议的性能服务级别"无法适应高度变化的工作负载</block>
   <block id="e17ca1782763605169c7485c671a81aa" category="paragraph">另请参见知识库(KB)文章<block ref="6fff8171920b702fdfb821f2d039fddc" category="inline-link-rx"></block></block>
-  <block id="6cee015afd22a22d4079e89b208d5c0c" category="paragraph">合规性基于<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block>。单击面板顶部的右箭头可在安全性页面上查看所有集群的安全详细信息。有关信息，请参见<block ref="c1debbda1f6c52f8ae88dec67250c58d" category="inline-link-macro-rx"></block>。</block>
   <block id="ecab7fffe5d68c5da20608c5e8019c2d" category="paragraph">此面板显示数据中心中单个或所有集群的数据保护摘要。它会显示过去24小时在ONTAP 中引发的数据保护事件、MetroCluster 事件和活动事件的总数。单击每个事件中的链接将转到 " 事件 " 详细信息页面。您可以单击 * 查看全部 * 链接以查看事件管理清单页面中的所有活动保护事件。此时、面板将显示：</block>
   <block id="b0fb573143bfffbf957c4316c25a0eca" category="list-text">受Snapshot副本保护的集群或数据中心中的所有集群中的卷数。</block>
   <block id="cb4e1388d92e1e3da0f3f4e85217a14b" category="list-text">受SnapMirror关系保护的集群或数据中心中的所有集群中的卷数。对于SnapMirror关系、将考虑源集群上的卷计数。</block>
@@ -11662,7 +11653,6 @@
   <block id="8d6a739fdd6cb955643a976d6419979f" category="paragraph">此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。由于公司法规的限制、您的Windows系统上可能安装了有效的防病毒软件。在安装Unified Manager之前、应禁用防病毒软件、以防止安装失败。</block>
   <block id="3bf946d0585ec5d059ceedfa02a8bb85" category="list-text">在安装Unified Manager之前、应禁用系统上的所有防病毒软件。安装完成后、请确保手动从防病毒扫描中排除以下路径：</block>
   <block id="c4c82f53dda4c2a0257081e08f40a0c4" category="paragraph">有关详细的系统要求，请参见 <block ref="b2295d63a540e99b9499865a292304a1" category="inline-link-macro-rx"></block> 和 <block ref="4eee31450bd5635de5fa851f8ec42512" category="inline-link-macro-rx"></block>。</block>
-  <block id="855dd9750d1782e907ace12bdc7c5003" category="paragraph"><block ref="855dd9750d1782e907ace12bdc7c5003" category="inline-link-rx"></block></block>
   <block id="e61baa5c67d7dd8dca5b3e09283635ed" category="paragraph"><block ref="e61baa5c67d7dd8dca5b3e09283635ed" category="inline-link-rx"></block></block>
   <block id="31c19d26868a7ff439c08ee8860902af" category="paragraph"><block ref="e61baa5c67d7dd8dca5b3e09283635ed" category="inline-link-rx"></block>。</block>
   <block id="7304b4de80b8634c046d0400082fea65" category="paragraph">您可以通过"HTTPS证书"页面查看当前安全证书、下载证书签名请求、生成新的自签名HTTPS证书或安装新的HTTPS证书。</block>
@@ -11972,4 +11962,13 @@
   <block id="3ab5865f7b3fcc5851ae24144b15f370" category="list-text">NVMe-FC</block>
   <block id="db180f51718e113d9c8799523e66b6cc" category="paragraph"><block ref="84f8d8fcacc42af5df652e2ccc99304b" prefix="" category="inline-code"></block></block>
   <block id="2ffae15ce7fc136fc840cd527bcfa491" category="list-text">在集群级别、Active IQ界面会为身份验证方法"cert"添加两个新的用户组条目。</block>
+  <block id="1af9d8b43c265c6a772871d91469520e" category="paragraph">安全事件会根据中定义的参数通知您ONTAP集群、Storage Virtual Machine (SVM)和卷的安全程度<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block>。</block>
+  <block id="a5c178ca0adb1a0269f3bd998293dd38" category="paragraph">有关详细建议和解决方法、请参见<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block> (TR-4569)。</block>
+  <block id="672333e5623d0406e27edefd4a600c08" category="paragraph">有关详细信息、请参见有关合规性类别的主题和<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block> 。</block>
+  <block id="20dbca6ffc2afb63243f7244b8d18e68" category="paragraph">有关安全建议、请参见<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block></block>
+  <block id="ee26087a8b7ec790988603a3298c45f3" category="paragraph"><block ref="ee26087a8b7ec790988603a3298c45f3" category="inline-link-rx"></block></block>
+  <block id="b1ef1e646481ec8adc66cc5d2b2018ba" category="paragraph">此外，在安装另一个 Unified Manager 实例之前，一个 Unified Manager 实例可以监控的节点数也存在限制。有关详细信息，请参见 <block ref="30a299cd9b89fb73ae0b956f3afc43ad" category="inline-link-macro-rx"></block>。</block>
+  <block id="06c70b026e4d10bfcd7be2ebfa770d1c" category="paragraph"><block ref="06c70b026e4d10bfcd7be2ebfa770d1c" category="inline-link-rx"></block></block>
+  <block id="796f4a9be8e525f7e4d64c24bac529c9" category="paragraph"><block ref="796f4a9be8e525f7e4d64c24bac529c9" category="inline-link-rx"></block></block>
+  <block id="03d53e406aee01a758a051ceaf737e76" category="paragraph">合规性基于<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block>。单击面板顶部的右箭头可在安全性页面上查看所有集群的安全详细信息。有关信息，请参见 <block ref="c1debbda1f6c52f8ae88dec67250c58d" category="inline-link-macro-rx"></block>。</block>
 </blocks>
