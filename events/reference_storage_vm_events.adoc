@@ -24,7 +24,7 @@ Storage VM （ Storage Virtual Machine ，也称为 SVM ）事件可为您提供
 
 
  a| 
-SVM CIFS 服务已关闭（ ocumEvtVserverCifsServiceStatusDown ）
+Storage VM CIFS服务已关闭(ocumEvtVserverCifsServiceStatusDown)
  a| 
 意外事件
  a| 
@@ -134,7 +134,7 @@ SVM
 
 
  a| 
-SVM NFS 服务已关闭（ ocumEvtVserverNfsServiceStatusDown ）
+Storage VM NFS服务已关闭(ocumEvtVserverNfsServiceStatusDown)
  a| 
 意外事件
  a| 
@@ -178,7 +178,7 @@ SVM
 
 
  a| 
-SVM 已停止（ ocumEvtVserverDown ）
+Storage VM已停止(ocumEvtVserverDown)
  a| 
 风险
  a| 

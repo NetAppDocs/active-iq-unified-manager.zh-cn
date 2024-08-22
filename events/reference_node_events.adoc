@@ -123,7 +123,7 @@ error
 
 
  a| 
-云层集群间 LIF 已关闭 * （ ocumObjstoreInterClusterLifeDown ）
+云层集群间网络接口已关闭*(ocumObjstoreInterClusterLifDown)
  a| 
 风险
  a| 

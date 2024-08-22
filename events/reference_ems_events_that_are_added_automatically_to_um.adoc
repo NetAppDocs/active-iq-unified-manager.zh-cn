@@ -196,7 +196,7 @@ error
 
 
  a| 
-云层集群间 LIF 已关闭
+云层集群间网络接口已关闭
  a| 
 objstore.interclusterlifDown
  a| 
