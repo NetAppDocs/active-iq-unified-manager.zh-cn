@@ -11713,7 +11713,6 @@
   <block id="db3375d7decfbb29e343dc2213616878" category="paragraph">您可以使用集群 / 运行状况详细信息页面中显示的信息来更正任何复制问题。如果您在 MetroCluster 配置中发现镜像问题，则必须登录到 System Manager 或访问 ONTAP 命令行界面以解决这些问题。</block>
   <block id="c438f7aec6602f34fb279fdfb89b02c7" category="list-text">Associated Objects：分配给QoS策略组的工作负载数量。您可以单击展开按钮(<block ref="5bc06105dc11797d871e45be810a1285" category="inline-image-macro-rx" type="image"></block>)以查看有关该策略组的更多详细信息。</block>
   <block id="c2c8552adcdf172b368e6fec79ced7cb" category="list-text">以Windows管理员身份启动PowerShell或命令提示符。</block>
-  <block id="177f4885c5bf3cc6b06090613bb7d325" category="paragraph">如果先前在 Red Hat Enterprise Linux 7.x 系统上安装了 Unified Manager ，但需要升级到 Red Hat Enterprise Linux 8.x ，则必须按照本主题中列出的过程之一进行操作。在这两种情况下，都必须在 Red Hat Enterprise Linux 7.x 系统上创建 Unified Manager 的备份，然后将备份还原到 Red Hat Enterprise Linux 8.x 系统。请注意、支持的Red Hat Enterprise Linux版本为8.0到8.7。</block>
   <block id="06d1a3f5a2c1fab663374946419b7a46" category="paragraph">请参见 <block ref="9a98c86d8dafdd1ad792c075346a9c0b" category="inline-link-macro-rx"></block> 如果需要查看备份和还原过程的详细说明、</block>
   <block id="1f627cf53c59c3dcb003a3d36f72e53e" category="image-alt">显示Unified Manager单个实例的用户界面屏幕截图。</block>
   <block id="e0ed7cd9eee5c90155f220097a342182" category="image-alt">显示切换期间卷行为的UI屏幕截图。</block>
@@ -11839,10 +11838,8 @@
   <block id="101ed5d45d39d829253fdd5f84c4d9d7" category="list-text">Python 3.11.6.</block>
   <block id="18b8e2dd4de2bb94ea0dce1e4606ffc4" category="list-text">OpenJDK 11.0.20版</block>
   <block id="3d89b288e65d6d87dbc31d2d93a06f41" category="list-text">p7zip 23.01或更高版本</block>
-  <block id="9dfe805f2bba465e37c9c6757ce064ac" category="list-text">Red Hat Enterprise Linux 7.x版以及8.0到8.8版、基于x86_64架构。</block>
   <block id="9bbfe0d422adb66f304c54f3a069e88e" category="list-text">MySQL Community Edition 8.0.34版(来自MySQL存储库)。</block>
   <block id="127ae3963ea9ca262d43af6b6d82938e" category="list-text">OpenJDK 11.0.21版(来自Red Hat Extra Enterprise Linux Server存储库)</block>
-  <block id="2bc26f2d587b7f2c75ca61793e89fbc7" category="list-text">操作系统：Red Hat Enterprise Linux 7.x版以及8.0至8.8版、或基于x86_64架构的CentOS 7.x版、使用操作系统安装程序的*软件选择*选项中的"带GUI的服务器"基础环境安装</block>
   <block id="70f9b1502d4d74c5b86a102e5ed80559" category="paragraph">您可以通过在Linux平台上下载并运行安装文件从Unified Manager 9.12或9.13升级到9.14。</block>
   <block id="3e82c40e991bcdfb3d6c360a665ef534" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.34、则Unified Manager升级过程会自动将MySQL升级到8.0.34。</block>
   <block id="98339216090f0e21ec0ce31d07a59ccf" category="paragraph">OpenJDK 11.0.21版</block>
@@ -11971,4 +11968,11 @@
   <block id="e9686e752e3e1702e7ee8d1247e9c592" category="paragraph">Storage VM已停止(ocumEvtVserverDown)</block>
   <block id="16fca8959952fb5be3bdfc77f00821e0" category="paragraph">已违反卷延迟严重阈值(ocumVolumeLatencyIncident)</block>
   <block id="41c588540e5418dc49ed54117bd1d484" category="paragraph">已违反卷延迟警告阈值(ocumVolumeLatencyWarning)</block>
+  <block id="5ecb6b24c169667ff1a176768115659e" category="inline-link-macro">Active IQ Unified Manager</block>
+  <block id="04bf06d7ddd618e01f3388a565561c94" category="paragraph">请参见<block ref="08ef7b83d66900e05791163681900cc0" category="inline-link-macro-rx"></block>有关Active IQ Unified Manager REST API优势的其他资源和详细信息、。</block>
+  <block id="ad2d4575f8f305de83b3e406cdad115f" category="list-text">操作系统：Red Hat Enterprise Linux 7.x版以及8.0至8.9版、或基于x86_64架构的CentOS 7.x版、使用操作系统安装程序的*软件选择*选项中的"带GUI的服务器"基础环境安装</block>
+  <block id="0feb8d909617c698c7aa00be9205f4f1" category="list-text">Red Hat Enterprise Linux 7.x版以及8.0到8.9版、基于x86_64架构。</block>
+  <block id="d01c7fd00ba6c9452b308e1826f0d881" category="paragraph">如果先前在Red Hat Enterprise Linux 7.x系统上安装了Unified Manager、但需要升级到Red Hat Enterprise Linux 8.x、则必须按照本主题中列出的过程之一进行操作。在这两种情况下、都必须在Red Hat Enterprise Linux 7.x系统上创建Unified Manager的备份、然后将备份还原到Red Hat Enterprise Linux 8.x系统。请注意、支持的Red Hat Enterprise Linux版本为8.0到8.9。</block>
+  <block id="1d10af70fc531ee31e978a17395f4f8a" category="sidebar">Unified Manager管理信息库(MIB)</block>
+  <block id="cda417ab3ce8513849242e7fb90f668c" category="sidebar">Unified Manager数据库架构</block>
 </blocks>
