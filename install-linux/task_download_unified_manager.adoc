@@ -17,7 +17,7 @@ summary: '要安装 Unified Manager ，您必须从 NetApp 支持站点下载 Un
 
 您必须具有 NetApp 支持站点的登录凭据。
 
-您可以为 Red Hat Enterprise Linux 和 CentOS 系统下载相同的 Unified Manager 安装包。
+您可以下载适用于Red Hat Enterprise Linux系统的Unified Manager安装包。
 
 .步骤
 . 登录到 NetApp 支持站点，然后导航到 Unified Manager 的 Download 页面：

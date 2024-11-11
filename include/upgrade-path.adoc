@@ -13,16 +13,16 @@ summary: 支持的升级路径
 [role="lead"]
 Active IQ Unified Manager 支持每个版本使用特定的升级路径。
 
-并非所有Unified Manager版本都可以原位升级到更高版本。Unified Manager升级仅限于N-2型号、这意味着只能在所有平台上的未来2个版本中执行升级。例如、您只能从Unified Manager 9.12和9.13升级到Unified Manager 9.14。
+并非所有Unified Manager版本都可以原位升级到更高版本。Unified Manager升级仅限于N-2型号、这意味着只能在所有平台上的未来2个版本中执行升级。例如、您只能从Unified Manager 9.13和9.14升级到Unified Manager 9.16。
 
 如果您运行的版本早于受支持的版本、则需要先将Unified Manager实例升级到受支持的版本之一、然后再升级到当前版本。
 
 例如、如果您安装的版本是Unified Manager 9.9、而您要升级到Unified Manager 9.14、则需要执行一系列升级。
 
 .升级路径示例：
-. 升级9.9->9.11.
 . 升级9.11 -> 9.13
 . 升级9.13 -> 9.14
+. 升级9.14 -> 9.16
 
 
 有关升级路径列表的详细信息、请参见此内容 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/What_is_the_upgrade_path_for_Active_IQ_Unified_Manager_versions["知识库(KB)文章"]。

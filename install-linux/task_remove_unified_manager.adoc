@@ -2,7 +2,7 @@
 permalink: install-linux/task_remove_unified_manager.html 
 sidebar: sidebar 
 keywords: remove, unified manager 
-summary: 只需一个命令，即可从 Red Hat Enterprise Linux 或 CentOS 主机停止和卸载 Unified Manager 。 
+summary: 只需使用一个命令、即可从Red Hat Enterprise Linux主机停止并卸载Unified Manager。 
 ---
 = 正在删除 Unified Manager
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 只需一个命令，即可从 Red Hat Enterprise Linux 或 CentOS 主�
 
 
 [role="lead"]
-只需一个命令，即可从 Red Hat Enterprise Linux 或 CentOS 主机停止和卸载 Unified Manager 。
+只需使用一个命令、即可从Red Hat Enterprise Linux主机停止并卸载Unified Manager。
 
 * 您需要的内容 *
 

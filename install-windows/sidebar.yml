@@ -45,6 +45,8 @@ entries:
     entries:
     - title: 升级 OpenJDK
       url: "/install-windows/task_upgrade_openjdk_on_windows_ocum.html"
+  - title: 卸载第三方产品
+    url: "/install-windows/task_uninstall_third_party_products.html"
   - title: 正在重新启动 Unified Manager
     url: "/install-windows/task_restart_unified_manager_win.html"
   - title: 卸载 Unified Manager

@@ -15,7 +15,7 @@ MySQL 数据库转储备份是 Active IQ Unified Manager 数据库和配置文�
 
 [NOTE]
 ====
-如果 Unified Manager 安装在 Linux 和 Windows 服务器上，则 MySQL 数据库转储是默认的备份机制。但是、如果Unified Manager正在管理大量集群和节点、或者您的MySQL备份需要数小时才能完成、则可以使用Snapshot副本进行备份。此功能可在Red Hat Enterprise Linux、CentOS Linux系统和Windows上使用。
+如果 Unified Manager 安装在 Linux 和 Windows 服务器上，则 MySQL 数据库转储是默认的备份机制。但是、如果Unified Manager正在管理大量集群和节点、或者您的MySQL备份需要数小时才能完成、则可以使用Snapshot副本进行备份。此功能在Red Hat Enterprise Linux和Windows上可用。
 
 ====
 数据库转储备份由备份目录中的一个文件和数据库存储库目录中的一个或多个文件组成。备份目录中的文件非常小，因为它仅包含指向重新创建备份所需的数据库存储库目录中的文件的指针。

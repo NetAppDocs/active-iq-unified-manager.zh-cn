@@ -15,7 +15,7 @@ summary: '如果在最初设置 Linux 主机并安装 Unified Manager 时为 ` /
 
 * 您需要的内容 *
 
-您必须对安装了 Unified Manager 的 Red Hat Enterprise Linux 或 CentOS Linux 计算机具有 root 用户访问权限。
+您必须对安装了Unified Manager的Red Hat Enterprise Linux计算机具有root用户访问权限。
 
 建议您在增加数据目录大小之前备份 Unified Manager 数据库。
 

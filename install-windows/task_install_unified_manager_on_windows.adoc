@@ -29,6 +29,7 @@ summary: 您可以安装 Unified Manager 来监控数据存储容量，可用性
 
 ====
 * 您应具有 Windows 管理员权限。确保您的用户名不以感叹号 "` ！` " 开头。如果运行此安装的用户名以 "` ！` " 开头，则安装 Unified Manager 可能会失败。
+* 除ASA R2系统之外、所有集群均受支持。
 * 您应具有受支持的 Web 浏览器。
 * Unified Manager 维护用户密码应介于 8 到 20 个字符之间，并应包含大写字母或小写字母，数字和特殊字符。
 * 维护用户或 MySQL root 用户的密码字符串不允许包含以下特殊字符： " ' ` % ， = & < > = ^ \ / （） [ ] ；：
@@ -44,8 +45,8 @@ summary: 您可以安装 Unified Manager 来监控数据存储容量，可用性
 https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp 支持站点"^]
 
 . 选择所需的 Unified Manager 版本并接受最终用户许可协议（ EULA ）。
-. 将 Unified Manager Windows 安装文件下载到 Windows 系统上的目标目录。
-. 导航到安装文件所在的目录。
+. 将Unified Manager Windows安装文件或zip文件下载到Windows系统上的目标目录。
+. 如果需要、解压缩此zip文件、然后导航到安装文件所在的目录。
 . 右键单击并以管理员身份运行 Unified Manager 安装程序可执行文件（ .exe ）。
 +
 Unified Manager 会检测缺少的或预先安装的第三方软件包并列出它们。如果系统中未安装所需的第三方软件包，则 Unified Manager 会在安装过程中安装这些软件包。

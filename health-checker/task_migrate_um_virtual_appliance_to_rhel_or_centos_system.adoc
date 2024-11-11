@@ -2,7 +2,7 @@
 permalink: health-checker/task_migrate_um_virtual_appliance_to_rhel_or_centos_system.html 
 sidebar: sidebar 
 keywords: unified manager, migrate, virtual, appliance, linux system 
-summary: 如果要更改运行 Unified Manager 的主机操作系统，您可以将 Unified Manager MySQL 数据库转储备份从虚拟设备还原到 Red Hat Enterprise Linux 或 CentOS Linux 系统。 
+summary: 如果要更改运行Unified Manager的主机操作系统、可以将Unified Manager MySQL数据库转储备份从虚拟设备还原到Red Hat Enterprise Linux系统。 
 ---
 = 将 Unified Manager 虚拟设备迁移到 Linux 系统
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 如果要更改运行 Unified Manager 的主机操作系统，您可以
 
 
 [role="lead"]
-如果要更改运行 Unified Manager 的主机操作系统，您可以将 Unified Manager MySQL 数据库转储备份从虚拟设备还原到 Red Hat Enterprise Linux 或 CentOS Linux 系统。
+如果要更改运行Unified Manager的主机操作系统、可以将Unified Manager MySQL数据库转储备份从虚拟设备还原到Red Hat Enterprise Linux系统。
 
 * 您需要的内容 *
 
@@ -31,7 +31,7 @@ summary: 如果要更改运行 Unified Manager 的主机操作系统，您可以
 
 
 
-以下步骤介绍如何在虚拟设备上创建备份文件，将备份文件复制到 Red Hat Enterprise Linux 或 CentOS 系统，然后将数据库备份还原到新系统。
+以下步骤介绍如何在虚拟设备上创建备份文件、将备份文件复制到Red Hat Enterprise Linux、然后将数据库备份还原到新系统。
 
 .步骤
 . 在虚拟设备上，单击 * 管理 * > * 数据库备份 * 。

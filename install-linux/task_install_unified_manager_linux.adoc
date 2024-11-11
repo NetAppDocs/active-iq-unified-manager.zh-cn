@@ -2,7 +2,7 @@
 permalink: install-linux/task_install_unified_manager_linux.html 
 sidebar: sidebar 
 keywords: install, unified manager 
-summary: 您可以在物理或虚拟 Red Hat Enterprise Linux 或 CentOS 平台上安装 Unified Manager 。 
+summary: 您可以在物理或虚拟Red Hat Enterprise Linux平台上安装Unified Manager。 
 ---
 = 安装 Unified Manager
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您可以在物理或虚拟 Red Hat Enterprise Linux 或 CentOS 平台�
 
 
 [role="lead"]
-您可以在物理或虚拟 Red Hat Enterprise Linux 或 CentOS 平台上安装 Unified Manager 。
+您可以在物理或虚拟Red Hat Enterprise Linux平台上安装Unified Manager。
 
 * 您需要的内容 *
 
@@ -28,7 +28,7 @@ summary: 您可以在物理或虚拟 Red Hat Enterprise Linux 或 CentOS 平台�
 * 您的终端模拟软件必须已启用 scrollback 。
 
 
-Red Hat Enterprise Linux 或 CentOS 系统可能已安装所需支持软件的所有必需版本（ Java ， MySQL ，其他实用程序），仅安装了部分必需软件，或者可能是新安装的系统，但未安装任何所需软件。
+Red Hat Enterprise Linux系统可能安装了所需支持软件的所有必需版本(Java、MySQL、附加实用程序)、仅安装了部分必需软件、或者可能是未安装任何所需软件的新安装系统。
 
 .步骤
 . 登录到要安装 Unified Manager 的服务器。
@@ -131,7 +131,7 @@ Unified Manager 所需的 ` .rpm` 模块将解压缩到目标目录。
 +
 [NOTE]
 ====
-请勿尝试使用其他命令（例如 `rpm -ivh` ）进行安装。要在 Red Hat Enterprise Linux 或 CentOS 系统上成功安装 Unified Manager ，需要按特定顺序将所有 Unified Manager 文件和相关文件安装到特定的目录结构中，此结构由 `yum install netapp-um<version>.x86_64` 命令自动强制实施。
+请勿尝试使用替代命令(如)进行安装 `rpm -ivh`。要在Red Hat Enterprise Linux系统上成功安装Unified Manager、所有Unified Manager文件和相关文件都必须按特定顺序安装到命令自动强制实施的特定目录结构中 `yum install netapp-um<version>.x86_64.rpm`。
 
 ====
 . 忽略安装消息后立即显示的电子邮件通知。

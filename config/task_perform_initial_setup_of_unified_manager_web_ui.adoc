@@ -39,7 +39,7 @@ image::../media/first_experience_wizard.JPG[显示VMware上安装页面的UI屏�
 +
 如果您需要指定一个代理来提供 Internet 访问以发送 AutoSupport 内容，或者要禁用 AutoSupport ，请使用 Web UI 中的 * 常规 * > * AutoSupport * 选项。
 
-. 在Red Hat和CentOS系统上、将umadmin用户密码从默认的"`admin`"字符串更改为个性化字符串。
+. 在Red Hat系统上、将umadmin用户密码从默认的"`admin`"字符串更改为个性化字符串。
 . 在设置 API 网关页面中，选择是否要使用 API 网关功能，以便 Unified Manager 能够管理计划使用 ONTAP REST API 监控的 ONTAP 集群。然后单击 * 继续 * 。
 +
 您可以稍后在 Web UI 中通过 * 常规 * > * 功能设置 * > * API 网关 * 启用或禁用此设置。有关API的详细信息、请参见 link:../api-automation/concept_get_started_with_um_apis.html["Active IQ Unified Manager REST API入门"]。

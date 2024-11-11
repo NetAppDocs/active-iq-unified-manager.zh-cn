@@ -11,7 +11,7 @@ summary: 您可以通过在Linux平台上下载并运行安装文件来升级Uni
 
 
 [role="lead"]
-您可以通过在Linux平台上下载并运行安装文件从Unified Manager 9.12或9.13升级到9.14。
+您可以通过在Linux平台上下载并运行安装文件从Unified Manager 9.13或9.14升级到9.16。
 
 * 您需要的内容 *
 
@@ -34,7 +34,7 @@ summary: 您可以通过在Linux平台上下载并运行安装文件来升级Uni
 
 
 .步骤
-. 登录到目标 Red Hat Enterprise Linux 或 CentOS 服务器。
+. 登录到目标Red Hat Enterprise Linux服务器。
 . 将 Unified Manager 捆绑包下载到服务器。
 +
 请参见 link:task_download_unified_manager.html["下载Unified Manager for Linux"]。

@@ -2,7 +2,7 @@
 permalink: install-linux/reference_users_created_in_unified_manager.html 
 sidebar: sidebar 
 keywords: users, created, unified manager, installation 
-summary: 在 Red Hat Enterprise Linux 或 CentOS 上安装 Unified Manager 时， Unified Manager 和第三方实用程序会创建以下用户： umadmin ， jboss 和 mysql 。 
+summary: 在Red Hat Enterprise Linux上安装Unified Manager时、Unified Manager和第三方实用程序会创建以下用户：umadmin、jjjJBoss和myql。 
 ---
 = 在 Unified Manager 安装期间创建的用户
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 在 Red Hat Enterprise Linux 或 CentOS 上安装 Unified Manager 时�
 
 
 [role="lead"]
-在 Red Hat Enterprise Linux 或 CentOS 上安装 Unified Manager 时， Unified Manager 和第三方实用程序会创建以下用户： umadmin ， jboss 和 mysql 。
+在Red Hat Enterprise Linux上安装Unified Manager时、Unified Manager和第三方实用程序会创建以下用户：umadmin、jjjJBoss和myql。
 
 * * umadmin*
 +

@@ -15,7 +15,7 @@ summary: 通过网络配置菜单，您可以管理网络设置。如果 Unified
 
 [NOTE]
 ====
-如果 Unified Manager 安装在 Red Hat Enterprise Linux ， CentOS 或 Microsoft Windows 上，则此菜单不可用。
+如果Unified Manager安装在Red Hat Enterprise Linux或Microsoft Windows上、则此菜单不可用。
 
 ====
 可以使用以下菜单选项。

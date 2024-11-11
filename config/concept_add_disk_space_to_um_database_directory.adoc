@@ -20,4 +20,4 @@ Unified Manager 数据库目录包含从 ONTAP 系统收集的所有运行状况
 目录已满 95% 后，不会从集群收集其他数据。
 
 ====
-根据 Unified Manager 是在 VMware ESXi 服务器， Red Hat 或 CentOS Linux 服务器上还是在 Microsoft Windows 服务器上运行，向数据目录添加容量所需的步骤会有所不同。
+根据Unified Manager是在VMware ESXi服务器、Red Hat服务器还是Microsoft Windows服务器上运行、向数据目录添加容量所需的步骤会有所不同。

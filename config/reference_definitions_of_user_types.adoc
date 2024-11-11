@@ -17,7 +17,7 @@ Unified Manager 用户类型如下：
 
 * * 维护用户 *
 +
-在 Unified Manager 的初始配置期间创建。然后，维护用户创建其他用户并分配角色。维护用户也是唯一有权访问维护控制台的用户。如果 Unified Manager 安装在 Red Hat Enterprise Linux 或 CentOS 系统上，维护用户将获得用户名 "`umadmin.` "
+在 Unified Manager 的初始配置期间创建。然后，维护用户创建其他用户并分配角色。维护用户也是唯一有权访问维护控制台的用户。如果Unified Manager安装在Red Hat Enterprise Linux系统上、则维护用户的用户名为"`umadmin.`"
 
 * * 本地用户 *
 +

@@ -13,7 +13,7 @@ summary: 如果要安装 Unified Manager 的系统无法访问适用于 Enterpri
 [role="lead"]
 如果要安装 Unified Manager 的系统无法访问适用于 Enterprise Linux 的额外软件包（ EEL ）存储库，则必须手动下载并配置存储库才能成功安装。
 
-通过 EPEL 存储库，您可以访问必须安装在系统上的所需第三方实用程序。无论您是在Red Hat Enterprise Linux还是CentOS系统上安装Unified Manager、都可以使用EPEL存储库。
+通过 EPEL 存储库，您可以访问必须安装在系统上的所需第三方实用程序。您可以使用EPEL存储库在Red Hat Enterprise Linux系统上安装Unified Manager。
 
 .步骤
 . 下载适用于您的安装的 EPEL 存储库。对于 Red Hat Enterprise Linux 7 ，请从以下位置下载：
