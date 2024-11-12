@@ -11800,15 +11800,12 @@
   <block id="f98499a614ee3e46a1d64724ab7c8d2e" category="list-text">如果安装的MySQL版本早于MySQL 8.0.34 Community Edition、请输入以下命令将其卸载：</block>
   <block id="80bdec6524a5d6db6b1fc5272cd81192" category="paragraph">您可以将Active IQ Unified Manager虚拟设备从9.12或9.13版升级到9.14版。</block>
   <block id="c73b4673fd357d50ad7fe6b46f0de007" category="list-text">操作系统：VMware ESXi 7.0和8.0</block>
-  <block id="6e6893b593d627add14e7a987c9dea2d" category="inline-link">Active IQ Unified Manager 9.14通知</block>
-  <block id="4b72586187e7bd694fd5d9d2189fcc3f" category="paragraph"><block ref="4b72586187e7bd694fd5d9d2189fcc3f" category="inline-link-rx"></block></block>
   <block id="3a44bb5359e8b73237753f7fe7d14cc2" category="paragraph">例如、如果您安装的版本是Unified Manager 9.9、而您要升级到Unified Manager 9.14、则需要执行一系列升级。</block>
   <block id="1e2075a18224b2ccd4cd9feb5cb36456" category="list-text">升级9.11 -&gt; 9.13</block>
   <block id="de77bda92bea07bb345ff4c0d56146c5" category="list-text">升级9.13 -&gt; 9.14</block>
   <block id="ab71876b04bdf2178a36a1f75c0b521f" category="admonition">Graphite服务器不会从Unified Manager接收卷的性能数据。</block>
   <block id="9f05e01be7e6790732b731bbb5ffe318" category="admonition">如果集群运行ONTAP 9.14.1或更高版本、则监控节点根卷的功能不可用。</block>
   <block id="2bff5bcae094d4c1fca66b645c79b006" category="admonition">如果集群运行ONTAP 9.14.1或更高版本、则监控节点根聚合的功能不可用。</block>
-  <block id="72ad43fc7a8d740f98987759e25205fd" category="paragraph">有关详细信息，请参见<block ref="6bb46765ad444f2cca095cf3f36f15dd" category="inline-link-rx"></block>。</block>
   <block id="2466264a3b3e9cd0747d6419241007ef" category="paragraph">此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。由于公司法规的原因、您的Linux系统上可能安装了漏洞扫描程序(如Quulis)。您应在安装Unified Manager之前禁用漏洞扫描程序、以防止安装失败。</block>
   <block id="d399c2619eb2015cdbc0feeecd5393c0" category="inline-link">ActiveIQ Unified Manager无法安装外部生成的证书</block>
   <block id="e27fc816983568847a34ee8cfa2a43ac" category="paragraph">如果证书安装失败、请参见知识库(KB)文章：
@@ -11968,7 +11965,6 @@
   <block id="b71bc857cc2265ac2904750b41b56a3f" category="paragraph">您必须对安装了Unified Manager的Red Hat Enterprise Linux服务器具有root用户访问权限。</block>
   <block id="03e62ce635e27d3eae3fc7eb1fdb7d43" category="paragraph">您可以通过在Linux平台上下载并运行安装文件从Unified Manager 9.13或9.14升级到9.16。</block>
   <block id="3066d6a2a21e06439438c95e8f0a78ab" category="list-text">登录到目标Red Hat Enterprise Linux服务器。</block>
-  <block id="1af6d75cb215145d2b721ba6d31196de" category="paragraph">您只能将Active IQ Unified Manager从9.12或9.13升级到9.16版。</block>
   <block id="85e1cde38f7710ac3710a0ca4b341ad5" category="list-text">除ASA R2系统之外、所有集群均受支持。</block>
   <block id="a6f8396e876411d4ce52d9a1c9c7726e" category="list-text">将Unified Manager Windows安装文件或zip文件下载到Windows系统上的目标目录。</block>
   <block id="8f1edca040f984e1b9d6867249003ff5" category="list-text">如果需要、解压缩此zip文件、然后导航到安装文件所在的目录。</block>
@@ -11989,4 +11985,8 @@
   <block id="9d8f72b258db1905ee26b8543db626af" category="paragraph">根据Unified Manager是在VMware ESXi服务器、Red Hat Linux服务器还是Microsoft Windows服务器上运行、向数据目录添加容量所需的步骤会有所不同。</block>
   <block id="7a7c62cdb283859bf82dbc6d358c3473" category="sidebar">通过Active IQ Unified Manager (Unified Manager、以前称为OnCommand Unified Manager)、您可以从一个界面监控和管理ONTAP 存储系统的运行状况和性能。本文档库包含版本9.16的信息。</block>
   <block id="5d0df7caff39f371f91e7b06354eb3b0" category="sidebar">Active IQ Unified Manager 9.16文档</block>
+  <block id="d9f6c085dd395f22b9dc3195122f05fb" category="paragraph">您只能将Active IQ Unified Manager从9.13或9.14升级到9.16版。</block>
+  <block id="91804ef74bc975f4a628c4e14934bd25" category="inline-link">Active IQ Unified Manager 9.16通知</block>
+  <block id="4312f256415ac9316c181d6509543043" category="paragraph"><block ref="4312f256415ac9316c181d6509543043" category="inline-link-rx"></block></block>
+  <block id="fba32ed5ef4b0254843c57fba4656cfe" category="paragraph">有关详细信息，请参见<block ref="2392cb263ac956dff7e4bed674b7b943" category="inline-link-rx"></block>。</block>
 </blocks>
