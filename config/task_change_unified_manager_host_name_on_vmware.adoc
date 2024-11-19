@@ -13,8 +13,7 @@ summary: 首次部署 Unified Manager 虚拟设备时，系统会为网络主机
 [role="lead"]
 首次部署 Unified Manager 虚拟设备时，系统会为网络主机分配一个名称。您可以在部署后更改主机名。如果更改主机名，则还必须重新生成 HTTPS 证书。
 
-* 您需要的内容 *
-
+.开始之前
 要执行这些任务，您必须以维护用户身份登录到 Unified Manager 或分配有应用程序管理员角色。
 
 您可以使用主机名（或主机 IP 地址）访问 Unified Manager Web UI 。如果您在部署期间为网络配置了静态 IP 地址，则应指定网络主机的名称。如果使用 DHCP 配置网络，则应从 DNS 中获取主机名。如果 DHCP 或 DNS 配置不正确，系统会自动分配主机名 "`Unified Manager` " 并将其与安全证书关联。

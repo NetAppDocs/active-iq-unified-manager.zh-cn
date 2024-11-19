@@ -13,8 +13,7 @@ summary: 使用运行状况：所有卷视图，您可以通过在同一个 Stor
 [role="lead"]
 使用运行状况：所有卷视图，您可以通过在同一个 Storage VM 上选择多个卷来一次创建多个 SnapMirror 保护关系。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有应用程序管理员或存储管理员角色。
 * 您必须已设置 Workflow Automation 。
 

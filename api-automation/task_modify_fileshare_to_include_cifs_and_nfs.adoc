@@ -13,8 +13,7 @@ summary: 您可以修改 NFS 文件共享以支持 CIFS 协议。在创建文件
 [role="lead"]
 您可以修改 NFS 文件共享以支持 CIFS 协议。在创建文件共享期间，可以为同一文件共享同时指定访问控制列表（ ACL ）参数和导出策略规则。但是，如果要在创建 NFS 文件共享的同一个卷上启用 CIFS ，则可以更新该文件共享上的 ACL 参数以支持 CIFS 。
 
-* 您需要的内容 *
-
+.开始之前
 . 创建的 NFS 文件共享必须仅包含导出策略详细信息。有关信息，请参见 _Manag管理 文件共享 _ 和 _Modifying storage workloads _ 。
 . 要运行此操作，您必须具有文件共享密钥。有关使用作业 ID 查看文件共享详细信息和检索文件共享密钥的信息，请参见 _Provisioning CIFS and NFS file shares_ 。
 

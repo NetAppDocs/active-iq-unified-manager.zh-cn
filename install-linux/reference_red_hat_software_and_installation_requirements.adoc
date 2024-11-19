@@ -1,5 +1,5 @@
 ---
-permalink: install-linux/reference_red_hat_and_centos_software_and_installation_requirements.html 
+permalink: install-linux/reference_red_hat_software_and_installation_requirements.html 
 sidebar: sidebar 
 keywords: linux software, installation requirements, system, authorization,  requirements 
 summary: 安装 Unified Manager 的 Linux 系统需要特定版本的操作系统和支持软件。 
@@ -41,7 +41,7 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Ma
 
 * MySQL Community Edition 8.0.37版(来自MySQL存储库)。
 * OpenJDK 11.0.23版(来自Red Hat Extra Enterprise Linux Server存储库)
-* Python 3.6.x
+* Python 3.9.x (来自Red Hat Extra Enterprise Linux Server存储库)
 * p7zip 16.02 或更高版本（从 Red Hat Extra Packages for Enterprise Linux 存储库）
 
 

@@ -13,8 +13,7 @@ summary: 要查看虚拟机（ VM ）的性能并对其进行故障排除，必�
 [role="lead"]
 要查看虚拟机（ VM ）的性能并对其进行故障排除，必须在 Active IQ Unified Manager 实例上添加关联的 vCenter Server 。
 
-* 您需要的内容 *
-
+.开始之前
 在添加或查看 vCenter Server 之前，请确保满足以下条件：
 
 * 您知道 vCenter Server 名称。

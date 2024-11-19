@@ -13,8 +13,7 @@ summary: 您可以通过在 Workflow Automation 中检查数据源采集是否�
 [role="lead"]
 您可以通过在 Workflow Automation 中检查数据源采集是否成功来确定 Unified Manager 数据源缓存是否正常工作。如果将 Workflow Automation 与 Unified Manager 集成，则可以执行此操作，以确保集成后 Workflow Automation 功能可用。
 
-* 您需要的内容 *
-
+.开始之前
 要执行此任务，必须在 Workflow Automation 中为您分配管理员角色或架构师角色。
 
 .步骤

@@ -13,8 +13,7 @@ summary: 您可以创建组来组合集群，卷和 Storage Virtual Machine （ 
 [role="lead"]
 您可以创建组来组合集群，卷和 Storage Virtual Machine （ SVM ），以便于管理。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员或存储管理员角色。
 
 您可以定义组规则，以便在组中添加或删除成员以及修改组的组操作。

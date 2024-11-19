@@ -61,7 +61,7 @@ summary: 基于 Linux 平台的 Unified Manager 快速入门指南。
 
 === 安装 Unified Manager
 
-Unified Manager可使用 `yum`实用程序安装软件和任何相关软件。由于Red Hat Enterprise Linux的映像各不相同、因此安装的软件包取决于映像中的软件。该 `yum`实用程序将确定要安装的相关软件包。如果需要有关相关软件包的详细信息，请参见link:../install-linux/reference_red_hat_and_centos_software_and_installation_requirements.html["Linux 软件和安装要求"]。
+Unified Manager可使用 `yum`实用程序安装软件和任何相关软件。由于Red Hat Enterprise Linux的映像各不相同、因此安装的软件包取决于映像中的软件。该 `yum`实用程序将确定要安装的相关软件包。如果需要有关相关软件包的详细信息，请参见link:../install-linux/reference_red_hat_software_and_installation_requirements.html["Linux 软件和安装要求"]。
 
 要安装 Unified Manager ，请以 root 用户身份或使用 `sUdo` 从解压缩安装文件的目录运行以下命令：
 

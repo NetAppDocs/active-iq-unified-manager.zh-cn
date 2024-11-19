@@ -13,8 +13,7 @@ summary: 您可以通过删除安装了 Unified Manager 软件的虚拟机（ VM
 [role="lead"]
 您可以通过删除安装了 Unified Manager 软件的虚拟机（ VM ）来卸载 Unified Manager 。
 
-* 您需要的内容 *
-
+.开始之前
 * 您应具有用于访问 VMware vCenter Server 和 vSphere Web Client 的凭据。
 * 应关闭 Unified Manager 服务器与 Workflow Automation 服务器的任何活动连接。
 * 在删除虚拟机（ VM ）之前，应从 Unified Manager 服务器中删除所有集群（数据源）。

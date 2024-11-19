@@ -13,8 +13,7 @@ summary: 在Windows上备份Unified Manager后、您应配置用于存储Snapsho
 [role="lead"]
 在Windows上备份Unified Manager后、您应配置用于存储Snapshot副本的卷。
 
-* 您需要的内容 *
-
+.开始之前
 集群， Storage VM 和卷必须满足以下要求：
 
 * 集群要求：

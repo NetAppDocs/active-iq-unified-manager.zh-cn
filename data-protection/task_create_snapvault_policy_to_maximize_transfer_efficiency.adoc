@@ -13,8 +13,7 @@ summary: 您可以创建新的 SnapVault 策略来设置 SnapVault 传输的优�
 [role="lead"]
 您可以创建新的 SnapVault 策略来设置 SnapVault 传输的优先级。您可以使用策略最大程度地提高保护关系中从主卷到二级卷的传输效率。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有应用程序管理员或存储管理员角色。
 * 您必须已设置 Workflow Automation 。
 * 您必须已完成配置保护对话框中的目标信息区域。

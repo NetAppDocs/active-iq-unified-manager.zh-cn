@@ -45,7 +45,7 @@ entries:
       - title: 重新启动 Unified Manager 虚拟机
         url: "/config/task_restart_unified_manager_virtual_machine.html"
     - title: 在 Linux 系统上更改 Unified Manager 主机名
-      url: "/config/task_change_um_host_name_on_rhel_or_centos.html"
+      url: "/config/task_change_um_host_name_on_rhel.html"
   - title: 启用和禁用基于策略的存储管理
     url: "/config/task_enable_and_disable_policy_based_storage_management.html"
 - title: 配置 Unified Manager 备份

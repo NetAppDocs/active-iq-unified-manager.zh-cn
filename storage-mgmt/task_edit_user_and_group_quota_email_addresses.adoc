@@ -13,8 +13,7 @@ summary: '您可以根据与集群， Storage Virtual Machine （ SVM ），卷�
 [role="lead"]
 您可以根据与集群， Storage Virtual Machine （ SVM ），卷， qtree ，用户或用户组关联的用户配额修改电子邮件地址。如果要覆盖由 " 生成用户和组配额电子邮件地址的规则 " 对话框中指定的规则生成的电子邮件地址，您可以修改此电子邮件地址。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有操作员，应用程序管理员或存储管理员角色。
 * 您必须已查看 link:reference_rules_to_generate_user_and_group_quota.html["创建规则的准则"]。
 

@@ -13,8 +13,7 @@ summary: 您可以从维护控制台重新启动 Unified Manager 虚拟机（ VM
 [role="lead"]
 您可以从维护控制台重新启动 Unified Manager 虚拟机（ VM ）。在生成新的安全证书之后，或者如果虚拟机出现问题，您应重新启动虚拟机。
 
-* 您需要的内容 *
-
+.开始之前
 * 应打开虚拟设备的电源。
 * 您应以维护用户身份登录到 Unified Manager 维护控制台。
 

@@ -148,7 +148,7 @@ entries:
       - title: 什么是数据库还原
         url: "/health-checker/concept_what_database_restore_is.html"
       - title: 在 Linux 系统上还原 MySQL 数据库备份
-        url: "/health-checker/task_restore_mysql_db_on_linux_or_centos.html"
+        url: "/health-checker/task_restore_mysql_db_on_linux.html"
       - title: 在 Windows 上还原 MySQL 数据库备份
         url: "/health-checker/task_restore_mysql_database_backup_on_windows.html"
     - title: 使用 NetApp Snapshot 进行备份和还原
@@ -183,7 +183,7 @@ entries:
     - title: Unified Manager 的按需备份
       url: "/health-checker/concept_on_demand_backup_for_unified_manger.html"
     - title: 将 Unified Manager 虚拟设备迁移到 Linux 系统
-      url: "/health-checker/task_migrate_um_virtual_appliance_to_rhel_or_centos_system.html"
+      url: "/health-checker/task_migrate_um_virtual_appliance_to_rhel_system.html"
   - title: 管理脚本
     url: "/health-checker/concept_manage_scripts.html"
     entries:

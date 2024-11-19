@@ -13,8 +13,7 @@ summary: 您可以使用支持的 Web 浏览器登录到 Unified Manager UI 。
 [role="lead"]
 您可以使用支持的 Web 浏览器登录到 Unified Manager UI 。
 
-* 您需要的内容 *
-
+.开始之前
 * Web 浏览器必须满足最低要求。
 +
 请参见互操作性表，网址为 http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"] 有关支持的浏览器版本的完整列表。

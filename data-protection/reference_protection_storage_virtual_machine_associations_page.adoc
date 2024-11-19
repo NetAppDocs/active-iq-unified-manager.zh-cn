@@ -30,8 +30,7 @@ Storage Virtual Machine (Storage VM)关联是指从源Storage VM到目标Storage
 
 通过创建Storage Virtual Machine关联向导、合作伙伴保护应用程序可以将源Storage VM与目标Storage VM相关联、以便用于SnapMirror和SnapVault 关系。合作伙伴应用程序在初始配置目标卷时使用这些关联来确定要选择的资源。dd
 
-* 您需要的内容 *
-
+.开始之前
 * 要关联的 Storage VM 必须已存在。
 * 您必须具有应用程序管理员或存储管理员角色。
 
@@ -79,8 +78,7 @@ Storage Virtual Machine (Storage VM)关联是指从源Storage VM到目标Storage
 
 您可以删除配对应用程序的Storage VM关联以删除源和目标Storage VM之间的二级配置关系；例如、当目标Storage VM已满且您希望创建新的Storage VM保护关联时、可以执行此操作。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员或存储管理员角色。
 
 除非至少选择一个Storage VM关联、否则*删除*按钮将被禁用。使用删除和创建功能更改关联仅会影响未来的配置操作；它不会移动现有目标卷。

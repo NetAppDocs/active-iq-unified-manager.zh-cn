@@ -13,8 +13,7 @@ summary: 升级 Unified Manager 之前，请从 NetApp 支持站点下载 Unifie
 [role="lead"]
 升级 Unified Manager 之前，请从 NetApp 支持站点下载 Unified Manager 升级文件。
 
-* 您需要的内容 *
-
+.开始之前
 您应具有 NetApp 支持站点的登录凭据。
 
 .步骤

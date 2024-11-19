@@ -13,8 +13,7 @@ summary: 您可以使用清单中的 Storage VM 页面查看 Active IQ Unified M
 [role="lead"]
 您可以使用清单中的 Storage VM 页面查看 Active IQ Unified Manager 中的所有 Storage VM ，并根据其保护状态筛选这些 Storage VM 。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员或存储管理员角色。
 
 此时， Storage VM 视图中会添加一个新列保护角色，用于提供有关 Storage VM 是否受保护的信息。

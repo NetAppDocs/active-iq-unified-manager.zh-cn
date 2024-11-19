@@ -13,8 +13,7 @@ summary: '默认情况下， Active IQ 平台事件会生成并显示在 Unified
 [role="lead"]
 默认情况下， Active IQ 平台事件会生成并显示在 Unified Manager 用户界面中。如果发现这些事件太 " 干扰 " ，或者您不想在 Unified Manager 中查看这些事件，则可以禁止生成这些事件。如果您稍后要恢复接收这些通知，可以启用它们。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员角色。
 
 禁用此功能后， Unified Manager 将立即停止接收 Active IQ 平台事件。

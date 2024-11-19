@@ -13,8 +13,7 @@ summary: 如果要更改 Active IQ Unified Manager 系统的备份类型，则�
 [role="lead"]
 如果要更改 Active IQ Unified Manager 系统的备份类型，则可以使用维护控制台选项。通过*取消配置NetApp Snapshot备份*选项、您可以回退到基于MySQL的备份。
 
-* 您需要的内容 *
-
+.开始之前
 您必须拥有有权登录到 Unified Manager 服务器维护控制台的用户 ID 和密码。
 
 .步骤

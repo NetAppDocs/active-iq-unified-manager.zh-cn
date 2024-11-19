@@ -13,8 +13,7 @@ summary: 您可以使用版本灵活的复制创建 SnapMirror 关系。即使�
 [role="lead"]
 您可以使用版本灵活的复制创建 SnapMirror 关系。即使源卷和目标卷在不同版本的 ONTAP 下运行，也可以通过版本灵活的复制实施 SnapMirror 保护。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有应用程序管理员或存储管理员角色。
 * 您必须已设置 Workflow Automation 。
 * 源和目标 SVM 必须都启用了 SnapMirror 许可证。

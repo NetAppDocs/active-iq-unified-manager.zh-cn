@@ -13,8 +13,7 @@ summary: 要支持在 Workflow Automation 和 Unified Manager 之间建立连接
 [role="lead"]
 要支持在 Workflow Automation 和 Unified Manager 之间建立连接或访问数据库视图，您必须先在 Unified Manager Web UI 中创建一个具有集成架构或报告架构角色的数据库用户。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员角色。
 
 数据库用户可与 Workflow Automation 集成并访问特定于报告的数据库视图。数据库用户无权访问 Unified Manager Web UI 或维护控制台，无法执行 API 调用。

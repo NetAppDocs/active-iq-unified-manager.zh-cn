@@ -11,10 +11,9 @@ summary: 您可以升级 Unified Manager 虚拟设备
 
 
 [role="lead"]
-您可以将Active IQ Unified Manager虚拟设备从9.12或9.13版升级到9.14版。
+您可以将Active IQ Unified Manager虚拟设备从9.13或9.14版升级到9.16版。
 
-* 您需要的内容 *
-
+.开始之前
 确保满足以下要求：
 
 * 您已从 NetApp 支持站点下载升级文件 ISO 映像。

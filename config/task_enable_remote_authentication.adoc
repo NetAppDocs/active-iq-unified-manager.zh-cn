@@ -13,8 +13,7 @@ summary: 您可以启用远程身份验证，以便 Unified Manager 服务器可
 [role="lead"]
 您可以启用远程身份验证，以便 Unified Manager 服务器可以与身份验证服务器进行通信。身份验证服务器的用户可以访问 Unified Manager 图形界面来管理存储对象和数据。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员角色。
 
 [NOTE]

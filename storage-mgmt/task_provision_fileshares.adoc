@@ -13,8 +13,7 @@ summary: 您可以从配置工作负载页面在现有集群和 Storage Virtual 
 [role="lead"]
 您可以从配置工作负载页面在现有集群和 Storage Virtual Machine （ Storage VM ）上创建支持 CIFS/SMB 和 NFS 协议的文件共享卷。
 
-* 您需要的内容 *
-
+.开始之前
 * Storage VM 必须具有用于配置文件共享卷的空间。
 * 应在 Storage VM 上启用 SMB 和 NFS 服务之一或两者。
 * 要选择并分配工作负载的性能服务级别（ PSL ）和存储效率策略（ SEP ），必须在开始创建工作负载之前创建这些策略。

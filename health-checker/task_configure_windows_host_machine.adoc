@@ -13,8 +13,7 @@ summary: '您需要先配置Windows主机、然后才能使用NetApp Snapshot备
 [role="lead"]
 您需要先配置Windows主机、然后才能使用NetApp Snapshot备份和还原Active IQ Unified Manager。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "`iSCSI` " ，然后单击 * iSCSI 启动程序 * 。
 
-* 您需要的内容 *
-
+.开始之前
 您应清理主机上先前的任何配置。
 
 如果您尝试在全新安装的 Windows 上启动 iSCSI 启动程序，系统将提示您进行确认，确认后，将显示 iSCSI 属性对话框。如果是现有的 Windows 安装，则会显示 iSCSI 属性对话框，其中的目标为非活动或正在尝试连接。因此，您需要确保删除 Windows 主机上先前的所有配置。

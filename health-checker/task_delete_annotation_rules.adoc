@@ -13,8 +13,7 @@ summary: 当不再需要标注规则时，您可以从 Active IQ Unified Manager
 [role="lead"]
 当不再需要标注规则时，您可以从 Active IQ Unified Manager 中删除这些规则。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员或存储管理员角色。
 
 删除标注规则时，该标注将解除关联并从存储对象中删除。

@@ -13,8 +13,7 @@ summary: 您可以使用Unified Manager UI配置创建Unified Manager Snapshot�
 [role="lead"]
 您可以使用Unified Manager UI配置创建Unified Manager Snapshot副本的计划。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有操作员，应用程序管理员或存储管理员角色。
 * 您必须已配置从维护控制台创建Snapshot副本的设置、以确定要创建快照的目标。
 

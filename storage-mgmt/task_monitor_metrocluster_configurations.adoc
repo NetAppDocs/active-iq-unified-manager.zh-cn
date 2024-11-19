@@ -21,8 +21,7 @@ summary: 您可以监控 MetroCluster 配置中的连接问题。详细信息包
 
 Unified Manager使用系统运行状况警报指示MetroCluster 配置中组件和连接的状态。
 
-* 您需要的内容 *
-
+.开始之前
 * 必须将MetroCluster 配置中的本地和远程集群添加到Active IQ Unified Manager 中。
 * 在基于IP的MetroCluster 配置中、如果要支持调解器、则应配置调解器、并通过相应的API将其添加到集群中。
 * 您必须具有操作员，应用程序管理员或存储管理员角色。

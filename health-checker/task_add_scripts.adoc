@@ -13,8 +13,7 @@ summary: 您可以在 Unified Manager 中添加脚本，并将这些脚本与警
 [role="lead"]
 您可以在 Unified Manager 中添加脚本，并将这些脚本与警报关联。生成警报时，系统会自动执行这些脚本，您可以通过这些脚本获取有关生成事件的存储对象的信息。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须已创建并保存要添加到 Unified Manager 服务器的脚本。
 * 脚本支持的文件格式为 Perl ， Shell ， PowerShell ， Python 和 ` .bat` 文件。
 +

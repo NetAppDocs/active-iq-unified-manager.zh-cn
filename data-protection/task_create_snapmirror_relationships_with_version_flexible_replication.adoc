@@ -13,8 +13,7 @@ summary: 您可以使用版本灵活的复制和备份选项功能创建 SnapMir
 [role="lead"]
 您可以使用版本灵活的复制和备份选项功能创建 SnapMirror 关系。通过备份选项功能，您可以实施 SnapMirror 保护，并在目标位置保留多个版本的备份副本。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有应用程序管理员或存储管理员角色。
 * 您必须已设置 Workflow Automation 。
 * 源和目标 SVM 必须都启用了 SnapMirror 许可证。

@@ -13,8 +13,7 @@ summary: 您可以使用 Unified Manager Web UI 确认或消除卷脱机的可�
 [role="lead"]
 您可以使用 Unified Manager Web UI 确认或消除卷脱机的可能性，因为托管该 SVM 根卷的节点已关闭，导致其主机 Storage Virtual Machine （ SVM ）停止。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有操作员，应用程序管理员或存储管理员角色。
 
 要确定卷脱机情况是否是由于托管此 SVM 根卷的节点已关闭而导致其主机 SVM 停止的，请执行以下操作：

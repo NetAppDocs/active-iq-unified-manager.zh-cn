@@ -13,8 +13,7 @@ summary: 您可以从配置工作负载页面在现有集群和 Storage Virtual 
 [role="lead"]
 您可以从配置工作负载页面在现有集群和 Storage Virtual Machine （ Storage VM ）上创建支持 CIFS/SMB 和 NFS 协议的 LUN 。
 
-* 您需要的内容 *
-
+.开始之前
 * Storage VM 必须具有用于配置 LUN 的空间。
 * 必须在创建 LUN 的 Storage VM 上启用 iSCSI 和 FCP 。
 * 要选择并分配工作负载的性能服务级别（ PSL ）和存储效率策略（ SEP ），必须在开始创建工作负载之前创建这些策略。

@@ -13,8 +13,7 @@ summary: 要使用Snapshot副本进行Active IQ Unified Manager 备份、您应�
 [role="lead"]
 要使用Snapshot副本进行Active IQ Unified Manager 备份、您应从维护控制台执行一些配置步骤。
 
-* 您需要的内容 *
-
+.开始之前
 您应了解系统的以下详细信息：
 
 * 集群 IP 地址

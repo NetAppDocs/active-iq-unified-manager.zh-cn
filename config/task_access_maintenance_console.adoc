@@ -13,8 +13,7 @@ summary: 如果 Unified Manager 用户界面未运行，或者您需要执行用
 [role="lead"]
 如果 Unified Manager 用户界面未运行，或者您需要执行用户界面中不可用的功能，则可以访问维护控制台来管理 Unified Manager 系统。
 
-* 您需要的内容 *
-
+.开始之前
 您必须已安装并配置 Unified Manager 。
 
 处于非活动状态 15 分钟后，维护控制台会将您注销。

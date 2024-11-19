@@ -16,15 +16,15 @@ summary: 如果要安装 Unified Manager 的系统无法访问适用于 Enterpri
 通过 EPEL 存储库，您可以访问必须安装在系统上的所需第三方实用程序。您可以使用EPEL存储库在Red Hat Enterprise Linux系统上安装Unified Manager。
 
 .步骤
-. 下载适用于您的安装的 EPEL 存储库。对于 Red Hat Enterprise Linux 7 ，请从以下位置下载：
-+
-` +wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm+`[]
-
-+
-对于版本 8 ，请从以下位置下载：
-
+. 下载适用于您的安装的 EPEL 存储库。对于版本 8 ，请从以下位置下载：
 +
 ` +wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm+`[]
+
++
+对于版本 9 ，请从以下位置下载：
+
++
+`wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm`
 
 . 配置 EPEL 存储库：
 +

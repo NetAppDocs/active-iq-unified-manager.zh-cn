@@ -13,8 +13,7 @@ summary: 从 NetApp 支持站点下载 Unified Manager 安装文件，将 Unifie
 [role="lead"]
 从 NetApp 支持站点下载 Unified Manager 安装文件，将 Unified Manager 部署为虚拟设备。
 
-* 您需要的内容 *
-
+.开始之前
 您应具有 NetApp 支持站点的登录凭据。
 
 安装文件为 `.tar` 包含根证书的文件 `README` 文件和 `OVA` 包含为虚拟设备配置的Unified Manager软件的文件。

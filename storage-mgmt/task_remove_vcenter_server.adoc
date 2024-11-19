@@ -15,8 +15,7 @@ summary: 您可以从Active IQ Unified Manager实例中删除不再需要的vCen
 
 删除vCenter Server还会删除此vCenter上托管的所有虚拟机(VM)及其配置数据。删除vCenter Server后、将不再对其及其关联对象和历史数据进行监控。这些更改将反映在vCenter和虚拟机清单页面上。
 
-* 您需要的内容 *
-
+.开始之前
 删除vCenter Server之前、请确保满足以下条件：
 
 * 您具有应用程序管理员角色或存储管理员角色。

@@ -13,8 +13,7 @@ summary: 当不再需要组规则时，您可以从 Active IQ Unified Manager �
 [role="lead"]
 当不再需要组规则时，您可以从 Active IQ Unified Manager 中删除组规则。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员或存储管理员角色。
 
 删除组规则后，关联的存储对象将从组中删除。

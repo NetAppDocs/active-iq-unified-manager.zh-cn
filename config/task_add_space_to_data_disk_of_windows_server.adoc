@@ -13,8 +13,7 @@ summary: 如果需要增加 Unified Manager 数据库的磁盘空间量，可以
 [role="lead"]
 如果需要增加 Unified Manager 数据库的磁盘空间量，可以向安装 Unified Manager 的逻辑驱动器添加容量。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有 Windows 管理员权限。
 
 建议您在添加磁盘空间之前备份 Unified Manager 数据库。

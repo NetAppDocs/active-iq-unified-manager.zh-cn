@@ -15,7 +15,7 @@ entries:
   - title: 虚拟基础架构和硬件系统要求
     url: "/install-linux/concept_virtual_infrastructure_or_hardware_system_requirements.html"
   - title: Linux 软件和安装要求
-    url: "/install-linux/reference_red_hat_and_centos_software_and_installation_requirements.html"
+    url: "/install-linux/reference_red_hat_software_and_installation_requirements.html"
   - title: 支持的浏览器
     url: "/install-linux/concept_browser_and_platform_requirements.html"
   - title: 协议和端口要求
@@ -37,7 +37,7 @@ entries:
   - title: NFS或CIFS共享上的SELinux要求
     url: "/install-linux/task_selinux_requirements_for_mounting_opt_netapp.html"
   - title: 在 Linux 系统上安装 Unified Manager
-    url: "/install-linux/concept_install_unified_manager_on_rhel_or_centos.html"
+    url: "/install-linux/concept_install_unified_manager_on_rhel.html"
     entries:
     - title: 在安装之前创建自定义用户主目录和 umadmin 密码
       url: "/install-linux/task_create_custom_user_home_directory_and_umadmin.html"
@@ -49,15 +49,15 @@ entries:
       url: "/install-linux/reference_users_created_in_unified_manager.html"
     - title: 更改 JBoss 密码
       url: "/install-linux/task_change_jboss_password.html"
-  - title: 在 Red Hat Enterprise Linux 或 CentOS 上升级 Unified Manager
-    url: "/install-linux/concept_upgrade_unified_manager_on_rhel_or_centos.html"
+  - title: 在Red Hat Enterprise Linux上升级Unified Manager
+    url: "/install-linux/concept_upgrade_unified_manager_on_rhel.html"
     entries:
     - title: Unified Manager版本支持的升级路径
       url: "/include/upgrade-path.html"
     - title: 升级 Unified Manager
       url: "/install-linux/task_upgrade_unified_manager.html"
     - title: 将主机操作系统从 Red Hat Enterprise Linux 7.x 升级到 8.x
-      url: "/install-linux/task_upgrade_host_os_from_rhel_6_x_to_7_x.html"
+      url: "/install-linux/task_upgrade_host_os.html"
   - title: 安装 Unified Manager 后升级第三方产品
     url: "/install-linux/concept_upgrade_third_party_products_on_linux_um.html"
     entries:

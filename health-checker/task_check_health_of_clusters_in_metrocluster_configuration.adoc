@@ -13,8 +13,7 @@ summary: 您可以使用 Unified Manager 检查 MetroCluster 配置中集群及�
 [role="lead"]
 您可以使用Active IQ Unified Manager (Unified Manager)在基于FC的MetroCluster 和基于IP的MetroCluster 配置中检查集群及其组件的运行状况。如果集群涉及 Unified Manager 检测到的性能事件，则运行状况可以帮助您确定硬件或软件问题描述是否引发了该事件。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有操作员，应用程序管理员或存储管理员角色。
 * 您必须已分析 MetroCluster 配置的性能事件并获取相关集群的名称。
 * 通过FC和IP配置的MetroCluster 中的两个集群都必须由同一个Unified Manager实例监控。

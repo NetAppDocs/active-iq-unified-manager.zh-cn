@@ -13,8 +13,7 @@ summary: 您可以使用ONTAP 系统管理器或ONTAP 命令行界面配置将Sn
 [role="lead"]
 您可以使用ONTAP 系统管理器或ONTAP 命令行界面配置将Snapshot副本存储在其中一个ONTAP 集群上的卷。
 
-* 您需要的内容 *
-
+.开始之前
 集群， Storage VM 和卷必须满足以下要求：
 
 * 集群要求：

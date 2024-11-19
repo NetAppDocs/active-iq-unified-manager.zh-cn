@@ -13,8 +13,7 @@ summary: '如果在最初设置 Linux 主机并安装 Unified Manager 时为 ` /
 [role="lead"]
 如果在最初设置 Linux 主机并安装 Unified Manager 时为 ` /opt/netapp/data` 目录分配的磁盘空间不足，无法支持 Unified Manager ，则可以在安装后通过增加 ` /opt/netapp/data` 目录上的磁盘空间来添加磁盘空间。
 
-* 您需要的内容 *
-
+.开始之前
 您必须对安装了Unified Manager的Red Hat Enterprise Linux计算机具有root用户访问权限。
 
 建议您在增加数据目录大小之前备份 Unified Manager 数据库。

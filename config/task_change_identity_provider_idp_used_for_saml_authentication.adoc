@@ -13,8 +13,7 @@ summary: 您可以更改 Unified Manager 用于对远程用户进行身份验证
 [role="lead"]
 您可以更改 Unified Manager 用于对远程用户进行身份验证的身份提供程序（ IdP ）。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有 IdP URL 和元数据。
 * 您必须有权访问 IdP 。
 

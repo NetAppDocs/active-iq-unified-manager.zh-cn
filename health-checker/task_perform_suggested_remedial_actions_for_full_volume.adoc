@@ -13,8 +13,7 @@ summary: '收到 "Volume Space Full （卷空间已满） " 错误事件后，�
 [role="lead"]
 收到 "`Volume Space Full` " 错误事件后，您可以在 "Event Details" 页面上查看建议的补救措施，并决定执行建议的操作之一。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员或存储管理员角色。
 
 具有任何角色的用户均可执行此工作流中使用 Unified Manager 的所有任务。

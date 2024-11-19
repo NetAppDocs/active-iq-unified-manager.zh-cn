@@ -13,8 +13,7 @@ summary: 下载安装文件后，您可以将 Unified Manager 部署为虚拟设
 [role="lead"]
 下载安装文件后，您可以将 Unified Manager 部署为虚拟设备。使用 vSphere Web Client 在 ESXi 服务器上部署虚拟设备。部署虚拟设备时，系统会创建一个虚拟机。
 
-* 您需要的内容 *
-
+.开始之前
 您应查看系统要求。在部署Unified Manager虚拟设备之前进行必要的更改。
 
 请参见 link:concept_virtual_infrastructure_or_hardware_system_requirements.html["虚拟基础架构要求"]。

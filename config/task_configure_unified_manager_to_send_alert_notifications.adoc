@@ -13,8 +13,7 @@ summary: 您可以将 Unified Manager 配置为发送通知，以便就环境中
 [role="lead"]
 您可以将 Unified Manager 配置为发送通知，以便就环境中的事件向您发出警报。在发送通知之前，您必须配置其他几个 Unified Manager 选项。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员角色。
 
 在部署 Unified Manager 并完成初始配置后，您应考虑将环境配置为触发警报，并根据收到的事件生成通知电子邮件或 SNMP 陷阱。

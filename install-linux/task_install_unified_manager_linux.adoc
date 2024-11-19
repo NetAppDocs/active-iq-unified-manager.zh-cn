@@ -13,14 +13,13 @@ summary: 您可以在物理或虚拟Red Hat Enterprise Linux平台上安装Unifi
 [role="lead"]
 您可以在物理或虚拟Red Hat Enterprise Linux平台上安装Unified Manager。
 
-* 您需要的内容 *
-
+.开始之前
 * 要安装 Unified Manager 的系统必须满足系统和软件要求。
 +
 请参见 link:concept_virtual_infrastructure_or_hardware_system_requirements.html["硬件系统要求"]。
 
 +
-请参见 link:reference_red_hat_and_centos_software_and_installation_requirements.html["Linux 软件和安装要求"]。
+请参阅。 link:reference_red_hat_software_and_installation_requirements.html["Linux 软件和安装要求"]
 
 * 您必须已将 Unified Manager ` .zip` 文件从 NetApp 支持站点下载到目标系统。
 * 您应已验证下载的的的完整性 `.zip` 文件
@@ -40,14 +39,14 @@ Red Hat Enterprise Linux系统可能安装了所需支持软件的所有必需�
 
 
  a| 
-OpenJDK 11.0.21版
+OpenJDK 11.0.23版
  a| 
 `java -version`
 
 
 
  a| 
-MySQL 8.0.34社区版
+MySQL 8.0.37社区版
  a| 
 `rpm -qa` grep -i mysql
 
@@ -59,7 +58,7 @@ p7zip 16.02
 `rpm -qa` grep p7zip
 
 |===
-. 如果安装的MySQL版本早于MySQL 8.0.34 Community Edition、请输入以下命令将其卸载：
+. 如果安装的MySQL版本早于MySQL 8.0.37 Community Edition、请输入以下命令将其卸载：
 +
 `rpm -e <mysql_package_name>`
 

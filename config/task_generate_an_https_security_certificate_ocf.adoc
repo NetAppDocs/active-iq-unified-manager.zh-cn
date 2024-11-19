@@ -13,8 +13,7 @@ summary: 首次安装 Active IQ Unified Manager 时，将安装默认 HTTPS 证�
 [role="lead"]
 首次安装 Active IQ Unified Manager 时，将安装默认 HTTPS 证书。您可以生成一个新的 HTTPS 安全证书来替换现有证书。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员角色。
 
 重新生成证书的原因可能有多种，例如您希望为可分辨名称（ Distinguished Name ， DN ）设置更好的值，或者您希望增加密钥大小或延长到期期限，或者当前证书已过期。

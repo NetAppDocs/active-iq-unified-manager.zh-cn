@@ -13,8 +13,7 @@ summary: 为了确保安全， Unified Manager 用于 HTTP 和 HTTPS 协议的�
 [role="lead"]
 为了确保安全， Unified Manager 用于 HTTP 和 HTTPS 协议的默认端口可以在安装后进行更改。对于 HTTP ，默认端口为 80 ，对于 HTTPS ，默认端口为 443 。
 
-* 您需要的内容 *
-
+.开始之前
 您必须拥有有权登录到 Unified Manager 服务器维护控制台的用户 ID 和密码。
 
 [NOTE]

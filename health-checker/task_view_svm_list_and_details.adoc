@@ -13,8 +13,7 @@ summary: 在运行状况：所有 Storage VM 视图中，您可以监控 Storage
 [role="lead"]
 在运行状况：所有 Storage VM 视图中，您可以监控 Storage Virtual Machine （ SVM ）的清单。您可以使用 Storage VM/ 运行状况详细信息页面查看有关受监控 SVM 的详细信息。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有操作员，应用程序管理员或存储管理员角色。
 
 您可以查看 SVM 详细信息，例如 SVM 的容量，效率和配置。您还可以查看有关此 SVM 的相关设备和相关警报的信息。

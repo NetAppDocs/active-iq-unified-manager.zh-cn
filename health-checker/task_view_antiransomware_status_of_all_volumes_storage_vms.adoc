@@ -13,8 +13,7 @@ summary: 您可以查看所有卷和Storage VM及其当前防勒索软件状态�
 [role="lead"]
 您可以查看所有卷和Storage VM (SVM)及其当前防勒索软件状态的列表、以便确定卷和SVM上的数据是否受到充分保护、免受勒索软件攻击。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有操作员，应用程序管理员或存储管理员角色。
 
 有关不同反勒索软件状态的详细信息、请参见 link:https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure["ONTAP ：支持反勒索软件"]。

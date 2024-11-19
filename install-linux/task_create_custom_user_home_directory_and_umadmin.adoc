@@ -13,8 +13,7 @@ summary: 在安装 Unified Manager 之前，您可以创建自定义主目录并
 [role="lead"]
 在安装 Unified Manager 之前，您可以创建自定义主目录并定义自己的 umadmin 用户密码。此任务是可选的，但某些站点可能需要灵活地覆盖 Unified Manager 安装默认设置。
 
-* 您需要的内容 *
-
+.开始之前
 * 系统必须满足中所述的要求 link:concept_virtual_infrastructure_or_hardware_system_requirements.html["硬件系统要求"]。
 * 您必须能够以root用户身份登录到Red Hat Enterprise Linux系统。
 

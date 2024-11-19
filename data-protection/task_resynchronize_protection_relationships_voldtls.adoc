@@ -13,8 +13,7 @@ summary: 您可以重新同步已断开的 SnapMirror 或 SnapVault 关系上的
 [role="lead"]
 您可以重新同步已断开的 SnapMirror 或 SnapVault 关系上的数据，然后将目标设置为读 / 写，以便源上的数据与目标上的数据匹配。如果删除了源卷上所需的通用 Snapshot 副本，从而导致 SnapMirror 或 SnapVault 更新失败，您也可以重新同步。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有应用程序管理员或存储管理员角色。
 * 您必须已设置 OnCommand Workflow Automation 。
 

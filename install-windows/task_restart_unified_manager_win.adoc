@@ -13,8 +13,7 @@ summary: 更改配置后，您可能需要重新启动 Unified Manager 。
 [role="lead"]
 更改配置后，您可能需要重新启动 Unified Manager 。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有 Windows 管理员权限。
 
 .步骤

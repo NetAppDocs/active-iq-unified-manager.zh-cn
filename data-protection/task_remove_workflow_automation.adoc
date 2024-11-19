@@ -13,8 +13,7 @@ summary: 如果您不再需要使用工作流自动化，可以从 Unified Manag
 [role="lead"]
 如果您不再需要使用工作流自动化，可以从 Unified Manager 中删除 OnCommand Workflow Automation 设置。
 
-* 您需要的内容 *
-
+.开始之前
 您必须具有应用程序管理员或存储管理员角色。
 
 .步骤

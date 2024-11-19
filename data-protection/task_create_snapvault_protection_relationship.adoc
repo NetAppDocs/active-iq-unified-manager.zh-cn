@@ -13,8 +13,7 @@ summary: '您可以使用 " 运行状况：所有卷 " 视图为同一 Storage V
 [role="lead"]
 您可以使用 " 运行状况：所有卷 " 视图为同一 Storage VM 上的一个或多个卷创建 SnapVault 关系，以便为保护目的启用数据备份。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有应用程序管理员或存储管理员角色。
 * 您必须已设置 Workflow Automation 。
 

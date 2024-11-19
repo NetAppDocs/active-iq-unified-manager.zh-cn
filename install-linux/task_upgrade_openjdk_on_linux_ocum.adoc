@@ -13,8 +13,7 @@ summary: 您可以在安装了 Unified Manager 的 Linux 服务器上升级到�
 [role="lead"]
 您可以在安装了 Unified Manager 的 Linux 服务器上升级到较新版本的 OpenJDK ，以获取安全漏洞修复。
 
-* 您需要的内容 *
-
+.开始之前
 对于安装了 Unified Manager 的 Linux 系统，您必须具有 root 权限。
 
 您可以更新版本系列中的 OpenJDK 版本。例如、您可以从OpenJDK 11.0.14升级到OpenJDK 11.0.17、但不能直接从OpenJDK 11更新到OpenJDK 12。

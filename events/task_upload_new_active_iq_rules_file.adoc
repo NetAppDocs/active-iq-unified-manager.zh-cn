@@ -18,8 +18,7 @@ NOTE: Active IQ 规则也称为Config Advisor (CA)安全规则。
 
 如果在没有网络连接的站点中安装Unified Manager或将Unified Manager升级到特定版本、则捆绑的Active IQ 规则将自动可上传。但是、建议您大约每月从NetApp支持站点下载一次新的规则文件、以确保生成更新后的事件、并且存储系统仍能以最佳状态运行。
 
-* 您需要的内容 *
-
+.开始之前
 * 必须启用Active IQ 门户事件报告。默认情况下，此功能处于启用状态。有关信息，请参见 link:../config/concept_active_iq_platform_events.html["启用 Active IQ 门户事件"]。
 * 您必须从 NetApp 支持站点下载规则文件。
 +

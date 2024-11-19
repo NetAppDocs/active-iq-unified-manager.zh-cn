@@ -13,8 +13,7 @@ summary: 您可以使用 Unified Manager 分析 MetroCluster 配置中检测到�
 [role="lead"]
 您可以使用 Unified Manager 分析 MetroCluster 配置中检测到性能事件的集群。您可以确定所涉及的集群名称，事件检测时间以及 _bully" 和 _victim_ 工作负载。
 
-* 您需要的内容 *
-
+.开始之前
 * 您必须具有操作员，应用程序管理员或存储管理员角色。
 * 对于 MetroCluster 配置，必须存在新的，已确认的或已废弃的性能事件。
 * MetroCluster 配置中的两个集群必须由同一个 Unified Manager 实例监控。

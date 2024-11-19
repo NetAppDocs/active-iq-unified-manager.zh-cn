@@ -46,10 +46,9 @@ NOTE: NetApp不支持使用Microsoft System Center Configuration Manager (SCCM)�
 
 以下第三方软件包与 Unified Manager 捆绑在一起。如果系统上未安装这些第三方软件包，则 Unified Manager 会在安装过程中安装这些软件包。
 
-* Microsoft Visual C&#43 ； &#43 ； 2015 年可重新分发软件包 14.26.28720.3 版
 * Microsoft Visual C&#43；&#43；适用于Visual Studio 2015的可重新分发软件包14.26.28720.3版
 * MySQL社区版8.0.37版
-* Python 3.12x
+* Python 3.12.4
 * OpenJDK 11.0.23版
 * p7zip 23.01或更高版本
 
