@@ -8966,7 +8966,6 @@
   <block id="2d974e9696c074a06050862c69b83202" category="list-text">外部数据提供程序</block>
   <block id="cd6a563edbaef3df6496fb101f4ffe09" category="list-text">性能轮询间隔配置</block>
   <block id="baab3b98bf2d404c92d495462cf66f7f" category="summary">您可以为 Unified Manager 指定非活动超时值，以便会话在一段时间后自动终止。默认情况下，超时设置为 4 ， 320 分钟（ 72 小时）。</block>
-  <block id="5e01bd42f20f3a63d47605b5e7ede78e" category="doc">设置会话非活动超时</block>
   <block id="9d065b6fca599ddf99bd5a9301130378" category="paragraph">此设置会影响所有已登录的用户会话。</block>
   <block id="6778129bfdc370315a53a29729233c17" category="paragraph">如果已启用安全断言标记语言（ SAML ）身份验证，则此选项不可用。</block>
   <block id="f14db7db0e625fc1745454b4360a0f03" category="list-text">在 * 功能设置 * 页面中，选择以下选项之一以指定非活动超时：</block>
@@ -11986,4 +11985,13 @@
   <block id="3c476f11a2cc5c761bb84165398bdfa1" category="paragraph">您可以将Active IQ Unified Manager虚拟设备从9.13或9.14版升级到9.16版。</block>
   <block id="bc069991265524f0102a945c2cdc4178" category="list-text">Python 3.12.4</block>
   <block id="e382152aa599731ca30f5f2ff671bc43" category="list-text">在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.0.37、则Unified Manager升级过程会自动将MySQL升级到8.0.37。您不能将早期版本的MySQL独立升级到8.0.37。</block>
+  <block id="a788801886ad9ba3f0d1aa6f0272e0aa" category="doc">设置会话非活动超时</block>
+  <block id="5b864f90874a257a247b735985d967ca" category="paragraph">您可以为Unified Manager指定非活动超时值、以便会话在非活动一段时间后自动终止。默认情况下，超时设置为 4 ， 320 分钟（ 72 小时）。</block>
+  <block id="bc684223e8f110b5631ba7afdab7edf8" category="summary">您可以使用命令行界面为Unified Manager设置最大会话超时值、以便会话在一段时间后自动终止。</block>
+  <block id="13eab81633be183184983b2327458134" category="doc">通过命令行界面设置会话超时</block>
+  <block id="6889dc046b9753e9d32d85f6277f0128" category="paragraph">您可以使用命令行界面为Unified Manager设置最大会话超时值、以便会话在一段时间后自动终止。默认情况下、会话超时设置为最大值、即4、320分钟(72小时)。这意味着、即使您已登录并正在使用Unified Manager、会话也会在72小时后自动结束。</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">关于此任务</block>
+  <block id="87f28bb3e003a131724329ce1f8b7e35" category="paragraph">会话超时设置会影响所有已登录的用户会话。</block>
+  <block id="9a50289207c5c1a11d0959e0985b20cf" category="list-text">输入命令以登录到Unified Manager命令行界面<block ref="e9fa1c3ff424bc99b177f43b6ac2844b" prefix=" " category="inline-code"></block>。请使用有效的用户名和密码进行身份验证。</block>
+  <block id="7cf68cd50e40cef61b48f361084dfac2" category="list-text">输入<block ref="29b975f43a92ea73b14f0ce29e1eb6b3" prefix=" " category="inline-code"></block>以修改会话超时值。</block>
 </blocks>

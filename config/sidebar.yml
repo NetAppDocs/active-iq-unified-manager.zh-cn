@@ -34,6 +34,8 @@ entries:
     url: "/config/task_change_local_user_password.html"
   - title: 设置会话非活动超时
     url: "/config/task_set_session_inactivity_timeout.html"
+  - title: 通过命令行界面设置会话超时
+    url: "/config/task_set_session_timeout_CLI.html"
   - title: 更改 Unified Manager 主机名
     url: "/config/concept_change_unified_manager_host_name.html"
     entries:
