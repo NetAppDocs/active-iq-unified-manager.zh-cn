@@ -20,5 +20,5 @@ summary: 您可以使用命令行界面为Unified Manager设置最大会话超�
 
 .步骤
 . 输入命令以登录到Unified Manager命令行界面 `um cli login`。请使用有效的用户名和密码进行身份验证。
-. 输入 `um option set max.session.timeout.value=<in mins>`以修改会话超时值。
+. 输入 `um option set max.session.timeout.value=<in mins>`命令以修改会话超时值。
 
