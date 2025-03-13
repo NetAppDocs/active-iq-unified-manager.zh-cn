@@ -91,7 +91,7 @@ Configured
  a| 
 OCSP
  a| 
-指示 ONTAP 中是否存在未配置 OCSP （联机证书状态协议）的应用程序，因此通信不会加密。此时将列出不合规的应用程序。
+从9.14.1开始、Active IQ Unified Manager可在Storage Virtual Machine (SVM、以前称为Vserver)级别提供联机证书状态协议(Online Certificate Status Protocol、OCSP)状态信息。这意味着、OCSP验证将应用于与SVM建立的所有SSL/TLS连接、并确保这些连接中使用的证书的完整性和有效性。
  a| 
 enabled
  a| 

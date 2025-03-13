@@ -3003,7 +3003,6 @@
   <block id="3f49ae06c1af2c81b1e8989e397b26f2" category="paragraph">指示集群是否已配置一个或多个 NTP 服务器。为了获得冗余和最佳服务， NetApp 建议至少将三个 NTP 服务器与集群相关联。</block>
   <block id="61aa63eb3ac1c3408640463ee5fe8aa3" category="paragraph">Configured</block>
   <block id="77b7590086fef2448bd31b90bf127474" category="paragraph">OCSP</block>
-  <block id="17eb499cf93e940dabb77ab4cc167dba" category="paragraph">指示 ONTAP 中是否存在未配置 OCSP （联机证书状态协议）的应用程序，因此通信不会加密。此时将列出不合规的应用程序。</block>
   <block id="559944e88ab64748857dfbbb5241e7cb" category="paragraph">远程审核日志记录</block>
   <block id="fe81c90ed55ff90f9e976347ff39d039" category="paragraph">指示日志转发（ Syslog ）是加密还是未加密。</block>
   <block id="07a3a798567f5e260ac46f63e67fd1d1" category="paragraph">AutoSupport HTTPS 传输</block>
@@ -11994,4 +11993,5 @@
   <block id="87f28bb3e003a131724329ce1f8b7e35" category="paragraph">会话超时设置会影响所有已登录的用户会话。</block>
   <block id="9a50289207c5c1a11d0959e0985b20cf" category="list-text">输入命令以登录到Unified Manager命令行界面<block ref="e9fa1c3ff424bc99b177f43b6ac2844b" prefix=" " category="inline-code"></block>。请使用有效的用户名和密码进行身份验证。</block>
   <block id="d0613f9dacd2054b89ab7de88b10e711" category="list-text">输入<block ref="29b975f43a92ea73b14f0ce29e1eb6b3" prefix=" " category="inline-code"></block>命令以修改会话超时值。</block>
+  <block id="3d937fc01fa5cc206639b1a0a897e80d" category="paragraph">从9.14.1开始、Active IQ Unified Manager可在Storage Virtual Machine (SVM、以前称为Vserver)级别提供联机证书状态协议(Online Certificate Status Protocol、OCSP)状态信息。这意味着、OCSP验证将应用于与SVM建立的所有SSL/TLS连接、并确保这些连接中使用的证书的完整性和有效性。</block>
 </blocks>
