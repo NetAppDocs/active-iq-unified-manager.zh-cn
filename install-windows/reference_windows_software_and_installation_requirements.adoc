@@ -50,7 +50,7 @@ NOTE: NetApp不支持使用Microsoft System Center Configuration Manager (SCCM)�
 * MySQL社区版8.0.37版
 * Python 3.12.4
 * OpenJDK 11.0.23版
-* p7zip 23.01或更高版本
+* 7-zip版本23.01或更高版本
 
 
 [NOTE]

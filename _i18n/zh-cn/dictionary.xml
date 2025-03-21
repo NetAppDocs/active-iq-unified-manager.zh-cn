@@ -11769,7 +11769,6 @@
   <block id="ed2b47ce4d6fcfacbe77e96d5e7bf8fb" category="list-text">在*Remove vCenter*消息对话框中，单击*OK*确认删除请求。</block>
   <block id="adb5482d172346e58675bd3dae5bf089" category="list-text">您可以从Web UI添加集群、系统会自动启用基于证书的身份验证。</block>
   <block id="c237abf2822b92e4b37cfd364eb99eaf" category="list-text">您可以通过Unified Manager命令行界面添加集群、但默认情况下不会启用基于证书的身份验证。如果要使用Unified Manager命令行界面添加集群、则需要使用Unified Manager界面编辑此集群。您可以看到 <block ref="33f0770b98ea7c465f6e58d1466ad24f" category="inline-link-macro-rx"></block> 使用Unified Manager命令行界面添加集群。</block>
-  <block id="3d89b288e65d6d87dbc31d2d93a06f41" category="list-text">p7zip 23.01或更高版本</block>
   <block id="c73b4673fd357d50ad7fe6b46f0de007" category="list-text">操作系统：VMware ESXi 7.0和8.0</block>
   <block id="3a44bb5359e8b73237753f7fe7d14cc2" category="paragraph">例如、如果您安装的版本是Unified Manager 9.9、而您要升级到Unified Manager 9.14、则需要执行一系列升级。</block>
   <block id="1e2075a18224b2ccd4cd9feb5cb36456" category="list-text">升级9.11 -&gt; 9.13</block>
@@ -11994,4 +11993,5 @@
   <block id="9a50289207c5c1a11d0959e0985b20cf" category="list-text">输入命令以登录到Unified Manager命令行界面<block ref="e9fa1c3ff424bc99b177f43b6ac2844b" prefix=" " category="inline-code"></block>。请使用有效的用户名和密码进行身份验证。</block>
   <block id="d0613f9dacd2054b89ab7de88b10e711" category="list-text">输入<block ref="29b975f43a92ea73b14f0ce29e1eb6b3" prefix=" " category="inline-code"></block>命令以修改会话超时值。</block>
   <block id="3d937fc01fa5cc206639b1a0a897e80d" category="paragraph">从9.14.1开始、Active IQ Unified Manager可在Storage Virtual Machine (SVM、以前称为Vserver)级别提供联机证书状态协议(Online Certificate Status Protocol、OCSP)状态信息。这意味着、OCSP验证将应用于与SVM建立的所有SSL/TLS连接、并确保这些连接中使用的证书的完整性和有效性。</block>
+  <block id="af95c5c8b4d0fa2b905341b11918dede" category="list-text">7-zip版本23.01或更高版本</block>
 </blocks>
