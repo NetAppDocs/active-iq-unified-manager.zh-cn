@@ -11994,4 +11994,5 @@
   <block id="d0613f9dacd2054b89ab7de88b10e711" category="list-text">输入<block ref="29b975f43a92ea73b14f0ce29e1eb6b3" prefix=" " category="inline-code"></block>命令以修改会话超时值。</block>
   <block id="3d937fc01fa5cc206639b1a0a897e80d" category="paragraph">从9.14.1开始、Active IQ Unified Manager可在Storage Virtual Machine (SVM、以前称为Vserver)级别提供联机证书状态协议(Online Certificate Status Protocol、OCSP)状态信息。这意味着、OCSP验证将应用于与SVM建立的所有SSL/TLS连接、并确保这些连接中使用的证书的完整性和有效性。</block>
   <block id="af95c5c8b4d0fa2b905341b11918dede" category="list-text">7-zip版本23.01或更高版本</block>
+  <block id="1ebcce8a1c4d802b8fe1f7f0994575b0" category="paragraph">此外，默认Unified Manager安装还包括umadmin用户(默认维护用户)以及<block ref="15160d21aa7f8cb0f751f17cf3a5cb0e" prefix=" " category="inline-code"></block>目录中sudoers文件和<block ref="6a2e8f066e07f32cb6b210b2f264b86b" prefix=" " category="inline-code"></block>中的jJBoss用户<block ref="e1308a99253f00dceab1f955b9bb8823" prefix="(" category="inline-code"></block>。如果由于安全策略或安全监控工具而从环境中删除此内容、则必须重新添加此内容。您需要保留 sudoers 配置，因为某些 Unified Manager 操作需要这些 sudo 权限。</block>
 </blocks>

@@ -56,6 +56,8 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Ma
 
 在 Linux 系统上安装 Unified Manager 可以由 root 用户执行，也可以由非 root 用户使用 `sudo` 命令执行。
 
+此外，默认Unified Manager安装还包括umadmin用户(默认维护用户)以及 `/etc/sudoers.d/`目录中sudoers文件和 `ocie_sudoers`中的jJBoss用户(`ocum_sudoers`。如果由于安全策略或安全监控工具而从环境中删除此内容、则必须重新添加此内容。您需要保留 sudoers 配置，因为某些 Unified Manager 操作需要这些 sudo 权限。
+
 
 
 == 安装要求
