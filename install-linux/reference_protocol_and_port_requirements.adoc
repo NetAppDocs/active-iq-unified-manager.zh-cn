@@ -217,4 +217,15 @@ NTP
  a| 
 用于将 Unified Manager 服务器上的时间与外部 NTP 时间服务器同步。（仅限 VMware 系统）
 
+
+
+ a| 
+系统日志
+ a| 
+UDP
+ a| 
+514.
+ a| 
+Unified Manager用于将审核日志发送到远程系统日志服务器。
+
 |===

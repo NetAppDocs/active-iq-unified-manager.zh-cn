@@ -84,6 +84,7 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Ma
 +
 请参见 link:task_manually_configure_mysql_repository.html["手动配置 MySQL 存储库"]。
 
+* 您只能在Unified Manager主机上安装一个版本的Java；否则、系统可能无法确定要使用的版本。请参阅。 https://kb.netapp.com/data-mgmt/AIQUM/AIQUM_Kbs/After_updating_Java_on_the_Active_IQ_Unified_Manager_host_services_will_not_start["在Active IQ Unified Manager主机上更新Java后、服务将无法启动"]
 
 
 如果您的系统无法访问 Internet ，并且存储库未从已连接 Internet 的系统镜像到未连接的系统，则应按照安装说明确定系统的外部软件依赖关系。然后、您可以将所需软件下载到已连接Internet的系统、并将文件复制 `.rpm`到计划安装Unified Manager的系统。要下载项目和软件包、必须使用 `yum install`命令。您必须确保两个系统运行相同的操作系统版本、并且订阅许可证适用于相应的Red Hat Enterprise Linux。
