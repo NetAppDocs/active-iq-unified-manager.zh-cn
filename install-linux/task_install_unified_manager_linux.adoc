@@ -39,14 +39,14 @@ Red Hat Enterprise Linux系统可能安装了所需支持软件的所有必需�
 
 
  a| 
-OpenJDK 11.0.23版
+OpenJDK 11.0.25版
  a| 
 `java -version`
 
 
 
  a| 
-MySQL 8.0.37社区版
+MySQL 8.4.4社区版
  a| 
 `rpm -qa` grep -i mysql
 
@@ -58,7 +58,7 @@ p7zip 16.02
 `rpm -qa` grep p7zip
 
 |===
-. 如果安装的MySQL版本早于MySQL 8.0.37 Community Edition、请输入以下命令将其卸载：
+. 如果安装的MySQL版本早于MySQL 8.4.4 Community Edition、请输入以下命令将其卸载：
 +
 `rpm -e <mysql_package_name>`
 
@@ -125,7 +125,7 @@ Unified Manager 所需的 ` .rpm` 模块将解压缩到目标目录。
 如果安装失败并显示GPG NOKE错误，请使用 `rpm --import` 从URL导入密钥：
 
 +
-`rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022`
+rpm --导入 https://repo.mysql.com/RPM-GPG-KEY-mysql-2023[]
 
 +
 [NOTE]

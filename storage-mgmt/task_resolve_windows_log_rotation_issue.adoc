@@ -1,0 +1,25 @@
+---
+permalink: storage-mgmt/task_resolve_windows_log_rotation_issue.html 
+sidebar: sidebar 
+keywords: windows, log rotation issue, Netapp Manageability SDK 
+summary: 故障排除：按照以下步骤解决日志轮换问题 
+---
+= Windows 系统上的 NetApp 可管理性 SDK 日志轮换问题
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 Windows 操作系统上将基于 ONTAPI API 的集群添加到 Unified Manager 后，  `nmsdk.log`文件大小增加并超出 10 MB 的大小限制。
+
+* 发生原因 *
+
+如果没有发生日志轮换，则可能会发生此问题。
+
+* 更正操作 *
+
+. 停止 Unified Manager。
+. 在 Windows 上安装 Unified Manager 时，请安装 Logrotate 版本 0.0.0.18。有关详细信息，请参见link:https://www.netapp.com/pdf.html?item=/media/78941-tr-4945.pdf["NetApp 可管理性 SDK 技术报告的安全强化指南"^]。
+. 启动 Unified Manager。
+
