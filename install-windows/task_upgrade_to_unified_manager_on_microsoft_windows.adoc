@@ -67,7 +67,7 @@ Unified Manager 将提示您显示以下消息：
 This setup will perform an upgrade of Unified Manager. Do you want to continue?
 ----
 . 单击 * 是 * ，然后单击 * 下一步 * 。
-. 输入在安装期间设置的 MySQL8 根密码，然后单击 * 下一步 * 。
+. 输入在安装期间设置的 MySQL84 根密码，然后单击 * 下一步 * 。
 . 在支持的Web浏览器上的新窗口中启动Web UI、然后登录以使用升级后的Unified Manager版本。
 . 如果您的Windows系统上安装了活动防病毒软件、请确保在升级完成后手动从防病毒扫描中排除以下路径：
 +

@@ -62,7 +62,7 @@ NOTE: NetApp不支持使用Microsoft System Center Configuration Manager (SCCM)�
 
 * 它正在使用默认端口。
 * 未安装示例数据库。
-* 服务名称为 " `MYSQL8` " 。
+* 服务名称是“`MYSQL84`”。
 
 
 Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Manager捆绑在一起并进行了配置。
