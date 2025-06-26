@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: edit, protection, relationships, volume, health details page 
 summary: 您可以编辑现有保护关系以更改当前最大传输速率，保护策略或保护计划。您可以编辑关系以减少用于传输的带宽，也可以由于数据经常更改而增加计划传输的频率。 
 ---
-= 通过卷 / 运行状况详细信息页面编辑保护关系
+= 从卷/健康详情页面编辑保护关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

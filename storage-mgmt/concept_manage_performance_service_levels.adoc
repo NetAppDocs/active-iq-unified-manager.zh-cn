@@ -42,11 +42,11 @@ Unified Manager还为数据库应用程序提供了三个性能服务级别。�
 
 
 
-== 通过分配PSL管理工作负载
+== 通过分配 PSL 来管理工作负载
 
 您可以从*策略*>*性能服务级别*页面以及使用存储提供程序API访问PSL。通过为存储工作负载分配 PSL 来管理存储工作负载非常方便，因为您不必单独管理存储工作负载。也可以通过重新分配另一个 PSL 来管理任何修改，而不是单独管理这些修改。Unified Manager可帮助您根据内部评估和建议为工作负载分配PSL。
 
-有关为工作负载分配系统建议的PSL的信息、请参见 link:..//storage-mgmt/concept_assign_policies_on_workloads.html#assigning-system-recommended-psls-to-workloads["为工作负载分配系统建议的 PSL"]
+有关将系统建议的PSL分配给工作负载的信息、请参见link:..//storage-mgmt/concept_assign_policies_on_workloads.html#assign-system-recommended-psls-to-workloads["将系统推荐的 PSL 分配给工作负载"]
 
 " 性能服务级别 " 页面列出了可用的 PSL 策略，并可用于添加，编辑和删除这些策略。
 

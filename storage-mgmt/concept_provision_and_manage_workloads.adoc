@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: provision, manage, workloads 
 summary: Active IQ Unified Manager 的主动管理功能可提供性能服务级别，存储效率策略和存储提供程序 API ，用于配置，监控和管理数据中心中的存储工作负载。 
 ---
-= 配置和管理工作负载
+= 预配和管理工作负载
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

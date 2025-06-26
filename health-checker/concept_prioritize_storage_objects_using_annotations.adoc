@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: prioritize, storage, object, events, annotations 
 summary: 您可以创建标注规则并将其应用于存储对象，以便根据应用的标注类型及其优先级来标识和筛选这些对象。 
 ---
-= 使用标注确定存储对象事件的优先级
+= 使用注释确定存储对象事件的优先级
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

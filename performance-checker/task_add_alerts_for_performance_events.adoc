@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add, alerts, performance, events 
 summary: 您可以为单个性能事件配置警报，就像 Unified Manager 收到的任何其他事件一样。此外，如果您希望对所有性能事件进行同样的处理并将电子邮件发送给同一个人，则可以创建一个警报，以便在触发任何严重或警告性能事件时向您发出通知。 
 ---
-= 为性能事件添加警报
+= 添加性能事件警报
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

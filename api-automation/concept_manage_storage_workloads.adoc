@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: manage, workloads 
 summary: 此处介绍的 API 涵盖存储管理的各种功能，例如查看存储工作负载，创建 LUN 和文件共享，管理性能服务级别和存储效率策略以及为存储工作负载分配策略。 
 ---
-= 使用API管理工作负载
+= 使用 API 管理工作负载
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

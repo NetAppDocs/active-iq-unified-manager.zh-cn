@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: understand, performance, panels, dashboard 
 summary: Unified Manager 信息板提供了几个面板，用于显示环境中受监控的所有集群的性能状态概况。您可以选择查看所有集群或单个集群的状态。 
 ---
-= 了解信息板上的性能面板
+= 了解仪表板上的性能面板
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: determine, space, issue, aggregate 
 summary: 您可以使用 Active IQ Unified Manager 中的数据中心 API 监控卷中空间的可用性和利用率。您可以确定卷中的空间问题，并确定过度利用或未充分利用的存储资源。 
 ---
-= 使用API确定聚合中的空间问题
+= 使用 API 确定聚合中的空间问题
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

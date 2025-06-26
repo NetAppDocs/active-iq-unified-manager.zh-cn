@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: dynamic, performance, event, ha, takeover 
 summary: 您可以使用 Unified Manager 调查高可用性（ HA ）对中的集群节点上的高数据处理导致的性能事件。此外，您还可以使用 Unified Manager 检查节点的运行状况，以查看节点上检测到的任何近期运行状况事件是否会引发性能事件。 
 ---
-= 响应因 HA 接管而导致的动态性能事件
+= 响应由 HA 接管引起的动态性能事件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

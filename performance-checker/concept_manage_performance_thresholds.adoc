@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: manage, performance, thresholds 
 summary: 通过性能阈值策略，您可以确定 Unified Manager 生成事件的时间点，以便向系统管理员告知可能影响工作负载性能的问题。这些阈值策略称为用户定义的性能阈值。 
 ---
-= 管理性能阈值
+= 管理绩效阈值
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

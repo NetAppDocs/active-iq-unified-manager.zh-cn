@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, snapmirror, policy, maximize, transfer, efficiency 
 summary: 您可以创建 SnapMirror 策略来指定保护关系的 SnapMirror 传输优先级。通过 SnapMirror 策略，您可以通过分配优先级来最大程度地提高从源到目标的传输效率，从而计划在正常优先级传输之后运行低优先级传输。 
 ---
-= 创建 SnapMirror 策略以最大程度地提高传输效率
+= 创建 SnapMirror 策略以最大程度提高传输效率
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

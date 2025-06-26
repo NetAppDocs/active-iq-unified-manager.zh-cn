@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: analyzing, dynamic, performance, event, remote, cluster, metrocluster, configuration 
 summary: 您可以使用 Unified Manager 分析 MetroCluster 配置中远程集群上的动态性能事件。此分析有助于您确定远程集群上的事件是否在其配对集群上引发事件。 
 ---
-= 分析 MetroCluster 配置中远程集群的动态性能事件
+= 分析 MetroCluster 配置上的远程集群的动态性能事件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

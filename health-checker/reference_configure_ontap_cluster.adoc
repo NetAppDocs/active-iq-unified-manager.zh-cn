@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, snapshot copy, copies, backup, windows, configure, ontap, cluster 
 summary: 您需要先在ONTAP 集群上执行几个预配置步骤、然后才能在Windows系统上使用Snapshot副本备份和还原Active IQ Unified Manager。 
 ---
-= 正在配置 ONTAP 集群
+= 配置 ONTAP 集群
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

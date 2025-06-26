@@ -29,7 +29,7 @@ summary: 通过 Active IQ Unified Manager API ，您可以管理和配置环境�
 ====
 
 
-== 访问联机 API 文档页面
+== 访问在线 API 文档页面
 
 您可以访问随产品一起打包的 _API Documentation_reference 内容页面，以显示 API 文档，并手动对 API 调用（在接口上，例如 Swagger ）进行问题描述处理。您可以单击 * 菜单栏 * > * 帮助按钮 * > * API 文档 * 来访问此文档
 

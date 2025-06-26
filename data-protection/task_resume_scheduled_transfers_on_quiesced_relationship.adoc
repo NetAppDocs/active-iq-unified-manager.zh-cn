@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: resume, schedule, transfers, quiesce, relationship, volume relationships page 
 summary: 暂停关系以停止发生计划传输后，您可以使用恢复重新启用计划传输，以便保护源卷或主卷上的数据。传输将在下一个计划传输间隔从检查点恢复（如果存在）。 
 ---
-= 从卷关系页面恢复已暂停关系上的计划传输
+= 从卷关系页面恢复静止关系上的计划传输
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

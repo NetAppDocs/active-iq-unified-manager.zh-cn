@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: understand, performance, cluster, landing page 
 summary: '性能集群登录页面简要概述了选定集群的性能，并重点介绍了集群中排名前 10 位的对象的性能状态。性能问题显示在页面顶部的 " 此集群上的所有事件 " 面板中。' 
 ---
-= 了解性能集群登录页面
+= 了解性能集群登陆页面
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

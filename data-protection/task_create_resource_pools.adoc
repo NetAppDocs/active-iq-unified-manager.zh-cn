@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: creating, resource, pools 
 summary: 您可以使用创建资源池对话框对聚合进行分组，以便进行配置。 
 ---
-= 正在创建资源池
+= 创建资源池
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

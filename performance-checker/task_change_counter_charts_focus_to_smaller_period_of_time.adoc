@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: change, counter, charts, focus, shorter, period, time 
 summary: '您可以在 " 计数器图表 " 窗格或 " 计数器图表缩放视图 " 窗口中使用鼠标缩小时间范围，以便重点关注特定时间段。这样，您可以更精细地查看性能数据，事件和阈值时间线的任何部分。' 
 ---
-= 将计数器图表的焦点更改为较短的时间段
+= 将计数器图表焦点更改为较短的时间段
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

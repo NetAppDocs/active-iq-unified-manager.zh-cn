@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: specify, destination location, snapshot copies, copy 
 summary: 您应在已在其中一个Active IQ Unified Manager 集群中配置的卷上配置ONTAP Snapshot副本的目标位置。您应使用维护控制台来定义位置。 
 ---
-= 指定Snapshot副本的目标位置
+= 指定 Snapshot 副本的目标位置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

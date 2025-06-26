@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, snapmirror, protection, relationship,  volume, health details page 
 summary: 您可以使用卷 / 运行状况详细信息页面创建 SnapMirror 关系，以便启用数据复制以实现保护。使用 SnapMirror 复制，您可以在源上发生数据丢失时从目标卷还原数据。 
 ---
-= 通过卷 / 运行状况详细信息页面创建 SnapMirror 保护关系
+= 从卷/运行状况详细信息页面创建 SnapMirror 保护关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

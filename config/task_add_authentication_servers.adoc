@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add, authentication servers 
 summary: 您可以在管理服务器上添加身份验证服务器并启用远程身份验证，以便身份验证服务器中的远程用户可以访问 Unified Manager 。 
 ---
-= 正在添加身份验证服务器
+= 添加身份验证服务器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

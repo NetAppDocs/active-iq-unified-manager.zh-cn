@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: change, performance, statistics, collection, interval 
 summary: 性能统计信息的默认收集间隔为 5 分钟。如果您发现大型集群的收集未在默认时间内完成，则可以将此间隔更改为 10 或 15 分钟。此设置会影响从此 Unified Manager 实例监控的所有集群收集统计信息。 
 ---
-= 更改性能统计信息收集间隔
+= 修改性能统计收集间隔
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

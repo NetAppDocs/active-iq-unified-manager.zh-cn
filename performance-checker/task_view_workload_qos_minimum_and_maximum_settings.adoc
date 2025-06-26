@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, workload, qos, minimum, maximum, settings, performance, explorer 
 summary: 您可以在性能资源管理器图表中查看卷或 LUN 上 ONTAP 定义的服务质量（ QoS ）策略设置。最大吞吐量设置限制了争用工作负载对系统资源的影响。最小吞吐量设置可确保关键工作负载满足最小吞吐量目标，而不管竞争工作负载的需求如何。 
 ---
-= 在性能资源管理器中查看工作负载 QoS 最小值和最大值设置
+= 在性能资源管理器中查看工作负载 QoS 最小和最大设置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

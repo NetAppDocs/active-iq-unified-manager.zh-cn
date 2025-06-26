@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, node, aggregate, available, iops, values 
 summary: 您可以监控集群中所有节点或所有聚合的可用 IOPS 值，也可以查看单个节点或聚合的详细信息。 
 ---
-= 查看节点和聚合的可用 IOPS 值
+= 查看节点并聚合可用 IOPS 值
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,7 +17,7 @@ summary: 您可以监控集群中所有节点或所有聚合的可用 IOPS 值�
 
 image::../media/available_iops_zoom.gif[显示如何在节点/性能资源管理器页面中查看节点并从列表中选择"Available IOPs"的UI屏幕截图。]
 
-通过监控可用 IOPS 计数器，您可以确定：
+监控可用的 IOPS 计数器可让您识别：
 
 * 可用 IOPS 值最大的节点或聚合，有助于确定未来工作负载的部署位置。
 * 可用 IOPS 值最小的节点或聚合，用于确定应监控的资源，以确定未来可能出现的性能问题。

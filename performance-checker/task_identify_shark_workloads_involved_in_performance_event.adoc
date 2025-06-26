@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: identify, shark workloads, involved, dynamic, performance, event 
 summary: 在 Unified Manager 中，您可以确定哪些工作负载在争用存储组件的使用情况方面偏差最高。确定这些工作负载有助于确定是否应将这些工作负载移动到利用率较低的集群。 
 ---
-= 确定动态性能事件中涉及的鲨鱼工作负载
+= 识别动态性能事件中涉及的shark工作负载
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

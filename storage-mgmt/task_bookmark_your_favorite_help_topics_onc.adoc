@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: bookmark, favorite, help topics 
 summary: 在帮助收藏夹选项卡中，您可以将经常使用的帮助主题添加到书签中。通过帮助书签可以快速访问您最喜欢的主题。 
 ---
-= 为您喜爱的帮助主题添加书签
+= 为您最喜欢的帮助主题添加书签
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: resolve, lag, issues 
 summary: 此工作流举例说明了如何解决滞后问题描述。在这种情况下，您是访问 Unified Manager 信息板页面的管理员或操作员，可查看您的保护关系是否存在任何问题，如果存在问题，还可以查找解决方案。 
 ---
-= 解决滞后问题
+= 解决延迟问题
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -20,9 +20,9 @@ entries:
     url: "/install-vapp/concept_browser_and_platform_requirements.html"
   - title: 协议和端口要求
     url: "/install-vapp/reference_protocol_and_port_requirements.html"
-  - title: 正在完成工作表
+  - title: 填写工作表
     url: "/install-vapp/reference_complete_worksheet_um.html"
-- title: 安装，升级和删除 Unified Manager 软件
+- title: 安装、升级和删除 Unified Manager 软件
   url: "/install-vapp/concept_install_upgrade_remove_unified_manage_on_vmware.html"
   entries:
   - title: 部署过程概述
@@ -45,5 +45,5 @@ entries:
       url: "/install-vapp/task_upgrade_unified_manager_virtual_appliance_vapp.html"
   - title: 重新启动 Unified Manager 虚拟机
     url: "/install-vapp/task_restart_unified_manager_virtual_machine.html"
-  - title: 正在删除 Unified Manager
+  - title: 删除 Unified Manager
     url: "/install-vapp/task_remove_unified_manager_vapp.html"

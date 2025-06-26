@@ -20,9 +20,9 @@ entries:
     url: "/install-linux/concept_browser_and_platform_requirements.html"
   - title: 协议和端口要求
     url: "/install-linux/reference_protocol_and_port_requirements.html"
-  - title: 正在完成工作表
+  - title: 填写工作表
     url: "/install-linux/reference_complete_worksheet_um.html"
-- title: 安装，升级和删除 Unified Manager 软件
+- title: 安装、升级和删除 Unified Manager 软件
   url: "/install-linux/concept_install_upgrade_and_remove_unified_manager_software.html"
   entries:
   - title: 安装过程概述
@@ -41,7 +41,7 @@ entries:
     entries:
     - title: 在安装之前创建自定义用户主目录和 umadmin 密码
       url: "/install-linux/task_create_custom_user_home_directory_and_umadmin.html"
-    - title: 正在下载 Unified Manager
+    - title: 下载 Unified Manager
       url: "/install-linux/task_download_unified_manager.html"
     - title: 安装 Unified Manager
       url: "/install-linux/task_install_unified_manager_linux.html"
@@ -49,7 +49,7 @@ entries:
       url: "/install-linux/reference_users_created_in_unified_manager.html"
     - title: 更改 JBoss 密码
       url: "/install-linux/task_change_jboss_password.html"
-  - title: 在Red Hat Enterprise Linux上升级Unified Manager
+  - title: 在 Red Hat Enterprise Linux 上升级 Union Manager
     url: "/install-linux/concept_upgrade_unified_manager_on_rhel.html"
     entries:
     - title: Unified Manager版本支持的升级路径
@@ -63,9 +63,9 @@ entries:
     entries:
     - title: 在 Linux 上升级 OpenJDK
       url: "/install-linux/task_upgrade_openjdk_on_linux_ocum.html"
-  - title: 正在重新启动 Unified Manager
+  - title: 重新启动 Unified Manager
     url: "/install-linux/task_restart_unified_manager.html"
-  - title: 正在删除 Unified Manager
+  - title: 删除 Unified Manager
     url: "/install-linux/task_remove_unified_manager.html"
   - title: 删除自定义 umadmin 用户和维护组
     url: "/install-linux/task_remove_custom_umadmin_user_and_maintenance_group.html"

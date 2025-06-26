@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: move, workloads, different, node 
 summary: 您可以使用 Unified Manager 帮助确定比当前运行工作负载的节点繁忙的其他节点上的聚合，然后将选定卷移动到该聚合。将高性能工作负载移动到不太繁忙的节点上的聚合可以提高两个节点上的工作负载的性能。 
 ---
-= 将工作负载移动到其他节点
+= 将工作负载移至其他节点
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: reverse, protection, relationships, volume, relationships page 
 summary: 如果灾难禁用了保护关系中的源卷，则可以在修复或替换源卷时使用目标卷来提供数据，方法是将其转换为读 / 写卷。当源重新可用于接收数据时，您可以使用反向重新同步操作来反向建立关系，从而将源上的数据与读 / 写目标上的数据同步。 
 ---
-= 通过卷关系页面反转保护关系
+= 从“卷关系”页面反向保护关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add, scripts 
 summary: 您可以在 Unified Manager 中添加脚本，并将这些脚本与警报关联。生成警报时，系统会自动执行这些脚本，您可以通过这些脚本获取有关生成事件的存储对象的信息。 
 ---
-= 正在添加脚本
+= 添加脚本
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, https, security, certificate 
 summary: 您可以将 HTTPS 证书详细信息与浏览器中检索到的证书进行比较，以确保浏览器与 Unified Manager 的加密连接不会被截获。 
 ---
-= 查看 HTTPS 安全证书
+= 查看HTTPS安全证书
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

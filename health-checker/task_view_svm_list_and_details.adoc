@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, storage vm list, details 
 summary: 在运行状况：所有 Storage VM 视图中，您可以监控 Storage Virtual Machine （ SVM ）的清单。您可以使用 Storage VM/ 运行状况详细信息页面查看有关受监控 SVM 的详细信息。 
 ---
-= 查看 Storage VM 列表和详细信息
+= 查看存储虚拟机列表和详细信息
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

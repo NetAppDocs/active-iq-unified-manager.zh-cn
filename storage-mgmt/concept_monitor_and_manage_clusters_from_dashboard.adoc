@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, manage, clusters, dashboard 
 summary: '信息板可提供有关受监控 ONTAP 系统当前运行状况的累积概览信息。信息板提供了一些 " 面板 " ，可用于评估所监控集群的整体容量，性能和安全运行状况。' 
 ---
-= 通过信息板监控和管理集群
+= 从仪表板监控和管理集群
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

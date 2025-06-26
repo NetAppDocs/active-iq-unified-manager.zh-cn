@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, reports 
 summary: 计划报告后，您可以从报告计划页面中将其删除。 
 ---
-= 删除已计划的报告
+= 删除计划报告
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: manage, performance, service, level 
 summary: 您可以使用 Active IQ Unified Manager 上的存储提供程序 API 查看，创建，修改和删除性能服务级别。 
 ---
-= 使用API管理性能服务级别
+= 使用 API 管理性能服务级别
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

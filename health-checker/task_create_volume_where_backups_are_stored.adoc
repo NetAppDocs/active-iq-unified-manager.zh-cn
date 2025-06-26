@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure, snapshot copy, copies location 
 summary: 您可以使用ONTAP 系统管理器或ONTAP 命令行界面配置将Snapshot副本存储在其中一个ONTAP 集群上的卷。 
 ---
-= 配置Snapshot副本位置
+= 配置 Snapshot 副本位置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

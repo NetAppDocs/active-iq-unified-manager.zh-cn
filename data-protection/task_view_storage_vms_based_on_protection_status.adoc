@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage vm, view protection status 
 summary: 您可以使用清单中的 Storage VM 页面查看 Active IQ Unified Manager 中的所有 Storage VM ，并根据其保护状态筛选这些 Storage VM 。 
 ---
-= 根据保护状态查看 Storage VM
+= 根据保护状态查看存储虚拟机
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

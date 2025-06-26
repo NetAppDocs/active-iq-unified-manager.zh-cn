@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, report, view, storage VMs, volume, limit 
 summary: 您可以创建报告以查找达到卷上限的 SVM 。 
 ---
-= 创建报告以查看达到卷上限的 Storage VM
+= 创建报告以查看达到最大卷限制的存储虚拟机
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

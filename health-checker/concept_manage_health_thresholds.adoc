@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: manage, health, thresholds 
 summary: 您可以为所有聚合，卷和 qtree 配置全局运行状况阈值，以跟踪任何违反运行状况阈值的情况。 
 ---
-= 管理运行状况阈值
+= 管理健康阈值
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

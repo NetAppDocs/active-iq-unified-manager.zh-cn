@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, metrocluster, configurations 
 summary: 您可以监控 MetroCluster 配置中的连接问题。详细信息包括集群中组件和连接的状态以及 MetroCluster 配置中集群之间的连接状态。 
 ---
-= 监控 MetroCluster 配置
+= 监控MetroCluster 配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -54,7 +54,7 @@ image::../media/node_switch_connectivity.gif[节点交换机连接图标]
 
 如果您在 MetroCluster 配置中发现连接问题，则必须登录到 System Manager 或访问 ONTAP 命令行界面以解决这些问题。
 
-有关确定集群运行状况的详细信息、请参见 link:../health-checker/task_check_health_of_clusters_in_metrocluster_configuration.html#determining-cluster-health-in-metrocluster-over-fc-configuration["在基于FC的MetroCluster 配置中确定集群运行状况"]。
+有关确定集群运行状况的详细信息，请参见link:../health-checker/task_check_health_of_clusters_in_metrocluster_configuration.html#determine-cluster-health-in-metrocluster-over-fc-configuration["确定 MetroCluster 通过 FC 配置中的集群运行状况"]。
 
 
 
@@ -99,7 +99,7 @@ NOTE: 只有对于基于IP的MetroCluster 配置、您才能在*集群*页面上
 * 相关信息 *
 
 * link:../health-checker/reference_health_cluster_details_page.html["集群 / 运行状况详细信息页面"]
-* 有关*关系：MetroCluster*视图的信息、请参见 link:../storage-mgmt/task_monitor_metrocluster_configurations.html["监控 MetroCluster 配置"]。
+* 有关*RELationY:ITA* MetroCluster视图的信息，请参见link:../storage-mgmt/task_monitor_metrocluster_configurations.html["监控MetroCluster 配置"]。
 * 有关*关系：过去1个月传输状态*视图的信息、请参见 link:../data-protection/reference_relationship_last_1_month_transfer_status_view.html["Relationship ： Last 1 Month Transfer Status 视图"]。
 * 有关*关系：过去1个月传输速率*视图的信息、请参见 link:../data-protection/reference_relationship_last_1_month_transfer_rate_view.html["Relationship ： Last 1 Month Transfer Rate 视图"]。
 * 有关*关系：所有关系*视图的信息、请参见 link:../data-protection/reference_relationship_all_relationships_view.html["Relationship ：所有关系视图"]。

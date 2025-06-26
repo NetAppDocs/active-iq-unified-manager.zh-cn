@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: perform, suggested, remedial actions, volume 
 summary: '收到 "Volume Space Full （卷空间已满） " 错误事件后，您可以在 "Event Details" 页面上查看建议的补救措施，并决定执行建议的操作之一。' 
 ---
-= 对已满的卷执行建议的补救措施
+= 对整个卷执行建议的补救措施
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

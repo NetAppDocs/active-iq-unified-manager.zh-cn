@@ -31,9 +31,9 @@ entries:
 - title: Unified Manager REST API
   url: "/api-automation/concept_um_apis_list_intro.html"
   entries:
-  - title: 管理数据中心中的存储对象
+  - title: 管理数据中心内的存储对象
     url: "/api-automation/concept_data_center_apis.html"
-  - title: 通过代理访问访问 ONTAP API
+  - title: 通过代理访问 ONTAP API
     url: "/api-automation/concept_gateway_apis.html"
   - title: 执行管理任务
     url: "/api-automation/concept_administration_apis.html"
@@ -56,9 +56,9 @@ entries:
       url: "/api-automation/concept_manage_active_directory.html"
     - title: 管理文件共享
       url: "/api-automation/concept_manage_fileshares_api.html"
-    - title: 管理 LUN
+    - title: 管理LUN
       url: "/api-automation/concept_manage_lun.html"
-    - title: 管理性能服务级别
+    - title: 管理绩效服务水平
       url: "/api-automation/concept_manage_psl.html"
     - title: 管理存储效率策略
       url: "/api-automation/concept_manage_sep.html"

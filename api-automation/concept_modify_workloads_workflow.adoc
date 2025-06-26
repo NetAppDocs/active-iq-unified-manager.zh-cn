@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: modify, storage, workloads 
 summary: 修改存储工作负载包括使用缺少的参数更新 LUN 或文件共享，或者更改现有参数。 
 ---
-= 使用API修改存储工作负载
+= 使用 API 修改存储工作负载
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -191,7 +191,7 @@ JSON 输出将显示一个作业对象，您可以使用该对象验证是否已
 
 
 
-== 正在更新 LUN
+== 更新 LUN
 
 更新 LUN 时，您可以修改以下参数：
 

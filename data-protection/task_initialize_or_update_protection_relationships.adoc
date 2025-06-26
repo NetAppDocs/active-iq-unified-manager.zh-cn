@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: initialize, update, protection, relationships, volume, page 
 summary: 在卷关系页面中，您可以对新的保护关系执行首次基线传输，或者如果关系已初始化，而您希望执行手动的计划外增量更新以立即传输，则可以更新此关系。 
 ---
-= 通过卷关系页面初始化或更新保护关系
+= 从卷关系页面初始化或更新保护关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

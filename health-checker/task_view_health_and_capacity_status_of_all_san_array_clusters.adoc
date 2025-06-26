@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, all san array, health and capacity, clusters 
 summary: 您可以使用集群清单页面显示全 SAN 阵列集群的运行状况和容量状态。 
 ---
-= 查看所有 SAN 阵列集群的运行状况和容量状态
+= 查看所有 SAN 阵列群集的健康和容量状态
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

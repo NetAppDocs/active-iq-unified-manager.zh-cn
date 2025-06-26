@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: search, storage, objects 
 summary: 要快速访问特定对象，您可以使用菜单栏顶部的搜索所有存储对象字段。通过这种对所有对象进行全局搜索的方法，您可以按类型快速查找特定对象。搜索结果按存储对象类型进行排序，您可以使用下拉菜单按对象进一步筛选这些结果。 
 ---
-= 正在搜索存储对象
+= 搜索存储对象
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

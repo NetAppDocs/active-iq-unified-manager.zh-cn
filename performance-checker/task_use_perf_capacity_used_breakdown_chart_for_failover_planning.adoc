@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: performance, capacity, used, breakdown, chart, failover, planning 
 summary: '" 已用性能容量 - 细分 " 详细图表显示了主节点和配对节点使用的性能容量。此外，它还会显示 " 估计接管 " 节点上的可用性能容量。此信息有助于您确定在配对节点出现故障时是否可能具有性能问题描述。' 
 ---
-= 使用已用性能容量细分图表进行故障转移规划
+= 使用性能容量使用明细图表进行故障转移规划
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

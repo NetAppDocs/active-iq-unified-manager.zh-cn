@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore, data, volume, health details page 
 summary: 您可以使用卷 / 运行状况详细信息页面上的还原功能从 Snapshot 副本还原覆盖或删除的文件，目录或整个卷。 
 ---
-= 使用卷和卷/运行状况详细信息页面还原数据
+= 使用卷和卷/健康详情页面恢复数据
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

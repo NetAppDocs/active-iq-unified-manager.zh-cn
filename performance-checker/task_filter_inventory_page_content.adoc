@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: filtering, inventory, page, content 
 summary: 您可以在 Unified Manager 中筛选清单页面数据，以便根据特定条件快速查找数据。您可以使用筛选功能缩小 Unified Manager 页面内容的范围，以便仅显示您感兴趣的结果。这样可以非常高效地仅显示您感兴趣的数据。 
 ---
-= 筛选清单页面内容
+= 过滤库存页面内容
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

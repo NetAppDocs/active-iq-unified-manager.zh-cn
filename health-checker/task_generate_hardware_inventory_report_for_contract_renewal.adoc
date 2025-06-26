@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: contract, renewal, cluster, inventory report, hardware, generate 
 summary: '您可以生成一个报告，其中包含完整的集群和节点信息列表，例如硬件型号和序列号，磁盘类型和数量，已安装许可证等。对于未连接到 NetAppActive IQ 平台的安全站点（ " 非公开 " 站点）中的合同续订，此报告非常有用。' 
 ---
-= 生成硬件清单报告以续订合同
+= 生成合同续签的硬件清单报告
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

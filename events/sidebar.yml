@@ -2,7 +2,7 @@
 section: events
 title: 管理事件和警报
 entries:
-- title: 管理事件
+- title: 管理活动
   url: "/events/concept_manage_events.html"
   entries:
   - title: 什么是 Active IQ 平台事件
@@ -16,7 +16,7 @@ entries:
       url: "/events/task_subscribe_to_ontap_ems_events.html"
   - title: 收到事件时会发生什么情况
     url: "/events/concept_what_happens_when_an_event_is_received.html"
-  - title: 查看事件和事件详细信息
+  - title: 查看活动和活动详情
     url: "/events/task_view_event_details.html"
   - title: 查看未分配的事件
     url: "/events/task_view_unassigned_events.html"
@@ -26,7 +26,7 @@ entries:
     url: "/events/task_assign_events_to_specific_users.html"
   - title: 禁用不需要的事件
     url: "/events/task_disable_unwanted_events.html"
-  - title: 使用 Unified Manager 自动修复解决问题
+  - title: 使用 Unified Manager 自动修复功能解决问题
     url: "/events/task_fix_issues_using_um_automatic_remediations.html"
   - title: 启用和禁用 Active IQ 事件报告
     url: "/events/task_enable_and_disable_active_iq_event_reporting.html"
@@ -41,15 +41,15 @@ entries:
   - title: 什么是 Unified Manager 维护窗口
     url: "/events/concept_what_um_maintenance_window_is.html"
     entries:
-    - title: 计划维护窗口以禁用集群事件通知
+    - title: 安排维护时段以禁用集群事件通知
       url: "/events/task_schedule_maintenance_window_to_disable_cluster_notifications.html"
-    - title: 更改或取消计划的维护窗口
+    - title: 更改或取消计划的维护时段
       url: "/events/task_change_or_cancel_scheduled_maintenance_window.html"
-    - title: 查看维护窗口期间发生的事件
+    - title: 查看维护时段内发生的事件
       url: "/events/task_view_events_that_occurred_during_maintenance_window.html"
   - title: 管理主机系统资源事件
     url: "/events/task_manage_host_system_resource_events.html"
-  - title: 了解有关事件的更多信息
+  - title: 了解更多活动信息
     url: "/events/concept_understand_more_about_events.html"
     entries:
     - title: 事件状态定义
@@ -160,18 +160,18 @@ entries:
     url: "/events/concept_what_alerts_are.html"
   - title: 警报电子邮件中包含哪些信息
     url: "/events/concept_what_information_is_contained_in_an_alert_email.html"
-  - title: 正在添加警报
+  - title: 添加警报
     url: "/events/task_add_alerts.html"
     entries:
     - title: 添加警报的准则
       url: "/events/concept_guidelines_for_adding_alerts.html"
-  - title: 为性能事件添加警报
+  - title: 添加性能事件警报
     url: "/events/task_add_alerts_for_performance_events.html"
   - title: 测试警报
     url: "/events/task_test_alerts.html"
-  - title: 为已解决和已废弃的事件启用和禁用警报
+  - title: 启用和禁用已解决和已过时事件的警报
     url: "/events/task_disable_alerts_for_resolved_and_obsolete_events.html"
-  - title: 从生成警报中排除灾难恢复目标卷
+  - title: 排除灾难恢复目标卷生成警报
     url: "/events/task_exclude_disaster_recovery_destination_volumes_from_alerts.html"
   - title: 查看警报
     url: "/events/task_view_alerts.html"
@@ -193,9 +193,9 @@ entries:
   entries:
   - title: 脚本如何处理警报
     url: "/events/concept_how_scripts_work_with_alerts.html"
-  - title: 正在添加脚本
+  - title: 添加脚本
     url: "/events/task_add_scripts.html"
-  - title: 正在删除脚本
+  - title: 删除脚本
     url: "/events/task_delete_scripts.html"
   - title: 测试脚本执行
     url: "/events/task_test_script_execution.html"

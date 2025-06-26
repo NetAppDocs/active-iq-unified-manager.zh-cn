@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add space, data, disk, vmware, virtual, machine 
 summary: 如果需要增加 Unified Manager 数据库的数据磁盘空间量，则可以在安装后通过使用 Unified Manager 维护控制台增加磁盘空间来添加容量。 
 ---
-= 向 VMware 虚拟机的数据磁盘添加空间
+= 为VMware虚拟机数据盘添加空间
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

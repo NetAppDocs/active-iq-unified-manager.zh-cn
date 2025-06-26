@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: edit, groups 
 summary: 您可以编辑在 Unified Manager 中创建的组的名称和问题描述。 
 ---
-= 编辑组
+= 编辑群组
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: edit, group rules 
 summary: 您可以编辑组规则以修改条件组以及条件组中的条件，以便向特定组添加或删除存储对象。 
 ---
-= 编辑组规则
+= 编辑群组规则
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

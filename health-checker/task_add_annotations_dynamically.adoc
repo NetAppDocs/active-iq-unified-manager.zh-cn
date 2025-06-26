@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add, annotations, dynamically 
 summary: 创建自定义标注时， Unified Manager 会使用规则将集群， Storage Virtual Machine （ SVM ）和卷与标注动态关联起来。这些规则会自动将标注分配给存储对象。 
 ---
-= 动态添加标注
+= 动态添加注释
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

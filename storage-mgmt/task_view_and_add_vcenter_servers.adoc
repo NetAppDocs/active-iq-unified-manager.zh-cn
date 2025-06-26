@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, add, vcenter, server 
 summary: 要查看虚拟机（ VM ）的性能并对其进行故障排除，必须在 Active IQ Unified Manager 实例上添加关联的 vCenter Server 。 
 ---
-= 查看和添加 vCenter Server
+= 查看并添加 vCenter Server
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

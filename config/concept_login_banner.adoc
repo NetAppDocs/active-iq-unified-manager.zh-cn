@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: login banner, feature settings 
 summary: 通过此功能，您的组织可以显示任何信息，例如，允许谁访问系统以及登录和注销期间的使用条款和条件。 
 ---
-= 正在添加登录横幅
+= 添加登录横幅
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

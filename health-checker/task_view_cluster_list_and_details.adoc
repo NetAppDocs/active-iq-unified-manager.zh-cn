@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, cluster list, details 
 summary: '您可以使用运行状况：所有集群视图查看集群清单。" 容量：所有集群 " 视图可用于查看有关所有集群中存储容量和利用率的汇总信息。' 
 ---
-= 查看集群列表和详细信息
+= 查看集群列表和详情
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure, volume, health, thresholds, groups 
 summary: 您可以为容量， Snapshot 副本， qtree 配额，增长和索引节点配置组级卷运行状况阈值。 
 ---
-= 为组配置卷运行状况阈值
+= 为组配置卷健康阈值
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

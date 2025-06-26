@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, list, monitored, clusters 
 summary: 您可以使用集群设置页面查看集群清单。您可以查看有关集群的详细信息，例如集群名称或 IP 地址以及通信状态。 
 ---
-= 查看受监控集群的列表
+= 查看监控集群列表
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, aggregate list, details 
 summary: '在运行状况：所有聚合视图中，您可以监控聚合清单。" 容量：所有聚合 " 视图可用于查看有关所有集群中聚合的容量和利用率的信息。' 
 ---
-= 查看聚合列表和详细信息
+= 查看汇总列表和详细信息
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

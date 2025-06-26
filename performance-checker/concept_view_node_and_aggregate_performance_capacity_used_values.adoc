@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, node, aggregate, performance, capacity, used, values 
 summary: 您可以监控集群中所有节点或所有聚合的已用性能容量值，也可以查看单个节点或聚合的详细信息。 
 ---
-= 查看节点和聚合已用性能容量值
+= 查看节点和聚合性能容量使用值
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,7 +17,7 @@ summary: 您可以监控集群中所有节点或所有聚合的已用性能容�
 
 image::../media/node_inventory_used_headroom.gif[性能：所有聚合页面的UI屏幕截图]
 
-通过监控已用性能容量计数器，您可以确定以下内容：
+监视性能容量使用计数器可让您识别以下内容：
 
 * 任何集群上的任何节点或聚合是否具有较高的已用性能容量值
 * 任何集群上的任何节点或聚合是否具有活动的已用性能容量事件

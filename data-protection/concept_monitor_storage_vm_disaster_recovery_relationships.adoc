@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: disaster recovery, monitor, storage vm protection, relationships 
 summary: Active IQ Unified Manager 支持监控 Storage VM 灾难恢复关系，此关系可在 Storage VM 级别的粒度级别提供灾难恢复。通过 Storage VM 灾难恢复，可以恢复 Storage VM 成分卷中的数据并恢复 Storage VM 配置。 
 ---
-= 监控 Storage VM 灾难恢复保护关系
+= 监控存储虚拟机灾难恢复保护关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

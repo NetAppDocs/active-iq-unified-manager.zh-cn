@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, report, identify, volumes, full capacity, snapshot, autodelete, turned off 
 summary: 您可以创建一个报告，其中包含在禁用 Snapshot 自动删除功能的情况下即将达到全满容量的卷列表。这些结果有助于确定可能要配置 Snapshot 自动删除的卷。 
 ---
-= 创建报告以确定已关闭 Snapshot 自动删除的容量接近全满的卷
+= 创建报告以识别已关闭快照自动删除功能的接近满容量的卷
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

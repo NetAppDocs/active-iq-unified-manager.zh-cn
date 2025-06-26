@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, report, view, volume, transfer, trends, specific, time intervals 
 summary: 您可以创建一个报告，以按特定时间间隔显示卷传输趋势。 
 ---
-= 创建报告以按特定时间间隔查看卷传输趋势
+= 创建报告以查看特定时间间隔的传输量趋势
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

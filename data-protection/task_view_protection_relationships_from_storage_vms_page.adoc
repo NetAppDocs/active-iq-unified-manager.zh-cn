@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage vm, viewing protection relationships 
 summary: 使用 Storage VM 页面，您可以查看现有 Storage VM 的灾难恢复关系的状态。 
 ---
-= 从 Storage VM 页面查看保护关系
+= 从存储虚拟机页面查看保护关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

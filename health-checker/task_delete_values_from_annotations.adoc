@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, values, annotations 
 summary: 如果与自定义标注关联的值不再对标注进行适用场景，则可以删除该值。 
 ---
-= 从标注中删除值
+= 从注释中删除值
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

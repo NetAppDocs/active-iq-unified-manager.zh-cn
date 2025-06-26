@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: svm, association, page 
 summary: 通过Storage VM关联页面、您可以查看源和目标Storage VM之间的现有Storage VM关联。 
 ---
-= 了解Storage VM关联
+= 了解存储虚拟机关联
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

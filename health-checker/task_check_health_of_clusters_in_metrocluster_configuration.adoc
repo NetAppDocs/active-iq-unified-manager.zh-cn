@@ -21,7 +21,7 @@ summary: 您可以使用 Unified Manager 检查 MetroCluster 配置中集群及�
 
 
 
-== 在基于FC的MetroCluster 配置中确定集群运行状况
+== 确定 MetroCluster 通过 FC 配置中的集群运行状况
 
 按照以下步骤确定基于FC的MetroCluster 配置中的集群运行状况。
 
@@ -59,7 +59,7 @@ image::../media/opm_um_mcc_replication_tab_png.gif[Unified Manager MetroCluster 
 
 
 
-== 在基于IP的MetroCluster 配置中确定集群运行状况
+== 确定 MetroCluster over IP 配置中的集群运行状况
 
 按照以下步骤确定基于IP的MetroCluster 配置中的集群运行状况。
 

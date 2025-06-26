@@ -15,7 +15,7 @@ summary: 如何卸载包括Python和Microsoft Visual C++在内的第三方产品
 
 
 
-== 正在卸载Python
+== 卸载 Python
 
 .步骤
 . 从*控制面板*中选择*程序*>*程序和功能*。
@@ -25,7 +25,7 @@ summary: 如何卸载包括Python和Microsoft Visual C++在内的第三方产品
 
 
 
-== 卸载Microsoft Visual C++ 2013
+== 卸载 Microsoft Visual C++ 2013
 
 .步骤
 . 从*控制面板*中选择*程序*>*程序和功能*。

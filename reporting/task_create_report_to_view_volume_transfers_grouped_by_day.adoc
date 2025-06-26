@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, report, view, volume, transfers, day 
 summary: 您可以创建报告以查看按日期分组的卷传输。 
 ---
-= 创建报告以查看按日期分组的卷传输
+= 创建报告以查看按天分组的传输量
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

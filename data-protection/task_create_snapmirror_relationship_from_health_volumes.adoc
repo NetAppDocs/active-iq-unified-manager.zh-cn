@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, snapmirror, protection, relationship, health, volumes view 
 summary: 使用运行状况：所有卷视图，您可以通过在同一个 Storage VM 上选择多个卷来一次创建多个 SnapMirror 保护关系。 
 ---
-= 从运行状况：所有卷视图创建 SnapMirror 保护关系
+= 从“运行状况:所有卷”视图创建 SnapMirror 保护关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

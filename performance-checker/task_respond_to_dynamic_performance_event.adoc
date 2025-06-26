@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: dynamic, performance, qos, policy, group, throttling 
 summary: 您可以使用 Unified Manager 调查因服务质量（ QoS ）策略组限制工作负载吞吐量（ MB/ 秒）而导致的性能事件。限制增加了策略组中卷工作负载的响应时间（延迟）。您可以使用事件信息确定是否需要对策略组设置新的限制来停止限制。 
 ---
-= 响应因 QoS 策略组限制而导致的动态性能事件
+= 响应由 QoS 策略组限制引起的动态性能事件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

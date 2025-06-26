@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: quiesce, protection, relationship, volume, health details page 
 summary: 您可以暂停保护关系，以临时防止发生数据传输。如果您要为包含数据库的 SnapMirror 目标卷创建 Snapshot 副本，并且希望在 Snapshot 副本期间确保其内容稳定，则可以暂停关系。 
 ---
-= 通过卷 / 运行状况详细信息页面暂停保护关系
+= 从卷/健康详情页面暂停保护关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

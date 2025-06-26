@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, storage, workloads 
 summary: 通过此处列出的 API ，您可以查看数据中心中所有 ONTAP 集群的存储工作负载的整合列表。此外，这些 API 还提供了一个摘要视图，其中显示了在 Active IQ Unified Manager 环境中配置的存储工作负载数量及其容量和性能（ IOPS ）统计信息。 
 ---
-= 使用API查看存储工作负载
+= 使用 API 查看存储工作负载
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

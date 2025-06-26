@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure, backup, snapshot copy, copies maintenance console 
 summary: 要使用Snapshot副本进行Active IQ Unified Manager 备份、您应从维护控制台执行一些配置步骤。 
 ---
-= 从维护控制台通过Snapshot副本配置备份
+= 从维护控制台配置 Snapshot 副本备份
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

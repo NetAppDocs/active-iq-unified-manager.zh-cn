@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitoring, performance, inventory, pages 
 summary: 对象清单性能页面显示对象类型类别中所有对象的性能信息，性能事件和对象运行状况。这样，您可以一目了然地查看集群中每个对象的性能状态，例如所有节点或所有卷的性能状态。 
 ---
-= 使用性能清单页面监控性能
+= 使用“性能清单”页面监控性能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

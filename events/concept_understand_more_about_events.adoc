@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: understand, more, events 
 summary: 了解事件的概念有助于您高效管理集群和集群对象并正确定义警报。 
 ---
-= 了解有关事件的更多信息
+= 了解更多活动信息
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

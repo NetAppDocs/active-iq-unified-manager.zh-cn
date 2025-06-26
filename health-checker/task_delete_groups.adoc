@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, groups 
 summary: 当不再需要某个组时，您可以从 Unified Manager 中删除该组。 
 ---
-= 删除组
+= 删除群组
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

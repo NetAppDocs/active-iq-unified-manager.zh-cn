@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, types, manage, restore, operations 
 summary: 您可以创建 Active IQ Unified Manager 的备份，并使用还原功能在系统发生故障或数据丢失时将备份还原到同一（本地）系统或新（远程）系统。 
 ---
-= 管理备份和还原操作
+= 管理备份和恢复操作
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

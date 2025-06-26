@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, cluster security status, svm security status, volume encryption status, compliance, security hardening, encryption, anti-ransomware, certificate expiry, clusters page, storage VMs page, System Manager 
 summary: '"安全性"页面显示所有集群和Storage VM的高级别安全状态。详细的集群状态包括集群合规性， SVM 合规性和卷加密合规性。' 
 ---
-= 查看集群和Storage VM的安全状态
+= 查看集群和存储虚拟机的安全状态
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

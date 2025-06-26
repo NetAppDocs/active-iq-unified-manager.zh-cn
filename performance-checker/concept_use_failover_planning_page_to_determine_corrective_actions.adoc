@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: node, failover, planning page, determine, corrective, actions 
 summary: '根据 " 性能 / 节点故障转移规划 " 页面中显示的信息，您可以采取措施，确保故障转移不发生原因会使 HA 对的性能下降到可接受的水平以下。' 
 ---
-= 使用 Node Failover Planning 页面确定更正操作
+= 使用节点故障转移计划页面确定纠正措施
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: display, volumes, cold, data, non-fabricpool, aggregate, identify 
 summary: 您可以创建一个报告来显示非 FabricPool 聚合上具有大量冷数据的卷。这有助于您确定应移至 FabricPool 聚合的卷。 
 ---
-= 创建报告以查看未启用 FabricPool 的聚合上具有大量冷数据的卷
+= 创建报告以查看未启用 FabricPool 的聚合上包含大量冷数据的卷
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

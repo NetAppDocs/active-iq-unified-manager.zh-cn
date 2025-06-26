@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, snapvault, protection, relationship, volume, health details page 
 summary: '您可以使用 " 卷 / 运行状况 " 详细信息页面创建 SnapVault 关系，以便在卷上启用数据备份以进行保护。' 
 ---
-= 通过卷 / 运行状况详细信息页面创建 SnapVault 保护关系
+= 从卷/运行状况详细信息页面创建 SnapVault 保护关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

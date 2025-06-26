@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: schedule, maintenance, window, disable, cluster, event, notifications 
 summary: 如果您为集群计划了停机时间，例如，要升级集群或移动其中一个节点，则可以通过计划 Unified Manager 维护窗口来禁止在该时间段内通常生成的事件和警报。 
 ---
-= 计划维护窗口以禁用集群事件通知
+= 安排维护时段以禁用集群事件通知
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

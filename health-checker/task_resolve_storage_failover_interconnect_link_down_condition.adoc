@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: scan, resolve, storage, failover, interconnect link, conditions 
 summary: 此工作流举例说明如何扫描，评估和解决已关闭的存储故障转移互连链路情况。在这种情况下，您是一名管理员，使用 Unified Manager 在节点上开始 ONTAP 版本升级之前扫描存储故障转移风险。 
 ---
-= 扫描并解决存储故障转移互连链路断开情况
+= 扫描并解决存储故障转移互连链路故障情况
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

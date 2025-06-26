@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, group rules 
 summary: 当不再需要组规则时，您可以从 Active IQ Unified Manager 中删除组规则。 
 ---
-= 正在删除组规则
+= 删除群组规则
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

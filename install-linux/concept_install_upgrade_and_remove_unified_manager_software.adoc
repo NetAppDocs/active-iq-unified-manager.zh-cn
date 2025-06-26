@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, upgrade, remove, unified manager software 
 summary: 在 Linux 系统上，您可以安装 Unified Manager 软件，升级到更高版本的软件或删除 Unified Manager 。 
 ---
-= 安装，升级和删除 Unified Manager 软件
+= 安装、升级和删除 Unified Manager 软件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: access, ONTAP, APIs, proxy, access 
 summary: 网关 API 具有使用 Active IQ Unified Manager 凭据运行 ONTAP REST API 和管理存储对象的优势。在 Unified Manager Web UI 中启用 API 网关功能后，可以使用这些 API 。 
 ---
-= 通过代理访问访问 ONTAP API
+= 通过代理访问 ONTAP API
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -70,7 +70,7 @@ Unified Manager REST API 仅支持在 Unified Manager 数据源（即 ONTAP 集�
 |===
 
 
-== 了解 API 网关通道
+== 了解 API 网关隧道
 
 通过网关 API ，您可以通过 Unified Manager 管理 ONTAP 对象。Unified Manager 可管理集群和身份验证详细信息，并将请求重定向到 ONTAP REST 端点。网关 API 使用 API 网关基本 URL 将 URL 和 Hypermedia 转换为标题和响应正文中的应用程序状态引擎（ HATEOAS ）链接。网关 API 充当代理基础 URL ，您可以将 ONTAP REST URL 附加到该 URL 并执行所需的 ONTAP REST 端点。
 
@@ -102,7 +102,7 @@ API 将返回该集群中的存储卷列表。响应格式与从 ONTAP 运行相
 
 
 
-== 正在设置 API 范围
+== 设置 API 范围
 
 所有 API 都在集群范围内设置了上下文。基于 Storage VM 运行的 API 也会以集群为范围，也就是说， API 操作会在受管集群中的特定 Storage VM 上执行。在运行 ` 网关 // ｛ uuid ｝ /\ ｛ path ｝` API 时，请确保为运行此操作的集群输入集群 UUID （ Unified Manager 数据源 UUID ）。要为该集群中的特定 Storage VM 设置上下文，请输入 Storage VM 密钥作为 X-Dot-SVM-UUID 参数，或者输入 Storage VM 名称作为 X-Dot-SVM-Name 参数。参数将作为筛选器添加到字符串标题中，此操作将在该集群中的该 Storage VM 的范围内运行。
 

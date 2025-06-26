@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: manage, endpoints, access 
 summary: 您需要创建访问端点或逻辑接口（ LIF ），这是配置 Storage Virtual Machine （ SVM ）， LUN 和文件共享所需的。您可以查看，创建，修改和删除 Active IQ Unified Manager 环境中 SVM ， LUN 或文件共享的访问端点。 
 ---
-= 使用API管理访问端点
+= 使用 API 管理访问端点
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: all san, array, performance, clusters 
 summary: 您可以使用性能：所有集群视图显示全 SAN 阵列集群的性能状态。 
 ---
-= 查看所有 SAN 阵列集群的性能
+= 查看所有 SAN 阵列群集的性能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configuring, connection, unified manager, server, external, data, provider 
 summary: Unified Manager 可以将集群性能数据发送到外部服务器。您可以指定发送的统计数据的类型以及发送数据的间隔。 
 ---
-= 配置从 Unified Manager 服务器到外部数据提供程序的连接
+= 配置从 Unified Manager 服务器到外部数据提供商的连接
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

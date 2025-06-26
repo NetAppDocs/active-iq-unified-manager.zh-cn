@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: review, vcenter, server 
 summary: 您可以从Active IQ Unified Manager实例中删除不再需要的vCenter Server。 
 ---
-= 正在删除vCenter Server
+= 移除 vCenter Server
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

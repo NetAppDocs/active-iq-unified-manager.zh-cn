@@ -26,7 +26,7 @@ summary: '信息板页面包含一些 " 面板 " ，用于显示所监控集群�
 
 == 管理操作面板
 
-Unified Manager 可以全面诊断某些问题并提供单一解决方案。如果可用，这些解决方法将显示在此面板中，并显示 * 修复它 * 或 * 全部修复 * 按钮。您可以直接从 Unified Manager 修复这些问题，而不必使用 ONTAP 系统管理器或 ONTAP 命令行界面。要查看所有问题、请单击See link:concept_fix_ontap_issues_directly_from_unified_manager.html["直接从 Unified Manager 修复 ONTAP 问题"] 有关详细信息 ...
+Unified Manager 可以全面诊断某些问题并提供单一解决方案。如果可用，这些解决方法将显示在此面板中，并显示 * 修复它 * 或 * 全部修复 * 按钮。您可以直接从 Unified Manager 修复这些问题，而不必使用 ONTAP 系统管理器或 ONTAP 命令行界面。要查看所有问题、请单击"请参阅"link:concept_fix_ontap_issues_directly_from_unified_manager.html["直接从 Unified Manager 修复 ONTAP 问题"]了解更多信息。
 
 
 
@@ -122,4 +122,4 @@ link:../health-checker/concept_manage_cluster_security_objectives.html["管理�
 
 link:../performance-checker/concept_monitor_cluster_performance_from_cluster_landing_page.html["从性能集群登录页面监控集群性能"]
 
-link:../performance-checker/concept_monitor_performance_using_object_performance.html["使用性能清单页面监控性能"]
+link:../performance-checker/concept_monitor_performance_using_object_performance.html["使用“性能清单”页面监控性能"]

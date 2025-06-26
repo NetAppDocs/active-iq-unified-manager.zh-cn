@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: log in, ui, unified manager 
 summary: 您可以使用支持的 Web 浏览器登录到 Unified Manager UI 。 
 ---
-= 登录到 UI
+= 登录用户界面
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

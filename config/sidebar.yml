@@ -2,7 +2,7 @@
 section: config
 title: 执行配置和管理任务
 entries:
-- title: 正在配置 Active IQ Unified Manager
+- title: 配置 Active IQ Unified Manager
   url: "/config/concept_configure_unified_manager.html"
   entries:
   - title: 配置顺序概述
@@ -20,15 +20,15 @@ entries:
       url: "/config/task_configure_event_notification_settings.html"
     - title: 启用远程身份验证
       url: "/config/task_enable_remote_authentication.html"
-    - title: 禁用远程身份验证中的嵌套组
+    - title: 禁用远程身份验证的嵌套组
       url: "/config/task_disable_nested_groups_from_remote_authentication.html"
     - title: 设置身份验证服务
       url: "/config/task_set_up_authentication_services.html"
-    - title: 正在添加身份验证服务器
+    - title: 添加身份验证服务器
       url: "/config/task_add_authentication_servers.html"
     - title: 测试身份验证服务器的配置
       url: "/config/task_test_configuration_of_authentication_servers_um_6_0.html"
-    - title: 正在添加警报
+    - title: 添加警报
       url: "/config/task_add_alerts.html"
   - title: 更改本地用户密码
     url: "/config/task_change_local_user_password.html"
@@ -59,15 +59,15 @@ entries:
     url: "/config/concept_policy_based_storage_management.html"
   - title: 启用 API 网关
     url: "/config/concept_api_gateway.html"
-  - title: 指定非活动超时
+  - title: 指定不活动超时
     url: "/config/concept_inactivity_timeout.html"
   - title: 启用 Active IQ 门户事件
     url: "/config/concept_active_iq_platform_events.html"
-  - title: 为合规性启用和禁用安全设置
+  - title: 启用和禁用合规性安全设置
     url: "/config/concept_security_dashboard.html"
   - title: 启用和禁用脚本上传
     url: "/config/task_enable_and_disable_ability_to_upload_scripts.html"
-  - title: 正在添加登录横幅
+  - title: 添加登录横幅
     url: "/config/concept_login_banner.html"
 - title: 使用维护控制台
   url: "/config/task_use_maintenance_console.html"
@@ -104,11 +104,11 @@ entries:
   - title: 向 Unified Manager 数据库目录添加磁盘空间
     url: "/config/concept_add_disk_space_to_um_database_directory.html"
     entries:
-    - title: 向 Linux 主机的数据目录添加空间
+    - title: 为Linux主机的数据目录添加空间
       url: "/config/task_add_space_to_data_directory_of_um_linux_host.html"
-    - title: 向 VMware 虚拟机的数据磁盘添加空间
+    - title: 为VMware虚拟机数据盘添加空间
       url: "/config/task_add_space_to_data_disk_of_vmware_virtual_machine.html"
-    - title: 向 Microsoft Windows 服务器的逻辑驱动器添加空间
+    - title: 为 Microsoft Windows 服务器的逻辑驱动器添加空间
       url: "/config/task_add_space_to_data_disk_of_windows_server.html"
 - title: 管理用户访问
   url: "/config/concept_manage_user_access.html"
@@ -141,9 +141,9 @@ entries:
     url: "/config/reference_identity_provider_requirements_um.html"
   - title: 启用 SAML 身份验证
     url: "/config/task_enable_saml_authentication_um.html"
-  - title: 更改用于 SAML 身份验证的身份提供程序
+  - title: 更改用于 SAML 身份验证的身份提供者
     url: "/config/task_change_identity_provider_idp_used_for_saml_authentication.html"
-  - title: 更改 Unified Manager 安全证书后更新 SAML 身份验证设置
+  - title: Unified Manager 安全证书更改后更新 SAML 身份验证设置
     url: "/config/task_update_saml_authentication_after_um_certificate_change.html"
   - title: 禁用 SAML 身份验证
     url: "/config/task_disable_saml_authentication_um.html"
@@ -163,16 +163,16 @@ entries:
   - title: 审核日志记录
     url: "/config/concept_audit_logging.html"
     entries:
-    - title: 配置审核日志
+    - title: 配置审计日志
       url: "/config/task_configure_audit_logs.html"
-    - title: 启用审核日志的远程日志记录
+    - title: 启用审计日志的远程记录
       url: "/config/task_enable_remote_logging_of_audit_logs.html"
   - title: 远程身份验证页面
     url: "/config/reference_remote_authentication_page.html"
 - title: 管理安全证书
   url: "/config/concept_manage_security_certificates_ocf.html"
   entries:
-  - title: 查看 HTTPS 安全证书
+  - title: 查看HTTPS安全证书
     url: "/config/task_view_https_security_certificate_ocf.html"
   - title: 下载 HTTPS 证书签名请求
     url: "/config/task_download_an_https_certificate_sign_request_ocf.html"

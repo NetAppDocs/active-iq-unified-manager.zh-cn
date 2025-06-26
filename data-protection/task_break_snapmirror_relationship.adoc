@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: break, snapmirror, relationship, volume, relationship page 
 summary: 您可以中断保护关系，以停止 SnapMirror 关系中源卷与目标卷之间的数据传输。如果要迁移数据，进行灾难恢复或应用程序测试，您可能会中断关系。目标卷将更改为读 / 写卷。您不能中断 SnapVault 关系。 
 ---
-= 通过卷关系页面中断 SnapMirror 关系
+= 从卷关系页面断开 SnapMirror 关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restart, unified manager 
 summary: 更改配置后，您可能需要重新启动 Unified Manager 。 
 ---
-= 正在重新启动 Unified Manager
+= 重新启动 Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

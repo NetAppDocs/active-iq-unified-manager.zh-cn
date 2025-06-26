@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: perform, corrective action, storage failover, interconnect links 
 summary: 显示存储故障转移相关事件的事件详细信息页面时，您可以查看页面的摘要信息，以确定事件的紧急性，问题描述的可能发生原因以及问题描述的可能解决方案。 
 ---
-= 对存储故障转移互连链路断开执行更正操作
+= 对存储故障转移互连链路执行纠正措施
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

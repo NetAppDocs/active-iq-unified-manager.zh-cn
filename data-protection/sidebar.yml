@@ -2,7 +2,7 @@
 section: data-protection
 title: 保护和还原数据
 entries:
-- title: 创建保护关系并对其进行故障排除
+- title: 创建和排除保护关系故障
   url: "/data-protection/concept_create_and_monitor_protection_relationships.html"
   entries:
   - title: SnapMirror 保护的类型
@@ -10,31 +10,31 @@ entries:
   - title: 在 Unified Manager 中设置保护关系
     url: "/data-protection/task_set_up_protection_relationships_in_unified_manager.html"
     entries:
-    - title: 在 Workflow Automation 和 Unified Manager 之间配置连接
+    - title: 配置工作流自动化和 Unified Manager 之间的连接
       url: "/data-protection/task_configure_connection_between_workflow_automation_um.html"
-    - title: 在 Workflow Automation 中验证 Unified Manager 数据源缓存
+    - title: 在工作流自动化中验证 Unified Manager 数据源缓存
       url: "/data-protection/task_verify_um_data_source_caching_in_workflow_automation.html"
     - title: 重新安装或升级 OnCommand Workflow Automation 时会发生什么情况
       url: "/data-protection/concept_what_happens_when_wfa_is_reinstalled_or_upgraded.html"
     - title: 从 Unified Manager 中删除 OnCommand Workflow Automation 设置
       url: "/data-protection/task_remove_workflow_automation.html"
-  - title: 执行保护关系故障转移和故障恢复
+  - title: 执行保护关系故障转移和故障回复
     url: "/data-protection/task_perform_protection_relationship_failover_and_failback.html"
     entries:
-    - title: 通过卷运行状况详细信息页面中断SnapMirror关系
+    - title: 从卷运行状况详细信息页面中断 SnapMirror 关系
       url: "/data-protection/task_break_snapmirror_relationship_from_health_volume_details.html"
-    - title: 通过卷运行状况详细信息页面反转保护关系
+    - title: 从卷运行状况详细信息页面中反向保护关系
       url: "/data-protection/task_reverse_protection_relationships_from_health_volume_details.html"
     - title: 从卷运行状况详细信息页面中删除保护关系
       url: "/data-protection/task_remove_protection_relationship_voldtls.html"
-    - title: 通过卷运行状况详细信息页面重新同步保护关系
+    - title: 从卷运行状况详细信息页面重新同步保护关系
       url: "/data-protection/task_resynchronize_protection_relationships_voldtls.html"
-  - title: 解决保护作业故障
+  - title: 解决保护作业失败
     url: "/data-protection/task_resolve_protection_job_failure.html"
     entries:
-    - title: 确定问题并对失败的保护作业执行更正操作
+    - title: 识别问题并对失败的保护作业执行纠正措施
       url: "/data-protection/task_identify_problem_for_failed_protection_job.html"
-  - title: 解决滞后问题
+  - title: 解决延迟问题
     url: "/data-protection/task_resolve_lag_issues.html"
 - title: 管理和监控保护关系
   url: "/data-protection/concept_manage_and_monitor_protection_relationships.html"
@@ -45,82 +45,82 @@ entries:
     url: "/data-protection/task_view_volume_protection_relationships.html"
   - title: 监控一致性组关系中的 LUN
     url: "/data-protection/view-lun-relationships.html"
-  - title: 从所有卷视图创建SnapVault 保护关系
+  - title: 从“所有卷”视图创建 SnapVault 保护关系
     url: "/data-protection/task_create_snapvault_protection_relationship.html"
-  - title: 通过卷运行状况详细信息页面创建SnapVault 保护关系
+  - title: 从卷运行状况详细信息页面创建 SnapVault 保护关系
     url: "/data-protection/task_create_snapvault_protection_relationship_from_health_volume_details.html"
-  - title: 从所有卷视图创建SnapMirror保护关系
+  - title: 从“所有卷”视图创建 SnapMirror 保护关系
     url: "/data-protection/task_create_snapmirror_relationship_from_health_volumes.html"
-  - title: 通过卷运行状况详细信息页面创建SnapMirror保护关系
+  - title: 从卷运行状况详细信息页面创建 SnapMirror 保护关系
     url: "/data-protection/task_create_snapmirror_relationship_from_health_volume.html"
-  - title: 使用版本灵活的复制创建 SnapMirror 关系
+  - title: 创建具有版本灵活复制的 SnapMirror 关系
     url: "/data-protection/task_create_snapmirror_relationship_with_version_flexible_replication.html"
-  - title: 使用版本灵活复制和备份选项创建 SnapMirror 关系
+  - title: 使用备份选项创建具有版本灵活复制的 SnapMirror 关系
     url: "/data-protection/task_create_snapmirror_relationships_with_version_flexible_replication.html"
   - title: 配置目标效率设置
     url: "/data-protection/task_configure_protection_destination_settings.html"
   - title: 创建 SnapMirror 和 SnapVault 计划
     url: "/data-protection/task_create_snapmirror_and_snapvault_schedules.html"
-  - title: 创建级联或扇出关系以从现有保护关系扩展保护
+  - title: 创建级联或扇出关系以扩展现有保护关系的保护
     url: "/data-protection/task_create_cascade_or_fanout_relationships_to_extend_protection.html"
   - title: 从卷关系页面编辑保护关系
     url: "/data-protection/task_edit_protection_relationships_from_protection_volume.html"
-  - title: 通过卷运行状况详细信息页面编辑保护关系
+  - title: 从卷健康详情页面编辑保护关系
     url: "/data-protection/task_edit_protection_relationships_from_health_volume.html"
-  - title: 创建 SnapMirror 策略以最大程度地提高传输效率
+  - title: 创建 SnapMirror 策略以最大程度提高传输效率
     url: "/data-protection/task_create_snapmirror_policy_to_maximize_transfer_efficiency.html"
-  - title: 创建 SnapVault 策略以最大程度地提高传输效率
+  - title: 创建 SnapVault 策略以最大程度提高传输效率
     url: "/data-protection/task_create_snapvault_policy_to_maximize_transfer_efficiency.html"
   - title: 从卷关系页面中止活动数据保护传输
     url: "/data-protection/task_abort_an_active_data_protection_transfer.html"
-  - title: 从卷运行状况详细信息页面中止活动的数据保护传输
+  - title: 从卷健康详情页面中止活动数据保护传输
     url: "/data-protection/task_abort_active_data_protection_transfer_from_health_volume.html"
-  - title: 从卷关系页面暂停保护关系
+  - title: 从“卷关系”页面停止保护关系
     url: "/data-protection/task_quiesce_protection_relationship_from_volume_relationships.html"
-  - title: 通过卷运行状况详细信息页面暂停保护关系
+  - title: 从卷运行状况详细信息页面停止保护关系
     url: "/data-protection/task_quiesce_protection_relationship_from_health_volume_details.html"
-  - title: 通过卷关系页面中断 SnapMirror 关系
+  - title: 从卷关系页面断开 SnapMirror 关系
     url: "/data-protection/task_break_snapmirror_relationship.html"
   - title: 从卷关系页面中删除保护关系
     url: "/data-protection/task_remove_protection_relationship.html"
-  - title: 从卷关系页面恢复已暂停关系上的计划传输
+  - title: 从卷关系页面恢复静止关系上的计划传输
     url: "/data-protection/task_resume_scheduled_transfers_on_quiesced_relationship.html"
-  - title: 通过卷运行状况详细信息页面恢复已暂停关系上的计划传输
+  - title: 从卷健康详情页面恢复静止关系上的计划传输
     url: "/data-protection/task_resume_scheduled_transfers_voldtls_page.html"
   - title: 通过卷关系页面初始化或更新保护关系
     url: "/data-protection/task_initialize_or_update_protection_relationships.html"
-  - title: 通过卷运行状况详细信息页面初始化或更新保护关系
+  - title: 从卷健康详情页面初始化或更新保护关系
     url: "/data-protection/task_update_protection_voldtls_page.html"
   - title: 从卷关系页面重新同步保护关系
     url: "/data-protection/task_resynchronize_protection_relationships.html"
-  - title: 通过卷关系页面反转保护关系
+  - title: 从“卷关系”页面反向保护关系
     url: "/data-protection/task_reverse_protection_relationships.html"
-  - title: 使用卷运行状况详细信息页面还原数据
+  - title: 使用卷运行状况详细信息页面恢复数据
     url: "/data-protection/task_restore_data_use_health_volume_details_page.html"
   - title: 什么是资源池
     url: "/data-protection/concept_what_resource_pools_are.html"
-  - title: 正在创建资源池
+  - title: 创建资源池
     url: "/data-protection/task_create_resource_pools.html"
   - title: 编辑资源池
     url: "/data-protection/task_edit_resource_pools.html"
   - title: 查看资源池清单
     url: "/data-protection/task_view_resource_pool_inventory.html"
-  - title: 正在添加资源池成员
+  - title: 添加资源池成员
     url: "/data-protection/task_add_resource_pool_members.html"
-  - title: 从资源池中删除聚合
+  - title: 从资源池中移除聚合
     url: "/data-protection/task_remove_aggregates_from_resource_pools.html"
-  - title: 正在删除资源池
+  - title: 删除资源池
     url: "/data-protection/task_delete_resource_pools.html"
-  - title: 监控 Storage VM 灾难恢复保护关系
+  - title: 监控存储虚拟机灾难恢复保护关系
     url: "/data-protection/concept_monitor_storage_vm_disaster_recovery_relationships.html"
     entries:
-    - title: 使用关系监控 Storage VM 页面
+    - title: 使用“关系”页面监控存储虚拟机
       url: "/data-protection/task_monitor_storage_vms_using_relationships_page.html"
-    - title: 从 Storage VM 页面查看保护关系
+    - title: 从存储虚拟机页面查看保护关系
       url: "/data-protection/task_view_protection_relationships_from_storage_vms_page.html"
-    - title: 根据保护状态查看 Storage VM
+    - title: 根据保护状态查看存储虚拟机
       url: "/data-protection/task_view_storage_vms_based_on_protection_status.html"
-  - title: 了解Storage VM关联
+  - title: 了解存储虚拟机关联
     url: "/data-protection/reference_protection_storage_virtual_machine_associations_page.html"
   - title: 支持存储服务的 SVM 和资源池要求
     url: "/data-protection/concept_storage_virtual_machine_and_resource_pool_requirements.html"

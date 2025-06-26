@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, active, events, notification, bell 
 summary: 通过菜单栏中的通知铃，您可以快速查看 Unified Manager 正在跟踪的最重要活动事件。 
 ---
-= 通过通知铃查看活动事件
+= 从通知铃查看活动事件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

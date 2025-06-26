@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: analyze, dynamic, performance, event, cluster, metrocluster, configuration 
 summary: 您可以使用 Unified Manager 分析 MetroCluster 配置中检测到性能事件的集群。您可以确定集群名称，事件检测时间以及涉及的抢占资源和受影响的工作负载。 
 ---
-= 分析 MetroCluster 配置中集群上的动态性能事件
+= 分析 MetroCluster 配置中的集群上的动态性能事件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

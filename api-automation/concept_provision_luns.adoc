@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: provision, luns 
 summary: 您可以使用 Active IQ Unified Manager 中提供的配置 API 在 Storage Virtual Machine （ SVM ）上配置 LUN 。此配置工作流详细介绍了在创建 LUN 之前检索 SVM 密钥，性能服务级别和存储效率策略的步骤。 
 ---
-= 使用API配置LUN
+= 使用 API 预配 LUN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

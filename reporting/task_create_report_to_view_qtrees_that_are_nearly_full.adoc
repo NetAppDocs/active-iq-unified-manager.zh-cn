@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, report, view, qtrees, full 
 summary: 您可以创建一个报告来分析 qtree 的存储容量和利用率，并查看接近全满的 qtree 。 
 ---
-= 创建报告以查看接近全满的 qtree
+= 创建报告以查看几乎已满的 qtree
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: unified manager, configure, conditions, annotation rules 
 summary: 您可以配置一个或多个条件以创建 Unified Manager 应用于存储对象的标注规则。满足标注规则的存储对象将使用规则中指定的值进行标注。 
 ---
-= 配置标注规则的条件
+= 配置注释规则的条件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
