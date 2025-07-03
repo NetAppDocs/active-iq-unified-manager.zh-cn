@@ -101,6 +101,50 @@ HTTPS
  a| 
 用于从经过身份验证的 ONTAP 系统访问基于 API 的实时 REST EMS 事件。
 
+
+
+ a| 
+MySQL 数据库
+ a| 
+MySQL
+ a| 
+3306
+ a| 
+用于启用对 Unified Manager 的 OnCommand Workflow Automation 和 OnCommand API 服务访问。
+
+
+
+ a| 
+AMQP QPID代理
+ a| 
+TCP/IP
+ a| 
+56072.
+ a| 
+用于内部消息通信。
+
+
+
+ a| 
+AMQP QPID代理
+ a| 
+基于TCP的WebSocket
+ a| 
+56080
+ a| 
+用于侦听此端口上从ONTAP (云代理)接收的消息。
+
+
+
+ a| 
+AMQP QPID代理
+ a| 
+基于TCP的WebSocket
+ a| 
+56443.
+ a| 
+用于侦听此端口上从ONTAP (云代理)接收的消息。通过此端口的通信支持 TLS 或 SSL 提供的加密。
+
 |===
 [NOTE]
 ====
