@@ -134,17 +134,6 @@ AMQP QPID代理
  a| 
 用于侦听此端口上从ONTAP (云代理)接收的消息。 通过此端口的通信支持TLS或SSL提供的加密。
 
-
-
- a| 
-AMQP QPID代理
- a| 
-HTTP
- a| 
-9000
- a| 
-用于在此页面上启动AMQP管理UI界面。
-
 |===
 [NOTE]
 ====
