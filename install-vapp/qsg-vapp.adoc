@@ -17,7 +17,7 @@ summary: 基于 VMware vSphere 平台的 Unified Manager 快速入门指南。
 
 == 系统要求
 
-* 操作系统：VMware ESXi 7.0和8.0
+* 操作系统：VMware ESXi 8.0
 * RAM ： 12 GB
 * CPU ：总计 9572 MHz
 * 可用磁盘空间： 5 GB （精简配置）， 152 GB （厚配置）

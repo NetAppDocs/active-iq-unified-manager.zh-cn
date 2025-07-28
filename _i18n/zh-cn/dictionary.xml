@@ -8507,9 +8507,7 @@
   <block id="b09592db93e99e16c02d56499bcc0e46" category="summary">您可以在 VMware vSphere 上升级到 Unified Manager</block>
   <block id="165614b596769629e2b5d0efa723fdc8" category="inline-link-macro">下载 Unified Manager ISO 映像</block>
   <block id="cb06beddce96e08399fea241fef33e34" category="inline-link-macro">升级 Unified Manager</block>
-  <block id="dbd6da6968cef7b169b16a1afe565d31" category="summary">安装 Unified Manager 的 VMware vSphere 系统需要特定版本的操作系统和支持软件。</block>
   <block id="8b938ebd5a735fe9f035c2df4274494f" category="doc">VMware 软件和安装要求</block>
-  <block id="c1fb97df43f8780895ba7cc4ed9916c5" category="paragraph">支持以下版本的 VMware ESXi ：</block>
   <block id="cc52616bf744b78f139542e4d55938e0" category="paragraph">支持以下版本的 vSphere ：</block>
   <block id="0ad9e3bfb76fe781c444c61d823d6ca3" category="paragraph">有关受支持的 ESXi 版本的最新完整列表，请参见互操作性表。</block>
   <block id="3a20156be64baec963131ed545d9b005" category="paragraph">要使虚拟设备正常运行， VMware ESXi 服务器时间应与 NTP 服务器时间相同。将 VMware ESXi 服务器时间与 NTP 服务器时间同步可防止发生时间故障。</block>
@@ -8568,11 +8566,8 @@
   <block id="1dbab26c4cc554e2d686240dce4e1c32" category="summary">您可以从维护控制台重新启动 Unified Manager 虚拟机（ VM ）。在生成新的安全证书之后，或者如果虚拟机出现问题，您应重新启动虚拟机。</block>
   <block id="69ce6df093b147c7a25a04bf00305588" category="list-text">应打开虚拟设备的电源。</block>
   <block id="a7e118ba2e133d1563cd19a15fe2a116" category="list-text">您应以维护用户身份登录到 Unified Manager 维护控制台。</block>
-  <block id="e073e6fe06cef770bc889b346bc6998f" category="paragraph">您也可以使用 VMware * 重新启动来宾 * 选项从 vSphere 重新启动虚拟机。</block>
   <block id="b6398bd7f47d9122f52612a31a850312" category="list-text">在维护控制台中，选择 * 系统配置 * &gt; * 重新启动虚拟机 * 。</block>
   <block id="874e5f2c9cf179740df1c1b0a4b0a120" category="list-text">从浏览器启动 Unified Manager Web UI 并登录。</block>
-  <block id="2a3a1fb09f0975179216fde1cbd8dc57" category="inline-link">VMware vSphere PowerCLI Cmdlet 参考： Restart-VMGuest</block>
-  <block id="89cc3af736280ef7a3e6fc0e835ec56a" category="paragraph"><block ref="89cc3af736280ef7a3e6fc0e835ec56a" category="inline-link-rx"></block></block>
   <block id="32e5c16a2c1109e106990eafe2e5051a" category="summary">基于 VMware vSphere 平台的 Unified Manager 快速入门指南。</block>
   <block id="781c32908473254b5a4d86a06486a7b7" category="list-text">可用磁盘空间： 5 GB （精简配置）， 152 GB （厚配置）</block>
   <block id="e695544d34f0e201929a62c9aa611da3" category="paragraph">有关详细的系统要求，请参见 <block ref="50e046d8161c36e1c61db998f9999a09" category="inline-link-macro-rx"></block> 和 <block ref="6b67f16fed93b756518b295cb43f355b" category="inline-link-macro-rx"></block>。</block>
@@ -11146,7 +11141,6 @@
   <block id="604cb85803c2049ee36ec0f56a4b4122" category="paragraph">*集群证书*：此证书归ONTAP 所有。您不能将证书已过期的集群添加到Unified Manager中、如果证书已过期、则应在添加集群之前重新生成该集群。有关生成证书的信息、请参见知识库(KB)文章<block ref="efe1c9ee5157428eafcff62008773d6d" category="inline-link-rx"></block>。</block>
   <block id="2baed68e35271ff9049aae0aaa17514e" category="paragraph">保存集群详细信息后、您可以看到用于集群相互TLS通信的证书。</block>
   <block id="71115803a7c16035111d8a488819a5de" category="paragraph">控制主机对默认MySQL端口3306的访问。出于安全原因、在Linux、Windows和VMware vSphere系统上全新安装Unified Manager期间、通过此端口的访问仅限于本地主机。使用此选项可以在本地主机和远程主机之间切换此端口的可见性、也就是说、如果仅在您的环境中为本地主机启用了此端口、则也可以使此端口对远程主机可用。或者、如果为所有主机启用了、则只能将此端口的访问限制为本地主机。如果之前在远程主机上启用了访问、则在升级情形中会保留此配置。您应在更改端口可见性后检查Windows系统上的防火墙设置、如果将防火墙设置配置为限制对MySQL端口3306的访问、则应禁用这些设置。</block>
-  <block id="992457c87959064e1a1fd8702290dfc5" category="list-text">ESXi 7.0和8.0</block>
   <block id="fb0cd9631dee3f83386725234b971c75" category="list-text">VMware vCenter Server 7.0和8.0</block>
   <block id="633bb5b6eca1c435199c472c91160f36" category="paragraph">在Windows系统上安装Unified Manager时、MySQL 3306的默认端口仅限于本地主机。安装完成后、启用防火墙以限制对端口MySQL 3306的访问。这不会影响保留先前配置的任何升级情形。可以修改此配置、并使用将此连接提供给其他主机<block ref="dd441ca9450a58c2c7b09ab86e8f7a28" prefix=" " category="inline-code"></block> 选项。有关信息，请参见 <block ref="7a82f5d486f644c03667de7815d5d25c" category="inline-link-macro-rx"></block>。用于 HTTP 和 HTTPS 通信的端口（端口 80 和 443 ）可以使用 Unified Manager 维护控制台进行更改。有关详细信息，请参见 <block ref="c0e80a6e89d09d7c5e1f41b64ee3c406" category="inline-link-macro-rx"></block>。</block>
   <block id="597398cc5b5523b459dfe2d0d9acd2e5" category="paragraph">卷效率操作错误(ocumEvtVolumeEfficiencyOperationError)</block>
@@ -11276,7 +11270,6 @@
   <block id="ed2b47ce4d6fcfacbe77e96d5e7bf8fb" category="list-text">在*Remove vCenter*消息对话框中，单击*OK*确认删除请求。</block>
   <block id="adb5482d172346e58675bd3dae5bf089" category="list-text">您可以从Web UI添加集群、系统会自动启用基于证书的身份验证。</block>
   <block id="c237abf2822b92e4b37cfd364eb99eaf" category="list-text">您可以通过Unified Manager命令行界面添加集群、但默认情况下不会启用基于证书的身份验证。如果要使用Unified Manager命令行界面添加集群、则需要使用Unified Manager界面编辑此集群。您可以看到 <block ref="33f0770b98ea7c465f6e58d1466ad24f" category="inline-link-macro-rx"></block> 使用Unified Manager命令行界面添加集群。</block>
-  <block id="c73b4673fd357d50ad7fe6b46f0de007" category="list-text">操作系统：VMware ESXi 7.0和8.0</block>
   <block id="3a44bb5359e8b73237753f7fe7d14cc2" category="paragraph">例如、如果您安装的版本是Unified Manager 9.9、而您要升级到Unified Manager 9.14、则需要执行一系列升级。</block>
   <block id="1e2075a18224b2ccd4cd9feb5cb36456" category="list-text">升级9.11 -&gt; 9.13</block>
   <block id="de77bda92bea07bb345ff4c0d56146c5" category="list-text">升级9.13 -&gt; 9.14</block>
@@ -11297,8 +11290,6 @@
   <block id="794b0fbf4e314ba18f71dba00d68d9b8" category="paragraph">用于侦听此端口上从ONTAP (云代理)接收的消息。</block>
   <block id="00595c0d01d488a33a068852a0c6b2b8" category="paragraph">56443.</block>
   <block id="cd91ff9e0f252c06c8c6dc37f1c29ba7" category="paragraph">用于侦听此端口上从ONTAP (云代理)接收的消息。 通过此端口的通信支持TLS或SSL提供的加密。</block>
-  <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="paragraph">9000</block>
-  <block id="c566a5dbb0e92fc14cf27c5abc3316bd" category="paragraph">用于在此页面上启动AMQP管理UI界面。</block>
   <block id="5c481563f3b57863c0a290b809a1e6ff" category="paragraph">用于侦听此端口上从ONTAP (云代理)接收的消息。通过此端口进行的通信支持TLS或SSL提供的加密。</block>
   <block id="7c6fa12173c375a840189f157e3cf098" category="admonition">在内部(Unified Manager和漏洞扫描程序安装在同一个VM上)或外部扫描虚拟机(VM)时、漏洞扫描程序(如Qu固 件)可能会导致CPU使用率较高 (其中Unified Manager和漏洞扫描程序安装在两个不同的服务器上、漏洞扫描程序将扫描安装Unified Manager的VM)。此问题描述通常会导致VM无响应并影响Unified Manager服务。因此、NetApp建议在安装了Unified Manager的虚拟机中禁用漏洞扫描程序。如果无法禁用扫描程序、请在非工作时间扫描虚拟机、并在扫描完成后重新启动服务。</block>
   <block id="c3d15a1717019bd68103a42fb3ccc50c" category="paragraph">对于受SnapMirror活动同步关系保护的卷、此列将显示卷的一致性组。</block>
@@ -12067,4 +12058,10 @@
   <block id="b4ee4946f5a0d9d41aa0bd6a3d717e4b" category="sidebar">直接从 Unified Manager 修复或管理 ONTAP 问题</block>
   <block id="545d96f4f0d0b5202dd1df85c81c6d09" category="paragraph">用于侦听此端口上从ONTAP (云代理)接收的消息。通过此端口的通信支持 TLS 或 SSL 提供的加密。</block>
   <block id="de7079b453dbd6e52c0ba80b1c38eae2" category="list-text">升级9.13 -&gt; 9.16</block>
+  <block id="6863825296946543c03f7677ae94e41c" category="list-text">操作系统：VMware ESXi 8.0</block>
+  <block id="d381353a5c1648d3cc56488d652df409" category="summary">安装 Unified Manager 的 VMware vSphere 系统需要特定版本的操作系统和特定版本的支持软件。</block>
+  <block id="94ff556e321c8409983ed2abadc3024e" category="paragraph">支持的操作系统是 VMware ESXi 8.0。</block>
+  <block id="bb65d6ae4d44bbfd4567a82b59ce222d" category="inline-link">Broadcom 的 VMware vSphere PowerCLI CMDLET 参考中的 Restart-VMGuest cmdlet。</block>
+  <block id="7681f55359343e6988de3e9f6957a814" category="paragraph">您也可以使用 VMware *重启客户机* 选项从 vSphere 重启虚拟机。请参阅<block ref="3b382a46b6e2c7a5212af2816922c4d0" category="inline-link-rx"></block></block>
+  <block id="342a7198ff8437c0b83702e716edd98f" category="list-text">此集群必须运行 ONTAP 9.9 或更高版本的软件。</block>
 </blocks>

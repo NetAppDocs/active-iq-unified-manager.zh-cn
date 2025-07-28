@@ -2,7 +2,7 @@
 permalink: install-vapp/reference_vmware_software_and_installation_requirements.html 
 sidebar: sidebar 
 keywords: vmware, software, installation, requirements 
-summary: 安装 Unified Manager 的 VMware vSphere 系统需要特定版本的操作系统和支持软件。 
+summary: 安装 Unified Manager 的 VMware vSphere 系统需要特定版本的操作系统和特定版本的支持软件。 
 ---
 = VMware 软件和安装要求
 :allow-uri-read: 
@@ -11,16 +11,13 @@ summary: 安装 Unified Manager 的 VMware vSphere 系统需要特定版本的�
 
 
 [role="lead"]
-安装 Unified Manager 的 VMware vSphere 系统需要特定版本的操作系统和支持软件。
+安装 Unified Manager 的 VMware vSphere 系统需要特定版本的操作系统和特定版本的支持软件。
 
 
 
 == 操作系统软件
 
-支持以下版本的 VMware ESXi ：
-
-* ESXi 7.0和8.0
-
+支持的操作系统是 VMware ESXi 8.0。
 
 [NOTE]
 ====
