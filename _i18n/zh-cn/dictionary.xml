@@ -12064,4 +12064,6 @@
   <block id="bb65d6ae4d44bbfd4567a82b59ce222d" category="inline-link">Broadcom 的 VMware vSphere PowerCLI CMDLET 参考中的 Restart-VMGuest cmdlet。</block>
   <block id="7681f55359343e6988de3e9f6957a814" category="paragraph">您也可以使用 VMware *重启客户机* 选项从 vSphere 重启虚拟机。请参阅<block ref="3b382a46b6e2c7a5212af2816922c4d0" category="inline-link-rx"></block></block>
   <block id="342a7198ff8437c0b83702e716edd98f" category="list-text">此集群必须运行 ONTAP 9.9 或更高版本的软件。</block>
+  <block id="46ddffc1618503c5b7bac4767df5963b" category="list-text">收集 15 天的性能数据需要大量 CPU。NetApp建议您错开新集群的添加，以便数据连续性收集轮询不会同时在太多集群上运行。此外，如果您在数据连续性收集期间重新启动 Unified Manager，则收集将停止，并且您将在性能图表中看到缺失时间范围的间隙。</block>
+  <block id="40bbb8b87d3598ac9845a44abe43f38c" category="list-text">添加版本 9.14.1 或更高版本的ONTAP集群时，通信将通过云代理功能进行。ONTAP会自动创建具有只读权限的内部服务帐户用户（例如，clus-agent-xxxx）。如果出现以下情况，Unified Manager 将停止从这些集群收集数据<block ref="45b8c9da551ea3a5a411451e7d91c303" prefix=" " category="inline-code"></block>用户已被删除。</block>
 </blocks>
