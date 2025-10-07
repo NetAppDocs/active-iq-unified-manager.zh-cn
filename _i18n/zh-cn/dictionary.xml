@@ -11049,7 +11049,6 @@
   <block id="c4f485c20e1538622ae57f3054175ddf" category="list-text">在名称表中、选择必须还原的目录名称。</block>
   <block id="58c0234305a387b4aa60babbbd858295" category="paragraph">此时将开始还原过程。在后端创建作业以完成还原过程。</block>
   <block id="aa2724776cabef1aaa6642e924be93b0" category="list-text">如果要查看作业进度、请从左侧导航窗格导航到*保护&gt;作业*、从作业列表中查看还原作业的状态。</block>
-  <block id="f19eba4a48c0d8762f03ea93717fbfea" category="paragraph">如果 Cloud Volumes ONTAP HA 集群之间的还原操作失败并显示 NDMP 错误，您可能需要在目标集群中添加显式 AWS 路由，以便目标可以与源系统的集群管理 LIF 进行通信。您可以使用BlueXP执行此配置步骤。</block>
   <block id="ea6c1f22d406198faaad800a7f159a1f" category="list-text">单击数据保护面板顶部的右箭头。此时将显示*数据保护*页面。</block>
   <block id="fd9449f2b2bbd42c1f63613e3c929241" category="paragraph">根据您选择的是数据中心中的一个还是所有集群、此页面将显示受Snapshot副本或SnapMirror策略保护的卷的数据保护状态、并显示未受保护的卷的计数。</block>
   <block id="5bad65f01f0a45625a80fce1fa855fa4" category="paragraph">从*单个集群*列表中选择一个集群可显示该集群中受保护卷的Snapshot保护和SnapMirror关系状态。</block>
@@ -12066,4 +12065,5 @@
   <block id="342a7198ff8437c0b83702e716edd98f" category="list-text">此集群必须运行 ONTAP 9.9 或更高版本的软件。</block>
   <block id="46ddffc1618503c5b7bac4767df5963b" category="list-text">收集 15 天的性能数据需要大量 CPU。NetApp建议您错开新集群的添加，以便数据连续性收集轮询不会同时在太多集群上运行。此外，如果您在数据连续性收集期间重新启动 Unified Manager，则收集将停止，并且您将在性能图表中看到缺失时间范围的间隙。</block>
   <block id="40bbb8b87d3598ac9845a44abe43f38c" category="list-text">添加版本 9.14.1 或更高版本的ONTAP集群时，通信将通过云代理功能进行。ONTAP会自动创建具有只读权限的内部服务帐户用户（例如，clus-agent-xxxx）。如果出现以下情况，Unified Manager 将停止从这些集群收集数据<block ref="45b8c9da551ea3a5a411451e7d91c303" prefix=" " category="inline-code"></block>用户已被删除。</block>
+  <block id="323f966c65a63cb769e4f899cb19451f" category="paragraph">如果Cloud Volumes ONTAP HA 集群之间的还原操作因 NDMP 错误而失败，则可能需要在目标集群中添加明确的 AWS 路由，以便目标可以与源系统的集群管理 LIF 进行通信。您可以使用NetApp控制台执行此配置步骤。</block>
 </blocks>

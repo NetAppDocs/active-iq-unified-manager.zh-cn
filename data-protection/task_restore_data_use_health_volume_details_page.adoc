@@ -1,7 +1,7 @@
 ---
 permalink: data-protection/task_restore_data_use_health_volume_details_page.html 
 sidebar: sidebar 
-keywords: restore, data, volume, health details page 
+keywords: restore, data, volume, health details page, console 
 summary: 您可以使用卷 / 运行状况详细信息页面上的还原功能从 Snapshot 副本还原覆盖或删除的文件，目录或整个卷。 
 ---
 = 使用卷和卷/健康详情页面恢复数据
@@ -57,7 +57,7 @@ NOTE: 请注意以下几点：
 +
 [NOTE]
 ====
-如果 Cloud Volumes ONTAP HA 集群之间的还原操作失败并显示 NDMP 错误，您可能需要在目标集群中添加显式 AWS 路由，以便目标可以与源系统的集群管理 LIF 进行通信。您可以使用BlueXP执行此配置步骤。
+如果Cloud Volumes ONTAP HA 集群之间的还原操作因 NDMP 错误而失败，则可能需要在目标集群中添加明确的 AWS 路由，以便目标可以与源系统的集群管理 LIF 进行通信。您可以使用NetApp控制台执行此配置步骤。
 
 ====
 
