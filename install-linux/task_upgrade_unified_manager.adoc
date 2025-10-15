@@ -11,7 +11,7 @@ summary: 您可以通过在Linux平台上下载并运行安装文件来升级Uni
 
 
 [role="lead"]
-您可以通过在Linux平台上下载并运行安装文件从Unified Manager 9.13或9.14升级到9.16。
+您可以通过在 Linux 平台上下载并运行安装文件从 Unified Manager 9.14 或 9.16 升级到 9.18。
 
 .开始之前
 * 要升级 Unified Manager 的系统必须满足系统和软件要求。

@@ -1,0 +1,23 @@
+---
+permalink: config/task_regenerate_client_certificate.html 
+sidebar: sidebar 
+keywords: client certificate, regenerate, validity, maintenance console 
+summary: 您可以使用维护控制台重新生成 Unified Manager 客户端证书。 
+---
+= 重新生成客户端证书
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用维护控制台重新生成 Unified Manager 客户端证书。您的证书有效期延长至五年。
+
+.步骤
+. 以维护用户身份登录。
+. 选择*重新生成客户端证书*并按*Enter*。
+. 如果系统提示身份验证，请输入所需的凭据。
+. 选择*确认再生*并按*Enter*。
+. 重新生成证书后，重新启动 Unified Manager 服务以应用更改。
+. 要验证更新的证书，请登录ONTAP。查看客户端证书状态和有效性状态。
+

@@ -1,7 +1,7 @@
 ---
 permalink: install-windows/task_uninstall_third_party_products.html 
 sidebar: sidebar 
-keywords: MS Visual C++, python, uninstall, uninstalling, 9.16 
+keywords: MS Visual C++, python, uninstall, uninstalling, 9.18 
 summary: 如何卸载包括Python和Microsoft Visual C++在内的第三方产品。 
 ---
 = 卸载第三方产品
@@ -20,7 +20,7 @@ summary: 如何卸载包括Python和Microsoft Visual C++在内的第三方产品
 .步骤
 . 从*控制面板*中选择*程序*>*程序和功能*。
 . 从程序列表中选择Python。
-. 选择*卸载此程序*。卸载除软件版本为除了版本为软件版本为软件版本为软件版本为请确保保留Python版本：
+. 选择*卸载此程序*。卸载除 3.13.3 之外的任何版本的 Python。确保保留 Python 版本 3.13.3。
 
 
 

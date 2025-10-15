@@ -37,7 +37,7 @@ summary: 如果要安装 Unified Manager 的系统无法访问 MySQL Community E
 
 
 
-对于 Red Hat Enterprise Linux 8 系统，如果您的内部存储库包含 AppStream 存储库提供的 JAVA-11-OpenJDK ， p7zip 和其他软件包，则必须禁用 AppStream 存储库并安装 MySQL 社区服务器。运行以下命令：
+对于 Red Hat Enterprise Linux 8 系统，如果您有包含 java-17-openjdk、p7zip 和 AppStream 存储库提供的其他软件包的内部存储库，则必须禁用 AppStream 存储库并安装 MySQL Community Server。运行以下命令：
 
 [listing]
 ----

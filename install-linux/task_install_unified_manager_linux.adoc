@@ -39,7 +39,7 @@ Red Hat Enterprise Linux系统可能安装了所需支持软件的所有必需�
 
 
  a| 
-OpenJDK 11.0.25版
+OpenJDK 版本 17.0.14+6
  a| 
 `java -version`
 
@@ -87,7 +87,7 @@ Unified Manager 所需的 ` .rpm` 模块将解压缩到目标目录。
 预安装脚本会检查系统是否具有有效的Red Hat Enterprise Linux订阅、以及是否有权访问所需的软件存储库。如果此脚本发现任何问题，则必须在安装 Unified Manager 之前修复这些问题。
 
 +
-对于 Red Hat Enterprise Linux 8 系统，如果您的内部存储库包含 AppStream 存储库提供的 JDK 11 - OpenJDK ， p7zip 和其他软件包，则必须禁用 AppStream 存储库并安装 MySQL 社区服务器。运行以下命令：
+对于 Red Hat Enterprise Linux 8 系统，如果您有带有 JDK 17 的内部存储库 - OpenJDK、p7zip 和 AppStream 存储库提供的其他软件包，则必须禁用您的 AppStream 存储库并安装 MySQL Community Server。运行以下命令：
 
 +
 [listing]
