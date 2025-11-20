@@ -11251,8 +11251,6 @@
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="863843d0337c17ec7301aee27dad4298" category="paragraph">您可以更新版本系列中的 OpenJDK 版本。例如、您可以从OpenJDK 11.0.16升级到OpenJDK 11.0.18、但不能直接从OpenJDK 11更新到OpenJDK 12。</block>
-  <block id="e3ea195a19318267cdc1d27ad9b8642c" category="inline-link-macro">Oracle帐户登录</block>
-  <block id="4f4395612db3fd87fa732ad4576c0447" category="admonition"> 下载文件需要Oracle帐户。如果您没有Oracle帐户、请转到 <block ref="f286dce8bc3d39b38609ac0c11f4f840" category="inline-link-macro-rx"></block> 页面以创建一个。</block>
   <block id="aa2b11ad1dd4cd77a6434da6fa1398a2" category="list-text">从生成的复制目录和文件<block ref="30c81266c64bb09194fbb76d80c99fc1" prefix=" " category="inline-code"></block> 目录(例如、<block ref="20ea71c4664ee137228518ed973e20e3" prefix=" " category="inline-code"></block> 到Java的安装位置。示例<block ref="b7373e296aa12e5caf1e84edf230028c" prefix=" " category="inline-code"></block></block>
   <block id="b39eb8b293aab19c862c53f0897b4ab2" category="paragraph">Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Manager捆绑在一起并进行了配置。</block>
   <block id="cda5e923848265fa933cb0a9b4e6bbd4" category="summary">您可以从Active IQ Unified Manager实例中删除不再需要的vCenter Server。</block>
@@ -12077,4 +12075,6 @@
   <block id="cab005a3a8fcca5d1016f0afd9a771d8" category="paragraph">欲了解更多信息，请参阅<block ref="da4f101b8c06e4396ddd68eddc14d3e5" category="inline-link-rx"></block>。</block>
   <block id="96e464bda0daed17138b41cdc463c582" category="sidebar">Active IQ Unified Manager （Unified Manager，以前称为OnCommand Unified Manager）使您能够从单一界面监控和管理ONTAP存储系统的运行状况和性能。该文档库包含 9.18 版本的信息。</block>
   <block id="87d04c66d3151ccf32f27e7b5929e83f" category="sidebar">Active IQ Unified Manager 9.18 文档</block>
+  <block id="76851a5fa412a2e834b5c4b3b3fd04c5" category="inline-link-macro">Oracle账户登录页面</block>
+  <block id="85f96417c9ffad8261e8a1065c0612b0" category="admonition">下载该文件需要 Oracle 帐户。如果您没有 Oracle 帐户，请转到 <block ref="8a9d737434e1792055aa606e96405bae" category="inline-link-macro-rx"></block> 创建一个。</block>
 </blocks>

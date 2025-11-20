@@ -26,7 +26,7 @@ summary: 您可以在安装了 Unified Manager 的 Windows 服务器上升级到
 
 +
 
-NOTE:  下载文件需要Oracle帐户。如果您没有Oracle帐户、请转到 link:https://login.oracle.com/mysso/signon.jsp?request_id=007["Oracle帐户登录"] 页面以创建一个。
+NOTE: 下载该文件需要 Oracle 帐户。如果您没有 Oracle 帐户，请转到 link:https://signon.oracle.com/signin["Oracle账户登录页面"] 创建一个。
 
 . 使用 Windows 服务控制台停止以下 Unified Manager 服务：
 +
