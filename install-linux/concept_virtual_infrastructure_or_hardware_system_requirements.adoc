@@ -23,7 +23,7 @@ summary: 在虚拟基础架构或物理系统上安装 Unified Manager 应满足
  a| 
 RAM
  a| 
-12 GB （至少需要 8 GB ）
+12 GB
 
 
 
@@ -58,9 +58,7 @@ CPU 周期容量
 |===
 Unified Manager 可以安装在具有少量内存的系统上，但建议的 12 GB RAM 可确保有足够的可用内存来实现最佳性能，并使系统可以随着配置的增长容纳更多集群和存储对象。您不应在部署 Unified Manager 的虚拟机上设置任何内存限制，也不应启用任何妨碍软件利用系统上分配的内存的功能（例如，热气球）。
 
-此外，在安装另一个 Unified Manager 实例之前，一个 Unified Manager 实例可以监控的节点数也存在限制。有关详细信息，请参见 _Best Practices Guide_ 。
-
-https://www.netapp.com/pdf.html?item=/media/13504-tr4621pdf.pdf["技术报告 4621 ：《 Unified Manager 最佳实践指南》"^]
+此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监控的节点数量是有限制的。有关节点限制、CPU 和内存建议，请参阅 https://www.netapp.com/pdf.html?item=/media/13504-tr4621pdf.pdf["《 Unified Manager 最佳实践指南》"^]。
 
 内存页面交换会对系统和管理应用程序的性能产生负面影响。争用因主机整体利用率而不可用的 CPU 资源可能会降低性能。
 

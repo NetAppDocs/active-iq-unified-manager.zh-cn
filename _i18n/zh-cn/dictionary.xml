@@ -4256,7 +4256,6 @@
   <block id="a80f40a4cf172e4461c613d2afc0bade" category="cell">硬件配置</block>
   <block id="2e8526cbe762cb1b8393d935a3b0bf16" category="cell">建议设置</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="paragraph">RAM</block>
-  <block id="1ae7a40629a0ba722477f8f6efb3adec" category="paragraph">12 GB （至少需要 8 GB ）</block>
   <block id="5eef2922bee262fba019bc051ab7de8c" category="paragraph">处理器</block>
   <block id="fd7f01f6e4333c9d37efa65b264ff2a2" category="paragraph">4 个 CPU</block>
   <block id="8a12c61ecf12a4ae8fd07c6eb8345828" category="paragraph">CPU 周期容量</block>
@@ -4266,8 +4265,6 @@
   <block id="9a30e35d319f7a5e040049aab8ce3563" category="list-text">100 GB 磁盘空间用于安装目录</block>
   <block id="8717a81d4dc90139130ed5a3e6d56b94" category="list-text">MySQL 数据目录 50 GB 磁盘空间</block>
   <block id="56bad51d0fd70713223e857396803caa" category="paragraph">Unified Manager 可以安装在具有少量内存的系统上，但建议的 12 GB RAM 可确保有足够的可用内存来实现最佳性能，并使系统可以随着配置的增长容纳更多集群和存储对象。您不应在部署 Unified Manager 的虚拟机上设置任何内存限制，也不应启用任何妨碍软件利用系统上分配的内存的功能（例如，热气球）。</block>
-  <block id="118be0e1a3c862556b2a6426bdcd24de" category="paragraph">此外，在安装另一个 Unified Manager 实例之前，一个 Unified Manager 实例可以监控的节点数也存在限制。有关详细信息，请参见 _Best Practices Guide_ 。</block>
-  <block id="9650789293045a87cc14a47729b5ebfc" category="inline-link">技术报告 4621 ：《 Unified Manager 最佳实践指南》</block>
   <block id="ccd350b03208f21a01e8434aa29bf22c" category="paragraph">内存页面交换会对系统和管理应用程序的性能产生负面影响。争用因主机整体利用率而不可用的 CPU 资源可能会降低性能。</block>
   <block id="eeedd0b411cf8b8d426d2fb1abee2797" category="section-title">专用要求</block>
   <block id="c74cdaf0de603354b9d68a1b99f50e57" category="paragraph">安装 Unified Manager 的物理或虚拟系统应专用于 Unified Manager ，不应与其他应用程序共享。其他应用程序可能会占用系统资源，并会大幅降低 Unified Manager 的性能。</block>
@@ -11359,8 +11356,6 @@
   <block id="a5c178ca0adb1a0269f3bd998293dd38" category="paragraph">有关详细建议和解决方法、请参见<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block> (TR-4569)。</block>
   <block id="672333e5623d0406e27edefd4a600c08" category="paragraph">有关详细信息、请参见有关合规性类别的主题和<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block> 。</block>
   <block id="20dbca6ffc2afb63243f7244b8d18e68" category="paragraph">有关安全建议、请参见<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block></block>
-  <block id="ee26087a8b7ec790988603a3298c45f3" category="paragraph"><block ref="ee26087a8b7ec790988603a3298c45f3" category="inline-link-rx"></block></block>
-  <block id="b1ef1e646481ec8adc66cc5d2b2018ba" category="paragraph">此外，在安装另一个 Unified Manager 实例之前，一个 Unified Manager 实例可以监控的节点数也存在限制。有关详细信息，请参见 <block ref="30a299cd9b89fb73ae0b956f3afc43ad" category="inline-link-macro-rx"></block>。</block>
   <block id="06c70b026e4d10bfcd7be2ebfa770d1c" category="paragraph"><block ref="06c70b026e4d10bfcd7be2ebfa770d1c" category="inline-link-rx"></block></block>
   <block id="796f4a9be8e525f7e4d64c24bac529c9" category="paragraph"><block ref="796f4a9be8e525f7e4d64c24bac529c9" category="inline-link-rx"></block></block>
   <block id="03d53e406aee01a758a051ceaf737e76" category="paragraph">合规性基于<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block>。单击面板顶部的右箭头可在安全性页面上查看所有集群的安全详细信息。有关信息，请参见 <block ref="c1debbda1f6c52f8ae88dec67250c58d" category="inline-link-macro-rx"></block>。</block>
@@ -12077,4 +12072,10 @@
   <block id="87d04c66d3151ccf32f27e7b5929e83f" category="sidebar">Active IQ Unified Manager 9.18 文档</block>
   <block id="76851a5fa412a2e834b5c4b3b3fd04c5" category="inline-link-macro">Oracle账户登录页面</block>
   <block id="85f96417c9ffad8261e8a1065c0612b0" category="admonition">下载该文件需要 Oracle 帐户。如果您没有 Oracle 帐户，请转到 <block ref="8a9d737434e1792055aa606e96405bae" category="inline-link-macro-rx"></block> 创建一个。</block>
+  <block id="469228004487fcc667bf369582833cc1" category="paragraph">12 GB</block>
+  <block id="1ddb0349940e2d0ed836e2e7c09c0d8a" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监控的节点数量是有限制的。有关节点限制、CPU 和内存建议，请参阅<block ref="45d0c11c521f01e1d7ecf7777aba0774" category="inline-link-rx"></block>。</block>
+  <block id="7cf49a8cab90d5b1dc8bb6168b8e25f4" category="inline-link-macro">统一管理最佳实践指南</block>
+  <block id="8cf21208b286d8f7b61877ce31cfeacd" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监控的节点数量是有限制的。有关节点限制、CPU 和内存建议，请参阅 <block ref="2eee8552956d66b159af233732000339" category="inline-link-macro-rx"></block>。</block>
+  <block id="72473e7783768c475b1bae8307882647" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监控的节点数量是有限制的。有关节点限制、CPU 和内存建议，请参阅<block ref="8175e2f559de1060f0bed41c5845504d" category="inline-link-rx"></block>。</block>
+  <block id="89b5277f8d4fd00ec520a15062f36ee4" category="list-text">请注意，如果您将存储虚拟机 (SVM) 或集群添加到警报的资源中，则不会自动添加子对象。例如，如果您将集群添加到警报的资源中，则警报不会自动添加节点或 LUN。</block>
 </blocks>
