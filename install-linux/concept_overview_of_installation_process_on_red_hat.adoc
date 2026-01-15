@@ -13,4 +13,4 @@ summary: 安装工作流介绍了在使用 Unified Manager 之前必须执行的
 [role="lead"]
 安装工作流介绍了在使用 Unified Manager 之前必须执行的任务。
 
-image::../media/install_flow_on_rhel.gif[在 RHEL 上安装流程]
+image::../media/install_flow_on_rhel_2026.png[在 RHEL 2026 上安装流程]

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: client certificate, regenerate, validity, maintenance console 
 summary: 您可以使用维护控制台重新生成 Unified Manager 客户端证书。 
 ---
-= 重新生成客户端证书
+= 重新生成 Unified Manager 客户端证书
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -21,3 +21,5 @@ summary: 您可以使用维护控制台重新生成 Unified Manager 客户端证
 . 重新生成证书后，重新启动 Unified Manager 服务以应用更改。
 . 要验证更新的证书，请登录ONTAP。查看客户端证书状态和有效性状态。
 
+
+*相关信息*  https://docs.netapp.com/us-en/ontap/authentication/manage-certificates-sm-task.html["使用 System Manager 管理ONTAP证书"^]

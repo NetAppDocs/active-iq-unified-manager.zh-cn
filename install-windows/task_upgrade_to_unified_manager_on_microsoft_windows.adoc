@@ -33,7 +33,7 @@ summary: 您可以通过在 Windows 平台上下载并运行安装文件来升�
 在开始升级之前，请确保系统上已安装 Microsoft .NET 4.5.2 或更高版本。
 
 ====
-* 在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.4.4、则Unified Manager升级过程会自动将MySQL升级到8.4.4。您不能将早期版本的MySQL独立升级到8.4.4。
+* MySQL 社区版会在 Unified Manager 升级期间自动升级。如果您系统上安装的 MySQL 版本早于 8.4.7，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.4.7。您不能运行早期版本的 MySQL 到 8.4.7 的独立升级。
 * 除ASA R2系统之外、所有集群均受支持。
 * 您应具有 Windows 管理员权限。确保您的用户名不以感叹号 "` ！` " 开头。如果运行此安装的用户名以 "` ！` " 开头，则安装 Unified Manager 可能会失败。
 * 您应具有有效的凭据才能登录到 NetApp 支持站点。

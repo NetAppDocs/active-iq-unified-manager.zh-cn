@@ -26,10 +26,11 @@ summary: 您可以通过在Linux平台上下载并运行安装文件来升级Uni
 +
 请参见 link:task_upgrade_openjdk_on_linux_ocum.html["在 Linux 上升级 JRE"]。
 
+* 在升级 Unified Manager 之前，必须先安装或升级到正确版本的 7-zip。看 link:task_configure_7zip_package.html["配置 7-zip 软件包"]。
 * 为了避免数据丢失，如果在升级期间存在问题描述，则必须已为 Unified Manager 数据库创建备份。NetApp建议您从移动备份文件 `/opt/netapp/data` 目录到外部位置。
 * 在升级期间，系统可能会提示您确认是要保留先前的默认设置以将性能数据保留 13 个月，还是将其更改为 6 个月。确认后，将在 6 个月后清除历史性能数据。
 * 您应已完成所有正在运行的操作，因为 Unified Manager 在升级过程中不可用。
-* 在 Unified Manager 升级期间， MySQL Community Edition 会自动升级。如果系统上安装的MySQL版本早于8.4.4、则Unified Manager升级过程会自动将MySQL升级到8.4.4。
+* MySQL 社区版会在 Unified Manager 升级期间自动升级。如果您系统上安装的 MySQL 版本早于 8.4.7，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.4.7。
 
 
 .步骤

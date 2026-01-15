@@ -46,19 +46,19 @@ OpenJDK 版本 17.0.14+6
 
 
  a| 
-MySQL 8.4.4社区版
+MySQL 8.4.7 社区版
  a| 
 `rpm -qa` grep -i mysql
 
 
 
  a| 
-p7zip 16.02
+7-zip
  a| 
-`rpm -qa` grep p7zip
+`7zz -version`
 
 |===
-. 如果安装的MySQL版本早于MySQL 8.4.4 Community Edition、请输入以下命令将其卸载：
+. 如果安装的MySQL版本低于MySQL 8.4.7社区版，请输入以下命令进行卸载：
 +
 `rpm -e <mysql_package_name>`
 
@@ -87,7 +87,7 @@ Unified Manager 所需的 ` .rpm` 模块将解压缩到目标目录。
 预安装脚本会检查系统是否具有有效的Red Hat Enterprise Linux订阅、以及是否有权访问所需的软件存储库。如果此脚本发现任何问题，则必须在安装 Unified Manager 之前修复这些问题。
 
 +
-对于 Red Hat Enterprise Linux 8 系统，如果您有带有 JDK 17 的内部存储库 - OpenJDK、p7zip 和 AppStream 存储库提供的其他软件包，则必须禁用您的 AppStream 存储库并安装 MySQL Community Server。运行以下命令：
+对于 Red Hat Enterprise Linux 8 系统，如果您有包含 JDK 17 - OpenJDK、7-zip 以及 AppStream 存储库提供的其他软件包的内部存储库，则必须禁用 AppStream 存储库并安装 MySQL Community Server。运行以下命令：
 
 +
 [listing]

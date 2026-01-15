@@ -27,11 +27,11 @@ summary: 只需使用一个命令、即可从Red Hat Enterprise Linux主机停�
 `rpm -e netapp-um`
 
 +
-此步骤将删除所有关联的 NetApp RPM 软件包。它不会删除前提条件软件模块，例如 Java ， MySQL 和 p7zip 。
+此步骤将删除所有相关的NetApp RPM 软件包。它不会删除必备的软件模块，例如 Java、MySQL 和 7zip。
 
-. * 可选： * 如果适用，请删除支持的软件模块，例如 Java ， MySQL 和 p7zip ：
+. *可选：*如果适用，请删除支持软件模块，例如 Java、MySQL 和 7zip：
 +
-`rpm -e p7zip mysql-commune-client mysql-commune-server mysql-commune-common mysql-commune-libs java-x.y`
+`rpm -e mysql-community-client mysql-community-server mysql-community-common mysql-community-libs java-x.y`
 
 
 

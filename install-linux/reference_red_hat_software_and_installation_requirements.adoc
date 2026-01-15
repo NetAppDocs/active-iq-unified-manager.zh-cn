@@ -39,10 +39,10 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Ma
 
 以下第三方软件包是必需的，但 Unified Manager 不提供这些软件包。这些软件包会在安装期间由 `yum` 安装程序自动安装，前提是您已按照以下各节所述配置存储库。
 
-* MySQL 社区版 8.4.4 版（来自 MySQL 存储库）
+* MySQL 社区版 8.4.7 版（来自 MySQL 存储库）
 * OpenJDK 版本 17.0.14+6（来自 Red Hat Extra Enterprise Linux Server 存储库）
-* Python 3.12（来自 Red Hat Extra Enterprise Linux Server 存储库）
-* p7zip 16.02 或更高版本（从 Red Hat Extra Packages for Enterprise Linux 存储库）
+* Python 3.13.3（来自 Red Hat Extra Enterprise Linux Server 存储库）
+* 7zip 版本 7z2301-linux-x64。更多信息，请查看 link:task_configure_7zip_package.html["配置 7-zip 软件包"]。
 
 
 [NOTE]

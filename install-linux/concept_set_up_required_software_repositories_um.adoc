@@ -2,13 +2,13 @@
 permalink: install-linux/concept_set_up_required_software_repositories_um.html 
 sidebar: sidebar 
 keywords: set up, required, software, repositories 
-summary: 系统必须能够访问某些存储库，以便安装程序可以访问和安装所有必需的软件依赖项。 
+summary: 系统必须能够访问某些存储库和软件包，以便安装程序能够访问和安装所有必需的软件依赖项。 
 ---
-= 设置所需的软件存储库
+= 安装统一管理器所需的软件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-系统必须能够访问某些存储库，以便安装程序可以访问和安装所有必需的软件依赖项。
+系统必须能够访问某些存储库和软件包，以便安装程序能够访问和安装所有必需的软件依赖项。
