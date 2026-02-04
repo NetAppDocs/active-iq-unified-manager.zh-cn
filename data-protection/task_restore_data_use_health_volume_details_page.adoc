@@ -19,6 +19,18 @@ summary: 您可以使用卷 / 运行状况详细信息页面上的还原功能�
 
 NOTE: 请注意以下几点：
 
+* 在以下任何情况下，您都不能从快照还原目录或卷：
++
+** 已选择 *Yes, preserve all snapshot copies* 选项。
+** 您正在使用 LDAP 帐户来监控集群。
+** 您已以域用户身份登录。
+** 您的帐户已配置为进行 SAML 身份验证。
+** 您正在使用 NDMP 协议。
++
+有关详细信息，请参见 Knowledge Base 文章 https://kb.netapp.com/on-prem/ontap/DP/NDMP/NDMP-KBs/How_to_configure_NDMP_authentication_in_the_SVM-scope_previously_known_as_Vserver-scope_mode["如何在 "SVM-scope" 模式下配置 NDMP 身份验证"^]。
+
+
+
 * 您无法还原 NTFS 文件流。
 * 在以下情况下，还原选项不可用：
 +
