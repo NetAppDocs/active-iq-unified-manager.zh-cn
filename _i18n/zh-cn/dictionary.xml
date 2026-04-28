@@ -10906,7 +10906,6 @@
   <block id="a595de73dca9609245772790e84df92f" category="list-text">HDD (FabricPool)。将HDD和云层结合在一起</block>
   <block id="4b9cb70f77d5d1b7f1db6298a0112b46" category="list-text">VMDisk (SDS)。虚拟机中的虚拟磁盘</block>
   <block id="7a4441b84bc5cd489153019c009f24c4" category="list-text">VMDisk (FabricPool)。将虚拟磁盘和云层结合在一起</block>
-  <block id="e984493a6bcd860596d8423104637e9e" category="list-text">LUN (FlexArray)</block>
   <block id="4b791e706882987148eb5eaf50446cdc" category="list-text">非活动数据报告：此聚合上是启用还是禁用非活动数据报告功能。启用后、此聚合上的卷将在"性能：所有卷"视图中显示冷数据量。如果ONTAP 版本不支持非活动数据报告、则此字段中的值为"不适用"。</block>
   <block id="2523d9be01c5cc6e2c30bd2d090e5068" category="list-text">Threshold Policy：用户定义的在此存储对象上处于活动状态的性能阈值策略。您可以将光标置于包含省略号(...)的策略名称上、以查看完整策略名称或已分配策略名称列表。分配性能阈值策略和清除性能阈值策略按钮将保持禁用状态、直到您通过单击最左侧的复选框选择一个或多个对象为止。有关详细信息、请参见以下链接：</block>
   <block id="b9977255ef888a78b8d6854585d54fad" category="paragraph">"性能：所有节点"视图简要显示了Unified Manager实例监控的每个节点的性能事件、数据和配置信息。这样、您可以快速监控节点的性能、并对性能问题和阈值事件进行故障排除。</block>
@@ -12114,4 +12113,5 @@
   <block id="2aa02eda0e86d78eb7e7937d93415606" category="inline-link">如何在 "SVM-scope" 模式下配置 NDMP 身份验证</block>
   <block id="10c63a870bc95c46a742e43842ec8048" category="paragraph">有关详细信息，请参见 Knowledge Base 文章<block ref="b3c8348c93a87962cb210001996297e2" category="inline-link-rx"></block>。</block>
   <block id="8da4b54a11c14f3b7f3fc9138371f1c0" category="list-text">您无法还原 NTFS 文件流。</block>
+  <block id="c6655c77ef7f9737d998381c1db5e05b" category="paragraph">对于已配置为发送警报的所有事件，当这些事件通过所有可用状态（新建、已解决和已过时）转换时，将发送警报消息。如果不希望在事件进入"已解决"和"已过时"状态时接收事件警报，则可以配置全局设置以抑制这些警报。</block>
 </blocks>
