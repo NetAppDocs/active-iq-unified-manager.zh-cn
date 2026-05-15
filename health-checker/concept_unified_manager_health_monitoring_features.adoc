@@ -43,9 +43,6 @@ Unified Manager 包括以下功能：
 * 报告存储对象信息的创建和管理，例如物理和逻辑容量，利用率，空间节省，性能以及相关事件
 * 与 OnCommand Workflow Automation 集成以执行工作流
 +
-存储自动化商店包含 NetApp 认证的自动化存储工作流软件包，这些软件包专为与 OnCommand Workflow Automation （ WFA ）结合使用而开发。您可以下载这些软件包，然后将其导入到 WFA 中以执行这些软件包。自动工作流可从以下位置获得：
-
-+
-https://automationstore.netapp.com["存储自动化存储"]
+https://mysupport.netapp.com/site/products/all/details/ocwfa/downloads-tab["WFA 下载"^]
 
 

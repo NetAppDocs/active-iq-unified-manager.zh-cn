@@ -1768,9 +1768,6 @@
   <block id="076790dbfc4444ac90e62b970a3c9217" category="list-text">存储对象的标注</block>
   <block id="53715e24fcf7438bf8bb2d96e3d34de8" category="list-text">报告存储对象信息的创建和管理，例如物理和逻辑容量，利用率，空间节省，性能以及相关事件</block>
   <block id="42c75971e03568e6221b99dd63d98865" category="list-text">与 OnCommand Workflow Automation 集成以执行工作流</block>
-  <block id="6750b5b2c975d66813d2ea8952f0bae1" category="paragraph">存储自动化商店包含 NetApp 认证的自动化存储工作流软件包，这些软件包专为与 OnCommand Workflow Automation （ WFA ）结合使用而开发。您可以下载这些软件包，然后将其导入到 WFA 中以执行这些软件包。自动工作流可从以下位置获得：</block>
-  <block id="0479c8cefca250b39d519545313f1b42" category="inline-link">存储自动化存储</block>
-  <block id="63f4e00d9f003710efd37fe0fad569e9" category="paragraph"><block ref="63f4e00d9f003710efd37fe0fad569e9" category="inline-link-rx"></block></block>
   <block id="ade70c1ebef812981d41d7af23f9e34e" category="summary">组规则是您定义的一个标准，用于将存储对象（卷，集群或 SVM ）包含在特定组中。您可以使用条件组或条件为组定义组规则。</block>
   <block id="63c5a152b470e79439767f7868891853" category="doc">组规则如何用于组</block>
   <block id="d25492b6e73581dd8829ad2e63befc49" category="list-text">您必须将组规则与组关联。</block>
@@ -3990,7 +3987,6 @@
   <block id="28d59a31e0c455868121ba1f0071cbca" category="summary">您可以查看和管理与保护相关的详细信息，例如资源池， SVM 关联和保护作业。您可以使用相应的运行状况阈值页面为聚合，卷和关系配置全局运行状况阈值。</block>
   <block id="0dfcebea8fa1e701a2e1e7629f57777b" category="doc">保护关系的问题描述窗口和对话框</block>
   <block id="d1de0a7d7acb6c1e6d558f461b1c08b0" category="summary">您可以在 OnCommand Workflow Automation （ WFA ）和 Unified Manager 之间配置安全连接。通过连接到 Workflow Automation ，您可以使用 SnapMirror 和 SnapVault 配置工作流等保护功能以及用于管理 SnapMirror 关系的命令。</block>
-  <block id="0c6e4a96f43d5868275a60909a3a24fc" category="inline-link">用于管理 ONTAP 的 WFA 软件包</block>
   <block id="5b7d25b9e226028347921818ce714ea3" category="list-text">您必须具有在 Unified Manager 中创建的数据库用户的名称，以支持 WFA 和 Unified Manager 连接。</block>
   <block id="0baffa2d6dab374e8ae870aa23680370" category="paragraph">必须已为此数据库用户分配集成架构用户角色。</block>
   <block id="209a170f4735b61e63946462f4cc839b" category="list-text">您必须在 Workflow Automation 中获得管理员角色或架构师角色。</block>
@@ -9020,14 +9016,11 @@
   <block id="a3ec58cb7e9bf89ef726ec0d99330264" category="paragraph">在物理服务器上，向安装 Unified Manager 服务器的逻辑驱动器添加容量。</block>
   <block id="58e7b60f294b271a4bc9c01cccff27e5" category="paragraph">按照 Microsoft 主题中的步骤进行操作：</block>
   <block id="97424b0770e65ad13c37e9c4e0bf64e7" category="inline-link">扩展基本卷</block>
-  <block id="3771c84b1045d5ccd8689f90b09f9ac1" category="paragraph"><block ref="3771c84b1045d5ccd8689f90b09f9ac1" category="inline-link-rx"></block></block>
   <block id="bc78f8459cc3f99966ec858559866c73" category="paragraph">在物理服务器上，添加硬盘驱动器。</block>
   <block id="ccdf2f614d8c68d046e904c7e5c8f784" category="inline-link">添加硬盘驱动器</block>
-  <block id="6f7d162b9b4778023baeb8b3f6e0072c" category="paragraph"><block ref="6f7d162b9b4778023baeb8b3f6e0072c" category="inline-link-rx"></block></block>
   <block id="6c4f6491c1007de757c7587546b655d2" category="paragraph">在虚拟机上，增加磁盘分区的大小。</block>
   <block id="1c9690b8244451e91730c655ec71a542" category="paragraph">按照 VMware 主题中的步骤进行操作：</block>
   <block id="5254296818aa13c00d8252c86b324630" category="inline-link">增加磁盘分区的大小</block>
-  <block id="301c0a1773cbd034466e002644e3ab94" category="paragraph"><block ref="7d192e27a5a594f0b284619bff944ea7" category="inline-link-rx"></block></block>
   <block id="628c1a5391680603c9af1fbfbeb2ea58" category="summary">您可以使用以下菜单选项在 Unified Manager 服务器上执行各种管理任务。</block>
   <block id="1b1d9e9b28e55ae75dd476a860b48088" category="doc">其他菜单选项</block>
   <block id="e73c3ad56e71109b48a967de6d9401db" category="paragraph">可以使用以下菜单选项：</block>
@@ -11417,7 +11410,6 @@
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
   <block id="403384bc7be1a7f4e22bd05d0f8b3ec8" category="paragraph">*开始之前的内容</block>
   <block id="1b377a56a4ae0b95c40511aa64336c41" category="list-text">已安装的Workflow Automation版本必须为5.1.1P6或更高版本。</block>
-  <block id="9e24238c9686e244d38d02ad1f557aca" category="paragraph">5.1.1P6中包含"`用于管理集群模式Data ONTAP的WFA软件包`"、因此无需像以往那样从NetApp存储自动化商店下载此软件包并将其单独安装到WFA服务器上。<block ref="33bb079f56da49206dfe05941d30882d" category="inline-link-rx"></block></block>
   <block id="c8fd24815f6093e46c1cb75855be5d43" category="list-text">您必须已按照中的说明在Linux服务器上安装Unified Manager<block ref="55b3ec865696a24c30e5b2e799e3e5eb" category="inline-link-macro-rx"></block>。</block>
   <block id="eb0a89add4cd78412c29a6c06287ca71" category="paragraph">Unified Manager可使用<block ref="1de0b4f0d139f781b3b4de87edb4de70" prefix=" " category="inline-code"></block>实用程序安装软件和任何相关软件。由于Red Hat Enterprise Linux的映像各不相同、因此安装的软件包取决于映像中的软件。该<block ref="1de0b4f0d139f781b3b4de87edb4de70" prefix=" " category="inline-code"></block>实用程序将确定要安装的相关软件包。如果需要有关相关软件包的详细信息，请参见<block ref="f1a81936de546e8d25edd5d0aa76c791" category="inline-link-macro-rx"></block>。</block>
   <block id="8ed8853f67b146f3f04807d3865ef602" category="list-text">确保为 Red Hat Enterprise Linux 系统下载正确版本的安装程序文件。根据您安装的是Red Hat Enterprise Linux 8还是9、请确保下载适当版本的Unified Manager<block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block>文件。</block>
@@ -12114,4 +12106,10 @@
   <block id="10c63a870bc95c46a742e43842ec8048" category="paragraph">有关详细信息，请参见 Knowledge Base 文章<block ref="b3c8348c93a87962cb210001996297e2" category="inline-link-rx"></block>。</block>
   <block id="8da4b54a11c14f3b7f3fc9138371f1c0" category="list-text">您无法还原 NTFS 文件流。</block>
   <block id="c6655c77ef7f9737d998381c1db5e05b" category="paragraph">对于已配置为发送警报的所有事件，当这些事件通过所有可用状态（新建、已解决和已过时）转换时，将发送警报消息。如果不希望在事件进入"已解决"和"已过时"状态时接收事件警报，则可以配置全局设置以抑制这些警报。</block>
+  <block id="42429633f87d83134a274916f6a034c2" category="paragraph"><block ref="42429633f87d83134a274916f6a034c2" category="inline-link-rx"></block></block>
+  <block id="7735c39e24fb37c1d079ba9e3a91c264" category="paragraph"><block ref="7735c39e24fb37c1d079ba9e3a91c264" category="inline-link-rx"></block></block>
+  <block id="7c84ac4946087f09b4a17998f1e830e8" category="paragraph"><block ref="7c84ac4946087f09b4a17998f1e830e8" category="inline-link-rx"></block></block>
+  <block id="af050e52c447cd52b4b2f1ffdc032f19" category="inline-link">WFA 下载</block>
+  <block id="94d13f29f9fba88b1b0d477b50fbcb23" category="paragraph">"用于管理 Clustered Data ONTAP 的 WFA pack"包含在 WFA 5.1.1P6 中，因此无需像过去要求的那样从 NetAppStorage Automation Store 下载此包并将其单独安装到 WFA 服务器上。<block ref="205df40c4c09810da80912824982d64d" category="inline-link-rx"></block></block>
+  <block id="b51ca7d8abeeddcb10f579ebf26d482d" category="paragraph"><block ref="b51ca7d8abeeddcb10f579ebf26d482d" category="inline-link-rx"></block></block>
 </blocks>
