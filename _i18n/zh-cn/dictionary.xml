@@ -10371,7 +10371,6 @@
   <block id="2e5a5aa28eccce1bee3eb2d3c56b5309" category="paragraph">`+msiexec /x｛A78760DB-7EC0-4305- 97DB-E4A89CDFF4E1｝/qn /l* v %systemdrive%\UmUnInstall.log+`</block>
   <block id="281a23b64ca4e7554e3f0e93b5e421a4" category="list-text">第三方软件包：JRE、MySQL、Microsoft Visual C&amp;#43；&amp;#43；2015年可重新分发、Python、 和7zip</block>
   <block id="e097d9836e6942eb333688aa40c458db" category="paragraph">您可以创建角色并分配功能来控制用户对Active IQ Unified Manager 的访问。您可以确定具有访问Unified Manager中选定对象所需功能的用户。只有具有这些角色和功能的用户才能在Unified Manager中管理对象。</block>
-  <block id="6bb4bacb8a95b59b89d6baf47ca57e37" category="paragraph">此帐户必须具有_admin_角色、并且应用程序访问权限设置为_ontapi_、_console _和_http_。</block>
   <block id="6f07476dbe3e0c87ef5417742f01281d" category="summary">您可以生成包含诊断信息的支持包，以便将其发送给技术支持以获取故障排除帮助。您也可以从维护控制台将支持包上传到NetApp。</block>
   <block id="f6edcb137df0b7c4e3fba5f2b371471f" category="paragraph">您可以生成包含诊断信息的支持包，以便将其发送给技术支持以获取故障排除帮助。</block>
   <block id="f90eb4e62285b9cd8dd7d52b71e3aaeb" category="paragraph">从 Unified Manager 9.8 开始，如果 Unified Manager 服务器已连接到 Internet ，您还可以从维护控制台将支持包上传到 NetApp 。</block>
@@ -11441,7 +11440,6 @@
   <block id="7364abf9a3cfe2b121a7cea83050498f" category="paragraph"><block ref="e4721391d8c98496e77286760a370cbd" prefix="" category="inline-code"></block></block>
   <block id="a241a6b1d78a908e027ae227ba4afac8" category="paragraph"><block ref="ab96ce67a2bc362f79a7dc9a5d898d60" prefix="" category="inline-code"></block></block>
   <block id="ae96596167d0d8d8e2ef4039fbef6053" category="paragraph"><block ref="2cc661b5745d2b0218deba4ff43b2854" prefix="" category="inline-code"></block></block>
-  <block id="8cfa73f7b5a63cd662382021f2aaef95" category="paragraph">VMware vSphere 系统上的 Unified Manager OVA 在内部运行 Debian OS 12（bookworm）。有关受支持的ESXi服务器版本可以支持的虚拟机硬件版本的信息、请参阅VMware文档。</block>
   <block id="0d36f8c0424fdbfdd6f9a12cbba4ee8d" category="summary">故障排除：按照以下步骤解决日志轮换问题</block>
   <block id="a8bfd2afda4e15a2a1e73c27bdc332e8" category="doc">Windows 系统上的 NetApp 可管理性 SDK 日志轮换问题</block>
   <block id="5aeab31ef19d5a368133d1cbd8bd66be" category="paragraph">在 Windows 操作系统上将基于 ONTAPI API 的集群添加到 Unified Manager 后， <block ref="dbc60675af8648f05c2a3d903b31f558" prefix=" " category="inline-code"></block>文件大小增加并超出 10 MB 的大小限制。</block>
@@ -12112,4 +12110,6 @@
   <block id="af050e52c447cd52b4b2f1ffdc032f19" category="inline-link">WFA 下载</block>
   <block id="94d13f29f9fba88b1b0d477b50fbcb23" category="paragraph">"用于管理 Clustered Data ONTAP 的 WFA pack"包含在 WFA 5.1.1P6 中，因此无需像过去要求的那样从 NetAppStorage Automation Store 下载此包并将其单独安装到 WFA 服务器上。<block ref="205df40c4c09810da80912824982d64d" category="inline-link-rx"></block></block>
   <block id="b51ca7d8abeeddcb10f579ebf26d482d" category="paragraph"><block ref="b51ca7d8abeeddcb10f579ebf26d482d" category="inline-link-rx"></block></block>
+  <block id="59c721a4f6c44ca8cb60ecf288219ca8" category="paragraph">此帐户必须具有 _admin_ 角色，应用程序访问权限设置为 _ontapi_、_amqp_、_console_ 和 _http_。</block>
+  <block id="42448273f40a0cdbd38a68c84477f81c" category="paragraph">VMware vSphere 系统上的 Unified Manager OVA 在内部运行 Debian OS 13 (Trixie)。有关受支持版本的 ESXi 服务器可以支持的虚拟机硬件版本的信息，请参见 VMware 文档。</block>
 </blocks>
