@@ -17,6 +17,7 @@ NVMe 命名空间事件可为您提供有关命名空间状态的信息，以便
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===
@@ -68,6 +69,7 @@ NVmeNS destroy * （ nvmeNamespaceDestroy ）
 |===
 
 
+[[impact-area-performance]]
 == 影响区域：性能
 
 |===

@@ -15,6 +15,7 @@ qtree 事件可为您提供有关 qtree 容量以及文件和磁盘限制的信�
 
 
 
+[[impact-area-capacity]]
 == 影响区域：容量
 
 |===

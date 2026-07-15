@@ -90,6 +90,7 @@ https://fully_qualified_domain_name/
 
 
 
+[[additional-steps-to-perform-for-missing-packages]]
 == 要对缺少的软件包执行的其他步骤
 
 如果在升级期间检测到站点上缺少任何软件包、或者您的系统未连接到Internet、或者您未使用Red Hat Enterprise Linux存储库、请执行以下步骤以确定是否缺少任何必需的软件包并下载这些软件包。

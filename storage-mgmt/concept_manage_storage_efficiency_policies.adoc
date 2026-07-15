@@ -78,6 +78,7 @@ Type
 |===
 
 
+[[guidelines-for-creating-a-custom-storage-efficiency-policy]]
 == 创建自定义存储效率策略的准则
 
 如果现有 SEP 不满足存储工作负载的策略要求，您可以创建自定义 SEP 。但是，建议您尝试对存储工作负载使用系统定义的 SEP ，并且仅在必要时创建自定义 SEP 。

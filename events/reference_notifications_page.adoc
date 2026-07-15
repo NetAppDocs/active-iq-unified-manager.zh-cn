@@ -17,6 +17,7 @@ summary: 您可以将 Unified Manager 服务器配置为在生成事件或将事
 
 
 
+[[email]]
 == email
 
 通过此区域，您可以为警报通知配置以下电子邮件设置：
@@ -29,6 +30,7 @@ summary: 您可以将 Unified Manager 服务器配置为在生成事件或将事
 
 
 
+[[smtp-server]]
 == SMTP 服务器
 
 使用此区域可以配置以下 SMTP 服务器设置：
@@ -64,6 +66,7 @@ summary: 您可以将 Unified Manager 服务器配置为在生成事件或将事
 
 
 
+[[snmp]]
 == SNMP
 
 使用此区域可以配置以下 SNMP 陷阱设置：

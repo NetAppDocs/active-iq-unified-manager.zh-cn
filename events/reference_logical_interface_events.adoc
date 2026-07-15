@@ -15,6 +15,7 @@ summary: 网络接口事件可提供有关网络接口（ LIF ）状态的信息
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===
@@ -66,6 +67,7 @@ error
 |===
 
 
+[[impact-area-configuration]]
 == 影响区域：配置
 
 |===
@@ -84,6 +86,7 @@ error
 |===
 
 
+[[impact-area-performance]]
 == 影响区域：性能
 
 |===

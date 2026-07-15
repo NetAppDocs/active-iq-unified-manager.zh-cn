@@ -15,6 +15,7 @@ summary: 磁盘事件可为您提供有关磁盘状态的信息，以便您可�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===

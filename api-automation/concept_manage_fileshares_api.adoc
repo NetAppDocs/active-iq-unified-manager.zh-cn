@@ -17,6 +17,7 @@ summary: 您可以使用 /storage-provider/file-shares API 查看，添加，修
 
 
 
+[[view-file-shares]]
 == 查看文件共享
 
 您可以使用以下方法查看 Unified Manager 环境中可用的文件共享卷。将 ONTAP 集群添加为 Active IQ Unified Manager 上的数据源后，这些集群的存储工作负载将自动添加到 Unified Manager 实例中。此 API 会自动检索手动添加到 Unified Manager 实例中的文件共享。您可以通过使用文件共享密钥运行此 API 来查看特定文件共享的详细信息。
@@ -38,6 +39,7 @@ summary: 您可以使用 /storage-provider/file-shares API 查看，添加，修
 |===
 
 
+[[add-file-shares]]
 == 添加文件共享
 
 您可以使用以下方法在 SVM 中添加 CIFS 和 NFS 文件共享。您必须输入要创建的文件共享的详细信息作为输入参数。您不能使用此 API 添加 FlexGroup 卷。
@@ -64,6 +66,7 @@ summary: 您可以使用 /storage-provider/file-shares API 查看，添加，修
 
 
 
+[[delete-file-shares]]
 == 删除文件共享
 
 您可以使用以下方法删除特定文件共享。要删除特定文件共享，您需要输入文件共享密钥作为输入参数。
@@ -83,6 +86,7 @@ summary: 您可以使用 /storage-provider/file-shares API 查看，添加，修
 |===
 
 
+[[modify-file-shares]]
 == 修改文件共享
 
 您可以使用以下方法修改文件共享并更新其属性。

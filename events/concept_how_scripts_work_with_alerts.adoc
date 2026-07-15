@@ -36,6 +36,7 @@ summary: 您可以将警报与脚本关联，以便在 Unified Manager 中针对
 
 
 
+[[example-for-obtaining-arguments-from-scripts]]
 == 从脚本获取参数的示例
 
 [listing]

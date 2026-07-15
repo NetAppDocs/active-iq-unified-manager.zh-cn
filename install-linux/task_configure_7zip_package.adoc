@@ -20,12 +20,14 @@ summary: '要在 Red Hat Enterprise Linux (RHEL) 系统上成功安装 Unified M
 
 
 
+[[pre-install-the-7-zip-package]]
 == 预先安装 7-zip 软件包
 
 你可以手动下载或使用捆绑脚本预先安装 7-zip。请从以下两种方法中选择一种：
 
 
 
+[[download-using-a-bundled-script]]
 === 使用捆绑脚本进行下载
 
 .步骤
@@ -34,6 +36,7 @@ summary: '要在 Red Hat Enterprise Linux (RHEL) 系统上成功安装 Unified M
 
 
 
+[[download-manually]]
 === 手动下载
 
 请务必仅从官方网站下载 7-zip 压缩包。
@@ -71,6 +74,7 @@ sudo chmod 755 /usr/bin/7zz
 
 
 
+[[verify-the-installation]]
 == 验证安装情况
 
 请确认 7-zip 软件包已成功安装到您的系统中：

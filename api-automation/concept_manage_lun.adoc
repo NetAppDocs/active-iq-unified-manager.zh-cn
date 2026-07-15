@@ -17,6 +17,7 @@ summary: 您可以使用 /storage-provider/lun API 查看，添加，修改和�
 
 
 
+[[view-luns]]
 == 查看 LUN
 
 您可以使用以下方法查看 Unified Manager 环境中的 LUN 。将 ONTAP 集群添加为 Active IQ Unified Manager 上的数据源后，这些集群的存储工作负载将自动添加到 Unified Manager 实例中。此 API 会自动检索手动添加到 Unified Manager 实例中的所有 LUN 。您可以通过使用 LUN 密钥运行此 API 来查看特定 LUN 的详细信息。
@@ -38,6 +39,7 @@ summary: 您可以使用 /storage-provider/lun API 查看，添加，修改和�
 |===
 
 
+[[add-luns]]
 == 添加 LUN
 
 您可以使用以下方法向 SVM 添加 LUN 。
@@ -62,6 +64,7 @@ summary: 您可以使用 /storage-provider/lun API 查看，添加，修改和�
 ====
 
 
+[[delete-luns]]
 == 删除 LUN
 
 您可以使用以下方法删除特定 LUN 。要删除特定 LUN ，您需要提供 LUN 密钥。
@@ -86,6 +89,7 @@ summary: 您可以使用 /storage-provider/lun API 查看，添加，修改和�
 |===
 
 
+[[modify-luns]]
 == 修改 LUNs
 
 您可以使用以下方法修改 LUN 并更新其属性。要修改特定 LUN ，您需要提供 LUN 密钥。您还需要输入要更新的 LUN 属性及其值。要使用此 API 更新 LUN 阵列，您应查看 "`APIs for Using the API` " 中的建议。

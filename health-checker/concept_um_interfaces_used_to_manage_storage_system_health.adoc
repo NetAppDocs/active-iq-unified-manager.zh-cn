@@ -17,6 +17,7 @@ summary: 本节介绍了有关Active IQ Unified Manager 为解决数据存储容
 
 
 
+[[unified-manager-web-ui]]
 == Unified Manager Web UI
 
 通过 Unified Manager Web UI ，管理员可以监控与数据存储容量，可用性和保护相关的集群问题并对其进行故障排除。
@@ -25,6 +26,7 @@ summary: 本节介绍了有关Active IQ Unified Manager 为解决数据存储容
 
 
 
+[[maintenance-console]]
 == 维护控制台
 
 通过 Unified Manager 维护控制台，管理员可以监控，诊断和解决操作系统问题，版本升级问题，用户访问问题以及与 Unified Manager 服务器本身相关的网络问题。如果 Unified Manager Web UI 不可用，则只能通过维护控制台访问 Unified Manager 。

@@ -26,6 +26,7 @@ summary: 由于性能阈值策略已分配给存储对象，因此，如果移�
 ====
 
 
+[[threshold-policy-functionality-during-ha-takeover-and-giveback]]
 == 在 HA 接管和交还期间阈值策略功能
 
 在高可用性（ HA ）配置中执行接管或交还操作时，从一个节点移动到另一个节点的对象将以与手动移动操作相同的方式保留其阈值策略。由于 Unified Manager 每 15 分钟检查一次集群配置更改，因此在下次轮询集群配置之前，不会确定切换到新节点所产生的影响。
@@ -37,12 +38,14 @@ summary: 由于性能阈值策略已分配给存储对象，因此，如果移�
 ====
 
 
+[[threshold-policy-functionality-during-aggregate-relocation]]
 == 聚合重新定位期间的阈值策略功能
 
 如果使用 `aggregate relocation start` 命令将聚合从一个节点移动到另一个节点，则所有对象上都会保留单个阈值策略和组合阈值策略，并且阈值策略的节点部分将应用于新节点。
 
 
 
+[[threshold-policy-functionality-during-metrocluster-switchover]]
 == MetroCluster 切换期间的阈值策略功能
 
 在 MetroCluster 配置中，从一个集群移动到另一个集群的对象不会保留其用户定义的阈值策略设置。如果需要，您可以对已移至配对集群的卷和 LUN 应用阈值策略。对象移回其原始集群后，系统将自动重新应用用户定义的阈值策略。

@@ -15,6 +15,7 @@ summary: 端口事件可为您提供有关集群端口的状态，以便您可�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===
@@ -33,6 +34,7 @@ Node
 |===
 
 
+[[impact-area-performance]]
 == 影响区域：性能
 
 |===

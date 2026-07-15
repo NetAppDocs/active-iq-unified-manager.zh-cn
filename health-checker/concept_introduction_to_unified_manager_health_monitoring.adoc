@@ -23,6 +23,7 @@ Unified Manager 的主要功能包括监控，警报，管理集群的可用性�
 
 
 
+[[physical-and-logical-capacity]]
 == 物理和逻辑容量
 
 Unified Manager 利用了用于 ONTAP 存储对象的物理和逻辑空间的概念。
@@ -33,6 +34,7 @@ Unified Manager 利用了用于 ONTAP 存储对象的物理和逻辑空间的概
 
 
 
+[[capacity-measurement-units]]
 == 容量测量单位
 
 Unified Manager 会根据 1024 （ 2^10^ ）字节的二进制单元计算存储容量。在 ONTAP 9.10.0 及更早版本中，这些单位显示为 KB ， MB ， GB ， TB 和 PB 。从 ONTAP 9.10.1 开始，它们在 Unified Manager 中显示为 KiB ， MIB ， GiB ， TiB 和 PIB 。

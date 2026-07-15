@@ -89,6 +89,7 @@ Active IQ Unified Manager 在 ` 或数据中心` 类别下为您提供了一组 
 |===
 
 
+[[output-sample-for-metrics-apis]]
 == 指标API的输出示例
 
 例如、`/datacenter/cluster/nodes/\｛key｝/metrics` API检索节点的以下详细信息(以及其他信息)：
@@ -166,6 +167,7 @@ NOTE: 摘要值中的 95 百分位表示为该时间段收集的样本中 95% �
 ----
 
 
+[[output-sample-for-analytics-apis]]
 == 分析API的输出示例
 
 例如， ` /datacenter/cluster/nodes/Analytics` API 检索所有节点的以下值（以及其他值）：
@@ -208,6 +210,7 @@ NOTE: 摘要值中的 95 百分位表示为该时间段收集的样本中 95% �
 ----
 
 
+[[list-of-the-available-apis]]
 == 可用API的列表
 
 下表详细介绍了 ` / 指标` 和 ` / 分析` API 。

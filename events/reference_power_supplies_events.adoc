@@ -15,6 +15,7 @@ summary: 电源事件可为您提供有关硬件状态的信息，以便您可�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===

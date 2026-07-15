@@ -106,6 +106,7 @@ https://<IP address/hostname>:<port_number>/api/v2/datacenter/cluster/clusters
 
 
 
+[[authentication]]
 == 身份验证
 
 Unified Manager 支持 API 的基本 HTTP 身份验证方案。对于安全信息流（请求和响应），只能通过 HTTPS 访问 REST API 。API 服务器向所有客户端提供自签名 SSL 证书，以进行服务器验证。此证书可替换为自定义证书（或 CA 证书）。

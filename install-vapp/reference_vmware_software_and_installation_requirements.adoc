@@ -15,6 +15,7 @@ summary: 安装 Unified Manager 的 VMware vSphere 系统需要特定版本的�
 
 
 
+[[operating-system-software]]
 == 操作系统软件
 
 支持的操作系统是 VMware ESXi 8.0。
@@ -37,6 +38,7 @@ http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
 
 
 
+[[installation-requirements]]
 == 安装要求
 
 支持 Unified Manager 虚拟设备的 VMware 高可用性。

@@ -15,6 +15,7 @@ summary: 此表全面列出了可作为报告提供的视图和清单页面，�
 
 
 
+[[active-iq-unified-manager-reports]]
 == Active IQ Unified Manager 报告
 
 [cols="2*"]

@@ -15,6 +15,7 @@ summary: 闪存卡事件可为您提供有关数据中心节点上安装的闪�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===

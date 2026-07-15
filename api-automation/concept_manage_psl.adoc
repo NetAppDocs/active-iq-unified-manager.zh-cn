@@ -15,6 +15,7 @@ summary: 您可以使用 Active IQ Unified Manager 上的存储提供程序 API 
 
 
 
+[[view-performance-service-levels]]
 == 查看性能服务级别
 
 您可以使用以下方法查看将其分配给存储工作负载的性能服务级别。此 API 将列出系统定义的所有性能服务级别以及用户创建的所有性能服务级别，并检索所有性能服务级别的属性。如果要查询特定性能服务级别，则需要输入性能服务级别的唯一 ID 以检索其详细信息。
@@ -36,6 +37,7 @@ summary: 您可以使用 Active IQ Unified Manager 上的存储提供程序 API 
 |===
 
 
+[[add-performance-service-levels]]
 == 添加性能服务级别
 
 如果系统定义的性能服务级别不符合存储工作负载所需的服务级别目标（ Service Level Objective ， SLO ），您可以使用以下方法创建自定义性能服务级别并将其分配给存储工作负载。输入要创建的性能服务级别的详细信息。对于 IOPS 属性，请确保输入有效的值范围。
@@ -55,6 +57,7 @@ summary: 您可以使用 Active IQ Unified Manager 上的存储提供程序 API 
 |===
 
 
+[[delete-performance-service-levels]]
 == 删除性能服务级别
 
 您可以使用以下方法删除特定性能服务级别。如果性能服务级别已分配给工作负载，或者它是唯一可用的性能服务级别，则不能将其删除。要删除特定的性能服务级别，您需要提供性能服务级别的唯一 ID 作为输入参数。
@@ -74,6 +77,7 @@ summary: 您可以使用 Active IQ Unified Manager 上的存储提供程序 API 
 |===
 
 
+[[modify-performance-service-levels]]
 == 修改性能服务级别
 
 您可以使用以下方法修改性能服务级别并更新其属性。您不能修改系统定义的或分配给工作负载的性能服务级别。要修改特定性能服务级别，您需要提供的唯一 ID 。您还必须输入要更新的 IOPS 属性以及有效值。
@@ -93,6 +97,7 @@ patch
 |===
 
 
+[[view-aggregate-capabilities-based-on-performance-service-levels]]
 == 根据性能服务级别查看聚合功能
 
 您可以使用以下方法根据性能服务级别查询聚合功能。此 API 将返回数据中心中可用聚合的列表，并根据这些聚合可支持的性能服务级别指示功能。在卷上配置工作负载时，您可以查看聚合支持特定性能服务级别的功能，并根据该功能配置工作负载。只有在使用 API 配置工作负载时，您才能指定聚合。Unified Manager Web UI 不提供此功能。

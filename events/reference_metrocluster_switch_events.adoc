@@ -15,6 +15,7 @@ summary: MetroCluster 交换机事件可为您提供有关 MetroCluster 交换�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===

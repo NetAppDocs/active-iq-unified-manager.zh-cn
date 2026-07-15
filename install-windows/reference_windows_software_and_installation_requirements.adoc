@@ -16,6 +16,7 @@ summary: 要在 Windows 上成功安装 Unified Manager ，您应确保安装 Un
 
 
 
+[[operating-system-software]]
 == 操作系统软件
 
 您可以在以下Windows版本上安装Unified Manager：
@@ -42,6 +43,7 @@ NOTE: NetApp不支持使用Microsoft System Center Configuration Manager (SCCM)�
 
 
 
+[[third-party-software]]
 == 第三方软件
 
 以下第三方软件包与 Unified Manager 捆绑在一起。如果系统上未安装这些第三方软件包，则 Unified Manager 会在安装过程中安装这些软件包。
@@ -74,6 +76,7 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Ma
 ====
 
 
+[[installation-requirements]]
 == 安装要求
 
 * 应安装 Microsoft .NET 4.5.2 或更高版本。

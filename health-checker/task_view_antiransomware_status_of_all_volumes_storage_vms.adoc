@@ -20,6 +20,7 @@ summary: 您可以查看所有卷和Storage VM及其当前防勒索软件状态�
 
 
 
+[[view-security-details-of-all-volumes-with-anti-ransomware-detection]]
 == 查看具有反勒索软件检测功能的所有卷的安全详细信息
 
 .步骤
@@ -33,6 +34,7 @@ NOTE: 脱机卷、受限卷、SnapLock 卷、FlexGroup 卷、FlexCache 卷、 �
 
 
 
+[[view-security-details-of-all-storage-vms-with-anti-ransomware-detection]]
 == 查看具有防勒索软件检测功能的所有Storage VM的安全详细信息
 
 .步骤

@@ -15,6 +15,7 @@ summary: 通过所需的端口和协议，可以在 Unified Manager 服务器与
 
 
 
+[[connections-to-the-unified-manager-server]]
 == 与 Unified Manager 服务器的连接
 
 在典型安装中，连接到 Unified Manager Web UI 时无需指定端口号，因为始终使用默认端口。例如，由于 Unified Manager 始终尝试在其默认端口上运行，因此您可以输入 ` +https://<host>+` ，而不是 ` +https://<host>:443+` 。
@@ -142,6 +143,7 @@ AMQP QPID代理
 ====
 
 
+[[connections-from-the-unified-manager-server]]
 == 与 Unified Manager 服务器的连接
 
 您应将防火墙配置为打开端口，以便在 Unified Manager 服务器与受管存储系统，服务器和其他组件之间进行通信。如果端口未打开，则通信将失败。

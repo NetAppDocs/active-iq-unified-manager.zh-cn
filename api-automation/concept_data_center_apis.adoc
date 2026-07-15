@@ -28,6 +28,7 @@ Swagger API 界面上提供了 cURL 命令，示例，请求和 API 响应。您
 ====
 
 
+[[apis-for-storage-objects-in-your-data-center]]
 == 数据中心中存储对象的 API
 
 [cols="3*"]
@@ -203,6 +204,7 @@ NOTE: 需要注意的事项：
 
 
 
+[[apis-for-network-elements-in-your-data-center]]
 == 用于数据中心网络元素的 API
 
 数据中心类别中的以下 API 可检索有关环境中的端口和网络接口的信息，尤其是 FC 端口， FC 接口，以太网端口和 IP 接口。

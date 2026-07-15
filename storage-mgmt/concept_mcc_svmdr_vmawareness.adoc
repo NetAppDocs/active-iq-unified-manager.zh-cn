@@ -19,6 +19,7 @@ summary: 您可以查看 MetroCluster 配置或 Storage Virtual Machine （ Stor
 
 
 
+[[view-datastores-in-metrocluster-configuration]]
 == 查看 MetroCluster 配置中的数据存储
 
 在 MetroCluster 配置中查看数据存储库之前，请注意以下前提条件：
@@ -40,6 +41,7 @@ https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 文档中心"]
 
 
 
+[[view-datastores-in-storage-vm-disaster-recovery-configuration]]
 == 查看存储虚拟机灾难恢复配置中的数据存储区
 
 在 Storage VM 灾难恢复配置中查看数据存储库之前，请注意以下前提条件：
@@ -75,6 +77,7 @@ https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 文档中心"]
 
 
 
+[[unsupported-scenarios]]
 == 不支持的情形
 
 * 对于 MetroCluster 配置，请注意以下限制：

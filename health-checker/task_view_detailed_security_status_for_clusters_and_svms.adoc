@@ -17,6 +17,7 @@ summary: '"安全性"页面显示所有集群和Storage VM的高级别安全状�
 
 
 
+[[view-object-level-security-status-on-security-page]]
 == 在安全性页面上查看对象级别的安全状态
 
 作为系统管理员、您可以使用*安全性*页面查看ONTAP 集群和Storage VM在数据中心和站点级别的安全优势。支持的对象包括集群、Storage VM和卷。请按照以下步骤操作：
@@ -40,6 +41,7 @@ summary: '"安全性"页面显示所有集群和Storage VM的高级别安全状�
 
 
 
+[[view-security-details-of-all-clusters-on-the-clusters-page]]
 == 在集群页面上查看所有集群的安全详细信息
 
 通过*集群/安全性*详细信息页面、您可以查看集群级别的安全合规状态。
@@ -58,6 +60,7 @@ NOTE: 如果集群的证书已过期、您可以单击*集群证书有效期*下
 
 
 
+[[view-security-details-of-all-clusters-from-the-storage-vms-page]]
 == 从Storage VM页面查看所有集群的安全详细信息
 
 通过*存储VM /安全性*详细信息页面、您可以查看Storage VM级别的安全合规状态。

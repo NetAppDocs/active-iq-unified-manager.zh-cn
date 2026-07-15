@@ -22,6 +22,7 @@ Cloud Volumes ONTAP ， ONTAP Edge 或 ONTAP Select 系统上未启用系统定�
 
 
 
+[[cluster-threshold-policies]]
 == 集群阈值策略
 
 默认情况下，系统定义的集群性能阈值策略会分配给 Unified Manager 监控的每个集群：
@@ -44,6 +45,7 @@ Cloud Volumes ONTAP ， ONTAP Edge 或 ONTAP Select 系统上未启用系统定�
 
 
 
+[[node-threshold-policies]]
 == 节点阈值策略
 
 默认情况下，系统定义的节点性能阈值策略会分配给 Unified Manager 所监控集群中的每个节点：
@@ -79,6 +81,7 @@ Cloud Volumes ONTAP ， ONTAP Edge 或 ONTAP Select 系统上未启用系统定�
 
 
 
+[[aggregate-threshold-policies]]
 == 聚合阈值策略
 
 默认情况下，系统定义的聚合性能阈值策略会分配给 Unified Manager 所监控集群中的每个聚合：
@@ -105,6 +108,7 @@ Cloud Volumes ONTAP ， ONTAP Edge 或 ONTAP Select 系统上未启用系统定�
 ====
 
 
+[[workload-latency-threshold-policies]]
 == 工作负载延迟阈值策略
 
 系统定义的工作负载延迟阈值策略将分配给已配置性能服务级别策略且定义了 "`expected latency` " 值的任何工作负载：
@@ -120,6 +124,7 @@ Cloud Volumes ONTAP ， ONTAP Edge 或 ONTAP Select 系统上未启用系统定�
 
 
 
+[[qos-threshold-policies]]
 == QoS 阈值策略
 
 系统定义的 QoS 性能阈值策略将分配给已配置 ONTAP QoS 最大吞吐量策略（ IOPS ， IOPS/TB 或 MB/ 秒）的任何工作负载。当工作负载吞吐量值比配置的 QoS 值低 15% 时， Unified Manager 将触发事件：

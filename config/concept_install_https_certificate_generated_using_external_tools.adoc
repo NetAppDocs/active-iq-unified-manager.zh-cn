@@ -22,6 +22,7 @@ summary: 您可以安装自签名或 CA 签名的证书，这些证书是使用 
 
 
 
+[[format-for-loading-a-certificate-with-an-ec-key-pair]]
 == 用于加载具有 EC 密钥对的证书的格式
 
 允许的曲线为 "`prime256v1` " 和 " `secp384r1` " 。具有外部生成的 EC 对的证书示例：
@@ -49,6 +50,7 @@ summary: 您可以安装自签名或 CA 签名的证书，这些证书是使用 
 ----
 
 
+[[format-for-loading-a-certificate-with-an-rsa-key-pair]]
 == 用于加载具有 RSA 密钥对的证书的格式
 
 属于主机证书的 RSA 密钥对允许的密钥大小为 2048 ， 3072 和 4096 。具有外部生成的 * RSA 密钥对 * 的证书：
@@ -75,6 +77,7 @@ summary: 您可以安装自签名或 CA 签名的证书，这些证书是使用 
 
 
 
+[[checks-while-uploading-externally-generated-certificates]]
 == 上传外部生成的证书时检查
 
 系统会在上传使用外部工具生成的证书时执行检查。如果任何检查失败，则证书将被拒绝。此外，还会对产品中的 CSR 生成的证书以及使用外部工具生成的证书进行验证。

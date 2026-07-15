@@ -15,6 +15,7 @@ summary: Unified Manager在Windows平台上的快速入门指南。
 
 
 
+[[system-requirements]]
 == 系统要求
 
 * 操作系统
@@ -38,10 +39,12 @@ Unified Manager 在 64 位 Windows 操作系统上支持以下语言：
 
 
 
+[[install-active-iq-unified-manager]]
 == 安装 Active IQ Unified Manager
 
 
 
+[[download-the-installer]]
 === 下载安装程序：
 
 . 下载 `ActiveIQUnifiedManager-<version>.exe` 安装包。
@@ -50,6 +53,7 @@ Unified Manager 在 64 位 Windows 操作系统上支持以下语言：
 
 
 
+[[install-unified-manager]]
 === 安装 Unified Manager
 
 要安装 Unified Manager ，请确保已安装 Microsoft .NET 4.5.2 或更高版本。在安装过程中， Unified Manager 会根据需要安装其他第三方软件包。有关相关软件包的详细信息，请参见 link:../install-windows/reference_windows_software_and_installation_requirements.html["Windows 软件和安装要求"]。

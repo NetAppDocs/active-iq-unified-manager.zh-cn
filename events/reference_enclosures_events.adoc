@@ -15,6 +15,7 @@ summary: 机箱事件可为您提供有关数据中心中磁盘架机箱状态�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===
@@ -72,6 +73,7 @@ Node
 |===
 
 
+[[impact-area-configuration]]
 == 影响区域：配置
 
 |===

@@ -15,6 +15,7 @@ LUN 事件可为您提供有关 LUN 状态的信息，以便您可以监控潜�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 星号（ * ）表示已转换为 Unified Manager 事件的 EMS 事件。
@@ -112,6 +113,7 @@ error
 |===
 
 
+[[impact-area-capacity]]
 == 影响区域：容量
 
 |===
@@ -130,6 +132,7 @@ Volume
 |===
 
 
+[[impact-area-configuration]]
 == 影响区域：配置
 
 |===
@@ -148,6 +151,7 @@ LUN
 |===
 
 
+[[impact-area-performance]]
 == 影响区域：性能
 
 |===

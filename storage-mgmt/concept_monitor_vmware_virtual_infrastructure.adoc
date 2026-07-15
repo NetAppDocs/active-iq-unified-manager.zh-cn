@@ -43,6 +43,7 @@ image::../media/vm_workflow.gif[VM 工作流]
 
 
 
+[[what-is-not-supported]]
 == 不支持的功能：
 
 * Unified Manager 不支持 ONTAP 外部映射到 vCenter Server 实例的数据存储库。也不支持在这些数据存储库上具有虚拟磁盘的任何 VM 。

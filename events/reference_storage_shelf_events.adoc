@@ -15,6 +15,7 @@ summary: 存储架事件会告诉您存储架是否异常，以便您可以监�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===

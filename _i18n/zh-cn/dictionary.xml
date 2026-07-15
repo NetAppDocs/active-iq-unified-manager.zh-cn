@@ -5923,7 +5923,6 @@
   <block id="c9ff37030a40a51615a055f7a8a42953" category="paragraph">这些 Active IQ 事件不会与现有 Unified Manager 事件重叠，它们可确定与系统配置，布线，最佳实践和可用性问题相关的意外事件或风险。</block>
   <block id="52d175339f334b6fa22a9953121dc9a5" category="inline-link-macro">启用 Active IQ 门户事件</block>
   <block id="9b2dd5f36ee111b85cbdd29e104e3e55" category="inline-link">NetApp Active IQ</block>
-  <block id="9d704a09e3781ec3b4883efbf66a03bc" category="paragraph">NetApp Active IQ 是一项基于云的服务，可提供预测性分析和主动式支持，以优化 NetApp 混合云中的存储系统操作。请参见<block ref="598c2869fc03de80441fdb1c505b1b08" category="inline-link-rx"></block> 有关详细信息 ...</block>
   <block id="8bf4b15f13b20705180421db77e00c03" category="summary">如有必要，您可以查看 Unified Manager 维护窗口期间为所有存储对象生成的事件。维护窗口完成且所有系统资源均已备份和运行后，大多数事件将显示为 " 已废弃 " 状态。</block>
   <block id="5c51479d41450d52df396b2985d17bf6" category="paragraph">必须至少完成一个维护窗口，才能显示任何事件。</block>
   <block id="d4f82e4af56e463818b4857a4c878f4e" category="paragraph">默认情况下，维护窗口期间发生的事件不会显示在事件管理清单页面上。</block>
@@ -12043,10 +12042,7 @@
   <block id="76851a5fa412a2e834b5c4b3b3fd04c5" category="inline-link-macro">Oracle账户登录页面</block>
   <block id="85f96417c9ffad8261e8a1065c0612b0" category="admonition">下载该文件需要 Oracle 帐户。如果您没有 Oracle 帐户，请转到 <block ref="8a9d737434e1792055aa606e96405bae" category="inline-link-macro-rx"></block> 创建一个。</block>
   <block id="469228004487fcc667bf369582833cc1" category="paragraph">12 GB</block>
-  <block id="1ddb0349940e2d0ed836e2e7c09c0d8a" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监控的节点数量是有限制的。有关节点限制、CPU 和内存建议，请参阅<block ref="45d0c11c521f01e1d7ecf7777aba0774" category="inline-link-rx"></block>。</block>
   <block id="7cf49a8cab90d5b1dc8bb6168b8e25f4" category="inline-link-macro">统一管理最佳实践指南</block>
-  <block id="8cf21208b286d8f7b61877ce31cfeacd" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监控的节点数量是有限制的。有关节点限制、CPU 和内存建议，请参阅 <block ref="2eee8552956d66b159af233732000339" category="inline-link-macro-rx"></block>。</block>
-  <block id="72473e7783768c475b1bae8307882647" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监控的节点数量是有限制的。有关节点限制、CPU 和内存建议，请参阅<block ref="8175e2f559de1060f0bed41c5845504d" category="inline-link-rx"></block>。</block>
   <block id="89b5277f8d4fd00ec520a15062f36ee4" category="list-text">请注意，如果您将存储虚拟机 (SVM) 或集群添加到警报的资源中，则不会自动添加子对象。例如，如果您将集群添加到警报的资源中，则警报不会自动添加节点或 LUN。</block>
   <block id="72351f5aa135c1d7ffc7c5b47be4a6d2" category="doc">配置统一管理器审计日志</block>
   <block id="aca31ed102e613948a8b22994dddc430" category="paragraph">要启用远程日志记录，请选择“启用远程日志记录”。</block>
@@ -12113,4 +12109,8 @@
   <block id="59c721a4f6c44ca8cb60ecf288219ca8" category="paragraph">此帐户必须具有 _admin_ 角色，应用程序访问权限设置为 _ontapi_、_amqp_、_console_ 和 _http_。</block>
   <block id="42448273f40a0cdbd38a68c84477f81c" category="paragraph">VMware vSphere 系统上的 Unified Manager OVA 在内部运行 Debian OS 13 (Trixie)。有关受支持版本的 ESXi 服务器可以支持的虚拟机硬件版本的信息，请参见 VMware 文档。</block>
   <block id="a8b83d2538456b0b759bed68390111d7" category="paragraph">如果您的系统从 Unified Manager 9.7 升级，由于 Debian 版本中的文件系统更改，您无法直接从 9.14 升级到 9.18。请改为遵循以下推荐的升级路径：9.14 -&gt; 9.16P2 -&gt; 9.18。</block>
+  <block id="2adbe8bdce2f61c208adbcdcc37e0d1e" category="paragraph">NetApp Active IQ 是一种基于云的服务，可提供预测分析和主动支持，以优化整个 NetApp 混合云的存储系统运行。有关详细信息，请参见<block ref="0e9077c60daec97818e84f64654ad149" category="inline-link-rx"></block>。</block>
+  <block id="a6824bb8a91547b80941460f296740e6" category="paragraph">此外，在安装 Unified Manager 的第二个实例之前，Unified Manager 的单个实例可以监视的节点数是有限制的。有关节点限制、CPU 和内存建议，请参见<block ref="d981367ba2af9a1ad0ffd7e97f42a3c3" category="inline-link-rx"></block>。</block>
+  <block id="10fcd7df2705cd02d708b0d542e4de06" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监控的节点数有限制。有关节点限制、CPU 和内存建议，请参阅 <block ref="104d951f677faee57cc0f1a91faece05" category="inline-link-macro-rx"></block>。</block>
+  <block id="0cfb3eeec6906f18db7d4afb307803d7" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监视的节点数有限制。有关节点限制、CPU 和内存建议，请参阅<block ref="6876c7da67397aff652dc3a6ccdbcf26" category="inline-link-rx"></block>。</block>
 </blocks>

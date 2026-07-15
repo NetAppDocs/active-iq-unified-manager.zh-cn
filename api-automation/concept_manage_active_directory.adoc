@@ -15,6 +15,7 @@ summary: 您可以使用此处列出的 API 管理 SVM 上配置 CIFS 共享所�
 
 
 
+[[view-active-directory-mappings]]
 == 查看 Active Directory 映射
 
 您可以使用以下方法查看 SVM 的 Active Directory 映射的配置详细信息。要查看 SVM 上的 Active Directory 映射，您需要输入 SVM 密钥。要查询特定映射的详细信息，必须输入映射密钥。
@@ -36,6 +37,7 @@ summary: 您可以使用此处列出的 API 管理 SVM 上配置 CIFS 共享所�
 |===
 
 
+[[add-active-directory-mapping]]
 == 添加 Active Directory 映射
 
 您可以使用以下方法在 SVM 上创建 Active Directory 映射。必须输入映射详细信息作为输入参数。

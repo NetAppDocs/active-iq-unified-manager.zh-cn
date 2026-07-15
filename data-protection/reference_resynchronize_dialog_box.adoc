@@ -15,6 +15,7 @@ summary: 通过重新同步对话框，您可以重新同步先前已断开的 S
 
 
 
+[[resynchronization-options-tab]]
 == 重新同步选项选项卡
 
 通过重新同步选项选项卡，您可以为要重新同步的保护关系设置传输优先级和最大传输速率。
@@ -31,6 +32,7 @@ summary: 通过重新同步对话框，您可以重新同步先前已断开的 S
 
 
 
+[[source-snapshot-copies-tab]]
 == 源 Snapshot 副本选项卡
 
 源 Snapshot 副本选项卡显示了有关用于基线传输的源 Snapshot 副本的以下信息：
@@ -55,6 +57,7 @@ summary: 通过重新同步对话框，您可以重新同步先前已断开的 S
 
 
 
+[[command-buttons]]
 == 命令按钮
 
 * * 提交 *

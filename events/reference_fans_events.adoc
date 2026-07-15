@@ -15,6 +15,7 @@ summary: 风扇事件为您提供数据中心节点上的风扇状态信息，�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===

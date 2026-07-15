@@ -15,6 +15,7 @@ summary: 如何卸载包括Python和Microsoft Visual C++在内的第三方产品
 
 
 
+[[uninstall-python]]
 == 卸载 Python
 
 .步骤
@@ -25,6 +26,7 @@ summary: 如何卸载包括Python和Microsoft Visual C++在内的第三方产品
 
 
 
+[[uninstall-microsoft-visual-c-2013]]
 == 卸载 Microsoft Visual C++ 2013
 
 .步骤

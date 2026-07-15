@@ -15,6 +15,7 @@ NVRAM 电池事件可为您提供电池状态信息，以便您可以监控潜�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===

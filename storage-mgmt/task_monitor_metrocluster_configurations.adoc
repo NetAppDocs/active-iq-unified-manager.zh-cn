@@ -29,6 +29,7 @@ Unified Manager使用系统运行状况警报指示MetroCluster 配置中组件�
 
 
 
+[[monitor-connectivity-issues-in-metrocluster-over-fc-configuration]]
 == 监控基于FC的MetroCluster 配置中的连接问题
 
 对于基于FC的MetroCluster 配置中的集群、连接图表将显示在*集群/运行状况*详细信息页面上。请按照以下步骤操作：
@@ -58,6 +59,7 @@ image::../media/node_switch_connectivity.gif[节点交换机连接图标]
 
 
 
+[[monitor-connectivity-issues-in-metrocluster-over-ip-configuration]]
 == 监控基于IP的MetroCluster 配置中的连接问题
 
 对于采用基于IP的MetroCluster 配置的集群、连接图表将显示在*集群*页面上。请按照以下步骤操作：

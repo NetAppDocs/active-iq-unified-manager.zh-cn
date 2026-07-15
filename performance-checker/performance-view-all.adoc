@@ -21,6 +21,7 @@ summary: 所有存储对象性能视图
 
 
 
+[[performance-all-clusters-view]]
 == 性能：所有集群视图
 
 "性能：所有集群"视图简要显示了Unified Manager实例监控的每个集群的性能事件、数据和配置信息。通过此页面、您可以监控集群的性能、并对性能问题和阈值事件进行故障排除。
@@ -44,6 +45,7 @@ NOTE: 如果集群中的节点上安装了不同版本的ONTAP 软件、则会�
 
 
 
+[[performance-all-volumes-view]]
 == 性能：所有卷视图
 
 "性能：所有卷"视图简要显示了Unified Manager实例监控的每个FlexVol 卷和FlexGroup 卷的性能事件、计数器数据和配置信息。这样、您可以快速监控卷的性能、并对性能问题和阈值事件进行故障排除。
@@ -75,6 +77,7 @@ NOTE: 对于数据保护(DP)卷、仅显示用户生成的流量的计数器值�
 
 
 
+[[performance-all-aggregates-view]]
 == 性能：所有聚合视图
 
 "性能：所有聚合"视图简要显示了Unified Manager实例监控的每个聚合的性能事件、数据和配置信息。通过此页面、您可以监控聚合的性能、并对性能问题和阈值事件进行故障排除。
@@ -102,6 +105,7 @@ NOTE: 对于数据保护(DP)卷、仅显示用户生成的流量的计数器值�
 
 
 
+[[performance-all-nodes-view]]
 == 性能：所有节点视图
 
 "性能：所有节点"视图简要显示了Unified Manager实例监控的每个节点的性能事件、数据和配置信息。这样、您可以快速监控节点的性能、并对性能问题和阈值事件进行故障排除。
@@ -120,6 +124,7 @@ NOTE: Flash Cache读取可返回节点上由缓存满足的读取操作百分比
 
 
 
+[[performance-all-storage-vms-view]]
 == 性能：所有Storage VM视图
 
 "性能：所有Storage VM"视图简要显示了Unified Manager实例监控的每个Storage Virtual Machine (SVM)的性能事件、数据和配置信息。这样、您可以快速监控SVM的性能、并对性能问题和阈值事件进行故障排除。此页面上的延迟字段报告所有I/O请求的平均响应时间、以每操作毫秒数表示。
@@ -135,6 +140,7 @@ NOTE: 此页面上列出的SVM仅包括数据和集群SVM。Unified Manager不�
 
 
 
+[[performance-all-luns-view]]
 == Performance：所有LUN视图
 
 "性能：所有LUN"视图简要显示了Unified Manager实例监控的每个LUN的性能事件、数据和配置信息。这样、您可以快速监控LUN的性能、并对性能问题和阈值事件进行故障排除。
@@ -154,6 +160,7 @@ NOTE: 此页面上列出的SVM仅包括数据和集群SVM。Unified Manager不�
 
 
 
+[[performance-all-nvme-namespaces-view]]
 == 性能：所有NVMe命名空间视图
 
 性能：所有NVMe命名空间视图显示了Unified Manager实例监控的每个NVMe命名空间的性能事件、数据和配置信息概览。这样、您可以快速监控命名空间的性能和运行状况、并对问题和阈值事件进行故障排除。
@@ -168,6 +175,7 @@ NOTE: 此页面上列出的SVM仅包括数据和集群SVM。Unified Manager不�
 
 
 
+[[performance-all-network-interfaces-view]]
 == 性能：所有网络接口视图
 
 "性能：所有网络接口"视图简要显示了此Unified Manager实例监控的每个网络接口(LIF)的性能事件、数据和配置信息。通过此页面、您可以快速监控接口的性能、并对性能问题和阈值事件进行故障排除。以下是"性能：所有网络接口"视图中的一些重要字段。
@@ -184,6 +192,7 @@ NOTE: 此页面上列出的接口包括数据LIF、集群LIF、节点管理LIF�
 
 
 
+[[performance-all-ports-view]]
 == 性能：所有端口视图
 
 "性能：所有端口"视图简要显示了Unified Manager实例监控的每个端口的性能事件、数据和配置信息。这样、您可以快速监控端口的性能、并对性能问题和阈值事件进行故障排除。对于端口角色、将显示网络端口功能、可以是数据功能、也可以是集群功能。FCP端口不能具有角色、此角色将显示为不适用
@@ -199,6 +208,7 @@ NOTE: 仅显示物理端口的性能计数器值。不会显示VLAN或接口组�
 
 
 
+[[performance-qos-policy-groups-view]]
 == 性能：QoS策略组视图
 
 "QoS策略组"视图显示了Unified Manager正在监控的集群上可用的QoS策略组。其中包括传统QoS策略、自适应QoS策略以及使用性能服务级别分配的QoS策略。

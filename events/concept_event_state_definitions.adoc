@@ -41,6 +41,7 @@ summary: '事件状态有助于确定是否需要采取适当的更正操作。�
 
 
 
+[[example-of-different-states-of-an-event]]
 == 事件的不同状态示例
 
 以下示例说明了手动和自动事件状态更改。

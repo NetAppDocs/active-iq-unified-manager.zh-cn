@@ -27,6 +27,7 @@ summary: 您可以配置一个或多个条件以创建 Unified Manager 应用于
 
 
 
+[[example-of-configuring-a-condition-for-an-annotation-rule]]
 == 配置标注规则条件的示例
 
 请考虑对象类型 SVM 的条件，其中对象名称包含 `svm_data` 。

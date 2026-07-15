@@ -24,6 +24,7 @@ summary: 您可以在 Unified Manager 上启用或禁用合规性监控的安全
 
 
 
+[[customize-security-settings]]
 == 自定义安全设置
 
 要根据您的 ONTAP 环境自定义合规性监控设置，请执行以下步骤：
@@ -42,6 +43,7 @@ summary: 您可以在 Unified Manager 上启用或禁用合规性监控的安全
 
 
 
+[[customize-autosupport-and-authentication-settings]]
 == 自定义 AutoSupport 和身份验证设置
 
 在 * HTTPS 设置 * 部分中，您可以指定是否使用 AutoSupport 传输从 ONTAP 发送 AutoSupport 消息。

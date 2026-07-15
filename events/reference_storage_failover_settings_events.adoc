@@ -15,6 +15,7 @@ summary: 存储故障转移（ Storage Failover ， SFO ）设置事件为您提
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===

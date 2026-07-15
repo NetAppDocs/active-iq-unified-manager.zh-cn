@@ -15,12 +15,14 @@ summary: 连接事件可为您提供有关集群组件之间以及 MetroCluster 
 
 
 
+[[events-common-in-both-configurations]]
 == 这两种配置中通用的事件
 
 这些连接事件对于基于FC的MetroCluster 和基于IP的MetroCluster 配置都很常见。
 
 
 
+[[impact-area-availability]]
 === 影响区域：可用性
 
 |===
@@ -72,12 +74,14 @@ MetroCluster 关系
 |===
 
 
+[[metrocluster-over-fc-configuration]]
 == 基于FC的MetroCluster 配置
 
 这些事件与基于FC的MetroCluster 配置相关。
 
 
 
+[[impact-area-availability]]
 === 影响区域：可用性
 
 |===
@@ -217,12 +221,14 @@ MetroCluster 交换机网桥连接
 |===
 
 
+[[metrocluster-over-ip-configuration]]
 == 基于IP的MetroCluster 配置
 
 这些事件与基于IP的MetroCluster 配置相关。
 
 
 
+[[impact-area-availability]]
 === 影响区域：可用性
 
 |===

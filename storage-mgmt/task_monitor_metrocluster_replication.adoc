@@ -20,6 +20,7 @@ Unified Manager 使用系统运行状况警报监控 MetroCluster 配置中的�
 
 
 
+[[view-replication-for-metrocluster-over-ip-configurations]]
 == 查看 MetroCluster over IP 配置的复制
 
 对于基于IP的MetroCluster 配置、在Unified Manager左侧导航窗格的以下视图中、受MetroCluster over IP保护的集群的拓扑窗口视图会显示数据复制状态：
@@ -32,6 +33,7 @@ Unified Manager 使用系统运行状况警报监控 MetroCluster 配置中的�
 
 
 
+[[view-replication-for-metrocluster-over-fc-configurations]]
 == 查看 MetroCluster 通过 FC 配置的复制
 
 按照以下步骤确定基于FC配置的MetroCluster 的数据复制中的任何问题。

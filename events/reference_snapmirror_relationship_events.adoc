@@ -15,6 +15,7 @@ SnapMirror 关系事件可为您提供有关异步和同步 SnapMirror 关系的
 
 
 
+[[impact-area-protection]]
 == 影响区域：保护
 
 星号（ * ）表示已转换为 Unified Manager 事件的 EMS 事件。

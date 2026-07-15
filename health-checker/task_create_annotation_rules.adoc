@@ -57,6 +57,7 @@ summary: 您可以创建 Unified Manager 用于动态标注存储对象（例如
 
 
 
+[[example-of-creating-an-annotation-rule]]
 == 创建标注规则的示例
 
 在添加标注规则对话框中执行以下步骤以创建标注规则，包括配置条件和添加条件组：

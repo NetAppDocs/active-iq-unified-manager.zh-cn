@@ -15,6 +15,7 @@ summary: 在安装和配置 Unified Manager 之前，您应准备好有关环境
 
 
 
+[[unified-manager-installation-information]]
 == Unified Manager 安装信息
 
 安装 Unified Manager 所需的详细信息。
@@ -85,6 +86,7 @@ ESXi 服务器 IP 地址
 |===
 
 
+[[unified-manager-configuration-information]]
 == Unified Manager 配置信息
 
 安装 Unified Manager 后配置 Unified Manager 的详细信息。根据您的配置，某些值是可选的。
@@ -186,6 +188,7 @@ SNMP 端口
 |===
 
 
+[[cluster-information]]
 == 集群信息
 
 使用 Unified Manager 管理的存储系统的详细信息。

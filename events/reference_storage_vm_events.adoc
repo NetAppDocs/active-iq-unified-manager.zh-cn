@@ -17,6 +17,7 @@ Storage VM （ Storage Virtual Machine ，也称为 SVM ）事件可为您提供
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===
@@ -255,6 +256,7 @@ error
 |===
 
 
+[[impact-area-configuration]]
 == 影响区域：配置
 
 |===
@@ -295,6 +297,7 @@ SVM
 |===
 
 
+[[impact-area-performance]]
 == 影响区域：性能
 
 |===
@@ -368,6 +371,7 @@ SVM
 |===
 
 
+[[impact-area-security]]
 == 影响区域：安全性
 
 |===

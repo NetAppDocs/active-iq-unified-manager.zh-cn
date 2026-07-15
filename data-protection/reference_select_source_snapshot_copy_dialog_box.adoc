@@ -15,6 +15,7 @@ summary: 您可以使用选择源 Snapshot 副本对话框选择特定的 Snapsh
 
 
 
+[[default]]
 == Default
 
 用于选择用于确定用于初始化，更新和重新同步 SnapVault 和 SnapMirror 关系传输的 Snapshot 副本的默认行为。
@@ -87,6 +88,7 @@ summary: 您可以使用选择源 Snapshot 副本对话框选择特定的 Snapsh
 |===
 
 
+[[existing-snapshot-copy]]
 == 现有 Snapshot 副本
 
 用于从列表中选择现有 Snapshot 副本（如果允许对该操作选择 Snapshot 副本）。
@@ -169,6 +171,7 @@ summary: 您可以使用选择源 Snapshot 副本对话框选择特定的 Snapsh
 |===
 
 
+[[command-buttons]]
 == 命令按钮
 
 命令按钮可用于执行以下任务：

@@ -15,6 +15,7 @@ summary: 安装 Unified Manager 的 Linux 系统需要特定版本的操作系�
 
 
 
+[[operating-system-software]]
 == 操作系统软件
 
 Linux 系统必须安装以下版本的操作系统和支持软件：
@@ -33,6 +34,7 @@ NOTE: 在内部(Unified Manager和漏洞扫描程序安装在同一个VM上)或�
 
 
 
+[[third-party-software]]
 == 第三方软件
 
 Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Manager捆绑在一起并进行了配置。
@@ -52,6 +54,7 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Ma
 ====
 
 
+[[user-authorization-requirements]]
 == 用户授权要求
 
 在 Linux 系统上安装 Unified Manager 可以由 root 用户执行，也可以由非 root 用户使用 `sudo` 命令执行。
@@ -60,6 +63,7 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Ma
 
 
 
+[[installation-requirements]]
 == 安装要求
 
 下面列出了在系统上安装Red Hat Enterprise Linux和关联存储库的最佳实践。以不同方式安装或配置的系统或在外部（在云中）部署的系统可能需要执行其他步骤，并且 Unified Manager 可能无法在此类部署中正常运行。
@@ -96,6 +100,7 @@ Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Ma
 ====
 
 
+[[port-443-requirement]]
 == 端口 443 要求
 
 Red Hat Enterprise Linux的通用映像可能会阻止对端口443的外部访问。由于存在此限制，您可能无法在安装 Unified Manager 后连接到管理员 Web UI 。运行以下命令允许通用Red Hat Enterprise Linux上的所有外部用户和应用程序访问端口443。

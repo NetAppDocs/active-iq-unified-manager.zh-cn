@@ -134,6 +134,7 @@ NOTE: 为_Member_、_User Object Class_和_Group Object Class_属性输入的值
 
 
 
+[[authentication-servers-area]]
 == 身份验证服务器区域
 
 " 身份验证服务器 " 区域显示管理服务器与之通信以查找远程用户并对其进行身份验证的身份验证服务器。远程用户或组的凭据由身份验证服务器维护。

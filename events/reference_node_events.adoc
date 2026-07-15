@@ -17,6 +17,7 @@ summary: 节点事件可为您提供有关节点状态的信息，以便您可�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===
@@ -156,6 +157,7 @@ error
 |===
 
 
+[[impact-area-capacity]]
 == 影响区域：容量
 
 |===
@@ -185,6 +187,7 @@ Node
 |===
 
 
+[[impact-area-configuration]]
 == 影响区域：配置
 
 |===
@@ -203,6 +206,7 @@ Node
 |===
 
 
+[[impact-area-performance]]
 == 影响区域：性能
 
 |===
@@ -386,6 +390,7 @@ Node
 |===
 
 
+[[impact-area-security]]
 == 影响区域：安全性
 
 |===

@@ -17,12 +17,14 @@ summary: 了解典型的窗口布局有助于您有效地导航和使用 Active 
 
 
 
+[[object-list-window-layout]]
 == 对象列表窗口布局
 
 image::../media/object_list.png[对象列表]
 
 
 
+[[object-details-window-layout]]
 == 对象详细信息窗口布局
 
 image::../media/object_details.gif[对象详细信息]

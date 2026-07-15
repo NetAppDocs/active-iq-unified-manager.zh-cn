@@ -15,6 +15,7 @@ summary: 根据数据存储拓扑的部署情况，您可以使用 Unified Manag
 
 
 
+[[traditional-snapmirror-asynchronous-protection-relationships]]
 == 传统 SnapMirror 异步保护关系
 
 传统的 SnapMirror 异步保护可在源卷和目标卷之间提供块复制镜像保护。
@@ -23,6 +24,7 @@ summary: 根据数据存储拓扑的部署情况，您可以使用 Unified Manag
 
 
 
+[[snapmirror-asynchronous-protection-with-version-flexible-replication]]
 == 采用版本灵活复制的 SnapMirror 异步保护
 
 采用版本灵活复制的 SnapMirror 异步保护可在源卷和目标卷之间提供逻辑复制镜像保护，即使这些卷运行的是不同版本的 ONTAP 8.3 或更高版本软件（例如 8.3 至 8.3.1 ， 8.3 至 9.1 或 9.2.2 至 9.2 ）也是如此。
@@ -39,6 +41,7 @@ summary: 根据数据存储拓扑的部署情况，您可以使用 Unified Manag
 
 
 
+[[snapmirror-asynchronous-protection-with-version-flexible-replication-and-backup-option]]
 == SnapMirror 异步保护，具有版本灵活的复制和备份选项
 
 SnapMirror 异步保护具有版本灵活的复制和备份选项，可在源卷和目标卷之间提供镜像保护，并可在目标上存储镜像数据的多个副本。
@@ -49,18 +52,21 @@ SnapMirror 异步保护具有版本灵活的复制和备份选项，可在源卷
 
 
 
+[[snapmirror-unified-replication-mirror-and-vault]]
 == SnapMirror 统一复制（镜像和存储）
 
 SnapMirror 统一复制允许您在同一目标卷上配置灾难恢复和归档。与 SnapMirror 一样，统一数据保护会在您首次调用时执行基线传输。默认统一数据保护策略 `MirrorAndVault` 下的基线传输会为源卷创建 Snapshot 副本，然后将该副本及其引用的数据块传输到目标卷。与 SnapVault 一样，统一数据保护不会在基线中包含较早的 Snapshot 副本。
 
 
 
+[[snapmirror-synchronous-protection-with-strict-synchronization]]
 == 采用严格同步的 SnapMirror 同步保护
 
 采用 " `s` " 同步的 SnapMirror 同步保护可确保主卷和二级卷始终是彼此的真实副本。如果在尝试向二级卷写入数据时复制失败，则指向主卷的客户端 I/O 将中断。
 
 
 
+[[snapmirror-synchronous-protection-with-regular-synchronization]]
 == 采用常规同步的 SnapMirror 同步保护
 
 采用 " `re同步` " 的 SnapMirror 同步保护不要求主卷和二级卷始终是彼此的真实副本，从而确保主卷的可用性。如果在尝试向二级卷写入数据时发生复制失败，则主卷和二级卷将不再同步，客户端 I/O 将继续向主卷写入。
@@ -72,6 +78,7 @@ SnapMirror 统一复制允许您在同一目标卷上配置灾难恢复和归档
 ====
 
 
+[[snapmirror-active-sync]]
 == SnapMirror活动同步
 
 ONTAP 9.8及更高版本提供了SnapMirror主动同步功能、您可以使用它来保护具有LUN的应用程序、从而使应用程序能够透明地进行故障转移、从而确保在发生灾难时保持业务连续性。

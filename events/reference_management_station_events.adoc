@@ -15,6 +15,7 @@ summary: 管理工作站事件为您提供安装 Unified Manager 的服务器的
 
 
 
+[[impact-area-configuration]]
 == 影响区域：配置
 
 |===
@@ -154,6 +155,7 @@ error
 |===
 
 
+[[impact-area-performance]]
 == 影响区域：性能
 
 |===

@@ -15,6 +15,7 @@ MetroCluster 网桥事件可为您提供有关网桥状态的信息、以便您�
 
 
 
+[[impact-area-availability]]
 == 影响区域：可用性
 
 |===

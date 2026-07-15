@@ -15,6 +15,7 @@ summary: 保护事件会告诉您作业是失败还是已中止，以便您可�
 
 
 
+[[impact-area-protection]]
 == 影响区域：保护
 
 |===

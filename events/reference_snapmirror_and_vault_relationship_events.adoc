@@ -15,6 +15,7 @@ summary: 异步镜像和存储关系事件可为您提供有关异步 SnapMirror
 
 
 
+[[impact-area-protection]]
 == 影响区域：保护
 
 [NOTE]

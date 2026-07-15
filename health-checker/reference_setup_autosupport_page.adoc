@@ -22,6 +22,7 @@ summary: 通过 AutoSupport 页面，您可以向技术支持团队发送预定�
 ====
 
 
+[[send-on-demand-autosupport-messages]]
 == 发送按需 AutoSupport 消息
 
 您可以生成按需消息并将其发送给技术支持，指定的电子邮件收件人或两者。
@@ -36,6 +37,7 @@ summary: 通过 AutoSupport 页面，您可以向技术支持团队发送预定�
 
 
 
+[[enable-periodic-autosupport]]
 == 启用定期 AutoSupport
 
 您可以定期向技术支持发送特定的预定义消息，以进行问题描述诊断和解决。默认情况下，此功能处于启用状态。如果禁用，则管理员或维护用户可以启用这些设置。
@@ -49,6 +51,7 @@ summary: 通过 AutoSupport 页面，您可以向技术支持团队发送预定�
 
 
 
+[[upload-on-demand-support-bundle]]
 == 上传按需支持包
 
 您可以根据故障排除要求生成支持包并将其发送给技术支持。Unified Manager 仅存储最近生成的两个支持包。旧的支持包将从系统中删除。
@@ -72,6 +75,7 @@ summary: 通过 AutoSupport 页面，您可以向技术支持团队发送预定�
 
 
 
+[[set-up-http-proxy-server]]
 == 设置 HTTP 代理服务器
 
 如果您的环境不提供从Unified Manager服务器直接访问的权限、您可以指定一个代理来提供Internet访问、以便向支持部门发送AutoSupport 内容。此部分仅适用于管理员和维护用户。

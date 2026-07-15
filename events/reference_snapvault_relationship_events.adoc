@@ -15,6 +15,7 @@ SnapVault 关系事件可为您提供有关 SnapVault 关系状态的信息，�
 
 
 
+[[impact-area-protection]]
 == 影响区域：保护
 
 |===
