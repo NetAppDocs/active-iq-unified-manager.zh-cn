@@ -11231,7 +11231,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="863843d0337c17ec7301aee27dad4298" category="paragraph">您可以更新版本系列中的 OpenJDK 版本。例如、您可以从OpenJDK 11.0.16升级到OpenJDK 11.0.18、但不能直接从OpenJDK 11更新到OpenJDK 12。</block>
   <block id="aa2b11ad1dd4cd77a6434da6fa1398a2" category="list-text">从生成的复制目录和文件<block ref="30c81266c64bb09194fbb76d80c99fc1" prefix=" " category="inline-code"></block> 目录(例如、<block ref="20ea71c4664ee137228518ed973e20e3" prefix=" " category="inline-code"></block> 到Java的安装位置。示例<block ref="b7373e296aa12e5caf1e84edf230028c" prefix=" " category="inline-code"></block></block>
-  <block id="b39eb8b293aab19c862c53f0897b4ab2" category="paragraph">Unified Manager 部署在 WildFly Web 服务器上。WildFlY 26.1.3与Unified Manager捆绑在一起并进行了配置。</block>
   <block id="cda5e923848265fa933cb0a9b4e6bbd4" category="summary">您可以从Active IQ Unified Manager实例中删除不再需要的vCenter Server。</block>
   <block id="376e03ef3aadcc01297e928d6cef623c" category="paragraph">您可以从Active IQ Unified Manager实例中删除vCenter Server。例如、如果vCenter Server发现失败或不再需要vCenter Server、您可以将其删除。</block>
   <block id="ea11a696566494f3e2f7f7bfc07d792d" category="paragraph">删除vCenter Server还会删除此vCenter上托管的所有虚拟机(VM)及其配置数据。删除vCenter Server后、将不再对其及其关联对象和历史数据进行监控。这些更改将反映在vCenter和虚拟机清单页面上。</block>
@@ -11404,7 +11403,6 @@
   <block id="33e8b626195d8e65e8a07472d5254939" category="list-text">除ASA R2系统之外、所有集群均受支持。</block>
   <block id="d2dc935b8c37a6fe50f8b17f0fb9d07d" category="list-text">将Unified Manager Windows安装文件或zip文件下载到Windows系统上的目标目录。如果需要、解压缩此zip文件、然后导航到安装文件所在的目录。右键单击并以管理员身份运行 Unified Manager 安装程序可执行文件（ .exe ）。</block>
   <block id="9d8f72b258db1905ee26b8543db626af" category="paragraph">根据Unified Manager是在VMware ESXi服务器、Red Hat Linux服务器还是Microsoft Windows服务器上运行、向数据目录添加容量所需的步骤会有所不同。</block>
-  <block id="54ff3f05b478604e2dbd1f521328559d" category="list-text">Microsoft Visual C&amp;#43；&amp;#43；适用于Visual Studio 2015的可重新分发软件包14.26.28720.3版</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
   <block id="403384bc7be1a7f4e22bd05d0f8b3ec8" category="paragraph">*开始之前的内容</block>
   <block id="1b377a56a4ae0b95c40511aa64336c41" category="list-text">已安装的Workflow Automation版本必须为5.1.1P6或更高版本。</block>
@@ -12028,7 +12026,6 @@
   <block id="21965413ff0ccad2726549ebe4781cf5" category="paragraph">您只能将Active IQ Unified Manager从版本 9.14 或 9.16 升级到版本 9.18。</block>
   <block id="7e473733141d48a79308def35ea0692d" category="paragraph">您可以将Active IQ Unified Manager虚拟设备从版本 9.14 或 9.16 升级到 9.18。</block>
   <block id="8cd86d5cc1d7f96f096a4fd291bb6b49" category="list-text">Python 3.13.3</block>
-  <block id="bf5c4735a7e8e52a987541b7e8480ae8" category="list-text">7-zip 24.09 或更高版本</block>
   <block id="9326ef08a2cce5f24e4147815b8da2ec" category="list-text">选择*卸载此程序*。卸载除 3.13.3 之外的任何版本的 Python。确保保留 Python 版本 3.13.3。</block>
   <block id="b81c3af237acc4744b6e92fee57771e0" category="inline-link-macro">Oracle Java SE 17 存档下载页面</block>
   <block id="885b083e37169e9e86b9244a1e9616e4" category="paragraph">例如，下载<block ref="e8f39d9e2a4ab6624a21e71fb252a9a9" prefix=" " category="inline-code"></block>文件来自<block ref="d88dbe6bf412b9681e16c6a0a4b735ac" category="inline-link-macro-rx"></block>。</block>
@@ -12053,7 +12050,6 @@
   <block id="e8c80cc36155ada87dc563a78796b92f" category="image-alt">在 RHEL 2026 上安装流程</block>
   <block id="8645dca85b8ac5fc844aa6c266477f4d" category="summary">系统必须能够访问某些存储库和软件包，以便安装程序能够访问和安装所有必需的软件依赖项。</block>
   <block id="f0041b2df6c7d0abc50865b06c257260" category="doc">安装统一管理器所需的软件</block>
-  <block id="9ca50ce4ceb954680a475273fb837226" category="list-text">MySQL 社区版 8.4.7 版（来自 MySQL 存储库）</block>
   <block id="2ddfe6c502a2b94b370ca3c37f5b35cc" category="list-text">Python 3.13.3（来自 Red Hat Extra Enterprise Linux Server 存储库）</block>
   <block id="bff93131b836db7dbfe3c0ef47a3bdfb" category="inline-link-macro">配置 7-zip 软件包</block>
   <block id="461c8ff1de784c3f512e2bab8a2bb39d" category="list-text">7zip 版本 7z2301-linux-x64。更多信息，请查看 <block ref="aa6b1d720b802c9e7e893bb0ea66ac63" category="inline-link-macro-rx"></block>。</block>
@@ -12076,19 +12072,14 @@
   <block id="f36c9656dfe6d8b4341b27eee5cba4cd" category="list-text">设置可执行权限：</block>
   <block id="9c0f95d6de9186b24cce94c1c19ad0bb" category="section-title">验证安装情况</block>
   <block id="d0eba9fa9af1130797e7b097e86e1cf9" category="paragraph">请确认 7-zip 软件包已成功安装到您的系统中：</block>
-  <block id="3d96d3e1fe880ce5fb91ceb1a04daf8f" category="paragraph">MySQL 8.4.7 社区版</block>
   <block id="7942c3cbff858fefeeae13af0754ce91" category="paragraph">7-zip</block>
   <block id="bd4785a5ccc39256a5803dad4bd14553" category="paragraph"><block ref="e3b6ff30090579304f8b0ef931234002" prefix="" category="inline-code"></block></block>
-  <block id="230ac9fdbbe8b31d21322b2382325f25" category="list-text">如果安装的MySQL版本低于MySQL 8.4.7社区版，请输入以下命令进行卸载：</block>
   <block id="9e8e56b6decd77cb1c6c67922d0ea568" category="paragraph">对于 Red Hat Enterprise Linux 8 系统，如果您有包含 JDK 17 - OpenJDK、7-zip 以及 AppStream 存储库提供的其他软件包的内部存储库，则必须禁用 AppStream 存储库并安装 MySQL Community Server。运行以下命令：</block>
   <block id="dc2549c9552cf4727398a4c12030d976" category="paragraph">对于 Red Hat Enterprise Linux 8 系统，如果您有包含 java-17-openjdk、7-zip 和其他由 AppStream 存储库提供的软件包的内部存储库，则必须禁用 AppStream 存储库并安装 MySQL Community Server。运行以下命令：</block>
   <block id="85a7833c7b3c47e46293fd6b5df674cf" category="paragraph">此步骤将删除所有相关的NetApp RPM 软件包。它不会删除必备的软件模块，例如 Java、MySQL 和 7zip。</block>
   <block id="95570f21954a110ac5842214143555f2" category="list-text">*可选：*如果适用，请删除支持软件模块，例如 Java、MySQL 和 7zip：</block>
   <block id="9be3489c55784ee9bb690eb74a862d91" category="paragraph"><block ref="4b4071a6e6d8cc80744e78638c7ce679" prefix="" category="inline-code"></block></block>
   <block id="54b48a732c6188d2bcadf3f1d35f5767" category="list-text">在升级 Unified Manager 之前，必须先安装或升级到正确版本的 7-zip。看 <block ref="aa6b1d720b802c9e7e893bb0ea66ac63" category="inline-link-macro-rx"></block>。</block>
-  <block id="7efa98bf218af7d91336f05884607943" category="list-text">MySQL 社区版会在 Unified Manager 升级期间自动升级。如果您系统上安装的 MySQL 版本早于 8.4.7，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.4.7。</block>
-  <block id="1e4ae16efa77dcf7b5345478d2ccb141" category="list-text">MySQL 社区版 8.4.7</block>
-  <block id="7e32873dbcea7d787665ade5210a7e5e" category="list-text">MySQL 社区版会在 Unified Manager 升级期间自动升级。如果您系统上安装的 MySQL 版本早于 8.4.7，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.4.7。您不能运行早期版本的 MySQL 到 8.4.7 的独立升级。</block>
   <block id="3fdc1149ca052bb0caeb62195f6366e2" category="sidebar">安装所需软件</block>
   <block id="ef7e8c761b3774b5f1be9fac2702eee1" category="list-text">在以下任何情况下，您都不能从快照还原目录或卷：</block>
   <block id="1682df86d53dde8a42b648d552487863" category="list-text">已选择 *Yes, preserve all snapshot copies* 选项。</block>
@@ -12113,4 +12104,14 @@
   <block id="a6824bb8a91547b80941460f296740e6" category="paragraph">此外，在安装 Unified Manager 的第二个实例之前，Unified Manager 的单个实例可以监视的节点数是有限制的。有关节点限制、CPU 和内存建议，请参见<block ref="d981367ba2af9a1ad0ffd7e97f42a3c3" category="inline-link-rx"></block>。</block>
   <block id="10fcd7df2705cd02d708b0d542e4de06" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监控的节点数有限制。有关节点限制、CPU 和内存建议，请参阅 <block ref="104d951f677faee57cc0f1a91faece05" category="inline-link-macro-rx"></block>。</block>
   <block id="0cfb3eeec6906f18db7d4afb307803d7" category="paragraph">此外，在安装第二个 Unified Manager 实例之前，单个 Unified Manager 实例可以监视的节点数有限制。有关节点限制、CPU 和内存建议，请参阅<block ref="6876c7da67397aff652dc3a6ccdbcf26" category="inline-link-rx"></block>。</block>
+  <block id="18fbc72e34f6db6cc2a91021a22f6685" category="paragraph">Unified Manager 部署在 WildFly Web 服务器上。WildFly 27.0.1.Final 与 Unified Manager 捆绑并配置。</block>
+  <block id="b4f0bab6ced5839d1e92ed79131b11a2" category="list-text">MySQL Community Edition 版本 8.4.10（来自 MySQL 存储库）</block>
+  <block id="b615c4e0b0d7c85d2dee3a6fd975b521" category="paragraph">MySQL 8.4.10 社区版</block>
+  <block id="97393a61ddf5f5207980a27b12ed3e8a" category="list-text">如果安装的 MySQL 版本早于 MySQL 8.4.10 Community Edition，请输入以下命令进行卸载：</block>
+  <block id="bcdcfd5bc4aef222651ee23de0c085ab" category="list-text">MySQL Community Edition 在 Unified Manager 升级期间自动升级。如果系统上安装的 MySQL 版本早于 8.4.10，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.4.10。</block>
+  <block id="c76f3bc063be89828b42e514a84a8002" category="list-text">适用于 Visual Studio 2015 的 Microsoft Visual C&amp;#43;&amp;#43; 可再发行组件包版本 14.29.30133.0</block>
+  <block id="1e908f9a2431bb5d3c2c424f38255dfb" category="list-text">MySQL Community Edition 8.4.10 版</block>
+  <block id="6c400d4faf41f7de8a4c911b51918555" category="list-text">OpenJDK 版本 17.0.15+6</block>
+  <block id="d99d6f4a4a2deff3d04c76cf2a1ab80a" category="list-text">7-zip 版本 25.01 或更高版本</block>
+  <block id="0906e47b7d8a1a05c090ca9c48a976c3" category="list-text">MySQL Community Edition 在 Unified Manager 升级期间自动升级。如果系统上安装的 MySQL 版本早于 8.4.10，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.4.10。您不得对早期版本的 MySQL 单独执行升级至 8.4.10 的操作。</block>
 </blocks>
