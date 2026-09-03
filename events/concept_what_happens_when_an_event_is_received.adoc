@@ -25,4 +25,4 @@ Unified Manager 收到事件后，该事件将显示在 " 信息板 " 页面， 
 
 下图显示了此工作流。
 
-image::../media/um_perf_threshold_event_flow.gif[UM 性能阈值事件流]
+image::../media/um_perf_threshold_event_flow.gif[显示从计数器收集到电子邮件通知的阈值事件处理的图]

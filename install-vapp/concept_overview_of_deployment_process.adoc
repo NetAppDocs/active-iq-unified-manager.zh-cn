@@ -13,4 +13,4 @@ summary: 部署工作流介绍了在使用 Unified Manager 之前必须执行的
 [role="lead"]
 部署工作流介绍了在使用 Unified Manager 之前必须执行的任务。
 
-image::../media/deployment_sequence_oc_6_0.gif[部署顺序 oc 6 0]
+image::../media/deployment_sequence_oc_6_0.gif[显示 Unified Manager 部署先决条件、设备部署和初始配置步骤的图表]

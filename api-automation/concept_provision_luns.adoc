@@ -15,7 +15,7 @@ summary: 您可以使用 Active IQ Unified Manager 中提供的配置 API 在 St
 
 下图说明了 LUN 配置工作流中的步骤。
 
-image::../media/create_luns.gif[创建 LUNs]
+image::../media/create_luns.gif[显示创建 LUN 的工作流的图表，包括 Storage VM、服务级别和 igroup 步骤]
 
 [NOTE]
 ====

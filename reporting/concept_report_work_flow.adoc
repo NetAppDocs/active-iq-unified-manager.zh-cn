@@ -13,4 +13,4 @@ summary: 用于描述报告工作流的决策树。
 [role="lead"]
 用于描述报告工作流的决策树。
 
-image::../media/reports_view_workflow.png[报告视图工作流]
+image::../media/reports_view_workflow.png[显示用于查看、自定义、上传和下载报告的决策树工作流程的图表]

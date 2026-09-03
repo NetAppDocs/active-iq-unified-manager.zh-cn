@@ -111,7 +111,6 @@
   <block id="0f95c121d7dad838526a7f651b857814" category="list-text">您是应用程序管理员。</block>
   <block id="82860026803af0cdcc831f5f5030ae00" category="list-text">ONTAP 9.5 或更高版本支持要运行 REST API 操作的集群，并通过 HTTPS 将此集群添加到 Unified Manager 中。</block>
   <block id="98c896958cb9f708964fcc3c7173e78d" category="paragraph">下图说明了问题描述卷容量使用 ONTAP 故障排除工作流中的每个步骤。</block>
-  <block id="3a4d571f6dbcd3bcf57d5650a8d35570" category="image-alt">API 网关 ONTAP 工作流</block>
   <block id="76b26371e1f301a312db4d2d46c9befe" category="paragraph">此工作流涵盖了 Unified Manager 和 ONTAP REST API 的调用点。</block>
   <block id="015fada14012e66a3870b9ed0e2d6370" category="list-text">记下通知卷容量利用率的事件中的卷名称。</block>
   <block id="2217533b12d59ed2edfb6646b767c321" category="list-text">通过使用 volume name 作为 name 参数中的值，运行以下 Unified Manager API 来查询卷。</block>
@@ -219,7 +218,6 @@
   <block id="3e0d371dd6a28821e66400a80ae3293e" category="paragraph">用于聚合的数据中心 API 可检索有关可用空间和已用空间以及空间节省效率设置的相关信息。您还可以根据指定属性筛选检索到的信息。</block>
   <block id="b9264bc886fe551515446d6838f25b9a" category="paragraph">确定聚合中是否缺少空间的一种方法是，验证环境中是否存在启用了自动大小模式的卷。然后，您应确定哪些卷过度利用，并执行任何更正操作。</block>
   <block id="cc41b5742653a83710790622472b075b" category="paragraph">以下流程图说明了在启用了自动调整大小模式的情况下检索卷信息的过程：</block>
-  <block id="ad39018ca13824e28f2f9a2cce72cc67" category="image-alt">空间利用率</block>
   <block id="4813b0ff95088b1a2c693a9318f0938d" category="paragraph">此流假定集群已在 ONTAP 中创建并添加到 Unified Manager 中。</block>
   <block id="fc534cd4a3c07959344fdc4231e736c7" category="list-text">获取集群密钥，除非您知道值：</block>
   <block id="ae5c880b0329ee8b59031ec6a7a9e6af" category="paragraph">` 数据中心 / 集群 / 集群`</block>
@@ -406,7 +404,6 @@
   <block id="a724824e30a799c8ab8ad6d07591372f" category="summary">您可以使用 Active IQ Unified Manager 中提供的配置 API 在 Storage Virtual Machine （ SVM ）上配置 CIFS 共享和 NFS 文件共享。此配置工作流详细介绍了在创建文件共享之前检索 SVM 密钥，性能服务级别和存储效率策略的步骤。</block>
   <block id="f2ccc9d1761d3b100ebf0fcbd617c176" category="doc">配置 CIFS 和 NFS 文件共享</block>
   <block id="3e1dc833276a15580a0b71db58bdd106" category="paragraph">下图说明了文件共享配置工作流中的每个步骤。其中包括配置 CIFS 共享和 NFS 文件共享。</block>
-  <block id="a05f62bb5424e0dbdce8b06a07661d97" category="image-alt">创建文件共享</block>
   <block id="a3ba5a3fd33b03f148e52fd833cda7c3" category="paragraph">确保满足以下要求：</block>
   <block id="0ee7a846dbd3fbb321e0498c8fec35e0" category="list-text">已将 ONTAP 集群添加到 Unified Manager 中，并已获取集群密钥。</block>
   <block id="8e7dd4aa06ca40063b5d0e3de192e4d5" category="list-text">已在集群上创建 SVM 。</block>
@@ -443,7 +440,6 @@
   <block id="9f59891ed7805b3befef9ff1ec1a490c" category="summary">当数据中心中的存储对象超过阈值时，您将收到有关该事件的通知。使用此通知，您可以分析问题描述并使用事件 API 采取更正操作。</block>
   <block id="841c51f97743193567036063bf854b04" category="paragraph">当数据中心中的存储对象超过阈值时，您将收到有关该事件的通知。使用此通知，您可以使用 `Events` API 分析问题描述并采取更正操作。</block>
   <block id="97018b0a09f5dff8883bbaab1edaacde" category="paragraph">此工作流将卷示例作为资源对象。您可以使用 `Events` API 检索与卷相关的事件列表，分析该卷的严重问题，然后采取更正措施来更正问题描述。</block>
-  <block id="48d9352b608ff2804faa4c081f2c725c" category="image-alt">处理存储对象的事件相关问题流程图</block>
   <block id="730bf6325271b1c0c231fa74b6b0fe8a" category="paragraph">在采取补救措施之前，请按照以下步骤确定卷中的问题。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
   <block id="ba7662ee18a758af81108e87e6f415fd" category="list-text">分析数据中心中卷的严重 Active IQ Unified Manager 事件通知。</block>
@@ -461,7 +457,6 @@
   <block id="c20a54ace8febd13915bab7ed9c22b2b" category="summary">您可以使用 Active IQ Unified Manager 中提供的配置 API 在 Storage Virtual Machine （ SVM ）上配置 LUN 。此配置工作流详细介绍了在创建 LUN 之前检索 SVM 密钥，性能服务级别和存储效率策略的步骤。</block>
   <block id="9da912bee7145f0b3f8cdfc8f064d2b7" category="doc">配置 LUN</block>
   <block id="95ce53c30b31cee49bc8d6de45470e16" category="paragraph">下图说明了 LUN 配置工作流中的步骤。</block>
-  <block id="eb6c9e70579153da1799b8b5852bc08a" category="image-alt">创建 LUNs</block>
   <block id="ef1400db90d4de5f78f6366f581fba2a" category="paragraph">此工作流假定已将 ONTAP 集群添加到 Unified Manager 中，并且已获取集群密钥。此工作流还假定已在集群上创建 SVM 。</block>
   <block id="f51de5616e6ee7f9e60c306178f36de1" category="list-text">获取要创建 LUN 的 SVM 的 SVM 密钥，如 _Verifying SVM on clusters 工作流主题中所述。</block>
   <block id="e5aab0148907d8f1db63d8d841d558c0" category="list-text">或者，也可以通过运行以下 API 并从响应中检索要应用于 LUN 的存储效率策略的存储效率策略密钥。</block>
@@ -2630,7 +2625,6 @@
   <block id="9e0ca761831fb0f0dabbfe885a87d055" category="doc">使用 MySQL 数据库转储进行备份和还原</block>
   <block id="33fc247e555720879316017b076f2029" category="paragraph">数据库转储备份由备份目录中的一个文件和数据库存储库目录中的一个或多个文件组成。备份目录中的文件非常小，因为它仅包含指向重新创建备份所需的数据库存储库目录中的文件的指针。</block>
   <block id="2f3b4c9172b561f3e884b4272c129fb6" category="paragraph">首次生成数据库备份时，将在备份目录中创建一个文件，并在数据库存储库目录中创建一个完整备份文件。下次生成备份时，将在备份目录中创建一个文件，并在数据库存储库目录中创建一个增量备份文件，其中包含与完整备份文件的差异。此过程将在您创建其他备份时继续进行，直到达到最大保留设置，如下图所示。</block>
-  <block id="e7fbcbeb2e1e5f4c9bede03c1fbb8e41" category="image-alt">数据库备份</block>
   <block id="efbe49949ffa2f8a16f02f4ea7adc56a" category="paragraph">请勿重命名或删除这两个目录中的任何备份文件，否则任何后续还原操作将失败。</block>
   <block id="cb923ec5ab7e1a642e7b3ba98abfc4f1" category="paragraph">如果您将备份文件写入本地系统，则应启动一个将备份文件复制到远程位置的过程，以便在系统问题描述需要完全还原时可以使用这些文件。</block>
   <block id="c48f8fd51b32d584ba11d9662e34349b" category="paragraph">在开始备份操作之前， Active IQ Unified Manager 会执行完整性检查，以验证所有必需的备份文件和备份目录是否存在且可写。它还会检查系统上是否有足够的空间来创建备份文件。</block>
@@ -4313,7 +4307,6 @@
   <block id="0e8433f9a404f1f3ba601c14b026d321" category="paragraph">HTTPS</block>
   <block id="8c9d08852e8e1febedc693013a4f0f93" category="summary">安装工作流介绍了在使用 Unified Manager 之前必须执行的任务。</block>
   <block id="bed7b91a2df8076097fedfb7b87f92e7" category="doc">安装顺序概述</block>
-  <block id="322f88fdb47136f0505af3e29d2c5649" category="image-alt">总体安装流程</block>
   <block id="19f37b6c4f24bb13df7dd127a8bef89e" category="summary">如果安装在 Windows 系统上，则可以在 Unified Manager 上升级第三方产品，例如 JRE 。</block>
   <block id="88f52a8d98ed293c3b3467272c571594" category="paragraph">开发这些第三方产品的公司会定期报告安全漏洞。您可以按自己的计划升级到此软件的较新版本。</block>
   <block id="f4d5e78b085b0eab90a0158473fd3527" category="summary">您可以使用命令行界面安装 Unified Manager ，而无需用户干预。您可以通过将参数以键值对的形式传递来完成无人值守安装。</block>
@@ -4461,7 +4454,6 @@
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 互操作性表工具</block>
   <block id="687d97208bee730c33801be1d460abf6" category="paragraph"><block ref="687d97208bee730c33801be1d460abf6" category="inline-link-rx"></block></block>
   <block id="d8b2824dd58b8684d7afebae57a9ec15" category="doc">安装过程概述</block>
-  <block id="3c5dd4e02fb7c5614c57b78a81e01819" category="image-alt">在 Windows 上安装流程</block>
   <block id="688dd421579f9ca49f8068cf7c5fc387" category="summary">更改配置后，您可能需要重新启动 Unified Manager 。</block>
   <block id="f5f16fbe929ef4fb3a1beb89092f1fcf" category="list-text">停止 Unified Manager 服务：</block>
   <block id="8b9799c93c16edd687abfdb1ffc25984" category="cell">从 ...</block>
@@ -4816,7 +4808,6 @@
   <block id="cdf293ee43f03915a3f7f1de53213e71" category="list-text">SNMP 陷阱可以发送到陷阱接收方。</block>
   <block id="2c19ee2f43897bbfea72b8dc73f92e0c" category="list-text">可以执行自定义脚本以执行操作。</block>
   <block id="330d4432442808d2f6e07aef3daa80da" category="paragraph">下图显示了此工作流。</block>
-  <block id="bc4368d495f9c35aae14c797a81d5c9e" category="image-alt">UM 性能阈值事件流</block>
   <block id="7d35cfe4e8314aac138a164bde8b6177" category="summary">服务处理器事件为您提供处理器状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。</block>
   <block id="26792051b641e1103047c6002dcb59b1" category="doc">服务处理器事件</block>
   <block id="bdc918b5845232c51c59e7d6736fa1f7" category="paragraph">未配置服务处理器（ ocumEvtServiceProcessorNotConfigured ）</block>
@@ -8064,7 +8055,6 @@
   <block id="57c10d759e86cc8b9d09f0bca8a5408a" category="paragraph">根据报告中显示的结果，您可能需要调查如何在整个网络中以最佳方式使用可用容量。</block>
   <block id="ed48b981e2bb947abc52be3e3b172706" category="summary">用于描述报告工作流的决策树。</block>
   <block id="784fca41cf2612fc0bc6eb124a244bd2" category="doc">报告工作流</block>
-  <block id="78c9a95829a3975e642126c077b652b2" category="image-alt">报告视图工作流</block>
   <block id="cf34db983c807f1b3f9a4ea61d46d60a" category="summary">您可以使用 REST API 通过查看 Unified Manager 捕获的运行状况，容量，性能和安全信息来帮助管理集群。</block>
   <block id="d4ebc5d6d732b6ec32a446521b4a3d9a" category="doc">可用于报告的 Unified Manager REST API</block>
   <block id="e562c08e75037d1102362250b8921681" category="paragraph">要访问 REST API ，您必须具有操作员，存储管理员或应用程序管理员角色。</block>
@@ -8572,7 +8562,6 @@
   <block id="1af81fdbc1ff6d07a3324897a2fe46cc" category="list-text">验证校验和以确保软件已正确下载。</block>
   <block id="2216048a705ad9a52409473a75b4d6ad" category="summary">部署工作流介绍了在使用 Unified Manager 之前必须执行的任务。</block>
   <block id="aa6d1a2e27b6e5456d746d62b1002336" category="doc">部署过程概述</block>
-  <block id="726763bf5aecf665420de6eeab308805" category="image-alt">部署顺序 oc 6 0</block>
   <block id="186ee8f743cf6f79dae8d8b6579d0b17" category="summary">您可以升级 Unified Manager 虚拟设备</block>
   <block id="d9a8a070a49436c3c76ab9b3ca5a89ff" category="list-text">您已从 NetApp 支持站点下载升级文件 ISO 映像。</block>
   <block id="d24355e99c12f5ea949a960382388c4a" category="list-text">要升级 Unified Manager 的系统满足系统和软件要求。</block>
@@ -8942,7 +8931,6 @@
   <block id="e01f0446244e0c1d2861e95f0b27e3eb" category="paragraph">您必须提交更改才能添加网络接口。</block>
   <block id="17468e66f6f6fa8f16ad4f7b18e16de5" category="summary">配置工作流介绍了在使用 Unified Manager 之前必须执行的任务。</block>
   <block id="4803eca8e03e70fa406180caf3f66361" category="doc">配置顺序概述</block>
-  <block id="ca4d378a679606b42fbb1eeeb71eb25e" category="image-alt">安装后流程</block>
   <block id="fa53c7cb4994714cce10ec00d5090ab4" category="summary">您可以从 Unified Manager 的维护控制台重新启动虚拟机。生成新的安全证书或虚拟机出现问题时，必须重新启动。</block>
   <block id="ee688959ddb26212958a9d3a5141612d" category="paragraph">虚拟设备已启动。</block>
   <block id="1385afee2808fd6573c97f85634386be" category="paragraph">您以维护用户身份登录到维护控制台。</block>
@@ -9562,9 +9550,7 @@
   <block id="998b0f0721a85f1887ad21211d13755d" category="doc">典型窗口布局</block>
   <block id="f5d0d6012440752411c07b7aee29cd3d" category="paragraph">并非每个窗口都包含下图中的每个元素。</block>
   <block id="16faa1bfdfc3c23fd9c85afc8d128775" category="section-title">对象列表窗口布局</block>
-  <block id="6eaa6c9903ef182946f5bf66eee73304" category="image-alt">对象列表</block>
   <block id="4138fb3a63b46db04d955eab74245d6d" category="section-title">对象详细信息窗口布局</block>
-  <block id="7ce88d49c4ef0cb2d159967d47029a6e" category="image-alt">对象详细信息</block>
   <block id="3f3b34b0136f671163c63d1caeb6ab5c" category="paragraph">性能统计信息收集的问题描述未按时完成由横幅消息 `无法从集群 &lt;cluster_name&gt; 持续收集或集群 &lt;cluster_name&gt; 上的数据收集用时过长表示。`</block>
   <block id="26d330db3319c353dc85634ecb6ffc76" category="paragraph">在极少数情况下， Unified Manager 部署会对数据磁盘使用 " 硬盘 2" ，而不是 " 硬盘 3" 。如果在部署中发生这种情况，请增加较大磁盘的空间。数据磁盘的空间始终会多于另一个磁盘。</block>
   <block id="78c910be2d02be149eda5b48c822894e" category="list-text">在 * 主菜单 * 中，为 * 系统配置 * 选项输入数字。</block>
@@ -10124,10 +10110,8 @@
   <block id="c513bb45e58fc45e3ec83dab5da7da36" category="list-text">vmdk ：数据存储库上为虚拟磁盘提供存储空间的虚拟机磁盘。每个虚拟磁盘都有一个相应的 VMDK 。</block>
   <block id="56ebd08e1cbf3f9df816c1f70ba60dff" category="paragraph">这些对象在 VM 拓扑视图中表示。</block>
   <block id="8a07986e324a4a34c7cfeb47a2736741" category="paragraph">* 基于 ONTAP 的 VMware 虚拟化 *</block>
-  <block id="e8509cc177acaa157f47a7b0164d3a1f" category="image-alt">VM 部署</block>
   <block id="375aae8872c43ab2f8538114dccc92c7" category="paragraph">* 用户工作流 *</block>
   <block id="f85ada8d3fc041341df44b187b48d4f1" category="paragraph">下图显示了使用 VM 拓扑视图的典型用例：</block>
-  <block id="33e759e1731579239486744935dbb489" category="image-alt">VM 工作流</block>
   <block id="ab54009fea66778938a808305a2f0e4d" category="section-title">不支持的功能：</block>
   <block id="71ea79c55d09192e3c60b68484e514d5" category="list-text">Unified Manager 不支持 ONTAP 外部映射到 vCenter Server 实例的数据存储库。也不支持在这些数据存储库上具有虚拟磁盘的任何 VM 。</block>
   <block id="56036578c66036279dbd8f75e9437dc3" category="list-text">不支持跨多个 LUN 的数据存储库。</block>
@@ -12047,7 +12031,6 @@
   <block id="7d2851cca28635a1e83630f7d2e3fc63" category="inline-link">使用 System Manager 管理ONTAP证书</block>
   <block id="86df35e9b1dffd9ed39a46a4d7ffe7a1" category="paragraph">*相关信息* <block ref="c4ecef6f58bc214b3174de3e354d0911" category="inline-link-rx"></block></block>
   <block id="3e4eb743748e538f59a50a73d5f8b602" category="doc">设置统一管理器会话不活动超时时间</block>
-  <block id="e8c80cc36155ada87dc563a78796b92f" category="image-alt">在 RHEL 2026 上安装流程</block>
   <block id="8645dca85b8ac5fc844aa6c266477f4d" category="summary">系统必须能够访问某些存储库和软件包，以便安装程序能够访问和安装所有必需的软件依赖项。</block>
   <block id="f0041b2df6c7d0abc50865b06c257260" category="doc">安装统一管理器所需的软件</block>
   <block id="2ddfe6c502a2b94b370ca3c37f5b35cc" category="list-text">Python 3.13.3（来自 Red Hat Extra Enterprise Linux Server 存储库）</block>
@@ -12114,4 +12097,21 @@
   <block id="6c400d4faf41f7de8a4c911b51918555" category="list-text">OpenJDK 版本 17.0.15+6</block>
   <block id="d99d6f4a4a2deff3d04c76cf2a1ab80a" category="list-text">7-zip 版本 25.01 或更高版本</block>
   <block id="0906e47b7d8a1a05c090ca9c48a976c3" category="list-text">MySQL Community Edition 在 Unified Manager 升级期间自动升级。如果系统上安装的 MySQL 版本早于 8.4.10，则 Unified Manager 升级过程会自动将 MySQL 升级到 8.4.10。您不得对早期版本的 MySQL 单独执行升级至 8.4.10 的操作。</block>
+  <block id="1cc30bff2b84e7dbb26c93008946368f" category="image-alt">显示从列出事件到纠正措施到结束的卷事件分析的流程图</block>
+  <block id="d98ce8622bc7c722fcaa50d67a9cc960" category="image-alt">显示用于排除卷容量警报故障的 Unified Manager 和 ONTAP API 步骤的图表</block>
+  <block id="7ac0c5f50fb7cdf3dbaf55523a74903e" category="image-alt">显示从 SVM 设置到共享创建的 CIFS 和 NFS 文件共享设置工作流的图表</block>
+  <block id="b9754edcea8e7458a4fc4b43059bdbef" category="image-alt">显示创建 LUN 的工作流的图表，包括 Storage VM、服务级别和 igroup 步骤</block>
+  <block id="f62942f0e6b5f47ad12ab0f0a5f5a152" category="image-alt">用于识别集群聚合中过度使用的启用了自动调整大小模式的卷的流程图</block>
+  <block id="94d1891c253fd9543379f72f98b66db2" category="image-alt">显示 Unified Manager 初始配置工作流程和管理设置任务的图表</block>
+  <block id="164f08e4aee5d801ac4725f2a6956d02" category="image-alt">显示从计数器收集到电子邮件通知的阈值事件处理的图</block>
+  <block id="2300be0d474b8db24490f2217835c7d6" category="image-alt">显示指向数据库存储库中完整文件和增量文件的三个备份目录文件的图表</block>
+  <block id="124e47082818e619d401d9bdfe8d24ff" category="image-alt">显示 Red Hat Linux 上的先决条件、Unified Manager 安装和初始配置工作流的图表</block>
+  <block id="ef63b242e03a7363693688e53654ba1a" category="image-alt">显示 Unified Manager 安装、初始设置和管理设置工作流程的图表</block>
+  <block id="9e937dd680d7be51e4bfb7fcebb49a52" category="image-alt">显示 Unified Manager 部署先决条件、设备部署和初始配置步骤的图表</block>
+  <block id="611e3261f759280b352d61fb660a297c" category="image-alt">显示先决条件、Unified Manager 安装和初始配置工作流步骤的图表</block>
+  <block id="a4f4483ccd93f8d27cc242331a618d06" category="image-alt">显示用于查看、自定义、上传和下载报告的决策树工作流程的图表</block>
+  <block id="76bf2fdea1570becb5b97b7df5f76c5a" category="image-alt">显示 VMware 主机、虚拟机、数据存储区、VMDK、IP 网络和存储连接的图表</block>
+  <block id="e1f09e41d18a2f354b0f54a78d35a0c0" category="image-alt">显示跨计算、网络和存储层定位虚拟机应用程序延迟的工作流的图表</block>
+  <block id="090c8104c89a24e16b32214c066c6f21" category="image-alt">带有标记导航、搜索、筛选和报告控件的 Active IQ Unified Manager 对象列表窗口的屏幕截图</block>
+  <block id="fd5189ced6c908af40fee28d211b4c0a" category="image-alt">显示 Active IQ Unified Manager 卷详细信息窗口的屏幕截图，其中包含选项卡、容量详细信息、相关对象、历史记录和事件</block>
 </blocks>

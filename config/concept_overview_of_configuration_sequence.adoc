@@ -13,4 +13,4 @@ summary: 配置工作流介绍了在使用 Unified Manager 之前必须执行的
 [role="lead"]
 配置工作流介绍了在使用 Unified Manager 之前必须执行的任务。
 
-image::../media/post_install_flow.png[安装后流程]
+image::../media/post_install_flow.png[显示 Unified Manager 初始配置工作流程和管理设置任务的图表]

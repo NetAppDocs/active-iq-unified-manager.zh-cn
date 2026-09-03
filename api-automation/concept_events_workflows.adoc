@@ -15,7 +15,7 @@ summary: 当数据中心中的存储对象超过阈值时，您将收到有关�
 
 此工作流将卷示例作为资源对象。您可以使用 `Events` API 检索与卷相关的事件列表，分析该卷的严重问题，然后采取更正措施来更正问题描述。
 
-image::../media/handling_event_related_issues_of_a_storage_object_flowchart.gif[处理存储对象的事件相关问题流程图]
+image::../media/handling_event_related_issues_of_a_storage_object_flowchart.gif[显示从列出事件到纠正措施到结束的卷事件分析的流程图]
 
 在采取补救措施之前，请按照以下步骤确定卷中的问题。
 

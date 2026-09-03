@@ -20,11 +20,11 @@ summary: 了解典型的窗口布局有助于您有效地导航和使用 Active 
 [[object-list-window-layout]]
 == 对象列表窗口布局
 
-image::../media/object_list.png[对象列表]
+image::../media/object_list.png[带有标记导航、搜索、筛选和报告控件的 Active IQ Unified Manager 对象列表窗口的屏幕截图]
 
 
 
 [[object-details-window-layout]]
 == 对象详细信息窗口布局
 
-image::../media/object_details.gif[对象详细信息]
+image::../media/object_details.gif[显示 Active IQ Unified Manager 卷详细信息窗口的屏幕截图，其中包含选项卡、容量详细信息、相关对象、历史记录和事件]

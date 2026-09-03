@@ -19,7 +19,7 @@ summary: 您可以使用 Active IQ Unified Manager 中的数据中心 API 监控
 
 以下流程图说明了在启用了自动调整大小模式的情况下检索卷信息的过程：
 
-image::../media/space_utilization.gif[空间利用率]
+image::../media/space_utilization.gif[用于识别集群聚合中过度使用的启用了自动调整大小模式的卷的流程图]
 
 此流假定集群已在 ONTAP 中创建并添加到 Unified Manager 中。
 

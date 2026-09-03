@@ -15,7 +15,7 @@ summary: 您可以使用 Active IQ Unified Manager 中提供的配置 API 在 St
 
 下图说明了文件共享配置工作流中的每个步骤。其中包括配置 CIFS 共享和 NFS 文件共享。
 
-image::../media/create_fileshares.gif[创建文件共享]
+image::../media/create_fileshares.gif[显示从 SVM 设置到共享创建的 CIFS 和 NFS 文件共享设置工作流的图表]
 
 [NOTE]
 ====

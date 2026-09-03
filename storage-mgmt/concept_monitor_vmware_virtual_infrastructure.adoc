@@ -33,13 +33,13 @@ Unified Manager 以拓扑视图形式呈现虚拟环境的底层子系统，用�
 
 * 基于 ONTAP 的 VMware 虚拟化 *
 
-image::../media/vm_deployment.gif[VM 部署]
+image::../media/vm_deployment.gif[显示 VMware 主机、虚拟机、数据存储区、VMDK、IP 网络和存储连接的图表]
 
 * 用户工作流 *
 
 下图显示了使用 VM 拓扑视图的典型用例：
 
-image::../media/vm_workflow.gif[VM 工作流]
+image::../media/vm_workflow.gif[显示跨计算、网络和存储层定位虚拟机应用程序延迟的工作流的图表]
 
 
 
