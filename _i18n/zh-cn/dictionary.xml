@@ -12114,4 +12114,5 @@
   <block id="e1f09e41d18a2f354b0f54a78d35a0c0" category="image-alt">显示跨计算、网络和存储层定位虚拟机应用程序延迟的工作流的图表</block>
   <block id="090c8104c89a24e16b32214c066c6f21" category="image-alt">带有标记导航、搜索、筛选和报告控件的 Active IQ Unified Manager 对象列表窗口的屏幕截图</block>
   <block id="fd5189ced6c908af40fee28d211b4c0a" category="image-alt">显示 Active IQ Unified Manager 卷详细信息窗口的屏幕截图，其中包含选项卡、容量详细信息、相关对象、历史记录和事件</block>
+  <block id="ebe5a1b0891ca6dea431768b7ab00971" category="paragraph">您必须先从 Unified Manager 中删除集群，然后才能将其停用。如果尝试删除集群时该集群已处于脱机状态或无法访问，则 Unified Manager 无法与该集群通信以删除应用程序记录和已配置的事件管理系统 (EMS) 订阅。这将导致删除过程失败或在完成前无响应。</block>
 </blocks>
