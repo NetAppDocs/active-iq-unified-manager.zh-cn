@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: snapshot copy, copies, restore, using, netapp, snapshots 
 summary: NetApp Snapshot副本会为Unified Manager数据库和配置文件创建一个时间点映像、您可以使用此映像在发生系统故障或数据丢失时进行还原。您计划定期将Snapshot副本写入其中一个ONTAP 集群上的卷、以便始终具有最新副本。 
 ---
-= 使用 NetApp Snapshot 进行备份和还原
+= 在 Active IQ Unified Manager 中使用 NetApp 快照进行备份和恢复
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

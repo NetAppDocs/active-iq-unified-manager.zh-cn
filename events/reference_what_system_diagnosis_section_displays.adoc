@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: system, diagnosis, section, displays 
 summary: 事件详细信息页面的系统诊断部分提供的信息可帮助您诊断可能导致此事件的问题。 
 ---
-= 系统诊断部分显示的内容
+= 了解 Active IQ Unified Manager 中的系统诊断
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

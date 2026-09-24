@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: unified manager, server, does 
 summary: Unified Manager 服务器基础架构由数据收集单元，数据库和应用程序服务器组成。它提供基础架构服务，例如发现，监控，基于角色的访问控制（ RBAC ），审核和日志记录。 
 ---
-= Unified Manager 服务器的功能
+= 了解 Active IQ Unified Manager 服务器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

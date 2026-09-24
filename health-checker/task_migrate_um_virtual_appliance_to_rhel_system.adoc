@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: unified manager, migrate, virtual, appliance, linux system 
 summary: 如果要更改运行Unified Manager的主机操作系统、可以将Unified Manager MySQL数据库转储备份从虚拟设备还原到Red Hat Enterprise Linux系统。 
 ---
-= 将 Unified Manager 虚拟设备迁移到 Linux 系统
+= 将 Active IQ Unified Manager 虚拟设备迁移到 Linux 系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

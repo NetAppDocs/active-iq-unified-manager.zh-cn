@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: download, unified manager, installation, file 
 summary: 从 NetApp 支持站点下载 Unified Manager 安装文件，将 Unified Manager 部署为虚拟设备。 
 ---
-= 下载 Unified Manager 安装文件
+= 下载 Active IQ Unified Manager 安装文件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

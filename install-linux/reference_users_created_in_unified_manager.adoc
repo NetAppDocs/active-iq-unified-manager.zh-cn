@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: users, created, unified manager, installation 
 summary: 在Red Hat Enterprise Linux上安装Unified Manager时、Unified Manager和第三方实用程序会创建以下用户：umadmin、jjjJBoss和myql。 
 ---
-= 在 Unified Manager 安装期间创建的用户
+= 了解 Active IQ Unified Manager 安装期间创建的用户
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

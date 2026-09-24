@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: test, script, execution 
 summary: 在为存储对象生成警报时，您可以验证脚本是否已正确执行。 
 ---
-= 测试脚本执行
+= 在 Active IQ Unified Manager 中执行测试脚本
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

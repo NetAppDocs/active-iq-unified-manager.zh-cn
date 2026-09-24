@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add, network, interfaces 
 summary: 如果需要分隔网络流量，可以添加新的网络接口。 
 ---
-= 添加网络接口
+= 向 Active IQ Unified Manager 添加网络接口
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

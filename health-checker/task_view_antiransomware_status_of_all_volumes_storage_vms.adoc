@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, anti-ransomware status, volumes, storage VMs, SVMs 
 summary: 您可以查看所有卷和Storage VM及其当前防勒索软件状态的列表、以便确定卷上的数据是否受到充分保护、不会受到勒索软件攻击。 
 ---
-= 查看所有卷和Storage VM的反勒索软件状态
+= 查看 Active IQ Unified Manager 中所有卷和存储 VM 的反勒索软件状态
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

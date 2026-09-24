@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: supported upgrade path, upgrade path, n-2, which versions can be upgraded 
 summary: 支持的升级路径 
 ---
-= Unified Manager版本支持的升级路径
+= 请对 Active IQ Unified Manager 版本使用受支持的升级路径
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

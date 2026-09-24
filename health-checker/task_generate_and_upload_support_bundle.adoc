@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: generate, upload, support bundle 
 summary: 您可以生成包含诊断信息的支持包，以便将其发送给技术支持以获取故障排除帮助。您也可以从维护控制台将支持包上传到NetApp。 
 ---
-= 生成并上传支持包
+= 从 Active IQ Unified Manager 生成并上传支持包
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

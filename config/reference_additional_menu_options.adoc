@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: additional menu, options 
 summary: 您可以使用以下菜单选项在 Unified Manager 服务器上执行各种管理任务。 
 ---
-= 其他菜单选项
+= 了解有关 Active IQ Unified Manager 中其他维护控制台菜单选项的信息
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

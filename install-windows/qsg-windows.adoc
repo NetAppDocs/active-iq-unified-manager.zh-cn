@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: quick start guide, getting started, QSG, Windows QSG, quick installation, Windows installer 
 summary: Unified Manager在Windows平台上的快速入门指南。 
 ---
-= Windows 安装快速入门说明
+= 在 Windows 上开始使用 Active IQ Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

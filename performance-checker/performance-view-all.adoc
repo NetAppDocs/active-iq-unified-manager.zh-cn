@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: performance view 
 summary: 所有存储对象性能视图 
 ---
-= 查看所有存储对象的性能清单页面
+= 查看 Active IQ Unified Manager 中所有存储对象的性能清单页面
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

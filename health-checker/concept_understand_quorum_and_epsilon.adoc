@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: understand, quorum, epsilon 
 summary: 仲裁和 epsilon 是集群运行状况和功能的重要衡量指标，它们共同表明集群如何应对潜在的通信和连接挑战。 
 ---
-= 了解仲裁和 epsilon
+= 了解 Active IQ Unified Manager 集群中的仲裁和 epsilon
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

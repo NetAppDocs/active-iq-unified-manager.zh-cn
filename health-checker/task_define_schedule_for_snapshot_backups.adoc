@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: define, backup, schedule, linux, windows, snapshot copy, copies 
 summary: 您可以使用Unified Manager UI配置创建Unified Manager Snapshot副本的计划。 
 ---
-= 为 Linux 和 Windows 定义备份计划
+= 在 Active IQ Unified Manager 中定义 Linux 和 Windows 的备份计划
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

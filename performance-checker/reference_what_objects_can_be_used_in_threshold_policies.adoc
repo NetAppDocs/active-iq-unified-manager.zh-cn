@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: objects, counters, combination, threshold, policies 
 summary: 在组合策略中，只能同时使用某些性能计数器。指定主性能计数器和二级性能计数器时，两个性能计数器必须超过其最大限制，然后才能生成事件。 
 ---
-= 在组合阈值策略中可以使用哪些对象和计数器
+= 了解 Active IQ Unified Manager 中的组合阈值策略对象和计数器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

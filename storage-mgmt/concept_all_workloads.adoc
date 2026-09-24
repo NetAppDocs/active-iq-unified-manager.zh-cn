@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: view, workloads, add, provision, storage, filter, analyze, performance, capacity, criteria 
 summary: 所有工作负载视图显示数据中心集群上所有可用工作负载的列表。 
 ---
-= 查看工作负载
+= 在 Active IQ Unified Manager 中查看工作负载
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

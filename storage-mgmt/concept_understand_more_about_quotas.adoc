@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: understand, more, quotas 
 summary: 了解有关配额的概念有助于您高效管理用户配额和用户组配额。 
 ---
-= 详细了解配额
+= 了解 Active IQ Unified Manager 中的配额
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

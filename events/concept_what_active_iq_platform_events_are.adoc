@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: active iq, platform, events 
 summary: Unified Manager 可以显示 Active IQ 平台发现的事件。这些事件是通过对 Unified Manager 所监控的所有存储系统生成的 AutoSupport 消息运行一组规则来创建的。 
 ---
-= 什么是 Active IQ 平台事件
+= 了解 Active IQ Unified Manager 中的 Active IQ 平台事件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

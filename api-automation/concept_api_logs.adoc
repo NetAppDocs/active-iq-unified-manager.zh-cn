@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: logs, troubleshooting 
 summary: 通过系统日志，您可以分析失败的原因，并对运行 API 时可能出现的问题进行故障排除。 
 ---
-= 用于故障排除的日志
+= 使用 Active IQ Unified Manager 中的系统日志进行故障排除
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

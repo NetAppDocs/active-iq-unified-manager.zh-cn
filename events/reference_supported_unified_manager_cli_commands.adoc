@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: supported, unified manager, cli, commands, cmd, um cli, um run, 
 summary: 作为存储管理员，您可以使用命令行界面命令对存储对象执行查询，例如，对集群，聚合，卷， qtree 和 LUN 。 
 ---
-= 支持的 Unified Manager 命令行界面命令
+= 了解受支持的 Active IQ Unified Manager CLI 命令
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: session timeout, CLI, maximum 
 summary: 您可以使用命令行界面为Unified Manager设置最大会话超时值、以便会话在一段时间后自动终止。 
 ---
-= 通过命令行界面设置会话超时
+= 使用 Active IQ Unified Manager 中的 CLI 设置会话超时
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

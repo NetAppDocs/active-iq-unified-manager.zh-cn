@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: edit, authentication servers 
 summary: 您可以更改 Unified Manager 服务器用于与身份验证服务器通信的端口。 
 ---
-= 编辑身份验证服务器
+= 在 Active IQ Unified Manager 中编辑身份验证服务器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

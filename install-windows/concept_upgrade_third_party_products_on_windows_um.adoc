@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: data center manager, third-party, products, upgrade 
 summary: 如果安装在 Windows 系统上，则可以在 Unified Manager 上升级第三方产品，例如 JRE 。 
 ---
-= 升级第三方产品
+= 在 Windows 上的 Active IQ Unified Manager 中升级第三方产品
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

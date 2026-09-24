@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, modify, snapshot copy, copies, windows, unconfigure, backup type 
 summary: 如果要更改 Active IQ Unified Manager 系统的备份类型，则可以使用维护控制台选项。通过取消配置 NetApp Snapshot 备份选项，您可以回退到基于 MySQL 的备份。 
 ---
-= 修改备份类型
+= 在 Active IQ Unified Manager 中修改备份类型
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

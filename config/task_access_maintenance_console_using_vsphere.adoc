@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: access, maintenance, console, using, vsphere, vm console 
 summary: 如果 Unified Manager 用户界面未运行，或者您需要执行用户界面中不可用的功能，则可以访问维护控制台以重新配置虚拟设备。 
 ---
-= 使用 vSphere VM 控制台访问维护控制台
+= 使用 Active IQ Unified Manager 中的 vSphere VM 控制台访问维护控制台
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

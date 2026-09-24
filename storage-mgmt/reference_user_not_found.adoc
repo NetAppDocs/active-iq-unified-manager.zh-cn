@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: user, not, found 
 summary: 故障排除：未找到用户 
 ---
-= 未找到用户
+= 解决 Active IQ Unified Manager 中的"用户未找到"错误
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

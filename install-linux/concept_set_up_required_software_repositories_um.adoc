@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set up, required, software, repositories 
 summary: 系统必须能够访问某些存储库和软件包，以便安装程序能够访问和安装所有必需的软件依赖项。 
 ---
-= 安装统一管理器所需的软件
+= 设置 Active IQ Unified Manager 所需的软件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: overview, configuration, sequence 
 summary: 配置工作流介绍了在使用 Unified Manager 之前必须执行的任务。 
 ---
-= 配置顺序概述
+= 了解 Active IQ Unified Manager 中的配置顺序
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

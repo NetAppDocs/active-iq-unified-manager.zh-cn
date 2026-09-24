@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: access, maintenance console 
 summary: 如果 Unified Manager 用户界面未运行，或者您需要执行用户界面中不可用的功能，则可以访问维护控制台来管理 Unified Manager 系统。 
 ---
-= 访问维护控制台
+= 访问 Active IQ Unified Manager 中的维护控制台
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

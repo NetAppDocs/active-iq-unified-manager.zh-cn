@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: windows, log rotation issue, Netapp Manageability SDK 
 summary: 故障排除：按照以下步骤解决日志轮换问题 
 ---
-= Windows 系统上的 NetApp 可管理性 SDK 日志轮换问题
+= 解决 Active IQ Unified Manager 中的 NetApp Manageability SDK 日志轮换问题
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

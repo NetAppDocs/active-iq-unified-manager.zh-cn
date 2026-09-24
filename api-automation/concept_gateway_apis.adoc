@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: access, ONTAP, APIs, proxy, access 
 summary: 网关 API 具有使用 Active IQ Unified Manager 凭据运行 ONTAP REST API 和管理存储对象的优势。在 Unified Manager Web UI 中启用 API 网关功能后，可以使用这些 API 。 
 ---
-= 通过代理访问 ONTAP API
+= 通过 Active IQ Unified Manager 中的代理访问来访问 ONTAP API
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

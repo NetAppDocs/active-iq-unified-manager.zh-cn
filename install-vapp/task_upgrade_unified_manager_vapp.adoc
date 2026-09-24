@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade, unified manager 
 summary: 您可以在 VMware vSphere 上升级到 Unified Manager 
 ---
-= 升级 Unified Manager
+= 升级 Active IQ Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

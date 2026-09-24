@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure, backup, location, windows, snapshot copy, copies 
 summary: 在Windows上备份Unified Manager后、您应配置用于存储Snapshot副本的卷。 
 ---
-= 配置 Windows 的备份位置
+= 在 Windows 上配置 Active IQ Unified Manager 的备份位置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

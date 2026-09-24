@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: release notes, active iq unified manager 
 summary: 提供Active IQ Unified Manager 9.18 的新功能、限制和已知问题的摘要。 
 ---
-= 发行说明
+= Active IQ Unified Manager 发行说明
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

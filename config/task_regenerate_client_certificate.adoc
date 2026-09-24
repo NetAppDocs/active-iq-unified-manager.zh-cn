@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: client certificate, regenerate, validity, maintenance console 
 summary: 您可以使用维护控制台重新生成 Unified Manager 客户端证书。 
 ---
-= 重新生成 Unified Manager 客户端证书
+= 在 Active IQ Unified Manager 中重新生成客户端证书
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

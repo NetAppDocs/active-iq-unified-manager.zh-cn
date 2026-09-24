@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: manage, performance service level, PSL, User-defined, system-defined PSL, bursty, Database PSL, extreme PSL, beyond extreme PSL 
 summary: 性能服务级别计算和管理。 
 ---
-= 性能服务级别
+= 在 Active IQ Unified Manager 中管理性能服务级别
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: search, refine, view 
 summary: 获得所需视图后，您可以使用搜索字段进一步细化结果，以关注要包含在报告中的结果。 
 ---
-= 使用搜索优化视图
+= 搜索以优化您在 Active IQ Unified Manager 中的视图
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

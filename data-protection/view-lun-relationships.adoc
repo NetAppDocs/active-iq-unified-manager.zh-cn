@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: LUN, SnapMirror active sync, Consistency Group, CG 
 summary: 受SnapMirror活动同步保护的LUN的统一视图。 
 ---
-= 监控一致性组关系中的 LUN
+= 在 Active IQ Unified Manager 中监控一致性组 LUN 关系
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

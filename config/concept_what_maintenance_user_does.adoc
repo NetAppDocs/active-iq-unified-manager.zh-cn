@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: what, maintenance, user does, installation, unified manager 
 summary: '维护用户是在Red Hat Enterprise Linux系统上安装Unified Manager期间创建的。维护用户名为 "umadmin" 用户。维护用户在 Web UI 中具有应用程序管理员角色，该用户可以创建后续用户并为其分配角色。' 
 ---
-= 维护用户执行的操作
+= 了解 Active IQ Unified Manager 中的维护用户
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

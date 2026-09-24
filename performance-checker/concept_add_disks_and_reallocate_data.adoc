@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add, disks, reallocate, data 
 summary: 您可以向聚合添加磁盘以提高该聚合的存储容量和性能。添加磁盘后，只有在添加的磁盘之间重新分配数据后，读取性能才会有所提高。 
 ---
-= 添加磁盘并重新分配数据
+= 了解添加磁盘如何影响 Active IQ Unified Manager 中的数据重新分配
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

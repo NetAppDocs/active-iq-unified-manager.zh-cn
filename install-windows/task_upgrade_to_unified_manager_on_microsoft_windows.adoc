@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade, unified manager 
 summary: 您可以通过在 Windows 平台上下载并运行安装文件来升级 Unified Manager 。 
 ---
-= 升级 Unified Manager
+= 在 Windows 上升级 Active IQ Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
