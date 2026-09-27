@@ -20,3 +20,138 @@ Active IQ Unified Manager 支持使用 iSCSI 协议通过 LUN 在 Windows 操作
 * 配置 ONTAP 集群
 * 配置 Windows 主机
 
+
+
+
+[[configure-a-backup-location-for-active-iq-unified-manager-on-windows]]
+== 在 Windows 上配置 Active IQ Unified Manager 的备份位置
+
+在Windows上备份Unified Manager后、您应配置用于存储Snapshot副本的卷。
+
+.开始之前
+集群， Storage VM 和卷必须满足以下要求：
+
+* 集群要求：
++
+** 必须安装 ONTAP 9.3 或更高版本
+** 它应在地理位置上靠近 Unified Manager 服务器
+** 它由 Unified Manager 监控
+
+
+* Storage VM 要求：
++
+** ONTAP 集群上的 iSCSI 连接
+** 必须为配置的计算机启用 iSCSI 协议
+** 您应该有一个专用卷和 LUN 用于备份配置。选定卷只能包含一个 LUN ，而不能包含任何其他 LUN 。
+** LUN 的大小应至少是 9.9 Active IQ Unified Manager 中预期处理的数据大小的两倍。
++
+这样也会对卷设置相同的大小要求。
+
+** 确保已选择所有读 / 写访问权限
+** 确保在导出策略中将超级用户访问设置为 "`any` "
+
+
+* 卷和 LUN 要求：
++
+** 此卷应至少是 Unified Manager MySQL 数据目录大小的两倍。
+** 安全模式必须设置为 Windows
+** 必须禁用本地快照策略
+** 应启用卷自动调整大小
+** 应将性能服务级别设置为 IOPS 高且延迟低的策略，例如 "`Extreme` "
+
+
+
+
+
+
+[[configure-an-ontap-cluster-for-backup-and-restore-in-active-iq-unified-manager]]
+== 在 Active IQ Unified Manager 中配置 ONTAP 集群以进行备份和还原
+
+您需要先在ONTAP 集群上执行几个预配置步骤、然后才能在Windows系统上使用Snapshot副本备份和还原Active IQ Unified Manager。
+
+您可以使用命令提示符或 System Manager 用户界面配置 ONTAP 集群。配置 ONTAP 集群涉及到将数据 LIF 配置为可用作 iSCSI LIF 分配给 Storage VM 。下一步是使用 System Manager 用户界面配置启用了 iSCSI 的 Storage VM 。您需要为此 Storage VM 配置一个静态网络路由，以控制 LIF 如何将网络用于出站流量。
+
+[NOTE]
+====
+您应该有一个专用卷和一个 LUN 用于备份配置。选定卷应仅包含一个 LUN 。LUN 的大小应至少是 Active IQ Unified Manager 预期处理的数据大小的两倍。
+
+====
+您需要执行以下配置：
+
+.步骤
+. 配置启用了 iSCSI 的 Storage VM 或使用具有相同配置的现有 Storage VM 。
+. 为已配置的 Storage VM 配置网络路由。
+. 配置一个容量适当的卷以及一个 LUN ，确保该卷仅专用于此 LUN 。
++
+
+NOTE: 在 System Manager 上创建 LUN 的情况下，取消映射 LUN 可能会删除 igroup ，并且还原可能会失败。要避免这种情况，请确保在创建 LUN 时明确创建 LUN ，并且在取消映射 LUN 时不会将其删除。
+
+. 在 Storage VM 中配置启动程序组。
+. 配置端口集。
+. 将 igroup 与端口集集成。
+. 将 LUN 映射到 igroup 。
+
+
+
+
+[[configure-a-windows-host-machine-in-active-iq-unified-manager]]
+== 在 Active IQ Unified Manager 中配置 Windows 主机
+
+您需要先配置Windows主机、然后才能使用NetApp Snapshot备份和还原Active IQ Unified Manager。要在 Windows 主机上启动 Microsoft iSCSI 启动程序，请在搜索栏中键入 "`iSCSI` " ，然后单击 * iSCSI 启动程序 * 。
+
+.开始之前
+您应清理主机上先前的任何配置。
+
+如果您尝试在全新安装的 Windows 上启动 iSCSI 启动程序，系统将提示您进行确认，确认后，将显示 iSCSI 属性对话框。如果是现有的 Windows 安装，则会显示 iSCSI 属性对话框，其中的目标为非活动或正在尝试连接。因此，您需要确保删除 Windows 主机上先前的所有配置。
+
+.步骤
+. 清理主机上先前的所有配置。
+. 发现目标门户。
+. 连接到目标门户。
+. 使用多路径连接到目标门户。
+. 发现这两个 LIF 。
+. 发现在 Windows 计算机中配置为设备的 LUN 。
+. 在 Windows 中将发现的 LUN 配置为新的卷驱动器。
+
+
+
+
+[[specify-the-destination-location-for-snapshot-copies-on-windows-in-active-iq-unified-manager]]
+== 在 Active IQ Unified Manager 中指定 Windows 上 Snapshot 副本的目标位置
+
+您应在已在其中一个Active IQ Unified Manager 集群中配置的卷上配置ONTAP Snapshot副本的目标位置。您应使用维护控制台来定义位置。
+
+* 您必须具有安装 Active IQ Unified Manager 的 Windows 主机的管理员权限。
+* 您必须拥有有权登录到 Unified Manager 服务器维护控制台的用户 ID 和密码。
+* 您必须具有集群管理 IP 地址， Storage VM 的名称，卷的名称， LUN 名称以及存储系统用户名和密码。
+* 您必须已将卷作为网络驱动器挂载到 Active IQ Unified Manager 主机，并且必须具有挂载驱动器。
+
+
+.步骤
+. 使用 Power Shell 连接到 Active IQ Unified Manager 系统的 IP 地址或完全限定域名。
+. 使用维护用户（ umadmin ）名称和密码登录到系统。
+. 输入命令 `mainstion_console` 并按 Enter 键。
+. 在维护控制台 * 主菜单 * 中，输入 * 备份还原 * 选项的编号。
+. 输入 * 配置 NetApp Snapshot 备份 * 的编号。
+. 输入数字以配置 iSCSI 。
+. 查看需要提供的信息，然后为 * 输入备份配置详细信息 * 输入数字。
+. 要确定要写入 Snapshot 的卷，请输入集群管理界面的 IP 地址， Storage VM 的名称，卷的名称， LUN 名称，存储系统用户名和密码以及挂载驱动器。
+. 验证此信息并输入 `y` 。
++
+系统将执行以下任务：
+
++
+** 已验证 Storage VM
+** 已验证卷
+** 已验证挂载驱动器和状态
+** LUN 存在和状态
+** 网络驱动器存在
+** 验证已挂载卷上是否存在建议空间（ mysql 数据目录的两倍以上）
+** 与卷中的专用 LUN 对应的 LUN 路径
+** igroup 名称
+** 挂载网络驱动器的卷的 GUID
+** 用于与 ONTAP 通信的 iSCSI 启动程序
+
+
+. 退出维护控制台并启动Active IQ Unified Manager 界面、为Snapshot副本创建计划。
+

@@ -2,7 +2,7 @@
 permalink: storage-mgmt/task_resolve_windows_log_rotation_issue.html 
 sidebar: sidebar 
 keywords: windows, log rotation issue, Netapp Manageability SDK 
-summary: 故障排除：按照以下步骤解决日志轮换问题 
+summary: 按照以下步骤解决 Windows 日志轮换问题。 
 ---
 = 解决 Active IQ Unified Manager 中的 NetApp Manageability SDK 日志轮换问题
 :allow-uri-read: 

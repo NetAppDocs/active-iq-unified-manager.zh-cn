@@ -2,7 +2,7 @@
 permalink: health-checker/concept_common_unified_manager_administrative_workflows_and_tasks.html 
 sidebar: sidebar 
 keywords: Common, unified, manager, health, workflows, tasks 
-summary: 与 Unified Manager 关联的一些常见管理工作流和任务包括：选择要监控的存储集群；诊断对数据可用性，容量和保护产生不利影响的情况；还原丢失的数据；配置和管理卷；根据需要捆绑诊断数据并将其发送给技术支持。 
+summary: 了解常见的管理工作流程，包括监控集群、诊断可用性和容量问题，以及将诊断数据发送到支持部门。 
 ---
 = 了解常见 Active IQ Unified Manager 运行状况工作流程和任务
 :allow-uri-read: 
@@ -35,7 +35,7 @@ Unified Manager 还可以包含在包含相关易管理性工具（例如 OnComm
 
 * 配置，监控和诊断保护关系问题
 +
-创建和配置保护关系后，存储管理员可以查看与保护关系相关的潜在问题，保护关系的当前状态，有关受影响关系的当前和历史保护作业成功信息以及故障排除建议。请参见 link:../data-protection/concept_create_and_monitor_protection_relationships.html["创建，监控保护关系并对其进行故障排除"] 有关详细信息 ...
+在创建和配置保护关系后，存储管理员可以查看与保护关系相关的潜在问题、保护关系的当前状态、有关受影响关系的当前和历史保护作业成功信息以及故障排除建议。有关详细信息，请参见 link:../data-protection/concept_manage_and_monitor_protection_relationships.html["了解如何管理和监控保护关系"]。
 
 * 创建备份文件并从备份文件还原数据。
 * 将存储对象与标注关联

@@ -2,7 +2,7 @@
 permalink: performance-checker/concept_types_of_workloads_monitored_by_unified_manager.html 
 sidebar: sidebar 
 keywords: types, workloads, monitored, unified manager 
-summary: 您可以使用 Unified Manager 监控两种类型的工作负载的性能：用户定义的工作负载和系统定义的工作负载。 
+summary: 使用 Unified Manager 监控两种工作负载类型（用户定义和系统定义）的性能。 
 ---
 = 使用 Active IQ Unified Manager 监控工作负载类型
 :allow-uri-read: 

@@ -2,7 +2,7 @@
 permalink: performance-checker/task_view_performance_status_of_all_san_array_clusters.html 
 sidebar: sidebar 
 keywords: all san, array, performance, clusters 
-summary: 您可以使用性能：所有集群视图显示全 SAN 阵列集群的性能状态。 
+summary: 使用性能页面上的 All Clusters 视图显示 All SAN Array 集群的性能状态。 
 ---
 = 在 Active IQ Unified Manager 中查看所有 SAN Array 集群的性能
 :allow-uri-read: 

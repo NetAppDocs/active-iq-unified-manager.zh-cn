@@ -2,7 +2,7 @@
 permalink: data-protection/concept_storage_virtual_machine_and_resource_pool_requirements.html 
 sidebar: sidebar 
 keywords: svm, resource pool requirements, support, storage services 
-summary: 如果您遵循特定于存储服务的一些 SVM 关联和资源池要求，则可以更好地确保合作伙伴应用程序的合规性： 例如，当您在 Unified Manager 中关联 SVM 并创建资源池以支持合作伙伴应用程序提供的存储服务中的保护拓扑时。 
+summary: 查看支持合作伙伴存储服务中的保护拓扑所需的 SVM 关联和资源池要求。 
 ---
 = 支持 Active IQ Unified Manager 中存储服务的 SVM 和资源池要求
 :allow-uri-read: 

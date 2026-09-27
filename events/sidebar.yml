@@ -3,13 +3,13 @@ section: events
 title: 管理事件和警报
 entries:
 - title: 管理活动
-  url: "/events/concept_manage_events.html"
   entries:
   - title: 什么是 Active IQ 平台事件
     url: "/events/concept_what_active_iq_platform_events_are.html"
   - title: 什么是事件管理系统事件
-    url: "/events/concept_what_event_management_system_events_are.html"
     entries:
+    - title: 了解Event Management System事件
+      url: "/events/concept_what_event_management_system_events_are.html"
     - title: 自动添加到 Unified Manager 的 EMS 事件
       url: "/events/reference_ems_events_that_are_added_automatically_to_um.html"
     - title: 订阅 ONTAP EMS 事件
@@ -39,8 +39,9 @@ entries:
   - title: 配置事件保留设置
     url: "/events/task_configure_event_retention_settings.html"
   - title: 什么是 Unified Manager 维护窗口
-    url: "/events/concept_what_um_maintenance_window_is.html"
     entries:
+    - title: 了解 Unified Manager 维护窗口
+      url: "/events/concept_what_um_maintenance_window_is.html"
     - title: 安排维护时段以禁用集群事件通知
       url: "/events/task_schedule_maintenance_window_to_disable_cluster_notifications.html"
     - title: 更改或取消计划的维护时段
@@ -50,7 +51,6 @@ entries:
   - title: 管理主机系统资源事件
     url: "/events/task_manage_host_system_resource_events.html"
   - title: 了解更多活动信息
-    url: "/events/concept_understand_more_about_events.html"
     entries:
     - title: 事件状态定义
       url: "/events/concept_event_state_definitions.html"
@@ -67,7 +67,6 @@ entries:
     - title: Unified Manager 检测到配置更改
       url: "/events/concept_cluster_configuration_changes_detected_by_um.html"
   - title: 事件和严重性类型的列表
-    url: "/events/reference_list_of_events_and_severity_types.html"
     entries:
     - title: 聚合事件
       url: "/events/reference_aggregate_events.html"
@@ -134,15 +133,15 @@ entries:
     - title: 卷移动状态事件
       url: "/events/reference_volume_move_status_events.html"
   - title: 事件窗口和对话框的问题描述
-    url: "/events/reference_description_of_event_windows_and_dialog_boxes.html"
     entries:
     - title: 通知页面
       url: "/events/reference_notifications_page.html"
     - title: 事件管理清单页面
       url: "/events/reference_event_management_inventory_page.html"
     - title: 事件详细信息页面
-      url: "/events/reference_event_details_page.html"
       entries:
+      - title: 了解事件详细信息页面
+        url: "/events/reference_event_details_page.html"
       - title: Event Information 部分显示的内容
         url: "/events/reference_what_event_information_section_displays.html"
       - title: 建议的操作部分显示的内容
@@ -154,15 +153,15 @@ entries:
     - title: 禁用事件对话框
       url: "/events/reference_disable_events_dialog_box.html"
 - title: 管理警报
-  url: "/events/concept_manage_alerts.html"
   entries:
   - title: 什么是警报
     url: "/events/concept_what_alerts_are.html"
   - title: 警报电子邮件中包含哪些信息
     url: "/events/concept_what_information_is_contained_in_an_alert_email.html"
   - title: 添加警报
-    url: "/events/task_add_alerts.html"
     entries:
+    - title: 在 Unified Manager 中添加警报
+      url: "/events/task_add_alerts.html"
     - title: 添加警报的准则
       url: "/events/concept_guidelines_for_adding_alerts.html"
   - title: 添加性能事件警报
@@ -180,7 +179,6 @@ entries:
   - title: 删除警报
     url: "/events/task_delete_alerts.html"
   - title: 警报窗口和对话框的问题描述
-    url: "/events/reference_description_of_health_alert_windows_and_dialog_boxes.html"
     entries:
     - title: 警报设置页面
       url: "/events/reference_alert_setup_page.html"
@@ -189,8 +187,9 @@ entries:
     - title: 编辑警报对话框
       url: "/events/reference_edit_alert_dialog_box.html"
 - title: 管理脚本
-  url: "/events/concept_manage_scripts.html"
   entries:
+  - title: 了解如何管理脚本
+    url: "/events/concept_manage_scripts.html"
   - title: 脚本如何处理警报
     url: "/events/concept_how_scripts_work_with_alerts.html"
   - title: 添加脚本
@@ -202,7 +201,6 @@ entries:
   - title: 支持的 Unified Manager 命令行界面命令
     url: "/events/reference_supported_unified_manager_cli_commands.html"
   - title: 脚本窗口和对话框的问题描述
-    url: "/events/reference_description_of_script_windows_and_dialog_boxes.html"
     entries:
     - title: 脚本页面
       url: "/events/reference_management_scripts_page.html"

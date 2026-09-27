@@ -2,7 +2,7 @@
 permalink: data-protection/task_remove_protection_relationship.html 
 sidebar: sidebar 
 keywords: remove, protection, relationship, volume, relationships page 
-summary: '在 " 卷关系 " 页面中，您可以删除保护关系以永久删除选定源和目标之间的现有关系：例如，当您要使用其他目标创建关系时。此操作将删除所有元数据，并且无法撤消。' 
+summary: 从卷关系页面中，永久删除源和目标之间的保护关系。此操作无法撤消。 
 ---
 = 从 Active IQ Unified Manager 的卷关系页面删除保护关系
 :allow-uri-read: 

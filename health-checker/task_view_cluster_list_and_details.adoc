@@ -2,7 +2,7 @@
 permalink: health-checker/task_view_cluster_list_and_details.html 
 sidebar: sidebar 
 keywords: view, cluster list, details 
-summary: '您可以使用运行状况：所有集群视图查看集群清单。" 容量：所有集群 " 视图可用于查看有关所有集群中存储容量和利用率的汇总信息。' 
+summary: 使用运行状况页面上的所有群集视图查看群集清单，并使用容量页面上的所有群集视图查看存储容量和利用率详细信息。 
 ---
 = 在 Active IQ Unified Manager 中查看集群列表和详细信息
 :allow-uri-read: 

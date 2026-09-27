@@ -2,7 +2,7 @@
 permalink: data-protection/task_create_snapmirror_relationship_from_health_volumes.html 
 sidebar: sidebar 
 keywords: create, snapmirror, protection, relationship, health, volumes view 
-summary: 使用运行状况：所有卷视图，您可以通过在同一个 Storage VM 上选择多个卷来一次创建多个 SnapMirror 保护关系。 
+summary: 使用运行状况页面上的所有卷视图，一次性为同一存储虚拟机上的卷创建多个 SnapMirror 保护关系。 
 ---
 = 在 Active IQ Unified Manager 的 Health: All Volumes 视图中创建 SnapMirror 关系
 :allow-uri-read: 

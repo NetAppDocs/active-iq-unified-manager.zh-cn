@@ -2,7 +2,7 @@
 permalink: storage-mgmt/reference_cluster_connectivity_status_definitions.html 
 sidebar: sidebar 
 keywords: cluster, connectivity, status, definitions 
-summary: '在 MetroCluster 配置中，集群之间的连接可以是以下状态之一： " 最佳 " ， " 受影响 " 或 " 已关闭 " 。了解连接状态可以有效地管理 MetroCluster 配置。' 
+summary: '了解 MetroCluster 配置中集群之间的连接状态，例如"最佳"、"受影响"或"关闭"。' 
 ---
 = 了解 Active IQ Unified Manager 中基于 FC 的 MetroCluster 配置中的集群连接性
 :allow-uri-read: 

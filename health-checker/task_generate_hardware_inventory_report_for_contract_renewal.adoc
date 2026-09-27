@@ -2,7 +2,7 @@
 permalink: health-checker/task_generate_hardware_inventory_report_for_contract_renewal.html 
 sidebar: sidebar 
 keywords: contract, renewal, cluster, inventory report, hardware, generate 
-summary: '您可以生成一个报告，其中包含完整的集群和节点信息列表，例如硬件型号和序列号，磁盘类型和数量，已安装许可证等。对于未连接到 NetAppActive IQ 平台的安全站点（ " 非公开 " 站点）中的合同续订，此报告非常有用。' 
+summary: 生成包含集群和节点硬件详细信息的报告，以便在未连接到 Active IQ 平台的安全站点续订合同。 
 ---
 = 在 Active IQ Unified Manager 中生成用于合同续签的硬件清单报告
 :allow-uri-read: 

@@ -2,7 +2,7 @@
 permalink: health-checker/task_view_aggregate_list_and_details.html 
 sidebar: sidebar 
 keywords: view, aggregate list, details 
-summary: '在运行状况：所有聚合视图中，您可以监控聚合清单。" 容量：所有聚合 " 视图可用于查看有关所有集群中聚合的容量和利用率的信息。' 
+summary: '使用"运行状况"页面上的"所有聚合"视图来监控聚合清单，并使用"容量"页面上的"所有聚合"视图来查看容量和利用率详细信息。' 
 ---
 = 在 Active IQ Unified Manager 中查看聚合列表和详细信息
 :allow-uri-read: 
@@ -37,5 +37,5 @@ summary: '在运行状况：所有聚合视图中，您可以监控聚合清单�
 
 * link:../health-checker/reference_health_aggregate_details_page.html["聚合 / 运行状况详细信息页面"]
 * link:../performance-checker/performance-view-all.html#performance-all-aggregates-view["性能：所有聚合视图"]
-* link:../reporting/concept_customize_aggregate_capacity_reports.html["自定义聚合容量报告"]
+* link:../reporting/task_create_report_to_view_aggregates_reaching_full_capacity.html["创建报告以查看 Active IQ Unified Manager 中容量接近上限的聚合"]
 

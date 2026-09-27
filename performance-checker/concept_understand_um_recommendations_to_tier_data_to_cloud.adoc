@@ -2,7 +2,7 @@
 permalink: performance-checker/concept_understand_um_recommendations_to_tier_data_to_cloud.html 
 sidebar: sidebar 
 keywords: understand, unified manager, recommendations, tier, data, cloud 
-summary: 性能：所有卷视图显示与卷上存储的非活动（冷）用户数据大小相关的信息。在某些情况下， Unified Manager 会确定通过将非活动数据分层到启用了 FabricPool 的聚合的云层（云提供商或 StorageGRID ）而获益的某些卷。 
+summary: '"性能"页面上的"所有卷"视图显示非活动（冷）数据大小，并标识将从分层到 FabricPool 云层中受益的卷。' 
 ---
 = 查看 Active IQ Unified Manager 关于将数据分层到云的建议
 :allow-uri-read: 

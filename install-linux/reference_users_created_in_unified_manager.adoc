@@ -2,7 +2,7 @@
 permalink: install-linux/reference_users_created_in_unified_manager.html 
 sidebar: sidebar 
 keywords: users, created, unified manager, installation 
-summary: 在Red Hat Enterprise Linux上安装Unified Manager时、Unified Manager和第三方实用程序会创建以下用户：umadmin、jjjJBoss和myql。 
+summary: 在 Red Hat Enterprise Linux 上安装 Unified Manager 时，将创建 umadmin、jboss 和 mysql 用户。 
 ---
 = 了解 Active IQ Unified Manager 安装期间创建的用户
 :allow-uri-read: 

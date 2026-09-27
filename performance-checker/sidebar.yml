@@ -3,8 +3,9 @@ section: performance-checker
 title: 监控和管理集群性能
 entries:
 - title: Active IQ Unified Manager 性能监控简介
-  url: "/performance-checker/concept_introduction_to_unified_manager_performance_monitoring.html"
   entries:
+  - title: 了解性能监控
+    url: "/performance-checker/concept_introduction_to_unified_manager_performance_monitoring.html"
   - title: Unified Manager 性能监控功能
     url: "/performance-checker/concept_unified_manager_performance_monitoring_features.html"
   - title: 用于管理存储系统性能的 Unified Manager 界面
@@ -16,13 +17,15 @@ entries:
   - title: 时间戳在收集的数据和事件中的含义
     url: "/performance-checker/concept_what_timestamp_means_in_collected_data_and_events.html"
 - title: 在 Unified Manager GUI 中导航性能工作流
-  url: "/performance-checker/concept_navigate_performance_workflows_in_unified_manager_ui.html"
   entries:
+  - title: 在图形用户界面中浏览性能工作流程
+    url: "/performance-checker/concept_navigate_performance_workflows_in_unified_manager_ui.html"
   - title: 登录用户界面
     url: "/performance-checker/task_log_in_to_gui.html"
   - title: 图形界面和导航路径
-    url: "/performance-checker/concept_graphical_interface_and_navigational_paths.html"
     entries:
+    - title: 探索图形界面和导航路径
+      url: "/performance-checker/concept_graphical_interface_and_navigational_paths.html"
     - title: 监控集群对象导航
       url: "/performance-checker/concept_monitor_cluster_object_navigation.html"
     - title: 监控集群性能导航
@@ -34,8 +37,9 @@ entries:
   - title: 过滤库存页面内容
     url: "/performance-checker/task_filter_inventory_page_content.html"
 - title: 从仪表板监控集群性能
-  url: "/performance-checker/concept_monitor_cluster_performance_from_dashboard.html"
   entries:
+  - title: 关于从仪表板监控集群性能
+    url: "/performance-checker/concept_monitor_cluster_performance_from_dashboard.html"
   - title: 了解仪表板上的性能面板
     url: "/performance-checker/concept_understand_performance_panels_on_dashboard.html"
   - title: 性能横幅消息和说明
@@ -43,8 +47,9 @@ entries:
   - title: 修改性能统计收集间隔
     url: "/performance-checker/task_change_performance_statistics_collection_interval.html"
 - title: 使用工作负载分析器排除工作负载故障
-  url: "/performance-checker/concept_troubleshooting_workloads_using_workload_analyzer.html"
   entries:
+  - title: 关于工作负载分析器
+    url: "/performance-checker/concept_troubleshooting_workloads_using_workload_analyzer.html"
   - title: 工作负载分析器显示的数据
     url: "/performance-checker/reference_what_data_does_workload_analyzer_display.html"
   - title: 何时使用工作负载分析器
@@ -52,16 +57,19 @@ entries:
   - title: 使用工作负载分析器
     url: "/performance-checker/task_use_workload_analyzer.html"
 - title: 从性能集群登录页面监控集群性能
-  url: "/performance-checker/concept_monitor_cluster_performance_from_cluster_landing_page.html"
   entries:
+  - title: 关于从集群登录页面监控集群性能
+    url: "/performance-checker/concept_monitor_cluster_performance_from_cluster_landing_page.html"
   - title: 了解性能集群登陆页面
     url: "/performance-checker/concept_understand_performance_cluster_landing_page.html"
   - title: 性能集群登录页面
-    url: "/performance-checker/reference_performance_cluster_landing_page.html"
     entries:
+    - title: 查看性能集群登录页面
+      url: "/performance-checker/reference_performance_cluster_landing_page.html"
     - title: 性能集群摘要页面
-      url: "/performance-checker/reference_cluster_summary_page_opm.html"
       entries:
+      - title: 查看性能集群摘要页面
+        url: "/performance-checker/reference_cluster_summary_page_opm.html"
       - title: 集群性能事件窗格
         url: "/performance-checker/reference_cluster_performance_events_pane.html"
       - title: 受管对象窗格
@@ -69,13 +77,15 @@ entries:
     - title: 性能最佳的对象页面
       url: "/performance-checker/reference_top_performers_page.html"
 - title: 使用“性能清单”页面监控性能
-  url: "/performance-checker/concept_monitor_performance_using_object_performance.html"
   entries:
+  - title: 使用性能清单页面监控对象性能
+    url: "/performance-checker/concept_monitor_performance_using_object_performance.html"
   - title: 查看所有存储对象的性能清单页面
     url: "/performance-checker/performance-view-all.html"
   - title: 优化绩效清单页面内容
-    url: "/performance-checker/concept_refine_object_inventory_performance_page_content.html"
     entries:
+    - title: 了解如何优化性能清单页面内容
+      url: "/performance-checker/concept_refine_object_inventory_performance_page_content.html"
     - title: 在对象清单性能页面上搜索
       url: "/performance-checker/task_search_on_object_inventory_performance_pages.html"
     - title: 在对象清单性能页面上排序
@@ -85,15 +95,17 @@ entries:
   - title: 了解 Unified Manager 将数据分层到云的建议
     url: "/performance-checker/concept_understand_um_recommendations_to_tier_data_to_cloud.html"
 - title: 使用性能资源管理器页面监视性能
-  url: "/performance-checker/concept_monitor_performance_using_performance_explorer_pages.html"
   entries:
+  - title: 了解性能资源管理器页面
+    url: "/performance-checker/concept_monitor_performance_using_performance_explorer_pages.html"
   - title: 了解根对象
     url: "/performance-checker/concept_understand_root_object.html"
   - title: 应用筛选以减少网格中相关对象的列表
     url: "/performance-checker/concept_apply_filtering_to_correlated_objects.html"
   - title: 指定相关对象的时间范围
-    url: "/performance-checker/task_specify_correlated_objects_time_range.html"
     entries:
+    - title: 了解如何为相关对象指定时间范围
+      url: "/performance-checker/task_specify_correlated_objects_time_range.html"
     - title: 选择预定义的时间范围
       url: "/performance-checker/task_select_predefined_time_range.html"
     - title: 指定自定义时间范围
@@ -113,8 +125,9 @@ entries:
   - title: 在事件时间轴中查看事件详细信息
     url: "/performance-checker/task_view_event_details_in_performance_explorer_events_timeline.html"
   - title: 计数器图表缩放视图
-    url: "/performance-checker/concept_counter_charts_zoom_view.html"
     entries:
+    - title: 了解计数器图表缩放视图
+      url: "/performance-checker/concept_counter_charts_zoom_view.html"
     - title: 显示计数器图表缩放视图
       url: "/performance-checker/task_display_counter_charts_zoom_view.html"
     - title: 在缩放视图中指定时间范围
@@ -132,15 +145,17 @@ entries:
   - title: 根据仅驻留在本地节点上的工作负载查看节点 IOPS
     url: "/performance-checker/task_view_node_iops_based_on_workloads_on_local_node.html"
   - title: 对象登录页面的组件
-    url: "/performance-checker/concept_components_of_object_landing_pages_opm.html"
     entries:
+    - title: 查看对象登录页面的组件
+      url: "/performance-checker/concept_components_of_object_landing_pages_opm.html"
     - title: 摘要页面
       url: "/performance-checker/reference_summary_page_opm.html"
     - title: 性能资源管理器页面的组件
       url: "/performance-checker/concept_components_of_performance_explorer_page.html"
 - title: 使用 QoS 策略组信息管理性能
-  url: "/performance-checker/concept_manage_performance_using_qos_policy_group_information.html"
   entries:
+  - title: 了解 QoS 策略组性能管理
+    url: "/performance-checker/concept_manage_performance_using_qos_policy_group_information.html"
   - title: 存储 QoS 如何控制工作负载吞吐量
     url: "/performance-checker/concept_how_storage_qos_can_control_workload_throughput.html"
   - title: 查看所有集群上可用的所有 QoS 策略组
@@ -156,8 +171,9 @@ entries:
   - title: 在性能资源管理器中查看工作负载 QoS 最小和最大设置
     url: "/performance-checker/task_view_workload_qos_minimum_and_maximum_settings.html"
 - title: 使用性能容量和可用 IOPS 信息管理性能
-  url: "/performance-checker/concept_manage_performance_using_perf_capacity_available_iops.html"
   entries:
+  - title: 管理性能容量和可用 IOPS
+    url: "/performance-checker/concept_manage_performance_using_perf_capacity_available_iops.html"
   - title: 已用性能容量是多少
     url: "/performance-checker/concept_what_performance_capacity_used_is.html"
   - title: 已用性能容量值的含义
@@ -175,8 +191,9 @@ entries:
   - title: 使用性能容量使用计数器来管理性能
     url: "/performance-checker/concept_use_performance_capacity_used_counter.html"
 - title: 了解并使用节点故障转移规划页面
-  url: "/performance-checker/reference_understand_and_use_node_failover_planning_page.html"
   entries:
+  - title: 节点故障转移规划页面概述
+    url: "/performance-checker/reference_understand_and_use_node_failover_planning_page.html"
   - title: 使用节点故障转移计划页面确定纠正措施
     url: "/performance-checker/concept_use_failover_planning_page_to_determine_corrective_actions.html"
   - title: 节点故障转移规划页面的组件
@@ -186,8 +203,9 @@ entries:
   - title: 使用性能容量使用明细图表进行故障转移规划
     url: "/performance-checker/task_use_perf_capacity_used_breakdown_chart_for_failover_planning.html"
 - title: 收集数据并监控工作负载性能
-  url: "/performance-checker/concept_collect_data_and_monitor_workload_performance.html"
   entries:
+  - title: 了解 Unified Manager 如何收集工作负载性能数据
+    url: "/performance-checker/concept_collect_data_and_monitor_workload_performance.html"
   - title: Unified Manager 监控的工作负载类型
     url: "/performance-checker/concept_types_of_workloads_monitored_by_unified_manager.html"
   - title: 工作负载性能测量值
@@ -203,8 +221,9 @@ entries:
   - title: 监控 MetroCluster 配置的性能
     url: "/performance-checker/concept_performance_monitor_of_metrocluster_configurations.html"
 - title: 了解性能事件和警报
-  url: "/performance-checker/concept_understand_performance_events_and_alerts.html"
   entries:
+  - title: 了解性能事件和警报
+    url: "/performance-checker/concept_understand_performance_events_and_alerts.html"
   - title: 性能事件的来源
     url: "/performance-checker/concept_sources_of_performance_events.html"
   - title: 性能事件严重性类型
@@ -222,8 +241,9 @@ entries:
   - title: 性能事件中涉及的工作负载的角色
     url: "/performance-checker/concept_roles_of_workloads_involved_in_performance_incident.html"
 - title: 管理绩效阈值
-  url: "/performance-checker/concept_manage_performance_thresholds.html"
   entries:
+  - title: 了解性能阈值策略
+    url: "/performance-checker/concept_manage_performance_thresholds.html"
   - title: 用户定义的性能阈值策略的工作原理
     url: "/performance-checker/concept_how_user_defined_performance_threshold_policies_work.html"
   - title: 违反性能阈值策略时会发生什么情况
@@ -247,18 +267,21 @@ entries:
   - title: 移动对象时性能阈值策略会发生什么情况
     url: "/performance-checker/concept_performance_threshold_policies_when_object_is_moved.html"
 - title: 分析性能事件
-  url: "/performance-checker/concept_analyze_performance_events.html"
   entries:
+  - title: 了解如何分析性能事件
+    url: "/performance-checker/concept_analyze_performance_events.html"
   - title: 显示有关性能事件的信息
     url: "/performance-checker/task_display_information_about_performance_event.html"
   - title: 根据用户定义的性能阈值分析事件
-    url: "/performance-checker/concept_analyze_events_from_user_defined_performance_thresholds.html"
     entries:
+    - title: 关于来自用户定义的性能阈值的事件
+      url: "/performance-checker/concept_analyze_events_from_user_defined_performance_thresholds.html"
     - title: 响应用户定义的性能阈值事件
       url: "/performance-checker/task_respond_to_user_defined_performance_threshold_events.html"
   - title: 根据系统定义的性能阈值分析事件
-    url: "/performance-checker/concept_analyze_events_from_system_defined_performance_thresholds.html"
     entries:
+    - title: 关于系统定义的性能阈值的事件
+      url: "/performance-checker/concept_analyze_events_from_system_defined_performance_thresholds.html"
     - title: 响应系统定义的性能阈值事件
       url: "/performance-checker/task_respond_to_system_defined_performance_threshold_events.html"
     - title: 响应 QoS 策略组性能事件
@@ -270,8 +293,9 @@ entries:
     - title: 响应集群不平衡性能事件
       url: "/performance-checker/task_respond_to_cluster_imbalance_performance_events.html"
   - title: 根据动态性能阈值分析事件
-    url: "/performance-checker/concept_analyze_events_from_dynamic_performance_thresholds.html"
     entries:
+    - title: 关于动态性能阈值的事件
+      url: "/performance-checker/concept_analyze_events_from_dynamic_performance_thresholds.html"
     - title: 识别动态性能事件中涉及的受害工作负载
       url: "/performance-checker/task_identify_victim_workloads_involved_in_performance_event.html"
     - title: 识别动态性能事件中涉及的工作负载
@@ -279,8 +303,9 @@ entries:
     - title: 识别动态性能事件中涉及的shark工作负载
       url: "/performance-checker/task_identify_shark_workloads_involved_in_performance_event.html"
     - title: MetroCluster 配置的性能事件分析
-      url: "/performance-checker/concept_performance_incident_analysis_for_metrocluster_configuration.html"
       entries:
+      - title: 分析 MetroCluster 性能事件
+        url: "/performance-checker/concept_performance_incident_analysis_for_metrocluster_configuration.html"
       - title: 分析 MetroCluster 配置中的集群上的动态性能事件
         url: "/performance-checker/task_analyze_performance_incident_on_cluster_in_metrocluster.html"
       - title: 分析 MetroCluster 配置上的远程集群的动态性能事件
@@ -292,8 +317,9 @@ entries:
     - title: 响应由 HA 接管引起的动态性能事件
       url: "/performance-checker/task_respond_to_performance_incident_caused_by_ha_takeover.html"
 - title: 解决性能事件
-  url: "/performance-checker/reference_resolve_performance_events.html"
   entries:
+  - title: 了解如何解析性能事件
+    url: "/performance-checker/reference_resolve_performance_events.html"
   - title: 确认延迟在预期范围内
     url: "/performance-checker/concept_confirm_that_response_time_is_within_expected_range.html"
   - title: 查看配置更改对工作负载性能的影响
@@ -307,8 +333,9 @@ entries:
   - title: 移动逻辑接口（ LIF ）
     url: "/performance-checker/concept_move_logical_interfaces.html"
   - title: 在不太繁忙的时间运行存储效率操作
-    url: "/performance-checker/concept_run_storage_efficiency_operations_at_less_busy_times.html"
     entries:
+    - title: 在较不繁忙的时段安排存储效率操作
+      url: "/performance-checker/concept_run_storage_efficiency_operations_at_less_busy_times.html"
     - title: 什么是存储效率
       url: "/performance-checker/concept_what_storage_efficiency_is.html"
   - title: 添加磁盘并重新分配数据
@@ -338,8 +365,9 @@ entries:
   - title: 添加磁盘并执行聚合布局重建
     url: "/performance-checker/concept_add_disks_and_perform_aggregate_layout_reconstruction.html"
 - title: 在 Unified Manager 服务器和外部数据提供商之间建立连接
-  url: "/performance-checker/concept_set_up_connection_between_um_and_external_data_provider.html"
   entries:
+  - title: 了解如何连接到外部数据提供程序
+    url: "/performance-checker/concept_set_up_connection_between_um_and_external_data_provider.html"
   - title: 可发送到外部服务器的性能数据
     url: "/performance-checker/reference_performance_data_that_can_be_sent_to_an_external_server.html"
   - title: 设置 Graphite 以从 Unified Manager 接收性能数据

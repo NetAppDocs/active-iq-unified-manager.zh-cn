@@ -27,3 +27,83 @@ Snapshot副本所需时间非常短、通常只需几分钟、Unified Manager数
 
 
 ====
+
+
+[[configure-snapshot-copy-location-in-active-iq-unified-manager]]
+== 在 Active IQ Unified Manager 中配置 Snapshot 副本位置
+
+您可以使用ONTAP 系统管理器或ONTAP 命令行界面配置将Snapshot副本存储在其中一个ONTAP 集群上的卷。
+
+.开始之前
+集群， Storage VM 和卷必须满足以下要求：
+
+* 集群要求：
++
+** 必须安装 ONTAP 9.3 或更高版本
+** 它应在地理位置上靠近 Unified Manager 服务器
+** 它可以由 Unified Manager 监控，但不是必需的
+
+
+* Storage VM 要求：
++
+** 必须将名称开关和名称映射设置为使用 "`files` "
+** 为与客户端用户相对应而创建的本地用户
+** 确保已选择所有读 / 写访问权限
+** 确保在导出策略中将超级用户访问设置为 "`any` "
+** 适用于 Linux 的 NetApp Snapshot 的 NFS
+** 必须在客户端和 Storage VM 上指定的 NFS 服务器和 NFSv4 ID 域上启用 NFSv4
+** 卷大小应至少是 Unified Manager/opt/netapp/ 数据目录大小的两倍
++
+使用命令 du -sh /opt/netapp/data/ 检查当前大小。
+
+
+
+* 卷要求：
++
+** 此卷应至少是 Unified Manager /opt/netapp/data 目录大小的两倍
+** 安全模式必须设置为 UNIX
+** 必须禁用本地快照策略
+** 应启用卷自动调整大小
+** 应将性能服务级别设置为 IOPS 高且延迟低的策略，例如 "`Extreme` "
+
+
+
+
+有关创建 NFS 卷的详细步骤，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_configure_NFSv4_in_Cluster-Mode["如何在 ONTAP 9 中配置 NFSv4"] 和 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-nfsv3-cg/home.html["《 ONTAP 9 NFS 配置快速指南》"]。
+
+
+
+[[specify-the-destination-location-for-snapshot-copies-in-active-iq-unified-manager]]
+== 在 Active IQ Unified Manager 中指定 Snapshot 副本的目标位置
+
+您应在已在其中一个Active IQ Unified Manager 集群中配置的卷上配置ONTAP Snapshot副本的目标位置。您应使用维护控制台来定义位置。
+
+* 您必须具有安装 Active IQ Unified Manager 的 Linux 主机的 root 用户凭据。
+* 您必须拥有有权登录到 Unified Manager 服务器维护控制台的用户 ID 和密码。
+* 您必须具有集群管理 IP 地址， Storage VM 的名称，卷的名称以及存储系统用户名和密码。
+* 您必须已将卷挂载到 Active IQ Unified Manager 主机，并且必须具有挂载路径。
+
+
+.步骤
+. 使用安全 Shell 连接到 Active IQ Unified Manager 系统的 IP 地址或 FQDN 。
+. 使用维护用户（ umadmin ）名称和密码登录到系统。
+. 输入命令 `mainstion_console` 并按 Enter 键。
+. 在维护控制台 * 主菜单 * 中，输入 * 备份还原 * 选项的编号。
+. 输入 * 配置 NetApp Snapshot 备份 * 的编号。
+. 输入数字以配置 NFS 。
+. 查看需要提供的信息，然后为 * 输入备份配置详细信息 * 输入数字。
+. 要确定要写入 Snapshot 的卷，请输入集群管理界面的 IP 地址， Storage VM 的名称，卷的名称， LUN 名称，存储系统用户名和密码以及挂载路径。
+. 验证此信息并输入 `y` 。
++
+系统将执行以下任务：
+
++
+** 建立与集群的连接
+** 停止所有服务
+** 在卷中创建一个新目录并复制 Active IQ Unified Manager 数据库配置文件
+** 从 Active IQ Unified Manager 中删除文件并创建指向新数据库目录的符号链接
+** 重新启动所有服务
+
+
+. 如果尚未创建Snapshot副本计划、请退出维护控制台并启动Active IQ Unified Manager 界面、以便为该副本创建计划。
+

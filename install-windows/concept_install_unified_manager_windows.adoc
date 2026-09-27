@@ -1,14 +1,8 @@
 ---
 permalink: install-windows/concept_install_unified_manager_windows.html 
-sidebar: sidebar 
-keywords: install, unified manager, windows 
-summary: 请务必了解在 Windows 上下载和安装 Unified Manager 的步骤顺序。 
+redirect: install-windows/task_install_unified_manager_on_windows.html 
 ---
-= 在 Windows 上安装 Active IQ Unified Manager
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
-请务必了解在 Windows 上下载和安装 Unified Manager 的步骤顺序。

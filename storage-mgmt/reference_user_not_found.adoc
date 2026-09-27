@@ -2,7 +2,7 @@
 permalink: storage-mgmt/reference_user_not_found.html 
 sidebar: sidebar 
 keywords: user, not, found 
-summary: 故障排除：未找到用户 
+summary: '对"未找到用户"错误进行故障排除。' 
 ---
 = 解决 Active IQ Unified Manager 中的"用户未找到"错误
 :allow-uri-read: 

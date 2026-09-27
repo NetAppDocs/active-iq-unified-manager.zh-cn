@@ -2,7 +2,7 @@
 permalink: data-protection/reference_relationship_all_relationships_view.html 
 sidebar: sidebar 
 keywords: volume, relationships, metrocluster 
-summary: '" 关系：所有关系 " 视图显示有关存储系统上的保护关系的信息。' 
+summary: '"关系"页面上的"所有关系"视图显示有关存储系统上的保护关系的信息。' 
 ---
 = 在 Active IQ Unified Manager 中显示"关系：所有关系"视图
 :allow-uri-read: 

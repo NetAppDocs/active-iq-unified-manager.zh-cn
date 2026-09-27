@@ -3,13 +3,13 @@ section: data-protection
 title: 保护和还原数据
 entries:
 - title: 创建和排除保护关系故障
-  url: "/data-protection/concept_create_and_monitor_protection_relationships.html"
   entries:
   - title: SnapMirror 保护的类型
     url: "/data-protection/concept_types_of_snapmirror_protection.html"
   - title: 在 Unified Manager 中设置保护关系
-    url: "/data-protection/task_set_up_protection_relationships_in_unified_manager.html"
     entries:
+    - title: 了解有关设置保护关系的信息
+      url: "/data-protection/task_set_up_protection_relationships_in_unified_manager.html"
     - title: 配置工作流自动化和 Unified Manager 之间的连接
       url: "/data-protection/task_configure_connection_between_workflow_automation_um.html"
     - title: 在工作流自动化中验证 Unified Manager 数据源缓存
@@ -19,8 +19,9 @@ entries:
     - title: 从 Unified Manager 中删除 OnCommand Workflow Automation 设置
       url: "/data-protection/task_remove_workflow_automation.html"
   - title: 执行保护关系故障转移和故障回复
-    url: "/data-protection/task_perform_protection_relationship_failover_and_failback.html"
     entries:
+    - title: 了解故障转移和故障恢复
+      url: "/data-protection/task_perform_protection_relationship_failover_and_failback.html"
     - title: 从卷运行状况详细信息页面中断 SnapMirror 关系
       url: "/data-protection/task_break_snapmirror_relationship_from_health_volume_details.html"
     - title: 从卷运行状况详细信息页面中反向保护关系
@@ -30,15 +31,17 @@ entries:
     - title: 从卷运行状况详细信息页面重新同步保护关系
       url: "/data-protection/task_resynchronize_protection_relationships_voldtls.html"
   - title: 解决保护作业失败
-    url: "/data-protection/task_resolve_protection_job_failure.html"
     entries:
+    - title: 了解如何解决保护作业失败
+      url: "/data-protection/task_resolve_protection_job_failure.html"
     - title: 识别问题并对失败的保护作业执行纠正措施
       url: "/data-protection/task_identify_problem_for_failed_protection_job.html"
   - title: 解决延迟问题
     url: "/data-protection/task_resolve_lag_issues.html"
 - title: 管理和监控保护关系
-  url: "/data-protection/concept_manage_and_monitor_protection_relationships.html"
   entries:
+  - title: 了解如何管理和监控保护关系
+    url: "/data-protection/concept_manage_and_monitor_protection_relationships.html"
   - title: 查看卷保护状态
     url: "/data-protection/view-protection-status.html"
   - title: 查看卷保护关系
@@ -112,8 +115,9 @@ entries:
   - title: 删除资源池
     url: "/data-protection/task_delete_resource_pools.html"
   - title: 监控存储虚拟机灾难恢复保护关系
-    url: "/data-protection/concept_monitor_storage_vm_disaster_recovery_relationships.html"
     entries:
+    - title: 了解Storage VM灾难恢复关系
+      url: "/data-protection/concept_monitor_storage_vm_disaster_recovery_relationships.html"
     - title: 使用“关系”页面监控存储虚拟机
       url: "/data-protection/task_monitor_storage_vms_using_relationships_page.html"
     - title: 从存储虚拟机页面查看保护关系
@@ -135,7 +139,6 @@ entries:
   - title: 重试失败的保护作业
     url: "/data-protection/task_retry_failed_protection_job.html"
   - title: 保护关系的问题描述窗口和对话框
-    url: "/data-protection/reference_description_of_protection_relationships_window.html"
     entries:
     - title: 资源池页面
       url: "/data-protection/reference_resource_pools_page.html"

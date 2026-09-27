@@ -2,7 +2,7 @@
 permalink: data-protection/task_create_snapvault_protection_relationship.html 
 sidebar: sidebar 
 keywords: create, snapvault, protection, relationship, health, volumes view 
-summary: '您可以使用 " 运行状况：所有卷 " 视图为同一 Storage VM 上的一个或多个卷创建 SnapVault 关系，以便为保护目的启用数据备份。' 
+summary: 使用运行状况页面上的所有卷视图可为同一存储虚拟机上的一个或多个卷创建 SnapVault 关系以进行数据备份。 
 ---
 = 在 Active IQ Unified Manager 的 Health: All Volumes 视图中创建 SnapVault 关系
 :allow-uri-read: 

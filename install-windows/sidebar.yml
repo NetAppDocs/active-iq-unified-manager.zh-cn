@@ -3,15 +3,17 @@ section: install-windows
 title: 在 Windows 系统上安装 Unified Manager
 entries:
 - title: Active IQ Unified Manager 简介
-  url: "/install-windows/concept_introduction_to_unified_manager.html"
   entries:
+  - title: 了解Active IQ Unified Manager
+    url: "/install-windows/concept_introduction_to_unified_manager.html"
   - title: Unified Manager 服务器的功能
     url: "/install-windows/concept_what_unified_manager_server_does.html"
   - title: 安装顺序概述
     url: "/install-windows/concept_overview_of_installation_sequence_um.html"
 - title: Unified Manager 的安装要求
-  url: "/install-windows/concept_requirements_for_installing_unified_manager.html"
   entries:
+  - title: 了解安装 Unified Manager 的要求
+    url: "/install-windows/concept_requirements_for_installing_unified_manager.html"
   - title: 虚拟基础架构和硬件系统要求
     url: "/install-windows/concept_virtual_infrastructure_or_hardware_system_requirements.html"
   - title: Windows 软件和安装要求
@@ -23,12 +25,10 @@ entries:
   - title: 填写工作表
     url: "/install-windows/reference_complete_worksheet_um.html"
 - title: 安装、升级和删除 Unified Manager 软件
-  url: "/install-windows/concept_install_upgrade_and_remove_unified_manager_software.html"
   entries:
   - title: 安装过程概述
     url: "/install-windows/concept_overview_of_installation_process_on_windows.html"
   - title: 在 Windows 上安装 Unified Manager
-    url: "/install-windows/concept_install_unified_manager_windows.html"
     entries:
     - title: 安装 Unified Manager
       url: "/install-windows/task_install_unified_manager_on_windows.html"
@@ -41,8 +41,9 @@ entries:
   - title: 升级 Unified Manager
     url: "/install-windows/task_upgrade_to_unified_manager_on_microsoft_windows.html"
   - title: 升级第三方产品
-    url: "/install-windows/concept_upgrade_third_party_products_on_windows_um.html"
     entries:
+    - title: 了解有关升级第三方产品的信息
+      url: "/install-windows/concept_upgrade_third_party_products_on_windows_um.html"
     - title: 升级 OpenJDK
       url: "/install-windows/task_upgrade_openjdk_on_windows_ocum.html"
   - title: 卸载第三方产品

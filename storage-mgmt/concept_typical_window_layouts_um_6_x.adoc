@@ -2,7 +2,7 @@
 permalink: storage-mgmt/concept_typical_window_layouts_um_6_x.html 
 sidebar: sidebar 
 keywords: typical, window, layouts, object, list, details 
-summary: 了解典型的窗口布局有助于您有效地导航和使用 Active IQ Unified Manager 。大多数 Unified Manager 窗口都类似于两种常规布局之一：对象列表或详细信息。建议的显示设置至少为 1280 x 1024 像素。 
+summary: 了解典型的 Unified Manager 窗口布局、对象列表或详细信息，以及有效导航的建议显示设置。 
 ---
 = Active IQ Unified Manager 中的典型窗口布局
 :allow-uri-read: 
