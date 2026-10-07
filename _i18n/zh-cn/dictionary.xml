@@ -11153,7 +11153,6 @@
   <block id="ab71876b04bdf2178a36a1f75c0b521f" category="admonition">Graphite服务器不会从Unified Manager接收卷的性能数据。</block>
   <block id="9f05e01be7e6790732b731bbb5ffe318" category="admonition">如果集群运行ONTAP 9.14.1或更高版本、则监控节点根卷的功能不可用。</block>
   <block id="2bff5bcae094d4c1fca66b645c79b006" category="admonition">如果集群运行ONTAP 9.14.1或更高版本、则监控节点根聚合的功能不可用。</block>
-  <block id="2466264a3b3e9cd0747d6419241007ef" category="paragraph">此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。由于公司法规的原因、您的Linux系统上可能安装了漏洞扫描程序(如Quulis)。您应在安装Unified Manager之前禁用漏洞扫描程序、以防止安装失败。</block>
   <block id="d399c2619eb2015cdbc0feeecd5393c0" category="inline-link">ActiveIQ Unified Manager无法安装外部生成的证书</block>
   <block id="ceb9d7e61726cd2e35badf78afd8453a" category="paragraph">您必须定义配额电子邮件地址的规则，并按要执行的顺序输入这些规则。例如、如果要使用电子邮件地址abc@xyz.com接收有关abc违反配额的通知、并对所有其他组使用电子邮件地址dl-$Group@$domain、则规则必须按以下顺序列出：</block>
   <block id="b3740ac32eb3afc08f5d73d7308fc75d" category="list-text">如果($user =='abc')，则为abc@xyz.com</block>
@@ -11852,7 +11851,6 @@
   <block id="d940b6d335f7a34f0e4b4bc38551cbb7" category="paragraph">例如，如果您在 Unified Manager 9.18 上创建了备份，则只能在 Unified Manager 9.18 系统上恢复该备份。</block>
   <block id="8961a4d8d4d7912111f44031511afc59" category="paragraph">并非所有版本的 Unified Manager 都可以执行就地升级到更高版本。 Unified Manager 升级仅限于 N-2 型号。这意味着您只能在所有平台上升级到接下来的两个版本。例如，您只能从 Unified Manager 9.14 和 9.16 升级到 Unified Manager 9.18。</block>
   <block id="53379802a4d81e82337b2c52ccf2deb3" category="list-text">升级 9.14 或 9.16 -&gt; 9.18</block>
-  <block id="6787fe3d88502c7e30ca4888c36420e1" category="list-text">Red Hat Enterprise Linux 8.x 和 9.6 版本，基于 x86_64 架构。</block>
   <block id="074a139785c8177508b3b6c1771be1b9" category="list-text">OpenJDK 版本 17.0.14+6（来自 Red Hat Extra Enterprise Linux Server 存储库）</block>
   <block id="effd4488452f14b70bc4664d81f2c4cf" category="paragraph">OpenJDK 版本 17.0.14+6</block>
   <block id="b052ad2f2a24341b706280b74b01f4cf" category="paragraph">您可以通过在 Linux 平台上下载并运行安装文件从 Unified Manager 9.14 或 9.16 升级到 9.18。</block>
@@ -12842,4 +12840,9 @@
   <block id="a6e16397851d52fce837670c7fe5c107" category="sidebar">了解存储效率策略</block>
   <block id="442ea426f05852b9149238a396ebc980" category="sidebar">使用"配额"对话框</block>
   <block id="d476210c705af2dbde35b19ec388481b" category="sidebar">了解如何向数据库目录添加磁盘空间</block>
+  <block id="8862bfdb779b55db7354b5395ef7912e" category="paragraph">安装 Unified Manager 的 Linux 系统需要特定版本的操作系统和支持软件。对于 Linux 安装，只能在 Red Hat Enterprise Linux 操作系统上安装 Unified Manager。它不能安装在任何其他操作系统上。</block>
+  <block id="f3622d009fee7f204f8320b21b353eee" category="list-text">Red Hat Enterprise Linux 8.x 和 9.6 版，基于 x86_64 架构</block>
+  <block id="bc8be72fdc9d6054f356bb2b7f80fd12" category="inline-link">NetApp 互操作性矩阵</block>
+  <block id="57e8907ee54130f9131ad948e8b40a5f" category="paragraph"><block ref="57e8907ee54130f9131ad948e8b40a5f" category="inline-link-rx"></block></block>
+  <block id="ddb394221852f5631862ea9ec9cd9673" category="paragraph">服务器应专用于运行 Unified Manager。不应在服务器上安装其他应用程序。在某些环境中，由于公司策略，已在 Linux 系统上安装 Qualys 等漏洞扫描程序。您应在安装 Unified Manager 之前禁用漏洞扫描程序，以防止安装失败。</block>
 </blocks>

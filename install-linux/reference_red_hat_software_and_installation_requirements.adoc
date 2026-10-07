@@ -11,7 +11,7 @@ summary: 安装 Unified Manager 的 Linux 系统需要特定版本的操作系�
 
 
 [role="lead"]
-安装 Unified Manager 的 Linux 系统需要特定版本的操作系统和支持软件。
+安装 Unified Manager 的 Linux 系统需要特定版本的操作系统和支持软件。对于 Linux 安装，只能在 Red Hat Enterprise Linux 操作系统上安装 Unified Manager。它不能安装在任何其他操作系统上。
 
 
 
@@ -20,14 +20,14 @@ summary: 安装 Unified Manager 的 Linux 系统需要特定版本的操作系�
 
 Linux 系统必须安装以下版本的操作系统和支持软件：
 
-* Red Hat Enterprise Linux 8.x 和 9.6 版本，基于 x86_64 架构。
+* Red Hat Enterprise Linux 8.x 和 9.6 版，基于 x86_64 架构
 
 
 有关受支持的Red Hat Enterprise Linux版本的最新完整列表、请参见互操作性表。
 
-http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"^]
+https://mysupport.netapp.com/matrix["NetApp 互操作性矩阵"^]
 
-此服务器应专用于运行 Unified Manager 。服务器上不应安装任何其他应用程序。由于公司法规的原因、您的Linux系统上可能安装了漏洞扫描程序(如Quulis)。您应在安装Unified Manager之前禁用漏洞扫描程序、以防止安装失败。
+服务器应专用于运行 Unified Manager。不应在服务器上安装其他应用程序。在某些环境中，由于公司策略，已在 Linux 系统上安装 Qualys 等漏洞扫描程序。您应在安装 Unified Manager 之前禁用漏洞扫描程序，以防止安装失败。
 
 
 NOTE: 在内部(Unified Manager和漏洞扫描程序安装在同一个VM上)或外部扫描虚拟机(VM)时、漏洞扫描程序(如Qu固 件)可能会导致CPU使用率较高 (其中Unified Manager和漏洞扫描程序安装在两个不同的服务器上、漏洞扫描程序将扫描安装Unified Manager的VM)。此问题描述通常会导致VM无响应并影响Unified Manager服务。因此、NetApp建议在安装了Unified Manager的虚拟机中禁用漏洞扫描程序。如果无法禁用扫描程序、请在非工作时间扫描虚拟机、并在扫描完成后重新启动服务。
